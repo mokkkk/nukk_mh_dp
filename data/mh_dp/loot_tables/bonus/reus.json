@@ -1,0 +1,22 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gunpowder",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 20,
+                "max": 45
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

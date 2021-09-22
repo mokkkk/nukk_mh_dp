@@ -1,0 +1,2 @@
+execute if block ~ ~ ~ #asa_animator:no_collision positioned ~ ~-0.5 ~ run function asa_animator:reus/endfly/effects/check_ground_pos
+execute at @s if block ~ ~-1 ~ #asa_animator:no_collision run tp @s ~ ~-0.5 ~

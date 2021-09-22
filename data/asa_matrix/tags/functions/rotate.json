@@ -1,0 +1,9 @@
+{
+	"replace": false,
+	"values": [
+		"asa_matrix:rotate/rotation_local_pose01",
+		"asa_matrix:rotate/rotation_local_pose2",
+		"asa_matrix:rotate/rotation_world",
+		"asa_matrix:rotate/calc_child_pos"
+	]
+}

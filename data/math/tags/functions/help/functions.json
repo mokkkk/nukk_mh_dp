@@ -1,0 +1,11 @@
+{
+	"replace": false,
+	"values": [
+		"math:help/sin",
+		"math:help/cos",
+		"math:help/tan",
+		"math:help/sqrt",
+		"math:help/random",
+		"math:help/dice"
+	]
+}

@@ -1,0 +1,40 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{SpawnPaper:1,SpawnID:1}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "mh_dp:monsters/reus"
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "nbt": "{Tags:[\"ExistReus\"]}"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
