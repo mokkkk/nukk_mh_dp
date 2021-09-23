@@ -23,6 +23,8 @@ particle block sand ~ ~0.5 ~ 1 0 1 0 3
 execute positioned ~ ~-0.5 ~ if block ~ ~ ~ #asa_animator:no_collision run tp @s ~ ~-0.5 ~
 execute positioned ^ ^ ^3 unless block ~ ~ ~ #asa_animator:no_collision if block ~ ~1 ~ #asa_animator:no_collision run tp @s ~ ~1 ~
 
+execute positioned ^ ^ ^3 unless block ~ ~ ~ #asa_animator:no_collision unless block ~ ~1 ~ #asa_animator:no_collision run function asa_animator:diablos/dash/effect/change
+
 # 攻撃
 execute if entity @e[type=!armor_stand,type=!marker,distance=0..5] run function asa_animator:diablos/dash/effect/damage
 
