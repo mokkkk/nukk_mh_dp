@@ -6,7 +6,13 @@ execute if score @s AsaMatrix matches 1..5 run tp @s ^0 ^0 ^-0.1
 execute if score @s AsaMatrix matches 6 run function asa_animator:diablos/startdash1/keyframes/1
 execute if score @s AsaMatrix matches 6..30 run tp @s ^0 ^-0.008 ^-0.012
 execute if score @s AsaMatrix matches 31 run function asa_animator:diablos/startdash1/keyframes/2
-execute if score @s AsaMatrix matches 31..38 run tp @s ^0 ^-0.0125 ^-0.0125
+execute if score @s AsaMatrix matches 31..38 run tp @s ^0 ^-0.0125 ^-0.0125 ~ ~
 execute if score @s AsaMatrix matches 39.. run function asa_animator:diablos/startdash1/end
 execute as @e[type=armor_stand,tag=DiablosParts] run function #asa_matrix:animate
 function asa_animator:diablos/model
+
+# 敵を向く
+execute if score @s AsaMatrix matches 1..38 run function asa_animator:diablos/manager/rotate_fast
+
+# 突進位置決定
+execute if score @s AsaMatrix matches 38 positioned as @e[tag=DiablosAttackTarget] run summon marker ~ ~ ~ {Tags:["DiablosDashTarget"]}

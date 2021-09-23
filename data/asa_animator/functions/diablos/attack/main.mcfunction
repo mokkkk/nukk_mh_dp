@@ -8,7 +8,6 @@ execute if score @s AsaMatrix matches 11..15 run tp @s ^0 ^0 ^0
 execute if score @s AsaMatrix matches 16 run function asa_animator:diablos/attack/keyframes/2
 execute if score @s AsaMatrix matches 16..22 run tp @s ^0.07142857 ^0 ^0.4285714
 execute if score @s AsaMatrix matches 23 run function asa_animator:diablos/attack/keyframes/3
-execute if score @s AsaMatrix matches 23..29 run tp @s ^-0.02857143 ^0 ^-0.07142857
 execute if score @s AsaMatrix matches 30 run function asa_animator:diablos/attack/keyframes/4
 execute if score @s AsaMatrix matches 30..31 run tp @s ^0 ^0 ^0
 execute if score @s AsaMatrix matches 32 run function asa_animator:diablos/attack/keyframes/5
@@ -20,3 +19,15 @@ execute if score @s AsaMatrix matches 48..65 run tp @s ^0.02777778 ^0 ^-0.055555
 execute if score @s AsaMatrix matches 66.. run function asa_animator:diablos/attack/end
 execute as @e[type=armor_stand,tag=DiablosParts] run function #asa_matrix:animate
 function asa_animator:diablos/model
+
+# 敵を向く
+execute if score @s AsaMatrix matches 1..10 run function asa_animator:diablos/manager/rotate_fast
+execute if score @s AsaMatrix matches 23..27 run function asa_animator:diablos/manager/rotate_fast
+execute if score @s AsaMatrix matches 23..29 run tp @s ^-0.02857143 ^0 ^0.07142857
+
+# 攻撃
+execute if score @s AsaMatrix matches 17 positioned ^ ^ ^2 run function asa_animator:diablos/attack/effect/damage
+execute if score @s AsaMatrix matches 33 positioned ^ ^ ^2 run function asa_animator:diablos/attack/effect/damage
+
+# 効果音
+execute if score @s AsaMatrix matches 1 run playsound entity.iron_golem.attack master @a ~ ~ ~ 2 1

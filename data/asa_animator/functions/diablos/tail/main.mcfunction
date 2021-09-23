@@ -2,7 +2,6 @@
 scoreboard players add @s AsaMatrix 1
 execute if score @s AsaMatrix matches 1 run function asa_animator:diablos/tail/start
 execute if score @s AsaMatrix matches 1 run function asa_animator:diablos/tail/keyframes/0
-execute if score @s AsaMatrix matches 1..10 run tp @s ^0 ^0 ^0
 execute if score @s AsaMatrix matches 11 run function asa_animator:diablos/tail/keyframes/1
 execute if score @s AsaMatrix matches 11..15 run tp @s ^0 ^0 ^0 ~-36 ~
 execute if score @s AsaMatrix matches 16 run function asa_animator:diablos/tail/keyframes/2
@@ -16,3 +15,16 @@ execute if score @s AsaMatrix matches 31..45 run tp @s ^0 ^0.006666667 ^0
 execute if score @s AsaMatrix matches 46.. run function asa_animator:diablos/tail/end
 execute as @e[type=armor_stand,tag=DiablosParts] run function #asa_matrix:animate
 function asa_animator:diablos/model
+
+# 敵を向く
+execute if score @s AsaMatrix matches 1..10 run function asa_animator:diablos/manager/rotate_fast
+
+# パーティクル
+execute if score @s AsaMatrix matches 11..20 run function asa_animator:reus/tail/effect/particle
+
+# 攻撃
+execute if score @s AsaMatrix matches 11 positioned ^ ^ ^-3 run function asa_animator:diablos/attack/effect/damage
+execute if score @s AsaMatrix matches 16 positioned ^ ^ ^-3 run function asa_animator:diablos/attack/effect/damage
+
+# 効果音
+execute if score @s AsaMatrix matches 11 run playsound entity.player.attack.sweep master @a ~ ~ ~ 2 0.5

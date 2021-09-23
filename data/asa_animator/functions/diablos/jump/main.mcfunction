@@ -20,3 +20,15 @@ execute if score @s AsaMatrix matches 56..70 run tp @s ^0 ^0.01 ^0
 execute if score @s AsaMatrix matches 71.. run function asa_animator:diablos/jump/end
 execute as @e[type=armor_stand,tag=DiablosParts] run function #asa_matrix:animate
 function asa_animator:diablos/model
+
+# 敵を向く
+execute if score @s AsaMatrix matches 1..10 run function asa_animator:diablos/manager/rotate_fast
+
+# パーティクル
+execute if score @s AsaMatrix matches 35 run particle explosion ~ ~ ~ 3 0 3 0 30
+
+# 攻撃
+execute if score @s AsaMatrix matches 35 run function asa_animator:diablos/jump/effect/damage
+
+# 効果音
+execute if score @s AsaMatrix matches 35 run playsound entity.generic.explode master @a ~ ~ ~ 3 0.7

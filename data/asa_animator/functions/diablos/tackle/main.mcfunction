@@ -18,3 +18,13 @@ execute if score @s AsaMatrix matches 56..75 run tp @s ^0 ^0.0075 ^0
 execute if score @s AsaMatrix matches 76.. run function asa_animator:diablos/tackle/end
 execute as @e[type=armor_stand,tag=DiablosParts] run function #asa_matrix:animate
 function asa_animator:diablos/model
+
+# 敵を向く
+execute if score @s AsaMatrix matches 1..20 run function asa_animator:diablos/manager/rotate_fast
+
+# 攻撃
+execute if score @s AsaMatrix matches 38 positioned ^ ^ ^2 run function asa_animator:diablos/tackle/effect/damage
+
+# 効果音
+execute if score @s AsaMatrix matches 1 run playsound entity.iron_golem.attack master @a ~ ~ ~ 2 1
+execute if score @s AsaMatrix matches 35 run playsound entity.iron_golem.attack master @a ~ ~ ~ 2 0.5

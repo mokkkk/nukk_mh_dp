@@ -2,9 +2,9 @@
 scoreboard players add @s AsaMatrix 1
 execute if score @s AsaMatrix matches 1 run function asa_animator:diablos/dashattack/start
 execute if score @s AsaMatrix matches 1 run function asa_animator:diablos/dashattack/keyframes/0
-execute if score @s AsaMatrix matches 1..5 run tp @s ^0 ^0 ^0.6
+execute if score @s AsaMatrix matches 1..5 run tp @s ^0 ^0 ^0.6 ~-0.1 ~
 execute if score @s AsaMatrix matches 6 run function asa_animator:diablos/dashattack/keyframes/1
-execute if score @s AsaMatrix matches 6..10 run tp @s ^0 ^0 ^0.2
+execute if score @s AsaMatrix matches 6..10 run tp @s ^0 ^0 ^0.2 ~0.1 ~
 execute if score @s AsaMatrix matches 11 run function asa_animator:diablos/dashattack/keyframes/2
 execute if score @s AsaMatrix matches 11..17 run tp @s ^0 ^0 ^0.0285714
 execute if score @s AsaMatrix matches 18 run function asa_animator:diablos/dashattack/keyframes/3
@@ -18,3 +18,14 @@ execute if score @s AsaMatrix matches 46..55 run tp @s ^0 ^0.03 ^0
 execute if score @s AsaMatrix matches 56.. run function asa_animator:diablos/dashattack/end
 execute as @e[type=armor_stand,tag=DiablosParts] run function #asa_matrix:animate
 function asa_animator:diablos/model
+
+# 攻撃
+execute if score @s AsaMatrix matches 1..10 if entity @e[type=!armor_stand,type=!marker,distance=0..5] run function asa_animator:diablos/dash/effect/damage
+execute if score @s AsaMatrix matches 18 positioned ^ ^ ^2 run function asa_animator:diablos/dashattack/effect/damage
+
+# 位置調整
+execute unless block ~ ~-0.1 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~
+execute if block ~ ~-0.05 ~ #asa_animator:no_collision run tp @s ~ ~-0.05 ~
+
+# 効果音
+execute if score @s AsaMatrix matches 18 run playsound entity.player.attack.sweep master @a ~ ~ ~ 2 0.5
