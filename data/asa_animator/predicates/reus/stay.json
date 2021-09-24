@@ -135,6 +135,13 @@
         "predicate": {
           "nbt": "{Tags:[\"AnmVoice\"]}"
         }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmAnger\"]}"
+        }
       }
     ]
   }

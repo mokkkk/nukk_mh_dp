@@ -1,4 +1,8 @@
 
+# メッセージ
+tellraw @a {"text": "【戦いに勝利した！】"}
+# 討伐タイマー計算
+
 # タグ消去
 tag @e[tag=ReusTarget] remove ReusTarget
 tag @e[tag=ReusAttackTarget] remove ReusAttackTarget
