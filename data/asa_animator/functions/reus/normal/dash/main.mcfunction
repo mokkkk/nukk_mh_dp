@@ -17,8 +17,8 @@ function asa_animator:reus/model
 function asa_animator:reus/manager/rotate
 
 # 高度調整
-execute positioned ~ ~-0.5 ~ if block ~ ~ ~ #asa_animator:no_collision run tp @s ~ ~-0.5 ~
-execute positioned ^ ^ ^3 unless block ~ ~ ~ #asa_animator:no_collision if block ~ ~1 ~ #asa_animator:no_collision run tp @s ~ ~1 ~
+execute positioned ~ ~-0.5 ~ if block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~-0.5 ~
+execute positioned ^ ^ ^3 unless block ~ ~ ~ #asa_animator:no_collision if block ~ ~1 ~ #asa_animator:no_collision at @s run tp @s ~ ~1 ~
 
 # 敵に十分近づいた場合，噛みつきに遷移
 execute positioned ^ ^ ^4 if entity @e[tag=ReusAttackTarget,distance=0..4] run function asa_animator:reus/normal/dash/effect/change
