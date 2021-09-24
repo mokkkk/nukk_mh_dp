@@ -16,6 +16,9 @@ bossbar set asa_animator:reus_health players @a
 bossbar set asa_animator:reus_health visible true
 execute store result bossbar asa_animator:reus_health value run scoreboard players get #mhdp_reus_health AsaMatrix
 
+# タイマーセット
+scoreboard players set #mhdp_reus_kill_timer AsaMatrix 0
+
 # エラーメッセージ
 execute if data storage mhdp: {ExistMonster:1b} run tellraw @a {"text": "【既に火竜が存在するため，召喚できません】"}
 
