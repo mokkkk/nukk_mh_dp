@@ -1,2 +1,0 @@
-execute if block ~ ~ ~ #asa_animator:no_collision positioned ~ ~-1 ~ run function asa_animator:reus/flying_height/effect/check_ground_pos
-execute at @s if block ~ ~-1.5 ~ #asa_animator:no_collision run tp @s ~ ~-1 ~
