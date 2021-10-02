@@ -1,1 +1,1 @@
-data modify entity @s ArmorItems[3].tag merge from storage asa_matrix: Rotate
+data modify entity @s ArmorItems[3].tag.Rotate set from storage asa_matrix: Rotate
