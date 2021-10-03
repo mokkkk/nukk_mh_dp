@@ -72,6 +72,13 @@
         "predicate": {
           "nbt": "{Tags:[\"AnmTailWhip\"]}"
         }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmPress\"]}"
+        }
       }
     ]
   }

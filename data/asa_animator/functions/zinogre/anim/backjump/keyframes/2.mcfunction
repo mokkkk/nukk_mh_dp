@@ -1,301 +1,44 @@
-tag @s add RotateChanged
-scoreboard players add #asa_zinogre_kindex AsaMatrix 1
-scoreboard players set #asa_zinogre_tick_end AsaMatrix 10
-scoreboard players operation #asa_zinogre_tick_end AsaMatrix *= #asam_const_1000 AsaMatrix
-scoreboard players operation #asa_zinogre_tick_end AsaMatrix /= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players set #asa_zinogre_move_pos_x AsaMatrix 200
-scoreboard players operation #asa_zinogre_move_pos_x AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_zinogre_move_pos_x AsaMatrix /= #asam_const_1000 AsaMatrix
-scoreboard players set #asa_zinogre_move_pos_y AsaMatrix -200
-scoreboard players operation #asa_zinogre_move_pos_y AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_zinogre_move_pos_y AsaMatrix /= #asam_const_1000 AsaMatrix
-scoreboard players set #asa_zinogre_move_pos_z AsaMatrix -400
-scoreboard players operation #asa_zinogre_move_pos_z AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_zinogre_move_pos_z AsaMatrix /= #asam_const_1000 AsaMatrix
-data merge storage asa_matrix: {Rotate:[0f,0f,0f]}
-scoreboard players set #asa_temp AsaMatrix 500
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[0] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 11000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[1] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix -1000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[2] float 1 run scoreboard players get #asa_temp AsaMatrix
+data modify storage asa_matrix: Rotate set value [500f,11000f,-1000f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=HeadU] run function #asa_matrix:animate_setparam
-scoreboard players set #asa_temp AsaMatrix 1500
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[0] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 11000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[1] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix -1000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[2] float 1 run scoreboard players get #asa_temp AsaMatrix
+data modify storage asa_matrix: Rotate set value [1500f,11000f,-1000f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=HeadL] run function #asa_matrix:animate_setparam
-scoreboard players set #asa_temp AsaMatrix 500
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[0] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 9500
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[1] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix -500
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[2] float 1 run scoreboard players get #asa_temp AsaMatrix
+data modify storage asa_matrix: Rotate set value [500f,9500f,-500f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=Neck0] run function #asa_matrix:animate_setparam
-scoreboard players set #asa_temp AsaMatrix 2000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[0] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 8000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[1] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 0
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[2] float 1 run scoreboard players get #asa_temp AsaMatrix
+data modify storage asa_matrix: Rotate set value [2000f,8000f,0f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=Neck1] run function #asa_matrix:animate_setparam
-scoreboard players set #asa_temp AsaMatrix 3500
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[0] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 8000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[1] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 0
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[2] float 1 run scoreboard players get #asa_temp AsaMatrix
+data modify storage asa_matrix: Rotate set value [3500f,8000f,0f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=Neck2] run function #asa_matrix:animate_setparam
-scoreboard players set #asa_temp AsaMatrix 3500
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[0] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 8000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[1] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 0
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[2] float 1 run scoreboard players get #asa_temp AsaMatrix
+data modify storage asa_matrix: Rotate set value [3500f,8000f,0f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=Body0] run function #asa_matrix:animate_setparam
-scoreboard players set #asa_temp AsaMatrix 5000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[0] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 6000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[1] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 0
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[2] float 1 run scoreboard players get #asa_temp AsaMatrix
+data modify storage asa_matrix: Rotate set value [5000f,6000f,0f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=Body1] run function #asa_matrix:animate_setparam
-scoreboard players set #asa_temp AsaMatrix 2000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[0] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 6000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[1] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 0
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[2] float 1 run scoreboard players get #asa_temp AsaMatrix
+data modify storage asa_matrix: Rotate set value [2000f,6000f,0f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=LegL0] run function #asa_matrix:animate_setparam
-scoreboard players set #asa_temp AsaMatrix 2000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[0] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 6000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[1] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 0
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[2] float 1 run scoreboard players get #asa_temp AsaMatrix
+data modify storage asa_matrix: Rotate set value [2000f,6000f,0f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=LegR0] run function #asa_matrix:animate_setparam
-scoreboard players set #asa_temp AsaMatrix 2000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[0] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 6000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[1] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 0
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[2] float 1 run scoreboard players get #asa_temp AsaMatrix
+data modify storage asa_matrix: Rotate set value [2000f,6000f,0f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=LegL1] run function #asa_matrix:animate_setparam
-scoreboard players set #asa_temp AsaMatrix 2000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[0] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 6000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[1] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 0
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[2] float 1 run scoreboard players get #asa_temp AsaMatrix
+data modify storage asa_matrix: Rotate set value [2000f,6000f,0f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=LegR1] run function #asa_matrix:animate_setparam
-scoreboard players set #asa_temp AsaMatrix -2000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[0] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 6000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[1] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 0
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[2] float 1 run scoreboard players get #asa_temp AsaMatrix
+data modify storage asa_matrix: Rotate set value [-2000f,6000f,0f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=LegL2] run function #asa_matrix:animate_setparam
-scoreboard players set #asa_temp AsaMatrix -2000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[0] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 6000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[1] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 0
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[2] float 1 run scoreboard players get #asa_temp AsaMatrix
+data modify storage asa_matrix: Rotate set value [-2000f,6000f,0f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=LegR2] run function #asa_matrix:animate_setparam
-scoreboard players set #asa_temp AsaMatrix 2000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[0] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 6500
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[1] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 0
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[2] float 1 run scoreboard players get #asa_temp AsaMatrix
+data modify storage asa_matrix: Rotate set value [2000f,6500f,0f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=Tail0] run function #asa_matrix:animate_setparam
-scoreboard players set #asa_temp AsaMatrix 3000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[0] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 7000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[1] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 0
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[2] float 1 run scoreboard players get #asa_temp AsaMatrix
+data modify storage asa_matrix: Rotate set value [3000f,7000f,0f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=Tail1] run function #asa_matrix:animate_setparam
-scoreboard players set #asa_temp AsaMatrix 3000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[0] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 7500
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[1] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 0
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[2] float 1 run scoreboard players get #asa_temp AsaMatrix
+data modify storage asa_matrix: Rotate set value [3000f,7500f,0f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=Tail2] run function #asa_matrix:animate_setparam
-scoreboard players set #asa_temp AsaMatrix -3500
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[0] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 0
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[1] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 0
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[2] float 1 run scoreboard players get #asa_temp AsaMatrix
+data modify storage asa_matrix: Rotate set value [-3500f,0f,0f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=ArmL0] run function #asa_matrix:animate_setparam
-scoreboard players set #asa_temp AsaMatrix -3500
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[0] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 16000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[1] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 0
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[2] float 1 run scoreboard players get #asa_temp AsaMatrix
+data modify storage asa_matrix: Rotate set value [-3500f,16000f,0f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=ArmR0] run function #asa_matrix:animate_setparam
-scoreboard players set #asa_temp AsaMatrix -4500
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[0] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 0
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[1] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 0
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[2] float 1 run scoreboard players get #asa_temp AsaMatrix
+data modify storage asa_matrix: Rotate set value [-4500f,0f,0f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=ArmL1] run function #asa_matrix:animate_setparam
-scoreboard players set #asa_temp AsaMatrix -4500
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[0] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 16000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[1] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 0
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[2] float 1 run scoreboard players get #asa_temp AsaMatrix
+data modify storage asa_matrix: Rotate set value [-4500f,16000f,0f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=ArmR1] run function #asa_matrix:animate_setparam
-scoreboard players set #asa_temp AsaMatrix -3000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[0] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 0
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[1] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 0
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[2] float 1 run scoreboard players get #asa_temp AsaMatrix
+data modify storage asa_matrix: Rotate set value [-3000f,0f,0f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=ArmL2] run function #asa_matrix:animate_setparam
-scoreboard players set #asa_temp AsaMatrix -3000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[0] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 13000
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[1] float 1 run scoreboard players get #asa_temp AsaMatrix
-scoreboard players set #asa_temp AsaMatrix 0
-scoreboard players operation #asa_temp AsaMatrix *= #asa_zinogre_anmspeed AsaMatrix
-scoreboard players operation #asa_temp AsaMatrix /= #asam_const_1000 AsaMatrix
-execute store result storage asa_matrix: Rotate[2] float 1 run scoreboard players get #asa_temp AsaMatrix
+data modify storage asa_matrix: Rotate set value [-3000f,13000f,0f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=ArmR2] run function #asa_matrix:animate_setparam

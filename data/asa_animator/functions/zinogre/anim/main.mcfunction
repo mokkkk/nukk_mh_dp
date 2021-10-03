@@ -24,3 +24,6 @@ execute if entity @s[tag=AnmTailSpin] run function asa_animator:zinogre/anim/tai
 
 # 尻尾ビターン
 execute if entity @s[tag=AnmTailWhip] run function asa_animator:zinogre/anim/tail_whip/main
+
+# ボディプレス
+execute if entity @s[tag=AnmPress] run function asa_animator:zinogre/anim/press/main

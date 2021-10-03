@@ -1,1 +1,0 @@
-execute if score #asa_zinogre_kindex AsaMatrix matches 0..2 run function asa_animator:zinogre/manager/rotate

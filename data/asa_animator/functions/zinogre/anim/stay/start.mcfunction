@@ -1,5 +1,3 @@
-scoreboard players set #asa_zinogre_tick_current AsaMatrix 0
-function asa_animator:zinogre/anim/stay/events/set_tick
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=HeadU] run data merge entity @s {Pose:{Head:[37f,0f,0f]}}
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=HeadL] run data merge entity @s {Pose:{Head:[37f,0f,0f]}}
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=Neck0] run data merge entity @s {Pose:{Head:[7f,0f,0f]}}
