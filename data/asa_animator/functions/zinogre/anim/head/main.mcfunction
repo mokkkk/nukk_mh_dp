@@ -18,3 +18,5 @@ function asa_animator:zinogre/model
 # ホーミング
 execute if score #asa_zinogre_kindex AsaMatrix matches ..14 run function asa_animator:zinogre/manager/rotate_fast
 execute if score #asa_zinogre_kindex AsaMatrix matches 21..25 at @s unless entity @e[tag=ZinogreAttackTarget,distance=0..4] run tp @s ^ ^ ^0.5 ~ ~
+
+execute if score @s AsaMatrix matches 23 run function asa_animator:zinogre/anim/head/events/damage

@@ -11,4 +11,9 @@ execute if score @s AsaMatrix matches 25.. run function asa_animator:zinogre/ani
 execute as @e[type=armor_stand,tag=ZinogreParts] run function #asa_matrix:animate
 function asa_animator:zinogre/model
 
+execute if score @s AsaMatrix matches 1..12 run playsound block.grass.step master @a ~ ~ ~ 2 1
+execute if score @s AsaMatrix matches 1..12 run particle block grass ~ ~ ~ 1 0 1 0 10
 execute if score @s AsaMatrix matches ..12 run function asa_animator:zinogre/manager/rotate_fast
+
+execute at @s if block ~ ~-1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
+execute at @s unless block ~ ~ ~ #asa_animator:no_collision run tp @s ~ ~0.5 ~ ~ ~

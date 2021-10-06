@@ -14,11 +14,10 @@ tag @e[type=#asa_animator:attack_target,tag=!ZinogreParts,tag=!ZinogreTarget,dis
 tag @a[tag=ZinogreTarget,limit=1,sort=random] add ZinogreAttackTarget
 execute unless entity @e[tag=ZinogreAttackTarget] run tag @e[tag=ZinogreTarget,limit=1,sort=random] add ZinogreAttackTarget
 
-# 体力半減時，一度だけ怒り遷移
-
-
-# 固定
-tag @s add AnmHead
+# 通常時
+execute unless entity @s[tag=IsThunder] run function asa_animator:zinogre/manager/change_normal/change
+# 超帯電時
+execute if entity @s[tag=IsThunder] run function asa_animator:zinogre/manager/change_thunder/change
 
 # 終了
 tag @s remove ChangeAnm

@@ -28,5 +28,6 @@ execute if score @s AsaMatrix matches 1..20 run function asa_animator:zinogre/ma
 
 # 攻撃
 execute if score @s AsaMatrix matches 21 run playsound entity.player.attack.sweep master @a ~ ~ ~ 2 0.5
-execute if score @s AsaMatrix matches 27 positioned ^ ^ ^2 run function asa_animator:zinogre/anim/press/events/damage
+execute if score @s AsaMatrix matches 27 positioned ^ ^ ^2 unless entity @s[tag=IsThunder] run function asa_animator:zinogre/anim/press/events/damage
+execute if score @s AsaMatrix matches 27 positioned ^ ^ ^2 if entity @s[tag=IsThunder] run function asa_animator:zinogre/anim/press/events/damage_thunder
 execute if score @s AsaMatrix matches 27 positioned ^ ^ ^2 run particle block grass ~ ~ ~ 1.5 0 1.5 0 20

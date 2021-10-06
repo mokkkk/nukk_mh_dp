@@ -12,13 +12,16 @@ execute if score @s AsaMatrix matches 23..28 run tp @s ^0.1666667 ^-0.3333333 ^-
 execute if score @s AsaMatrix matches 29 run function asa_animator:zinogre/anim/backjump/keyframes/4
 execute if score @s AsaMatrix matches 29..35 run tp @s ^0.1428571 ^0 ^-0.1428571
 execute if score @s AsaMatrix matches 36 run function asa_animator:zinogre/anim/backjump/keyframes/5
-execute if score @s AsaMatrix matches 36..45 run tp @s ^0 ^0 ^0
+execute if score @s AsaMatrix matches 36..45 run tp @s ^0 ^0 ^-0.07
 execute if score @s AsaMatrix matches 46.. run function asa_animator:zinogre/anim/backjump/end
 execute as @e[type=armor_stand,tag=ZinogreParts] run function #asa_matrix:animate
 function asa_animator:zinogre/model
 
 execute if score @s AsaMatrix matches 1..10 run function asa_animator:zinogre/manager/rotate
-execute if score @s AsaMatrix matches 12 run function asa_animator:zinogre/anim/backjump/events/pos/set_pos
+execute if score @s AsaMatrix matches 1 run function asa_animator:zinogre/anim/backjump/events/pos/set_pos
 execute if score @s AsaMatrix matches 12..28 run function asa_animator:zinogre/anim/backjump/events/pos/offset
 
+execute if score @s AsaMatrix matches 6 run playsound block.grass.fall master @a ~ ~ ~ 3 1
+execute if score @s AsaMatrix matches 28..30 run playsound block.grass.step master @a ~ ~ ~ 3 1
 execute if score @s AsaMatrix matches 28..35 run particle block grass ~ ~0.1 ~ 2 0.1 2 0 20 
+execute if score @s AsaMatrix matches 28.. unless block ~ ~ ~ #asa_animator:no_collision run tp @s ~ ~0.5 ~ ~ ~

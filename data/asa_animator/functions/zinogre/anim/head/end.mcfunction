@@ -1,4 +1,6 @@
 scoreboard players set @s AsaMatrix 0
 execute as @e[type=armor_stand,tag=ZinogreParts] run function #asa_matrix:animate_reset
 tag @s remove AnmHead
-tag @s add AnmBjump
+
+execute unless entity @s[tag=IsThunder] run function asa_animator:zinogre/anim/head/events/change_normal
+execute if entity @s[tag=IsThunder] run function asa_animator:zinogre/anim/head/events/change_thunder

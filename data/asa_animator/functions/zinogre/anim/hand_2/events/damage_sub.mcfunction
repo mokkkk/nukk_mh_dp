@@ -1,4 +1,4 @@
 # ダメージ
-tag @s add D_ZinogreTackle
+tag @s add D_ZinogreHand
 function mh_dp:damage/attack
-tag @s remove D_ZinogreTackle
+tag @s remove D_ZinogreHand

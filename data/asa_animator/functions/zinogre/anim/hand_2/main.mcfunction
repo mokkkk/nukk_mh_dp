@@ -20,7 +20,7 @@ execute if score @s AsaMatrix matches 36..40 run tp @s ^0 ^-0.22 ^0
 execute if score @s AsaMatrix matches 41 run function asa_animator:zinogre/anim/hand_2/keyframes/8
 execute if score @s AsaMatrix matches 41..43 run tp @s ^0 ^0.1 ^0
 execute if score @s AsaMatrix matches 44 run function asa_animator:zinogre/anim/hand_2/keyframes/9
-execute if score @s AsaMatrix matches 44..55 run tp @s ^0 ^0 ^0
+execute if score @s AsaMatrix matches 44..55 run tp @s ^0 ^0 ^0 ~0.1 ~
 execute if score @s AsaMatrix matches 56 run function asa_animator:zinogre/anim/hand_2/keyframes/10
 execute if score @s AsaMatrix matches 56..70 run tp @s ^0 ^0 ^0
 execute if score @s AsaMatrix matches 71.. run function asa_animator:zinogre/anim/hand_2/end

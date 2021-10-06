@@ -14,5 +14,7 @@ execute if score @s AsaMatrix matches 51.. run function asa_animator:zinogre/ani
 execute as @e[type=armor_stand,tag=ZinogreParts] run function #asa_matrix:animate
 function asa_animator:zinogre/model
 
-execute if block ~ ~-1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
-execute unless block ~ ~ ~ #asa_animator:no_collision run tp @s ~ ~0.5 ~ ~ ~
+execute if score @s AsaMatrix matches 1 if score #mhdp_zinogre_actcount AsaMatrix matches 1.. run function asa_animator:zinogre/anim/stay/events/change
+
+execute at @s if block ~ ~-1 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
+execute at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.5 ~ ~ ~
