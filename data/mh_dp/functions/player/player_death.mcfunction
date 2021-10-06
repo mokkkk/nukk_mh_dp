@@ -11,4 +11,7 @@ tag @s remove ReusAttackTarget
 tag @s remove DiablosTarget
 tag @s remove DiablosAttackTarget
 
+tag @s remove ZinogreTarget
+tag @s remove ZinogreAttackTarget
+
 tag @s remove Dead

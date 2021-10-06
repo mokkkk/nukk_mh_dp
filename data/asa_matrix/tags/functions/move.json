@@ -1,0 +1,9 @@
+{
+	"replace": false,
+	"values": [
+		"asa_matrix:get_matrix/rotation_world",
+		"asa_matrix:pos/get_parent_pos",
+		"asa_matrix:move/rotation_world",
+		"asa_matrix:move/move_root_pos"
+	]
+}
