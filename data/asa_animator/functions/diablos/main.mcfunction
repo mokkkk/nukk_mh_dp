@@ -1,23 +1,33 @@
 
 # アニメーション遷移
-# execute if entity @s[tag=ChangeAnm] run function asa_animator:diablos/manager/change
+execute if entity @s[tag=ChangeAnm] run function asa_animator:diablos/manager/change
 
 # 地上
 # 待機
-function asa_animator:diablos/anim/normal/stay/main
+execute if predicate asa_animator:diablos/stay run function asa_animator:diablos/anim/normal/stay/main
+
+# 頭振り回し
+execute if entity @s[tag=AnmAttack] run function asa_animator:diablos/anim/normal/head/main
+
+# 頭突き刺し
+execute if entity @s[tag=AnmHead] run function asa_animator:diablos/anim/normal/head_horne/main
 
 # タックル
-# execute if entity @s[tag=AnmTackle] run function asa_animator:diablos/tackle/main
-# 頭振り回し
-# execute if entity @s[tag=AnmAttack] run function asa_animator:diablos/attack/main
-# 尻尾回転
-# execute if entity @s[tag=AnmTail] run function asa_animator:diablos/tail/main
+execute if entity @s[tag=AnmTackle] run function asa_animator:diablos/anim/normal/tackle/main
 
-# ジャンプ攻撃
-# execute if entity @s[tag=AnmJump] run function asa_animator:diablos/jump/main
+# 尻尾回転
+execute if entity @s[tag=AnmTailSpin] run function asa_animator:diablos/anim/normal/tail_spin/main
+
+# 短距離突進
+execute if entity @s[tag=AnmShortDash] run function asa_animator:diablos/anim/normal/short_dash/main
+
+# 歩き→短距離突進
+execute if entity @s[tag=AnmWalk] run function asa_animator:diablos/anim/normal/walk/main
+execute if entity @s[tag=AnmShortDashC] run function asa_animator:diablos/anim/normal/short_dash_combo/main
 
 # 移動
 # execute if entity @s[tag=AnmMove] run function asa_animator:diablos/move/main
+# 噛みつき
 
 # 突進開始（構え）
 # execute if entity @s[tag=AnmStartD1] run function asa_animator:diablos/startdash1/main

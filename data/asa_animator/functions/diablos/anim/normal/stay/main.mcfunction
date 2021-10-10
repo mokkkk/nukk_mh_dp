@@ -6,15 +6,18 @@ execute if score @s AsaMatrix matches 1..10 run tp @s ^0 ^-0.005 ^-0.01
 execute if score @s AsaMatrix matches 11 run function asa_animator:diablos/anim/normal/stay/keyframes/1
 execute if score @s AsaMatrix matches 11..15 run tp @s ^0 ^0.01 ^0.02
 execute if score @s AsaMatrix matches 16 run function asa_animator:diablos/anim/normal/stay/keyframes/2
-execute if score @s AsaMatrix matches 16..20 run tp @s ^0 ^0 ^0
+execute if score @s AsaMatrix matches 16..20 run tp @s ^0 ^0 ^-0.02
 execute if score @s AsaMatrix matches 21 run function asa_animator:diablos/anim/normal/stay/keyframes/3
-execute if score @s AsaMatrix matches 21..25 run tp @s ^0 ^-0.01 ^0.04
+execute if score @s AsaMatrix matches 21..25 run tp @s ^0 ^-0.01 ^0.1
 execute if score @s AsaMatrix matches 26 run function asa_animator:diablos/anim/normal/stay/keyframes/4
-execute if score @s AsaMatrix matches 26..40 run tp @s ^0 ^0.003333333 ^0.01333333
+execute if score @s AsaMatrix matches 26..40 run tp @s ^0 ^0.003333333 ^0.02
 execute if score @s AsaMatrix matches 41 run function asa_animator:diablos/anim/normal/stay/keyframes/5
-execute if score @s AsaMatrix matches 41..70 run tp @s ^0 ^0 ^0
-execute if score @s AsaMatrix matches 71 run function asa_animator:diablos/anim/normal/stay/keyframes/6
-execute if score @s AsaMatrix matches 71..80 run tp @s ^0 ^0 ^-0.04
-execute if score @s AsaMatrix matches 81.. run function asa_animator:diablos/anim/normal/stay/end
+execute if score @s AsaMatrix matches 41..55 run tp @s ^0 ^0 ^0
+execute if score @s AsaMatrix matches 56 run function asa_animator:diablos/anim/normal/stay/keyframes/6
+execute if score @s AsaMatrix matches 56..65 run tp @s ^0 ^0 ^-0.07
+execute if score @s AsaMatrix matches 66.. run function asa_animator:diablos/anim/normal/stay/end
 execute as @e[type=armor_stand,tag=DiablosParts] run function #asa_matrix:animate
 function asa_animator:diablos/model
+
+execute at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
+execute at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~

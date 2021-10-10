@@ -1,6 +1,4 @@
 
-
-
 # ターゲットリセット
 tag @e[tag=DiablosTarget] remove DiablosTarget
 tag @e[tag=DiablosAttackTarget] remove DiablosAttackTarget
@@ -8,19 +6,16 @@ tag @e[tag=DiablosAttackTarget] remove DiablosAttackTarget
 scoreboard players set @s AsaMatrix 0
 
 # ターゲット探索
-tag @e[type=#asa_animator:attack_target,tag=!DiablosParts,tag=!DiablosTarget,distance=0..50] add DiablosTarget
+tag @e[type=#asa_animator:attack_target,tag=!DiablosParts,tag=!DiablosTarget,distance=0..50,tag=!NotTarget] add DiablosTarget
 # ターゲット決定
-execute if predicate asa_animator:random/070 run tag @e[type=player,tag=DiablosTarget,limit=1,sort=random] add DiablosAttackTarget
-execute unless entity @e[tag=DiablosAttackTarget] run execute as @e[tag=DiablosTarget,limit=1,sort=random] if block ~ ~ ~ air run tag @s add DiablosAttackTarget
+tag @a[tag=DiablosTarget,limit=1,sort=random] add DiablosAttackTarget
+execute unless entity @e[tag=DiablosAttackTarget] run tag @e[tag=DiablosTarget,limit=1,sort=random] add DiablosAttackTarget
 
-# 近距離
-execute if entity @e[tag=DiablosAttackTarget,distance=..9] run function asa_animator:diablos/manager/range_near
+# 通常時
+# execute unless entity @s[tag=IsThunder] run function asa_animator:diablos/manager/change_normal/change
 
-# 中距離
-execute if entity @e[tag=DiablosAttackTarget,distance=10..23] run function asa_animator:diablos/manager/range_middle
-
-# 遠距離
-execute unless entity @e[type=!player,tag=DiablosAttackTarget] if entity @e[tag=DiablosAttackTarget,distance=24..] run function asa_animator:diablos/manager/range_far
+# 強制
+tag @s add AnmHead
 
 # 終了
 tag @s remove ChangeAnm

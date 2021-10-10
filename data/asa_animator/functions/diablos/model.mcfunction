@@ -1,5 +1,5 @@
 function #asa_matrix:matrix
-execute as @e[type=armor_stand,tag=DiablosParts,tag=Body1,limit=1] rotated ~ 0 run tp @s ^0 ^2.2 ^0 ~ ~
+execute as @e[type=armor_stand,tag=DiablosParts,tag=Body1,limit=1] rotated ~ 0 run tp @s ^0 ^2.3 ^0 ~ ~
 execute as @e[type=armor_stand,tag=DiablosParts,tag=Body1,limit=1] at @s run function #asa_matrix:get_parent_pos
 execute as @e[type=armor_stand,tag=DiablosParts,tag=Body1,limit=1] run function #asa_matrix:matrix_node
 scoreboard players set #asa_child_pos_x AsaMatrix 0
