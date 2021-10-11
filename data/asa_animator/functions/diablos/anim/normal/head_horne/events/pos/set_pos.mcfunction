@@ -1,6 +1,6 @@
 
 # 地上にmarkerセット
-summon marker ^ ^ ^-3 {Tags:["DiablosHeadPos"]}
+summon marker ^ ^ ^-4 {Tags:["DiablosHeadPos"]}
 execute as @e[type=marker,tag=DiablosHeadPos,limit=1] at @s align y run function asa_animator:zinogre/manager/check_ground
 
 # ポジション差分取得

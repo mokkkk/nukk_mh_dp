@@ -15,7 +15,7 @@ execute unless entity @e[tag=DiablosAttackTarget] run tag @e[tag=DiablosTarget,l
 # execute unless entity @s[tag=IsThunder] run function asa_animator:diablos/manager/change_normal/change
 
 # 強制
-tag @s add AnmHead
+tag @s add AnmDive
 
 # 終了
 tag @s remove ChangeAnm

@@ -1,10 +1,10 @@
-data modify storage asa_matrix: Rotate set value [1666f,0f,0f]
+data modify storage asa_matrix: Rotate set value [3333f,0f,0f]
 execute as @e[type=armor_stand,tag=DiablosParts,tag=HeadU] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [1666f,0f,0f]
+data modify storage asa_matrix: Rotate set value [3333f,0f,0f]
 execute as @e[type=armor_stand,tag=DiablosParts,tag=HeadL] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-3334f,0f,0f]
+data modify storage asa_matrix: Rotate set value [-1667f,0f,0f]
 execute as @e[type=armor_stand,tag=DiablosParts,tag=Neck0] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-4167f,0f,0f]
+data modify storage asa_matrix: Rotate set value [-3334f,0f,0f]
 execute as @e[type=armor_stand,tag=DiablosParts,tag=Neck1] run function #asa_matrix:animate_setparam
 data modify storage asa_matrix: Rotate set value [-4167f,0f,0f]
 execute as @e[type=armor_stand,tag=DiablosParts,tag=Neck2] run function #asa_matrix:animate_setparam

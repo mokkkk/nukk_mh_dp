@@ -19,5 +19,7 @@ execute if score @s AsaMatrix matches 66.. run function asa_animator:diablos/ani
 execute as @e[type=armor_stand,tag=DiablosParts] run function #asa_matrix:animate
 function asa_animator:diablos/model
 
+execute if score @s AsaMatrix matches 1 if score #mhdp_diablos_actcount AsaMatrix matches 1.. run function asa_animator:diablos/anim/normal/stay/events/change
+
 execute at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
 execute at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~
