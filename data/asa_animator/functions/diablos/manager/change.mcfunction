@@ -12,12 +12,10 @@ tag @a[tag=DiablosTarget,limit=1,sort=random] add DiablosAttackTarget
 execute unless entity @e[tag=DiablosAttackTarget] run tag @e[tag=DiablosTarget,limit=1,sort=random] add DiablosAttackTarget
 
 # 通常時
-# execute unless entity @s[tag=IsAnger] run function asa_animator:diablos/manager/change_normal/change
+function asa_animator:diablos/manager/change_normal/change
 
 # 軸合わせ
 execute if predicate asa_animator:diablos/turn run tag @s add AnmTurn
-
-tag @s add AnmDive
 
 # 終了
 tag @s remove ChangeAnm

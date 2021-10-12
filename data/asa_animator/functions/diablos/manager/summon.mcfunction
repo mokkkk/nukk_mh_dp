@@ -6,7 +6,7 @@ execute if entity @e[type=armor_stand,tag=DiablosRoot] run data modify storage m
 execute if data storage mhdp: {ExistMonster:0b} rotated ~ 0 positioned ^ ^-9 ^5 run function asa_animator:diablos/summon
 
 # 当たり判定召喚
-execute if data storage mhdp: {ExistMonster:0b} rotated ~ 0 positioned ^ ^-9 ^5 run function asa_animator:diablos/health/summon
+execute if data storage mhdp: {ExistMonster:0b} rotated ~ 0 positioned ^ ^-9 ^5 run function asa_animator:diablos/manager/health/summon
 
 # HPセット
 scoreboard players set #mhdp_diablos_health AsaMatrix 50000

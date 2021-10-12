@@ -18,13 +18,9 @@ execute if score @s AsaMatrix matches 61 run function asa_animator:diablos/anim/
 execute if score @s AsaMatrix matches 61..66 run tp @s ^0 ^0 ^0
 execute if score @s AsaMatrix matches 67 run function asa_animator:diablos/anim/normal/dive_jump/keyframes/8
 execute if score @s AsaMatrix matches 67..75 run tp @s ^0 ^0 ^0
-execute if score @s AsaMatrix matches 76.. run function asa_animator:diablos/anim/normal/dive_jump/end
+execute if score @s AsaMatrix matches 76.. run function asa_animator:diablos/anim/normal/summon/end
 execute as @e[type=armor_stand,tag=DiablosParts] run function #asa_matrix:animate
 function asa_animator:diablos/model
-
-# 攻撃
-execute if score @s AsaMatrix matches 5 as @e[type=armor_stand,tag=DiablosParts] run function asa_animator:diablos/anim/normal/dive/events/change_to_normal
-execute if score @s AsaMatrix matches 8 positioned ~ ~3 ~ run function asa_animator:diablos/anim/normal/dive_jump/events/damage
 
 # 位置決定
 execute if score @s AsaMatrix matches 25 run function asa_animator:diablos/anim/normal/dive_jump/events/pos/set_pos

@@ -11,11 +11,9 @@ execute unless entity @s[tag=AnmTurn] unless entity @s[tag=IsAnger] run function
 execute unless entity @s[tag=AnmTurn] if entity @s[tag=IsAnger] run function asa_animator:diablos/anim/anger/main
 
 # 登場
-# execute if entity @s[tag=AnmSummon] run function asa_animator:diablos/summon/main
-# 威嚇
-# execute if entity @s[tag=AnmVoice] run function asa_animator:diablos/voice/main
+execute if entity @s[tag=AnmSummon] run function asa_animator:diablos/anim/normal/summon/main
 # 死亡
-# execute if entity @s[tag=AnmDeath] run function asa_animator:diablos/death/main
+execute if entity @s[tag=AnmDeath] run function asa_animator:diablos/anim/normal/death/main
 
 # 当たり判定位置
 execute as @e[type=slime,tag=DiablosParts] run function asa_animator:diablos/manager/health/pos

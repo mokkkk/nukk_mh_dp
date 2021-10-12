@@ -135,6 +135,20 @@
         "predicate": {
           "nbt": "{Tags:[\"AnmAnger\"]}"
         }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmSummon\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmDeath\"]}"
+        }
       }
     ]
   }
