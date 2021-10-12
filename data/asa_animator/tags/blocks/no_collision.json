@@ -28,6 +28,11 @@
         "minecraft:kelp",
         "minecraft:kelp_plant",
         "minecraft:seagrass",
-        "minecraft:tall_seagrass"
+        "minecraft:tall_seagrass",
+        "minecraft:redstone_wire",
+        "minecraft:repeater",
+        "minecraft:comparator",
+        "minecraft:torch",
+        "minecraft:redstone_torch"
     ]
 }

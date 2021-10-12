@@ -2,7 +2,7 @@
 scoreboard players add @s AsaMatrix 1
 execute if score @s AsaMatrix matches 1 run function asa_animator:zinogre/anim/stay/start
 execute if score @s AsaMatrix matches 1 run function asa_animator:zinogre/anim/stay/keyframes/0
-execute if score @s AsaMatrix matches 1..8 run tp @s ^0 ^0.025 ^-0.05
+execute if score @s AsaMatrix matches 1..8 run tp @s ^0 ^0.025 ^-0.05 ~0.1 ~
 execute if score @s AsaMatrix matches 9 run function asa_animator:zinogre/anim/stay/keyframes/1
 execute if score @s AsaMatrix matches 12 run function asa_animator:zinogre/anim/stay/keyframes/2
 execute if score @s AsaMatrix matches 12..18 run tp @s ^0 ^-0.02857143 ^0.05714286

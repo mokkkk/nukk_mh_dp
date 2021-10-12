@@ -8,7 +8,7 @@ scoreboard players set @s AsaMatrix 0
 # ターゲット探索
 tag @e[type=#asa_animator:attack_target,tag=!DiablosParts,tag=!DiablosTarget,distance=0..50,tag=!NotTarget] add DiablosTarget
 # ターゲット決定
-tag @a[tag=DiablosTarget,limit=1,sort=random] add DiablosAttackTarget
+tag @a[tag=DiablosTarget,limit=1,sort=random,tag=!NotTarget] add DiablosAttackTarget
 execute unless entity @e[tag=DiablosAttackTarget] run tag @e[tag=DiablosTarget,limit=1,sort=random] add DiablosAttackTarget
 
 # 怒り変化
