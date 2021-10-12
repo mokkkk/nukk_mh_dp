@@ -45,6 +45,3 @@ execute if entity @s[tag=AnmDashTurn] run function asa_animator:diablos/anim/nor
 execute if entity @s[tag=AnmDive] run function asa_animator:diablos/anim/normal/dive/main
 # 飛び出し
 execute if entity @s[tag=AnmDiveJump] run function asa_animator:diablos/anim/normal/dive_jump/main
-
-# 怒り開始
-execute if entity @s[tag=AnmAnger] run function asa_animator:diablos/anim/normal/anger/main

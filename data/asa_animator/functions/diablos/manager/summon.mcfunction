@@ -9,12 +9,15 @@ execute if data storage mhdp: {ExistMonster:0b} rotated ~ 0 positioned ^ ^-9 ^5 
 execute if data storage mhdp: {ExistMonster:0b} rotated ~ 0 positioned ^ ^-9 ^5 run function asa_animator:diablos/manager/health/summon
 
 # HPセット
-scoreboard players set #mhdp_diablos_health AsaMatrix 50000
+scoreboard players set #mhdp_diablos_health AsaMatrix 60000
 execute if data storage mhdp: {ExistMonster:0b} run bossbar add asa_animator:diablos_health {"text": "角竜"}
-bossbar set asa_animator:diablos_health max 50000
+bossbar set asa_animator:diablos_health max 60000
 bossbar set asa_animator:diablos_health players @a
 bossbar set asa_animator:diablos_health visible true
 execute store result bossbar asa_animator:diablos_health value run scoreboard players get #mhdp_diablos_health AsaMatrix
+
+# タイマーセット
+scoreboard players set #mhdp_diablos_kill_timer AsaMatrix 0
 
 # エラーメッセージ
 execute if data storage mhdp: {ExistMonster:1b} run tellraw @a {"text": "【既に角竜が存在するため，召喚できません】"}

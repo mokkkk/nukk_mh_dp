@@ -2,7 +2,7 @@
 scoreboard players add @s AsaMatrix 1
 execute if score @s AsaMatrix matches 1 run function asa_animator:diablos/anim/normal/death/start
 execute if score @s AsaMatrix matches 1 run function asa_animator:diablos/anim/normal/death/keyframes/0
-execute if score @s AsaMatrix matches 1..15 run tp @s ^0 ^-0.01333333 ^0.01333333
+execute if score @s AsaMatrix matches 1..15 run tp @s ^0 ^-0.01333333 ^0.01333333 ~-1 ~
 execute if score @s AsaMatrix matches 16 run function asa_animator:diablos/anim/normal/death/keyframes/1
 execute if score @s AsaMatrix matches 16..20 run tp @s ^0 ^0 ^0
 execute if score @s AsaMatrix matches 21 run function asa_animator:diablos/anim/normal/death/keyframes/2
@@ -20,3 +20,6 @@ execute if score @s AsaMatrix matches 66..90 run tp @s ^0 ^0 ^0
 execute if score @s AsaMatrix matches 91.. run function asa_animator:diablos/anim/normal/death/end
 execute as @e[type=armor_stand,tag=DiablosParts] run function #asa_matrix:animate
 function asa_animator:diablos/model
+
+execute if score @s AsaMatrix matches 1..40 at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
+execute if score @s AsaMatrix matches 1..40 at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~

@@ -11,5 +11,8 @@ execute store result bossbar asa_animator:diablos_health value run scoreboard pl
 # 効果音など
 playsound minecraft:entity.player.hurt master @a ~ ~ ~ 2 1
 
+# 怒り変化
+execute as @e[type=armor_stand,tag=DiablosRoot] run function asa_animator:diablos/manager/anger/main
+
 # 死亡時，アニメーション設定
 execute if score #mhdp_diablos_health AsaMatrix matches ..0 as @e[type=armor_stand,tag=DiablosRoot] run function asa_animator:diablos/manager/start_death_animation

@@ -18,3 +18,5 @@ execute as @e[type=armor_stand,tag=DiablosParts,tag=WingL0] run data merge entit
 execute as @e[type=armor_stand,tag=DiablosParts,tag=WingR0] run data merge entity @s {Pose:{Head:[70f,0f,0f]}}
 execute as @e[type=armor_stand,tag=DiablosParts,tag=WingL1] run data merge entity @s {Pose:{Head:[70f,0f,0f]}}
 execute as @e[type=armor_stand,tag=DiablosParts,tag=WingR1] run data merge entity @s {Pose:{Head:[70f,0f,0f]}}
+tag @s add IsAnger
+scoreboard players set #mhdp_diablos_anger_actcount AsaMatrix 0
