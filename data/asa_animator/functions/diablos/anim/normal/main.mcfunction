@@ -38,8 +38,13 @@ execute if entity @s[tag=AnmDash] run function asa_animator:diablos/anim/normal/
 execute if entity @s[tag=AnmDashAttack] run function asa_animator:diablos/anim/normal/dash_attack/main
 # 突進後停止
 execute if entity @s[tag=AnmDashStop] run function asa_animator:diablos/anim/normal/dash_stop/main
+# 突進軸合わせ
+execute if entity @s[tag=AnmDashTurn] run function asa_animator:diablos/anim/normal/dash_turn/main
 
 # 潜航開始
 execute if entity @s[tag=AnmDive] run function asa_animator:diablos/anim/normal/dive/main
 # 飛び出し
 execute if entity @s[tag=AnmDiveJump] run function asa_animator:diablos/anim/normal/dive_jump/main
+
+# 怒り開始
+execute if entity @s[tag=AnmAnger] run function asa_animator:diablos/anim/normal/anger/main
