@@ -1,6 +1,4 @@
 
-
-
 # ターゲットリセット
 tag @e[tag=DiablosTarget] remove DiablosTarget
 tag @e[tag=DiablosAttackTarget] remove DiablosAttackTarget
@@ -8,19 +6,22 @@ tag @e[tag=DiablosAttackTarget] remove DiablosAttackTarget
 scoreboard players set @s AsaMatrix 0
 
 # ターゲット探索
-tag @e[type=#asa_animator:attack_target,tag=!DiablosParts,tag=!DiablosTarget,distance=0..50] add DiablosTarget
+tag @e[type=#asa_animator:attack_target,tag=!DiablosParts,tag=!DiablosTarget,distance=0..50,tag=!NotTarget] add DiablosTarget
 # ターゲット決定
-execute if predicate asa_animator:random/070 run tag @e[type=player,tag=DiablosTarget,limit=1,sort=random] add DiablosAttackTarget
-execute unless entity @e[tag=DiablosAttackTarget] run execute as @e[tag=DiablosTarget,limit=1,sort=random] if block ~ ~ ~ air run tag @s add DiablosAttackTarget
+tag @a[tag=DiablosTarget,limit=1,sort=random,tag=!NotTarget] add DiablosAttackTarget
+execute unless entity @e[tag=DiablosAttackTarget] run tag @e[tag=DiablosTarget,limit=1,sort=random] add DiablosAttackTarget
 
-# 近距離
-execute if entity @e[tag=DiablosAttackTarget,distance=..9] run function asa_animator:diablos/manager/range_near
+# 怒り変化
+execute if entity @s[tag=StartAnger] unless entity @s[tag=IsAnger] run tag @s add AnmAnger
+execute if entity @s[tag=StartAnger] run tag @s remove StartAnger
+execute if entity @s[tag=IsAnger] run scoreboard players add #mhdp_diablos_anger_actcount AsaMatrix 1
+execute if entity @s[tag=IsAnger] if score #mhdp_diablos_anger_actcount AsaMatrix matches 10.. run tag @s remove IsAnger
 
-# 中距離
-execute if entity @e[tag=DiablosAttackTarget,distance=10..23] run function asa_animator:diablos/manager/range_middle
+# 通常時
+execute unless entity @s[tag=AnmAnger] run function asa_animator:diablos/manager/change_normal/change
 
-# 遠距離
-execute unless entity @e[type=!player,tag=DiablosAttackTarget] if entity @e[tag=DiablosAttackTarget,distance=24..] run function asa_animator:diablos/manager/range_far
+# 軸合わせ
+execute if predicate asa_animator:diablos/turn run tag @s add AnmTurn
 
 # 終了
 tag @s remove ChangeAnm

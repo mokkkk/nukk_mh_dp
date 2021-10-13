@@ -10,3 +10,4 @@ execute as @e[type=armor_stand,tag=MonsterRoot] at @s run function mh_dp:animati
 
 # 攻撃用処理
 execute as @e[type=marker,tag=MonsterShot] at @s run function mh_dp:shot/main
+execute as @e[type=armor_stand,tag=MonsterShot] at @s run function mh_dp:shot/main

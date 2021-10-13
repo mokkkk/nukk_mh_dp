@@ -2,7 +2,7 @@
 scoreboard players add @s AsaMatrix 1
 execute if score @s AsaMatrix matches 1 run function asa_animator:zinogre/anim/death/start
 execute if score @s AsaMatrix matches 1 run function asa_animator:zinogre/anim/death/keyframes/0
-execute if score @s AsaMatrix matches 1..10 run tp @s ^0 ^0 ^0
+execute if score @s AsaMatrix matches 1..10 run tp @s ^0 ^0 ^0 ~1 ~
 execute if score @s AsaMatrix matches 11 run function asa_animator:zinogre/anim/death/keyframes/1
 execute if score @s AsaMatrix matches 11..20 run tp @s ^0 ^0 ^0
 execute if score @s AsaMatrix matches 21 run function asa_animator:zinogre/anim/death/keyframes/2
@@ -23,3 +23,5 @@ execute if score @s AsaMatrix matches 40 if entity @s[tag=IsThunder] run tag @s 
 
 execute if score @s AsaMatrix matches ..60 at @s if block ~ ~-1 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
 execute if score @s AsaMatrix matches ..60 at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.5 ~ ~ ~
+
+execute if score @s AsaMatrix matches 61 as @e[type=armor_stand,tag=ZinogreParts,tag=HeadU] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10086
