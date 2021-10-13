@@ -5,6 +5,9 @@ execute if entity @s[tag=BodyParts] run scoreboard players operation #diablos_da
 execute if entity @s[tag=LegParts] run scoreboard players operation #diablos_damage AsaMatrix *= #asam_const_100 AsaMatrix
 execute if entity @s[tag=TailParts] run scoreboard players operation #diablos_damage AsaMatrix *= #asam_const_120 AsaMatrix
 scoreboard players operation #diablos_damage AsaMatrix /= #asam_const_100 AsaMatrix
+# 怒り時ダメージ増加
+execute if entity @e[type=armor_stand,tag=DiablosRoot,tag=IsAnger] run scoreboard players operation #diablos_damage AsaMatrix *= #asam_const_120 AsaMatrix
+execute if entity @e[type=armor_stand,tag=DiablosRoot,tag=IsAnger] run scoreboard players operation #diablos_damage AsaMatrix /= #asam_const_100 AsaMatrix
 scoreboard players operation #mhdp_diablos_health AsaMatrix += #diablos_damage AsaMatrix
 # ボスバー設定
 execute store result bossbar asa_animator:diablos_health value run scoreboard players get #mhdp_diablos_health AsaMatrix

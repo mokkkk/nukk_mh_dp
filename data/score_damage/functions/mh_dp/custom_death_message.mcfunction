@@ -14,5 +14,13 @@ execute if entity @s[tag=D_ZinogrePress] run tellraw @a [{"selector":"@s"},{"tex
 execute if entity @s[tag=D_ZinogreShot] run tellraw @a [{"selector":"@s"},{"text": "は雷光弾に射抜かれた"}]
 execute if entity @s[tag=D_ZinogreTail] run tellraw @a [{"selector":"@s"},{"text": "は雷狼竜の尻尾に吹き飛ばされた"}]
 
+execute if entity @s[tag=D_DiablosBite] run tellraw @a [{"selector":"@s"},{"text": "は角竜に噛み砕かれた"}]
+execute if entity @s[tag=D_DiablosDash] run tellraw @a [{"selector":"@s"},{"text": "は角竜に轢かれた"}]
+execute if entity @s[tag=D_DiablosHead] run tellraw @a [{"selector":"@s"},{"text": "は角竜に貫かれた"}]
+execute if entity @s[tag=D_DiablosDive] run tellraw @a [{"selector":"@s"},{"text": "は角竜にかちあげられた"}]
+execute if entity @s[tag=D_DiablosTackle] run tellraw @a [{"selector":"@s"},{"text": "は角竜に吹き飛ばされた"}]
+execute if entity @s[tag=D_DiablosTail] run tellraw @a [{"selector":"@s"},{"text": "は角竜の尻尾を叩きつけられた"}]
+execute if entity @s[tag=D_DiablosShot] run tellraw @a [{"selector":"@s"},{"text": "は砂岩に命中した"}]
+
 kill @s
 execute if score #default_gamemode AsaMatrix matches 1.. run gamerule showDeathMessages true
