@@ -2,7 +2,7 @@
 scoreboard players add @s AsaMatrix 1
 execute if score @s AsaMatrix matches 1 run function asa_animator:zinogre/anim/death/start
 execute if score @s AsaMatrix matches 1 run function asa_animator:zinogre/anim/death/keyframes/0
-execute if score @s AsaMatrix matches 1..10 run tp @s ^0 ^0 ^0
+execute if score @s AsaMatrix matches 1..10 run tp @s ^0 ^0 ^0 ~1 ~
 execute if score @s AsaMatrix matches 11 run function asa_animator:zinogre/anim/death/keyframes/1
 execute if score @s AsaMatrix matches 11..20 run tp @s ^0 ^0 ^0
 execute if score @s AsaMatrix matches 21 run function asa_animator:zinogre/anim/death/keyframes/2

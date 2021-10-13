@@ -8,9 +8,10 @@ tag @e[tag=DiablosAttackTarget] remove DiablosAttackTarget
 
 # marker消去
 kill @e[type=marker,tag=DiablosDashTarget]
+kill @e[type=marker,tag=DiablosDiveParticle]
 
 # 当たり判定削除
-function asa_animator:diablos/health/kill
+function asa_animator:diablos/manager/health/kill
 
 # ボスバー削除
 bossbar remove asa_animator:diablos_health

@@ -13,6 +13,8 @@ execute if score @s AsaMatrix matches 81.. run function asa_animator:reus/normal
 execute as @e[type=armor_stand,tag=ReusParts] run function #asa_matrix:animate
 function asa_animator:reus/model
 
+execute if score @s AsaMatrix matches 1 if score #mhdp_reus_actcount AsaMatrix matches 1.. run function asa_animator:reus/normal/stay/end
+
 # 位置調整
 execute unless block ~ ~-0.1 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~
 execute if block ~ ~-0.05 ~ #asa_animator:no_collision run tp @s ~ ~-0.05 ~
