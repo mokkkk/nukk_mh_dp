@@ -1,0 +1,20 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:barrier",
+      "nbt": "{CustomModelData:20001}"
+    },
+    "title": "雷狼竜討伐",
+    "description": "狩人たる雷狼竜を討ち倒した証．",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mh_dp:trophies/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

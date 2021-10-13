@@ -18,3 +18,8 @@ execute if score @s AsaMatrix matches 1..38 run function asa_animator:diablos/ma
 execute if score @s AsaMatrix matches 38 positioned as @e[tag=DiablosAttackTarget] rotated ~ 0 positioned ^ ^ ^3 run summon marker ~ ~ ~ {Tags:["DiablosDashTarget"]}
 
 execute if score @s AsaMatrix matches 38 run playsound block.sand.place master @a ~ ~ ~ 3 1
+
+# 高度調整
+execute at @s positioned ~ ~5 ~ run tp @s ~ ~ ~
+execute at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
+execute at @s run tp @s ~ ~-0.3 ~

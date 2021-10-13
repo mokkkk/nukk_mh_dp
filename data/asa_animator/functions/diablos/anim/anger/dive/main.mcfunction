@@ -20,6 +20,8 @@ execute if score @s AsaMatrix matches 111.. run function asa_animator:diablos/an
 execute as @e[type=armor_stand,tag=DiablosParts] run function #asa_matrix:animate
 function asa_animator:diablos/model
 
+execute if score @s AsaMatrix matches 15 run tag @s add InGround
+
 # パーティクル
 execute if score @s AsaMatrix matches 1 positioned ^ ^ ^4 run summon marker ~ ~ ~ {Tags:["DiablosDiveParticle"]}
 execute if score @s AsaMatrix matches 1..55 positioned as @e[type=marker,tag=DiablosDiveParticle] run particle block sand ~ ~ ~ 2 0 2 0 10

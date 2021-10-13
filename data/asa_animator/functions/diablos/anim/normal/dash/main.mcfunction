@@ -20,10 +20,11 @@ execute positioned ^ ^ ^3 if entity @e[type=marker,tag=DiablosDashTarget,distanc
 particle block sand ~ ~0.5 ~ 1 0 1 0 3
 
 # 高度調整
-execute at @s positioned ~ ~1 ~ run function asa_animator:zinogre/manager/check_ground
-execute at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.5 ~ ~ ~
+execute at @s positioned ~ ~5 ~ run tp @s ~ ~ ~
+execute at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
+execute at @s run tp @s ~ ~-0.3 ~
 
-execute positioned ^ ^ ^1.25 unless block ~ ~ ~ #asa_animator:no_collision unless block ~ ~1 ~ #asa_animator:no_collision run function asa_animator:diablos/anim/normal/dash/events/change
+execute positioned ^ ^0.4 ^1.25 unless block ~ ~ ~ #asa_animator:no_collision unless block ~ ~1 ~ #asa_animator:no_collision run function asa_animator:diablos/anim/normal/dash/events/change
 
 # 攻撃
 execute if entity @e[type=!armor_stand,type=!marker,distance=0..5] run function asa_animator:diablos/anim/normal/dash/events/damage

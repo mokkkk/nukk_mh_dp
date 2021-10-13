@@ -25,3 +25,8 @@ execute if score @s AsaMatrix matches 38 positioned as @e[tag=DiablosAttackTarge
 execute if score @s AsaMatrix matches 14 run particle block sand ~ ~0.5 ~ 1 0 1 0 10
 execute if score @s AsaMatrix matches 14 run playsound block.sand.place master @a ~ ~ ~ 3 1
 execute if score @s AsaMatrix matches 38 run playsound block.sand.place master @a ~ ~ ~ 3 1
+
+# 高度調整
+execute at @s positioned ~ ~5 ~ run tp @s ~ ~ ~
+execute at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
+execute at @s run tp @s ~ ~-0.3 ~

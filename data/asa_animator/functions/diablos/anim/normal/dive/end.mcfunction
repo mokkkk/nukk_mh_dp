@@ -3,3 +3,4 @@ execute as @e[type=armor_stand,tag=DiablosParts] run function #asa_matrix:animat
 tp @s ~ ~-9 ~ ~ 0
 tag @s remove AnmDive
 tag @s add AnmDiveJump
+tag @s remove InGround

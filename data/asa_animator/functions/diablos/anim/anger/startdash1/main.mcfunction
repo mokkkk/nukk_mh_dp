@@ -15,3 +15,8 @@ function asa_animator:diablos/model
 execute if score @s AsaMatrix matches 1..33 run function asa_animator:diablos/manager/rotate
 
 execute if score @s AsaMatrix matches 33 run playsound block.sand.place master @a ~ ~ ~ 3 1
+
+# 高度調整
+execute at @s positioned ~ ~5 ~ run tp @s ~ ~ ~
+execute at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
+execute at @s run tp @s ~ ~-0.3 ~

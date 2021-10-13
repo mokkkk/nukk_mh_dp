@@ -22,3 +22,8 @@ execute if score @s AsaMatrix matches 1..33 run function asa_animator:diablos/ma
 execute if score @s AsaMatrix matches 12 run particle block sand ~ ~0.5 ~ 1 0 1 0 10
 execute if score @s AsaMatrix matches 12 run playsound block.sand.place master @a ~ ~ ~ 3 1
 execute if score @s AsaMatrix matches 33 run playsound block.sand.place master @a ~ ~ ~ 3 1
+
+# 高度調整
+execute at @s positioned ~ ~5 ~ run tp @s ~ ~ ~
+execute at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
+execute at @s run tp @s ~ ~-0.3 ~
