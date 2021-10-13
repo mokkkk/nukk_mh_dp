@@ -23,3 +23,5 @@ function asa_animator:diablos/model
 
 execute if score @s AsaMatrix matches 1..40 at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
 execute if score @s AsaMatrix matches 1..40 at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~
+
+execute if score @s AsaMatrix matches 41 as @e[type=armor_stand,tag=DiablosParts,tag=HeadU] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10039
