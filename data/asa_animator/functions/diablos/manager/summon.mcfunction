@@ -9,9 +9,9 @@ execute if data storage mhdp: {ExistMonster:0b} rotated ~ 0 positioned ^ ^-9 ^5 
 execute if data storage mhdp: {ExistMonster:0b} rotated ~ 0 positioned ^ ^-9 ^5 run function asa_animator:diablos/manager/health/summon
 
 # HPセット
-scoreboard players set #mhdp_diablos_health AsaMatrix 60000
+scoreboard players set #mhdp_diablos_health AsaMatrix 52000
 execute if data storage mhdp: {ExistMonster:0b} run bossbar add asa_animator:diablos_health {"text": "角竜"}
-bossbar set asa_animator:diablos_health max 60000
+bossbar set asa_animator:diablos_health max 52000
 bossbar set asa_animator:diablos_health players @a
 bossbar set asa_animator:diablos_health visible true
 execute store result bossbar asa_animator:diablos_health value run scoreboard players get #mhdp_diablos_health AsaMatrix

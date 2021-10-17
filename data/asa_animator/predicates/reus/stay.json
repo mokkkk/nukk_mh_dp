@@ -49,7 +49,7 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmDash\"]}"
+          "nbt": "{Tags:[\"AnmMove\"]}"
         }
       },
       {

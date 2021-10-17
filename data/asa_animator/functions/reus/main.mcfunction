@@ -9,9 +9,20 @@ execute if entity @s[tag=ChangeAnm] run function asa_animator:reus/manager/chang
 execute if predicate asa_animator:reus/stay unless entity @s[tag=IsFlying] run function asa_animator:reus/anim/stay/main
 # execute if predicate asa_animator:reus/stay if entity @s[tag=IsFlying] run function asa_animator:reus/normal/flying_stay/main
 
-# ジャンプ
+# 尻尾回転
+execute if entity @s[tag=AnmTail] run function asa_animator:reus/anim/tail_spin/main
+
+# 地上床ドン
 execute if entity @s[tag=AnmJump] run function asa_animator:reus/anim/jump/main
 
+# ブレス
+execute if entity @s[tag=AnmBreath] run function asa_animator:reus/anim/breath/main
+
+# 移動
+execute if entity @s[tag=AnmMove] run function asa_animator:reus/anim/move/main
+
+# 噛みつき
+execute if entity @s[tag=AnmBite] run function asa_animator:reus/anim/bite/main
 
 # 地走り火炎
 execute if entity @s[tag=AnmChargeF] run function asa_animator:reus/anim/flying_breath_charge/main
