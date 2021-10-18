@@ -29,7 +29,7 @@ execute unless entity @e[tag=ReusAttackTarget] run tag @e[tag=ReusTarget,limit=1
 # execute unless entity @s[tag=StartAnger] if entity @s[tag=IsFlying] run function asa_animator:reus/manager/range_fly
 
 # 強制
-tag @s add AnmMove
+tag @s add AnmFlyBreathL
 
 # 終了
 tag @s remove ChangeAnm

@@ -4,13 +4,20 @@ execute if score @s AsaMatrix matches 1 run function asa_animator:reus/anim/bite
 execute if score @s AsaMatrix matches 1 run function asa_animator:reus/anim/bite/keyframes/0
 execute if score @s AsaMatrix matches 1..7 run tp @s ^0 ^0 ^0.02857143 ~-0.5 ~
 execute if score @s AsaMatrix matches 8 run function asa_animator:reus/anim/bite/keyframes/1
-execute if score @s AsaMatrix matches 8..10 run tp @s ^0 ^0 ^0 ~1 ~
+execute if score @s AsaMatrix matches 8..10 run tp @s ^0 ^0 ^0.1 ~1 ~
 execute if score @s AsaMatrix matches 11 run function asa_animator:reus/anim/bite/keyframes/2
-execute if score @s AsaMatrix matches 11..17 run tp @s ^0 ^0 ^0.1142857
+execute if score @s AsaMatrix matches 11..17 run tp @s ^0 ^0 ^0.2
 execute if score @s AsaMatrix matches 18 run function asa_animator:reus/anim/bite/keyframes/3
-execute if score @s AsaMatrix matches 18..27 run tp @s ^0 ^0 ^0
+execute if score @s AsaMatrix matches 18..27 run tp @s ^0 ^0 ^0.1
 execute if score @s AsaMatrix matches 28 run function asa_animator:reus/anim/bite/keyframes/4
 execute if score @s AsaMatrix matches 28..40 run tp @s ^0 ^0 ^-0.07692308
 execute if score @s AsaMatrix matches 41.. run function asa_animator:reus/anim/bite/end
 execute as @e[type=armor_stand,tag=ReusParts] run function #asa_matrix:animate
 function asa_animator:reus/model
+
+execute if score @s AsaMatrix matches 1 run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
+
+# 敵の方向を向く
+execute if score @s AsaMatrix matches 1..5 run function asa_animator:reus/manager/rotate
+
+execute if score @s AsaMatrix matches 14 positioned ^ ^1 ^5 run function asa_animator:reus/anim/bite/events/damage

@@ -7,7 +7,6 @@ execute if entity @s[tag=ChangeAnm] run function asa_animator:reus/manager/chang
 
 # 待機
 execute if predicate asa_animator:reus/stay unless entity @s[tag=IsFlying] run function asa_animator:reus/anim/stay/main
-# execute if predicate asa_animator:reus/stay if entity @s[tag=IsFlying] run function asa_animator:reus/normal/flying_stay/main
 
 # 尻尾回転
 execute if entity @s[tag=AnmTail] run function asa_animator:reus/anim/tail_spin/main
@@ -23,7 +22,36 @@ execute if entity @s[tag=AnmMove] run function asa_animator:reus/anim/move/main
 
 # 噛みつき
 execute if entity @s[tag=AnmBite] run function asa_animator:reus/anim/bite/main
+# 2連噛みつき
+execute if entity @s[tag=AnmBite2] run function asa_animator:reus/anim/bite_double/main
 
+# チャージ噛みつき
+execute if entity @s[tag=AnmBiteC] run function asa_animator:reus/anim/bite_charge/main
+
+# 飛行開始
+execute if entity @s[tag=AnmFly] run function asa_animator:reus/anim/start_fly/main
+
+
+
+# 飛行待機
+execute if predicate asa_animator:reus/stay if entity @s[tag=IsFlying] run function asa_animator:reus/anim/flying_stay/main
+
+# 着地
+execute if entity @s[tag=AnmEndFly] run function asa_animator:reus/anim/end_fly/main
+
+# 飛行移動(前進)
+execute if entity @s[tag=AnmFlyMoveF] run function asa_animator:reus/anim/flying_move_forward/main
+# 飛行移動(後退)
+execute if entity @s[tag=AnmFlyMoveB] run function asa_animator:reus/anim/flying_move_back/main
+# 飛行移動(回り込み左)
+execute if entity @s[tag=AnmFlyMoveL] run function asa_animator:reus/anim/flying_move_left/main
+# 飛行移動(回り込み右)
+execute if entity @s[tag=AnmFlyMoveR] run function asa_animator:reus/anim/flying_move_right/main
+
+# ブレス
+execute if entity @s[tag=AnmFlyBreath] run function asa_animator:reus/anim/flying_breath/main
+# なぎ払いブレス
+execute if entity @s[tag=AnmFlyBreathL] run function asa_animator:reus/anim/flying_breath_large/main
 # 地走り火炎
 execute if entity @s[tag=AnmChargeF] run function asa_animator:reus/anim/flying_breath_charge/main
 
