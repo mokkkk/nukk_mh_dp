@@ -1,7 +1,7 @@
 execute positioned as @e[type=armor_stand,distance=0..7,tag=ReusParts,tag=HeadU] run tp @s ~ ~ ~
 
 # 効果音等
-playsound entity.ghast.shoot master @a ~ ~ ~ 5 1
+playsound item.firecharge.use master @a ~ ~ ~ 3 0.5
 particle flame ~ ~ ~ 0 0 0 0.1 10 force
 
 # 攻撃

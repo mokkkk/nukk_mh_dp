@@ -17,6 +17,9 @@ execute if entity @s[tag=AnmJump] run function asa_animator:reus/anim/jump/main
 # ブレス
 execute if entity @s[tag=AnmBreath] run function asa_animator:reus/anim/breath/main
 
+# BJB
+execute if entity @s[tag=AnmBjb] run function asa_animator:reus/anim/bjb/main
+
 # 移動
 execute if entity @s[tag=AnmMove] run function asa_animator:reus/anim/move/main
 
@@ -48,12 +51,20 @@ execute if entity @s[tag=AnmFlyMoveL] run function asa_animator:reus/anim/flying
 # 飛行移動(回り込み右)
 execute if entity @s[tag=AnmFlyMoveR] run function asa_animator:reus/anim/flying_move_right/main
 
+# 爪
+execute if entity @s[tag=AnmFlyAttack] run function asa_animator:reus/anim/flying_attack/main
+# なぎ払い爪
+execute if entity @s[tag=AnmFlyAttackL] run function asa_animator:reus/anim/flying_attack_large/main
+
+# 飛行床ドン
+execute if entity @s[tag=AnmFlyJump] run function asa_animator:reus/anim/flying_jump/main
+
 # ブレス
 execute if entity @s[tag=AnmFlyBreath] run function asa_animator:reus/anim/flying_breath/main
 # なぎ払いブレス
 execute if entity @s[tag=AnmFlyBreathL] run function asa_animator:reus/anim/flying_breath_large/main
 # 地走り火炎
-execute if entity @s[tag=AnmChargeF] run function asa_animator:reus/anim/flying_breath_charge/main
+execute if entity @s[tag=AnmFlyBreathC] run function asa_animator:reus/anim/flying_breath_charge/main
 
 # 登場
 # execute if entity @s[tag=AnmSummon] run function asa_animator:reus/normal/flying_summon/main

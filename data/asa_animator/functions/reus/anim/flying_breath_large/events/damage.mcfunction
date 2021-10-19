@@ -1,8 +1,7 @@
-# 8 Damage
-data merge storage score_damage: {Damage:16.0f, BypassArmor:0b}
+# 6 Damage
+data merge storage score_damage: {Damage:12.0f, BypassArmor:0b}
 data merge storage mhdp: {Epf:2}
 execute as @e[type=!armor_stand,type=!marker,tag=!ReusParts,distance=0..3] run function asa_animator:reus/anim/flying_breath_large/events/damage_sub
-particle explosion ~ ~ ~ 0.3 0.3 0.3 0 10 force
-particle lava ~ ~ ~ 0 0 0 0 5 force
-playsound item.firecharge.use master @a ~ ~ ~ 3 0.5
+particle explosion ~ ~ ~ 0.3 0.3 0.3 0 3 force
+particle lava ~ ~ ~ 0 0 0 0 2 force
 kill @s

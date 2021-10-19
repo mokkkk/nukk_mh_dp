@@ -22,6 +22,7 @@ execute as @e[type=armor_stand,tag=ReusParts] run function #asa_matrix:animate
 function asa_animator:reus/model
 
 execute if score @s AsaMatrix matches 1 run playsound block.grass.step master @a ~ ~ ~ 2 0.7
+execute if score @s AsaMatrix matches 26 run tag @s add IsFlying
 execute if score @s AsaMatrix matches 26 run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 execute if score @s AsaMatrix matches 26 run particle block grass_block ~ ~0.5 ~ 1 0 1 0 30
 execute if score @s AsaMatrix matches 46 positioned ^ ^ ^1 run function asa_animator:reus/anim/jump/events/damage

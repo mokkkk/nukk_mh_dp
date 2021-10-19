@@ -34,3 +34,17 @@ execute if score @s AsaMatrix matches 111..125 run tp @s ^0 ^0 ^0
 execute if score @s AsaMatrix matches 126.. run function asa_animator:reus/anim/flying_breath_charge/end
 execute as @e[type=armor_stand,tag=ReusParts] run function #asa_matrix:animate
 function asa_animator:reus/model
+
+execute if score @s AsaMatrix matches ..50 run function asa_animator:reus/manager/rotate
+
+execute if score @s AsaMatrix matches 1 run playsound entity.player.breath master @a ~ ~ ~ 2 0.8
+execute if score @s AsaMatrix matches 14 run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
+execute if score @s AsaMatrix matches 93 run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
+
+execute if score @s AsaMatrix matches 25 as @e[type=armor_stand,distance=0..7,tag=ReusParts,tag=HeadU] at @s run function asa_animator:reus/anim/flying_breath_charge/events/attack_start
+execute if score @s AsaMatrix matches 26..52 as @e[type=marker,distance=0..7,tag=ReusChargeFPos] at @s run function asa_animator:reus/anim/flying_breath_charge/events/attack
+execute if score @s AsaMatrix matches 53..64 as @e[type=marker,distance=0..7,tag=ReusChargeFPos] at @s run function asa_animator:reus/anim/flying_breath_charge/events/attack_rotate
+execute if score @s AsaMatrix matches 64 run kill @e[type=marker,tag=ReusChargeFPos]
+
+execute if score @s AsaMatrix matches 85 run function asa_animator:reus/anim/flying_breath_charge/events/set_pos
+execute if score @s AsaMatrix matches 86..105 run function asa_animator:reus/anim/end_fly/events/offset
