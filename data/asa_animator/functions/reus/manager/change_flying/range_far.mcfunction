@@ -1,6 +1,6 @@
 
 # ランダム
-loot spawn ~ 0 ~ loot asa_animator:reus/far
+loot spawn ~ 0 ~ loot asa_animator:reus/normal/far
 # ブレス
 execute if entity @e[type=item,nbt={Item:{tag:{Act:1}}}] run tag @s add AnmBreath
 # 飛行開始

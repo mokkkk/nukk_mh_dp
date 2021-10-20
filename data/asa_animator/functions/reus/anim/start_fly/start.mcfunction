@@ -18,3 +18,4 @@ execute as @e[type=armor_stand,tag=ReusParts,tag=WingL0] run data merge entity @
 execute as @e[type=armor_stand,tag=ReusParts,tag=WingR0] run data merge entity @s {Pose:{Head:[70f,0f,0f]}}
 execute as @e[type=armor_stand,tag=ReusParts,tag=WingL1] run data merge entity @s {Pose:{Head:[70f,0f,0f]}}
 execute as @e[type=armor_stand,tag=ReusParts,tag=WingR1] run data merge entity @s {Pose:{Head:[70f,0f,0f]}}
+scoreboard players set #mhdp_reus_actcount_phase AsaMatrix 0
