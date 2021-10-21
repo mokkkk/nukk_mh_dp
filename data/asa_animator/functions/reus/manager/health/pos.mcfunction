@@ -6,15 +6,12 @@ execute if entity @s[tag=Body0] rotated as @s at @e[type=armor_stand,tag=ReusPar
 execute if entity @s[tag=Body1] rotated as @s at @e[type=armor_stand,tag=ReusParts,tag=Body1,limit=1] run tp @s ^ ^0.3 ^ ~ ~
 execute if entity @s[tag=LegL0] rotated as @s at @e[type=armor_stand,tag=ReusParts,tag=LegL0,limit=1] run tp @s ^ ^0.7 ^ ~ ~
 execute if entity @s[tag=LegR0] rotated as @s at @e[type=armor_stand,tag=ReusParts,tag=LegR0,limit=1] run tp @s ^ ^0.7 ^ ~ ~
-execute if entity @s[tag=LegL1] rotated as @s at @e[type=armor_stand,tag=ReusParts,tag=LegL1,limit=1] run tp @s ^ ^0.5 ^ ~ ~
-execute if entity @s[tag=LegR1] rotated as @s at @e[type=armor_stand,tag=ReusParts,tag=LegR1,limit=1] run tp @s ^ ^0.5 ^ ~ ~
+execute if entity @s[tag=LegL1] rotated as @s at @e[type=armor_stand,tag=ReusParts,tag=LegL1,limit=1] run tp @s ^ ^0.2 ^ ~ ~
+execute if entity @s[tag=LegR1] rotated as @s at @e[type=armor_stand,tag=ReusParts,tag=LegR1,limit=1] run tp @s ^ ^0.2 ^ ~ ~
 execute if entity @s[tag=Tail0] rotated as @s at @e[type=armor_stand,tag=ReusParts,tag=Tail0,limit=1] run tp @s ^ ^0.7 ^-0.2 ~ ~
 execute if entity @s[tag=Tail1] rotated as @s at @e[type=armor_stand,tag=ReusParts,tag=Tail1,limit=1] run tp @s ^ ^0.7 ^0.4 ~ ~
 execute if entity @s[tag=Tail2] rotated as @s at @e[type=armor_stand,tag=ReusParts,tag=Tail1,limit=1] run tp @s ^ ^0.7 ^-0.7 ~ ~
 execute if entity @s[tag=Tail3] rotated as @s at @e[type=armor_stand,tag=ReusParts,tag=Tail2,limit=1] run tp @s ^ ^0.7 ^-0.2 ~ ~
 
-# 怒り時，パーティクル
-execute if entity @e[type=armor_stand,tag=ReusRoot,tag=IsAnger] if entity @s[tag=Head] at @s run particle large_smoke ~ ~0.2 ~ 0.2 0.2 0.2 0 1 force
-
 # HP確認
-execute if entity @s[nbt=!{Health:1000f}] run function asa_animator:reus/health/check
+execute if entity @s[nbt=!{Health:1000f}] run function asa_animator:reus/manager/health/check

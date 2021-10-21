@@ -29,7 +29,7 @@ execute at @e[type=armor_stand,tag=ReusParts] run particle poof ~ ~1 ~ 1 1 1 0 3
 loot spawn ~ ~ ~ loot mh_dp:bonus/reus
 
 # 当たり判定削除
-function asa_animator:reus/health/kill
+function asa_animator:reus/manager/health/kill
 
 # ボスバー削除
 bossbar remove asa_animator:reus_health

@@ -1,4 +1,4 @@
-summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["MonsterRoot","ReusRoot"]}
+summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["MonsterRoot","ReusRoot","AnmSummon","IsFlying"]}
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["ReusParts","HeadU"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10000,Rotate:[0f,0f,0f]}}],Pose:{Head:[-10f,0f,0f]}}
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["ReusParts","HeadL"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10001,Rotate:[0f,0f,0f]}}],Pose:{Head:[0f,0f,0f]}}
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["ReusParts","Neck0"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10002,Rotate:[0f,0f,0f]}}],Pose:{Head:[5f,0f,0f]}}

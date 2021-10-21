@@ -13,7 +13,7 @@ kill @e[type=marker,tag=ReusChargeTarget]
 kill @e[type=marker,tag=ReusChargeAttack]
 
 # 当たり判定削除
-function asa_animator:reus/health/kill
+function asa_animator:reus/manager/health/kill
 
 # ボスバー削除
 bossbar remove asa_animator:reus_health
