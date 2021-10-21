@@ -1,6 +1,6 @@
 
 # 召喚
-summon armor_stand ~ ~2 ~ {Invisible:1b,Invulnerable:1b,OnGround:0b,Tags:["MonsterShot","DiablosTailShot","Start"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10085,Rotate:[0f,0f,0f]}}]}
+summon armor_stand ~ ~2 ~ {Invisible:1b,Invulnerable:1b,OnGround:0b,Tags:["MonsterShot","DiablosTailShot","Start"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10085}}]}
 
 # Motion代入
 execute positioned 0 0 0 align xyz positioned ^ ^ ^1.5 run summon marker ~ ~ ~ {Tags:["MhdpForMotion"]}
