@@ -26,7 +26,15 @@ kill @e[type=marker,tag=ReusChargeAttack]
 execute at @e[type=armor_stand,tag=ReusParts] run particle poof ~ ~1 ~ 1 1 1 0 30
 
 # アイテムドロップ
+summon experience_orb ~0.1 ~ ~ {Value:50}
+summon experience_orb ~-0.1 ~ ~ {Value:50}
+summon experience_orb ~ ~ ~0.1 {Value:50}
+summon experience_orb ~ ~ ~-0.1 {Value:50}
 loot spawn ~ ~ ~ loot mh_dp:bonus/reus
+
+# 進捗達成
+execute as @a[distance=0..64] run advancement grant @s only mh_dp:trophies/root
+execute as @a[distance=0..64] run advancement grant @s only mh_dp:trophies/reus
 
 # 当たり判定削除
 function asa_animator:reus/manager/health/kill
