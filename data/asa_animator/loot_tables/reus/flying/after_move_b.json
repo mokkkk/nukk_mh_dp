@@ -9,7 +9,7 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 30,
+              "weight": 50,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
@@ -38,18 +38,6 @@
                 {
                 "function": "minecraft:set_nbt",
                 "tag": "{ActPaper:1,Act:3}"
-                }
-              ]
-            }
-            ,
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:paper",
-              "weight": 20,
-              "functions": [
-                {
-                "function": "minecraft:set_nbt",
-                "tag": "{ActPaper:1,Act:4}"
                 }
               ]
             }

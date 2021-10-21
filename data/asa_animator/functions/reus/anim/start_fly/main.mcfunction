@@ -4,7 +4,7 @@ execute if score @s AsaMatrix matches 1 run function asa_animator:reus/anim/star
 execute if score @s AsaMatrix matches 1 run function asa_animator:reus/anim/start_fly/keyframes/0
 execute if score @s AsaMatrix matches 1..5 run tp @s ^0 ^-0.06 ^0.2
 execute if score @s AsaMatrix matches 6 run function asa_animator:reus/anim/start_fly/keyframes/1
-execute if score @s AsaMatrix matches 6..10 run tp @s ^0 ^0.36 ^0.2
+execute if score @s AsaMatrix matches 6..10 run tp @s ^0 ^0.5 ^0.2
 execute if score @s AsaMatrix matches 11 run function asa_animator:reus/anim/start_fly/keyframes/2
 execute if score @s AsaMatrix matches 11..20 run tp @s ^0 ^0.1 ^0.1
 execute if score @s AsaMatrix matches 21.. run function asa_animator:reus/anim/start_fly/end

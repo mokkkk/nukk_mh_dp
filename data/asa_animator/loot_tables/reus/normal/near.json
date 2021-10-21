@@ -33,7 +33,7 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 15,
+              "weight": 12,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
@@ -45,7 +45,7 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 20,
+              "weight": 17,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
@@ -57,7 +57,7 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 20,
+              "weight": 30,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",

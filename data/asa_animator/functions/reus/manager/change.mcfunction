@@ -20,12 +20,13 @@ execute unless entity @e[tag=ReusAttackTarget] run tag @e[tag=ReusTarget,limit=1
 # execute if score #mhdp_reus_angercount AsaMatrix matches ..0 run tag @s remove IsAnger
 
 # 地上
-execute unless entity @s[tag=IsFlying] run function asa_animator:reus/manager/change_normal/main
+execute unless score #mhdp_reus_actcount_phase AsaMatrix matches 6.. unless entity @s[tag=IsFlying] run function asa_animator:reus/manager/change_normal/main
 # 地上→飛行
 execute if score #mhdp_reus_actcount_phase AsaMatrix matches 6.. unless entity @s[tag=IsFlying] run function asa_animator:reus/manager/change_phase/land_to_fly
 # 飛行中
-execute if entity @s[tag=IsFlying] run function asa_animator:reus/manager/change_flying/main
-
+execute unless score #mhdp_reus_actcount_phase AsaMatrix matches 8.. if entity @s[tag=IsFlying] run function asa_animator:reus/manager/change_flying/main
+# 飛行→地上
+execute if score #mhdp_reus_actcount_phase AsaMatrix matches 8.. if entity @s[tag=IsFlying] run function asa_animator:reus/manager/change_phase/fly_to_land
 
 # 飛行中
 # execute unless entity @s[tag=StartAnger] if entity @s[tag=IsFlying] run function asa_animator:reus/manager/range_fly
