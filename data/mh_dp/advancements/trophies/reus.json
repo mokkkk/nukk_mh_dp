@@ -2,10 +2,10 @@
   "display": {
     "icon": {
       "item": "minecraft:barrier",
-      "nbt": "{CustomModelData:20001}"
+      "nbt": "{CustomModelData:20002}"
     },
-    "title": "雷狼竜討伐",
-    "description": "無双の狩人・雷狼竜を討ち倒した証．",
+    "title": "火竜討伐",
+    "description": "空の王者・火竜を討ち倒した証．",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
