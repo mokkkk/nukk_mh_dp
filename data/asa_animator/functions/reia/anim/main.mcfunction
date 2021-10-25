@@ -2,7 +2,7 @@
 # 尻尾回転
 execute if entity @s[tag=AnmTail] run function asa_animator:reia/anim/tail_spin/main
 
-# 噛みつき
+# 火炎噛みつき
 execute if entity @s[tag=AnmBite] run function asa_animator:reia/anim/bite/main
 
 # 噛みつき+尻尾回転

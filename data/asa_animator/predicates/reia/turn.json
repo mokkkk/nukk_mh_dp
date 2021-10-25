@@ -7,13 +7,6 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmBreath\"]}"
-        }
-      },
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
           "nbt": "{Tags:[\"AnmBite\"]}"
         }
       },
@@ -21,7 +14,21 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmBite2\"]}"
+          "nbt": "{Tags:[\"AnmBiteTail\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmBjbLand\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmBreath3\"]}"
         }
       },
       {
@@ -35,7 +42,7 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmBjb\"]}"
+          "nbt": "{Tags:[\"AnmSault\"]}"
         }
       }
     ]
