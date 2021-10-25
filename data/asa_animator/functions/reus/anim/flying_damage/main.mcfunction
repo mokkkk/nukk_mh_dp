@@ -2,7 +2,7 @@
 scoreboard players add @s AsaMatrix 1
 execute if score @s AsaMatrix matches 1 run function asa_animator:reus/anim/flying_damage/start
 execute if score @s AsaMatrix matches 1 run function asa_animator:reus/anim/flying_damage/keyframes/0
-execute if score @s AsaMatrix matches 1..6 run tp @s ^0 ^0.1666667 ^0
+execute if score @s AsaMatrix matches 1..6 run tp @s ^0 ^0.1666667 ^0 ~-1 ~
 execute if score @s AsaMatrix matches 7 run function asa_animator:reus/anim/flying_damage/keyframes/1
 execute if score @s AsaMatrix matches 7..12 run tp @s ^0 ^0.1666667 ^0
 execute if score @s AsaMatrix matches 13 run function asa_animator:reus/anim/flying_damage/keyframes/2
