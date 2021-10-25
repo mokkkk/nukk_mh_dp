@@ -20,6 +20,6 @@ execute as @e[type=armor_stand,tag=ReusParts] run function #asa_matrix:animate
 function asa_animator:reus/model
 
 execute if score @s AsaMatrix matches 17 run playsound entity.player.attack.sweep master @a ~ ~ ~ 2 0.7
-execute if score @s AsaMatrix matches 17..26 at @e[type=armor_stand,distance=0..10,tag=ReiaParts,tag=Tail2] run function asa_animator:reia/anim/tail_spin/events/damage
+execute if score @s AsaMatrix matches 17..26 at @e[type=armor_stand,distance=0..10,tag=ReusParts,tag=Tail2] run function asa_animator:reus/anim/tail_spin/events/damage
 execute if score @s AsaMatrix matches 43 run playsound entity.player.attack.sweep master @a ~ ~ ~ 2 0.7
-execute if score @s AsaMatrix matches 43..52 at @e[type=armor_stand,distance=0..10,tag=ReiaParts,tag=Tail2] run function asa_animator:reia/anim/tail_spin/events/damage
+execute if score @s AsaMatrix matches 43..52 at @e[type=armor_stand,distance=0..10,tag=ReusParts,tag=Tail2] run function asa_animator:reus/anim/tail_spin/events/damage

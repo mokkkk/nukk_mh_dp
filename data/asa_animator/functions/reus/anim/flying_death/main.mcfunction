@@ -13,8 +13,6 @@ execute if score @s AsaMatrix matches 81.. run function asa_animator:reus/anim/f
 execute as @e[type=armor_stand,tag=ReusParts] run function #asa_matrix:animate
 function asa_animator:reus/model
 
-execute if score @s AsaMatrix matches 1 run playsound entity.item.break master @a ~ ~ ~ 2 0.5
-
 execute if score @s AsaMatrix matches 12 run function asa_animator:reus/anim/flying_damage/events/set_pos
 execute if score @s AsaMatrix matches 13..20 run function asa_animator:reus/anim/flying_damage/events/offset
 

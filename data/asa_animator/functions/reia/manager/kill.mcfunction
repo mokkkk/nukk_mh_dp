@@ -18,6 +18,7 @@ tag @e[tag=ReiaAttackTarget] remove ReiaAttackTarget
 
 # marker消去
 kill @e[type=marker,tag=ReiaBreathTarget]
+kill @e[type=marker,tag=ReiaCharge]
 
 # パーティクル
 execute at @e[type=armor_stand,tag=ReiaParts] run particle poof ~ ~1 ~ 1 1 1 0 30

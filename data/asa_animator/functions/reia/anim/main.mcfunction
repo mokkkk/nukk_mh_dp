@@ -39,3 +39,13 @@ execute if entity @s[tag=AnmFlyStay] run function asa_animator:reia/anim/flying_
 execute if entity @s[tag=AnmFlyTackle] run function asa_animator:reia/anim/flying_tackle/main
 # 飛行チャージブレス
 execute if entity @s[tag=AnmFlyCharge] run function asa_animator:reia/anim/flying_charge/main
+
+# 召喚
+execute if entity @s[tag=AnmSummon] run function asa_animator:reia/anim/summon/main
+# 着地
+execute if entity @s[tag=AnmEndFly] run function asa_animator:reia/anim/end_fly/main
+
+# 討伐
+execute if entity @s[tag=AnmDeath] run function asa_animator:reia/anim/death/main
+# 飛行時討伐
+execute if entity @s[tag=AnmFlyDeath] run function asa_animator:reia/anim/flying_death/main
