@@ -13,6 +13,14 @@ Minecraftに，様々なボスモンスターを追加します．
 
 出現するボスモンスターと，強制召喚用のコマンドは以下の通りです．
 
+- 火竜：
+  - 出現バイオーム：草原，森林など
+  - 強制召喚： /function asa_animator:reus/manager/summon
+
+- 雌火竜：
+  - 出現バイオーム：草原，森林など
+  - 強制召喚： /function asa_animator:reia/manager/summon
+
 - 角竜：
   - 出現バイオーム：砂漠
   - 強制召喚： /function asa_animator:diablos/manager/summon
