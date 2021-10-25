@@ -14,6 +14,9 @@ execute if entity @s[tag=AnmBreath3] run function asa_animator:reia/anim/breath_
 # 着地Bjb
 execute if entity @s[tag=AnmBjbLand] run function asa_animator:reia/anim/bjb_land/main
 
+# チャージブレス
+execute if entity @s[tag=AnmCharge] run function asa_animator:reia/anim/charge/main
+
 # 突進開始
 execute if entity @s[tag=AnmDashStart] run function asa_animator:reia/anim/start_dash/main
 # 突進
@@ -22,3 +25,17 @@ execute if entity @s[tag=AnmDash] run function asa_animator:reia/anim/dash/main
 execute if entity @s[tag=AnmDashTurn] run function asa_animator:reia/anim/dash_turn/main
 # 突進噛みつき
 execute if entity @s[tag=AnmDashBite] run function asa_animator:reia/anim/dash_bite/main
+
+# 移動
+execute if entity @s[tag=AnmMove] run function asa_animator:reia/anim/move/main
+# 移動噛みつき
+execute if entity @s[tag=AnmMoveBite] run function asa_animator:reia/anim/move_bite/main
+
+# サマソ
+execute if entity @s[tag=AnmSault] run function asa_animator:reia/anim/sault/main
+# 対空軸合わせ
+execute if entity @s[tag=AnmFlyStay] run function asa_animator:reia/anim/flying_stay/main
+# 飛行突進
+execute if entity @s[tag=AnmFlyTackle] run function asa_animator:reia/anim/flying_tackle/main
+# 飛行チャージブレス
+execute if entity @s[tag=AnmFlyCharge] run function asa_animator:reia/anim/flying_charge/main
