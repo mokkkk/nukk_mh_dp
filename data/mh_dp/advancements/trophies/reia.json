@@ -2,10 +2,10 @@
   "display": {
     "icon": {
       "item": "minecraft:barrier",
-      "nbt": "{CustomModelData:20000}"
+      "nbt": "{CustomModelData:20003}"
     },
-    "title": "角竜討伐",
-    "description": "砂漠の暴君・角竜を討ち倒した証．",
+    "title": "雌火竜討伐",
+    "description": "陸の女王・雌火竜を討ち倒した証．",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

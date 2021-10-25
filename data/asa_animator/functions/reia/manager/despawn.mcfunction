@@ -8,6 +8,7 @@ tag @e[tag=ReiaAttackTarget] remove ReiaAttackTarget
 
 # marker消去
 kill @e[type=marker,tag=ReiaBreathTarget]
+kill @e[type=marker,tag=ReiaCharge]
 
 # 当たり判定削除
 function asa_animator:reia/manager/health/kill

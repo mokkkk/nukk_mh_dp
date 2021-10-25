@@ -5,7 +5,7 @@ gamerule showDeathMessages false
 execute if entity @s[tag=D_ReusTail] run tellraw @a [{"selector":"@s"},{"text": "は火竜の尻尾に吹き飛ばされた"}]
 execute if entity @s[tag=D_ReusBite] run tellraw @a [{"selector":"@s"},{"text": "は火竜に噛み砕かれた"}]
 execute if entity @s[tag=D_ReusJump] run tellraw @a [{"selector":"@s"},{"text": "は火竜に踏みつぶされた"}]
-execute if entity @s[tag=D_ReusCharge] run tellraw @a [{"selector":"@s"},{"text": "は火竜に丸焦げにされた"}]
+execute if entity @s[tag=D_ReusCharge] run tellraw @a [{"selector":"@s"},{"text": "は火竜に黒焦げにされた"}]
 execute if entity @s[tag=D_ReusAttack] run tellraw @a [{"selector":"@s"},{"text": "は火竜に切り裂かれた"}]
 
 execute if entity @s[tag=D_ZinogreHand] run tellraw @a [{"selector":"@s"},{"text": "は雷狼竜に叩きのめされた"}]
@@ -21,6 +21,11 @@ execute if entity @s[tag=D_DiablosDive] run tellraw @a [{"selector":"@s"},{"text
 execute if entity @s[tag=D_DiablosTackle] run tellraw @a [{"selector":"@s"},{"text": "は角竜に吹き飛ばされた"}]
 execute if entity @s[tag=D_DiablosTail] run tellraw @a [{"selector":"@s"},{"text": "は角竜の尻尾を叩きつけられた"}]
 execute if entity @s[tag=D_DiablosShot] run tellraw @a [{"selector":"@s"},{"text": "は砂岩に命中した"}]
+
+execute if entity @s[tag=D_ReiaBite] run tellraw @a [{"selector":"@s"},{"text": "は雌火竜に噛み砕かれた"}]
+execute if entity @s[tag=D_ReiaBreath] run tellraw @a [{"selector":"@s"},{"text": "は雌火竜に黒焦げにされた"}]
+execute if entity @s[tag=D_ReiaDash] run tellraw @a [{"selector":"@s"},{"text": "は雌火竜に吹き飛ばされた"}]
+execute if entity @s[tag=D_ReiaTail] run tellraw @a [{"selector":"@s"},{"text": "は雌火竜の尻尾の威力を思い知った"}]
 
 kill @s
 execute if score #default_gamemode AsaMatrix matches 1.. run gamerule showDeathMessages true

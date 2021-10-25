@@ -18,4 +18,4 @@ execute unless predicate asa_animator:reia/stay unless entity @s[tag=AnmTurn] ru
 execute as @e[type=slime,tag=ReiaParts] run function asa_animator:reia/manager/health/pos
 
 # デスポーン
-# execute unless entity @s[tag=AnmSummon] unless entity @a[distance=0..64] run function asa_animator:reia/manager/despawn
+execute unless entity @s[tag=AnmSummon] unless entity @a[distance=0..64] run function asa_animator:reia/manager/despawn

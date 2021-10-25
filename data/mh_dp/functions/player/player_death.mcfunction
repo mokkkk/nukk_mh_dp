@@ -14,4 +14,7 @@ tag @s remove DiablosAttackTarget
 tag @s remove ZinogreTarget
 tag @s remove ZinogreAttackTarget
 
+tag @s remove ReiaTarget
+tag @s remove ReiaAttackTarget
+
 tag @s remove Dead
