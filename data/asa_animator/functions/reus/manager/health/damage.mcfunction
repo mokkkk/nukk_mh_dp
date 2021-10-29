@@ -21,7 +21,7 @@ execute if score #mhdp_reus_tail_damage AsaMatrix matches ..0 as @e[distance=0..
 
 # 飛行時，怯み値増加
 execute as @e[distance=0..15,type=armor_stand,tag=ReusRoot] if entity @s[tag=IsFlying] run scoreboard players operation #mhdp_reus_flying_damage AsaMatrix += #reus_damage AsaMatrix
-execute if score #mhdp_reus_flying_damage AsaMatrix matches ..-10000 as @e[distance=0..15,type=armor_stand,tag=ReusRoot] at @s run function asa_animator:reus/manager/start_damage_animation
+execute if score #mhdp_reus_flying_damage AsaMatrix matches ..-16000 as @e[distance=0..15,type=armor_stand,tag=ReusRoot] at @s run function asa_animator:reus/manager/start_damage_animation
 
 # 死亡時，アニメーション設定
 execute if score #mhdp_reus_health AsaMatrix matches ..0 as @e[type=armor_stand,tag=ReusRoot] run function asa_animator:reus/manager/start_death_animation
