@@ -21,7 +21,8 @@ execute if score @s AsaMatrix matches 81.. run function asa_animator:reus/anim/d
 execute as @e[type=armor_stand,tag=ReusParts] run function #asa_matrix:animate
 function asa_animator:reus/model
 
-execute if score @s AsaMatrix matches 41 run data modify entity @e[type=armor_stand,tag=ReusParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10038
+execute unless entity @s[tag=DestroyHead] if score @s AsaMatrix matches 41 run data modify entity @e[type=armor_stand,tag=ReusParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10038
+execute if entity @s[tag=DestroyHead] if score @s AsaMatrix matches 41 run data modify entity @e[type=armor_stand,tag=ReusParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10120
 
 execute if score @s AsaMatrix matches 1..40 at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
 execute if score @s AsaMatrix matches 1..40 at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~

@@ -18,6 +18,9 @@ execute store result bossbar asa_animator:reus_health value run scoreboard playe
 
 # スコア初期化
 scoreboard players set #mhdp_reus_flying_damage AsaMatrix 0
+scoreboard players set #mhdp_reus_head_damage AsaMatrix 10000
+scoreboard players set #mhdp_reus_body_damage AsaMatrix 10000
+scoreboard players set #mhdp_reus_tail_damage AsaMatrix 10000
 
 # タイマーセット
 scoreboard players set #mhdp_reus_kill_timer AsaMatrix 0
