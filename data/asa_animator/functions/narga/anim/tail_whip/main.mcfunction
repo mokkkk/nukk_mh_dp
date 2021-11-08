@@ -8,15 +8,15 @@ execute if score @s AsaMatrix matches 7..12 run tp @s ^0.1666667 ^-0.1333333 ^-0
 execute if score @s AsaMatrix matches 13 run function asa_animator:narga/anim/tail_whip/keyframes/2
 execute if score @s AsaMatrix matches 13..18 run tp @s ^0.01666667 ^0 ^0
 execute if score @s AsaMatrix matches 19 run function asa_animator:narga/anim/tail_whip/keyframes/3
-execute if score @s AsaMatrix matches 19..24 run tp @s ^0.15 ^0.1333333 ^0.1166667
+execute if score @s AsaMatrix matches 19..24 run tp @s ^0.15 ^0.1333333 ^0.1166667 ~-3 ~
 execute if score @s AsaMatrix matches 25 run function asa_animator:narga/anim/tail_whip/keyframes/4
-execute if score @s AsaMatrix matches 25..30 run tp @s ^-0.1833333 ^-0.1333333 ^0.3833333
+execute if score @s AsaMatrix matches 25..30 run tp @s ^-0.1833333 ^-0.1333333 ^0.3833333 ~-1 ~
 execute if score @s AsaMatrix matches 31 run function asa_animator:narga/anim/tail_whip/keyframes/5
-execute if score @s AsaMatrix matches 31..36 run tp @s ^0.03333334 ^0 ^0.04999999
+execute if score @s AsaMatrix matches 31..36 run tp @s ^0.03333334 ^0 ^0.04999999 ~4 ~
 execute if score @s AsaMatrix matches 37 run function asa_animator:narga/anim/tail_whip/keyframes/6
-execute if score @s AsaMatrix matches 37..44 run tp @s ^0.1125 ^0.1 ^-0.175
+execute if score @s AsaMatrix matches 37..44 run tp @s ^0.1125 ^0.1 ^-0.175 ~0.1 ~
 execute if score @s AsaMatrix matches 45 run function asa_animator:narga/anim/tail_whip/keyframes/7
-execute if score @s AsaMatrix matches 45..50 run tp @s ^-0.08333334 ^-0.1333333 ^-0.15
+execute if score @s AsaMatrix matches 45..50 run tp @s ^-0.08333334 ^-0.1333333 ^-0.15 ~-0.1 ~
 execute if score @s AsaMatrix matches 51 run function asa_animator:narga/anim/tail_whip/keyframes/8
 execute if score @s AsaMatrix matches 51..60 run tp @s ^-0.05 ^0 ^0.05
 execute if score @s AsaMatrix matches 61.. run function asa_animator:narga/anim/tail_whip/end

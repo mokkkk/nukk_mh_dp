@@ -1,0 +1,39 @@
+# [ImportKey]: NobwRALgngDgpmAXGANgSwHYIDRgK55oAmSYALHAAzUCscNAtAExxxkNkBm1DAHJwCM4zAIZFeAsgGMAzAHZO-MLgwiAtgmSAt3wAEARmVgYIgE7qAzknBSA9ngwQke3rk4mbaq2ABuIlHk1wAA8kGVwoJAYaAF9o3AgbL19-QLAQxCjwyIA2ADoYuLAbTk5zOEdESlwhAC80OBNIsLA0cwAhODqGgFEARzw-FCgAZWMpOBJECBMA2OxwaHhSdCxDAmJSESYaKQFeJhkGAE44TikOPSIRY5Ejxj1skTg9GjlHygfDVQ1SXT0GWwwCK4YxmNSWRDWOwOJwuMBuDxJPwBLzpJhZDJkOaQRKQnzI1LpDi5dFgCIZAq4YqlcpIKpgWr1RoZJj5XCtDpdEx9AYoIajETjSbTWbRAC6QA_3
+# 線 1-copy
+particle item obsidian ^2 ^ ^-4 0 0 0 0 1
+particle item obsidian ^1.71951 ^ ^-4.29261 0 0 0 0 1
+particle item obsidian ^1.42329 ^ ^-4.56926 0 0 0 0 1
+particle item obsidian ^1.1104 ^ ^-4.82689 0 0 0 0 1
+particle item obsidian ^0.78029 ^ ^-5.06202 0 0 0 0 1
+particle item obsidian ^0.43279 ^ ^-5.27056 0 0 0 0 1
+particle item obsidian ^0.06869 ^ ^-5.44846 0 0 0 0 1
+particle item obsidian ^-0.31043 ^ ^-5.59152 0 0 0 0 1
+particle item obsidian ^-0.70178 ^ ^-5.69658 0 0 0 0 1
+particle item obsidian ^-1.10182 ^ ^-5.7611 0 0 0 0 1
+particle item obsidian ^-1.50635 ^ ^-5.78441 0 0 0 0 1
+particle item obsidian ^-1.91123 ^ ^-5.7678 0 0 0 0 1
+particle item obsidian ^-2.3128 ^ ^-5.7134 0 0 0 0 1
+particle item obsidian ^-2.70824 ^ ^-5.62469 0 0 0 0 1
+particle item obsidian ^-3.09553 ^ ^-5.50526 0 0 0 0 1
+particle item obsidian ^-3.47355 ^ ^-5.35908 0 0 0 0 1
+particle item obsidian ^-3.84174 ^ ^-5.18959 0 0 0 0 1
+particle item obsidian ^-4.2 ^ ^-5 0 0 0 0 1
+# 線 1
+particle item obsidian ^3 ^ ^-5 0 0 0 0 1
+particle item obsidian ^2.63649 ^ ^-5.37058 0 0 0 0 1
+particle item obsidian ^2.2533 ^ ^-5.72075 0 0 0 0 1
+particle item obsidian ^1.84955 ^ ^-6.04697 0 0 0 0 1
+particle item obsidian ^1.42471 ^ ^-6.34516 0 0 0 0 1
+particle item obsidian ^0.97894 ^ ^-6.61102 0 0 0 0 1
+particle item obsidian ^0.51312 ^ ^-6.83989 0 0 0 0 1
+particle item obsidian ^0.02926 ^ ^-7.02758 0 0 0 0 1
+particle item obsidian ^-0.46966 ^ ^-7.17047 0 0 0 0 1
+particle item obsidian ^-0.97974 ^ ^-7.26611 0 0 0 0 1
+particle item obsidian ^-1.49653 ^ ^-7.31366 0 0 0 0 1
+particle item obsidian ^-2.01551 ^ ^-7.31401 0 0 0 0 1
+particle item obsidian ^-2.5326 ^ ^-7.26943 0 0 0 0 1
+particle item obsidian ^-3.04441 ^ ^-7.18312 0 0 0 0 1
+particle item obsidian ^-3.54842 ^ ^-7.05909 0 0 0 0 1
+particle item obsidian ^-4.04292 ^ ^-6.90129 0 0 0 0 1
+particle item obsidian ^-4.52693 ^ ^-6.71372 0 0 0 0 1
+particle item obsidian ^-5 ^ ^-6.5 0 0 0 0 1
