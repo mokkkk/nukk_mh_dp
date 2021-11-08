@@ -8,6 +8,7 @@ execute if data storage mhdp: {Epf:3} run function mh_dp:damage/get_epf_blast
 execute store result storage score_damage: EPF int 1 run scoreboard players get $mhdp_epf AsaMatrix
 
 # HurtTimeチェック
-execute store result score #hurt_time AsaMatrix run data get entity @s HurtTime
+data modify storage mhdp: Temp.HT set from entity @s HurtTime
+execute store result score #hurt_time AsaMatrix run data get storage mhdp: Temp.HT
 # 攻撃
 execute unless entity @s[gamemode=creative] unless entity @s[gamemode=spectator] if score #hurt_time AsaMatrix matches ..0 run function score_damage:api/attack

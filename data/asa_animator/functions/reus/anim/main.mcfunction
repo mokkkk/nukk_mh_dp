@@ -63,6 +63,8 @@ execute if entity @s[tag=AnmFlyDeath] run function asa_animator:reus/anim/flying
 
 # 登場
 execute if entity @s[tag=AnmSummon] run function asa_animator:reus/anim/summon/main
+# 咆哮
+execute if entity @s[tag=AnmVoice] run function asa_animator:reus/anim/voice/main
 
 # 頭部破壊ひるみ
 execute if entity @s[tag=AnmDHead] run function asa_animator:reus/anim/destroy_head/main
