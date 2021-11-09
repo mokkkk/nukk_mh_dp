@@ -37,6 +37,9 @@ execute if score @s AsaMatrix matches 96.. run function asa_animator:narga/anim/
 execute as @e[type=armor_stand,tag=NargaParts] run function #asa_matrix:animate
 function asa_animator:narga/model
 
+function asa_animator:narga/manager/ground
+
+execute if score @s AsaMatrix matches 1..15 run function asa_animator:narga/manager/rotate
 execute if score @s AsaMatrix matches 1 run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if score @s AsaMatrix matches 23 run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if score @s AsaMatrix matches 31 run playsound block.grass.step master @a ~ ~ ~ 2 0.7
@@ -51,3 +54,7 @@ execute if score @s AsaMatrix matches 51..59 positioned ~ ~1 ~ rotated ~-15 ~ ru
 execute if score @s AsaMatrix matches 51..59 positioned ~ ~0.3 ~ rotated ~-15 ~ run function asa_animator:narga/anim/bite_2/events/particle_3
 execute if score @s AsaMatrix matches 50 run playsound entity.player.attack.sweep master @a ~ ~ ~ 3 1.2
 execute if score @s AsaMatrix matches 53 run playsound item.trident.throw master @a ~ ~ ~ 3 1.2
+
+execute if score @s AsaMatrix matches 22 run function asa_animator:narga/anim/bite_2/events/damage
+execute if score @s AsaMatrix matches 33 run function asa_animator:narga/anim/bite_2/events/damage
+execute if score @s AsaMatrix matches 53 positioned ^-5 ^ ^-4 run function asa_animator:narga/anim/bite_2/events/damage_tail

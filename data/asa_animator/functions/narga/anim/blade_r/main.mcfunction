@@ -35,3 +35,6 @@ execute if score @s AsaMatrix matches 33 run playsound block.grass.step master @
 execute if score @s AsaMatrix matches 33 run particle block grass_block ~ ~ ~ 1 0.1 1 0 10
 execute if score @s AsaMatrix matches 35 run playsound item.trident.throw master @a ~ ~ ~ 2 1.1
 execute if score @s AsaMatrix matches 35 rotated ~10 ~ positioned ^ ^1.2 ^1 run function asa_animator:narga/anim/blade_r/events/particle
+
+execute if score @s AsaMatrix matches 21..30 run function asa_animator:narga/anim/blade_l/events/damage_jump
+execute if score @s AsaMatrix matches 35 positioned ^-4 ^ ^3 run function asa_animator:narga/anim/blade_l/events/damage
