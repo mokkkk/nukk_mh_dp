@@ -25,13 +25,9 @@ execute if score @s AsaMatrix matches 1..24 run function asa_animator:narga/mana
 execute if score @s AsaMatrix matches 25 run function asa_animator:narga/anim/blade/events/pos/set_pos
 execute if score @s AsaMatrix matches 29..38 run function asa_animator:narga/anim/blade/events/pos/offset
 
-execute if score @s AsaMatrix matches 1 run playsound block.grass.step master @a ~ ~ ~ 2 0.7
-execute if score @s AsaMatrix matches 1 run particle block grass_block ~ ~ ~ 1 0.1 1 0 10
+execute if score @s AsaMatrix matches 1 run function asa_animator:narga/manager/particle/jump
+execute if score @s AsaMatrix matches 28 run function asa_animator:narga/manager/particle/jump
+execute if score @s AsaMatrix matches 39 run function asa_animator:narga/manager/particle/jump
 
-execute if score @s AsaMatrix matches 28 run playsound block.grass.step master @a ~ ~ ~ 2 0.7
-execute if score @s AsaMatrix matches 28 run particle block grass_block ~ ~ ~ 1 0.1 1 0 10
-
-execute if score @s AsaMatrix matches 39 run playsound block.grass.step master @a ~ ~ ~ 2 0.7
-execute if score @s AsaMatrix matches 39 run particle block grass_block ~ ~ ~ 1 0.1 1 0 10
 execute if score @s AsaMatrix matches 41 run playsound item.trident.throw master @a ~ ~ ~ 2 1.1
 execute if score @s AsaMatrix matches 41 rotated ~10 ~ positioned ^ ^1.2 ^1 run function asa_animator:narga/anim/blade/events/particle
