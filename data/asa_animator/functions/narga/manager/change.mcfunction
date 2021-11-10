@@ -15,7 +15,7 @@ execute unless entity @e[tag=NargaAttackTarget] run tag @e[tag=NargaTarget,limit
 # execute unless entity @s[tag=IsThunder] run function asa_animator:narga/manager/change_normal/change
 
 # 強制
-tag @s add AnmBStep
+tag @s add AnmTailSpin
 
 # 終了
 tag @s remove ChangeAnm

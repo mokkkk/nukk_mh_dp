@@ -4,7 +4,7 @@
 execute if predicate asa_animator:narga/stay run function asa_animator:narga/anim/stay/main
 
 # 尻尾回転
-execute if entity @s[tag=AnmTailSpin] run function asa_animator:narga/anim/tail_spin/main
+execute unless entity @s[tag=IsAnger] if entity @s[tag=AnmTailSpin] run function asa_animator:narga/anim/tail_spin/main
 
 # 尻尾ビターン
 execute unless entity @s[tag=IsAnger] if entity @s[tag=AnmTailBitan] run function asa_animator:narga/anim/tail_bitan/main
@@ -50,6 +50,9 @@ execute if entity @s[tag=IsAnger] if entity @s[tag=AnmBladeL] run function asa_a
 # 右ブレード→尻尾ビターン
 execute if entity @s[tag=AnmBladeC] run function asa_animator:narga/anim/blade_r_combo/main
 execute if entity @s[tag=AnmTailBitanC] run function asa_animator:narga/anim/tail_bitan_combo/main
+
+# 2連尻尾回転
+execute if entity @s[tag=IsAnger] if entity @s[tag=AnmTailSpin] run function asa_animator:narga/anim/tail_spin_anger/main
 
 # フェイント尻尾ビターン
 execute if entity @s[tag=IsAnger] if entity @s[tag=AnmTailBitan] run function asa_animator:narga/anim/tail_bitan_anger/main
