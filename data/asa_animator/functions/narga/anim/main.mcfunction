@@ -1,5 +1,4 @@
 
-
 # 待機
 execute if predicate asa_animator:narga/stay run function asa_animator:narga/anim/stay/main
 
@@ -16,12 +15,12 @@ execute if entity @s[tag=AnmTailWhip] run function asa_animator:narga/anim/tail_
 execute if entity @s[tag=AnmTailShot] run function asa_animator:narga/anim/tail_shot/main
 
 # 移動近づき
-execute if entity @s[tag=AnmMoveS] run function asa_animator:narga/anim/move_s/main
+execute unless entity @s[tag=IsAnger] if entity @s[tag=AnmMoveS] run function asa_animator:narga/anim/move_s/main
 # 噛みつき
 execute if entity @s[tag=AnmBite] run function asa_animator:narga/anim/bite/main
 
 # バックステップ
-execute if entity @s[tag=AnmBStep] run function asa_animator:narga/anim/backstep/main
+execute unless entity @s[tag=IsAnger] if entity @s[tag=AnmBStep] run function asa_animator:narga/anim/backstep/main
 
 # 左回り込みブレード
 execute unless entity @s[tag=IsAnger] if entity @s[tag=AnmJumpL] run function asa_animator:narga/anim/jump_move_l/main
@@ -39,6 +38,12 @@ execute if entity @s[tag=AnmBite2] run function asa_animator:narga/anim/bite_2/m
 # 飛び込み
 execute if entity @s[tag=AnmTackle] run function asa_animator:narga/anim/tackle/main
 
+
+# 怒り時バックステップ(行動遷移無し)
+execute if entity @s[tag=IsAnger] if entity @s[tag=AnmBStep] run function asa_animator:narga/anim/backstep_anger/main
+
+# 怒り時移動近づき(行動遷移無し)
+execute if entity @s[tag=IsAnger] if entity @s[tag=AnmMoveS] run function asa_animator:narga/anim/move_s_anger/main
 
 # 怒り時左回り込みブレード
 execute if entity @s[tag=IsAnger] if entity @s[tag=AnmJumpL] run function asa_animator:narga/anim/jump_move_l_anger/main
@@ -63,3 +68,8 @@ execute if entity @s[tag=AnmAngerVoice] run function asa_animator:narga/anim/voi
 
 # 疲れ
 execute if entity @s[tag=AnmTired] run function asa_animator:narga/anim/tired/main
+
+# 登場
+execute if entity @s[tag=AnmSummon] run function asa_animator:narga/anim/summon/main
+# 討伐
+execute if entity @s[tag=AnmDeath] run function asa_animator:narga/anim/death/main

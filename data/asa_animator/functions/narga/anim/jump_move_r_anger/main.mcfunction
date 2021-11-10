@@ -22,3 +22,4 @@ execute if score @s AsaMatrix matches 5 run function asa_animator:narga/anim/jum
 execute if score @s AsaMatrix matches 6..20 run function asa_animator:narga/anim/jump_move_r/events/pos/offset
 
 execute if score @s AsaMatrix matches 20 run function asa_animator:narga/anim/blade_r_anger/events/pos/set_pos
+execute if score @s AsaMatrix matches 21.. run function asa_animator:narga/manager/ground

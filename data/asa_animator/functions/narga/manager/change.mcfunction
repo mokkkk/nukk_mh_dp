@@ -12,10 +12,9 @@ tag @a[tag=NargaTarget,limit=1,sort=random,tag=!NotTarget] add NargaAttackTarget
 execute unless entity @e[tag=NargaAttackTarget] run tag @e[tag=NargaTarget,limit=1,sort=random] add NargaAttackTarget
 
 # 通常時
-# execute unless entity @s[tag=IsThunder] run function asa_animator:narga/manager/change_normal/change
-
-# 強制
-tag @s add AnmTailSpin
+execute unless entity @s[tag=IsAnger] run function asa_animator:narga/manager/change_normal/change
+# 怒り時
+execute if entity @s[tag=IsAnger] run function asa_animator:narga/manager/change_anger/change
 
 # 終了
 tag @s remove ChangeAnm

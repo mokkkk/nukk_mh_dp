@@ -6,3 +6,5 @@ execute if entity @s[tag=DiablosRoot] run function asa_animator:diablos/manager/
 execute if entity @s[tag=ZinogreRoot] run function asa_animator:zinogre/manager/despawn
 
 execute if entity @s[tag=ReiaRoot] run function asa_animator:reia/manager/despawn
+
+execute if entity @s[tag=NargaRoot] run function asa_animator:narga/manager/despawn

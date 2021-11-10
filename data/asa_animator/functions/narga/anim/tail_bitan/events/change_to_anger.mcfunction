@@ -1,1 +1,1 @@
-execute as @e[distance=0..20,type=armor_stand,tag=Tail1] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10148
+execute as @e[distance=0..20,type=armor_stand,tag=NargaParts,tag=Tail1] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10148

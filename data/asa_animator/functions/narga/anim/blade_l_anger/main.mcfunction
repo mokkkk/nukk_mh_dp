@@ -11,7 +11,7 @@ execute if score @s AsaMatrix matches 19 run function asa_animator:narga/anim/bl
 execute if score @s AsaMatrix matches 19..30 run tp @s ^0.02083333 ^0 ^-0.08333334
 execute if score @s AsaMatrix matches 31 run function asa_animator:narga/anim/blade_l_anger/keyframes/4
 execute if score @s AsaMatrix matches 31..45 run tp @s ^0.01666667 ^0 ^-0.06666667 ~0.5 ~
-execute if score @s AsaMatrix matches 46.. run function asa_animator:narga/anim/blade_l_anger/end
+execute if score @s AsaMatrix matches 35.. run function asa_animator:narga/anim/blade_l_anger/end
 execute as @e[type=armor_stand,tag=NargaParts] run function #asa_matrix:animate
 function asa_animator:narga/model
 

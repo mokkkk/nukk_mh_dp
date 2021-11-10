@@ -19,5 +19,8 @@ function asa_animator:narga/model
 
 function asa_animator:narga/manager/ground
 
+execute if score @s AsaMatrix matches 1 if score #mhdp_narga_actcount AsaMatrix matches 1.. run function asa_animator:reia/anim/stay/events/change
+execute if score @s AsaMatrix matches 1 if entity @s[tag=IsAnger] run function asa_animator:reia/anim/stay/events/change
+
 execute if score @s AsaMatrix matches 18 run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if score @s AsaMatrix matches 18 run particle block grass_block ^ ^ ^-6 1 0.1 1 0 10
