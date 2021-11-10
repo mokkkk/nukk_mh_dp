@@ -1,7 +1,7 @@
 
 # 地上にmarkerセット
 summon marker ^ ^ ^-2 {Tags:["NargaMovePos"]}
-execute as @e[tag=NargaAttackTarget] positioned as @s run tp @e[type=marker,tag=NargaMovePos] ^ ^ ^-1
+execute as @e[tag=NargaAttackTarget] positioned as @s run tp @e[type=marker,tag=NargaMovePos] ^ ^ ^3
 execute as @e[type=marker,tag=NargaMovePos,limit=1] at @s align y positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
 execute as @e[type=marker,tag=NargaMovePos,limit=1] at @s run tp @s ~ ~1 ~
 

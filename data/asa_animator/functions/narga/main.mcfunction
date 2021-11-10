@@ -24,3 +24,5 @@ execute unless entity @s[tag=AnmTurn] run function asa_animator:narga/anim/main
 
 # デスポーン
 # execute unless entity @s[tag=AnmSummon] unless entity @a[distance=0..64] run function asa_animator:diablos/manager/despawn
+
+function asa_animator:narga/manager/particle/anger

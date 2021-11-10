@@ -1,0 +1,2 @@
+execute as @e[distance=0..20,type=armor_stand,tag=HeadU] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10150
+execute as @e[distance=0..20,type=armor_stand,tag=Tail1] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10148

@@ -22,3 +22,12 @@ execute if score @s AsaMatrix matches 41..50 run tp @s ^0 ^0.005 ^-0.135
 execute if score @s AsaMatrix matches 51.. run function asa_animator:narga/anim/bite/end
 execute as @e[type=armor_stand,tag=NargaParts] run function #asa_matrix:animate
 function asa_animator:narga/model
+
+# 敵の方向を向く
+execute if score @s AsaMatrix matches 1..5 run function asa_animator:narga/manager/rotate
+
+execute if score @s AsaMatrix matches 12..18 unless entity @e[distance=0..5,tag=NargaAttackTarget] at @s run tp @s ^ ^ ^0.4
+execute if score @s AsaMatrix matches 1 run playsound block.grass.step master @a ~ ~ ~ 2 0.7
+execute if score @s AsaMatrix matches 12 run playsound block.grass.step master @a ~ ~ ~ 2 0.7
+execute if score @s AsaMatrix matches 12..15 run particle block grass_block ~ ~ ~ 1 0.1 1 0 3
+execute if score @s AsaMatrix matches 20 run function asa_animator:narga/anim/bite/events/damage
