@@ -73,3 +73,12 @@ execute if entity @s[tag=AnmTired] run function asa_animator:narga/anim/tired/ma
 execute if entity @s[tag=AnmSummon] run function asa_animator:narga/anim/summon/main
 # 討伐
 execute if entity @s[tag=AnmDeath] run function asa_animator:narga/anim/death/main
+
+# 部位破壊・頭部
+execute if entity @s[tag=AnmDHead] run function asa_animator:narga/anim/destroy_head/main
+# 部位破壊・左腕
+execute if entity @s[tag=AnmDArmL] run function asa_animator:narga/anim/destroy_arm_l/main
+# 部位破壊・右腕
+execute if entity @s[tag=AnmDArmR] run function asa_animator:narga/anim/destroy_arm_r/main
+# 部位破壊・尻尾
+execute if entity @s[tag=AnmDTail] run function asa_animator:narga/anim/destroy_tail/main

@@ -14,7 +14,7 @@ execute if score @s AsaMatrix matches 31..40 run tp @s ^0 ^-0.028 ^0.02
 execute if score @s AsaMatrix matches 41 run function asa_animator:narga/anim/death/keyframes/5
 execute if score @s AsaMatrix matches 41..45 run tp @s ^-0.06 ^-0.16 ^0.1
 execute if score @s AsaMatrix matches 46 run function asa_animator:narga/anim/death/keyframes/6
-execute if score @s AsaMatrix matches 46..70 run tp @s ^0 ^0 ^-0.02
+execute if score @s AsaMatrix matches 46..70 run tp @s ^0 ^0 ^0
 execute if score @s AsaMatrix matches 71.. run function asa_animator:narga/anim/death/end
 execute as @e[type=armor_stand,tag=NargaParts] run function #asa_matrix:animate
 function asa_animator:narga/model

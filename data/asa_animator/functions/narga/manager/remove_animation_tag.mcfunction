@@ -18,5 +18,10 @@ tag @s remove AnmTailBitanC
 tag @s remove AnmAngerMove
 tag @s remove AnmAngerVoice
 tag @s remove AnmTired
+tag @s remove AnmSummon
+tag @s remove AnmDHead
+tag @s remove AnmDArmR
+tag @s remove AnmDArmL
+tag @s remove AnmDTail
 
 kill @e[type=marker,tag=NargaShotTarget]

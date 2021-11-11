@@ -1,5 +1,5 @@
 
-scoreboard players add #mhdp_narge_kill_timer AsaMatrix 1
+scoreboard players add #mhdp_narga_kill_timer AsaMatrix 1
 
 # アニメーション遷移
 execute if entity @s[tag=ChangeAnm] run function asa_animator:narga/manager/change

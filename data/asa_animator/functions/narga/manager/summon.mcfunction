@@ -17,6 +17,10 @@ bossbar set asa_animator:narga_health visible true
 execute store result bossbar asa_animator:narga_health value run scoreboard players get #mhdp_narga_health AsaMatrix
 
 scoreboard players set #mhdp_narga_anger_damage AsaMatrix 0
+scoreboard players set #mhdp_narga_head_damage AsaMatrix 1
+scoreboard players set #mhdp_narga_arml_damage AsaMatrix 2
+scoreboard players set #mhdp_narga_armr_damage AsaMatrix 2
+scoreboard players set #mhdp_narga_tail_damage AsaMatrix 1
 
 # タイマーセット
 scoreboard players set #mhdp_narga_kill_timer AsaMatrix 0

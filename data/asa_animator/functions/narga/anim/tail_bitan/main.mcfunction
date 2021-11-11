@@ -46,7 +46,7 @@ execute as @e[type=armor_stand,tag=NargaParts] run function #asa_matrix:animate
 function asa_animator:narga/model
 
 execute if score @s AsaMatrix matches 1..20 run function asa_animator:narga/manager/ground
-execute if score @s AsaMatrix matches 1..54 run function asa_animator:narga/manager/rotate
+execute if score @s AsaMatrix matches 1..48 run function asa_animator:narga/manager/rotate
 execute if score @s AsaMatrix matches 32..50 unless entity @e[distance=0..6,tag=NargaAttackTarget] at @s run tp @s ^ ^ ^0.7
 
 execute if score @s AsaMatrix matches 10 run playsound entity.player.attack.sweep master @a ~ ~ ~ 2 0.7

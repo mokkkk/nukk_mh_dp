@@ -27,4 +27,4 @@ execute if score @s AsaMatrix matches 15 run playsound item.trident.throw master
 execute if score @s AsaMatrix matches 15 rotated ~10 ~ positioned ^ ^1.2 ^1 run function asa_animator:narga/anim/blade_r/events/particle
 
 execute if score @s AsaMatrix matches 1..10 run function asa_animator:narga/anim/blade_l/events/damage_jump
-execute if score @s AsaMatrix matches 15 positioned ^-4 ^ ^3 run function asa_animator:narga/anim/blade_l/events/damage
+execute if score @s AsaMatrix matches 15 positioned ^-4 ^ ^3 run function asa_animator:narga/anim/blade_l_anger/events/damage
