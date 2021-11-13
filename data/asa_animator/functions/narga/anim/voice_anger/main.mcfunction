@@ -29,5 +29,5 @@ execute if score @s AsaMatrix matches 39..45 positioned ^ ^0.1 ^5.5 run particle
 execute if score @s AsaMatrix matches 1 run playsound block.grass.step master @a ~ ~ ~ 3 1
 execute if score @s AsaMatrix matches 21 run playsound block.grass.step master @a ~ ~ ~ 3 1
 
-execute if score @s AsaMatrix matches 39 run playsound minecraft:entity.phantom.bite master @a ~ ~ ~ 3 0.7
-execute if score @s AsaMatrix matches 39 run playsound minecraft:entity.phantom.hurt master @a ~ ~ ~ 3 0.8
+execute if score @s AsaMatrix matches 39..43 run playsound minecraft:entity.phantom.hurt master @a ~ ~ ~ 3 0.7
+execute if score @s AsaMatrix matches 37 run playsound minecraft:custom.narga master @a ~ ~ ~ 2 1.2

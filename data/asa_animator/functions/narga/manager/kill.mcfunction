@@ -21,6 +21,7 @@ tag @e[tag=NargaAttackTarget] remove NargaAttackTarget
 execute at @e[type=armor_stand,tag=NargaParts] run particle poof ~ ~1 ~ 1 1 1 0 30
 
 # アイテムドロップ
+loot spawn ~ ~ ~ loot mh_dp:bonus/narga_kill
 summon experience_orb ~0.1 ~ ~ {Value:50}
 summon experience_orb ~-0.1 ~ ~ {Value:50}
 summon experience_orb ~ ~ ~0.1 {Value:50}
@@ -39,3 +40,4 @@ bossbar remove asa_animator:narga_health
 # パーツ削除
 kill @e[tag=NargaParts]
 kill @e[tag=NargaRoot]
+kill @e[type=marker,tag=NargaAngerEye]

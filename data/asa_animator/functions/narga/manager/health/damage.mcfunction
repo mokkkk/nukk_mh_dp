@@ -2,7 +2,8 @@
 # ダメージ適用
 execute if entity @s[tag=HeadParts] run scoreboard players operation #narga_damage AsaMatrix *= #asam_const_120 AsaMatrix
 execute if entity @s[tag=BodyParts] run scoreboard players operation #narga_damage AsaMatrix *= #asam_const_100 AsaMatrix
-execute if entity @s[tag=ArmParts] run scoreboard players operation #narga_damage AsaMatrix *= #asam_const_95 AsaMatrix
+execute if entity @s[tag=ArmLParts] run scoreboard players operation #narga_damage AsaMatrix *= #asam_const_95 AsaMatrix
+execute if entity @s[tag=ArmRParts] run scoreboard players operation #narga_damage AsaMatrix *= #asam_const_95 AsaMatrix
 execute if entity @s[tag=TailParts] run scoreboard players operation #narga_damage AsaMatrix *= #asam_const_120 AsaMatrix
 scoreboard players operation #narga_damage AsaMatrix /= #asam_const_100 AsaMatrix
 # 怒り時ダメージ増加

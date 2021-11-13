@@ -15,3 +15,4 @@ bossbar remove asa_animator:narga_health
 # パーツ削除
 kill @e[tag=NargaParts]
 kill @e[tag=NargaRoot]
+kill @e[type=marker,tag=NargaAngerEye]

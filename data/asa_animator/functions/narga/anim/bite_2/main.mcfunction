@@ -39,7 +39,7 @@ function asa_animator:narga/model
 
 function asa_animator:narga/manager/ground
 
-execute if score @s AsaMatrix matches 1..15 run function asa_animator:narga/manager/rotate
+execute if score @s AsaMatrix matches 1..8 run function asa_animator:narga/manager/rotate
 execute if score @s AsaMatrix matches 1 run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if score @s AsaMatrix matches 23 run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if score @s AsaMatrix matches 31 run playsound block.grass.step master @a ~ ~ ~ 2 0.7
