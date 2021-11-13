@@ -6,9 +6,13 @@ execute if score @s AsaMatrix matches 1..5 run tp @s ^0.06666666 ^-0.024 ^-0.1
 execute if score @s AsaMatrix matches 6 run function asa_animator:narga/anim/jump_move_r/keyframes/1
 execute if score @s AsaMatrix matches 6..11 run tp @s ^-0.05555555 ^0.52 ^0.08333334
 execute if score @s AsaMatrix matches 12 run function asa_animator:narga/anim/jump_move_r/keyframes/2
-execute if score @s AsaMatrix matches 12..20 run tp @s ^0 ^-0.3333333 ^0
-execute if score @s AsaMatrix matches 21 run function asa_animator:narga/anim/jump_move_r/keyframes/3
-execute if score @s AsaMatrix matches 21..30 run tp @s ^-0.1 ^0 ^0
+execute if score @s AsaMatrix matches 12..15 run tp @s ^0 ^-0.375 ^0
+execute if score @s AsaMatrix matches 16 run function asa_animator:narga/anim/jump_move_r/keyframes/3
+execute if score @s AsaMatrix matches 16..20 run tp @s ^0 ^-0.3 ^0
+execute if score @s AsaMatrix matches 21 run function asa_animator:narga/anim/jump_move_r/keyframes/4
+execute if score @s AsaMatrix matches 21..25 run tp @s ^-0.1 ^0 ^0
+execute if score @s AsaMatrix matches 26 run function asa_animator:narga/anim/jump_move_r/keyframes/5
+execute if score @s AsaMatrix matches 26..30 run tp @s ^-0.1 ^0 ^0
 execute if score @s AsaMatrix matches 31.. run function asa_animator:narga/anim/jump_move_r/end
 execute as @e[type=armor_stand,tag=NargaParts] run function #asa_matrix:animate
 function asa_animator:narga/model

@@ -22,3 +22,18 @@ execute if score @s AsaMatrix matches 51..60 run tp @s ^-0.05 ^0 ^0.05
 execute if score @s AsaMatrix matches 61.. run function asa_animator:narga/anim/tail_whip/end
 execute as @e[type=armor_stand,tag=NargaParts] run function #asa_matrix:animate
 function asa_animator:narga/model
+
+execute if score @s AsaMatrix matches 1..18 run function asa_animator:narga/manager/rotate
+
+execute if score @s AsaMatrix matches 1 run function asa_animator:narga/manager/particle/jump
+execute if score @s AsaMatrix matches 19 run function asa_animator:narga/manager/particle/jump
+execute if score @s AsaMatrix matches 37 run function asa_animator:narga/manager/particle/jump
+
+execute if score @s AsaMatrix matches 13..18 run function asa_animator:narga/manager/ground
+execute if score @s AsaMatrix matches 51..60 run function asa_animator:narga/manager/ground
+
+execute if score @s AsaMatrix matches 19..24 unless entity @e[distance=0..5,tag=NargaAttackTarget] at @s run tp @s ^ ^ ^0.4
+
+execute if score @s AsaMatrix matches 20 run playsound entity.player.attack.sweep master @a ~ ~ ~ 3 1.2
+execute if score @s AsaMatrix matches 26 run playsound item.trident.throw master @a ~ ~ ~ 3 1.2
+execute if score @s AsaMatrix matches 20..30 as @e[distance=0..15,type=armor_stand,tag=Tail2] at @s run function asa_animator:narga/anim/tail_whip/events/damage

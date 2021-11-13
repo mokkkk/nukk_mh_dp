@@ -31,6 +31,9 @@ execute if score @s AsaMatrix matches 23..60 run playsound block.grass.step mast
 
 execute if score @s AsaMatrix matches 26..36 positioned ~ ~1 ~ run function asa_animator:narga/anim/tail_spin/events/particle
 execute if score @s AsaMatrix matches 30..36 positioned ~ ~ ~ run function asa_animator:narga/anim/tail_spin/events/particle_2
-execute if score @s AsaMatrix matches 30..36 positioned ~ ~-0.2 ~ run function asa_animator:narga/anim/tail_spin/events/particle_3
+execute if score @s AsaMatrix matches 30..36 positioned ~ ~0.2 ~ run function asa_animator:narga/anim/tail_spin/events/particle_3
 execute if score @s AsaMatrix matches 26 run playsound entity.player.attack.sweep master @a ~ ~ ~ 3 1.2
-execute if score @s AsaMatrix matches 34 run playsound item.trident.throw master @a ~ ~ ~ 3 1.2
+execute if score @s AsaMatrix matches 32 run playsound item.trident.throw master @a ~ ~ ~ 3 1.2
+execute if score @s AsaMatrix matches 32 run function asa_animator:narga/anim/tail_spin/events/damage
+
+execute if score @s AsaMatrix matches 23..60 run function asa_animator:narga/manager/ground

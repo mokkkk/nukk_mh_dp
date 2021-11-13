@@ -1,9 +1,10 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:iron_sword"
+      "item": "minecraft:barrier",
+      "nbt": "{CustomModelData:19999}"
     },
-    "title": "討伐モンスターリスト",
+    "title": "MH_DP",
     "description": "今まで倒したことのあるモンスター",
     "background": "minecraft:textures/block/obsidian.png",
     "frame": "task",

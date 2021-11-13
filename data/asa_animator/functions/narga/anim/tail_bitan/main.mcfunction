@@ -14,9 +14,9 @@ execute if score @s AsaMatrix matches 25..30 run tp @s ^0 ^-0.002083334 ^0
 execute if score @s AsaMatrix matches 31 run function asa_animator:narga/anim/tail_bitan/keyframes/5
 execute if score @s AsaMatrix matches 31..37 run tp @s ^0 ^0.3053572 ^0
 execute if score @s AsaMatrix matches 38 run function asa_animator:narga/anim/tail_bitan/keyframes/6
-execute if score @s AsaMatrix matches 38..44 run tp @s ^-0.1428571 ^0.5714286 ^-0.1857143 ~1 ~
+execute if score @s AsaMatrix matches 38..44 run tp @s ^-0.1428571 ^0.5714286 ^-0.1857143
 execute if score @s AsaMatrix matches 45 run function asa_animator:narga/anim/tail_bitan/keyframes/7
-execute if score @s AsaMatrix matches 45..51 run tp @s ^0.07142857 ^-0.4285714 ^-0.05714286 ~0.5 ~
+execute if score @s AsaMatrix matches 45..51 run tp @s ^0.07142857 ^-0.4285714 ^-0.05714286
 execute if score @s AsaMatrix matches 52 run function asa_animator:narga/anim/tail_bitan/keyframes/8
 execute if score @s AsaMatrix matches 52..58 run tp @s ^0 ^-0.4714286 ^-0.02857142
 execute if score @s AsaMatrix matches 59 run function asa_animator:narga/anim/tail_bitan/keyframes/9
@@ -44,6 +44,10 @@ execute if score @s AsaMatrix matches 126..130 run tp @s ^0 ^0 ^0
 execute if score @s AsaMatrix matches 131.. run function asa_animator:narga/anim/tail_bitan/end
 execute as @e[type=armor_stand,tag=NargaParts] run function #asa_matrix:animate
 function asa_animator:narga/model
+
+execute if score @s AsaMatrix matches 1..20 run function asa_animator:narga/manager/ground
+execute if score @s AsaMatrix matches 1..48 run function asa_animator:narga/manager/rotate
+execute if score @s AsaMatrix matches 32..50 unless entity @e[distance=0..6,tag=NargaAttackTarget] at @s run tp @s ^ ^ ^0.7
 
 execute if score @s AsaMatrix matches 10 run playsound entity.player.attack.sweep master @a ~ ~ ~ 2 0.7
 execute if score @s AsaMatrix matches 25 run playsound entity.player.attack.sweep master @a ~ ~ ~ 2 0.85

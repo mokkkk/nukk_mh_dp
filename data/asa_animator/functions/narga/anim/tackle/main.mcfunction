@@ -31,8 +31,8 @@ execute if score @s AsaMatrix matches 106.. run function asa_animator:narga/anim
 execute as @e[type=armor_stand,tag=NargaParts] run function #asa_matrix:animate
 function asa_animator:narga/model
 
-execute if score @s AsaMatrix matches 1..19 run function asa_animator:narga/manager/rotate
-execute if score @s AsaMatrix matches 20 run function asa_animator:narga/anim/tackle/events/pos/set_pos
+execute if score @s AsaMatrix matches 1..17 run function asa_animator:narga/manager/rotate
+execute if score @s AsaMatrix matches 18 run function asa_animator:narga/anim/tackle/events/pos/set_pos
 execute if score @s AsaMatrix matches 26..42 run function asa_animator:narga/anim/tackle/events/pos/offset
 
 execute if score @s AsaMatrix matches 50 run function asa_animator:narga/anim/tackle/events/pos/set_pos_2
@@ -41,6 +41,10 @@ execute if score @s AsaMatrix matches 51..64 run function asa_animator:narga/ani
 execute if score @s AsaMatrix matches 25 run function asa_animator:narga/manager/particle/jump
 execute if score @s AsaMatrix matches 42 run function asa_animator:narga/manager/particle/jump
 execute if score @s AsaMatrix matches 51 run function asa_animator:narga/manager/particle/jump
-execute if score @s AsaMatrix matches 53 run playsound item.trident.throw master @a ~ ~ ~ 2 1.3
+execute if score @s AsaMatrix matches 50 run playsound entity.player.attack.sweep master @a ~ ~ ~ 3 1.2
+execute if score @s AsaMatrix matches 53 run playsound item.trident.throw master @a ~ ~ ~ 2 1.2
 execute if score @s AsaMatrix matches 71 run function asa_animator:narga/manager/particle/jump
-execute if score @s AsaMatrix matches 53..64 positioned ~ ~1 ~ rotated ~-15 ~ run function asa_animator:narga/anim/bite_2/events/particle
+execute if score @s AsaMatrix matches 53..63 positioned ~ ~1 ~ rotated ~-15 ~ run function asa_animator:narga/anim/bite_2/events/particle
+
+execute if score @s AsaMatrix matches 26..42 run function asa_animator:narga/anim/tackle/events/damage_jump
+execute if score @s AsaMatrix matches 53 run function asa_animator:narga/anim/tackle/events/damage

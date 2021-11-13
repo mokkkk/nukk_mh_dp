@@ -22,4 +22,4 @@ execute if score @s AsaMatrix matches 1..20 run function asa_animator:reus/manag
 execute if score @s AsaMatrix matches 1 run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 execute if score @s AsaMatrix matches 68 run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 execute if score @s AsaMatrix matches 34 run playsound minecraft:custom.reus master @a ~ ~ ~ 2 1
-execute if score @s AsaMatrix matches 36..55 at @e[distance=0..20,type=armor_stand,tag=HeadU] positioned ^ ^0.65 ^0.35 run particle flash ~ ~ ~ 0 0 0 0 1
+execute if score @s AsaMatrix matches 36..55 at @e[distance=0..20,type=armor_stand,tag=ReusParts,tag=HeadU] positioned ^ ^0.65 ^0.35 run particle flash ~ ~ ~ 0 0 0 0 1

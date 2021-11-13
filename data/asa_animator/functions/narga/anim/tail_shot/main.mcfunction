@@ -2,7 +2,7 @@
 scoreboard players add @s AsaMatrix 1
 execute if score @s AsaMatrix matches 1 run function asa_animator:narga/anim/tail_shot/start
 execute if score @s AsaMatrix matches 1 run function asa_animator:narga/anim/tail_shot/keyframes/0
-execute if score @s AsaMatrix matches 1..7 run tp @s ^0 ^0.4285714 ^-0.1428571
+execute if score @s AsaMatrix matches 1..7 run tp @s ^0 ^0.4285714 ^-0.3
 execute if score @s AsaMatrix matches 8 run function asa_animator:narga/anim/tail_shot/keyframes/1
 execute if score @s AsaMatrix matches 8..13 run tp @s ^0.05555555 ^-0.52 ^-0.3333333
 execute if score @s AsaMatrix matches 14 run function asa_animator:narga/anim/tail_shot/keyframes/2
@@ -24,7 +24,7 @@ execute if score @s AsaMatrix matches 58..62 run tp @s ^0 ^0 ^-0.04000001 ~1 ~
 execute if score @s AsaMatrix matches 63 run function asa_animator:narga/anim/tail_shot/keyframes/10
 execute if score @s AsaMatrix matches 63..72 run tp @s ^0.04 ^0.0035 ^-0.03 ~-0.5 ~
 execute if score @s AsaMatrix matches 73 run function asa_animator:narga/anim/tail_shot/keyframes/11
-execute if score @s AsaMatrix matches 73..80 run tp @s ^0.05 ^0.004375 ^-0.0625
+execute if score @s AsaMatrix matches 73..80 run tp @s ^0.05 ^0.004375 ^-0.0625 ~-0.5 ~
 execute if score @s AsaMatrix matches 81.. run function asa_animator:narga/anim/tail_shot/end
 execute as @e[type=armor_stand,tag=NargaParts] run function #asa_matrix:animate
 function asa_animator:narga/model
@@ -35,19 +35,14 @@ execute if score @s AsaMatrix matches 46..52 run function asa_animator:narga/man
 execute if score @s AsaMatrix matches 20 run playsound entity.player.attack.sweep master @a ~ ~ ~ 3 0.5
 execute if score @s AsaMatrix matches 35 run playsound entity.player.attack.sweep master @a ~ ~ ~ 3 0.7
 
-execute if score @s AsaMatrix matches 45 run playsound entity.player.attack.sweep master @a ~ ~ ~ 3 0.8
-execute if score @s AsaMatrix matches 45 run playsound item.trident.throw master @a ~ ~ ~ 3 1.2
-execute if score @s AsaMatrix matches 57 run playsound entity.player.attack.sweep master @a ~ ~ ~ 3 0.8
-execute if score @s AsaMatrix matches 57 run playsound item.trident.throw master @a ~ ~ ~ 3 1.2
+execute if score @s AsaMatrix matches 1 run function asa_animator:narga/manager/particle/jump
+execute if score @s AsaMatrix matches 14 run function asa_animator:narga/manager/particle/jump
+execute if score @s AsaMatrix matches 46 run function asa_animator:narga/manager/particle/jump
+execute if score @s AsaMatrix matches 58 run function asa_animator:narga/manager/particle/jump
 
-execute if score @s AsaMatrix matches 45 positioned ^ ^5 ^2 run particle sweep_attack ~ ~ ~ 1 1 1 0 10
-execute if score @s AsaMatrix matches 57 positioned ^ ^6 ^2 run particle sweep_attack ~ ~ ~ 1 1 1 0 10
+execute unless entity @s[tag=IsAnger] if score @s AsaMatrix matches 1 run function asa_animator:narga/anim/tail_bitan/events/change_to_anger
+execute unless entity @s[tag=IsAnger] if score @s AsaMatrix matches 73 run function asa_animator:narga/anim/tail_bitan/events/change_to_normal
 
-execute if score @s AsaMatrix matches 1 run particle block grass_block ~ ~ ~ 2 0.1 2 0 30
-execute if score @s AsaMatrix matches 1 run playsound block.grass.step master @a ~ ~ ~ 3 1
-execute if score @s AsaMatrix matches 14 run particle block grass_block ~ ~ ~ 2 0.1 2 0 30
-execute if score @s AsaMatrix matches 14 run playsound block.grass.step master @a ~ ~ ~ 3 0.7
-execute if score @s AsaMatrix matches 46 run particle block grass_block ~ ~ ~ 2 0.1 2 0 30
-execute if score @s AsaMatrix matches 46 run playsound block.grass.step master @a ~ ~ ~ 3 1
-execute if score @s AsaMatrix matches 58 run particle block grass_block ~ ~ ~ 2 0.1 2 0 30
-execute if score @s AsaMatrix matches 58 run playsound block.grass.step master @a ~ ~ ~ 3 0.7
+execute if score @s AsaMatrix matches 45 run function asa_animator:narga/anim/tail_shot/events/set_position
+execute if score @s AsaMatrix matches 45 positioned ^ ^7 ^2 facing entity @e[type=marker,tag=NargaShotTarget] feet run function asa_animator:narga/anim/tail_shot/events/shot_0
+execute if score @s AsaMatrix matches 57 positioned ^ ^8 ^2 facing entity @e[type=marker,tag=NargaShotTarget] feet run function asa_animator:narga/anim/tail_shot/events/shot_1

@@ -1,17 +1,18 @@
 
 # メッセージ
-tellraw @a {"text": "【雷狼竜は居なくなった】"}
+tellraw @a {"text": "【迅竜は居なくなった】"}
 
 # タグ消去
-tag @e[tag=ZinogreTarget] remove ZinogreTarget
-tag @e[tag=ZinogreAttackTarget] remove ZinogreAttackTarget
+tag @e[tag=NargaTarget] remove NargaTarget
+tag @e[tag=NargaAttackTarget] remove NargaAttackTarget
 
 # 当たり判定削除
-function asa_animator:zinogre/manager/health/kill
+function asa_animator:narga/manager/health/kill
 
 # ボスバー削除
-bossbar remove asa_animator:zinogre_health
+bossbar remove asa_animator:narga_health
 
 # パーツ削除
-kill @e[tag=ZinogreParts]
-kill @e[tag=ZinogreRoot]
+kill @e[tag=NargaParts]
+kill @e[tag=NargaRoot]
+kill @e[type=marker,tag=NargaAngerEye]
