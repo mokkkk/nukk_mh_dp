@@ -3,11 +3,11 @@ minecraftにボスモンスターを追加するデータパック
 
 ## これは何？
 
-Minecraftに，様々なボスモンスターを追加します．
+Minecraftに様々なボスモンスターを追加します．
 
 ## 機能
 
-草原や森バイオームに居ると，まれにボスモンスターが出現します．かなりの強敵のため，注意してください．
+Minecraftのプレイ中，まれにボスモンスターが出現します．かなりの強敵のため注意してください．
 
 何度もボスモンスターが出現して面倒臭くなったときは，/function mh_dp:settings/spawn_disable を実行してください．もう一度ボスモンスター達に会いたくなった時は，/function mh_dp:settings/spawn_enableを実行してください．
 
@@ -59,3 +59,10 @@ Minecraft JavaEdition ver1.17.1でのみ動作確認済みです．それ未満�
   
 ちぇん様
 - ScoreDamage(https://github.com/ChenCMD/MCCMD-ScoreDamage)
+
+## 謝辞
+
+以下のリソースの提供に感謝します．
+
+モンスターモデル（迅竜），進捗用モンスターアイコン：もじしゃ様
+効果音：teranosinn
