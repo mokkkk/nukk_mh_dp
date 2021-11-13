@@ -49,3 +49,12 @@ execute if entity @s[tag=AnmEndFly] run function asa_animator:reia/anim/end_fly/
 execute if entity @s[tag=AnmDeath] run function asa_animator:reia/anim/death/main
 # 飛行時討伐
 execute if entity @s[tag=AnmFlyDeath] run function asa_animator:reia/anim/flying_death/main
+
+# 頭部部位破壊
+execute if entity @s[tag=AnmDHead] run function asa_animator:reia/anim/destroy_head/main
+# 胴体部位破壊
+execute if entity @s[tag=AnmDBody] run function asa_animator:reia/anim/destroy_body/main
+# 尻尾部位破壊
+execute if entity @s[tag=AnmDTail] run function asa_animator:reia/anim/destroy_tail/main
+# 飛行時部位破壊
+execute if entity @s[tag=AnmFlyDamage] run function asa_animator:reia/anim/flying_damage/main

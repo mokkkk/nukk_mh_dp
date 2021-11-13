@@ -1,0 +1,32 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"雌火竜の棘\"}',Lore:['{\"text\":\"雌火竜の毒を帯びた棘．\"}','{\"text\":\"武器の素材として使用される．\"}']},CustomModelData:10004,MhdpID:5}"
+              }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"雌火竜の甲殻\"}',Lore:['{\"text\":\"雌火竜の体を守る頑丈な甲殻．\"}','{\"text\":\"防具の素材として使用される．\"}']},CustomModelData:10005,MhdpID:6}"
+              }
+          ]
+        }
+      ]
+    }
+  ]
+}

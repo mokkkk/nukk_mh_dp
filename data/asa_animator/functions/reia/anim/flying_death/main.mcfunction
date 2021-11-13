@@ -19,4 +19,5 @@ execute if score @s AsaMatrix matches 13..20 run function asa_animator:reia/anim
 execute if score @s AsaMatrix matches 21 run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if score @s AsaMatrix matches 21 run particle block grass_block ~ ~1 ~ 1.5 0.1 1.5 0 30
 
-execute if score @s AsaMatrix matches 21 run data modify entity @e[type=armor_stand,tag=ReiaParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10118
+execute unless entity @s[tag=DestroyHead] if score @s AsaMatrix matches 21 run data modify entity @e[type=armor_stand,tag=ReiaParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10118
+execute if entity @s[tag=DestroyHead] if score @s AsaMatrix matches 21 run data modify entity @e[type=armor_stand,tag=ReiaParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10157
