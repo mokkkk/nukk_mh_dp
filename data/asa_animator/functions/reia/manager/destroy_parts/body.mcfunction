@@ -17,3 +17,6 @@ function asa_animator:reia/manager/remove_animation_tag
 execute unless entity @s[tag=IsFlying] run tag @s add AnmDBody
 execute if entity @s[tag=IsFlying] run tag @s add AnmFlyDamage
 tag @s remove IsFlying
+
+execute as @a[distance=0..64] run advancement grant @s only mh_dp:toasts/reia
+schedule function asa_animator:reia/manager/destroy_parts/revoke 5t

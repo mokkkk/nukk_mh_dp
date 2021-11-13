@@ -1,4 +1,7 @@
 scoreboard players set @s AsaMatrix 0
+tag @s add DestroyHead
+tag @s add DestroyBody
+tag @s add DestroyTail
 execute if entity @s[tag=AnmSault] run tag @s add IsFlying
 execute if entity @s[tag=AnmFlyStay] run tag @s add IsFlying
 execute if entity @s[tag=AnmFlyCharge] run tag @s add IsFlying

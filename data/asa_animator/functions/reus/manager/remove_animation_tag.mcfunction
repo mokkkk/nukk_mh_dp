@@ -24,3 +24,4 @@ tag @s remove AnmFlyDeath
 tag @s remove AnmDHead
 tag @s remove AnmDBody
 tag @s remove AnmDTail
+tag @s remove AnmTurn
