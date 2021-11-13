@@ -15,6 +15,8 @@ execute if entity @e[type=item,nbt={Item:{tag:{SpawnID:2}}}] run function asa_an
 execute if entity @e[type=item,nbt={Item:{tag:{SpawnID:3}}}] run function asa_animator:zinogre/manager/summon
 # 雌火竜
 execute if entity @e[type=item,nbt={Item:{tag:{SpawnID:4}}}] run function asa_animator:reus/manager/summon
+# 迅竜
+execute if entity @e[type=item,nbt={Item:{tag:{SpawnID:5}}}] run function asa_animator:narga/manager/summon
 
 # loot用タグ消去
 function mh_dp:spawn/remove_tag
