@@ -1,0 +1,32 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 4,
+        "max": 8
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"迅竜の鱗\"}',Lore:['{\"text\":\"迅竜の体を覆う鱗．\"}','{\"text\":\"武器の素材として使用される．\"}']},CustomModelData:10002,MhdpID:3}"
+              }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"迅竜の黒毛\"}',Lore:['{\"text\":\"闇夜に溶ける漆黒の毛．\"}','{\"text\":\"防具の素材として使用される．\"}']},CustomModelData:10003,MhdpID:4}"
+              }
+          ]
+        }
+      ]
+    }
+  ]
+}

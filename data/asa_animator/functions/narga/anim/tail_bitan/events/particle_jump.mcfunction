@@ -1,0 +1,1 @@
+execute as @e[distance=0..20,type=armor_stand,tag=Tail2] at @s run particle cloud ~ ~ ~ 0 0 0 0.05 3

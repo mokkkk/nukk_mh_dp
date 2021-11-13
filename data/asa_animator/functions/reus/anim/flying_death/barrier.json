@@ -1,0 +1,722 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/barrier"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 10000
+      },
+      "model": "item/reus/head_upper"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10001
+      },
+      "model": "item/reus/head_lower"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10002
+      },
+      "model": "item/reus/neck_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10003
+      },
+      "model": "item/reus/body_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10004
+      },
+      "model": "item/reus/body_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10005
+      },
+      "model": "item/reus/leg_l_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10006
+      },
+      "model": "item/reus/leg_l_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10007
+      },
+      "model": "item/reus/leg_l_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10008
+      },
+      "model": "item/reus/leg_r_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10009
+      },
+      "model": "item/reus/leg_r_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10010
+      },
+      "model": "item/reus/leg_r_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10011
+      },
+      "model": "item/reus/tail_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10012
+      },
+      "model": "item/reus/tail_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10013
+      },
+      "model": "item/reus/tail_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10014
+      },
+      "model": "item/reus/wing_l_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10015
+      },
+      "model": "item/reus/wing_l_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10016
+      },
+      "model": "item/reus/wing_r_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10017
+      },
+      "model": "item/reus/wing_r_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10018
+      },
+      "model": "item/diablos/head_upper"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10019
+      },
+      "model": "item/diablos/head_lower"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10020
+      },
+      "model": "item/diablos/neck_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10021
+      },
+      "model": "item/diablos/neck_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10022
+      },
+      "model": "item/diablos/neck_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10023
+      },
+      "model": "item/diablos/body_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10024
+      },
+      "model": "item/diablos/body_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10025
+      },
+      "model": "item/diablos/leg_l_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10026
+      },
+      "model": "item/diablos/leg_l_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10027
+      },
+      "model": "item/diablos/leg_l_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10028
+      },
+      "model": "item/diablos/leg_r_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10029
+      },
+      "model": "item/diablos/leg_r_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10030
+      },
+      "model": "item/diablos/leg_r_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10031
+      },
+      "model": "item/diablos/tail_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10032
+      },
+      "model": "item/diablos/tail_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10033
+      },
+      "model": "item/diablos/tail_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10034
+      },
+      "model": "item/diablos/wing_l_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10035
+      },
+      "model": "item/diablos/wing_l_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10036
+      },
+      "model": "item/diablos/wing_r_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10037
+      },
+      "model": "item/diablos/wing_r_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10038
+      },
+      "model": "item/reus/head_upper_b"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10039
+      },
+      "model": "item/diablos/head_upper_b"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10040
+      },
+      "model": "item/zinorge/head_u"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10041
+      },
+      "model": "item/zinorge/head_l"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10042
+      },
+      "model": "item/zinorge/neck_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10043
+      },
+      "model": "item/zinorge/neck_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10044
+      },
+      "model": "item/zinorge/neck_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10045
+      },
+      "model": "item/zinorge/body_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10046
+      },
+      "model": "item/zinorge/body_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10047
+      },
+      "model": "item/zinorge/leg_l_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10048
+      },
+      "model": "item/zinorge/leg_r_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10049
+      },
+      "model": "item/zinorge/leg_l_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10050
+      },
+      "model": "item/zinorge/leg_r_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10051
+      },
+      "model": "item/zinorge/leg_l_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10052
+      },
+      "model": "item/zinorge/leg_r_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10053
+      },
+      "model": "item/zinorge/arm_l_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10054
+      },
+      "model": "item/zinorge/arm_r_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10055
+      },
+      "model": "item/zinorge/arm_l_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10056
+      },
+      "model": "item/zinorge/arm_r_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10057
+      },
+      "model": "item/zinorge/arm_l_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10058
+      },
+      "model": "item/zinorge/arm_r_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10059
+      },
+      "model": "item/zinorge/tail_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10060
+      },
+      "model": "item/zinorge/tail_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10061
+      },
+      "model": "item/zinorge/tail_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10062
+      },
+      "model": "item/zinorge/head_u_t"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10063
+      },
+      "model": "item/zinorge/head_l_t"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10064
+      },
+      "model": "item/zinorge/neck_0_t"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10065
+      },
+      "model": "item/zinorge/neck_1_t"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10066
+      },
+      "model": "item/zinorge/neck_2_t"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10067
+      },
+      "model": "item/zinorge/body_0_t"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10068
+      },
+      "model": "item/zinorge/body_1_t"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10069
+      },
+      "model": "item/zinorge/leg_l_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10070
+      },
+      "model": "item/zinorge/leg_r_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10071
+      },
+      "model": "item/zinorge/leg_l_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10072
+      },
+      "model": "item/zinorge/leg_r_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10073
+      },
+      "model": "item/zinorge/leg_l_2_t"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10074
+      },
+      "model": "item/zinorge/leg_r_2_t"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10075
+      },
+      "model": "item/zinorge/arm_l_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10076
+      },
+      "model": "item/zinorge/arm_r_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10077
+      },
+      "model": "item/zinorge/arm_l_1_t"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10078
+      },
+      "model": "item/zinorge/arm_r_1_t"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10079
+      },
+      "model": "item/zinorge/arm_l_2_t"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10080
+      },
+      "model": "item/zinorge/arm_r_2_t"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10081
+      },
+      "model": "item/zinorge/tail_0_t"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10082
+      },
+      "model": "item/zinorge/tail_1_t"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10083
+      },
+      "model": "item/zinorge/tail_2_t"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10084
+      },
+      "model": "item/diablos/air"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10085
+      },
+      "model": "item/diablos/shot"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10086
+      },
+      "model": "item/zinorge/head_u_b"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10087
+      },
+      "model": "item/reus/neck_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10088
+      },
+      "model": "item/reus/neck_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10098
+      },
+      "model": "item/reia/leg_r_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10099
+      },
+      "model": "item/reia/head_upper"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10100
+      },
+      "model": "item/reia/head_lower"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10101
+      },
+      "model": "item/reia/neck_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10102
+      },
+      "model": "item/reia/neck_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10103
+      },
+      "model": "item/reia/neck_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10104
+      },
+      "model": "item/reia/body_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10105
+      },
+      "model": "item/reia/body_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10106
+      },
+      "model": "item/reia/leg_l_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10107
+      },
+      "model": "item/reia/leg_l_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10108
+      },
+      "model": "item/reia/leg_r_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10109
+      },
+      "model": "item/reia/leg_l_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10110
+      },
+      "model": "item/reia/leg_r_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10111
+      },
+      "model": "item/reia/tail_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10112
+      },
+      "model": "item/reia/tail_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10113
+      },
+      "model": "item/reia/tail_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10114
+      },
+      "model": "item/reia/wing_l_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10115
+      },
+      "model": "item/reia/wing_r_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10116
+      },
+      "model": "item/reia/wing_l_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10117
+      },
+      "model": "item/reia/wing_r_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10118
+      },
+      "model": "item/reia/head_upper_b"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10119
+      },
+      "model": "item/reus/head_upper_break"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10120
+      },
+      "model": "item/reus/head_upper_break_b"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10121
+      },
+      "model": "item/reus/body_0_break"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10122
+      },
+      "model": "item/reus/body_1_break"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10123
+      },
+      "model": "item/reus/tail_1_break"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 20000
+      },
+      "model": "item/diablos/icon"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 20001
+      },
+      "model": "item/zinorge/icon"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 20002
+      },
+      "model": "item/reus/icon"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 20003
+      },
+      "model": "item/reia/icon"
+    }
+  ]
+}

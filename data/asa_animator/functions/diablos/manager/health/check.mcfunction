@@ -1,6 +1,7 @@
 
 # 受けたダメージ計算
-execute store result score #diablos_damage AsaMatrix run data get entity @s Health 100
+data modify storage mhdp: Temp.Health set from entity @s Health
+execute store result score #diablos_damage AsaMatrix run data get storage mhdp: Temp.Health 100
 scoreboard players remove #diablos_damage AsaMatrix 100000
 
 # ダメージ0.5以下なら無効

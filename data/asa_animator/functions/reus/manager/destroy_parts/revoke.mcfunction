@@ -1,0 +1,1 @@
+advancement revoke @a only mh_dp:toasts/reus
