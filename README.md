@@ -29,6 +29,10 @@ Minecraftに，様々なボスモンスターを追加します．
   - 出現バイオーム：草原，森林など
   - 強制召喚： /function asa_animator:zinogre/manager/summon
 
+- 迅竜（モデル：もじしゃ様, @mojisha_moji）：
+  - 出現バイオーム：草原，森林など
+  - 強制召喚： /function asa_animator:narga/manager/summon
+
 ## インストール
 
 ダウンロードしたデータパックをworld内のdatapacksフォルダに入れてください．
@@ -43,7 +47,7 @@ Minecraft JavaEdition ver1.17.1でのみ動作確認済みです．それ未満�
 
 本データパック(asa_animator および mh_dp)は，自由に分解，改変，コピペしていただいて大丈夫です．ただし，丸ごと再配布する場合は@nukknu99までご連絡をお願いします．
 
-ただし，同梱リソースパックについては，本データパック以外への利用は個人的利用のみに留めてください．
+ただし，同梱リソースパックについては，本データパック以外の利用は禁止します．
 
 ## ライブラリ
 
