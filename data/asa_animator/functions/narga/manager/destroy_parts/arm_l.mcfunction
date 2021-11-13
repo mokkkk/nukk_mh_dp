@@ -1,4 +1,4 @@
-# data modify entity @e[type=armor_stand,tag=NargaParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10119
+data modify entity @e[type=armor_stand,tag=NargaParts,tag=WingL,limit=1] ArmorItems[3].tag.CustomModelData set value 10154
 tag @s add DestroyArmL
 playsound entity.player.attack.knockback master @a ~ ~ ~ 2 1
 playsound entity.player.attack.crit master @a ~ ~ ~ 2 0.8
@@ -9,3 +9,6 @@ scoreboard players set @s AsaMatrix 0
 
 function asa_animator:narga/manager/remove_animation_tag
 tag @s add AnmDArmL
+
+execute as @a[distance=0..64] run advancement grant @s only mh_dp:toasts/narga
+schedule function asa_animator:narga/manager/destroy_parts/revoke 5t
