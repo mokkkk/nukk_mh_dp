@@ -23,7 +23,19 @@ execute if score @s AsaMatrix matches 71.. run function asa_animator:dyno/anim/s
 execute as @e[type=armor_stand,tag=DynoParts] run function #asa_matrix:animate
 function asa_animator:dyno/model
 
+execute if score @s AsaMatrix matches 1..20 run function asa_animator:dyno/manager/rotate
+
+execute if score @s AsaMatrix matches 14 run playsound entity.hoglin.step master @a ~ ~ ~ 2 0.5
 execute if score @s AsaMatrix matches 14 run playsound entity.iron_golem.step master @a ~ ~ ~ 2 0.5
 execute if score @s AsaMatrix matches 14 run playsound entity.iron_golem.attack master @a ~ ~ ~ 2 0.5
+execute if score @s AsaMatrix matches 14 positioned ^ ^ ^-6 run function asa_animator:dyno/anim/slash_swing_l/events/damage
+
+execute if score @s AsaMatrix matches 25..34 run playsound block.grass.hit master @a ~ ~ ~ 2 0.5
+
+execute if score @s AsaMatrix matches 27..36 as @e[distance=0..20,type=armor_stand,tag=DynoParts,tag=Tail3] at @s run function asa_animator:dyno/anim/slash_shot_l/events/particle_tail
 
 execute if score @s AsaMatrix matches 38 run playsound item.trident.throw master @a ~ ~ ~ 2 0.5
+execute if score @s AsaMatrix matches 36 run playsound item.firecharge.use master @a ~ ~ ~ 2 0.5
+
+execute if score @s AsaMatrix matches 20 run summon marker ^ ^ ^30 {Tags:["DynoMoveRotate"]}
+execute if score @s AsaMatrix matches 38 positioned ^-2 ^ ^6 facing entity @e[distance=0..30,type=marker,tag=DynoMoveRotate] feet rotated ~ 0 run function asa_animator:dyno/anim/slash_shot_l/events/damage

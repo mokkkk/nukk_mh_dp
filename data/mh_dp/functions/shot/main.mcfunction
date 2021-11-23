@@ -8,3 +8,6 @@ execute if entity @s[tag=ReusBreath] run function asa_animator:reus/anim/breath/
 execute if entity @s[tag=ReiaBreath] run function asa_animator:reia/anim/breath_3/events/main_bullet
 
 execute if entity @s[tag=NargaTail] run function asa_animator:narga/anim/tail_shot/events/main_bullet
+
+execute if entity @s[tag=DynoTailShot] run function asa_animator:dyno/anim/slash_shot_l/events/shot/main_bullet
+execute if entity @s[tag=DynoBreath] run function asa_animator:dyno/anim/breath/events/main_bullet

@@ -1,0 +1,2 @@
+execute if block ~ ~-1 ~ #asa_animator:no_collision positioned ~ ~-1 ~ run function asa_animator:zinogre/manager/check_ground_
+execute at @s if block ~ ~-1 ~ #asa_animator:no_collision run tp @s ~ ~-1 ~
