@@ -34,6 +34,6 @@ execute if score @s AsaMatrix matches 16..35 as @e[distance=0..15,type=armor_sta
 execute if score @s AsaMatrix matches 16..35 as @e[distance=0..15,type=armor_stand,tag=DynoParts,tag=HeadU] at @s positioned ^ ^1 ^ run particle electric_spark ~ ~ ~ 0 0 0 1 10
 execute if score @s AsaMatrix matches 16..35 as @e[distance=0..15,type=armor_stand,tag=DynoParts,tag=HeadU] at @s positioned ^ ^1 ^ run particle crit ~ ~ ~ 0 0 0 0.6 3
 
-execute if score @s AsaMatrix matches 55 run function asa_animator:dyno/manager/model/change_to_heat_tail
+execute if score @s AsaMatrix matches 35 run function asa_animator:dyno/manager/model/change_to_normal_tail
 execute if score @s AsaMatrix matches 55 run function asa_animator:dyno/manager/model/change_to_heat_head
 execute if score @s AsaMatrix matches 55..75 as @e[distance=0..15,type=armor_stand,tag=DynoParts,tag=HeadU] at @s positioned ^ ^1 ^0.5 run particle flame ~ ~ ~ 0.1 0.1 0.1 0.05 3
