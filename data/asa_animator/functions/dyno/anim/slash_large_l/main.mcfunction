@@ -31,5 +31,7 @@ execute if score @s AsaMatrix matches 31..35 at @s run tp @s ^0.1 ^ ^-0.3
 execute if score @s AsaMatrix matches 36..40 at @s run tp @s ^0.05 ^ ^-0.1
 
 execute if score @s AsaMatrix matches 21 positioned ^ ^2 ^ run function asa_animator:dyno/anim/slash_large_l/events/particle
+execute if entity @s[tag=IsHeatTail] if score @s AsaMatrix matches 21 positioned ^ ^2 ^ run function asa_animator:dyno/anim/slash_large_l/events/particle_heat
+execute if entity @s[tag=IsHeatTail] if score @s AsaMatrix matches 21 positioned ^ ^2 ^ run function asa_animator:dyno/anim/slash_large_l/events/particle_round
 execute if score @s AsaMatrix matches 21 positioned ^ ^ ^-5 run function asa_animator:dyno/anim/slash_large_l/events/damage
 execute if score @s AsaMatrix matches 23 positioned ^5 ^ ^ run function asa_animator:dyno/anim/slash_large_l/events/damage

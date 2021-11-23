@@ -10,4 +10,4 @@ particle lava ^ ^1 ^3 1 1 1 0.1 10
 particle item magma_block ^ ^1 ^6 1 0.1 1 0 10
 kill @e[type=marker,tag=DynoMoveRotate]
 
-execute positioned ~ ~3 ~ run function asa_animator:dyno/anim/slash_shot_l/events/shot/shot
+execute if entity @s[tag=IsHeatTail] positioned ~ ~3 ~ run function asa_animator:dyno/anim/slash_shot_l/events/shot/shot

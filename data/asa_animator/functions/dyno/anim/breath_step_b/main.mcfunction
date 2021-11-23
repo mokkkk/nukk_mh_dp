@@ -19,10 +19,12 @@ execute if score @s AsaMatrix matches 40.. run function asa_animator:dyno/anim/b
 execute as @e[type=armor_stand,tag=DynoParts] run function #asa_matrix:animate
 function asa_animator:dyno/model
 
+execute if score @s AsaMatrix matches 30.. run function asa_animator:dyno/manager/ground
+
 execute if score @s AsaMatrix matches 1..12 if entity @e[distance=..15,tag=DynoAttackTarget] at @s run tp @s ^ ^ ^-0.2
 execute if score @s AsaMatrix matches 1..30 run function asa_animator:dyno/manager/rotate
-execute if score @s AsaMatrix matches 15 if entity @e[distance=..15,tag=DynoAttackTarget] positioned ^ ^2 ^6 rotated ~ 60 run function asa_animator:dyno/anim/breath_step_b/events/shot
-execute if score @s AsaMatrix matches 15 unless entity @e[distance=..15,tag=DynoAttackTarget] positioned ^ ^2 ^6 rotated ~ 25 run function asa_animator:dyno/anim/breath_step_b/events/shot
+execute if score @s AsaMatrix matches 15 if entity @e[distance=..18,tag=DynoAttackTarget] positioned ^ ^2 ^6 rotated ~ 60 run function asa_animator:dyno/anim/breath_step_b/events/shot
+execute if score @s AsaMatrix matches 15 unless entity @e[distance=..18,tag=DynoAttackTarget] positioned ^ ^2 ^6 rotated ~ 25 run function asa_animator:dyno/anim/breath_step_b/events/shot
 
 execute if score @s AsaMatrix matches 15 at @s run function asa_animator:dyno/anim/breath_step_b/events/pos/set_pos
 execute if score @s AsaMatrix matches 16..29 at @s run function asa_animator:dyno/anim/breath_step_b/events/pos/offset

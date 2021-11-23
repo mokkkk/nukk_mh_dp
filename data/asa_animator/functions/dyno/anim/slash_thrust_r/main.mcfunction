@@ -34,5 +34,6 @@ execute if score @s AsaMatrix matches 28 run playsound item.trident.throw master
 execute if score @s AsaMatrix matches 26 positioned ^-2 ^ ^5 run function asa_animator:dyno/anim/slash_thrust_l/events/damage
 execute if score @s AsaMatrix matches 29 positioned ^ ^ ^6 run function asa_animator:dyno/anim/slash_thrust_l/events/damage
 execute if score @s AsaMatrix matches 29 positioned ^ ^ ^6 run particle block grass_block ~ ~ ~ 1 0.1 1 0 30
+execute if entity @s[tag=IsHeatTail] if score @s AsaMatrix matches 29 positioned ^ ^ ^6 run particle lava ~ ~ ~ 1 0.1 1 0 10
 
 execute if score @s AsaMatrix matches 16..30 at @s if entity @e[distance=0..8,tag=DynoAttackTarget] run tp @s ^ ^ ^-0.3

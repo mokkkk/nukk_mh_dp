@@ -15,7 +15,7 @@ execute unless entity @e[tag=DynoAttackTarget] run tag @e[tag=DynoTarget,limit=1
 # execute unless entity @s[tag=IsAnger] run function asa_animator:dyno/manager/change_normal/change
 
 # 強制
-tag @s add AnmCharge
+tag @s add AnmBreathRStep
 
 # 終了
 tag @s remove ChangeAnm

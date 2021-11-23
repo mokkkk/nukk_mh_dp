@@ -2,9 +2,9 @@
 scoreboard players add @s AsaMatrix 1
 execute if score @s AsaMatrix matches 1 run function asa_animator:dyno/anim/breath_step_r/start
 execute if score @s AsaMatrix matches 1 run function asa_animator:dyno/anim/breath_step_r/keyframes/0
-execute if score @s AsaMatrix matches 1..7 run tp @s ^0 ^-0.01428571 ^0.01428571
+execute if score @s AsaMatrix matches 1..7 run tp @s ^0 ^-0.01428571 ^0.8
 execute if score @s AsaMatrix matches 8 run function asa_animator:dyno/anim/breath_step_r/keyframes/1
-execute if score @s AsaMatrix matches 8..14 run tp @s ^0 ^0 ^0
+execute if score @s AsaMatrix matches 8..14 run tp @s ^0 ^0 ^0.5
 execute if score @s AsaMatrix matches 15 run function asa_animator:dyno/anim/breath_step_r/keyframes/2
 execute if score @s AsaMatrix matches 15..25 run tp @s ^0 ^-0.01818182 ^0
 execute if score @s AsaMatrix matches 26 run function asa_animator:dyno/anim/breath_step_r/keyframes/3
@@ -20,6 +20,8 @@ execute as @e[type=armor_stand,tag=DynoParts] run function #asa_matrix:animate
 function asa_animator:dyno/model
 
 function asa_animator:dyno/manager/rotate
+execute if score @s AsaMatrix matches ..14 run function asa_animator:dyno/manager/ground
+execute if score @s AsaMatrix matches 45.. run function asa_animator:dyno/manager/ground
 
 execute if score @s AsaMatrix matches 1 run playsound entity.iron_golem.step master @a ~ ~ ~ 2 0.5
 execute if score @s AsaMatrix matches 11 run playsound entity.iron_golem.step master @a ~ ~ ~ 2 0.5

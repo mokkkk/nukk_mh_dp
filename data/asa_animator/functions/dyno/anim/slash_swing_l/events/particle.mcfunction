@@ -18,3 +18,4 @@ particle sweep_attack ^ ^6.05882 ^6.87197 0.1 0.1 0.1 0 1
 particle sweep_attack ^ ^6.70588 ^6.62284 0.1 0.1 0.1 0 1
 particle sweep_attack ^ ^7.35294 ^6.33218 0.1 0.1 0.1 0 1
 particle sweep_attack ^ ^8 ^6 0.1 0.1 0.1 0 1
+execute if entity @s[tag=IsHeatTail] run function asa_animator:dyno/anim/slash_swing_l/events/particle_heat
