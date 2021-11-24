@@ -184,6 +184,13 @@
         "predicate": {
           "nbt": "{Tags:[\"AnmMove\"]}"
         }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmDeath\"]}"
+        }
       }
     ]
   }
