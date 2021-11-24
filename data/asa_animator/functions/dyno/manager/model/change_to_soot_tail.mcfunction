@@ -5,3 +5,4 @@ execute unless entity @s[tag=DestroyTail] as @e[distance=0..30,type=armor_stand,
 
 tag @s remove IsHeatTail
 tag @s add IsSootTail
+scoreboard players set #mhdp_dyno_actcount_generic AsaMatrix 0

@@ -9,3 +9,4 @@ execute positioned ^ ^ ^-2 run particle block grass_block ~ ~ ~ 1 0.1 1 0 10
 execute positioned ^ ^ ^2 run particle block grass_block ~ ~ ~ 1 0.1 1 0 10
 execute positioned ^ ^ ^-2 run particle explosion ~ ~ ~ 1 0.1 1 0 10
 execute positioned ^ ^ ^2 run particle explosion ~ ~ ~ 1 0.1 1 0 10
+function asa_animator:dyno/manager/model/tail_heat_count

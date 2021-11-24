@@ -8,6 +8,8 @@ execute if entity @s[tag=AnmBiteTurnL] run function asa_animator:dyno/anim/bite_
 # 噛みつき・軸合わせ・右
 execute if entity @s[tag=AnmBiteTurnR] run function asa_animator:dyno/anim/bite_turn_r/main
 
+# 移動
+execute if entity @s[tag=AnmMove] run function asa_animator:dyno/anim/move/main
 # バックステップ
 execute if entity @s[tag=AnmBStep] run function asa_animator:dyno/anim/step_back/main
 # サイドステップ・左

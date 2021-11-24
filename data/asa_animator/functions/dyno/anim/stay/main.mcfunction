@@ -20,3 +20,5 @@ execute as @e[type=armor_stand,tag=DynoParts] run function #asa_matrix:animate
 function asa_animator:dyno/model
 
 function asa_animator:dyno/manager/ground
+
+execute if score @s AsaMatrix matches 1 if score #mhdp_dyno_actcount AsaMatrix matches 1.. run function asa_animator:dyno/anim/stay/events/change
