@@ -3,10 +3,10 @@ execute unless entity @e[type=armor_stand,tag=DynoRoot] run data modify storage 
 execute if entity @e[type=armor_stand,tag=DynoRoot] run data modify storage mhdp: ExistMonster set value 1b
 
 # パーツ召喚
-execute if data storage mhdp: {ExistMonster:0b} positioned ^ ^ ^6 run function asa_animator:dyno/summon
+execute if data storage mhdp: {ExistMonster:0b} positioned ^ ^-10 ^6 run function asa_animator:dyno/summon
 
 # 当たり判定召喚
-execute if data storage mhdp: {ExistMonster:0b} positioned ^ ^ ^6 run function asa_animator:dyno/manager/health/summon
+execute if data storage mhdp: {ExistMonster:0b} positioned ^ ^-10 ^6 run function asa_animator:dyno/manager/health/summon
 
 # HPセット
 scoreboard players set #mhdp_dyno_health AsaMatrix 55000

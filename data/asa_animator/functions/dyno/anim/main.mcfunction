@@ -64,7 +64,7 @@ execute if entity @s[tag=AnmBreathRStep] run function asa_animator:dyno/anim/bre
 
 # 尻尾砥ぎ + 喉赤熱化
 execute if entity @s[tag=AnmCharge] run function asa_animator:dyno/anim/charge/main
-
-
+# 登場
+execute if entity @s[tag=AnmSummon] run function asa_animator:dyno/anim/summon/main
 # 討伐
 execute if entity @s[tag=AnmDeath] run function asa_animator:dyno/anim/death/main

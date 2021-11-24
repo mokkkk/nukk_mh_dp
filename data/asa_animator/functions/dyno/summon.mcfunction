@@ -1,4 +1,4 @@
-summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["MonsterRoot","DynoRoot"]}
+summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["MonsterRoot","DynoRoot","AnmSummon"]}
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["DynoParts","HeadU"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10160,Rotate:[0f,0f,0f]}}],Pose:{Head:[-15f,0f,0f]}}
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["DynoParts","HeadL"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10161,Rotate:[0f,0f,0f]}}],Pose:{Head:[0f,0f,0f]}}
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["DynoParts","Neck0"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10162,Rotate:[0f,0f,0f]}}],Pose:{Head:[5f,0f,0f]}}

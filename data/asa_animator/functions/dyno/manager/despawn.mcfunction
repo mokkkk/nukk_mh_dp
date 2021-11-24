@@ -1,18 +1,19 @@
 
 # メッセージ
-tellraw @a {"text": "【迅竜は居なくなった】"}
+tellraw @a {"text": "【斬竜は居なくなった】"}
 
 # タグ消去
-tag @e[tag=NargaTarget] remove NargaTarget
-tag @e[tag=NargaAttackTarget] remove NargaAttackTarget
+tag @e[tag=DynoTarget] remove DynoTarget
+tag @e[tag=DynoAttackTarget] remove DynoAttackTarget
 
 # 当たり判定削除
-function asa_animator:narga/manager/health/kill
+function asa_animator:dyno/manager/health/kill
 
 # ボスバー削除
-bossbar remove asa_animator:narga_health
+bossbar remove asa_animator:dyno_health
 
 # パーツ削除
-kill @e[tag=NargaParts]
-kill @e[tag=NargaRoot]
-kill @e[type=marker,tag=NargaAngerEye]
+kill @e[tag=DynoParts]
+kill @e[tag=DynoRoot]
+kill @e[type=marker,tag=DynoMoveRotate]
+kill @e[type=marker,tag=DynoBreathTarget]
