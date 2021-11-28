@@ -1,4 +1,6 @@
-# data modify entity @e[type=armor_stand,tag=DynoParts,tag=Tail2,limit=1] ArmorItems[3].tag.CustomModelData set value 10151
+execute if entity @s[tag=IsHeatTail] run function asa_animator:dyno/manager/model/change_to_soot_tail
+execute if entity @s[tag=IsSootTail] run function asa_animator:dyno/manager/model/change_to_normal_tail
+data modify entity @e[type=armor_stand,tag=DynoParts,tag=Tail3,limit=1] ArmorItems[3].tag.CustomModelData set value 10194
 tag @s add DestroyTail
 playsound entity.player.attack.knockback master @a ~ ~ ~ 2 1
 playsound entity.player.attack.crit master @a ~ ~ ~ 2 0.8

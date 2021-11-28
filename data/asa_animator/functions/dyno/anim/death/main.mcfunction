@@ -21,3 +21,6 @@ function asa_animator:dyno/model
 
 execute if score @s AsaMatrix matches 1..10 run function asa_animator:dyno/manager/ground
 execute if score @s AsaMatrix matches 71 run function asa_animator:dyno/manager/particle/jump
+
+execute if score @s AsaMatrix matches 37 unless entity @s[tag=DHead] run data modify entity @e[type=armor_stand,tag=DynoParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10190
+execute if score @s AsaMatrix matches 37 if entity @s[tag=DHead] run data modify entity @e[type=armor_stand,tag=DynoParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10191

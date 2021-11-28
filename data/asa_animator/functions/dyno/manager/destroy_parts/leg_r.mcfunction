@@ -1,4 +1,4 @@
-# data modify entity @e[type=armor_stand,tag=DynoParts,tag=WingL,limit=1] ArmorItems[3].tag.CustomModelData set value 10154
+data modify entity @e[type=armor_stand,tag=DynoParts,tag=LegR2,limit=1] ArmorItems[3].tag.CustomModelData set value 10193
 tag @s add DestroyLegR
 playsound entity.player.attack.knockback master @a ~ ~ ~ 2 1
 playsound entity.player.attack.crit master @a ~ ~ ~ 2 0.8
