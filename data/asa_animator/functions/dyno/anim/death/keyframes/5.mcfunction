@@ -1,42 +1,42 @@
-data modify storage asa_matrix: Rotate set value [0f,-1786f,357f]
+data modify storage asa_matrix: Rotate set value [1250f,-313f,4062f]
 execute as @e[type=armor_stand,tag=DynoParts,tag=HeadU] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-1429f,-1786f,357f]
+data modify storage asa_matrix: Rotate set value [0f,-313f,4062f]
 execute as @e[type=armor_stand,tag=DynoParts,tag=HeadL] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [0f,-1072f,1785f]
+data modify storage asa_matrix: Rotate set value [625f,-938f,3437f]
 execute as @e[type=armor_stand,tag=DynoParts,tag=Neck0] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-1429f,-1072f,1785f]
+data modify storage asa_matrix: Rotate set value [0f,-938f,3437f]
 execute as @e[type=armor_stand,tag=DynoParts,tag=Neck1] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-1429f,-715f,357f]
+data modify storage asa_matrix: Rotate set value [-1250f,-1250f,3437f]
 execute as @e[type=armor_stand,tag=DynoParts,tag=Neck2] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-4286f,714f,357f]
+data modify storage asa_matrix: Rotate set value [-1875f,625f,1562f]
 execute as @e[type=armor_stand,tag=DynoParts,tag=Body0] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-1429f,714f,1428f]
+data modify storage asa_matrix: Rotate set value [625f,625f,625f]
 execute as @e[type=armor_stand,tag=DynoParts,tag=Body1] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-8572f,714f,-3572f]
+data modify storage asa_matrix: Rotate set value [-6875f,625f,3125f]
 execute as @e[type=armor_stand,tag=DynoParts,tag=LegL0] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-3572f,-715f,0f]
+data modify storage asa_matrix: Rotate set value [-1250f,-625f,-625f]
 execute as @e[type=armor_stand,tag=DynoParts,tag=LegR0] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [357f,714f,714f]
+data modify storage asa_matrix: Rotate set value [-1719f,625f,1875f]
 execute as @e[type=armor_stand,tag=DynoParts,tag=LegL1] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [1428f,-715f,-5715f]
+data modify storage asa_matrix: Rotate set value [1875f,-625f,-1875f]
 execute as @e[type=armor_stand,tag=DynoParts,tag=LegR1] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-358f,714f,0f]
+data modify storage asa_matrix: Rotate set value [7968f,625f,1250f]
 execute as @e[type=armor_stand,tag=DynoParts,tag=LegL2] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [0f,-715f,642f]
+data modify storage asa_matrix: Rotate set value [8125f,-625f,-63f]
 execute as @e[type=armor_stand,tag=DynoParts,tag=LegR2] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [0f,714f,1428f]
+data modify storage asa_matrix: Rotate set value [1875f,625f,625f]
 execute as @e[type=armor_stand,tag=DynoParts,tag=Tail0] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [2142f,-1429f,1428f]
+data modify storage asa_matrix: Rotate set value [2500f,625f,1250f]
 execute as @e[type=armor_stand,tag=DynoParts,tag=Tail1] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [2857f,-4286f,5714f]
+data modify storage asa_matrix: Rotate set value [625f,0f,3125f]
 execute as @e[type=armor_stand,tag=DynoParts,tag=Tail2] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [4642f,-6429f,8571f]
+data modify storage asa_matrix: Rotate set value [2187f,-4375f,5000f]
 execute as @e[type=armor_stand,tag=DynoParts,tag=Tail3] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-4286f,714f,357f]
+data modify storage asa_matrix: Rotate set value [-1875f,625f,1562f]
 execute as @e[type=armor_stand,tag=DynoParts,tag=ArmL0] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-6429f,714f,357f]
+data modify storage asa_matrix: Rotate set value [-3750f,625f,1562f]
 execute as @e[type=armor_stand,tag=DynoParts,tag=ArmR0] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-4286f,714f,357f]
+data modify storage asa_matrix: Rotate set value [-1875f,625f,1562f]
 execute as @e[type=armor_stand,tag=DynoParts,tag=ArmL1] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-2858f,714f,-2500f]
+data modify storage asa_matrix: Rotate set value [-625f,625f,-938f]
 execute as @e[type=armor_stand,tag=DynoParts,tag=ArmR1] run function #asa_matrix:animate_setparam

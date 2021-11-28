@@ -14,7 +14,7 @@ execute if entity @s[tag=AnmMove] run function asa_animator:dyno/anim/move/main
 execute if entity @s[tag=AnmBStep] run function asa_animator:dyno/anim/step_back/main
 # サイドステップ・左
 execute if entity @s[tag=AnmLStep] run function asa_animator:dyno/anim/step_l/main
-# サイドステップ・左
+# サイドステップ・右
 execute if entity @s[tag=AnmRStep] run function asa_animator:dyno/anim/step_r/main
 
 
@@ -68,3 +68,15 @@ execute if entity @s[tag=AnmCharge] run function asa_animator:dyno/anim/charge/m
 execute if entity @s[tag=AnmSummon] run function asa_animator:dyno/anim/summon/main
 # 討伐
 execute if entity @s[tag=AnmDeath] run function asa_animator:dyno/anim/death/main
+
+
+# 頭部位破壊
+execute if entity @s[tag=AnmDHead] run function asa_animator:dyno/anim/destroy_head/main
+# 尻尾部位破壊
+execute if entity @s[tag=AnmDTail] run function asa_animator:dyno/anim/destroy_tail/main
+# 左足部位破壊
+execute if entity @s[tag=AnmDLegL] run function asa_animator:dyno/anim/destroy_leg_l/main
+# 右足部位破壊
+execute if entity @s[tag=AnmDLegR] run function asa_animator:dyno/anim/destroy_leg_r/main
+# 頭赤熱化解除
+execute if entity @s[tag=AnmDHeadH] run function asa_animator:dyno/anim/destroy_head_heat/main

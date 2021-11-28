@@ -25,7 +25,7 @@ execute if score @s AsaMatrix matches 70.. run function asa_animator:dyno/anim/s
 execute as @e[type=armor_stand,tag=DynoParts] run function #asa_matrix:animate
 function asa_animator:dyno/model
 
-execute if score @s AsaMatrix matches 1..20 run function asa_animator:dyno/manager/rotate
+execute if score @s AsaMatrix matches 1..10 run function asa_animator:dyno/manager/rotate
 
 execute if score @s AsaMatrix matches 1 run playsound block.grass.hit master @a ~ ~ ~ 2 0.5
 
@@ -36,4 +36,5 @@ execute if score @s AsaMatrix matches 29 positioned ^ ^ ^6 run function asa_anim
 execute if score @s AsaMatrix matches 29 positioned ^ ^ ^6 run particle block grass_block ~ ~ ~ 1 0.1 1 0 30
 execute if entity @s[tag=IsHeatTail] if score @s AsaMatrix matches 29 positioned ^ ^ ^6 run particle lava ~ ~ ~ 1 0.1 1 0 10
 
-execute if score @s AsaMatrix matches 16..30 at @s if entity @e[distance=0..8,tag=DynoAttackTarget] run tp @s ^ ^ ^-0.3
+execute if score @s AsaMatrix matches 16..30 at @s if entity @e[distance=0..6,tag=DynoAttackTarget] run tp @s ^ ^ ^-0.3
+execute if score @s AsaMatrix matches 16..30 at @s unless entity @e[distance=6..8,tag=DynoAttackTarget] run tp @s ^ ^ ^0.2

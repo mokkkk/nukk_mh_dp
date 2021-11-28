@@ -24,6 +24,11 @@ tag @s remove AnmBreathBStep
 tag @s remove AnmBreathLStep
 tag @s remove AnmBreathRStep
 tag @s remove AnmCharge
+tag @s remove AnmDHead
+tag @s remove AnmDLegL
+tag @s remove AnmDLegR
+tag @s remove AnmDTail
+tag @s remove AnmDHeadH
 
 kill @e[type=marker,tag=DynoMoveRotate]
 kill @e[type=marker,tag=DynoBreathTarget]
