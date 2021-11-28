@@ -1,0 +1,32 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"斬竜の牙\"}',Lore:['{\"text\":\"敵を貫く斬竜の牙．\"}','{\"text\":\"武器の素材として使用される．\"}']},CustomModelData:10006,MhdpID:7}"
+              }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"斬竜の炎状殻\"}',Lore:['{\"text\":\"揺らめく炎を思わせる斬竜の背殻．\"}','{\"text\":\"防具の素材として使用される．\"}']},CustomModelData:10007,MhdpID:8}"
+              }
+          ]
+        }
+      ]
+    }
+  ]
+}
