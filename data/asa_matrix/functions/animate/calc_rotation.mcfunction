@@ -1,7 +1,8 @@
-execute unless data entity @s Pose.Head run data merge entity @s {Pose:{Head:[1f,0f,0f]}}
+execute unless data storage asa_matrix: Temp.Pose.Head run data merge entity @s {Pose:{Head:[1f,0f,0f]}}
+execute unless data storage asa_matrix: Temp.Pose.Head run data merge storage asa_matrix: {Temp:{Pose:{Head:[1f,0f,0f]}}}
 data merge storage asa_matrix: {Pose:[], Rotate:[],Result:[0f,0f,0f]}
-data modify storage asa_matrix: Pose append from entity @s Pose.Head[]
-data modify storage asa_matrix: Rotate append from entity @s ArmorItems[3].tag.Rotate[]
+data modify storage asa_matrix: Pose append from storage asa_matrix: Temp.Pose.Head[]
+data modify storage asa_matrix: Rotate append from storage asa_matrix: Temp.ArmorItems[3].tag.Rotate[]
 
 execute store result score #asa_rotate_current AsaMatrix run data get storage asa_matrix: Pose[0] 1000
 execute store result score #asa_rotate_add AsaMatrix run data get storage asa_matrix: Rotate[0] 1

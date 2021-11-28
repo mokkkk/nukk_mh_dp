@@ -1,6 +1,7 @@
 {
 	"replace": false,
 	"values": [
+		"asa_matrix:get_matrix/get_data",
 		"asa_matrix:animate/calc_rotation"
 	]
 }

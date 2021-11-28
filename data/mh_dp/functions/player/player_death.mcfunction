@@ -20,4 +20,7 @@ tag @s remove ReiaAttackTarget
 tag @s remove NargaTarget
 tag @s remove NargaAttackTarget
 
+tag @s remove DynoTarget
+tag @s remove DynoAttackTarget
+
 tag @s remove Dead
