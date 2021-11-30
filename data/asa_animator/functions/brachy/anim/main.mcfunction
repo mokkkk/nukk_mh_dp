@@ -11,10 +11,12 @@ execute if entity @s[tag=AnmHookL] run function asa_animator:brachy/anim/hook_l/
 # 回り込み・左
 execute if entity @s[tag=AnmTurnL] run function asa_animator:brachy/anim/turn_l/main
 
-# 移動
-execute if entity @s[tag=AnmMove] run function asa_animator:brachy/anim/move/main
 # アッパー・左手
 execute if entity @s[tag=AnmMovePunchL] run function asa_animator:brachy/anim/move_punch_l/main
+
+# 移動
+execute if entity @s[tag=AnmMove] run function asa_animator:brachy/anim/move/main
+
 
 # ジャンプ
 execute if entity @s[tag=AnmJump] run function asa_animator:brachy/anim/jump/main
@@ -22,8 +24,15 @@ execute if entity @s[tag=AnmJump] run function asa_animator:brachy/anim/jump/mai
 # 田植え
 execute if entity @s[tag=AnmPlanting] run function asa_animator:brachy/anim/planting/main
 
+
 # 頭突き前進
 execute if entity @s[tag=AnmHead] run function asa_animator:brachy/anim/head/main
+
+# 叩きつけ頭突き
+execute if entity @s[tag=AnmHeadBomb] run function asa_animator:brachy/anim/head_bomb/main
+
+# 線状爆破頭突き
+execute if entity @s[tag=AnmHeadShot] run function asa_animator:brachy/anim/head_bomb_shot/main
 
 # 尻尾振り回し
 execute if entity @s[tag=AnmTail] run function asa_animator:brachy/anim/tail/main

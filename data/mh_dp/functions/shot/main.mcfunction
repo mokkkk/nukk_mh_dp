@@ -12,5 +12,5 @@ execute if entity @s[tag=NargaTail] run function asa_animator:narga/anim/tail_sh
 execute if entity @s[tag=DynoTailShot] run function asa_animator:dyno/anim/slash_shot_l/events/shot/main_bullet
 execute if entity @s[tag=DynoBreath] run function asa_animator:dyno/anim/breath/events/main_bullet
 
-
 execute if entity @s[tag=BrachyBomb] run function asa_animator:brachy/manager/bomb/main_bullet
+execute if entity @s[tag=BrachyBombS] run function asa_animator:brachy/manager/bomb/head/main_bullet

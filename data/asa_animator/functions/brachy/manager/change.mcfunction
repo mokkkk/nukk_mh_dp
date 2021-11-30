@@ -15,7 +15,7 @@ execute unless entity @e[tag=BrachyAttackTarget] run tag @e[tag=BrachyTarget,lim
 # execute unless entity @s[tag=AnmCharge] run function asa_animator:brachy/manager/change_normal/change
 
 # 強制
-tag @s add AnmPunchL
+tag @s add AnmTurnL
 
 # 終了
 tag @s remove ChangeAnm
