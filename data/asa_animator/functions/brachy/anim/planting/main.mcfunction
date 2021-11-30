@@ -2,9 +2,9 @@
 scoreboard players add @s AsaMatrix 1
 execute if score @s AsaMatrix matches 1 run function asa_animator:brachy/anim/planting/start
 execute if score @s AsaMatrix matches 1 run function asa_animator:brachy/anim/planting/keyframes/0
-execute if score @s AsaMatrix matches 1..5 run tp @s ^0 ^0.02 ^0
+execute if score @s AsaMatrix matches 1..5 run tp @s ^0 ^0.02 ^-0.1
 execute if score @s AsaMatrix matches 6 run function asa_animator:brachy/anim/planting/keyframes/1
-execute if score @s AsaMatrix matches 6..10 run tp @s ^0 ^-0.04 ^0
+execute if score @s AsaMatrix matches 6..10 run tp @s ^0 ^-0.04 ^-0.1
 execute if score @s AsaMatrix matches 11 run function asa_animator:brachy/anim/planting/keyframes/2
 execute if score @s AsaMatrix matches 11..15 run tp @s ^0 ^0.01 ^0
 execute if score @s AsaMatrix matches 16 run function asa_animator:brachy/anim/planting/keyframes/3
@@ -63,6 +63,8 @@ execute if score @s AsaMatrix matches 151.. run function asa_animator:brachy/ani
 execute as @e[type=armor_stand,tag=BrachyParts] run function #asa_matrix:animate
 function asa_animator:brachy/model
 
+execute if score @s AsaMatrix matches 1..12 run function asa_animator:brachy/manager/rotate
+
 execute if score @s AsaMatrix matches 22..101 at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
 execute if score @s AsaMatrix matches 22..101 at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~
 
@@ -72,9 +74,9 @@ execute if score @s AsaMatrix matches 1 run playsound block.grass.step master @a
 execute if score @s AsaMatrix matches 110 run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if score @s AsaMatrix matches 130 run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 
-execute if score @s AsaMatrix matches 22..101 run function asa_animator:brachy/manager/rotate_lr
-execute if score @s AsaMatrix matches 29 positioned ^0.5 ^ ^3.5 run function asa_animator:brachy/anim/punch_l/events/damage
-execute if score @s AsaMatrix matches 47 positioned ^-0.5 ^ ^3.5 run function asa_animator:brachy/anim/punch_l/events/damage
-execute if score @s AsaMatrix matches 65 positioned ^0.5 ^ ^3.5 run function asa_animator:brachy/anim/punch_l/events/damage
-execute if score @s AsaMatrix matches 83 positioned ^-0.5 ^ ^3.5 run function asa_animator:brachy/anim/punch_l/events/damage
-execute if score @s AsaMatrix matches 101 positioned ^0.5 ^ ^3.5 run function asa_animator:brachy/anim/punch_l/events/damage
+execute if score @s AsaMatrix matches 48..101 run function asa_animator:brachy/manager/rotate_lr
+execute if score @s AsaMatrix matches 29 positioned ^0.7 ^ ^3.3 run function asa_animator:brachy/anim/punch_l/events/damage
+execute if score @s AsaMatrix matches 47 positioned ^-0.7 ^ ^3.3 run function asa_animator:brachy/anim/punch_l/events/damage
+execute if score @s AsaMatrix matches 65 positioned ^0.7 ^ ^3.3 run function asa_animator:brachy/anim/punch_l/events/damage
+execute if score @s AsaMatrix matches 83 positioned ^-0.7 ^ ^3.3 run function asa_animator:brachy/anim/punch_l/events/damage
+execute if score @s AsaMatrix matches 101 positioned ^0.7 ^ ^3.3 run function asa_animator:brachy/anim/punch_l/events/damage

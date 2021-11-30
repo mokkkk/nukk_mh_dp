@@ -33,12 +33,12 @@ execute if score @s AsaMatrix matches 88.. run function asa_animator:brachy/anim
 execute as @e[type=armor_stand,tag=BrachyParts] run function #asa_matrix:animate
 function asa_animator:brachy/model
 
-
 execute if score @s AsaMatrix matches 1 run playsound block.grass.step master @a ~ ~ ~ 2 0.5
 execute if score @s AsaMatrix matches 38 run function asa_animator:brachy/manager/particle/jump
 execute if score @s AsaMatrix matches 58 run function asa_animator:brachy/manager/particle/jump
 
-execute if score @s AsaMatrix matches 1..35 run function asa_animator:brachy/manager/rotate
-execute if score @s AsaMatrix matches 35 run function asa_animator:brachy/anim/jump/events/pos/set_pos
+execute if score @s AsaMatrix matches 1..38 run function asa_animator:brachy/manager/rotate
+execute if score @s AsaMatrix matches 38 run function asa_animator:brachy/anim/jump/events/pos/set_pos
 execute if score @s AsaMatrix matches 39..58 run function asa_animator:brachy/anim/jump/events/pos/offset
 execute if score @s AsaMatrix matches 59 positioned ^ ^ ^3 run function asa_animator:brachy/anim/jump/events/damage
+execute if entity @s[tag=IsAnger] if score @s AsaMatrix matches 63 positioned ^ ^ ^3 run function asa_animator:brachy/anim/jump/events/damage_bomb

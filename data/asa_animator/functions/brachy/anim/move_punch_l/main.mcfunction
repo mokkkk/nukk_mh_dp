@@ -10,13 +10,13 @@ execute if score @s AsaMatrix matches 11..15 run tp @s ^0 ^-0.02 ^0
 execute if score @s AsaMatrix matches 16 run function asa_animator:brachy/anim/move_punch_l/keyframes/3
 execute if score @s AsaMatrix matches 16..17 run tp @s ^0 ^0.1 ^0
 execute if score @s AsaMatrix matches 18 run function asa_animator:brachy/anim/move_punch_l/keyframes/4
-execute if score @s AsaMatrix matches 18..20 run tp @s ^0.0375 ^-0.0125 ^0.2
+execute if score @s AsaMatrix matches 18..20 run tp @s ^-0.0375 ^-0.0125 ^0.2
 execute if score @s AsaMatrix matches 21 run function asa_animator:brachy/anim/move_punch_l/keyframes/5
 execute if score @s AsaMatrix matches 21..25 run tp @s ^0 ^0.09999999 ^ ~18 ~
 execute if score @s AsaMatrix matches 26 run function asa_animator:brachy/anim/move_punch_l/keyframes/6
 execute if score @s AsaMatrix matches 26..35 run tp @s ^0 ^-0.09 ^ ~8 ~
 execute if score @s AsaMatrix matches 36 run function asa_animator:brachy/anim/move_punch_l/keyframes/7
-execute if score @s AsaMatrix matches 36..45 run tp @s ^-0.03 ^0.02 ^ ~1 ~
+execute if score @s AsaMatrix matches 36..45 run tp @s ^0.03 ^0.02 ^ ~1 ~
 execute if score @s AsaMatrix matches 46.. run function asa_animator:brachy/anim/move_punch_l/end
 execute as @e[type=armor_stand,tag=BrachyParts] run function #asa_matrix:animate
 function asa_animator:brachy/model
@@ -30,8 +30,8 @@ execute if score @s AsaMatrix matches 19..45 run playsound block.grass.step mast
 
 execute if score @s AsaMatrix matches 19 run summon marker ~ ~ ~ {Tags:["BrachyMoveRotate"]}
 execute if score @s AsaMatrix matches 19 run tp @e[distance=0..3,type=marker,tag=BrachyMoveRotate] ~ ~ ~ ~ 0
-execute if score @s AsaMatrix matches 21..25 at @s rotated as @e[type=marker,tag=BrachyMoveRotate] run tp @s ^-0.2 ^ ^0.3
-execute if score @s AsaMatrix matches 26..35 at @s rotated as @e[type=marker,tag=BrachyMoveRotate] run tp @s ^-0.1 ^ ^0.7
+execute if score @s AsaMatrix matches 21..25 at @s rotated as @e[type=marker,tag=BrachyMoveRotate] run tp @s ^0.2 ^ ^0.3
+execute if score @s AsaMatrix matches 26..35 at @s rotated as @e[type=marker,tag=BrachyMoveRotate] run tp @s ^0.1 ^ ^0.7
 execute if score @s AsaMatrix matches 36..45 at @s rotated as @e[type=marker,tag=BrachyMoveRotate] run tp @s ^ ^ ^0.1
 
-execute if score @s AsaMatrix matches 18 positioned ^ ^ ^2.5 run function asa_animator:brachy/anim/punch_l/events/damage
+execute if score @s AsaMatrix matches 18 positioned ^ ^ ^2.5 run function asa_animator:brachy/anim/hook_l/events/damage

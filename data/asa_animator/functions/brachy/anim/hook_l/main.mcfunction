@@ -25,4 +25,4 @@ execute if score @s AsaMatrix matches 1..12 if entity @e[distance=0..5,tag=Brach
 execute if score @s AsaMatrix matches 16..21 unless entity @e[distance=0..4,tag=BrachyAttackTarget] at @s run tp @s ^ ^ ^0.3
 execute if score @s AsaMatrix matches 17..21 run function asa_animator:brachy/manager/rotate_fast
 
-execute if score @s AsaMatrix matches 22 positioned ^ ^ ^4 run function asa_animator:brachy/anim/punch_l/events/damage
+execute if score @s AsaMatrix matches 22 positioned ^0.5 ^ ^4 run function asa_animator:brachy/anim/hook_l/events/damage
