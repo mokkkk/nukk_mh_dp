@@ -1,0 +1,20 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:barrier",
+      "nbt": "{CustomModelData:20007}"
+    },
+    "title": "猛り爆ぜる砕竜討伐",
+    "description": "臨界する剛拳・猛り爆ぜる砕竜を討ち倒した証．",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "mh_dp:trophies/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

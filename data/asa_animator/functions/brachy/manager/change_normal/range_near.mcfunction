@@ -1,25 +1,26 @@
 
+# 背後に敵がいる場合，一定確立で尻尾
+ execute unless predicate asa_animator:random/070 run function asa_animator:brachy/manager/change_normal/_/tail_check
+
 # ランダム
-execute unless entity @s[tag=IsHeatHead] unless entity @s[tag=IsHeatTail] run loot spawn ~ 0 ~ loot asa_animator:dyno/normal/near
-execute if entity @s[tag=IsHeatHead] unless entity @s[tag=IsHeatTail] run loot spawn ~ 0 ~ loot asa_animator:dyno/head/near
-execute unless entity @s[tag=IsHeatHead] if entity @s[tag=IsHeatTail] run loot spawn ~ 0 ~ loot asa_animator:dyno/tail/near
-execute if entity @s[tag=IsHeatHead] if entity @s[tag=IsHeatTail] run loot spawn ~ 0 ~ loot asa_animator:dyno/head_tail/near
-# 噛みつき
-execute if entity @e[type=item,y=0] if entity @e[type=item,nbt={Item:{tag:{Act:1}}}] run function asa_animator:dyno/manager/change_normal/_/bite
-# バックステップ
-execute if entity @e[type=item,y=0] if entity @e[type=item,nbt={Item:{tag:{Act:2}}}] run tag @s add AnmBStep
-# サイドステップ
-execute if entity @e[type=item,y=0] if entity @e[type=item,nbt={Item:{tag:{Act:3}}}] run function asa_animator:dyno/manager/change_normal/_/sstep
-# 尻尾・突き
-execute if entity @e[type=item,y=0] if entity @e[type=item,nbt={Item:{tag:{Act:4}}}] run function asa_animator:dyno/manager/change_normal/_/thrust
-# 尻尾・叩きつけ
-execute if entity @e[type=item,y=0] if entity @e[type=item,nbt={Item:{tag:{Act:5}}}] run function asa_animator:dyno/manager/change_normal/_/swing
-# 尻尾・斬り払い
-execute if entity @e[type=item,y=0] if entity @e[type=item,nbt={Item:{tag:{Act:6}}}] run function asa_animator:dyno/manager/change_normal/_/large
-# 尻尾・ラウンドフォース
-execute if entity @e[type=item,y=0] if entity @e[type=item,nbt={Item:{tag:{Act:7}}}] run tag @s add AnmTailRound
-# ブレス・バックステップ
-execute if entity @e[type=item,y=0] if entity @e[type=item,nbt={Item:{tag:{Act:8}}}] run tag @s add AnmBreathBStep
-# 噛みつき・2連
-execute if entity @e[type=item,y=0] if entity @e[type=item,nbt={Item:{tag:{Act:9}}}] run tag @s add AnmBite2
+execute unless entity @s[tag=AnmTail] run loot spawn ~ 0 ~ loot asa_animator:brachy/normal/near
+
+# 叩きつけパンチ
+execute if entity @e[type=item,y=0] if entity @e[type=item,nbt={Item:{tag:{Act:1}}}] run function asa_animator:brachy/manager/change_normal/_/punch_r
+# フック
+execute if entity @e[type=item,y=0] if entity @e[type=item,nbt={Item:{tag:{Act:2}}}] run function asa_animator:brachy/manager/change_normal/_/hook
+# 叩きつけ頭突き
+execute if entity @e[type=item,y=0] if entity @e[type=item,nbt={Item:{tag:{Act:3}}}] run tag @s add AnmHeadBomb
+# 回り込み
+execute if entity @e[type=item,y=0] if entity @e[type=item,nbt={Item:{tag:{Act:4}}}] run function asa_animator:brachy/manager/change_normal/_/turn
+# コンボA
+execute if entity @e[type=item,y=0] if entity @e[type=item,nbt={Item:{tag:{Act:5}}}] run function asa_animator:brachy/manager/change_normal/combo/a_start
+# コンボB
+execute if entity @e[type=item,y=0] if entity @e[type=item,nbt={Item:{tag:{Act:6}}}] run function asa_animator:brachy/manager/change_normal/combo/b_start
+# コンボC
+execute if entity @e[type=item,y=0] if entity @e[type=item,nbt={Item:{tag:{Act:7}}}] run function asa_animator:brachy/manager/change_normal/combo/c_start
+# コンボD
+execute if entity @e[type=item,y=0] if entity @e[type=item,nbt={Item:{tag:{Act:8}}}] run function asa_animator:brachy/manager/change_normal/combo/d_start
+# 移動コンボ
+execute if entity @e[type=item,y=0] if entity @e[type=item,nbt={Item:{tag:{Act:9}}}] run function asa_animator:brachy/manager/change_normal/combo/m_start
 execute if entity @e[type=item,y=0] as @e[type=item,y=0] if data entity @s Item.tag{ActPaper:1} run kill @s

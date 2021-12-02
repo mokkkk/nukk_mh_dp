@@ -27,7 +27,7 @@ execute if score @s AsaMatrix matches 56.. run function asa_animator:brachy/anim
 execute as @e[type=armor_stand,tag=BrachyParts] run function #asa_matrix:animate
 function asa_animator:brachy/model
 
-execute if score @s AsaMatrix matches 1..25 run function asa_animator:brachy/manager/rotate
+execute if score @s AsaMatrix matches 1..18 run function asa_animator:brachy/manager/rotate
 
 execute if score @s AsaMatrix matches 1..12 if entity @e[distance=0..18,tag=BrachyAttackTarget] at @s run tp @s ^ ^ ^-0.6
 execute if score @s AsaMatrix matches 1..12 at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
@@ -36,11 +36,10 @@ execute if score @s AsaMatrix matches 1..12 run playsound block.grass.step maste
 execute if score @s AsaMatrix matches 1..12 run particle block grass_block ~ ~ ~ 1 0.1 1 0 5
 
 execute if score @s AsaMatrix matches 26 positioned ^ ^ ^3.5 run function asa_animator:brachy/anim/head_bomb_shot/events/damage
-execute if score @s AsaMatrix matches 26 positioned ^ ^ ^3.5 run function asa_animator:brachy/manager/bomb/head/set
-execute if score @s AsaMatrix matches 29 positioned ^ ^ ^8.5 run function asa_animator:brachy/manager/bomb/head/set
-execute if score @s AsaMatrix matches 32 positioned ^ ^ ^13.5 run function asa_animator:brachy/manager/bomb/head/set
-execute if score @s AsaMatrix matches 35 positioned ^ ^ ^18.5 run function asa_animator:brachy/manager/bomb/head/set
-execute if score @s AsaMatrix matches 38 run function asa_animator:brachy/anim/head_bomb_shot/events/shot
+execute if score @s AsaMatrix matches 26 if entity @s[tag=IsAnger] positioned ^ ^ ^3.5 run function asa_animator:brachy/manager/bomb/head/set
+execute if score @s AsaMatrix matches 29 if entity @s[tag=IsAnger] positioned ^ ^ ^8.5 run function asa_animator:brachy/manager/bomb/head/set
+execute if score @s AsaMatrix matches 32 if entity @s[tag=IsAnger] positioned ^ ^ ^13.5 run function asa_animator:brachy/manager/bomb/head/set
+execute if score @s AsaMatrix matches 35 if entity @s[tag=IsAnger] positioned ^ ^ ^18.5 run function asa_animator:brachy/manager/bomb/head/set
 
 execute if score @s AsaMatrix matches 43.. at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
 execute if score @s AsaMatrix matches 43.. at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~

@@ -26,3 +26,4 @@ execute if score @s AsaMatrix matches 16..21 unless entity @e[distance=0..4,tag=
 execute if score @s AsaMatrix matches 17..21 run function asa_animator:brachy/manager/rotate_fast
 
 execute if score @s AsaMatrix matches 22 positioned ^0.5 ^ ^4 run function asa_animator:brachy/anim/hook_l/events/damage
+execute unless predicate asa_animator:brachy/combo if score @s AsaMatrix matches 30 run function asa_animator:brachy/manager/cancel_animation

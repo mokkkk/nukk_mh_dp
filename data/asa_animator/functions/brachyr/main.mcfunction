@@ -1,2 +1,2 @@
 
-function asa_animator:brachyr/anim/planting/main
+function asa_animator:brachyr/anim/stay/main

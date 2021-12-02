@@ -45,10 +45,25 @@ execute if entity @s[tag=AnmHeadShot] run function asa_animator:brachy/anim/head
 # 広範囲爆破
 execute if entity @s[tag=AnmHeadTrap] run function asa_animator:brachy/anim/head_trap/main
 
-
 # 尻尾振り回し
 execute if entity @s[tag=AnmTail] run function asa_animator:brachy/anim/tail/main
 
 
 # 怒り遷移
 execute if entity @s[tag=AnmAnger] run function asa_animator:brachy/anim/anger/main
+
+# 腕なめ
+execute if entity @s[tag=AnmCharge] run function asa_animator:brachy/anim/charge_bomb/main
+
+# 登場
+execute if entity @s[tag=AnmSummon] run function asa_animator:brachy/anim/summon/main
+# 討伐
+execute if entity @s[tag=AnmDeath] run function asa_animator:brachy/anim/death/main
+# 頭部部位破壊
+execute if entity @s[tag=AnmDHead] run function asa_animator:brachy/anim/destroy_head/main
+# 左腕部位破壊
+execute if entity @s[tag=AnmDArmL] run function asa_animator:brachy/anim/destroy_arm_l/main
+# 右腕部位破壊
+execute if entity @s[tag=AnmDArmR] run function asa_animator:brachy/anim/destroy_arm_r/main
+# 尻尾部位破壊
+execute if entity @s[tag=AnmDTail] run function asa_animator:brachy/anim/destroy_tail/main

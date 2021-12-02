@@ -1,33 +1,31 @@
 
-execute unless entity @e[type=armor_stand,tag=DynoRoot] run data modify storage mhdp: ExistMonster set value 0b
-execute if entity @e[type=armor_stand,tag=DynoRoot] run data modify storage mhdp: ExistMonster set value 1b
+execute unless entity @e[type=armor_stand,tag=BrachyRoot] run data modify storage mhdp: ExistMonster set value 0b
+execute if entity @e[type=armor_stand,tag=BrachyRoot] run data modify storage mhdp: ExistMonster set value 1b
 
 # パーツ召喚
-execute if data storage mhdp: {ExistMonster:0b} positioned ^ ^-10 ^6 run function asa_animator:dyno/summon
+execute if data storage mhdp: {ExistMonster:0b} positioned ^ ^-10 ^6 run function asa_animator:brachy/summon
 
 # 当たり判定召喚
-execute if data storage mhdp: {ExistMonster:0b} positioned ^ ^-10 ^6 run function asa_animator:dyno/manager/health/summon
+execute if data storage mhdp: {ExistMonster:0b} positioned ^ ^-10 ^6 run function asa_animator:brachy/manager/health/summon
 
 # HPセット
-scoreboard players set #mhdp_dyno_health AsaMatrix 55000
-execute if data storage mhdp: {ExistMonster:0b} run bossbar add asa_animator:dyno_health {"text": "斬竜"}
-bossbar set asa_animator:dyno_health max 55000
-bossbar set asa_animator:dyno_health players @a
-bossbar set asa_animator:dyno_health visible true
-execute store result bossbar asa_animator:dyno_health value run scoreboard players get #mhdp_dyno_health AsaMatrix
+scoreboard players set #mhdp_brachy_health AsaMatrix 48000
+execute if data storage mhdp: {ExistMonster:0b} run bossbar add asa_animator:brachy_health {"text": "砕竜"}
+bossbar set asa_animator:brachy_health max 48000
+bossbar set asa_animator:brachy_health players @a
+bossbar set asa_animator:brachy_health visible true
+execute store result bossbar asa_animator:brachy_health value run scoreboard players get #mhdp_brachy_health AsaMatrix
 
 # タイマーセット
-scoreboard players set #mhdp_dyno_kill_timer AsaMatrix 0
-scoreboard players set #mhdp_dyno_actcount_head AsaMatrix 0
-scoreboard players set #mhdp_dyno_actcount_tail AsaMatrix 0
-scoreboard players set #mhdp_dyno_actcount_generic AsaMatrix 0
-scoreboard players set #mhdp_dyno_head_damage AsaMatrix 10000
-scoreboard players set #mhdp_dyno_legl_damage AsaMatrix 12000
-scoreboard players set #mhdp_dyno_legr_damage AsaMatrix 12000
-scoreboard players set #mhdp_dyno_tail_damage AsaMatrix 18000
-scoreboard players set #mhdp_dyno_head_heat_damage AsaMatrix 0
+scoreboard players set #mhdp_brachy_kill_timer AsaMatrix 0
+scoreboard players set #mhdp_brachy_anger_damage AsaMatrix 0
+scoreboard players set #mhdp_brachy_bomb_count AsaMatrix 0
+scoreboard players set #mhdp_brachy_head_damage AsaMatrix 12000
+scoreboard players set #mhdp_brachy_arml_damage AsaMatrix 10000
+scoreboard players set #mhdp_brachy_armr_damage AsaMatrix 10000
+scoreboard players set #mhdp_brachy_tail_damage AsaMatrix 10000
 
 # エラーメッセージ
-execute if data storage mhdp: {ExistMonster:1b} run tellraw @a {"text": "【既に斬竜が存在するため，召喚できません】"}
+execute if data storage mhdp: {ExistMonster:1b} run tellraw @a {"text": "【既に砕竜が存在するため，召喚できません】"}
 
 data modify storage mhdp: ExistMonster set value 0b

@@ -20,6 +20,6 @@ execute if score @s AsaMatrix matches 1 run playsound block.grass.step master @a
 execute if score @s AsaMatrix matches 6 run function asa_animator:brachy/manager/model/change_to_anger
 execute if score @s AsaMatrix matches 11..48 as @e[distance=0..10,type=armor_stand,tag=BrachyParts,tag=HeadU] at @s positioned ~ ~1.4 ~ run particle flash ~ ~ ~ 0 0 0 0 1
 
+execute if score @s AsaMatrix matches 11 run playsound entity.blaze.death master @a ~ ~ ~ 2 0.7
 execute if score @s AsaMatrix matches 11 run playsound entity.blaze.death master @a ~ ~ ~ 2 0.6
-execute if score @s AsaMatrix matches 11 run playsound entity.blaze.death master @a ~ ~ ~ 2 0.5
 execute if score @s AsaMatrix matches 11 run particle block grass_block ^ ^ ^2 2 0.1 2 0 30

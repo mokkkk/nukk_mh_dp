@@ -19,3 +19,4 @@ execute as @e[type=armor_stand,tag=BrachyParts,tag=ArmL0] run data merge entity 
 execute as @e[type=armor_stand,tag=BrachyParts,tag=ArmR0] run data merge entity @s {Pose:{Head:[15f,0f,20f]}}
 execute as @e[type=armor_stand,tag=BrachyParts,tag=ArmL1] run data merge entity @s {Pose:{Head:[5f,10f,0f]}}
 execute as @e[type=armor_stand,tag=BrachyParts,tag=ArmR1] run data merge entity @s {Pose:{Head:[5f,-10f,0f]}}
+scoreboard players remove #mhdp_brachy_bomb_count AsaMatrix 16
