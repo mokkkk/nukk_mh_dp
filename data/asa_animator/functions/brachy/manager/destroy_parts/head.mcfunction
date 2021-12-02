@@ -1,5 +1,6 @@
-# execute unless entity @s[tag=IsAnger] run data modify entity @e[type=armor_stand,tag=DynoParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10188
-# execute if entity @s[tag=IsAnger] run data modify entity @e[type=armor_stand,tag=DynoParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10189
+execute unless entity @s[tag=IsAnger] run data modify entity @e[type=armor_stand,tag=BrachyParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10246
+execute if entity @s[tag=IsAnger] run data modify entity @e[type=armor_stand,tag=BrachyParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10247
+
 tag @s add DestroyHead
 playsound entity.player.attack.knockback master @a ~ ~ ~ 2 1
 playsound entity.player.attack.crit master @a ~ ~ ~ 2 0.8

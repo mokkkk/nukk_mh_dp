@@ -1,4 +1,6 @@
-# data modify entity @e[type=armor_stand,tag=DynoParts,tag=LegR2,limit=1] ArmorItems[3].tag.CustomModelData set value 10193
+execute unless entity @s[tag=IsAnger] run data modify entity @e[type=armor_stand,tag=BrachyParts,tag=ArmL1,limit=1] ArmorItems[3].tag.CustomModelData set value 10250
+execute if entity @s[tag=IsAnger] run data modify entity @e[type=armor_stand,tag=BrachyParts,tag=ArmL1,limit=1] ArmorItems[3].tag.CustomModelData set value 10252
+
 tag @s add DestroyArmL
 playsound entity.player.attack.knockback master @a ~ ~ ~ 2 1
 playsound entity.player.attack.crit master @a ~ ~ ~ 2 0.8

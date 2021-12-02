@@ -3,10 +3,10 @@ execute unless entity @e[type=armor_stand,tag=BrachyRoot] run data modify storag
 execute if entity @e[type=armor_stand,tag=BrachyRoot] run data modify storage mhdp: ExistMonster set value 1b
 
 # パーツ召喚
-execute if data storage mhdp: {ExistMonster:0b} positioned ^ ^-10 ^6 run function asa_animator:brachy/summon
+execute if data storage mhdp: {ExistMonster:0b} rotated ~ 0 positioned ^ ^-10 ^8 run function asa_animator:brachy/summon
 
 # 当たり判定召喚
-execute if data storage mhdp: {ExistMonster:0b} positioned ^ ^-10 ^6 run function asa_animator:brachy/manager/health/summon
+execute if data storage mhdp: {ExistMonster:0b} rotated ~ 0 positioned ^ ^-10 ^8 run function asa_animator:brachy/manager/health/summon
 
 # HPセット
 scoreboard players set #mhdp_brachy_health AsaMatrix 48000

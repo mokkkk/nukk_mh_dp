@@ -1,4 +1,6 @@
-# data modify entity @e[type=armor_stand,tag=BrachyParts,tag=Tail3,limit=1] ArmorItems[3].tag.CustomModelData set value 10194
+data modify entity @e[type=armor_stand,tag=BrachyParts,tag=Tail2,limit=1] ArmorItems[3].tag.CustomModelData set value 10254
+data modify entity @e[type=armor_stand,tag=BrachyParts,tag=Tail3,limit=1] ArmorItems[3].tag.CustomModelData set value 10084
+
 tag @s add DestroyTail
 playsound entity.player.attack.knockback master @a ~ ~ ~ 2 1
 playsound entity.player.attack.crit master @a ~ ~ ~ 2 0.8

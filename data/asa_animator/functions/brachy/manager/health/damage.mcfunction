@@ -30,4 +30,4 @@ execute if score #mhdp_brachy_armr_damage AsaMatrix matches ..0 as @e[distance=0
 execute if score #mhdp_brachy_tail_damage AsaMatrix matches ..0 as @e[distance=0..15,type=armor_stand,tag=BrachyRoot] unless entity @s[tag=DestroyTail] run function asa_animator:brachy/manager/destroy_parts/tail
 
 # 死亡時，アニメーション設定
-execute if score #mhdp_brachy_health AsaMatrix matches ..0 as @e[type=armor_stand,tag=BrachyRoot] run function asa_animator:brachy/manager/start_death_animation
+execute if score #mhdp_brachy_health AsaMatrix matches ..0 if entity @s[tag=!Death] as @e[type=armor_stand,tag=BrachyRoot] unless entity @s[tag=AnmDeath] run function asa_animator:brachy/manager/start_death_animation
