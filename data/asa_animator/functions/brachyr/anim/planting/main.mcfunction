@@ -2,65 +2,81 @@
 scoreboard players add @s AsaMatrix 1
 execute if score @s AsaMatrix matches 1 run function asa_animator:brachyr/anim/planting/start
 execute if score @s AsaMatrix matches 1 run function asa_animator:brachyr/anim/planting/keyframes/0
-execute if score @s AsaMatrix matches 1..6 run tp @s ^0 ^0.01666667 ^0
-execute if score @s AsaMatrix matches 7 run function asa_animator:brachyr/anim/planting/keyframes/1
-execute if score @s AsaMatrix matches 7..12 run tp @s ^0 ^-0.03333334 ^0
-execute if score @s AsaMatrix matches 13 run function asa_animator:brachyr/anim/planting/keyframes/2
-execute if score @s AsaMatrix matches 13..18 run tp @s ^0 ^0.008333334 ^0
-execute if score @s AsaMatrix matches 19 run function asa_animator:brachyr/anim/planting/keyframes/3
-execute if score @s AsaMatrix matches 19..25 run tp @s ^0 ^0.007142857 ^0
-execute if score @s AsaMatrix matches 26 run function asa_animator:brachyr/anim/planting/keyframes/4
-execute if score @s AsaMatrix matches 26..27 run tp @s ^0 ^0.05 ^0
-execute if score @s AsaMatrix matches 28 run function asa_animator:brachyr/anim/planting/keyframes/5
-execute if score @s AsaMatrix matches 28..36 run tp @s ^0 ^-0.01666667 ^0
-execute if score @s AsaMatrix matches 37 run function asa_animator:brachyr/anim/planting/keyframes/6
-execute if score @s AsaMatrix matches 37..38 run tp @s ^0 ^-0.05 ^0
-execute if score @s AsaMatrix matches 39 run function asa_animator:brachyr/anim/planting/keyframes/7
-execute if score @s AsaMatrix matches 39..47 run tp @s ^0 ^0.01666667 ^0
-execute if score @s AsaMatrix matches 48 run function asa_animator:brachyr/anim/planting/keyframes/8
-execute if score @s AsaMatrix matches 48..50 run tp @s ^0 ^0.03333334 ^0
-execute if score @s AsaMatrix matches 51 run function asa_animator:brachyr/anim/planting/keyframes/9
-execute if score @s AsaMatrix matches 51..58 run tp @s ^0 ^-0.01875 ^0
-execute if score @s AsaMatrix matches 59 run function asa_animator:brachyr/anim/planting/keyframes/10
-execute if score @s AsaMatrix matches 59..61 run tp @s ^0 ^-0.03333334 ^0
-execute if score @s AsaMatrix matches 62 run function asa_animator:brachyr/anim/planting/keyframes/11
-execute if score @s AsaMatrix matches 62..70 run tp @s ^0 ^0.01666667 ^0
-execute if score @s AsaMatrix matches 71 run function asa_animator:brachyr/anim/planting/keyframes/12
-execute if score @s AsaMatrix matches 71..72 run tp @s ^0 ^0.05 ^0
-execute if score @s AsaMatrix matches 73 run function asa_animator:brachyr/anim/planting/keyframes/13
-execute if score @s AsaMatrix matches 73..81 run tp @s ^0 ^-0.01666667 ^0
-execute if score @s AsaMatrix matches 82 run function asa_animator:brachyr/anim/planting/keyframes/14
-execute if score @s AsaMatrix matches 82..83 run tp @s ^0 ^-0.05 ^0
-execute if score @s AsaMatrix matches 84 run function asa_animator:brachyr/anim/planting/keyframes/15
-execute if score @s AsaMatrix matches 84..92 run tp @s ^0 ^0.01666667 ^0
-execute if score @s AsaMatrix matches 93 run function asa_animator:brachyr/anim/planting/keyframes/16
-execute if score @s AsaMatrix matches 93..95 run tp @s ^0 ^0.03333334 ^0
-execute if score @s AsaMatrix matches 96 run function asa_animator:brachyr/anim/planting/keyframes/17
-execute if score @s AsaMatrix matches 96..103 run tp @s ^0 ^-0.01875 ^0
-execute if score @s AsaMatrix matches 104 run function asa_animator:brachyr/anim/planting/keyframes/18
-execute if score @s AsaMatrix matches 104..106 run tp @s ^0 ^-0.03333334 ^0
-execute if score @s AsaMatrix matches 107 run function asa_animator:brachyr/anim/planting/keyframes/19
-execute if score @s AsaMatrix matches 107..115 run tp @s ^0 ^0.01666667 ^0
-execute if score @s AsaMatrix matches 116 run function asa_animator:brachyr/anim/planting/keyframes/20
-execute if score @s AsaMatrix matches 116..117 run tp @s ^0 ^0.05 ^0
-execute if score @s AsaMatrix matches 118 run function asa_animator:brachyr/anim/planting/keyframes/21
-execute if score @s AsaMatrix matches 118..126 run tp @s ^0 ^-0.01666667 ^0
-execute if score @s AsaMatrix matches 127 run function asa_animator:brachyr/anim/planting/keyframes/22
-execute if score @s AsaMatrix matches 127..128 run tp @s ^0 ^-0.05 ^0
-execute if score @s AsaMatrix matches 129 run function asa_animator:brachyr/anim/planting/keyframes/23
-execute if score @s AsaMatrix matches 129..137 run tp @s ^0 ^0 ^0
-execute if score @s AsaMatrix matches 138 run function asa_animator:brachyr/anim/planting/keyframes/24
-execute if score @s AsaMatrix matches 138..143 run tp @s ^0 ^0.04166667 ^0
-execute if score @s AsaMatrix matches 144 run function asa_animator:brachyr/anim/planting/keyframes/25
-execute if score @s AsaMatrix matches 144..152 run tp @s ^0 ^0 ^0
-execute if score @s AsaMatrix matches 153 run function asa_animator:brachyr/anim/planting/keyframes/26
-execute if score @s AsaMatrix matches 153..162 run tp @s ^0 ^-0.03 ^0
-execute if score @s AsaMatrix matches 163 run function asa_animator:brachyr/anim/planting/keyframes/27
-execute if score @s AsaMatrix matches 163..171 run tp @s ^0 ^0 ^0
-execute if score @s AsaMatrix matches 172 run function asa_animator:brachyr/anim/planting/keyframes/28
-execute if score @s AsaMatrix matches 172..187 run tp @s ^0 ^0.0125 ^0
-execute if score @s AsaMatrix matches 188.. run function asa_animator:brachyr/anim/planting/end
+execute if score @s AsaMatrix matches 1..5 run tp @s ^0 ^0.02 ^0
+execute if score @s AsaMatrix matches 6 run function asa_animator:brachyr/anim/planting/keyframes/1
+execute if score @s AsaMatrix matches 6..11 run tp @s ^0 ^-0.03333334 ^0
+execute if score @s AsaMatrix matches 12 run function asa_animator:brachyr/anim/planting/keyframes/2
+execute if score @s AsaMatrix matches 12..17 run tp @s ^0 ^0.008333334 ^0
+execute if score @s AsaMatrix matches 18 run function asa_animator:brachyr/anim/planting/keyframes/3
+execute if score @s AsaMatrix matches 18..23 run tp @s ^0 ^0.008333334 ^0
+execute if score @s AsaMatrix matches 24 run function asa_animator:brachyr/anim/planting/keyframes/4
+execute if score @s AsaMatrix matches 24..25 run tp @s ^0 ^0.05 ^0
+execute if score @s AsaMatrix matches 26 run function asa_animator:brachyr/anim/planting/keyframes/5
+execute if score @s AsaMatrix matches 26..34 run tp @s ^0 ^-0.01666667 ^0
+execute if score @s AsaMatrix matches 35 run function asa_animator:brachyr/anim/planting/keyframes/6
+execute if score @s AsaMatrix matches 35..36 run tp @s ^0 ^-0.05 ^0
+execute if score @s AsaMatrix matches 37 run function asa_animator:brachyr/anim/planting/keyframes/7
+execute if score @s AsaMatrix matches 37..44 run tp @s ^0 ^0.01875 ^0
+execute if score @s AsaMatrix matches 45 run function asa_animator:brachyr/anim/planting/keyframes/8
+execute if score @s AsaMatrix matches 45..47 run tp @s ^0 ^0.03333334 ^0
+execute if score @s AsaMatrix matches 48 run function asa_animator:brachyr/anim/planting/keyframes/9
+execute if score @s AsaMatrix matches 48..55 run tp @s ^0 ^-0.01875 ^0
+execute if score @s AsaMatrix matches 56 run function asa_animator:brachyr/anim/planting/keyframes/10
+execute if score @s AsaMatrix matches 56..57 run tp @s ^0 ^-0.05 ^0
+execute if score @s AsaMatrix matches 58 run function asa_animator:brachyr/anim/planting/keyframes/11
+execute if score @s AsaMatrix matches 58..65 run tp @s ^0 ^0.01875 ^0
+execute if score @s AsaMatrix matches 66 run function asa_animator:brachyr/anim/planting/keyframes/12
+execute if score @s AsaMatrix matches 66..68 run tp @s ^0 ^0.03333334 ^0
+execute if score @s AsaMatrix matches 69 run function asa_animator:brachyr/anim/planting/keyframes/13
+execute if score @s AsaMatrix matches 69..76 run tp @s ^0 ^-0.01875 ^0
+execute if score @s AsaMatrix matches 77 run function asa_animator:brachyr/anim/planting/keyframes/14
+execute if score @s AsaMatrix matches 77..78 run tp @s ^0 ^-0.05 ^0
+execute if score @s AsaMatrix matches 79 run function asa_animator:brachyr/anim/planting/keyframes/15
+execute if score @s AsaMatrix matches 79..87 run tp @s ^0 ^0.01666667 ^0
+execute if score @s AsaMatrix matches 88 run function asa_animator:brachyr/anim/planting/keyframes/16
+execute if score @s AsaMatrix matches 88..89 run tp @s ^0 ^0.05 ^0
+execute if score @s AsaMatrix matches 90 run function asa_animator:brachyr/anim/planting/keyframes/17
+execute if score @s AsaMatrix matches 90..97 run tp @s ^0 ^-0.01875 ^0
+execute if score @s AsaMatrix matches 98 run function asa_animator:brachyr/anim/planting/keyframes/18
+execute if score @s AsaMatrix matches 98..100 run tp @s ^0 ^-0.03333334 ^0
+execute if score @s AsaMatrix matches 101 run function asa_animator:brachyr/anim/planting/keyframes/19
+execute if score @s AsaMatrix matches 101..108 run tp @s ^0 ^0.01875 ^0
+execute if score @s AsaMatrix matches 109 run function asa_animator:brachyr/anim/planting/keyframes/20
+execute if score @s AsaMatrix matches 109..110 run tp @s ^0 ^0.05 ^0
+execute if score @s AsaMatrix matches 111 run function asa_animator:brachyr/anim/planting/keyframes/21
+execute if score @s AsaMatrix matches 111..118 run tp @s ^0 ^-0.01875 ^0
+execute if score @s AsaMatrix matches 119 run function asa_animator:brachyr/anim/planting/keyframes/22
+execute if score @s AsaMatrix matches 119..121 run tp @s ^0 ^-0.03333334 ^0
+execute if score @s AsaMatrix matches 122 run function asa_animator:brachyr/anim/planting/keyframes/23
+execute if score @s AsaMatrix matches 122..129 run tp @s ^0 ^0 ^0
+execute if score @s AsaMatrix matches 130 run function asa_animator:brachyr/anim/planting/keyframes/24
+execute if score @s AsaMatrix matches 130..135 run tp @s ^0 ^0.04166667 ^0 ~-1 ~
+execute if score @s AsaMatrix matches 136 run function asa_animator:brachyr/anim/planting/keyframes/25
+execute if score @s AsaMatrix matches 136..143 run tp @s ^0 ^0 ^0
+execute if score @s AsaMatrix matches 144 run function asa_animator:brachyr/anim/planting/keyframes/26
+execute if score @s AsaMatrix matches 144..152 run tp @s ^0 ^-0.03333334 ^0
+execute if score @s AsaMatrix matches 153 run function asa_animator:brachyr/anim/planting/keyframes/27
+execute if score @s AsaMatrix matches 153..161 run tp @s ^0 ^0 ^0.1 ~1 ~
+execute if score @s AsaMatrix matches 162 run function asa_animator:brachyr/anim/planting/keyframes/28
+execute if score @s AsaMatrix matches 162..176 run tp @s ^0 ^0.01333333 ^0 ~-0.3 ~
+execute if score @s AsaMatrix matches 177.. run function asa_animator:brachyr/anim/planting/end
 execute as @e[type=armor_stand,tag=BrachyRParts] run function #asa_matrix:animate
 function asa_animator:brachyr/model
 
-tp @s ^ ^ ^0.3 ~1 ~
+execute if score @s AsaMatrix matches 1..13 run function asa_animator:brachyr/manager/rotate
+
+execute if score @s AsaMatrix matches 22..118 at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
+execute if score @s AsaMatrix matches 22..118 at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~
+
+execute if score @s AsaMatrix matches 22..118 at @s run tp @s ^ ^ ^0.5
+execute if score @s AsaMatrix matches 130..152 at @s run tp @s ^ ^ ^0.2
+execute if score @s AsaMatrix matches 1 run playsound block.grass.step master @a ~ ~ ~ 2 0.7
+execute if score @s AsaMatrix matches 129 run playsound block.grass.step master @a ~ ~ ~ 2 0.7
+execute if score @s AsaMatrix matches 152 run playsound block.grass.step master @a ~ ~ ~ 2 0.7
+
+execute if score @s AsaMatrix matches 48..101 run function asa_animator:brachyr/manager/rotate_lr
+execute if score @s AsaMatrix matches 34 positioned ^0.7 ^ ^3.3 run function asa_animator:brachyr/anim/punch_l/events/damage
+execute if score @s AsaMatrix matches 55 positioned ^-0.7 ^ ^3.3 run function asa_animator:brachyr/anim/punch_l/events/damage
+execute if score @s AsaMatrix matches 76 positioned ^0.7 ^ ^3.3 run function asa_animator:brachyr/anim/punch_l/events/damage
+execute if score @s AsaMatrix matches 97 positioned ^-0.7 ^ ^3.3 run function asa_animator:brachyr/anim/punch_l/events/damage
+execute if score @s AsaMatrix matches 118 positioned ^0.7 ^ ^3.3 run function asa_animator:brachyr/anim/punch_l/events/damage

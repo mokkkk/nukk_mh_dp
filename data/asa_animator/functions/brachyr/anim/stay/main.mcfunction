@@ -14,3 +14,5 @@ execute if score @s AsaMatrix matches 36..55 run tp @s ^0 ^0.0025 ^-0.0125
 execute if score @s AsaMatrix matches 56.. run function asa_animator:brachyr/anim/stay/end
 execute as @e[type=armor_stand,tag=BrachyRParts] run function #asa_matrix:animate
 function asa_animator:brachyr/model
+
+function asa_animator:brachyr/manager/ground
