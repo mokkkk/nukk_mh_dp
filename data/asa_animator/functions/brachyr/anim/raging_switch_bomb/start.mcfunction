@@ -20,3 +20,4 @@ execute as @e[type=armor_stand,tag=BrachyRParts,tag=ArmR0] run data merge entity
 execute as @e[type=armor_stand,tag=BrachyRParts,tag=ArmL1] run data merge entity @s {Pose:{Head:[5f,10f,0f]}}
 execute as @e[type=armor_stand,tag=BrachyRParts,tag=ArmR1] run data merge entity @s {Pose:{Head:[5f,-10f,0f]}}
 tag @s remove SetBomb
+tag @e[type=armor_stand,tag=BrachyRBombRed] add PrepareBomb

@@ -21,8 +21,8 @@ execute as @e[type=armor_stand,tag=BrachyRParts,tag=ArmL1] run data merge entity
 execute as @e[type=armor_stand,tag=BrachyRParts,tag=ArmR1] run data merge entity @s {Pose:{Head:[5f,-10f,0f]}}
 
 # ダメージ適用
-scoreboard players remove #mhdp_brachyr_health AsaMatrix 500
+scoreboard players remove #mhdp_brachyr_health AsaMatrix 1000
 # ボスバー設定
-execute store result bossbar asa_animator:brachy_health value run scoreboard players get #mhdp_brachyr_health AsaMatrix
+execute store result bossbar asa_animator:brachyr_health value run scoreboard players get #mhdp_brachyr_health AsaMatrix
 # 効果音など
 playsound minecraft:entity.player.hurt master @a ~ ~ ~ 2 1
