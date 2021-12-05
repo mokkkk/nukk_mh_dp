@@ -41,13 +41,13 @@ execute if score @s AsaMatrix matches 1..15 run function asa_animator:brachyr/ma
 execute if score @s AsaMatrix matches 45..50 run function asa_animator:brachyr/manager/rotate
 
 execute if score @s AsaMatrix matches 20 positioned ^ ^ ^3.5 run function asa_animator:brachyr/anim/upper_2/events/damage
-execute if score @s AsaMatrix matches 22 positioned ^ ^ ^3.5 rotated ~10 0 positioned ^ ^ ^3.5 run function asa_animator:brachyr/manager/bomb/head/set
-execute if score @s AsaMatrix matches 25 positioned ^ ^ ^3.5 rotated ~10 0 positioned ^ ^ ^8.5 run function asa_animator:brachyr/manager/bomb/head/set
-execute if score @s AsaMatrix matches 28 positioned ^ ^ ^3.5 rotated ~10 0 positioned ^ ^ ^13.5 run function asa_animator:brachyr/manager/bomb/head/set
-execute if score @s AsaMatrix matches 31 positioned ^ ^ ^3.5 rotated ~10 0 positioned ^ ^ ^18.5 run function asa_animator:brachyr/manager/bomb/head/set
+execute if score @s AsaMatrix matches 22 positioned ^ ^ ^3.5 rotated ~10 0 positioned ^ ^ ^3.5 run function asa_animator:brachyr/anim/upper_2/events/set_l
+execute if score @s AsaMatrix matches 25 positioned ^ ^ ^3.5 rotated ~10 0 positioned ^ ^ ^8.5 run function asa_animator:brachyr/anim/upper_2/events/set_l
+execute if score @s AsaMatrix matches 28 positioned ^ ^ ^3.5 rotated ~10 0 positioned ^ ^ ^13.5 run function asa_animator:brachyr/anim/upper_2/events/set_l
+execute if score @s AsaMatrix matches 31 positioned ^ ^ ^3.5 rotated ~10 0 positioned ^ ^ ^18.5 run function asa_animator:brachyr/anim/upper_2/events/set_l
 
 execute if score @s AsaMatrix matches 52 positioned ^ ^ ^3.5 run function asa_animator:brachyr/anim/upper_2/events/damage
-execute if score @s AsaMatrix matches 54 positioned ^ ^ ^3.5 rotated ~-10 0 positioned ^ ^ ^3.5 run function asa_animator:brachyr/manager/bomb/head/set
-execute if score @s AsaMatrix matches 57 positioned ^ ^ ^3.5 rotated ~-10 0 positioned ^ ^ ^8.5 run function asa_animator:brachyr/manager/bomb/head/set
-execute if score @s AsaMatrix matches 60 positioned ^ ^ ^3.5 rotated ~-10 0 positioned ^ ^ ^13.5 run function asa_animator:brachyr/manager/bomb/head/set
-execute if score @s AsaMatrix matches 63 positioned ^ ^ ^3.5 rotated ~-10 0 positioned ^ ^ ^18.5 run function asa_animator:brachyr/manager/bomb/head/set
+execute if score @s AsaMatrix matches 54 positioned ^ ^ ^3.5 rotated ~-10 0 positioned ^ ^ ^3.5 run function asa_animator:brachyr/anim/upper_2/events/set_r
+execute if score @s AsaMatrix matches 57 positioned ^ ^ ^3.5 rotated ~-10 0 positioned ^ ^ ^8.5 run function asa_animator:brachyr/anim/upper_2/events/set_r
+execute if score @s AsaMatrix matches 60 positioned ^ ^ ^3.5 rotated ~-10 0 positioned ^ ^ ^13.5 run function asa_animator:brachyr/anim/upper_2/events/set_r
+execute if score @s AsaMatrix matches 63 positioned ^ ^ ^3.5 rotated ~-10 0 positioned ^ ^ ^18.5 run function asa_animator:brachyr/anim/upper_2/events/set_r

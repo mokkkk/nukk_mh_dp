@@ -35,6 +35,13 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
+          "nbt": "{Tags:[\"AnmPunchLargeL\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
           "nbt": "{Tags:[\"AnmPunchR\"]}"
         }
       },
@@ -57,6 +64,13 @@
         "entity": "this",
         "predicate": {
           "nbt": "{Tags:[\"AnmTurnR\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmPunchLargeR\"]}"
         }
       },
       {
@@ -126,7 +140,7 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmHeadTrap\"]}"
+          "nbt": "{Tags:[\"AnmDozer\"]}"
         }
       },
       {
@@ -140,14 +154,35 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmAnger\"]}"
+          "nbt": "{Tags:[\"AnmChargeBomb\"]}"
         }
       },
       {
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmCharge\"]}"
+          "nbt": "{Tags:[\"AnmRage\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmRageSetBomb\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmRageSwitchBomb\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmDamage\"]}"
         }
       },
       {
@@ -190,6 +225,13 @@
         "entity": "this",
         "predicate": {
           "nbt": "{Tags:[\"AnmDArmR\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmDamage\"]}"
         }
       }
     ]

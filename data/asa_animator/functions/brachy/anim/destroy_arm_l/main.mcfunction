@@ -19,4 +19,4 @@ function asa_animator:brachy/model
 
 execute if score @s AsaMatrix matches 15.. at @s positioned ~ ~5 ~ run tp @s ~ ~ ~
 execute if score @s AsaMatrix matches 15.. at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
-execute if score @s AsaMatrix matches 15 run function asa_animator:dyno/manager/particle/jump
+execute if score @s AsaMatrix matches 15 run function asa_animator:brachyr/manager/particle/jump

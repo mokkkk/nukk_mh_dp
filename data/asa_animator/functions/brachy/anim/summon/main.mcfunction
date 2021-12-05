@@ -4,7 +4,7 @@ execute if score @s AsaMatrix matches 1 at @s positioned ~ ~10 ~ run function as
 execute if score @s AsaMatrix matches 1 at @s run tp @s ~ ~-10 ~
 
 scoreboard players add @s AsaMatrix 1
-execute if score @s AsaMatrix matches 1 run function asa_animator:brachy/anim/summon/start
+execute if score @s AsaMatrix matches 1 at @s run function asa_animator:brachy/anim/summon/start
 execute if score @s AsaMatrix matches 1 run function asa_animator:brachy/anim/summon/keyframes/0
 execute if score @s AsaMatrix matches 1..10 run tp @s ^0 ^0.6 ^0
 execute if score @s AsaMatrix matches 11 run function asa_animator:brachy/anim/summon/keyframes/1

@@ -40,5 +40,6 @@ execute if score @s AsaMatrix matches 68 run function asa_animator:brachyr/manag
 execute if score @s AsaMatrix matches 1..44 run function asa_animator:brachyr/manager/rotate
 execute if score @s AsaMatrix matches 44 run function asa_animator:brachyr/anim/jump/events/pos/set_pos
 execute if score @s AsaMatrix matches 45..68 run function asa_animator:brachyr/anim/jump/events/pos/offset
-execute if score @s AsaMatrix matches 69 positioned ^ ^ ^3 run function asa_animator:brachyr/anim/jump/events/damage
-execute if entity @s[tag=IsAnger] if score @s AsaMatrix matches 73 positioned ^ ^ ^3 run function asa_animator:brachyr/anim/jump/events/damage_bomb
+execute if score @s AsaMatrix matches 69 positioned ^ ^ ^3 run function asa_animator:brachyr/anim/jump/events/damage_n
+execute unless entity @s[tag=Phase2] unless entity @s[tag=!ActiveArmL,tag=!ActiveArmL] if score @s AsaMatrix matches 75 positioned ^ ^ ^3 run function asa_animator:brachyr/anim/jump/events/damage_bomb
+execute if score @s AsaMatrix matches 69..85 if entity @s[tag=Phase2] run function asa_animator:brachyr/anim/jump/events/set

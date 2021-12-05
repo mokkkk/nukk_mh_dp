@@ -76,7 +76,7 @@ execute if score @s AsaMatrix matches 152 run playsound block.grass.step master 
 
 execute if score @s AsaMatrix matches 48..101 run function asa_animator:brachyr/manager/rotate_lr
 execute if score @s AsaMatrix matches 34 positioned ^0.7 ^ ^3.3 run function asa_animator:brachyr/anim/punch_l/events/damage
-execute if score @s AsaMatrix matches 55 positioned ^-0.7 ^ ^3.3 run function asa_animator:brachyr/anim/punch_l/events/damage
+execute if score @s AsaMatrix matches 55 positioned ^-0.7 ^ ^3.3 run function asa_animator:brachyr/anim/punch_r/events/damage
 execute if score @s AsaMatrix matches 76 positioned ^0.7 ^ ^3.3 run function asa_animator:brachyr/anim/punch_l/events/damage
-execute if score @s AsaMatrix matches 97 positioned ^-0.7 ^ ^3.3 run function asa_animator:brachyr/anim/punch_l/events/damage
+execute if score @s AsaMatrix matches 97 positioned ^-0.7 ^ ^3.3 run function asa_animator:brachyr/anim/punch_r/events/damage
 execute if score @s AsaMatrix matches 118 positioned ^0.7 ^ ^3.3 run function asa_animator:brachyr/anim/punch_l/events/damage

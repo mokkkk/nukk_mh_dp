@@ -16,3 +16,7 @@ execute as @e[type=armor_stand,tag=BrachyRParts] run function #asa_matrix:animat
 function asa_animator:brachyr/model
 
 function asa_animator:brachyr/manager/ground
+
+execute unless predicate asa_animator:brachyr/combo if score @s AsaMatrix matches 1 run tag @s add ChangeAnm
+execute if entity @s[tag=Phase2] if score @s AsaMatrix matches 1 run tag @s add ChangeAnm
+execute if score @s AsaMatrix matches 1 if score #mhdp_brachyr_actcount AsaMatrix matches 1.. run function asa_animator:brachyr/anim/stay/events/change

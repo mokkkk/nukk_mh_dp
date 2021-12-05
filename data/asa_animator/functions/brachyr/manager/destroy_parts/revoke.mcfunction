@@ -1,1 +1,1 @@
-advancement revoke @a only mh_dp:toasts/brachy
+advancement revoke @a only mh_dp:toasts/brachyr

@@ -20,3 +20,5 @@ data remove storage mhdp: MovePosTemp
 
 particle block grass_block ~ ~ ~ 1 0.1 1 0 3
 playsound block.grass.step master @a ~ ~ ~ 2 0.7
+
+execute if entity @s[tag=Phase2] at @s run function asa_animator:brachyr/manager/bomb/red/set

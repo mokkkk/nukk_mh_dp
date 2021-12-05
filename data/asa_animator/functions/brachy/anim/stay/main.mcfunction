@@ -11,6 +11,6 @@ function asa_animator:brachy/model
 
 execute unless predicate asa_animator:brachy/combo if score @s AsaMatrix matches 1 run tag @s add ChangeAnm
 execute if score @s AsaMatrix matches 1 if entity @s[tag=IsAnger] run function asa_animator:brachy/anim/stay/events/change
-execute if score @s AsaMatrix matches 1 if score #mhdp_brachy_actcount AsaMatrix matches 1.. run function asa_animator:brachy/anim/stay/events/change
+execute if score @s AsaMatrix matches 1 if score #mhdp_brachyr_actcount AsaMatrix matches 1.. run function asa_animator:brachy/anim/stay/events/change
 
 function asa_animator:brachy/manager/ground

@@ -14,9 +14,9 @@ execute if score @s AsaMatrix matches 37..38 run tp @s ^0 ^0.05 ^0.1
 execute if score @s AsaMatrix matches 39 run function asa_animator:brachyr/anim/head_bomb/keyframes/5
 execute if score @s AsaMatrix matches 39..50 run tp @s ^0 ^-0.025 ^-0.03333334
 execute if score @s AsaMatrix matches 51 run function asa_animator:brachyr/anim/head_bomb/keyframes/6
-execute if score @s AsaMatrix matches 51..65 run tp @s ^0 ^0.01666667 ^-0.02333333
+execute if score @s AsaMatrix matches 51..65 run tp @s ^0 ^0.01666667 ^-0.02333333 ~0.5 ~
 execute if score @s AsaMatrix matches 66 run function asa_animator:brachyr/anim/head_bomb/keyframes/7
-execute if score @s AsaMatrix matches 66..80 run tp @s ^0 ^0.003333333 ^0.01
+execute if score @s AsaMatrix matches 66..80 run tp @s ^0 ^0.003333333 ^0.01 ~-0.5 ~
 execute if score @s AsaMatrix matches 81.. run function asa_animator:brachyr/anim/head_bomb/end
 execute as @e[type=armor_stand,tag=BrachyRParts] run function #asa_matrix:animate
 function asa_animator:brachyr/model
@@ -34,9 +34,9 @@ execute if score @s AsaMatrix matches 46 positioned ^ ^ ^4 rotated ~45 0 positio
 execute if score @s AsaMatrix matches 46 positioned ^ ^ ^4 rotated ~135 0 positioned ^ ^ ^4 run function asa_animator:brachyr/anim/head_bomb/events/set
 execute if score @s AsaMatrix matches 46 positioned ^ ^ ^4 rotated ~225 0 positioned ^ ^ ^4 run function asa_animator:brachyr/anim/head_bomb/events/set
 execute if score @s AsaMatrix matches 46 positioned ^ ^ ^4 rotated ~315 0 positioned ^ ^ ^4 run function asa_animator:brachyr/anim/head_bomb/events/set
-execute if score @s AsaMatrix matches 56 positioned ^ ^ ^4 rotated ~ 0 positioned ^ ^ ^8 run function asa_animator:brachyr/anim/head_bomb/events/set
-execute if score @s AsaMatrix matches 56 positioned ^ ^ ^4 rotated ~90 0 positioned ^ ^ ^8 run function asa_animator:brachyr/anim/head_bomb/events/set
-execute if score @s AsaMatrix matches 56 positioned ^ ^ ^4 rotated ~180 0 positioned ^ ^ ^8 run function asa_animator:brachyr/anim/head_bomb/events/set
-execute if score @s AsaMatrix matches 56 positioned ^ ^ ^4 rotated ~270 0 positioned ^ ^ ^8 run function asa_animator:brachyr/anim/head_bomb/events/set
+execute if score @s AsaMatrix matches 56 positioned ^ ^ ^4 rotated ~45 0 positioned ^ ^ ^8 run function asa_animator:brachyr/anim/head_bomb/events/set
+execute if score @s AsaMatrix matches 56 positioned ^ ^ ^4 rotated ~135 0 positioned ^ ^ ^8 run function asa_animator:brachyr/anim/head_bomb/events/set
+execute if score @s AsaMatrix matches 56 positioned ^ ^ ^4 rotated ~225 0 positioned ^ ^ ^8 run function asa_animator:brachyr/anim/head_bomb/events/set
+execute if score @s AsaMatrix matches 56 positioned ^ ^ ^4 rotated ~315 0 positioned ^ ^ ^8 run function asa_animator:brachyr/anim/head_bomb/events/set
 
 execute if score @s AsaMatrix matches 50.. run function asa_animator:brachyr/manager/ground

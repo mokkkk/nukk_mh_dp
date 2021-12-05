@@ -10,9 +10,9 @@ execute if score @s AsaMatrix matches 15..18 run tp @s ^0 ^0 ^0
 execute if score @s AsaMatrix matches 19 run function asa_animator:brachyr/anim/hook_l/keyframes/3
 execute if score @s AsaMatrix matches 19..24 run tp @s ^0 ^-0.05 ^0.08333334
 execute if score @s AsaMatrix matches 25 run function asa_animator:brachyr/anim/hook_l/keyframes/4
-execute if score @s AsaMatrix matches 25..28 run tp @s ^0.05 ^0.05 ^0.05
+execute if score @s AsaMatrix matches 25..28 run tp @s ^0.05 ^0.05 ^0.05 ~0.5 ~
 execute if score @s AsaMatrix matches 29 run function asa_animator:brachyr/anim/hook_l/keyframes/5
-execute if score @s AsaMatrix matches 29..44 run tp @s ^-0.0125 ^-0.0125 ^-0.0125
+execute if score @s AsaMatrix matches 29..44 run tp @s ^-0.0125 ^-0.0125 ^-0.0125 ~-0.5 ~
 execute if score @s AsaMatrix matches 45 run function asa_animator:brachyr/anim/hook_l/keyframes/6
 execute if score @s AsaMatrix matches 45..58 run tp @s ^0 ^0.007142857 ^-0.03571429
 execute if score @s AsaMatrix matches 59.. run function asa_animator:brachyr/anim/hook_l/end

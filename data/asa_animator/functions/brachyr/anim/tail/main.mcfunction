@@ -15,6 +15,7 @@ execute if score @s AsaMatrix matches 46.. run function asa_animator:brachyr/ani
 execute as @e[type=armor_stand,tag=BrachyRParts] run function #asa_matrix:animate
 function asa_animator:brachyr/model
 
-execute if score @s AsaMatrix matches 1..10 run function asa_animator:brachy/manager/rotate_lr_r
+execute if score @s AsaMatrix matches 1 run playsound block.grass.step master @a ~ ~ ~ 2 0.5
+execute if score @s AsaMatrix matches 1..8 run function asa_animator:brachy/manager/rotate_lr_r
 execute if score @s AsaMatrix matches 1..7 unless entity @e[distance=0..4,tag=BrachyRAttackTarget] at @s run tp @s ^ ^ ^-0.2
 execute if score @s AsaMatrix matches 24 positioned ^ ^ ^-5 run function asa_animator:brachyr/anim/tail/events/damage

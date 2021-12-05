@@ -2,6 +2,8 @@ tag @s remove AnmPunchL
 tag @s remove AnmPunchR
 tag @s remove AnmPunchTurnL
 tag @s remove AnmPunchTurnR
+tag @s remove AnmPunchLargeL
+tag @s remove AnmPunchLargeR
 tag @s remove AnmHookL
 tag @s remove AnmHookR
 tag @s remove AnmTurnL
@@ -14,10 +16,14 @@ tag @s remove AnmPlanting
 tag @s remove AnmHead
 tag @s remove AnmHeadBomb
 tag @s remove AnmHeadShot
-tag @s remove AnmHeadTrap
 tag @s remove AnmTail
-tag @s remove AnmCharge
-tag @s remove AnmAnger
+tag @s remove AnmUpper
+tag @s remove AnmDozer
+tag @s remove AnmChargeBomb
+tag @s remove AnmRage
+tag @s remove AnmRageSetBomb
+tag @s remove AnmRageSwitchBomb
+tag @s remove AnmDamage
 tag @s remove AnmSummon
 tag @s remove AnmDHead
 tag @s remove AnmDArmL
