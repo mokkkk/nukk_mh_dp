@@ -1,0 +1,32 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"砕竜の撃滅拳\"}',Lore:['{\"text\":\"全てを砕く竜の拳を覆う甲殻．\"}','{\"text\":\"武器の素材として使用される．\"}']},CustomModelData:10010,MhdpID:11}"
+              }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"不壊の黒曜甲\"}',Lore:['{\"text\":\"限界を超えた爆破も耐える砕竜の甲殻．\"}','{\"text\":\"防具の素材として使用される．\"}']},CustomModelData:10011,MhdpID:12}"
+              }
+          ]
+        }
+      ]
+    }
+  ]
+}

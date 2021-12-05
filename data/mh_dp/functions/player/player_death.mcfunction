@@ -23,4 +23,9 @@ tag @s remove NargaAttackTarget
 tag @s remove DynoTarget
 tag @s remove DynoAttackTarget
 
+tag @s remove BrachyTarget
+tag @s remove BrachyAttackTarget
+tag @s remove BrachyRTarget
+tag @s remove BrachyRAttackTarget
+
 tag @s remove Dead

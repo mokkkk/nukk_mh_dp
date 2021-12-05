@@ -10,3 +10,6 @@ execute if entity @s[tag=ZinogreRoot] run function asa_animator:zinogre/main
 execute if entity @s[tag=NargaRoot] run function asa_animator:narga/main
 
 execute if entity @s[tag=DynoRoot] run function asa_animator:dyno/main
+
+execute if entity @s[tag=BrachyRoot] run function asa_animator:brachy/main
+execute if entity @s[tag=BrachyRRoot] run function asa_animator:brachyr/main

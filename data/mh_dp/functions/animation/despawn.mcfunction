@@ -10,3 +10,6 @@ execute if entity @s[tag=ReiaRoot] run function asa_animator:reia/manager/despaw
 execute if entity @s[tag=NargaRoot] run function asa_animator:narga/manager/despawn
 
 execute if entity @s[tag=DynoRoot] run function asa_animator:dyno/manager/despawn
+
+execute if entity @s[tag=BrachyRoot] run function asa_animator:brachy/manager/despawn
+execute if entity @s[tag=BrachyRRoot] run function asa_animator:brachyr/manager/despawn
