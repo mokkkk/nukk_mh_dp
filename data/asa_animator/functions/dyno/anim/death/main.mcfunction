@@ -24,3 +24,11 @@ execute if score @s AsaMatrix matches 71 run function asa_animator:dyno/manager/
 
 execute if score @s AsaMatrix matches 37 unless entity @s[tag=DHead] run data modify entity @e[type=armor_stand,tag=DynoParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10190
 execute if score @s AsaMatrix matches 37 if entity @s[tag=DHead] run data modify entity @e[type=armor_stand,tag=DynoParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10191
+
+execute if score @s AsaMatrix matches 11..41 as @e[distance=0..15,type=armor_stand,tag=DynoParts,tag=HeadU] at @s positioned ~ ~1.4 ~ run particle flash ~ ~ ~ 0 0 0 0 1
+
+execute if score @s AsaMatrix matches 11 run playsound entity.iron_golem.hurt master @a ~ ~ ~ 2 0.5
+execute if score @s AsaMatrix matches 24 run playsound entity.iron_golem.hurt master @a ~ ~ ~ 2 0.5
+execute if score @s AsaMatrix matches 11 run playsound entity.iron_golem.death master @a ~ ~ ~ 2 0.6
+execute if score @s AsaMatrix matches 11 run playsound entity.iron_golem.death master @a ~ ~ ~ 2 0.8
+execute if score @s AsaMatrix matches 11 run playsound entity.iron_golem.death master @a ~ ~ ~ 2 0.5

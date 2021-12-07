@@ -29,6 +29,7 @@ tag @s remove AnmDLegL
 tag @s remove AnmDLegR
 tag @s remove AnmDTail
 tag @s remove AnmDHeadH
+tag @s remove AnmVoice
 
 kill @e[type=marker,tag=DynoMoveRotate]
 kill @e[type=marker,tag=DynoBreathTarget]

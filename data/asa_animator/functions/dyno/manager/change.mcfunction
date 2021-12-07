@@ -24,9 +24,5 @@ execute unless entity @e[tag=DynoAttackTarget] run tag @e[tag=DynoTarget,limit=1
 # 通常時
 execute unless entity @s[tag=AnmCharge] run function asa_animator:dyno/manager/change_normal/change
 
-# 強制
-# function asa_animator:dyno/manager/change_normal/_/swingj
-# tag @s add AnmMove
-
 # 終了
 tag @s remove ChangeAnm

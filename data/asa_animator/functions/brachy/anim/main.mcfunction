@@ -57,6 +57,8 @@ execute if entity @s[tag=AnmCharge] run function asa_animator:brachy/anim/charge
 
 # 登場
 execute if entity @s[tag=AnmSummon] run function asa_animator:brachy/anim/summon/main
+# 咆哮
+execute if entity @s[tag=AnmVoice] run function asa_animator:brachy/anim/voice/main
 # 討伐
 execute if entity @s[tag=AnmDeath] run function asa_animator:brachy/anim/death/main
 # 頭部部位破壊

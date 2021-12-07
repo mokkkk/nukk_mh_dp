@@ -74,6 +74,8 @@ execute if entity @s[tag=AnmDamage] run function asa_animator:brachyr/anim/damag
 
 # 登場
 execute if entity @s[tag=AnmSummon] run function asa_animator:brachyr/anim/summon/main
+# 咆哮
+execute if entity @s[tag=AnmVoice] run function asa_animator:brachyr/anim/voice/main
 # 討伐
 execute if entity @s[tag=AnmDeath] run function asa_animator:brachyr/anim/death/main
 # 頭部部位破壊
