@@ -14,8 +14,16 @@ execute store result bossbar asa_animator:diablos_health value run scoreboard pl
 # 効果音など
 playsound minecraft:entity.player.hurt master @a ~ ~ ~ 2 1
 
+# 部位ダメージ適用
+execute if entity @s[tag=HeadParts] run scoreboard players operation #mhdp_diablos_head_damage AsaMatrix += #diablos_damage AsaMatrix
+execute if entity @s[tag=BodyParts] run scoreboard players operation #mhdp_diablos_body_damage AsaMatrix += #diablos_damage AsaMatrix
+execute if entity @s[tag=TailParts] run scoreboard players operation #mhdp_diablos_tail_damage AsaMatrix += #diablos_damage AsaMatrix
+execute if score #mhdp_diablos_head_damage AsaMatrix matches ..0 as @e[distance=0..15,type=armor_stand,tag=DiablosRoot] unless entity @s[tag=DestroyHead] run function asa_animator:diablos/manager/destroy_parts/head
+execute if score #mhdp_diablos_body_damage AsaMatrix matches ..0 as @e[distance=0..15,type=armor_stand,tag=DiablosRoot] unless entity @s[tag=DestroyBody] run function asa_animator:diablos/manager/destroy_parts/body
+execute if score #mhdp_diablos_tail_damage AsaMatrix matches ..0 as @e[distance=0..15,type=armor_stand,tag=DiablosRoot] unless entity @s[tag=DestroyTail] run function asa_animator:diablos/manager/destroy_parts/tail
+
 # 怒り変化
-execute as @e[type=armor_stand,tag=DiablosRoot] run function asa_animator:diablos/manager/anger/main
+execute as @e[distance=0..20,type=armor_stand,tag=DiablosRoot] run function asa_animator:diablos/manager/anger/main
 
 # 死亡時，アニメーション設定
 execute if score #mhdp_diablos_health AsaMatrix matches ..0 as @e[type=armor_stand,tag=DiablosRoot] run function asa_animator:diablos/manager/start_death_animation

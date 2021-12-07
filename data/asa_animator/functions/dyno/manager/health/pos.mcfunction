@@ -40,4 +40,4 @@ function #asa_matrix:rotate
 execute if entity @s[tag=Tail6] run function #asa_matrix:set_child_pos
 
 # HP確認
-execute if entity @s[nbt=!{Health:1000f}] run function asa_animator:dyno/manager/health/check
+execute if entity @s[nbt=!{Health:1000f},tag=!Death] run function asa_animator:dyno/manager/health/check

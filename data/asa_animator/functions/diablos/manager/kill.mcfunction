@@ -29,6 +29,7 @@ summon experience_orb ~0.1 ~ ~ {Value:50}
 summon experience_orb ~-0.1 ~ ~ {Value:50}
 summon experience_orb ~ ~ ~0.1 {Value:50}
 summon experience_orb ~ ~ ~-0.1 {Value:50}
+loot spawn ~ ~ ~ loot mh_dp:bonus/diablos_kill
 
 # 進捗達成
 execute as @a[distance=0..64] run advancement grant @s only mh_dp:trophies/root
