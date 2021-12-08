@@ -17,6 +17,10 @@ execute if entity @e[type=item,nbt={Item:{tag:{SpawnID:3}}}] run function asa_an
 execute if entity @e[type=item,nbt={Item:{tag:{SpawnID:4}}}] run function asa_animator:reus/manager/summon
 # 迅竜
 execute if entity @e[type=item,nbt={Item:{tag:{SpawnID:5}}}] run function asa_animator:narga/manager/summon
+# 斬竜
+execute if entity @e[type=item,nbt={Item:{tag:{SpawnID:6}}}] run function asa_animator:dyno/manager/summon
+# 砕竜
+execute if entity @e[type=item,nbt={Item:{tag:{SpawnID:7}}}] run function asa_animator:brachy/manager/summon
 
 # loot用タグ消去
 function mh_dp:spawn/remove_tag
