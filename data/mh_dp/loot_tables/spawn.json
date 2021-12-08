@@ -135,6 +135,58 @@
                   }
                 }
               ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{SpawnPaper:1,SpawnID:6}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "mh_dp:monsters/reia"
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "nbt": "{Tags:[\"ExistDyno\"]}"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{SpawnPaper:1,SpawnID:7}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "mh_dp:monsters/reia"
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "nbt": "{Tags:[\"ExistBrachy\"]}"
+                    }
+                  }
+                }
+              ]
             }
           ]
         }
