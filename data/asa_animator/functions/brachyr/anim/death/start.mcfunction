@@ -1,0 +1,22 @@
+execute as @e[type=armor_stand,tag=BrachyRParts,tag=HeadU] run data merge entity @s {Pose:{Head:[15f,0f,0f]}}
+execute as @e[type=armor_stand,tag=BrachyRParts,tag=HeadL] run data merge entity @s {Pose:{Head:[15f,0f,0f]}}
+execute as @e[type=armor_stand,tag=BrachyRParts,tag=Neck0] run data merge entity @s {Pose:{Head:[10f,0f,0f]}}
+execute as @e[type=armor_stand,tag=BrachyRParts,tag=Neck1] run data merge entity @s {Pose:{Head:[-5f,0f,0f]}}
+execute as @e[type=armor_stand,tag=BrachyRParts,tag=Neck2] run data merge entity @s {Pose:{Head:[-10f,0f,0f]}}
+execute as @e[type=armor_stand,tag=BrachyRParts,tag=Body0] run data merge entity @s {Pose:{Head:[-5f,0f,0f]}}
+execute as @e[type=armor_stand,tag=BrachyRParts,tag=Body1] run data merge entity @s {Pose:{Head:[5f,0f,0f]}}
+execute as @e[type=armor_stand,tag=BrachyRParts,tag=LegL0] run data merge entity @s {Pose:{Head:[-25f,0f,0f]}}
+execute as @e[type=armor_stand,tag=BrachyRParts,tag=LegR0] run data merge entity @s {Pose:{Head:[-25f,0f,0f]}}
+execute as @e[type=armor_stand,tag=BrachyRParts,tag=LegL1] run data merge entity @s {Pose:{Head:[75f,0f,0f]}}
+execute as @e[type=armor_stand,tag=BrachyRParts,tag=LegR1] run data merge entity @s {Pose:{Head:[75f,0f,0f]}}
+execute as @e[type=armor_stand,tag=BrachyRParts,tag=LegL2] run data merge entity @s {Pose:{Head:[0f,0f,0f]}}
+execute as @e[type=armor_stand,tag=BrachyRParts,tag=LegR2] run data merge entity @s {Pose:{Head:[0f,0f,0f]}}
+execute as @e[type=armor_stand,tag=BrachyRParts,tag=Tail0] run data merge entity @s {Pose:{Head:[-5f,0f,0f]}}
+execute as @e[type=armor_stand,tag=BrachyRParts,tag=Tail1] run data merge entity @s {Pose:{Head:[-10f,0f,0f]}}
+execute as @e[type=armor_stand,tag=BrachyRParts,tag=Tail2] run data merge entity @s {Pose:{Head:[-15f,0f,0f]}}
+execute as @e[type=armor_stand,tag=BrachyRParts,tag=Tail3] run data merge entity @s {Pose:{Head:[-30f,0f,0f]}}
+execute as @e[type=armor_stand,tag=BrachyRParts,tag=ArmL0] run data merge entity @s {Pose:{Head:[15f,0f,-20f]}}
+execute as @e[type=armor_stand,tag=BrachyRParts,tag=ArmR0] run data merge entity @s {Pose:{Head:[15f,0f,20f]}}
+execute as @e[type=armor_stand,tag=BrachyRParts,tag=ArmL1] run data merge entity @s {Pose:{Head:[5f,10f,0f]}}
+execute as @e[type=armor_stand,tag=BrachyRParts,tag=ArmR1] run data merge entity @s {Pose:{Head:[5f,-10f,0f]}}
+tag @e[type=armor_stand,tag=BrachyRBombRed] add PrepareBomb

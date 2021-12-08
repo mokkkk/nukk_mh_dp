@@ -46,9 +46,13 @@ execute if entity @s[tag=AnmJumpAttackC] run function asa_animator:zinogre/anim/
 
 # 召喚時
 execute if entity @s[tag=AnmSummon] run function asa_animator:zinogre/anim/summon/main
-
 # ひるみ
 execute if entity @s[tag=AnmDamage] run function asa_animator:zinogre/anim/damage/main
-
 # 討伐
 execute if entity @s[tag=AnmDeath] run function asa_animator:zinogre/anim/death/main
+# 頭部位破壊
+execute if entity @s[tag=AnmDHead] run function asa_animator:zinogre/anim/destroy_head/main
+# 腕部位破壊
+execute if entity @s[tag=AnmDArm] run function asa_animator:zinogre/anim/destroy_arm/main
+# 尻尾部位破壊
+execute if entity @s[tag=AnmDTail] run function asa_animator:zinogre/anim/destroy_tail/main

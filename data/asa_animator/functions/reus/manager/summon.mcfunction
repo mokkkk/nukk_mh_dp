@@ -29,5 +29,3 @@ scoreboard players set #mhdp_reus_kill_timer AsaMatrix 0
 execute if data storage mhdp: {ExistMonster:1b} run tellraw @a {"text": "【既に火竜が存在するため，召喚できません】"}
 
 data modify storage mhdp: ExistMonster set value 0b
-
-# give @p clock{display:{Name:'{"text":"火竜の鱗"}',Lore:['{"text":"火竜の体を覆う鱗．"}','{"text":"武器の素材として使用される．"}']},CustomModelData:10000,MhdpID:1} 1

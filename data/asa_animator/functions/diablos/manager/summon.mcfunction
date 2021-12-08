@@ -18,6 +18,9 @@ execute store result bossbar asa_animator:diablos_health value run scoreboard pl
 
 # タイマーセット
 scoreboard players set #mhdp_diablos_kill_timer AsaMatrix 0
+scoreboard players set #mhdp_diablos_head_damage AsaMatrix 18000
+scoreboard players set #mhdp_diablos_body_damage AsaMatrix 14000
+scoreboard players set #mhdp_diablos_tail_damage AsaMatrix 12000
 
 # エラーメッセージ
 execute if data storage mhdp: {ExistMonster:1b} run tellraw @a {"text": "【既に角竜が存在するため，召喚できません】"}

@@ -19,8 +19,6 @@ tag @s remove AnmFlyMoveL
 tag @s remove AnmFlyMoveR
 tag @s remove AnmSummon
 tag @s remove AnmFlyDamage
-tag @s remove AnmDeath
-tag @s remove AnmFlyDeath
 tag @s remove AnmDHead
 tag @s remove AnmDBody
 tag @s remove AnmDTail

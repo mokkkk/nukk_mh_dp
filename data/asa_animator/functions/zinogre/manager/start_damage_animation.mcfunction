@@ -1,2 +1,3 @@
 scoreboard players set @s AsaMatrix 0
-data merge entity @s {Tags:["MonsterRoot","ZinogreRoot","AnmDamage"]}
+function asa_animator:zinogre/manager/remove_animation_tag
+tag @s add AnmDamage

@@ -27,5 +27,26 @@ execute if entity @s[tag=D_ReiaBreath] run tellraw @a [{"selector":"@s"},{"text"
 execute if entity @s[tag=D_ReiaDash] run tellraw @a [{"selector":"@s"},{"text": "は雌火竜に吹き飛ばされた"}]
 execute if entity @s[tag=D_ReiaTail] run tellraw @a [{"selector":"@s"},{"text": "は雌火竜の尻尾の威力を思い知った"}]
 
+execute if entity @s[tag=D_NargaBite] run tellraw @a [{"selector":"@s"},{"text": "は迅竜に噛み砕かれた"}]
+execute if entity @s[tag=D_NargaTail] run tellraw @a [{"selector":"@s"},{"text": "は迅竜の尻尾に叩きのめされた"}]
+execute if entity @s[tag=D_NargaTackle] run tellraw @a [{"selector":"@s"},{"text": "は迅竜に吹き飛ばされた"}]
+execute if entity @s[tag=D_NargaBlade] run tellraw @a [{"selector":"@s"},{"text": "は迅竜に切り裂かれた"}]
+execute if entity @s[tag=D_NargaShot] run tellraw @a [{"selector":"@s"},{"text": "は迅竜の棘に突き刺さった"}]
+
+execute if entity @s[tag=D_DynoBite] run tellraw @a [{"selector":"@s"},{"text": " は斬竜に噛み砕かれた"}]
+execute if entity @s[tag=D_DynoBreath] run tellraw @a [{"selector":"@s"},{"text": " は斬竜に黒焦げにされた"}]
+execute if entity @s[tag=D_DynoSlash] run tellraw @a [{"selector":"@s"},{"text": " は斬竜に真っ二つにされた"}]
+execute if entity @s[tag=D_DynoShot] run tellraw @a [{"selector":"@s"},{"text": " は斬竜の炎に巻かれた"}]
+
+execute if entity @s[tag=D_BrachyHead] run tellraw @a [{"selector":"@s"},{"text": " は砕竜に潰された"}]
+execute if entity @s[tag=D_BrachyPunch] run tellraw @a [{"selector":"@s"},{"text": " は砕竜にぶん殴られた"}]
+execute if entity @s[tag=D_BrachyTail] run tellraw @a [{"selector":"@s"},{"text": " は砕竜の尻尾に吹き飛ばされた"}]
+execute if entity @s[tag=D_BrachyBomb] run tellraw @a [{"selector":"@s"},{"text": " は爆発に巻き込まれた"}]
+
+execute if entity @s[tag=D_BrachyRHead] run tellraw @a [{"selector":"@s"},{"text": " は砕竜に潰された"}]
+execute if entity @s[tag=D_BrachyRPunch] run tellraw @a [{"selector":"@s"},{"text": " は砕竜にぶん殴られた"}]
+execute if entity @s[tag=D_BrachyRTail] run tellraw @a [{"selector":"@s"},{"text": " は砕竜の尻尾に叩きのめされた"}]
+execute if entity @s[tag=D_BrachyRBomb] run tellraw @a [{"selector":"@s"},{"text": " は爆発に巻き込まれた"}]
+
 kill @s
 execute if score #default_gamemode AsaMatrix matches 1.. run gamerule showDeathMessages true

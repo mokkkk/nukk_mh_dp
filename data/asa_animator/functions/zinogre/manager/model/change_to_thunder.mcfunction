@@ -1,4 +1,6 @@
-execute if entity @s[tag=HeadU] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10062
+execute if entity @e[distance=0..15,type=armor_stand,tag=ZinogreRoot,tag=!DestroyHead] if entity @s[tag=HeadU] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10062
+execute if entity @e[distance=0..15,type=armor_stand,tag=ZinogreRoot,tag=DestroyHead] if entity @s[tag=HeadU] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10297
+
 execute if entity @s[tag=HeadL] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10063
 execute if entity @s[tag=Neck0] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10064
 execute if entity @s[tag=Neck1] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10065
@@ -13,12 +15,18 @@ execute if entity @s[tag=LegL2] run data modify entity @s ArmorItems[3].tag.Cust
 execute if entity @s[tag=LegR2] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10074
 
 execute if entity @s[tag=ArmL0] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10075
+execute if entity @e[distance=0..15,type=armor_stand,tag=ZinogreRoot,tag=!DestroyArmL] if entity @s[tag=ArmL1] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10077
+execute if entity @e[distance=0..15,type=armor_stand,tag=ZinogreRoot,tag=!DestroyArmL] if entity @s[tag=ArmL2] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10079
+execute if entity @e[distance=0..15,type=armor_stand,tag=ZinogreRoot,tag=DestroyArmL] if entity @s[tag=ArmL1] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10301
+execute if entity @e[distance=0..15,type=armor_stand,tag=ZinogreRoot,tag=DestroyArmL] if entity @s[tag=ArmL2] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10302
+
 execute if entity @s[tag=ArmR0] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10076
-execute if entity @s[tag=ArmL1] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10077
-execute if entity @s[tag=ArmR1] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10078
-execute if entity @s[tag=ArmL2] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10079
-execute if entity @s[tag=ArmR2] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10080
+execute if entity @e[distance=0..15,type=armor_stand,tag=ZinogreRoot,tag=!DestroyArmR] if entity @s[tag=ArmR1] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10078
+execute if entity @e[distance=0..15,type=armor_stand,tag=ZinogreRoot,tag=!DestroyArmR] if entity @s[tag=ArmR2] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10080
+execute if entity @e[distance=0..15,type=armor_stand,tag=ZinogreRoot,tag=DestroyArmR] if entity @s[tag=ArmR1] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10305
+execute if entity @e[distance=0..15,type=armor_stand,tag=ZinogreRoot,tag=DestroyArmR] if entity @s[tag=ArmR2] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10306
 
 execute if entity @s[tag=Tail0] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10081
-execute if entity @s[tag=Tail1] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10082
-execute if entity @s[tag=Tail2] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10083
+execute if entity @e[distance=0..15,type=armor_stand,tag=ZinogreRoot,tag=!DestroyTail] if entity @s[tag=Tail1] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10082
+execute if entity @e[distance=0..15,type=armor_stand,tag=ZinogreRoot,tag=DestroyTail] if entity @s[tag=Tail1] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10308
+execute if entity @e[distance=0..15,type=armor_stand,tag=ZinogreRoot,tag=!DestroyTail] if entity @s[tag=Tail2] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10083

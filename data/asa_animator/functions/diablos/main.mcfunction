@@ -19,6 +19,12 @@ execute if entity @s[tag=AnmAnger] run function asa_animator:diablos/anim/normal
 execute if entity @s[tag=AnmSummon] run function asa_animator:diablos/anim/normal/summon/main
 # 死亡
 execute if entity @s[tag=AnmDeath] run function asa_animator:diablos/anim/normal/death/main
+# 頭部位破壊
+execute if entity @s[tag=AnmDHead] run function asa_animator:diablos/anim/destroy_head/main
+# 胴体部位破壊
+execute if entity @s[tag=AnmDBody] run function asa_animator:diablos/anim/destroy_body/main
+# 尻尾部位破壊
+execute if entity @s[tag=AnmDTail] run function asa_animator:diablos/anim/destroy_tail/main
 
 # 当たり判定位置
 execute unless entity @s[tag=InGround] as @e[type=slime,tag=DiablosParts] run function asa_animator:diablos/manager/health/pos

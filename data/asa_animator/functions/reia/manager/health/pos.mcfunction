@@ -14,4 +14,4 @@ execute if entity @s[tag=Tail2] rotated as @s at @e[type=armor_stand,tag=ReiaPar
 execute if entity @s[tag=Tail3] rotated as @s at @e[type=armor_stand,tag=ReiaParts,tag=Tail2,limit=1] run tp @s ^ ^0.7 ^-0.2 ~ ~
 
 # HP確認
-execute if entity @s[nbt=!{Health:1000f}] run function asa_animator:reia/manager/health/check
+execute if entity @s[nbt=!{Health:1000f},tag=!Death] run function asa_animator:reia/manager/health/check
