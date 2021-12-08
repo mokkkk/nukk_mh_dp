@@ -7,31 +7,32 @@ Minecraftに様々なボスモンスターを追加します．
 
 ## 機能
 
-Minecraftのプレイ中，まれにボスモンスターが出現します．かなりの強敵のため注意してください．
+Minecraftのプレイ中，草原などのバイオームにいると，まれにボスモンスターが出現します．かなりの強敵のため注意してください．
 
 何度もボスモンスターが出現して面倒臭くなったときは，/function mh_dp:settings/spawn_disable を実行してください．もう一度ボスモンスター達に会いたくなった時は，/function mh_dp:settings/spawn_enableを実行してください．
 
 出現するボスモンスターと，強制召喚用のコマンドは以下の通りです．
 
 - 火竜：
-  - 出現バイオーム：草原，森林など
   - 強制召喚： /function asa_animator:reus/manager/summon
 
 - 雌火竜：
-  - 出現バイオーム：草原，森林など
   - 強制召喚： /function asa_animator:reia/manager/summon
 
 - 角竜：
-  - 出現バイオーム：砂漠
   - 強制召喚： /function asa_animator:diablos/manager/summon
   
 - 雷狼竜：
-  - 出現バイオーム：草原，森林など
   - 強制召喚： /function asa_animator:zinogre/manager/summon
 
 - 迅竜（モデル：もじしゃ様, @mojisha_moji）：
-  - 出現バイオーム：草原，森林など
   - 強制召喚： /function asa_animator:narga/manager/summon
+
+- 斬竜
+  - 強制召喚： /function asa_animator:dyno/manager/summon
+
+- 砕竜
+  - 強制召喚： /function asa_animator:brachy/manager/summon
 
 ## インストール
 
