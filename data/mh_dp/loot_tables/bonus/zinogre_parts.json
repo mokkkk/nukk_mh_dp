@@ -1,0 +1,32 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"雷狼竜の帯電毛\"}',Lore:['{\"text\":\"電力を増幅する機能を持つ特殊な体毛．\"}','{\"text\":\"武器の素材として使用される．\"}']},CustomModelData:10014,MhdpID:15}"
+              }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"雷狼竜の甲殻\"}',Lore:['{\"text\":\"絶縁体にもなる雷狼竜の甲殻．\"}','{\"text\":\"防具の素材として使用される．\"}']},CustomModelData:10015,MhdpID:16}"
+              }
+          ]
+        }
+      ]
+    }
+  ]
+}
