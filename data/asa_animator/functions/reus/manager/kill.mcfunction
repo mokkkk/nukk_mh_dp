@@ -43,5 +43,4 @@ function asa_animator:reus/manager/health/kill
 bossbar remove asa_animator:reus_health
 
 # パーツ削除
-kill @e[tag=ReusParts]
-kill @e[tag=ReusRoot]
+function asa_animator:reus/kill

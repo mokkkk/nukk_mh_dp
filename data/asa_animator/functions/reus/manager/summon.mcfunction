@@ -10,6 +10,8 @@ execute if data storage mhdp: {ExistMonster:0b} positioned ~ ~50 ~ run function 
 
 # HPセット
 scoreboard players set #mhdp_reus_health AsaMatrix 52000
+
+
 execute if data storage mhdp: {ExistMonster:0b} run bossbar add asa_animator:reus_health {"text": "火竜"}
 bossbar set asa_animator:reus_health max 52000
 bossbar set asa_animator:reus_health players @a
