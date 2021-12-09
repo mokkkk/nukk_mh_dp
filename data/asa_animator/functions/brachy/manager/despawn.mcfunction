@@ -13,6 +13,5 @@ function asa_animator:brachy/manager/health/kill
 bossbar remove asa_animator:brachy_health
 
 # パーツ削除
-kill @e[tag=BrachyParts]
-kill @e[tag=BrachyRoot]
+function asa_animator:brachy/kill
 kill @e[type=marker,tag=BrachyMoveRotate]

@@ -19,7 +19,7 @@ execute if entity @s[tag=ArmRParts] if entity @e[type=armor_stand,tag=BrachyRRoo
 execute if entity @s[tag=TailParts] if entity @e[type=armor_stand,tag=BrachyRRoot,tag=ActiveTail,tag=!AnmChargeBomb] as @e[type=armor_stand,tag=BrachyRRoot] run function asa_animator:brachyr/manager/reactive/reactive_tail
 
 # 激昂遷移
-execute if score #mhdp_brachyr_health AsaMatrix matches ..40000 if entity @e[type=armor_stand,tag=BrachyRRoot,tag=!AnmRage,tag=!Phase2] as @e[type=armor_stand,tag=BrachyRRoot] run function asa_animator:brachyr/manager/start_rage_animation
+execute if score #mhdp_brachyr_health AsaMatrix <= #mhdp_brachyr_phase2_health AsaMatrix if entity @e[type=armor_stand,tag=BrachyRRoot,tag=!AnmRage,tag=!Phase2] as @e[type=armor_stand,tag=BrachyRRoot] run function asa_animator:brachyr/manager/start_rage_animation
 
 # 部位ダメージ適用
 execute if entity @s[tag=HeadParts] run scoreboard players operation #mhdp_brachyr_head_damage AsaMatrix += #brachyr_damage AsaMatrix
