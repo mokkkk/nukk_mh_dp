@@ -1,6 +1,8 @@
 
 data modify storage mh_dp:settings Setup set value true
 
+scoreboard objectives add AsaMatrix dummy
+
 # スポーン設定
 data modify storage mh_dp:settings Custom.EnableBossSpawn set value 0b
 # 攻撃力倍率
