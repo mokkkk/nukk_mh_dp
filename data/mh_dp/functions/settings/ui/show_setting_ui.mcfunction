@@ -18,4 +18,4 @@ tellraw @a [{"text": " ---  ","color": "light_purple"},{"text": "[-100%]  ","col
 
 tellraw @a {"text": "\n==========================================","color": "light_purple"}
 
-execute if data storage mh_dp:settings {Temp:1} run schedule function mh_dp:settings/ui/set_gamerule 1t
+schedule function mh_dp:settings/ui/set_gamerule 2t
