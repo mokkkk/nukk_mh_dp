@@ -30,6 +30,7 @@ summon experience_orb ~ ~ ~-0.1 {Value:50}
 # 進捗達成
 execute as @a[distance=0..64] run advancement grant @s only mh_dp:trophies/root
 execute as @a[distance=0..64] run advancement grant @s only mh_dp:trophies/zinogre
+data modify storage mh_dp:status Monster.Win.Zinogre set value true
 
 # 当たり判定削除
 function asa_animator:zinogre/manager/health/kill
@@ -38,5 +39,4 @@ function asa_animator:zinogre/manager/health/kill
 bossbar remove asa_animator:zinogre_health
 
 # パーツ削除
-kill @e[tag=ZinogreParts]
-kill @e[tag=ZinogreRoot]
+function asa_animator:zinogre/kill

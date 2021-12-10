@@ -23,3 +23,4 @@ tag @s remove AnmDHead
 tag @s remove AnmDBody
 tag @s remove AnmDTail
 tag @s remove AnmTurn
+tag @s remove AnmVoice

@@ -35,6 +35,7 @@ loot spawn ~ ~ ~ loot mh_dp:bonus/reus_kill
 # 進捗達成
 execute as @a[distance=0..64] run advancement grant @s only mh_dp:trophies/root
 execute as @a[distance=0..64] run advancement grant @s only mh_dp:trophies/reus
+data modify storage mh_dp:status Monster.Win.Reus set value true
 
 # 当たり判定削除
 function asa_animator:reus/manager/health/kill
@@ -43,5 +44,4 @@ function asa_animator:reus/manager/health/kill
 bossbar remove asa_animator:reus_health
 
 # パーツ削除
-kill @e[tag=ReusParts]
-kill @e[tag=ReusRoot]
+function asa_animator:reus/kill

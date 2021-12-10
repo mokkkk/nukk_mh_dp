@@ -13,7 +13,6 @@ function asa_animator:dyno/manager/health/kill
 bossbar remove asa_animator:dyno_health
 
 # パーツ削除
-kill @e[tag=DynoParts]
-kill @e[tag=DynoRoot]
+function asa_animator:dyno/kill
 kill @e[type=marker,tag=DynoMoveRotate]
 kill @e[type=marker,tag=DynoBreathTarget]

@@ -9,23 +9,7 @@ execute if data storage mhdp: {ExistMonster:0b} positioned ^ ^-10 ^6 run functio
 execute if data storage mhdp: {ExistMonster:0b} positioned ^ ^-10 ^6 run function asa_animator:dyno/manager/health/summon
 
 # HPセット
-scoreboard players set #mhdp_dyno_health AsaMatrix 55000
-execute if data storage mhdp: {ExistMonster:0b} run bossbar add asa_animator:dyno_health {"text": "斬竜"}
-bossbar set asa_animator:dyno_health max 55000
-bossbar set asa_animator:dyno_health players @a
-bossbar set asa_animator:dyno_health visible true
-execute store result bossbar asa_animator:dyno_health value run scoreboard players get #mhdp_dyno_health AsaMatrix
-
-# タイマーセット
-scoreboard players set #mhdp_dyno_kill_timer AsaMatrix 0
-scoreboard players set #mhdp_dyno_actcount_head AsaMatrix 0
-scoreboard players set #mhdp_dyno_actcount_tail AsaMatrix 0
-scoreboard players set #mhdp_dyno_actcount_generic AsaMatrix 0
-scoreboard players set #mhdp_dyno_head_damage AsaMatrix 10000
-scoreboard players set #mhdp_dyno_legl_damage AsaMatrix 12000
-scoreboard players set #mhdp_dyno_legr_damage AsaMatrix 12000
-scoreboard players set #mhdp_dyno_tail_damage AsaMatrix 18000
-scoreboard players set #mhdp_dyno_head_heat_damage AsaMatrix 0
+execute if data storage mhdp: {ExistMonster:0b} run function asa_animator:dyno/manager/summon_hp
 
 # エラーメッセージ
 execute if data storage mhdp: {ExistMonster:1b} run tellraw @a {"text": "【既に斬竜が存在するため，召喚できません】"}

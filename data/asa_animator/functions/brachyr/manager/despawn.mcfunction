@@ -13,7 +13,5 @@ function asa_animator:brachyr/manager/health/kill
 bossbar remove asa_animator:brachyr_health
 
 # パーツ削除
-kill @e[tag=BrachyRParts]
-kill @e[tag=BrachyRRoot]
+function asa_animator:brachyr/kill
 kill @e[type=marker,tag=BrachyRMoveRotate]
-kill @e[tag=BrachyRBombRed]
