@@ -7,32 +7,29 @@ Minecraftに様々なボスモンスターを追加します．
 
 ## 機能
 
-Minecraftのプレイ中，草原などのバイオームにいると，まれにボスモンスターが出現します．かなりの強敵のため注意してください．
+Minecraftのプレイ中，草原などのバイオームにいると，まれにボスモンスターが出現するようになります．かなりの強敵のため注意してください．
 
-何度もボスモンスターが出現して面倒臭くなったときは，/function mh_dp:settings/spawn_disable を実行してください．もう一度ボスモンスター達に会いたくなった時は，/function mh_dp:settings/spawn_enableを実行してください．
+何度もボスモンスターが出現して面倒臭くなったときは，設定用UIから，「モンスターの自然スポーン」を無効に設定してください．
+逆に，今すぐモンスターと戦いたい，特定のモンスターに会いたいという方は，モンスター召喚用UIから，呼び出したいモンスターをクリックしてください．
 
-出現するボスモンスターと，強制召喚用のコマンドは以下の通りです．
+設定用UIを開くための本は，サーバーリロード時にランダムなプレイヤーに渡されます（OP権をもつプレイヤーのみが使用できます）．
+
+出現するボスモンスターは以下の通りです．
 
 - 火竜：
-  - 強制召喚： /function asa_animator:reus/manager/summon
 
 - 雌火竜：
-  - 強制召喚： /function asa_animator:reia/manager/summon
 
 - 角竜：
-  - 強制召喚： /function asa_animator:diablos/manager/summon
-  
+
 - 雷狼竜：
-  - 強制召喚： /function asa_animator:zinogre/manager/summon
 
 - 迅竜（モデル：もじしゃ様, @mojisha_moji）：
-  - 強制召喚： /function asa_animator:narga/manager/summon
 
 - 斬竜
-  - 強制召喚： /function asa_animator:dyno/manager/summon
 
 - 砕竜
-  - 強制召喚： /function asa_animator:brachy/manager/summon
+
 
 ## インストール
 
@@ -42,7 +39,7 @@ Minecraftのプレイ中，草原などのバイオームにいると，まれ�
 
 ## 注意事項
 
-Minecraft JavaEdition ver1.17.1でのみ動作確認済みです．それ未満のバージョンでの動作は保証できず，統合版には対応していません．
+Minecraft JavaEdition ver1.17.1 および ver1.18 でのみ動作確認済みです．それ未満のバージョンでの動作は保証できず，統合版には対応していません．
 
 ## ライセンス
 
