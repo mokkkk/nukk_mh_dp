@@ -17,5 +17,4 @@ function asa_animator:reia/manager/health/kill
 bossbar remove asa_animator:reia_health
 
 # パーツ削除
-kill @e[tag=ReiaParts]
-kill @e[tag=ReiaRoot]
+function asa_animator:reia/kill

@@ -13,5 +13,4 @@ function asa_animator:zinogre/manager/health/kill
 bossbar remove asa_animator:zinogre_health
 
 # パーツ削除
-kill @e[tag=ZinogreParts]
-kill @e[tag=ZinogreRoot]
+function asa_animator:zinogre/kill

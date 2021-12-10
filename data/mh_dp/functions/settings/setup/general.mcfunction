@@ -17,6 +17,7 @@ data modify storage mh_dp:status Monster.Win.Diablos set value false
 data modify storage mh_dp:status Monster.Win.Zinogre set value false
 data modify storage mh_dp:status Monster.Win.Narga set value false
 data modify storage mh_dp:status Monster.Win.Brachy set value false
+data modify storage mh_dp:status Monster.Win.BrachyR set value false
 data modify storage mh_dp:status Monster.Win.Dyno set value false
 
 # バージョン設定

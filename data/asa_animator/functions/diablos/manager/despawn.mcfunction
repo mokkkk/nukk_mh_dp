@@ -17,5 +17,4 @@ function asa_animator:diablos/manager/health/kill
 bossbar remove asa_animator:diablos_health
 
 # パーツ削除
-kill @e[tag=DiablosParts]
-kill @e[tag=DiablosRoot]
+function asa_animator:diablos/kill

@@ -30,6 +30,7 @@ summon experience_orb ~ ~ ~-0.1 {Value:50}
 # 進捗達成
 execute as @a[distance=0..64] run advancement grant @s only mh_dp:trophies/root
 execute as @a[distance=0..64] run advancement grant @s only mh_dp:trophies/brachy
+data modify storage mh_dp:status Monster.Win.Brachy set value true
 
 # 当たり判定削除
 function asa_animator:brachy/manager/health/kill

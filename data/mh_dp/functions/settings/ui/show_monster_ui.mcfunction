@@ -11,6 +11,7 @@ tellraw @a [{"text": "\n ---  ","color": "light_purple"},{"text": "[雷狼竜]",
 tellraw @a [{"text": "\n ---  ","color": "light_purple"},{"text": "[迅竜]","color": "light_purple","clickEvent":{"action":"run_command","value":"/function asa_animator:narga/manager/summon"}}]
 tellraw @a [{"text": "\n ---  ","color": "light_purple"},{"text": "[斬竜]","color": "light_purple","clickEvent":{"action":"run_command","value":"/function asa_animator:dyno/manager/summon"}}]
 tellraw @a [{"text": "\n ---  ","color": "light_purple"},{"text": "[砕竜]","color": "light_purple","clickEvent":{"action":"run_command","value":"/function asa_animator:brachy/manager/summon"}}]
+execute if data storage mh_dp:status {Monster:{Win:{BrachyR:true}}} run tellraw @a [{"text": "\n ---  ","color": "light_purple"},{"text": "[猛り爆ぜる砕竜]","color": "light_purple","clickEvent":{"action":"run_command","value":"/function asa_animator:brachyr/manager/summon"}}]
 
 tellraw @a {"text": "\n==========================================","color": "light_purple"}
 
