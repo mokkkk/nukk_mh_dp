@@ -13,5 +13,5 @@ scoreboard players set @s AsaMatrix 0
 function asa_animator:brachyr/manager/remove_animation_tag
 tag @s add AnmDHead
 
-execute as @a[distance=0..64] run advancement grant @s only mh_dp:toasts/brachyr
+advancement grant @a[distance=0..64] only mh_dp:toasts/brachyr
 schedule function asa_animator:brachyr/manager/destroy_parts/revoke 5t

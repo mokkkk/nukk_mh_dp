@@ -21,15 +21,11 @@ tag @e[tag=BrachyAttackTarget] remove BrachyAttackTarget
 execute at @e[type=armor_stand,tag=BrachyParts] run particle poof ~ ~1 ~ 1 1 1 0 30
 
 # アイテムドロップ
-loot spawn ~ ~ ~ loot mh_dp:bonus/brachy_kill
-summon experience_orb ~0.1 ~ ~ {Value:50}
-summon experience_orb ~-0.1 ~ ~ {Value:50}
-summon experience_orb ~ ~ ~0.1 {Value:50}
-summon experience_orb ~ ~ ~-0.1 {Value:50}
+execute positioned ~ ~5 ~ run function asa_animator:brachy/manager/loot
 
 # 進捗達成
-execute as @a[distance=0..64] run advancement grant @s only mh_dp:trophies/root
-execute as @a[distance=0..64] run advancement grant @s only mh_dp:trophies/brachy
+advancement grant @a[distance=0..64] only mh_dp:trophies/root
+advancement grant @a[distance=0..64] only mh_dp:trophies/brachy
 data modify storage mh_dp:status Monster.Win.Brachy set value true
 
 # 当たり判定削除

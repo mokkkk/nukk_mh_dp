@@ -21,15 +21,11 @@ tag @e[tag=BrachyRAttackTarget] remove BrachyRAttackTarget
 execute at @e[type=armor_stand,tag=BrachyRParts] run particle poof ~ ~1 ~ 1 1 1 0 30
 
 # アイテムドロップ
-loot spawn ~ ~ ~ loot mh_dp:bonus/brachyr_kill
-summon experience_orb ~0.1 ~ ~ {Value:50}
-summon experience_orb ~-0.1 ~ ~ {Value:50}
-summon experience_orb ~ ~ ~0.1 {Value:50}
-summon experience_orb ~ ~ ~-0.1 {Value:50}
+execute positioned ~ ~5 ~ run function asa_animator:brachyr/manager/loot
 
 # 進捗達成
-execute as @a[distance=0..64] run advancement grant @s only mh_dp:trophies/root
-execute as @a[distance=0..64] run advancement grant @s only mh_dp:trophies/brachyr
+advancement grant @a[distance=0..64] only mh_dp:trophies/root
+advancement grant @a[distance=0..64] only mh_dp:trophies/brachyr
 data modify storage mh_dp:status Monster.Win.BrachyR set value true
 
 # 当たり判定削除

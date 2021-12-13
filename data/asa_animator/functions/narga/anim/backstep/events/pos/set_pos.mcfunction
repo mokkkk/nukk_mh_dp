@@ -1,6 +1,7 @@
 
 # 地上にmarkerセット
-execute facing entity @e[tag=NargaAttackTarget,limit=1] eyes rotated ~ 0 run summon marker ^ ^ ^-10 {Tags:["NargaMovePos"]}
+summon marker ^ ^ ^-10 {Tags:["NargaMovePos"]}
+execute facing entity @e[tag=NargaAttackTarget,limit=1] eyes rotated ~ 0 run tp @e[type=marker,tag=NargaMovePos] ^ ^ ^-10
 execute as @e[type=marker,tag=NargaMovePos,limit=1] at @s align y positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
 execute as @e[type=marker,tag=NargaMovePos,limit=1] at @s run tp @s ~ ~0.48 ~
 

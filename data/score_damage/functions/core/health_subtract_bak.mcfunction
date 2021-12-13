@@ -1,4 +1,4 @@
-#> score_damage:core/health_subtract
+##> score_damage:core/health_subtract
 #
 # MobのHealthを減算する
 #
