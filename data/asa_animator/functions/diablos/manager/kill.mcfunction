@@ -25,11 +25,7 @@ kill @e[type=marker,tag=DiablosDiveParticle]
 execute at @e[type=armor_stand,tag=DiablosParts] run particle poof ~ ~1 ~ 1 1 1 0 30
 
 # アイテムドロップ
-summon experience_orb ~0.1 ~ ~ {Value:50}
-summon experience_orb ~-0.1 ~ ~ {Value:50}
-summon experience_orb ~ ~ ~0.1 {Value:50}
-summon experience_orb ~ ~ ~-0.1 {Value:50}
-loot spawn ~ ~ ~ loot mh_dp:bonus/diablos_kill
+execute positioned ~ ~5 ~ run function asa_animator:diablos/manager/loot
 
 # 進捗達成
 advancement grant @a[distance=0..64] only mh_dp:trophies/root
