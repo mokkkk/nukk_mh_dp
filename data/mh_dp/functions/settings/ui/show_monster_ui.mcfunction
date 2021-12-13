@@ -1,5 +1,6 @@
 
-execute store result storage mh_dp:settings Temp int 1 run gamerule sendCommandFeedback
+execute unless data storage mh_dp:settings {Temp:{Await:true}} store result storage mh_dp:settings Temp.Scf int 1 run gamerule sendCommandFeedback
+execute unless data storage mh_dp:settings {Temp:{Await:true}} run data modify storage mh_dp:settings Temp.Await set value true
 gamerule sendCommandFeedback false
 
 tellraw @a {"text": "==========================================\n\nMH_DP Summon","color": "light_purple"}
@@ -15,4 +16,4 @@ execute if data storage mh_dp:status {Monster:{Win:{BrachyR:true}}} run tellraw 
 
 tellraw @a {"text": "\n==========================================","color": "light_purple"}
 
-schedule function mh_dp:settings/ui/set_gamerule 2t
+schedule function mh_dp:settings/ui/set_gamerule 2t replace
