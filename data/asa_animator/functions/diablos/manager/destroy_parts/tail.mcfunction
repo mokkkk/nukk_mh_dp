@@ -11,5 +11,5 @@ scoreboard players set @s AsaMatrix 0
 function asa_animator:diablos/manager/remove_animation_tag
 tag @s add AnmDTail
 
-execute as @a[distance=0..64] run advancement grant @s only mh_dp:toasts/diablos
+advancement grant @a[distance=0..64] only mh_dp:toasts/diablos
 schedule function asa_animator:diablos/manager/destroy_parts/revoke 5t

@@ -32,8 +32,8 @@ summon experience_orb ~ ~ ~-0.1 {Value:50}
 loot spawn ~ ~ ~ loot mh_dp:bonus/diablos_kill
 
 # 進捗達成
-execute as @a[distance=0..64] run advancement grant @s only mh_dp:trophies/root
-execute as @a[distance=0..64] run advancement grant @s only mh_dp:trophies/diablos
+advancement grant @a[distance=0..64] only mh_dp:trophies/root
+advancement grant @a[distance=0..64] only mh_dp:trophies/diablos
 data modify storage mh_dp:status Monster.Win.Diablos set value true
 
 # 当たり判定削除
