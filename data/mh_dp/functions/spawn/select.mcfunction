@@ -25,8 +25,8 @@ execute if entity @e[type=item,nbt={Item:{tag:{SpawnID:7}}}] run function asa_an
 # loot用タグ消去
 function mh_dp:spawn/remove_tag
 
-# しばらく湧かなくする(最低5分)
-scoreboard players set #mhdp_timer AsaMatrix -6000
+# しばらく湧かなくする(最低10分)
+scoreboard players set #mhdp_timer AsaMatrix -12000
 
 # 終了
 kill @e[type=item,nbt={Item:{tag:{SpawnPaper:1}}}]

@@ -18,7 +18,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:reference",
-                  "name": "mh_dp:monsters/reus"
+                  "name": "mh_dp:player/location/reus"
                 },
                 {
                   "condition": "minecraft:inverted",
@@ -44,7 +44,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:reference",
-                  "name": "mh_dp:monsters/diablos"
+                  "name": "mh_dp:player/location/diablos"
                 },
                 {
                   "condition": "minecraft:inverted",
@@ -70,7 +70,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:reference",
-                  "name": "mh_dp:monsters/zinogre"
+                  "name": "mh_dp:player/location/zinogre"
                 },
                 {
                   "condition": "minecraft:inverted",
@@ -96,7 +96,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:reference",
-                  "name": "mh_dp:monsters/reia"
+                  "name": "mh_dp:player/location/reia"
                 },
                 {
                   "condition": "minecraft:inverted",
@@ -122,7 +122,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:reference",
-                  "name": "mh_dp:monsters/reia"
+                  "name": "mh_dp:player/location/reia"
                 },
                 {
                   "condition": "minecraft:inverted",
@@ -148,7 +148,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:reference",
-                  "name": "mh_dp:monsters/reia"
+                  "name": "mh_dp:player/location/reia"
                 },
                 {
                   "condition": "minecraft:inverted",
@@ -174,7 +174,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:reference",
-                  "name": "mh_dp:monsters/reia"
+                  "name": "mh_dp:player/location/reia"
                 },
                 {
                   "condition": "minecraft:inverted",

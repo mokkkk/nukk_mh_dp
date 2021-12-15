@@ -17,4 +17,9 @@ execute if entity @s[type=player] store result storage score_damage: EPF int 1 r
 data modify storage mhdp: Temp.HT set from entity @s HurtTime
 execute store result score #mhdp_hurt_time AsaMatrix run data get storage mhdp: Temp.HT
 # 攻撃
-execute unless entity @s[gamemode=creative] unless entity @s[gamemode=spectator] if score #mhdp_hurt_time AsaMatrix matches ..0 run function score_damage:api/attack
+execute if entity @s[gamemode=!creative,gamemode=!spectator,tag=!TickDamaged] unless entity @s[scores={MhdpTAvoid=1..}] if score #mhdp_hurt_time AsaMatrix matches ..0 run function score_damage:api/attack
+
+# 回避成功
+execute if entity @s[scores={MhdpTAvoid=1..}] run playsound entity.player.attack.sweep master @s ~ ~ ~ 1 2
+# 重複ダメージ対策
+tag @s add TickDamaged

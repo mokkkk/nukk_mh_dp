@@ -2,6 +2,8 @@
 data modify storage mh_dp:settings Setup set value true
 
 scoreboard objectives add AsaMatrix dummy
+scoreboard objectives add MhdpJump minecraft.custom:minecraft.jump
+scoreboard objectives add MhdpTAvoid dummy
 
 # スポーン設定
 data modify storage mh_dp:settings Custom.EnableBossSpawn set value 0b
@@ -23,6 +25,6 @@ data modify storage mh_dp:status Monster.Win.BrachyR set value false
 data modify storage mh_dp:status Monster.Win.Dyno set value false
 
 # バージョン設定
-data modify storage mh_dp:settings Version set value "Beta4.1"
+data modify storage mh_dp:settings Version set value "Beta4.2"
 
 tellraw @a {"text":"【MH_DP ： 初期設定が完了しました】"}
