@@ -22,6 +22,9 @@ execute if entity @s[scores={AsaMatrix=61..}] run function asa_animator:tiga/ani
 execute as @e[type=armor_stand,tag=TigaParts] run function #asa_matrix:animate
 function asa_animator:tiga/model
 
+execute at @s positioned ~ ~5 ~ run tp @s ~ ~ ~
+execute at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
+
 execute if entity @s[scores={AsaMatrix=1..20}] at @s run tp @s ^ ^ ^0.5
 
 execute if entity @s[scores={AsaMatrix=21}] run playsound entity.player.attack.sweep master @a ~ ~ ~ 2 0.7

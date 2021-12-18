@@ -1,7 +1,7 @@
 
 # 
 # ランダム
-execute if entity @s[tag=DashAct] run tag @s add DashSpin
+execute if entity @s[tag=DashAct] run tag @s add DashStop
 tag @s add DashAct
 
 # 左右確認

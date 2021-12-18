@@ -25,6 +25,9 @@ execute if entity @s[scores={AsaMatrix=66..}] run function asa_animator:tiga/ani
 execute as @e[type=armor_stand,tag=TigaParts] run function #asa_matrix:animate
 function asa_animator:tiga/model
 
+execute at @s positioned ~ ~5 ~ run tp @s ~ ~ ~
+execute at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
+
 # 敵の方向を向く
 execute if entity @s[scores={AsaMatrix=1..8}] run function asa_animator:tiga/manager/rotate
 

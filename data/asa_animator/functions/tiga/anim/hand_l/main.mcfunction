@@ -14,11 +14,11 @@ execute if entity @s[scores={AsaMatrix=25..28}] run tp @s ^0 ^0 ^-0.05 ~10 ~
 execute if entity @s[scores={AsaMatrix=29}] run function asa_animator:tiga/anim/hand_l/keyframes/5
 execute if entity @s[scores={AsaMatrix=29..38}] run tp @s ^0 ^0 ^-0.01 ~4 ~
 execute if entity @s[scores={AsaMatrix=39}] run function asa_animator:tiga/anim/hand_l/keyframes/6
-execute if entity @s[scores={AsaMatrix=39..44}] run tp @s ^0 ^0.004166666 ^-0.0125 ~2 ~
+execute if entity @s[scores={AsaMatrix=39..44}] run tp @s ^0 ^0.004166666 ^-0.2 ~2 ~
 execute if entity @s[scores={AsaMatrix=45}] run function asa_animator:tiga/anim/hand_l/keyframes/7
-execute if entity @s[scores={AsaMatrix=45..51}] run tp @s ^0 ^0.003571429 ^-0.01071428 ~0.5 ~
+execute if entity @s[scores={AsaMatrix=45..51}] run tp @s ^0 ^0.003571429 ^-0.2 ~0.5 ~
 execute if entity @s[scores={AsaMatrix=52}] run function asa_animator:tiga/anim/hand_l/keyframes/8
-execute if entity @s[scores={AsaMatrix=52..58}] run tp @s ^0 ^0.003571429 ^-0.01071428
+execute if entity @s[scores={AsaMatrix=52..58}] run tp @s ^0 ^0.003571429 ^-0.1
 execute if entity @s[scores={AsaMatrix=59}] run function asa_animator:tiga/anim/hand_l/keyframes/9
 execute if entity @s[scores={AsaMatrix=59..65}] run tp @s ^0 ^0.003571429 ^-0.01071429
 execute if entity @s[scores={AsaMatrix=66..}] run function asa_animator:tiga/anim/hand_l/end

@@ -18,6 +18,8 @@ execute as @e[type=armor_stand,tag=TigaParts] run function #asa_matrix:animate
 function asa_animator:tiga/model
 
 execute at @s run tp @s ^ ^ ^0.8
+execute at @s positioned ~ ~5 ~ run tp @s ~ ~ ~
+execute at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
 function asa_animator:tiga/anim/dash/events/damage
 
 particle block grass_block ~ ~0.3 ~ 1 0 1 0 5
@@ -25,6 +27,7 @@ execute if entity @s[scores={AsaMatrix=2}] run playsound entity.hoglin.step mast
 execute if entity @s[scores={AsaMatrix=10}] run playsound entity.hoglin.step master @a ~ ~ ~ 2 0.5
 
 # 回転
-execute if entity @s[tag=!DashSpin] positioned ^ ^ ^5 if entity @e[distance=0..5,type=marker,tag=TigaDashTarget] run scoreboard players set #mhdp_tiga_dash_count AsaMatrix 2
+execute if entity @s[tag=!DashSpin,tag=!DashBite] positioned ^ ^ ^5 if entity @e[distance=0..5,type=marker,tag=TigaDashTarget] run scoreboard players set #mhdp_tiga_dash_count AsaMatrix 2
+execute if entity @s[tag=DashBite] positioned ^ ^ ^5 if entity @e[distance=0..5,type=marker,tag=TigaDashTarget] run scoreboard players set #mhdp_tiga_dash_count AsaMatrix 0
 execute if entity @s[tag=DashSpin] positioned ^ ^ ^10 if entity @e[distance=0..5,type=marker,tag=TigaDashTarget] run scoreboard players set #mhdp_tiga_dash_count AsaMatrix 0
 execute if entity @e[distance=0..5,type=marker,tag=TigaDashTarget] run kill @e[distance=0..5,type=marker,tag=TigaDashTarget]
