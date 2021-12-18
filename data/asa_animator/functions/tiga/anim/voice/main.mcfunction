@@ -26,3 +26,14 @@ execute if entity @s[scores={AsaMatrix=66..80}] run tp @s ^0 ^0 ^-0.01333333
 execute if entity @s[scores={AsaMatrix=81..}] run function asa_animator:tiga/anim/voice/end
 execute as @e[type=armor_stand,tag=TigaParts] run function #asa_matrix:animate
 function asa_animator:tiga/model
+
+execute if entity @s[scores={AsaMatrix=8}] run playsound entity.hoglin.step master @a ~ ~ ~ 2 0.7
+execute if entity @s[scores={AsaMatrix=16}] run playsound entity.hoglin.step master @a ~ ~ ~ 2 0.7
+execute if entity @s[scores={AsaMatrix=30}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
+
+execute if entity @s[scores={AsaMatrix=46..65}] positioned ^ ^1.5 ^5.5 run particle flash ~ ~ ~ 0 0 0 0 1
+execute if entity @s[scores={AsaMatrix=46..75}] run playsound entity.hoglin.attack master @a ~ ~ ~ 3 2
+execute if entity @s[scores={AsaMatrix=46..75}] run playsound entity.hoglin.attack master @a ~ ~ ~ 3 1.2
+execute if entity @s[scores={AsaMatrix=46..75}] run playsound entity.hoglin.attack master @a ~ ~ ~ 3 0.7
+execute if entity @s[scores={AsaMatrix=46..48}] run playsound entity.ender_dragon.growl master @a ~ ~ ~ 3 0.9
+execute if entity @s[scores={AsaMatrix=46..48}] run playsound entity.ender_dragon.growl master @a ~ ~ ~ 3 0.7

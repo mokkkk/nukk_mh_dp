@@ -14,4 +14,4 @@ execute if entity @s[tag=DynoRoot] run function asa_animator:dyno/main
 execute if entity @s[tag=BrachyRoot] run function asa_animator:brachy/main
 execute if entity @s[tag=BrachyRRoot] run function asa_animator:brachyr/main
 
-# execute if entity @s[tag=TigaRoot] run function asa_animator:tiga/main
+execute if entity @s[tag=TigaRoot] run function asa_animator:tiga/main

@@ -20,3 +20,5 @@ execute if entity @s[tag=BrachyRBombS] run function asa_animator:brachyr/manager
 execute if entity @s[tag=BrachyRBombSetter] run function asa_animator:brachyr/manager/bomb/setter/main_bullet
 execute if entity @s[tag=BrachyRBombRed] run function asa_animator:brachyr/manager/bomb/red/main_bullet
 execute if entity @s[tag=BrachyRSwitch] run function asa_animator:brachyr/manager/bomb/red/main_switch
+
+execute if entity @s[tag=TigaShot] run function asa_animator:tiga/anim/shot_l/events/shot/main_bullet

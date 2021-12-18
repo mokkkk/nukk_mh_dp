@@ -8,7 +8,7 @@ data modify storage asa_matrix: Rotate set value [-2000f,0f,0f]
 execute as @e[type=armor_stand,tag=TigaParts,tag=Neck1] run function #asa_matrix:animate_setparam
 data modify storage asa_matrix: Rotate set value [-1000f,0f,0f]
 execute as @e[type=armor_stand,tag=TigaParts,tag=Body0] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-3000f,0f,0f]
+data modify storage asa_matrix: Rotate set value [-1000f,0f,0f]
 execute as @e[type=armor_stand,tag=TigaParts,tag=Body1] run function #asa_matrix:animate_setparam
 data modify storage asa_matrix: Rotate set value [-1000f,0f,0f]
 execute as @e[type=armor_stand,tag=TigaParts,tag=LegL0] run function #asa_matrix:animate_setparam
@@ -22,15 +22,15 @@ data modify storage asa_matrix: Rotate set value [0f,0f,0f]
 execute as @e[type=armor_stand,tag=TigaParts,tag=LegL2] run function #asa_matrix:animate_setparam
 data modify storage asa_matrix: Rotate set value [0f,0f,0f]
 execute as @e[type=armor_stand,tag=TigaParts,tag=LegR2] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [1000f,-2000f,0f]
+data modify storage asa_matrix: Rotate set value [3000f,-2000f,0f]
 execute as @e[type=armor_stand,tag=TigaParts,tag=Tail0] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [1000f,-4000f,0f]
+data modify storage asa_matrix: Rotate set value [3000f,-4000f,0f]
 execute as @e[type=armor_stand,tag=TigaParts,tag=Tail1] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [1000f,-6000f,0f]
+data modify storage asa_matrix: Rotate set value [3000f,-6000f,0f]
 execute as @e[type=armor_stand,tag=TigaParts,tag=Tail2] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-3000f,-4000f,0f]
+data modify storage asa_matrix: Rotate set value [-3000f,0f,0f]
 execute as @e[type=armor_stand,tag=TigaParts,tag=ArmL0] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-3000f,4000f,0f]
+data modify storage asa_matrix: Rotate set value [-3000f,0f,0f]
 execute as @e[type=armor_stand,tag=TigaParts,tag=ArmR0] run function #asa_matrix:animate_setparam
 data modify storage asa_matrix: Rotate set value [4000f,-2000f,0f]
 execute as @e[type=armor_stand,tag=TigaParts,tag=ArmL1] run function #asa_matrix:animate_setparam
