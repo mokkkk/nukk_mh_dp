@@ -31,6 +31,6 @@ function asa_animator:tiga/model
 
 function asa_animator:tiga/manager/ground
 
-execute if entity @s[scores={AsaMatrix=17..25}] run playsound entity.hoglin.attack master @a ~ ~ ~ 2 2
-execute if entity @s[scores={AsaMatrix=17..25}] run playsound entity.hoglin.attack master @a ~ ~ ~ 2 1.2
-execute if entity @s[scores={AsaMatrix=17..25}] run playsound entity.hoglin.attack master @a ~ ~ ~ 2 0.7
+execute if entity @s[scores={AsaMatrix=17..20}] run playsound entity.hoglin.attack master @a ~ ~ ~ 1.5 2
+execute if entity @s[scores={AsaMatrix=17..20}] run playsound entity.hoglin.attack master @a ~ ~ ~ 1.5 1.2
+execute if entity @s[scores={AsaMatrix=17..20}] run playsound entity.hoglin.attack master @a ~ ~ ~ 1.5 0.7

@@ -37,3 +37,5 @@ execute if entity @s[scores={AsaMatrix=46..75}] run playsound entity.hoglin.atta
 execute if entity @s[scores={AsaMatrix=46..75}] run playsound entity.hoglin.attack master @a ~ ~ ~ 3 0.7
 execute if entity @s[scores={AsaMatrix=46..48}] run playsound entity.ender_dragon.growl master @a ~ ~ ~ 3 0.9
 execute if entity @s[scores={AsaMatrix=46..48}] run playsound entity.ender_dragon.growl master @a ~ ~ ~ 3 0.7
+
+execute if entity @s[scores={AsaMatrix=46}] run function asa_animator:tiga/anim/voice/events/damage

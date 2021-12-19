@@ -38,5 +38,15 @@ execute if entity @s[tag=AnmDashBite] run function asa_animator:tiga/anim/dash_b
 # 突進回転（フィニッシュ）
 execute if entity @s[tag=AnmDashSpin] run function asa_animator:tiga/anim/dash_spin/main
 
+# バックステップ
+execute if entity @s[tag=AnmBStep] run function asa_animator:tiga/anim/backstep/main
+
 # 咆哮・前方
 execute if entity @s[tag=AnmVoice] run function asa_animator:tiga/anim/voice/main
+# 咆哮・上方
+execute if entity @s[tag=AnmVoice2] run function asa_animator:tiga/anim/voice_2/main
+
+# バックステップ（怒り）
+execute if entity @s[tag=AnmBStepA] run function asa_animator:tiga/anim/backstep_anger/main
+# 咆哮・上方（怒り）
+execute if entity @s[tag=AnmAnger] run function asa_animator:tiga/anim/anger/main

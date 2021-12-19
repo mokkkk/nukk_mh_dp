@@ -15,7 +15,7 @@ execute unless entity @e[tag=TigaAttackTarget] run tag @e[tag=TigaTarget,limit=1
 # execute unless entity @s[tag=AnmCharge] run function asa_animator:tiga/manager/change_normal/change
 
 # 強制
-tag @s add AnmSpin
+tag @s add AnmHandR
 
 # 終了
 tag @s remove ChangeAnm
