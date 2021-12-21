@@ -2,9 +2,9 @@
 scoreboard players add @s AsaMatrix 1
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:tiga/anim/stay/start
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:tiga/anim/stay/keyframes/0
-execute if entity @s[scores={AsaMatrix=1..5}] run tp @s ^0 ^0.02 ^0.06
+execute if entity @s[scores={AsaMatrix=1..5}] run tp @s ^0 ^0.02 ^0.06 ~0.5 ~
 execute if entity @s[scores={AsaMatrix=6}] run function asa_animator:tiga/anim/stay/keyframes/1
-execute if entity @s[scores={AsaMatrix=6..12}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=6..12}] run tp @s ^0 ^0 ^0 ~-0.4 ~
 execute if entity @s[scores={AsaMatrix=13}] run function asa_animator:tiga/anim/stay/keyframes/2
 execute if entity @s[scores={AsaMatrix=13..17}] run tp @s ^0 ^-0.02 ^0.02
 execute if entity @s[scores={AsaMatrix=18}] run function asa_animator:tiga/anim/stay/keyframes/3
@@ -30,6 +30,8 @@ execute as @e[type=armor_stand,tag=TigaParts] run function #asa_matrix:animate
 function asa_animator:tiga/model
 
 function asa_animator:tiga/manager/ground
+
+execute if entity @s[scores={AsaMatrix=1}] if score #mhdp_tiga_actcount AsaMatrix matches 1.. run function asa_animator:tiga/anim/stay/events/change
 
 execute if entity @s[scores={AsaMatrix=17..20}] run playsound entity.hoglin.attack master @a ~ ~ ~ 1.5 2
 execute if entity @s[scores={AsaMatrix=17..20}] run playsound entity.hoglin.attack master @a ~ ~ ~ 1.5 1.2

@@ -4,9 +4,9 @@ execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:tiga/anim/d
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:tiga/anim/dash_bite/keyframes/0
 execute if entity @s[scores={AsaMatrix=1..8}] run tp @s ^0 ^-0.0125 ^0
 execute if entity @s[scores={AsaMatrix=9}] run function asa_animator:tiga/anim/dash_bite/keyframes/1
-execute if entity @s[scores={AsaMatrix=9..16}] run tp @s ^0 ^0.0125 ^-0.075
+execute if entity @s[scores={AsaMatrix=9..16}] run tp @s ^0 ^0.0125 ^-0.075 ~0.5 ~
 execute if entity @s[scores={AsaMatrix=17}] run function asa_animator:tiga/anim/dash_bite/keyframes/2
-execute if entity @s[scores={AsaMatrix=17..21}] run tp @s ^0 ^0 ^-0.04
+execute if entity @s[scores={AsaMatrix=17..21}] run tp @s ^0 ^0 ^-0.04 ~-0.5 ~
 execute if entity @s[scores={AsaMatrix=22}] run function asa_animator:tiga/anim/dash_bite/keyframes/3
 execute if entity @s[scores={AsaMatrix=22..25}] run tp @s ^0 ^0.025 ^0.2
 execute if entity @s[scores={AsaMatrix=26}] run function asa_animator:tiga/anim/dash_bite/keyframes/4

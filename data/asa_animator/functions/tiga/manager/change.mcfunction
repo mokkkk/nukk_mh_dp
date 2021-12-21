@@ -12,10 +12,13 @@ tag @a[tag=TigaTarget,limit=1,sort=random,tag=!NotTarget] add TigaAttackTarget
 execute unless entity @e[tag=TigaAttackTarget] run tag @e[tag=TigaTarget,limit=1,sort=random] add TigaAttackTarget
 
 # 通常時
-# execute unless entity @s[tag=AnmCharge] run function asa_animator:tiga/manager/change_normal/change
+execute unless entity @s[tag=AnmCharge] run function asa_animator:tiga/manager/change_normal/change
+
+# 軸合わせ
+execute unless predicate asa_animator:tiga/turn run function asa_animator:tiga/manager/change_normal/_/turn_b
 
 # 強制
-tag @s add AnmHandR
+# tag @s add AnmDashStart
 
 # 終了
 tag @s remove ChangeAnm
