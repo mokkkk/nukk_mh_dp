@@ -17,8 +17,9 @@ execute unless entity @s[tag=AnmCharge] run function asa_animator:tiga/manager/c
 # 軸合わせ
 execute unless predicate asa_animator:tiga/turn run function asa_animator:tiga/manager/change_normal/_/turn_b
 
-# 強制
-# tag @s add AnmDashStart
+# 怒りカウント消費
+execute if entity @s[tag=IsAnger] run scoreboard players add #mhdp_tiga_anger_count AsaMatrix 1
+execute if entity @s[tag=IsAnger] if score #mhdp_tiga_anger_count AsaMatrix matches 16.. run function asa_animator:tiga/manager/model/change_to_normal
 
 # 終了
 tag @s remove ChangeAnm

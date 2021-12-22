@@ -33,7 +33,8 @@ execute if entity @s[scores={AsaMatrix=31}] run playsound entity.player.attack.s
 execute if entity @s[scores={AsaMatrix=31..55}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 
 execute if entity @s[scores={AsaMatrix=31..45}] positioned ^ ^ ^5 run function asa_animator:tiga/anim/spin/events/damage
-execute if entity @s[scores={AsaMatrix=31..45}] positioned ^ ^ ^-5 run function asa_animator:tiga/anim/spin/events/damage
+execute unless entity @s[tag=DestroyTail] if entity @s[scores={AsaMatrix=31..45}] positioned ^ ^ ^-5 run function asa_animator:tiga/anim/spin/events/damage
+execute if entity @s[tag=DestroyTail] if entity @s[scores={AsaMatrix=31..45}] positioned ^ ^ ^-3 run function asa_animator:tiga/anim/spin/events/damage
 
 execute if entity @s[scores={AsaMatrix=21}] run playsound entity.hoglin.attack master @a ~ ~ ~ 3 2
 execute if entity @s[scores={AsaMatrix=21}] run playsound entity.hoglin.attack master @a ~ ~ ~ 3 1.2

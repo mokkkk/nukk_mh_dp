@@ -8,3 +8,5 @@ scoreboard players reset #tiga_mine_y
 scoreboard players reset #tiga_mine_z
 scoreboard players reset #tiga_height_target
 scoreboard players reset #mhdp_tiga_actcount
+scoreboard players reset #mhdp_tiga_anger_count
+scoreboard players reset #mhdp_tiga_anger_damage

@@ -31,7 +31,9 @@ execute if entity @s[scores={AsaMatrix=21}] run playsound entity.player.attack.s
 execute if entity @s[scores={AsaMatrix=21..45}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 
 execute if entity @s[scores={AsaMatrix=21..35}] positioned ^ ^ ^5 run function asa_animator:tiga/anim/spin/events/damage
-execute if entity @s[scores={AsaMatrix=21..35}] positioned ^ ^ ^-5 run function asa_animator:tiga/anim/spin/events/damage
+execute unless entity @s[tag=DestroyTail] if entity @s[scores={AsaMatrix=21..35}] positioned ^ ^ ^-5 run function asa_animator:tiga/anim/spin/events/damage
+execute if entity @s[tag=DestroyTail] if entity @s[scores={AsaMatrix=21..35}] positioned ^ ^ ^-3 run function asa_animator:tiga/anim/spin/events/damage
+
 
 execute if entity @s[scores={AsaMatrix=19}] run summon marker ~ ~ ~ {Tags:["TigaMoveRotate"]}
 execute if entity @s[scores={AsaMatrix=19}] run tp @e[distance=0..3,type=marker,tag=TigaMoveRotate] ~ ~ ~ ~ 0

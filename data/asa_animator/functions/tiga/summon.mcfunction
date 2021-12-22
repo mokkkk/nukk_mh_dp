@@ -1,4 +1,4 @@
-summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["MonsterRoot","TigaRoot"]}
+summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["AnmSummon","MonsterRoot","TigaRoot"]}
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["TigaParts","HeadU"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10309,Rotate:[0f,0f,0f]}}],Pose:{Head:[15f,0f,0f]}}
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["TigaParts","HeadL"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10310,Rotate:[0f,0f,0f]}}],Pose:{Head:[5f,0f,0f]}}
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["TigaParts","Neck0"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10311,Rotate:[0f,0f,0f]}}],Pose:{Head:[0f,0f,0f]}}

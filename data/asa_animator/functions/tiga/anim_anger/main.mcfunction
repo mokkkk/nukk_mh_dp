@@ -50,3 +50,17 @@ execute if entity @s[tag=AnmVoice2] run function asa_animator:tiga/anim/voice_2/
 execute if entity @s[tag=AnmBStepA] run function asa_animator:tiga/anim/backstep_anger/main
 # 咆哮・上方（怒り）
 execute if entity @s[tag=AnmAnger] run function asa_animator:tiga/anim/anger/main
+
+# 頭部位破壊
+execute if entity @s[tag=AnmDHead] run function asa_animator:tiga/anim/destroy_head/main
+# 左腕部位破壊
+execute if entity @s[tag=AnmDArmL] run function asa_animator:tiga/anim/destroy_arm_l/main
+# 右腕部位破壊
+execute if entity @s[tag=AnmDArmR] run function asa_animator:tiga/anim/destroy_arm_r/main
+# 尻尾部位破壊
+execute if entity @s[tag=AnmDTail] run function asa_animator:tiga/anim/destroy_tail/main
+
+# 登場
+execute if entity @s[tag=AnmSummon] run function asa_animator:tiga/anim/summon/main
+# 討伐
+execute if entity @s[tag=AnmDeath] run function asa_animator:tiga/anim/death/main
