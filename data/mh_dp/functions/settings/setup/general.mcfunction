@@ -28,7 +28,6 @@ data modify storage mh_dp:status Monster.Win.BrachyR set value false
 data modify storage mh_dp:status Monster.Win.Tiga set value false
 
 # バージョン設定
-# data modify storage mh_dp:settings Version set value 1
 scoreboard players set #mhdp_bersion AsaMatrix 4
 
 tellraw @a {"text":"【MH_DP ： 初期設定が完了しました】"}
