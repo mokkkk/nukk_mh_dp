@@ -48,6 +48,13 @@ execute if entity @s[tag=D_BrachyRPunch] run tellraw @a [{"selector":"@s"},{"tex
 execute if entity @s[tag=D_BrachyRTail] run tellraw @a [{"selector":"@s"},{"text": " は砕竜の尻尾に叩きのめされた"}]
 execute if entity @s[tag=D_BrachyRBomb] run tellraw @a [{"selector":"@s"},{"text": " は爆発に巻き込まれた"}]
 
+execute if entity @s[tag=D_TigaBite] run tellraw @a [{"selector":"@s"},{"text": " は轟竜に噛み砕かれた"}]
+execute if entity @s[tag=D_TigaDash] run tellraw @a [{"selector":"@s"},{"text": " は轟竜に轢かれた"}]
+execute if entity @s[tag=D_TigaHand] run tellraw @a [{"selector":"@s"},{"text": " は轟竜に吹き飛ばされた"}]
+execute if entity @s[tag=D_TigaShot] run tellraw @a [{"selector":"@s"},{"text": " は飛んでくる石を避けきれなかった"}]
+execute if entity @s[tag=D_TigaSpin] run tellraw @a [{"selector":"@s"},{"text": " は轟竜の回転に巻き込まれた"}]
+execute if entity @s[tag=D_TigaVoice] run tellraw @a [{"selector":"@s"},{"text": " は轟竜の声に耐えきれなかった"}]
+
 execute if entity @s[tag=D_BlightFire] run tellraw @a [{"selector":"@s"},{"text": " は火傷した"}]
 
 kill @s

@@ -28,4 +28,7 @@ tag @s remove BrachyAttackTarget
 tag @s remove BrachyRTarget
 tag @s remove BrachyRAttackTarget
 
+tag @s remove TigaTarget
+tag @s remove TigaAttackTarget
+
 tag @s remove Dead
