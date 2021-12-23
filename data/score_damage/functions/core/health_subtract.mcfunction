@@ -27,6 +27,8 @@
         execute if entity @s[type=player] run playsound entity.player.hurt master @s ~ ~ ~ 1 1
     # Mob
         execute if entity @s[type=!player] if score $SubtractedHealth ScoreDamageCore matches 1.. store result entity @s Health float 0.0001 run scoreboard players get $SubtractedHealth ScoreDamageCore
+    # Monster
+        execute if entity @s[type=slime,tag=MonsterParts] if score $SubtractedHealth ScoreDamageCore matches 1.. run function score_damage:mh_dp/monster
     # Common
         execute if entity @s[type=!player,type=!slime] if score $SubtractedHealth ScoreDamageCore matches ..0 run kill @s
     # CustomDeathMessage
