@@ -1,5 +1,5 @@
 # 2 Damage
-data merge storage score_damage: {Damage:4.0f, BypassArmor:0b}
+ data modify storage score_damage: Argument set value {Damage:4.0f, BypassArmor:0b}
 data merge storage mhdp: {Epf:1}
 execute if entity @s[tag=IsHeatHead] run data modify storage score_damage: Damage set value 5.0f
 execute if entity @s[tag=IsHeatHead] run data modify storage mhdp: Epf set value 2

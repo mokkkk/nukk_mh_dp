@@ -19,20 +19,20 @@
 # damage * (1 - min(20, max(defensePoints / 5, defensePoints - damage / (2 + toughness / 4))) / 25) * (1 - (min(20, cappedEPF) / 25)) * (1 - min(5, resistanceLv) / 5)
 
 # 防御による軽減計算部
-    # $CalcA = $defensePoints( * 100) * 100 / 5 / 100;
-        scoreboard players operation $CalcA ScoreDamageCore = $defensePoints ScoreDamageCore
+    # $CalcA = $DefensePoints( * 100) * 100 / 5 / 100;
+        scoreboard players operation $CalcA ScoreDamageCore = $DefensePoints ScoreDamageCore
         scoreboard players operation $CalcA ScoreDamageCore *= $20 ScoreDamageCore
         scoreboard players operation $CalcA ScoreDamageCore /= $100 ScoreDamageCore
-    # $CalcB.3 = $toughness( * 100) * 100 / 4 + 2 * 100 * 100;
-        scoreboard players operation $CalcB.3 ScoreDamageCore = $toughness ScoreDamageCore
+    # $CalcB.3 = $Toughness( * 100) * 100 / 4 + 2 * 100 * 100;
+        scoreboard players operation $CalcB.3 ScoreDamageCore = $Toughness ScoreDamageCore
         scoreboard players operation $CalcB.3 ScoreDamageCore *= $25 ScoreDamageCore
         scoreboard players operation $CalcB.3 ScoreDamageCore += $20000 ScoreDamageCore
     # $CalcB.2 = $damage( * 100) * 100 * 100 / $CalcB.3( * 100 * 100);
         scoreboard players operation $CalcB.2 ScoreDamageCore = $Damage ScoreDamageCore
         scoreboard players operation $CalcB.2 ScoreDamageCore *= $10000 ScoreDamageCore
         scoreboard players operation $CalcB.2 ScoreDamageCore /= $CalcB.3 ScoreDamageCore
-    # $CalcB = $defensePoints( * 100) - $CalcB.2( * 100);
-        scoreboard players operation $CalcB ScoreDamageCore = $defensePoints ScoreDamageCore
+    # $CalcB = $DefensePoints( * 100) - $CalcB.2( * 100);
+        scoreboard players operation $CalcB ScoreDamageCore = $DefensePoints ScoreDamageCore
         scoreboard players operation $CalcB ScoreDamageCore -= $CalcB.2 ScoreDamageCore
     # $CalcC = min(max($CalcA( * 100), $CalcB( * 100)), 20 * 100) * 100 / 25;
         scoreboard players operation $CalcC ScoreDamageCore = $CalcA ScoreDamageCore
@@ -67,14 +67,14 @@
         scoreboard players operation $Damage ScoreDamageCore *= $CalcF ScoreDamageCore
         scoreboard players operation $Damage ScoreDamageCore /= $10 ScoreDamageCore
 # Reset
-    scoreboard players reset $CalcA
-    scoreboard players reset $CalcB
-    scoreboard players reset $CalcB.2
-    scoreboard players reset $CalcB.3
-    scoreboard players reset $CalcC
-    scoreboard players reset $CalcD
-    scoreboard players reset $CalcE
-    scoreboard players reset $CalcF
-    scoreboard players reset $defensePoints
-    scoreboard players reset $toughness
-    scoreboard players reset $EPF
+    scoreboard players reset $CalcA ScoreDamageCore
+    scoreboard players reset $CalcB ScoreDamageCore
+    scoreboard players reset $CalcB.2 ScoreDamageCore
+    scoreboard players reset $CalcB.3 ScoreDamageCore
+    scoreboard players reset $CalcC ScoreDamageCore
+    scoreboard players reset $CalcD ScoreDamageCore
+    scoreboard players reset $CalcE ScoreDamageCore
+    scoreboard players reset $CalcF ScoreDamageCore
+    scoreboard players reset $DefensePoints ScoreDamageCore
+    scoreboard players reset $Toughness ScoreDamageCore
+    scoreboard players reset $EPF ScoreDamageCore
