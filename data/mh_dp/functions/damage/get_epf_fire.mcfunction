@@ -21,5 +21,3 @@
 # リセット
     scoreboard players reset $mhdp_temp AsaMatrix
     data remove storage mhdp: Armor
-
-scoreboard players add @s MhdpBlightFire 80
