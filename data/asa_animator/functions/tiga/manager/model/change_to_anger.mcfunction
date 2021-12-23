@@ -15,3 +15,4 @@ execute if entity @s[tag=DestroyArmR] as @e[distance=0..30,type=armor_stand,tag=
 tag @s add IsAnger
 scoreboard players set #mhdp_tiga_anger_count AsaMatrix 0
 scoreboard players set #mhdp_tiga_anger_damage AsaMatrix 0
+scoreboard players set #mhdp_tiga_actcount AsaMatrix 12

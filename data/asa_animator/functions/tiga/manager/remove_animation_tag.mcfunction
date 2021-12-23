@@ -29,6 +29,7 @@ tag @s remove AnmDArmR
 tag @s remove AnmDTail
 tag @s remove AnmSummon
 
+tag @s remove IsTurn
 tag @s remove DashAct
 tag @s remove DashSpin
 tag @s remove DashStop

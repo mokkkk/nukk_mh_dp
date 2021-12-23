@@ -3,6 +3,7 @@ data modify storage mh_dp:settings Setup set value true
 
 scoreboard objectives add AsaMatrix dummy
 scoreboard objectives add MhdpJump minecraft.custom:minecraft.jump
+scoreboard objectives add MhdpTDamage dummy
 scoreboard objectives add MhdpTAvoid dummy
 scoreboard objectives add MhdpBlightFire dummy
 
@@ -24,9 +25,10 @@ data modify storage mh_dp:status Monster.Win.Narga set value false
 data modify storage mh_dp:status Monster.Win.Dyno set value false
 data modify storage mh_dp:status Monster.Win.Brachy set value false
 data modify storage mh_dp:status Monster.Win.BrachyR set value false
+data modify storage mh_dp:status Monster.Win.Tiga set value false
 
 # バージョン設定
 # data modify storage mh_dp:settings Version set value 1
-scoreboard players set #mhdp_bersion AsaMatrix 1
+scoreboard players set #mhdp_bersion AsaMatrix 4
 
 tellraw @a {"text":"【MH_DP ： 初期設定が完了しました】"}

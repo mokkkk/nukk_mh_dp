@@ -23,3 +23,8 @@ execute if entity @s[scores={AsaMatrix=46}] run playsound entity.hoglin.step mas
 
 execute if entity @s[scores={AsaMatrix=1}] at @s positioned ~ ~5 ~ run tp @s ~ ~ ~
 execute if entity @s[scores={AsaMatrix=1}] at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
+
+execute if entity @s[tag=!IsAnger,tag=!DestroyHead] if entity @s[scores={AsaMatrix=41}] as @e[distance=0..15,type=armor_stand,tag=TigaParts,tag=HeadU] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10346
+execute if entity @s[tag=!IsAnger,tag=DestroyHead] if entity @s[scores={AsaMatrix=41}] as @e[distance=0..15,type=armor_stand,tag=TigaParts,tag=HeadU] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10347
+execute if entity @s[tag=IsAnger,tag=!DestroyHead] if entity @s[scores={AsaMatrix=41}] as @e[distance=0..15,type=armor_stand,tag=TigaParts,tag=HeadU] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10348
+execute if entity @s[tag=IsAnger,tag=DestroyHead] if entity @s[scores={AsaMatrix=41}] as @e[distance=0..15,type=armor_stand,tag=TigaParts,tag=HeadU] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10349

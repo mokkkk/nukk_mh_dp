@@ -1,1 +1,1 @@
-advancement revoke @a only mh_dp:toasts/dyno
+advancement revoke @a only mh_dp:toasts/tiga

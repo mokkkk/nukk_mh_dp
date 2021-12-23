@@ -1,18 +1,18 @@
 
 # メッセージ
-tellraw @a {"text": "【斬竜は居なくなった】"}
+tellraw @a {"text": "【轟竜は居なくなった】"}
 
 # タグ消去
-tag @e[tag=DynoTarget] remove DynoTarget
-tag @e[tag=DynoAttackTarget] remove DynoAttackTarget
+tag @e[tag=TigaTarget] remove TigaTarget
+tag @e[tag=TigaAttackTarget] remove TigaAttackTarget
 
 # 当たり判定削除
-function asa_animator:dyno/manager/health/kill
+function asa_animator:tiga/manager/health/kill
 
 # ボスバー削除
-bossbar remove asa_animator:dyno_health
+bossbar remove asa_animator:tiga_health
 
 # パーツ削除
-function asa_animator:dyno/kill
-kill @e[type=marker,tag=DynoMoveRotate]
-kill @e[type=marker,tag=DynoBreathTarget]
+function asa_animator:tiga/kill
+kill @e[type=marker,tag=TigaMoveRotate]
+kill @e[type=marker,tag=TigaDashTarget]

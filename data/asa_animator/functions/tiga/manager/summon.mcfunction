@@ -3,10 +3,10 @@ execute unless entity @e[type=armor_stand,tag=TigaRoot] run data modify storage 
 execute if entity @e[type=armor_stand,tag=TigaRoot] run data modify storage mhdp: ExistMonster set value 1b
 
 # パーツ召喚
-execute if data storage mhdp: {ExistMonster:0b} positioned ^ ^10 ^6 run function asa_animator:tiga/summon
+execute if data storage mhdp: {ExistMonster:0b} positioned ^ ^30 ^6 run function asa_animator:tiga/summon
 
 # 当たり判定召喚
-execute if data storage mhdp: {ExistMonster:0b} positioned ^ ^10 ^6 run function asa_animator:tiga/manager/health/summon
+execute if data storage mhdp: {ExistMonster:0b} positioned ^ ^30 ^6 run function asa_animator:tiga/manager/health/summon
 
 # HPセット
 execute if data storage mhdp: {ExistMonster:0b} run function asa_animator:tiga/manager/summon_hp
