@@ -1,0 +1,32 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"轟竜の牙\"}',Lore:['{\"text\":\"全てを噛み砕く轟竜の牙．\"}','{\"text\":\"武器の素材として使用される．\"}']},CustomModelData:10016,MhdpID:17}"
+              }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"轟竜の鱗\"}',Lore:['{\"text\":\"強者の体を守る，頑丈な鱗．\"}','{\"text\":\"防具の素材として使用される．\"}']},CustomModelData:10017,MhdpID:18}"
+              }
+          ]
+        }
+      ]
+    }
+  ]
+}

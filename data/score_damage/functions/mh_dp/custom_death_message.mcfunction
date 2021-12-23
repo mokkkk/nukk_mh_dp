@@ -48,5 +48,7 @@ execute if entity @s[tag=D_BrachyRPunch] run tellraw @a [{"selector":"@s"},{"tex
 execute if entity @s[tag=D_BrachyRTail] run tellraw @a [{"selector":"@s"},{"text": " は砕竜の尻尾に叩きのめされた"}]
 execute if entity @s[tag=D_BrachyRBomb] run tellraw @a [{"selector":"@s"},{"text": " は爆発に巻き込まれた"}]
 
+execute if entity @s[tag=D_BlightFire] run tellraw @a [{"selector":"@s"},{"text": " は火傷した"}]
+
 kill @s
 execute if score #default_gamemode AsaMatrix matches 1.. run gamerule showDeathMessages true

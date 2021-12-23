@@ -10,6 +10,7 @@ tag @s remove AnmFly
 tag @s remove AnmEndFly
 tag @s remove AnmFlyAttack
 tag @s remove AnmFlyAttackL
+tag @s remove AnmFlyJump
 tag @s remove AnmFlyBreath
 tag @s remove AnmFlyBreathC
 tag @s remove AnmFlyBreathL
