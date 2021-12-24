@@ -17,7 +17,7 @@ execute if entity @s[scores={AsaMatrix=14..}] run function asa_animator:tiga/ani
 execute as @e[type=armor_stand,tag=TigaParts] run function #asa_matrix:animate
 function asa_animator:tiga/model
 
-execute at @s run tp @s ^ ^ ^0.85
+execute at @s run tp @s ^ ^ ^0.92
 execute at @s positioned ~ ~5 ~ run tp @s ~ ~ ~
 execute at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
 function asa_animator:tiga/anim/dash/events/damage
