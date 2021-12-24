@@ -1,8 +1,5 @@
-scoreboard players set #asa_zinogre_anmspeed AsaMatrix 1000
-scoreboard players set #asa_zinogre_kindex AsaMatrix 0
-scoreboard players set #asa_zinogre_tick_current AsaMatrix 0
-scoreboard players set #asa_zinogre_tick_end AsaMatrix 0
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["MonsterRoot","ZinogreRoot","AnmSummon"]}
+execute as @e[tag=ZinogreRoot] run function mh_dp:spawn/get_id
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["MonsterParts","ZinogreParts","HeadU"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10040,Rotate:[0f,0f,0f]}}],Pose:{Head:[30f,0f,0f]}}
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["MonsterParts","ZinogreParts","HeadL"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10041,Rotate:[0f,0f,0f]}}],Pose:{Head:[0f,0f,0f]}}
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["MonsterParts","ZinogreParts","Neck0"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10042,Rotate:[0f,0f,0f]}}],Pose:{Head:[15f,0f,0f]}}

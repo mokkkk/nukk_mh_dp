@@ -1,6 +1,10 @@
 
 # バージョン設定
 scoreboard players set #mhdp_bersion AsaMatrix 4
+
+scoreboard players set #mhdp_id_holder MhdpMonsterID 0
+scoreboard objectives add MhdpMonsterID dummy
+scoreboard players set #mhdp_id_holder MhdpMonsterID 0
 scoreboard objectives add MhdpJump minecraft.custom:minecraft.jump
 scoreboard objectives add MhdpTDamage dummy
 scoreboard objectives add MhdpTAvoid dummy

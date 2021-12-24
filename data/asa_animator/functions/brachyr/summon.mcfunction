@@ -1,4 +1,5 @@
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["MonsterRoot","BrachyRRoot","AnmSummon"]}
+execute as @e[tag=BrachyRRoot] run function mh_dp:spawn/get_id
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["BrachyRParts","HeadU"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10216,Rotate:[0f,0f,0f]}}],Pose:{Head:[5f,0f,0f]}}
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["BrachyRParts","HeadL"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10217,Rotate:[0f,0f,0f]}}],Pose:{Head:[0f,0f,0f]}}
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["BrachyRParts","Neck0"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10218,Rotate:[0f,0f,0f]}}],Pose:{Head:[15f,0f,0f]}}

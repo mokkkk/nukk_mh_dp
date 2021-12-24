@@ -2,10 +2,14 @@
 data modify storage mh_dp:settings Setup set value true
 
 scoreboard objectives add AsaMatrix dummy
+scoreboard objectives add MhdpMonsterID dummy
 scoreboard objectives add MhdpJump minecraft.custom:minecraft.jump
 scoreboard objectives add MhdpTDamage dummy
 scoreboard objectives add MhdpTAvoid dummy
 scoreboard objectives add MhdpBlightFire dummy
+
+# ID設定
+scoreboard players set #mhdp_id_holder MhdpMonsterID 0
 
 # スポーン設定
 data modify storage mh_dp:settings Custom.EnableBossSpawn set value 0b
