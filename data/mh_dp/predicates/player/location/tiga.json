@@ -65,7 +65,37 @@
       {
         "condition": "minecraft:location_check",
         "predicate": {
-          "biome": "minecraft:nether_wastes"
+          "biome": "minecraft:snowy_taiga"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:savanna"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:desert"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:snowy_plains"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:badlands"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:ice_spikes"
         }
       }
     ]

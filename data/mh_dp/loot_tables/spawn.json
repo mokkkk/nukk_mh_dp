@@ -122,7 +122,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:reference",
-                  "name": "mh_dp:player/location/reia"
+                  "name": "mh_dp:player/location/narga"
                 },
                 {
                   "condition": "minecraft:inverted",
@@ -148,7 +148,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:reference",
-                  "name": "mh_dp:player/location/reia"
+                  "name": "mh_dp:player/location/dyno"
                 },
                 {
                   "condition": "minecraft:inverted",
@@ -174,7 +174,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:reference",
-                  "name": "mh_dp:player/location/reia"
+                  "name": "mh_dp:player/location/brachy"
                 },
                 {
                   "condition": "minecraft:inverted",
@@ -183,6 +183,32 @@
                     "entity": "this",
                     "predicate": {
                       "nbt": "{Tags:[\"ExistBrachy\"]}"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{SpawnPaper:1,SpawnID:8}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "mh_dp:player/location/tiga"
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "nbt": "{Tags:[\"ExistTiga\"]}"
                     }
                   }
                 }

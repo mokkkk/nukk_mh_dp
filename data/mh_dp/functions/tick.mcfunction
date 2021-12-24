@@ -3,7 +3,7 @@
 scoreboard players add #mhdp_timer AsaMatrix 1
 
 # スポーン処理
-execute if score #mhdp_timer AsaMatrix matches 1200.. as @r at @s run function mh_dp:spawn/main
+execute if score #mhdp_timer AsaMatrix matches 1800.. as @r at @s run function mh_dp:spawn/main
 
 # プレイヤー処理
 execute as @a at @s run function mh_dp:player/tick

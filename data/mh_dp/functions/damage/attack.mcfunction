@@ -14,3 +14,4 @@ execute if entity @s[type=!player] run function mh_dp:damage/not_player
 scoreboard players reset #mhdp_attack_damage
 scoreboard players reset $mhdp_epf
 scoreboard players reset #mhdp_hurt_time
+data modify storage mhdp: NoDamageTime set value 0b
