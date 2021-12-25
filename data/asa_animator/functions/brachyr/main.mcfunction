@@ -15,4 +15,4 @@ execute unless entity @s[tag=Phase2] as @e[type=slime,tag=BrachyRParts] run func
 execute if entity @s[tag=Phase2] as @e[type=slime,tag=BrachyRParts] run function asa_animator:brachyr/manager/health/pos_rage
 
 # デスポーン
-execute unless entity @s[tag=AnmSummon] unless entity @a[distance=0..64] run function asa_animator:brachyr/manager/despawn
+execute unless entity @s[tag=AnmSummon] if data storage mh_dp:settings {Custom:{DisableDespawn:false}} unless entity @a[distance=0..64] run function asa_animator:brachyr/manager/despawn

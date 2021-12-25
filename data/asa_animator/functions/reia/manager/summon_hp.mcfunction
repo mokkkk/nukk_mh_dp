@@ -1,6 +1,6 @@
 
 # HPセット
-scoreboard players set #mhdp_reia_health AsaMatrix 48000
+scoreboard players set #mhdp_reia_health AsaMatrix 46000
 # HP倍率適用
 scoreboard players operation #mhdp_reia_health AsaMatrix *= #mhdp_hp_multiply AsaMatrix
 scoreboard players operation #mhdp_reia_health AsaMatrix /= #asam_const_100 AsaMatrix

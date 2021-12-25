@@ -1,6 +1,6 @@
 
 # Sinφ Cosφ(Pose[0])
-data modify storage asa_matrix: Temp set from entity @s
+# data modify storage asa_matrix: Temp set from entity @s
 execute if data storage asa_matrix: Temp.Pose.Head run data modify storage math: in set from storage asa_matrix: Temp.Pose.Head[0]
 execute unless data storage asa_matrix: Temp.Pose.Head run data modify storage math: in set value 0
 function #math:sin

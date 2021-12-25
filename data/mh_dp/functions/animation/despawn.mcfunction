@@ -13,3 +13,5 @@ execute if entity @s[tag=DynoRoot] run function asa_animator:dyno/manager/despaw
 
 execute if entity @s[tag=BrachyRoot] run function asa_animator:brachy/manager/despawn
 execute if entity @s[tag=BrachyRRoot] run function asa_animator:brachyr/manager/despawn
+
+execute if entity @s[tag=TigaRoot] run function asa_animator:tiga/manager/despawn

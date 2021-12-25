@@ -6,3 +6,4 @@ execute if entity @e[tag=NargaRoot] run tag @s add ExistNarga
 execute if entity @e[tag=DynoRoot] run tag @s add ExistDyno
 execute if entity @e[tag=BrachyRoot] run tag @s add ExistBrachy
 execute if entity @e[tag=BrachyRRoot] run tag @s add ExistBrachy
+execute if entity @e[tag=TigaRoot] run tag @s add ExistTiga

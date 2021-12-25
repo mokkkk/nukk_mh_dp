@@ -1,5 +1,5 @@
 # 7 Damage
-data merge storage score_damage: {Damage:14.0f, BypassArmor:0b}
+ data modify storage score_damage: Argument set value {Damage:14.0f, BypassArmor:0b}
 data merge storage mhdp: {Epf:3}
 execute as @e[type=!armor_stand,type=!marker,tag=!BrachyRParts,distance=0..4.5] run function asa_animator:brachyr/manager/bomb/damage_sub
 playsound entity.generic.explode master @a ~ ~ ~ 1 0.7

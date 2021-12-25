@@ -1,8 +1,8 @@
 # 6 ~ 2.5 Damage
-data merge storage score_damage: {Damage:12.0f, BypassArmor:0b}
+ data modify storage score_damage: Argument set value {Damage:12.0f, BypassArmor:0b}
 data merge storage mhdp: {Epf:3}
 execute as @e[type=!armor_stand,type=!marker,tag=!BrachyParts,distance=..5] run function asa_animator:brachy/manager/bomb/damage_sub
-data merge storage score_damage: {Damage:5.0f, BypassArmor:0b}
+ data modify storage score_damage: Argument set value {Damage:5.0f, BypassArmor:0b}
 execute as @e[type=!armor_stand,type=!marker,tag=!BrachyParts,distance=5..8] run function asa_animator:brachy/manager/bomb/damage_sub
 playsound entity.generic.explode master @a ~ ~ ~ 2 0.7
 execute positioned ^1.5 ^ ^ run particle explosion_emitter ~ ~ ~ 0 0 0 0 1

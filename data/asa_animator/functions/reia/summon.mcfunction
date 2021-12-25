@@ -1,4 +1,5 @@
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["MonsterRoot","ReiaRoot","AnmSummon"]}
+execute as @e[tag=ReiaRoot] run function mh_dp:spawn/get_id
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["ReiaParts","HeadU"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10099,Rotate:[0f,0f,0f]}}],Pose:{Head:[-10f,0f,0f]}}
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["ReiaParts","HeadL"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10100,Rotate:[0f,0f,0f]}}],Pose:{Head:[0f,0f,0f]}}
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["ReiaParts","Neck0"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10101,Rotate:[0f,0f,0f]}}],Pose:{Head:[5f,0f,0f]}}

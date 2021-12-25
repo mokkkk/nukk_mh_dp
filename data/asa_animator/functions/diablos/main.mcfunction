@@ -31,4 +31,4 @@ execute unless entity @s[tag=InGround] as @e[type=slime,tag=DiablosParts] run fu
 execute if entity @s[tag=InGround] as @e[type=slime,tag=DiablosParts] run tp @s ~ ~10 ~
 
 # デスポーン
-execute unless entity @s[tag=AnmSummon] unless entity @a[distance=0..64] run function asa_animator:diablos/manager/despawn
+execute unless entity @s[tag=AnmSummon] if data storage mh_dp:settings {Custom:{DisableDespawn:false}} unless entity @a[distance=0..64] run function asa_animator:diablos/manager/despawn

@@ -5,6 +5,6 @@
     }
   },
   "rewards": {
-    "function": "mh_dp:player/player_hurt"
+    "function": "mh_dp:player/advancements/hurt"
   }
 }

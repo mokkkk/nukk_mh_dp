@@ -1,6 +1,6 @@
 
 # HPセット
-scoreboard players set #mhdp_dyno_health AsaMatrix 55000
+scoreboard players set #mhdp_dyno_health AsaMatrix 52000
 # HP倍率適用
 scoreboard players operation #mhdp_dyno_health AsaMatrix *= #mhdp_hp_multiply AsaMatrix
 scoreboard players operation #mhdp_dyno_health AsaMatrix /= #asam_const_100 AsaMatrix
@@ -18,7 +18,7 @@ scoreboard players set #mhdp_dyno_actcount_head AsaMatrix 0
 scoreboard players set #mhdp_dyno_actcount_tail AsaMatrix 0
 scoreboard players set #mhdp_dyno_actcount_generic AsaMatrix 0
 scoreboard players set #mhdp_dyno_head_damage AsaMatrix 10000
-scoreboard players set #mhdp_dyno_legl_damage AsaMatrix 12000
-scoreboard players set #mhdp_dyno_legr_damage AsaMatrix 12000
+scoreboard players set #mhdp_dyno_legl_damage AsaMatrix 10000
+scoreboard players set #mhdp_dyno_legr_damage AsaMatrix 10000
 scoreboard players set #mhdp_dyno_tail_damage AsaMatrix 16000
 scoreboard players set #mhdp_dyno_head_heat_damage AsaMatrix 0

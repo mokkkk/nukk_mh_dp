@@ -1,10 +1,10 @@
 
 # ダメージ適用
-execute if entity @s[tag=HeadParts] run scoreboard players operation #diablos_damage AsaMatrix *= #asam_const_95 AsaMatrix
-execute if entity @s[tag=BodyParts] run scoreboard players operation #diablos_damage AsaMatrix *= #asam_const_95 AsaMatrix
-execute if entity @s[tag=LegParts] run scoreboard players operation #diablos_damage AsaMatrix *= #asam_const_100 AsaMatrix
-execute if entity @s[tag=TailParts] run scoreboard players operation #diablos_damage AsaMatrix *= #asam_const_120 AsaMatrix
-scoreboard players operation #diablos_damage AsaMatrix /= #asam_const_100 AsaMatrix
+# execute if entity @s[tag=HeadParts] run scoreboard players operation #diablos_damage AsaMatrix *= #asam_const_95 AsaMatrix
+# execute if entity @s[tag=BodyParts] run scoreboard players operation #diablos_damage AsaMatrix *= #asam_const_95 AsaMatrix
+# execute if entity @s[tag=LegParts] run scoreboard players operation #diablos_damage AsaMatrix *= #asam_const_100 AsaMatrix
+# execute if entity @s[tag=TailParts] run scoreboard players operation #diablos_damage AsaMatrix *= #asam_const_120 AsaMatrix
+# scoreboard players operation #diablos_damage AsaMatrix /= #asam_const_100 AsaMatrix
 # 怒り時ダメージ増加
 execute if entity @e[type=armor_stand,tag=DiablosRoot,tag=IsAnger] run scoreboard players operation #diablos_damage AsaMatrix *= #asam_const_120 AsaMatrix
 execute if entity @e[type=armor_stand,tag=DiablosRoot,tag=IsAnger] run scoreboard players operation #diablos_damage AsaMatrix /= #asam_const_100 AsaMatrix
