@@ -1,11 +1,11 @@
 
 # ダメージ適用
-execute if entity @s[tag=HeadParts] run scoreboard players operation #dyno_damage AsaMatrix *= #asam_const_120 AsaMatrix
-execute if entity @s[tag=BodyParts] run scoreboard players operation #dyno_damage AsaMatrix *= #asam_const_100 AsaMatrix
-execute if entity @s[tag=LegLParts] run scoreboard players operation #dyno_damage AsaMatrix *= #asam_const_100 AsaMatrix
-execute if entity @s[tag=LegRParts] run scoreboard players operation #dyno_damage AsaMatrix *= #asam_const_100 AsaMatrix
-execute if entity @s[tag=TailParts] run scoreboard players operation #dyno_damage AsaMatrix *= #asam_const_95 AsaMatrix
-scoreboard players operation #dyno_damage AsaMatrix /= #asam_const_100 AsaMatrix
+# execute if entity @s[tag=HeadParts] run scoreboard players operation #dyno_damage AsaMatrix *= #asam_const_120 AsaMatrix
+# execute if entity @s[tag=BodyParts] run scoreboard players operation #dyno_damage AsaMatrix *= #asam_const_100 AsaMatrix
+# execute if entity @s[tag=LegLParts] run scoreboard players operation #dyno_damage AsaMatrix *= #asam_const_100 AsaMatrix
+# execute if entity @s[tag=LegRParts] run scoreboard players operation #dyno_damage AsaMatrix *= #asam_const_100 AsaMatrix
+# execute if entity @s[tag=TailParts] run scoreboard players operation #dyno_damage AsaMatrix *= #asam_const_95 AsaMatrix
+# scoreboard players operation #dyno_damage AsaMatrix /= #asam_const_100 AsaMatrix
 # 赤熱時ダメージ増加
 execute if entity @s[tag=TailParts] if entity @e[type=armor_stand,tag=DynoRoot,tag=IsHeatTail] run scoreboard players operation #dyno_damage AsaMatrix *= #asam_const_120 AsaMatrix
 execute if entity @s[tag=TailParts] if entity @e[type=armor_stand,tag=DynoRoot,tag=IsHeatTail] run scoreboard players operation #dyno_damage AsaMatrix /= #asam_const_100 AsaMatrix

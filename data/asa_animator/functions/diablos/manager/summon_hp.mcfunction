@@ -1,6 +1,6 @@
 
 # HPセット
-scoreboard players set #mhdp_diablos_health AsaMatrix 52000
+scoreboard players set #mhdp_diablos_health AsaMatrix 50000
 # HP倍率適用
 scoreboard players operation #mhdp_diablos_health AsaMatrix *= #mhdp_hp_multiply AsaMatrix
 scoreboard players operation #mhdp_diablos_health AsaMatrix /= #asam_const_100 AsaMatrix

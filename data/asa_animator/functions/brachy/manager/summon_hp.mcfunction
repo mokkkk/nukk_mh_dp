@@ -1,6 +1,6 @@
 
 # HPセット
-scoreboard players set #mhdp_brachy_health AsaMatrix 48000
+scoreboard players set #mhdp_brachy_health AsaMatrix 45000
 # HP倍率適用
 scoreboard players operation #mhdp_brachy_health AsaMatrix *= #mhdp_hp_multiply AsaMatrix
 scoreboard players operation #mhdp_brachy_health AsaMatrix /= #asam_const_100 AsaMatrix
@@ -16,7 +16,7 @@ execute store result bossbar asa_animator:brachy_health value run scoreboard pla
 scoreboard players set #mhdp_brachy_kill_timer AsaMatrix 0
 scoreboard players set #mhdp_brachy_anger_damage AsaMatrix 0
 scoreboard players set #mhdp_brachy_bomb_count AsaMatrix 0
-scoreboard players set #mhdp_brachy_head_damage AsaMatrix 12000
+scoreboard players set #mhdp_brachy_head_damage AsaMatrix 11000
 scoreboard players set #mhdp_brachy_arml_damage AsaMatrix 10000
 scoreboard players set #mhdp_brachy_armr_damage AsaMatrix 10000
 scoreboard players set #mhdp_brachy_tail_damage AsaMatrix 10000
