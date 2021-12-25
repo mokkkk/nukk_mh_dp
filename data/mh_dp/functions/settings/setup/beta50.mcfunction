@@ -2,6 +2,9 @@
 # バージョン設定
 scoreboard players set #mhdp_bersion AsaMatrix 4
 
+# デスポーン設定
+data modify storage mh_dp:settings Custom.DisableDespawn set value 0b
+# スコアボード定義
 scoreboard players set #mhdp_id_holder MhdpMonsterID 0
 scoreboard objectives add MhdpMonsterID dummy
 scoreboard players set #mhdp_id_holder MhdpMonsterID 0

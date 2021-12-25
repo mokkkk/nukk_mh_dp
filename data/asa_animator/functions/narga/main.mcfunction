@@ -11,7 +11,7 @@ execute unless entity @s[tag=AnmTurn] run function asa_animator:narga/anim/main
 execute as @e[type=slime,tag=NargaParts] run function asa_animator:narga/manager/health/pos
 
 # デスポーン
-execute unless entity @s[tag=AnmSummon] unless entity @a[distance=0..64] run function asa_animator:narga/manager/despawn
+execute unless entity @s[tag=AnmSummon] if data storage mh_dp:settings {Custom:{DisableDespawn:false}} unless entity @a[distance=0..64] run function asa_animator:narga/manager/despawn
 
 # 残光
 execute if entity @s[tag=IsAnger] run function asa_animator:narga/manager/particle/anger

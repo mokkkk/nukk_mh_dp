@@ -1,8 +1,8 @@
-#> score_damage:core/calc
+#> score_damage_mhdp:core/calc
 #
 # 与えるダメージを計算します
 #
-# @within function score_damage:core/attack
+# @within function score_damage_mhdp:core/attack
 
 #> Temp
 # @private

@@ -1,4 +1,4 @@
-#> score_damage:core/init
+#> score_damage_mhdp:core/init
 #
 # スコアボードを用意する
 #

@@ -1,8 +1,8 @@
-#> score_damage:core/attack
+#> score_damage_mhdp:core/attack
 #
 # ダメージ与えるよ
 #
-# @within function score_damage:api/*
+# @within function score_damage_mhdp:api/*
 
 #> 変数定義
 # @internal
@@ -16,11 +16,11 @@
 # 引数データをコピー
     execute store result score $Damage ScoreDamageCore run data get storage score_damage: Argument.Damage 100
 # 計算に必要な値を取得
-    function score_damage:core/get_status
+    function score_damage_mhdp:core/get_status
 # 与えるダメージの計算
-    function score_damage:core/calc
+    function score_damage_mhdp:core/calc
 # Mobに適用
-    function score_damage:core/health_subtract
+    function score_damage_mhdp:core/health_subtract
 # リセット
     scoreboard players reset $Damage ScoreDamageCore
     scoreboard players reset $Health ScoreDamageCore

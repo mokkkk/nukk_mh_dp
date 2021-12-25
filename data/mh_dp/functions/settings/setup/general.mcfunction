@@ -13,6 +13,8 @@ scoreboard players set #mhdp_id_holder MhdpMonsterID 0
 
 # スポーン設定
 data modify storage mh_dp:settings Custom.EnableBossSpawn set value 0b
+# デスポーン設定
+data modify storage mh_dp:settings Custom.DisableDespawn set value 0b
 # 攻撃力倍率
 scoreboard players set #mhdp_attack_multiply AsaMatrix 100
 # HP倍率

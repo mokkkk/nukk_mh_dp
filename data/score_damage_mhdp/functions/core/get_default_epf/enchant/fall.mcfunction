@@ -1,8 +1,8 @@
-#> score_damage:core/get_default_epf/enchant/fall
+#> score_damage_mhdp:core/get_default_epf/enchant/fall
 #
 # 落下耐性のEPFを取得します
 #
-# @within function score_damage:core/get_default_epf/
+# @within function score_damage_mhdp:core/get_default_epf/
 
 # 0
     execute store result score $Temp ScoreDamageCore run data get storage score_damage: Protection[0][{id:"minecraft:feather_falling"}].lvl

@@ -14,7 +14,7 @@ execute unless predicate asa_animator:dyno/stay run function asa_animator:dyno/a
 execute as @e[type=slime,tag=DynoParts,sort=arbitrary] run function asa_animator:dyno/manager/health/pos
 
 # デスポーン
-execute unless entity @s[tag=AnmSummon] unless entity @a[distance=0..64] run function asa_animator:dyno/manager/despawn
+execute unless entity @s[tag=AnmSummon] if data storage mh_dp:settings {Custom:{DisableDespawn:false}} unless entity @a[distance=0..64] run function asa_animator:dyno/manager/despawn
 
 # 赤熱化パーティクル
 execute if entity @s[tag=IsHeatHead] as @e[distance=0..15,type=armor_stand,tag=DynoParts,tag=HeadU] at @s positioned ^ ^1 ^0.5 run particle flame ~ ~ ~ 0.2 0.2 0.2 0.05 1

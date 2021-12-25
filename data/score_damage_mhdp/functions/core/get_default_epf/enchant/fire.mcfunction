@@ -1,8 +1,8 @@
-#> score_damage:core/get_default_epf/enchant/fire
+#> score_damage_mhdp:core/get_default_epf/enchant/fire
 #
 # 火炎耐性のEPFを取得します
 #
-# @within function score_damage:core/get_default_epf/
+# @within function score_damage_mhdp:core/get_default_epf/
 
 # 0
     execute store result score $Temp ScoreDamageCore run data get storage score_damage: Protection[0][{id:"minecraft:fire_protection"}].lvl

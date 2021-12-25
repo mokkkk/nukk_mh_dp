@@ -1,8 +1,8 @@
-#> score_damage:core/damage_indicator
+#> score_damage_mhdp:core/damage_indicator
 #
 # 二分探索でparticleを表示する
 #
-# @within function score_damage:core/health_subtract
+# @within function score_damage_mhdp:core/health_subtract
 
 # 値は10000倍されたものなのでDamage /= 10000する
 # 更に、damage_indicatorの表示はハート単位なのでDamage /= 2する

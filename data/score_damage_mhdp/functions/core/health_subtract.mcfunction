@@ -1,8 +1,8 @@
-#> score_damage:core/health_subtract
+#> score_damage_mhdp:core/health_subtract
 #
 # MobのHealthを減算する
 #
-# @within function score_damage:core/attack
+# @within function score_damage_mhdp:core/attack
 
 #> Temp
 # @private
@@ -28,17 +28,15 @@
     # Mob
         execute if entity @s[type=!player] if score $SubtractedHealth ScoreDamageCore matches 1.. store result entity @s Health float 0.0001 run scoreboard players get $SubtractedHealth ScoreDamageCore
     # Monster
-        execute if entity @s[type=slime,tag=MonsterParts] if score $SubtractedHealth ScoreDamageCore matches 1.. run function score_damage:mh_dp/monster
+        execute if entity @s[type=slime,tag=MonsterParts] if score $SubtractedHealth ScoreDamageCore matches 1.. run function score_damage_mhdp:mh_dp/monster
     # Common
         execute if entity @s[type=!player,type=!slime] if score $SubtractedHealth ScoreDamageCore matches ..0 run kill @s
     # CustomDeathMessage
-        execute if entity @s[type=player] if score $SubtractedHealth ScoreDamageCore matches ..0 run function score_damage:mh_dp/custom_death_message
+        execute if entity @s[type=player] if score $SubtractedHealth ScoreDamageCore matches ..0 run function score_damage_mhdp:mh_dp/custom_death_message
 # 演出
-    execute if score $SubtractedHealth ScoreDamageCore matches 1.. if entity @s[type=#score_damage:undead] run effect give @s instant_health 1 30 true
-    execute if score $SubtractedHealth ScoreDamageCore matches 1.. if score $Resistance ScoreDamageCore matches 5.. if entity @s[type=!#score_damage:undead] run effect give @s instant_damage 1 0 true
-    execute if score $SubtractedHealth ScoreDamageCore matches 1.. if score $Resistance ScoreDamageCore matches ..4 if entity @s[type=!player,type=!#score_damage:undead] run effect give @s instant_damage 1 31 true
-    execute if score $SubtractedHealth ScoreDamageCore matches 1.. if score $Resistance ScoreDamageCore matches ..4 if entity @s[type=player] run summon area_effect_cloud ~ ~ ~ {Duration:14,Age:4,Effects:[{Id:11b,Amplifier:127b,Duration:1,ShowParticles:0b},{Id:7b,Amplifier:0b,Duration:1,ShowParticles:0b}]}
-    execute if data storage score_damage: Argument{DisableParticle:0b} at @s run function score_damage:core/damage_indicator
+    execute if score $SubtractedHealth ScoreDamageCore matches 1.. if entity @s[type=#score_damage:undead] run summon area_effect_cloud ~ ~ ~ {Duration:14,Age:4,Effects:[{Id:11b,Amplifier:127b,Duration:1,ShowParticles:0b},{Id:6b,Amplifier:0b,Duration:1,ShowParticles:0b}]}
+    execute if score $SubtractedHealth ScoreDamageCore matches 1.. if entity @s[type=!#score_damage:undead] run summon area_effect_cloud ~ ~ ~ {Duration:14,Age:4,Effects:[{Id:11b,Amplifier:127b,Duration:1,ShowParticles:0b},{Id:7b,Amplifier:0b,Duration:1,ShowParticles:0b}]}
+    execute if data storage score_damage: Argument{DisableParticle:0b} at @s run function score_damage_mhdp:core/damage_indicator
 # リセット
     scoreboard players reset $SubtractedHealth ScoreDamageCore
     scoreboard players reset $HasDependency ScoreDamageCore

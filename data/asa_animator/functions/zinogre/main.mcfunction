@@ -18,4 +18,4 @@ execute if entity @s[tag=IsThunder] run particle minecraft:sneeze ~ ~2 ~ 1 0.5 1
 execute as @e[type=slime,tag=ZinogreHealth] run function asa_animator:zinogre/manager/health/pos
 
 # デスポーン
-execute unless entity @s[tag=AnmSummon] unless entity @a[distance=0..64] run function asa_animator:zinogre/manager/despawn
+execute unless entity @s[tag=AnmSummon] if data storage mh_dp:settings {Custom:{DisableDespawn:false}} unless entity @a[distance=0..64] run function asa_animator:zinogre/manager/despawn

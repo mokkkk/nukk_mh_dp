@@ -1,8 +1,8 @@
-#> score_damage:core/get_default_epf
+#> score_damage_mhdp:core/get_default_epf
 #
 # プロテクションのEPFを取得します
 #
-# @within function score_damage:core/get_status
+# @within function score_damage_mhdp:core/get_status
 
 #> Temp
 # @private

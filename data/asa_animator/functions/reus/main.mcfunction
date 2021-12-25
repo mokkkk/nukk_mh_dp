@@ -20,4 +20,4 @@ execute unless predicate asa_animator:reus/stay unless entity @s[tag=AnmTurn] ru
 execute as @e[type=slime,tag=ReusParts] run function asa_animator:reus/manager/health/pos
 
 # デスポーン
-execute unless entity @s[tag=AnmSummon] unless entity @a[distance=0..64] run function asa_animator:reus/manager/despawn
+execute unless entity @s[tag=AnmSummon] if data storage mh_dp:settings {Custom:{DisableDespawn:false}} unless entity @a[distance=0..64] run function asa_animator:reus/manager/despawn
