@@ -26,7 +26,7 @@ execute unless entity @e[tag=ReusAttackTarget] run tag @e[tag=ReusTarget,limit=1
 # 軸合わせ
 # execute unless predicate asa_animator:reus/turn run tag @s add AnmTurn
 
-tag @s add AnmTail2
+tag @s add AnmMove
 
 # 終了
 tag @s remove ChangeAnm

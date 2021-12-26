@@ -7,27 +7,27 @@ execute if entity @s[tag=AnmTailR] run function asa_animator:reus/anim/tail_spin
 execute if entity @s[tag=AnmTail2] run function asa_animator:reus/anim/tail_spin_2/main
 
 # 地上床ドン
-# execute if entity @s[tag=AnmJump] run function asa_animator:reus/anim/jump/main
+execute if entity @s[tag=AnmJump] run function asa_animator:reus/anim/jump/main
 
 # ブレス
-# execute if entity @s[tag=AnmBreath] run function asa_animator:reus/anim/breath/main
-
-# BJB
-# execute if entity @s[tag=AnmBjb] run function asa_animator:reus/anim/bjb/main
+execute if entity @s[tag=AnmBreath] run function asa_animator:reus/anim/breath/main
 
 # 移動
-# execute if entity @s[tag=AnmMove] run function asa_animator:reus/anim/move/main
+execute if entity @s[tag=AnmMove] run function asa_animator:reus/anim/move/main
 
 # 噛みつき
-# execute if entity @s[tag=AnmBite] run function asa_animator:reus/anim/bite/main
+execute if entity @s[tag=AnmBite] run function asa_animator:reus/anim/bite/main
 # 噛みつき・2連
-# execute if entity @s[tag=AnmBite2] run function asa_animator:reus/anim/bite_double/main
+execute if entity @s[tag=AnmBite2] run function asa_animator:reus/anim/bite_2/main
 
 # チャージ噛みつき
-# execute if entity @s[tag=AnmBiteC] run function asa_animator:reus/anim/bite_charge/main
+execute if entity @s[tag=AnmBiteC] run function asa_animator:reus/anim/bite_charge/main
 
 # 飛行開始
 # execute if entity @s[tag=AnmFly] run function asa_animator:reus/anim/start_fly/main
+
+# BJB（飛行開始）
+# execute if entity @s[tag=AnmBjb] run function asa_animator:reus/anim/bjb/main
 
 # 着地
 # execute if entity @s[tag=AnmEndFly] run function asa_animator:reus/anim/end_fly/main
