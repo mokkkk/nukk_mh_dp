@@ -9,10 +9,8 @@ execute if entity @s[tag=ChangeAnm] run function asa_animator:reus/manager/chang
 execute if predicate asa_animator:reus/stay unless entity @s[tag=IsFlying] run function asa_animator:reus/anim/stay/main
 # 飛行待機
 execute if predicate asa_animator:reus/stay if entity @s[tag=IsFlying] run function asa_animator:reus/anim/flying_stay/main
-
 # 軸合わせ
 execute unless predicate asa_animator:reus/stay if entity @s[tag=AnmTurn] run function asa_animator:reus/anim/turn/main
-
 # 行動
 execute unless predicate asa_animator:reus/stay unless entity @s[tag=AnmTurn] run function asa_animator:reus/anim/main
 
