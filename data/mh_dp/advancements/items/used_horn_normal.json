@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:shot_crossbow",
+      "conditions": {
+        "item": {
+          "nbt": "{MhdpItem:1}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mh_dp:item/horn_normal/main"
+  }
+}

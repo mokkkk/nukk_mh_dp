@@ -9,6 +9,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:clock",
+          "weight": 3,
           "functions": [
             {
               "function": "minecraft:set_nbt",
@@ -19,10 +20,22 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:clock",
+          "weight": 3,
           "functions": [
             {
               "function": "minecraft:set_nbt",
               "tag": "{display:{Name:'{\"text\":\"迅竜の黒毛\"}',Lore:['{\"text\":\"闇夜に溶ける漆黒の毛．\"}','{\"text\":\"防具の素材として使用される．\"}']},CustomModelData:10003,MhdpID:4}"
+              }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"竜骨\"}',Lore:['{\"text\":\"頑強な竜の骨．様々な用途がある．\"}']},CustomModelData:10018,MhdpID:19}"
               }
           ]
         }
