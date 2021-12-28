@@ -29,4 +29,4 @@ execute if entity @s[scores={AsaMatrix=12..23}] as @e[type=armor_stand,distance=
 execute if entity @s[scores={AsaMatrix=23..37}] as @e[type=armor_stand,distance=0..5,tag=ReusParts,tag=HeadU] at @s positioned ^ ^0.65 ^0.3 run particle lava ~ ~ ~ 0.1 0.1 0.1 0.05 3
 execute if entity @s[scores={AsaMatrix=23..37}] unless entity @e[distance=..6,tag=ReusAttackTarget] at @s run tp @s ^ ^ ^0.6
 execute if entity @s[scores={AsaMatrix=36}] positioned ^ ^1 ^5 run function asa_animator:reus/anim/bite/events/damage
-execute if entity @s[scores={AsaMatrix=50}] positioned ^ ^1 ^5 run function asa_animator:reus/anim/bite_charge/events/damage
+execute if entity @s[scores={AsaMatrix=48}] positioned ^ ^1 ^5 run function asa_animator:reus/anim/bite_charge/events/damage
