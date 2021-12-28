@@ -4,20 +4,19 @@ execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reus/anim/b
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reus/anim/bite/keyframes/0
 execute if entity @s[scores={AsaMatrix=1..7}] run tp @s ^0 ^0 ^0.02857143 ~-0.5 ~
 execute if entity @s[scores={AsaMatrix=8}] run function asa_animator:reus/anim/bite/keyframes/1
-execute if entity @s[scores={AsaMatrix=8..10}] run tp @s ^0 ^0 ^0.1 ~1 ~
-execute if entity @s[scores={AsaMatrix=11}] run function asa_animator:reus/anim/bite/keyframes/2
-execute if entity @s[scores={AsaMatrix=11..17}] run tp @s ^0 ^0 ^0.2
-execute if entity @s[scores={AsaMatrix=18}] run function asa_animator:reus/anim/bite/keyframes/3
-execute if entity @s[scores={AsaMatrix=18..27}] run tp @s ^0 ^0 ^0.1
-execute if entity @s[scores={AsaMatrix=28}] run function asa_animator:reus/anim/bite/keyframes/4
-execute if entity @s[scores={AsaMatrix=28..40}] run tp @s ^0 ^0 ^-0.07692308
-execute if entity @s[scores={AsaMatrix=41..}] run function asa_animator:reus/anim/bite/end
+execute if entity @s[scores={AsaMatrix=8..15}] run tp @s ^0 ^0 ^0 ~-1 ~
+execute if entity @s[scores={AsaMatrix=16}] run function asa_animator:reus/anim/bite/keyframes/2
+execute if entity @s[scores={AsaMatrix=16..22}] run tp @s ^0 ^0 ^0.1142857
+execute if entity @s[scores={AsaMatrix=23}] run function asa_animator:reus/anim/bite/keyframes/3
+execute if entity @s[scores={AsaMatrix=23..32}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=33}] run function asa_animator:reus/anim/bite/keyframes/4
+execute if entity @s[scores={AsaMatrix=33..45}] run tp @s ^0 ^0 ^-0.07692308
+execute if entity @s[scores={AsaMatrix=46..}] run function asa_animator:reus/anim/bite/end
 execute as @e[type=armor_stand,tag=ReusParts] run function #asa_matrix:animate
 function asa_animator:reus/model
 
 execute if entity @s[scores={AsaMatrix=1}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 
-# 敵の方向を向く
-execute if entity @s[scores={AsaMatrix=1..5}] run function asa_animator:reus/manager/rotate
-
-execute if entity @s[scores={AsaMatrix=14}] positioned ^ ^1 ^5 run function asa_animator:reus/anim/bite/events/damage
+execute if entity @s[scores={AsaMatrix=1..7}] run function asa_animator:reus/manager/rotate
+execute if entity @s[scores={AsaMatrix=1..7}] unless entity @e[distance=..6,tag=ReusAttackTarget] at @s run tp @s ^ ^ ^0.3
+execute if entity @s[scores={AsaMatrix=19}] positioned ^ ^1 ^5 run function asa_animator:reus/anim/bite/events/damage

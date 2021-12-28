@@ -7,8 +7,8 @@ execute as @e[type=armor_stand,tag=ReusParts,tag=Body0] run data merge entity @s
 execute as @e[type=armor_stand,tag=ReusParts,tag=Body1] run data merge entity @s {Pose:{Head:[-60f,0f,0f]}}
 execute as @e[type=armor_stand,tag=ReusParts,tag=LegL0] run data merge entity @s {Pose:{Head:[-10f,0f,0f]}}
 execute as @e[type=armor_stand,tag=ReusParts,tag=LegR0] run data merge entity @s {Pose:{Head:[-10f,0f,0f]}}
-execute as @e[type=armor_stand,tag=ReusParts,tag=LegL1] run data merge entity @s {Pose:{Head:[70f,0f,0f]}}
-execute as @e[type=armor_stand,tag=ReusParts,tag=LegR1] run data merge entity @s {Pose:{Head:[70f,0f,0f]}}
+execute as @e[type=armor_stand,tag=ReusParts,tag=LegL1] run data merge entity @s {Pose:{Head:[40f,0f,0f]}}
+execute as @e[type=armor_stand,tag=ReusParts,tag=LegR1] run data merge entity @s {Pose:{Head:[40f,0f,0f]}}
 execute as @e[type=armor_stand,tag=ReusParts,tag=LegL2] run data merge entity @s {Pose:{Head:[40f,0f,0f]}}
 execute as @e[type=armor_stand,tag=ReusParts,tag=LegR2] run data merge entity @s {Pose:{Head:[40f,0f,0f]}}
 execute as @e[type=armor_stand,tag=ReusParts,tag=Tail0] run data merge entity @s {Pose:{Head:[-30f,0f,0f]}}
@@ -18,3 +18,5 @@ execute as @e[type=armor_stand,tag=ReusParts,tag=WingL0] run data merge entity @
 execute as @e[type=armor_stand,tag=ReusParts,tag=WingR0] run data merge entity @s {Pose:{Head:[50f,10f,20f]}}
 execute as @e[type=armor_stand,tag=ReusParts,tag=WingL1] run data merge entity @s {Pose:{Head:[54f,-18f,-30f]}}
 execute as @e[type=armor_stand,tag=ReusParts,tag=WingR1] run data merge entity @s {Pose:{Head:[54f,18f,30f]}}
+execute as @e[type=armor_stand,tag=ReusParts,tag=WingL2] run data merge entity @s {Pose:{Head:[54f,-18f,-30f]}}
+execute as @e[type=armor_stand,tag=ReusParts,tag=WingR2] run data merge entity @s {Pose:{Head:[54f,18f,30f]}}

@@ -2,7 +2,7 @@
 # ランダム
 loot spawn ~ 0 ~ loot asa_animator:reus/normal/near
 # 尻尾回転
-execute if entity @e[type=item,nbt={Item:{tag:{Act:1}}}] run tag @s add AnmTail
+execute if entity @e[type=item,nbt={Item:{tag:{Act:1}}}] run function asa_animator:reus/manager/change_normal/_/tail
 # 床ドン
 execute if entity @e[type=item,nbt={Item:{tag:{Act:2}}}] run tag @s add AnmJump
 # 噛みつき

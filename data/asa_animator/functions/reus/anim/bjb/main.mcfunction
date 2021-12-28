@@ -13,6 +13,8 @@ execute if entity @s[scores={AsaMatrix=36..}] run function asa_animator:reus/ani
 execute as @e[type=armor_stand,tag=ReusParts] run function #asa_matrix:animate
 function asa_animator:reus/model
 
+execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reus/manager/model/change_to_fly
+
 # 敵を向く
 execute if entity @s[scores={AsaMatrix=1..12}] run function asa_animator:reus/manager/rotate
 
