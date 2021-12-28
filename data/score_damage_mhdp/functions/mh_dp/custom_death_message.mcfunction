@@ -6,7 +6,7 @@ execute if entity @s[tag=D_ReusTail] run tellraw @a [{"selector":"@s"},{"text": 
 execute if entity @s[tag=D_ReusBite] run tellraw @a [{"selector":"@s"},{"text": "は火竜に噛み砕かれた"}]
 execute if entity @s[tag=D_ReusJump] run tellraw @a [{"selector":"@s"},{"text": "は火竜に踏みつぶされた"}]
 execute if entity @s[tag=D_ReusCharge] run tellraw @a [{"selector":"@s"},{"text": "は火竜に黒焦げにされた"}]
-execute if entity @s[tag=D_ReusBreath] run tellraw @a [{"selector":"@s"},{"text": "は雌火竜に黒焦げにされた"}]
+execute if entity @s[tag=D_ReusBreath] run tellraw @a [{"selector":"@s"},{"text": "は火竜に黒焦げにされた"}]
 execute if entity @s[tag=D_ReusAttack] run tellraw @a [{"selector":"@s"},{"text": "は火竜に切り裂かれた"}]
 
 execute if entity @s[tag=D_ZinogreHand] run tellraw @a [{"selector":"@s"},{"text": "は雷狼竜に叩きのめされた"}]
