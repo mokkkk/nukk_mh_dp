@@ -16,9 +16,9 @@ data modify storage asa_matrix: Rotate set value [-5000f,0f,0f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=LegL0] run function #asa_matrix:animate_setparam
 data modify storage asa_matrix: Rotate set value [-4000f,0f,0f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=LegR0] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-5000f,0f,0f]
+data modify storage asa_matrix: Rotate set value [-3000f,0f,0f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=LegL1] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-4000f,0f,0f]
+data modify storage asa_matrix: Rotate set value [-2000f,0f,0f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=LegR1] run function #asa_matrix:animate_setparam
 data modify storage asa_matrix: Rotate set value [-5000f,0f,0f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=LegL2] run function #asa_matrix:animate_setparam
@@ -34,7 +34,11 @@ data modify storage asa_matrix: Rotate set value [3000f,2000f,1000f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=WingL0] run function #asa_matrix:animate_setparam
 data modify storage asa_matrix: Rotate set value [3000f,-2000f,-1000f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=WingR0] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [2200f,3600f,3000f]
+data modify storage asa_matrix: Rotate set value [2200f,3600f,-1000f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=WingL1] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [2200f,-3600f,-3000f]
+data modify storage asa_matrix: Rotate set value [2200f,-3600f,1000f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=WingR1] run function #asa_matrix:animate_setparam
+data modify storage asa_matrix: Rotate set value [2200f,3600f,-1000f]
+execute as @e[type=armor_stand,tag=ReusParts,tag=WingL2] run function #asa_matrix:animate_setparam
+data modify storage asa_matrix: Rotate set value [2200f,-3600f,1000f]
+execute as @e[type=armor_stand,tag=ReusParts,tag=WingR2] run function #asa_matrix:animate_setparam

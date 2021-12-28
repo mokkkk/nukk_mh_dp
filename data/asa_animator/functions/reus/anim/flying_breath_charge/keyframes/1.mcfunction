@@ -1,40 +1,44 @@
-data modify storage asa_matrix: Rotate set value [8125f,-8500f,0f]
+data modify storage asa_matrix: Rotate set value [12000f,1200f,0f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=HeadU] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [6250f,-8500f,0f]
+data modify storage asa_matrix: Rotate set value [13500f,1200f,0f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=HeadL] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [8125f,-7625f,0f]
+data modify storage asa_matrix: Rotate set value [12000f,900f,0f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=Neck0] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [5625f,-6750f,0f]
+data modify storage asa_matrix: Rotate set value [10000f,600f,0f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=Neck1] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [3125f,-5875f,0f]
+data modify storage asa_matrix: Rotate set value [8000f,300f,0f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=Neck2] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [625f,-5000f,0f]
+data modify storage asa_matrix: Rotate set value [6000f,0f,0f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=Body0] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [0f,-2500f,0f]
+data modify storage asa_matrix: Rotate set value [3500f,0f,0f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=Body1] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-2500f,-2500f,0f]
+data modify storage asa_matrix: Rotate set value [3000f,0f,0f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=LegL0] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-5000f,-2500f,0f]
+data modify storage asa_matrix: Rotate set value [1500f,0f,0f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=LegR0] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-2500f,-2500f,0f]
+data modify storage asa_matrix: Rotate set value [-3000f,0f,0f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=LegL1] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-5000f,-2500f,0f]
+data modify storage asa_matrix: Rotate set value [-4500f,0f,0f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=LegR1] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-2500f,-2500f,0f]
+data modify storage asa_matrix: Rotate set value [1000f,0f,0f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=LegL2] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-5000f,-2500f,0f]
+data modify storage asa_matrix: Rotate set value [-500f,0f,0f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=LegR2] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [0f,-2500f,0f]
+data modify storage asa_matrix: Rotate set value [3500f,-1500f,0f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=Tail0] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [0f,-2500f,0f]
+data modify storage asa_matrix: Rotate set value [3500f,-3000f,0f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=Tail1] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [0f,-2500f,0f]
+data modify storage asa_matrix: Rotate set value [3500f,-4500f,0f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=Tail2] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [5625f,-5000f,0f]
+data modify storage asa_matrix: Rotate set value [9000f,0f,4000f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=WingL0] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [5625f,-5000f,0f]
+data modify storage asa_matrix: Rotate set value [9000f,0f,-4000f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=WingR0] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [6000f,-3750f,0f]
+data modify storage asa_matrix: Rotate set value [8300f,3000f,7000f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=WingL1] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [5000f,-5500f,0f]
+data modify storage asa_matrix: Rotate set value [8300f,-4200f,-7000f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=WingR1] run function #asa_matrix:animate_setparam
+data modify storage asa_matrix: Rotate set value [8300f,3000f,7000f]
+execute as @e[type=armor_stand,tag=ReusParts,tag=WingL2] run function #asa_matrix:animate_setparam
+data modify storage asa_matrix: Rotate set value [8300f,-4200f,-7000f]
+execute as @e[type=armor_stand,tag=ReusParts,tag=WingR2] run function #asa_matrix:animate_setparam

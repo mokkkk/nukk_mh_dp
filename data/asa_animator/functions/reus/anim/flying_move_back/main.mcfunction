@@ -2,10 +2,10 @@
 scoreboard players add @s AsaMatrix 1
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reus/anim/flying_move_back/start
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reus/anim/flying_move_back/keyframes/0
-execute if entity @s[scores={AsaMatrix=1..10}] run tp @s ^0 ^0.2 ^-0.4
-execute if entity @s[scores={AsaMatrix=11}] run function asa_animator:reus/anim/flying_move_back/keyframes/1
-execute if entity @s[scores={AsaMatrix=11..28}] run tp @s ^0 ^-0.09444445 ^-0.1111111
-execute if entity @s[scores={AsaMatrix=29..}] run function asa_animator:reus/anim/flying_move_back/end
+execute if entity @s[scores={AsaMatrix=1..8}] run tp @s ^0 ^0.2 ^-0.4
+execute if entity @s[scores={AsaMatrix=9}] run function asa_animator:reus/anim/flying_move_back/keyframes/1
+execute if entity @s[scores={AsaMatrix=9..22}] run tp @s ^0 ^-0.09444445 ^-0.1111111
+execute if entity @s[scores={AsaMatrix=23..}] run function asa_animator:reus/anim/flying_move_back/end
 execute as @e[type=armor_stand,tag=ReusParts] run function #asa_matrix:animate
 function asa_animator:reus/model
 

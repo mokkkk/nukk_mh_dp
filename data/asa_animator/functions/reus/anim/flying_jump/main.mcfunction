@@ -24,7 +24,7 @@ execute as @e[type=armor_stand,tag=ReusParts] run function #asa_matrix:animate
 function asa_animator:reus/model
 
 # 敵の方向を向く
-execute if entity @s[scores={AsaMatrix=1..34}] at @s run function asa_animator:reus/manager/rotate_fast
+execute if entity @s[scores={AsaMatrix=1..34}] at @s run function asa_animator:reus/manager/rotate
 execute if entity @s[scores={AsaMatrix=28}] run function asa_animator:reus/anim/flying_jump/events/set_pos
 execute if entity @s[scores={AsaMatrix=36..55}] at @s run function asa_animator:reus/anim/flying_jump/events/offset
 

@@ -2,15 +2,15 @@
 scoreboard players add @s AsaMatrix 1
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reus/anim/destroy_head/start
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reus/anim/destroy_head/keyframes/0
-execute if entity @s[scores={AsaMatrix=1..5}] run tp @s ^0 ^0 ^-0.04
+execute if entity @s[scores={AsaMatrix=1..5}] run tp @s ^0 ^-0.05 ^-0.04 ~0.5 ~
 execute if entity @s[scores={AsaMatrix=6}] run function asa_animator:reus/anim/destroy_head/keyframes/1
-execute if entity @s[scores={AsaMatrix=6..20}] run tp @s ^0 ^0 ^0.01333333
+execute if entity @s[scores={AsaMatrix=6..20}] run tp @s ^0 ^0.003333333 ^0.01333333
 execute if entity @s[scores={AsaMatrix=21}] run function asa_animator:reus/anim/destroy_head/keyframes/2
 execute if entity @s[scores={AsaMatrix=21..30}] run tp @s ^0 ^0 ^0
 execute if entity @s[scores={AsaMatrix=31}] run function asa_animator:reus/anim/destroy_head/keyframes/3
 execute if entity @s[scores={AsaMatrix=31..40}] run tp @s ^0 ^0 ^0
 execute if entity @s[scores={AsaMatrix=41}] run function asa_animator:reus/anim/destroy_head/keyframes/4
-execute if entity @s[scores={AsaMatrix=41..55}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=41..55}] run tp @s ^0 ^0.01333333 ^0
 execute if entity @s[scores={AsaMatrix=56..}] run function asa_animator:reus/anim/destroy_head/end
 execute as @e[type=armor_stand,tag=ReusParts] run function #asa_matrix:animate
 function asa_animator:reus/model

@@ -22,3 +22,5 @@ execute if entity @s[scores={AsaMatrix=1..30}] run function asa_animator:reus/an
 
 execute if entity @s[scores={AsaMatrix=8}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=28}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
+
+execute if entity @s[scores={AsaMatrix=36}] run function asa_animator:reus/manager/model/change_to_normal

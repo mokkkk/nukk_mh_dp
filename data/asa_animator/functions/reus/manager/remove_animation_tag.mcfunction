@@ -1,4 +1,6 @@
-tag @s remove AnmTail
+tag @s remove AnmTailL
+tag @s remove AnmTailR
+tag @s remove AnmTail2
 tag @s remove AnmJump
 tag @s remove AnmBreath
 tag @s remove AnmBjb
@@ -18,10 +20,16 @@ tag @s remove AnmFlyMoveB
 tag @s remove AnmFlyMoveF
 tag @s remove AnmFlyMoveL
 tag @s remove AnmFlyMoveR
-tag @s remove AnmSummon
 tag @s remove AnmFlyDamage
 tag @s remove AnmDHead
 tag @s remove AnmDBody
 tag @s remove AnmDTail
-tag @s remove AnmTurn
+tag @s remove AnmTurnR
+tag @s remove AnmTurnL
+tag @s remove AnmSummon
 tag @s remove AnmVoice
+tag @s remove IsTurn
+kill @e[type=marker,tag=ReusBreathTarget]
+kill @e[type=marker,tag=ReusChargeFPos]
+kill @e[type=marker,tag=ReusChargeTarget]
+kill @e[type=marker,tag=ReusChargeAttack]

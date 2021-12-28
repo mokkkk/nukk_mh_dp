@@ -26,15 +26,19 @@ data modify storage asa_matrix: Rotate set value [2500f,0f,0f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=LegR2] run function #asa_matrix:animate_setparam
 data modify storage asa_matrix: Rotate set value [-2500f,875f,0f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=Tail0] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-3750f,1750f,0f]
+data modify storage asa_matrix: Rotate set value [-3125f,1750f,0f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=Tail1] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-3750f,2625f,0f]
+data modify storage asa_matrix: Rotate set value [-3125f,2625f,0f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=Tail2] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [8750f,0f,2125f]
+data modify storage asa_matrix: Rotate set value [8750f,0f,875f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=WingL0] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [8750f,0f,-4125f]
+data modify storage asa_matrix: Rotate set value [8750f,0f,-2875f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=WingR0] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [9000f,0f,875f]
+data modify storage asa_matrix: Rotate set value [7750f,0f,-375f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=WingL1] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [9125f,0f,-2875f]
+data modify storage asa_matrix: Rotate set value [7875f,0f,-1625f]
 execute as @e[type=armor_stand,tag=ReusParts,tag=WingR1] run function #asa_matrix:animate_setparam
+data modify storage asa_matrix: Rotate set value [7750f,0f,-375f]
+execute as @e[type=armor_stand,tag=ReusParts,tag=WingL2] run function #asa_matrix:animate_setparam
+data modify storage asa_matrix: Rotate set value [7875f,0f,-1625f]
+execute as @e[type=armor_stand,tag=ReusParts,tag=WingR2] run function #asa_matrix:animate_setparam

@@ -1,6 +1,7 @@
 
 # markerセット
-execute rotated ~ 0 as @e[tag=ReusAttackTarget] positioned as @s run summon marker ^2 ^3 ^-2 {Tags:["ReusMovePos"]}
+summon marker ^-2 ^3 ^-2 {Tags:["ReusMovePos"]}
+execute rotated ~ 0 positioned as @e[tag=ReusAttackTarget] positioned ^2 ^3 ^-2 run tp @e[type=marker,tag=ReusMovePos] ~ ~ ~
 
 # ポジション差分取得
 data merge storage mhdp: {PosTemp:[], MarkerPosTemp:[]}
