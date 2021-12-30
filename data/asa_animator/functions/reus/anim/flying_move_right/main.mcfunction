@@ -2,16 +2,14 @@
 scoreboard players add @s AsaMatrix 1
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reus/anim/flying_move_right/start
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reus/anim/flying_move_right/keyframes/0
-execute if entity @s[scores={AsaMatrix=1..10}] run tp @s ^0 ^0 ^
-execute if entity @s[scores={AsaMatrix=11}] run function asa_animator:reus/anim/flying_move_right/keyframes/1
-execute if entity @s[scores={AsaMatrix=11..16}] run tp @s ^0 ^-0.25 ^0
-execute if entity @s[scores={AsaMatrix=17}] run function asa_animator:reus/anim/flying_move_right/keyframes/2
-execute if entity @s[scores={AsaMatrix=17..20}] run tp @s ^0 ^0.125 ^0
+execute if entity @s[scores={AsaMatrix=1..6}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=7}] run function asa_animator:reus/anim/flying_move_right/keyframes/1
+execute if entity @s[scores={AsaMatrix=7..14}] run tp @s ^0 ^-0.1875 ^0
+execute if entity @s[scores={AsaMatrix=15}] run function asa_animator:reus/anim/flying_move_right/keyframes/2
+execute if entity @s[scores={AsaMatrix=15..20}] run tp @s ^0 ^0.08333334 ^0
 execute if entity @s[scores={AsaMatrix=21}] run function asa_animator:reus/anim/flying_move_right/keyframes/3
-execute if entity @s[scores={AsaMatrix=21..27}] run tp @s ^0 ^0.1428571 ^0
-execute if entity @s[scores={AsaMatrix=28}] run function asa_animator:reus/anim/flying_move_right/keyframes/4
-execute if entity @s[scores={AsaMatrix=28..35}] run tp @s ^-0.1 ^0 ^0
-execute if entity @s[scores={AsaMatrix=36..}] run function asa_animator:reus/anim/flying_move_right/end
+execute if entity @s[scores={AsaMatrix=21..30}] run tp @s ^0 ^0.1 ^0
+execute if entity @s[scores={AsaMatrix=31..}] run function asa_animator:reus/anim/flying_move_right/end
 execute as @e[type=armor_stand,tag=ReusParts] run function #asa_matrix:animate
 function asa_animator:reus/model
 
@@ -23,4 +21,4 @@ execute if entity @s[scores={AsaMatrix=1..10}] at @s run function asa_animator:r
 execute if entity @s[scores={AsaMatrix=11..28}] at @s run tp @s ^-0.6 ^ ^-0.1 ~-5 ~
 execute if entity @s[scores={AsaMatrix=29..}] at @s run function asa_animator:reus/manager/rotate
 
-execute if entity @s[scores={AsaMatrix=15}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
+execute if entity @s[scores={AsaMatrix=13}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7

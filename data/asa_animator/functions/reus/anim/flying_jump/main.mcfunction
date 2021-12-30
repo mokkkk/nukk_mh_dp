@@ -24,7 +24,7 @@ execute as @e[type=armor_stand,tag=ReusParts] run function #asa_matrix:animate
 function asa_animator:reus/model
 
 # 敵の方向を向く
-execute if entity @s[scores={AsaMatrix=1..34}] at @s run function asa_animator:reus/manager/rotate_fast
+execute if entity @s[scores={AsaMatrix=1..34}] at @s run function asa_animator:reus/manager/rotate
 execute if entity @s[scores={AsaMatrix=28}] run function asa_animator:reus/anim/flying_jump/events/set_pos
 execute if entity @s[scores={AsaMatrix=36..55}] at @s run function asa_animator:reus/anim/flying_jump/events/offset
 
@@ -32,3 +32,7 @@ execute if entity @s[scores={AsaMatrix=1}] run playsound entity.ender_dragon.fla
 execute if entity @s[scores={AsaMatrix=35}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 
 execute if entity @s[scores={AsaMatrix=56}] positioned ^ ^ ^1 run function asa_animator:reus/anim/jump/events/damage
+
+
+execute if entity @s[scores={AsaMatrix=56..}] at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
+execute if entity @s[scores={AsaMatrix=56..}] at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~

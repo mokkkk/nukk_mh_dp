@@ -9,7 +9,7 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 35,
+              "weight": 3,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
@@ -21,7 +21,7 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 35,
+              "weight": 2,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
@@ -33,11 +33,23 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 30,
+              "weight": 1,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
                 "tag": "{ActPaper:1,Act:3}"
+                }
+              ]
+            }
+            ,
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 2,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:4}"
                 }
               ]
             }

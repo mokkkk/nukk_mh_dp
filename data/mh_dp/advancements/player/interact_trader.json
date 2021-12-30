@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"MhdpTrader\"]}"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:wandering_trader"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "mh_dp:player/advancements/interact_trader"
+  }
+}
