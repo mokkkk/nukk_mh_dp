@@ -29,6 +29,5 @@ tag @s remove AnmDHead
 tag @s remove AnmDBody
 tag @s remove AnmDTail
 tag @s remove AnmFlyDamage
-tag @s remove IsFlying
 
 kill @e[tag=ReiaBreathTarget]
