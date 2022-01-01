@@ -17,6 +17,8 @@ execute if entity @s[scores={AsaMatrix=51..}] run function asa_animator:reia/ani
 execute as @e[type=armor_stand,tag=ReiaParts] run function #asa_matrix:animate
 function asa_animator:reia/model
 
+execute if entity @s[scores={AsaMatrix=50}] run function asa_animator:reia/manager/model/change_to_normal
+
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reus/anim/end_fly/events/set_pos
 execute if entity @s[scores={AsaMatrix=1..30}] run function asa_animator:reus/anim/end_fly/events/offset
 

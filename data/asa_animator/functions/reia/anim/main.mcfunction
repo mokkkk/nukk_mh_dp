@@ -19,14 +19,15 @@ execute if entity @s[tag=AnmBreath3] run function asa_animator:reia/anim/breath_
 execute if entity @s[tag=AnmBjbLand] run function asa_animator:reia/anim/bjb_land/main
 
 # チャージブレス
-# execute if entity @s[tag=AnmCharge] run function asa_animator:reia/anim/charge/main
+execute if entity @s[tag=AnmCharge] run function asa_animator:reia/anim/charge/main
 
 # 突進開始
-# execute if entity @s[tag=AnmDashStart] run function asa_animator:reia/anim/start_dash/main
+execute if entity @s[tag=AnmDashStart] run function asa_animator:reia/anim/start_dash/main
 # 突進
-# execute if entity @s[tag=AnmDash] run function asa_animator:reia/anim/dash/main
+execute if entity @s[tag=AnmDash] run function asa_animator:reia/anim/dash/main
 # 突進振り向き
-# execute if entity @s[tag=AnmDashTurn] run function asa_animator:reia/anim/dash_turn/main
+execute if entity @s[tag=AnmDashTurnL] run function asa_animator:reia/anim/dash_turn_l/main
+execute if entity @s[tag=AnmDashTurnR] run function asa_animator:reia/anim/dash_turn_r/main
 # 突進噛みつき
 # execute if entity @s[tag=AnmDashBite] run function asa_animator:reia/anim/dash_bite/main
 
@@ -48,6 +49,8 @@ execute if entity @s[tag=AnmBjbLand] run function asa_animator:reia/anim/bjb_lan
 execute if entity @s[tag=AnmSummon] run function asa_animator:reia/anim/summon/main
 # 着地
 execute if entity @s[tag=AnmEndFly] run function asa_animator:reia/anim/end_fly/main
+# 咆哮
+execute if entity @s[tag=AnmVoice] run function asa_animator:reia/anim/voice/main
 
 # 討伐
 # execute if entity @s[tag=AnmDeath] run function asa_animator:reia/anim/death/main
