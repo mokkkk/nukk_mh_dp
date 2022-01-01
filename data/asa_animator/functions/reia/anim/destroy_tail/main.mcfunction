@@ -2,19 +2,28 @@
 scoreboard players add @s AsaMatrix 1
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reia/anim/destroy_tail/start
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reia/anim/destroy_tail/keyframes/0
-execute if entity @s[scores={AsaMatrix=1..6}] run tp @s ^0 ^0.03333334 ^0
+execute if entity @s[scores={AsaMatrix=1..6}] run tp @s ^0 ^0.03333334 ^0.6666667 ~3 ~
 execute if entity @s[scores={AsaMatrix=7}] run function asa_animator:reia/anim/destroy_tail/keyframes/1
-execute if entity @s[scores={AsaMatrix=7..12}] run tp @s ^-0.08333334 ^-0.03333334 ^0
+execute if entity @s[scores={AsaMatrix=7..12}] run tp @s ^-0.08333334 ^0 ^0.5 ~3 ~
 execute if entity @s[scores={AsaMatrix=13}] run function asa_animator:reia/anim/destroy_tail/keyframes/2
-execute if entity @s[scores={AsaMatrix=13..18}] run tp @s ^-0.08333334 ^-0.05 ^0
+execute if entity @s[scores={AsaMatrix=13..18}] run tp @s ^-0.08333334 ^-0.05 ^0.5 ~3 ~
 execute if entity @s[scores={AsaMatrix=19}] run function asa_animator:reia/anim/destroy_tail/keyframes/3
-execute if entity @s[scores={AsaMatrix=19..30}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=19..30}] run tp @s ^0 ^0 ^0 ~1 ~
 execute if entity @s[scores={AsaMatrix=31}] run function asa_animator:reia/anim/destroy_tail/keyframes/4
-execute if entity @s[scores={AsaMatrix=31..45}] run tp @s ^0 ^-0.01333333 ^0
+execute if entity @s[scores={AsaMatrix=31..45}] run tp @s ^0 ^-0.01333333 ^-0.06666667 ~3 ~
 execute if entity @s[scores={AsaMatrix=46}] run function asa_animator:reia/anim/destroy_tail/keyframes/5
-execute if entity @s[scores={AsaMatrix=46..55}] run tp @s ^0 ^0.03 ^0
+execute if entity @s[scores={AsaMatrix=46..55}] run tp @s ^0 ^0.03 ^0 ~1 ~
 execute if entity @s[scores={AsaMatrix=56}] run function asa_animator:reia/anim/destroy_tail/keyframes/6
-execute if entity @s[scores={AsaMatrix=56..65}] run tp @s ^0 ^0.02 ^0
+execute if entity @s[scores={AsaMatrix=56..65}] run tp @s ^0 ^0.02 ^0 ~-0.1 ~
 execute if entity @s[scores={AsaMatrix=66..}] run function asa_animator:reia/anim/destroy_tail/end
 execute as @e[type=armor_stand,tag=ReiaParts] run function #asa_matrix:animate
 function asa_animator:reia/model
+
+# 高度調整
+execute if entity @s[scores={AsaMatrix=1..12}] at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
+execute if entity @s[scores={AsaMatrix=1..12}] at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~
+execute if entity @s[scores={AsaMatrix=56..65}] at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
+execute if entity @s[scores={AsaMatrix=56..65}] at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~
+
+execute if entity @s[scores={AsaMatrix=13..30}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
+execute if entity @s[scores={AsaMatrix=13..30}] run particle block grass_block ~ ~ ~ 1 0.1 1 0 10
