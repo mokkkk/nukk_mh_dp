@@ -1,4 +1,5 @@
-tag @s remove AnmTurn
+tag @s remove AnmTurnL
+tag @s remove AnmTurnR
 tag @s remove AnmTailL
 tag @s remove AnmTailR
 tag @s remove AnmTail2
