@@ -28,7 +28,7 @@ execute unless entity @a[tag=ReiaAttackTarget] run tag @e[tag=ReiaTarget,limit=1
 # execute unless predicate asa_animator:reia/turn run tag @s add AnmTurn
 
 # 強制
-tag @s add AnmSault
+tag @s add AnmMove
 
 # 終了
 tag @s remove ChangeAnm

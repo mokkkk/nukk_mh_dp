@@ -20,4 +20,4 @@ execute if entity @s[scores={AsaMatrix=1}] run playsound entity.ender_dragon.fla
 execute if entity @s[scores={AsaMatrix=1..22}] as @e[distance=0..12,type=armor_stand,tag=ReiaParts,tag=HeadU] at @s positioned ^ ^1.1 ^0.5 run function asa_animator:reia/anim/bite/events/particle
 execute if entity @s[scores={AsaMatrix=1..7}] run function asa_animator:reia/manager/rotate
 execute if entity @s[scores={AsaMatrix=1..7}] unless entity @e[distance=..6,tag=ReiaAttackTarget] at @s run tp @s ^ ^ ^0.3
-execute if entity @s[scores={AsaMatrix=19}] positioned ^ ^1 ^5 run function asa_animator:reia/anim/bite/events/damage
+execute if entity @s[scores={AsaMatrix=19}] positioned ^ ^1 ^5 run function asa_animator:reia/anim/bite_l/events/damage

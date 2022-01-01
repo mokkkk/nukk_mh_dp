@@ -28,13 +28,13 @@ execute if entity @s[tag=AnmDash] run function asa_animator:reia/anim/dash/main
 # 突進振り向き
 execute if entity @s[tag=AnmDashTurnL] run function asa_animator:reia/anim/dash_turn_l/main
 execute if entity @s[tag=AnmDashTurnR] run function asa_animator:reia/anim/dash_turn_r/main
-# 突進噛みつき
-# execute if entity @s[tag=AnmDashBite] run function asa_animator:reia/anim/dash_bite/main
+# 突進停止
+execute if entity @s[tag=AnmDashStop] run function asa_animator:reia/anim/dash_stop/main
 
 # 移動
-# execute if entity @s[tag=AnmMove] run function asa_animator:reia/anim/move/main
+execute if entity @s[tag=AnmMove] run function asa_animator:reia/anim/move/main
 # 移動噛みつき
-# execute if entity @s[tag=AnmMoveBite] run function asa_animator:reia/anim/move_bite/main
+execute if entity @s[tag=AnmMoveBite] run function asa_animator:reia/anim/move_bite/main
 
 # サマソ
 execute if entity @s[tag=AnmSault] run function asa_animator:reia/anim/sault/main
@@ -60,7 +60,7 @@ execute if entity @s[tag=AnmVoice] run function asa_animator:reia/anim/voice/mai
 # 頭部部位破壊
 # execute if entity @s[tag=AnmDHead] run function asa_animator:reia/anim/destroy_head/main
 # 胴体部位破壊
-# execute if entity @s[tag=AnmDBody] run function asa_animator:reia/anim/destroy_body/main
+execute if entity @s[tag=AnmDBody] run function asa_animator:reia/anim/destroy_body/main
 # 尻尾部位破壊
 # execute if entity @s[tag=AnmDTail] run function asa_animator:reia/anim/destroy_tail/main
 # 飛行時部位破壊

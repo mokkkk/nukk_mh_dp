@@ -2,7 +2,7 @@
 scoreboard players add @s AsaMatrix 1
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reus/anim/destroy_body/start
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reus/anim/destroy_body/keyframes/0
-execute if entity @s[scores={AsaMatrix=1..8}] run tp @s ^0 ^0 ^-0.0625
+execute if entity @s[scores={AsaMatrix=1..8}] run tp @s ^0 ^0 ^-0.0625 ~0.5 ~
 execute if entity @s[scores={AsaMatrix=9}] run function asa_animator:reus/anim/destroy_body/keyframes/1
 execute if entity @s[scores={AsaMatrix=9..16}] run tp @s ^0 ^-0.0375 ^-0.0625
 execute if entity @s[scores={AsaMatrix=17}] run function asa_animator:reus/anim/destroy_body/keyframes/2
