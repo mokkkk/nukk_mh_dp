@@ -37,13 +37,13 @@ execute if entity @s[tag=AnmDashTurnR] run function asa_animator:reia/anim/dash_
 # execute if entity @s[tag=AnmMoveBite] run function asa_animator:reia/anim/move_bite/main
 
 # サマソ
-# execute if entity @s[tag=AnmSault] run function asa_animator:reia/anim/sault/main
+execute if entity @s[tag=AnmSault] run function asa_animator:reia/anim/sault/main
 # 対空軸合わせ
-# execute if entity @s[tag=AnmFlyStay] run function asa_animator:reia/anim/flying_stay/main
+execute if entity @s[tag=AnmFlyStay] run function asa_animator:reia/anim/flying_stay/main
 # 飛行突進
-# execute if entity @s[tag=AnmFlyTackle] run function asa_animator:reia/anim/flying_tackle/main
+execute if entity @s[tag=AnmFlyTackle] run function asa_animator:reia/anim/flying_tackle/main
 # 飛行チャージブレス
-# execute if entity @s[tag=AnmFlyCharge] run function asa_animator:reia/anim/flying_charge/main
+execute if entity @s[tag=AnmFlyCharge] run function asa_animator:reia/anim/flying_charge/main
 
 # 召喚
 execute if entity @s[tag=AnmSummon] run function asa_animator:reia/anim/summon/main
