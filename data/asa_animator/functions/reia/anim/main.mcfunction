@@ -1,18 +1,22 @@
 
 # 尻尾回転
-# execute if entity @s[tag=AnmTail] run function asa_animator:reia/anim/tail_spin/main
+execute if entity @s[tag=AnmTailL] run function asa_animator:reia/anim/tail_spin_l/main
+execute if entity @s[tag=AnmTailR] run function asa_animator:reia/anim/tail_spin_r/main
+execute if entity @s[tag=AnmTail2] run function asa_animator:reia/anim/tail_spin_2/main
 
 # 火炎噛みつき
-# execute if entity @s[tag=AnmBite] run function asa_animator:reia/anim/bite/main
+execute if entity @s[tag=AnmBiteL] run function asa_animator:reia/anim/bite_l/main
+execute if entity @s[tag=AnmBiteR] run function asa_animator:reia/anim/bite_r/main
 
 # 噛みつき+尻尾回転
-# execute if entity @s[tag=AnmBiteTail] run function asa_animator:reia/anim/bite_tail/main
+execute if entity @s[tag=AnmBiteTailL] run function asa_animator:reia/anim/bite_tail_l/main
+execute if entity @s[tag=AnmBiteTailR] run function asa_animator:reia/anim/bite_tail_r/main
 
 # 3Wayブレス
-# execute if entity @s[tag=AnmBreath3] run function asa_animator:reia/anim/breath_3/main
+execute if entity @s[tag=AnmBreath3] run function asa_animator:reia/anim/breath_3/main
 
 # 着地Bjb
-# execute if entity @s[tag=AnmBjbLand] run function asa_animator:reia/anim/bjb_land/main
+execute if entity @s[tag=AnmBjbLand] run function asa_animator:reia/anim/bjb_land/main
 
 # チャージブレス
 # execute if entity @s[tag=AnmCharge] run function asa_animator:reia/anim/charge/main

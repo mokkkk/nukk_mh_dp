@@ -4,20 +4,23 @@ execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reia/anim/b
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reia/anim/bjb_land/keyframes/0
 execute if entity @s[scores={AsaMatrix=1..5}] run tp @s ^0 ^0 ^-0.02
 execute if entity @s[scores={AsaMatrix=6}] run function asa_animator:reia/anim/bjb_land/keyframes/1
-execute if entity @s[scores={AsaMatrix=6..15}] run tp @s ^0 ^0 ^0 ~-0.1 ~
+execute if entity @s[scores={AsaMatrix=6..15}] run tp @s ^0 ^0 ^0 ~0.1 ~
 execute if entity @s[scores={AsaMatrix=16}] run function asa_animator:reia/anim/bjb_land/keyframes/2
-execute if entity @s[scores={AsaMatrix=16..25}] run tp @s ^0 ^0.5 ^ ~0.1 ~
+execute if entity @s[scores={AsaMatrix=16..25}] run tp @s ^0 ^0.5 ^ ~-0.1 ~
 execute if entity @s[scores={AsaMatrix=26}] run function asa_animator:reia/anim/bjb_land/keyframes/3
-execute if entity @s[scores={AsaMatrix=26..32}] run tp @s ^0 ^-0.5714286 ^
-execute if entity @s[scores={AsaMatrix=33}] run function asa_animator:reia/anim/bjb_land/keyframes/4
-execute if entity @s[scores={AsaMatrix=33..40}] run tp @s ^0 ^-0.125 ^
+execute if entity @s[scores={AsaMatrix=26..33}] run tp @s ^0 ^-0.3125 ^
+execute if entity @s[scores={AsaMatrix=34}] run function asa_animator:reia/anim/bjb_land/keyframes/4
+execute if entity @s[scores={AsaMatrix=34..40}] run tp @s ^0 ^-0.3714286 ^
 execute if entity @s[scores={AsaMatrix=41}] run function asa_animator:reia/anim/bjb_land/keyframes/5
-execute if entity @s[scores={AsaMatrix=41..42}] run tp @s ^0 ^0 ^0
-execute if entity @s[scores={AsaMatrix=43}] run function asa_animator:reia/anim/bjb_land/keyframes/6
-execute if entity @s[scores={AsaMatrix=43..52}] run tp @s ^0 ^0 ^-0.1
-execute if entity @s[scores={AsaMatrix=53..}] run function asa_animator:reia/anim/bjb_land/end
+execute if entity @s[scores={AsaMatrix=41..45}] run tp @s ^0 ^0 ^-0.3
+execute if entity @s[scores={AsaMatrix=46}] run function asa_animator:reia/anim/bjb_land/keyframes/6
+execute if entity @s[scores={AsaMatrix=46..55}] run tp @s ^0 ^0.01 ^-0.2
+execute if entity @s[scores={AsaMatrix=56..}] run function asa_animator:reia/anim/bjb_land/end
 execute as @e[type=armor_stand,tag=ReiaParts] run function #asa_matrix:animate
 function asa_animator:reia/model
+
+execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reia/manager/model/change_to_fly
+execute if entity @s[scores={AsaMatrix=46}] run function asa_animator:reia/manager/model/change_to_normal
 
 # 敵を向く
 execute if entity @s[scores={AsaMatrix=1..10}] run function asa_animator:reia/manager/rotate
@@ -27,8 +30,8 @@ execute if entity @s[scores={AsaMatrix=11}] run summon marker ^ ^0.7 ^8 {Tags:["
 execute if entity @s[scores={AsaMatrix=11}] unless entity @e[distance=0..8,tag=ReiaAttackTarget] at @e[tag=ReiaAttackTarget,limit=1] run tp @e[type=marker,tag=ReiaBreathTarget] ~ ~ ~
 
 # ブレス発射
-execute if entity @s[scores={AsaMatrix=18}] positioned ^ ^4 ^3 facing entity @e[type=marker,tag=ReiaBreathTarget,limit=1] feet run function asa_animator:reia/anim/breath_3/events/shot
-execute if entity @s[scores={AsaMatrix=18}] run kill @e[type=marker,tag=ReiaBreathTarget]
+execute if entity @s[scores={AsaMatrix=22}] positioned ^ ^4 ^3 facing entity @e[type=marker,tag=ReiaBreathTarget,limit=1] feet run function asa_animator:reia/anim/breath_3/events/shot
+execute if entity @s[scores={AsaMatrix=22}] run kill @e[type=marker,tag=ReiaBreathTarget]
 execute if entity @s[scores={AsaMatrix=23}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 
 execute if entity @s[scores={AsaMatrix=15}] run function asa_animator:reia/anim/bjb_land/events/set_pos
@@ -36,3 +39,6 @@ execute if entity @s[scores={AsaMatrix=16..40}] run function asa_animator:reia/a
 
 execute if entity @s[scores={AsaMatrix=40}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=41..43}] run particle block grass_block ~ ~ ~ 1 0.2 1 0 10
+
+execute if entity @s[scores={AsaMatrix=41..}] at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
+execute if entity @s[scores={AsaMatrix=41..}] at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~

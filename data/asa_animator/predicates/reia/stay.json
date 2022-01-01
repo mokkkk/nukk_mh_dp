@@ -14,21 +14,49 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmTail\"]}"
+          "nbt": "{Tags:[\"AnmTailL\"]}"
         }
       },
       {
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmBite\"]}"
+          "nbt": "{Tags:[\"AnmTailR\"]}"
         }
       },
       {
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmBiteTail\"]}"
+          "nbt": "{Tags:[\"AnmTail2\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmBiteL\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmBiteR\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmBiteTailL\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmBiteTailR\"]}"
         }
       },
       {

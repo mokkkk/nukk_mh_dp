@@ -1,7 +1,11 @@
 tag @s remove AnmTurn
-tag @s remove AnmTail
-tag @s remove AnmBite
-tag @s remove AnmBiteTail
+tag @s remove AnmTailL
+tag @s remove AnmTailR
+tag @s remove AnmTail2
+tag @s remove AnmBiteL
+tag @s remove AnmBiteR
+tag @s remove AnmBiteTailL
+tag @s remove AnmBiteTailR
 tag @s remove AnmBreath3
 tag @s remove AnmBjbLand
 tag @s remove AnmCharge
@@ -23,3 +27,6 @@ tag @s remove AnmDHead
 tag @s remove AnmDBody
 tag @s remove AnmDTail
 tag @s remove AnmFlyDamage
+tag @s remove IsFlying
+
+kill @e[tag=ReiaBreathTarget]
