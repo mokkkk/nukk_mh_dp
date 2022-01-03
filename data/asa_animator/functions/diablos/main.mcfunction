@@ -7,24 +7,26 @@ execute if entity @s[tag=ChangeAnm] run function asa_animator:diablos/manager/ch
 # 軸合わせ
 execute if entity @s[tag=AnmTurn] run function asa_animator:diablos/anim/normal/turn/main
 
+# 待機
+execute if predicate asa_animator:diablos/stay run function asa_animator:diablos/anim/stay/main
 # 通常時
-execute unless entity @s[tag=AnmTurn] unless entity @s[tag=IsAnger] run function asa_animator:diablos/anim/normal/main
+# execute if predicate asa_animator:diablos/stay unless entity @s[tag=AnmTurn] unless entity @s[tag=IsAnger] run function asa_animator:diablos/anim/normal/main
 # 怒り時
-execute unless entity @s[tag=AnmTurn] if entity @s[tag=IsAnger] run function asa_animator:diablos/anim/anger/main
+# execute unless entity @s[tag=AnmTurn] if entity @s[tag=IsAnger] run function asa_animator:diablos/anim/anger/main
 
 # 怒り開始
-execute if entity @s[tag=AnmAnger] run function asa_animator:diablos/anim/normal/anger/main
+# execute if entity @s[tag=AnmAnger] run function asa_animator:diablos/anim/normal/anger/main
 
 # 登場
 execute if entity @s[tag=AnmSummon] run function asa_animator:diablos/anim/normal/summon/main
 # 死亡
-execute if entity @s[tag=AnmDeath] run function asa_animator:diablos/anim/normal/death/main
+# execute if entity @s[tag=AnmDeath] run function asa_animator:diablos/anim/normal/death/main
 # 頭部位破壊
-execute if entity @s[tag=AnmDHead] run function asa_animator:diablos/anim/destroy_head/main
+# execute if entity @s[tag=AnmDHead] run function asa_animator:diablos/anim/destroy_head/main
 # 胴体部位破壊
-execute if entity @s[tag=AnmDBody] run function asa_animator:diablos/anim/destroy_body/main
+# execute if entity @s[tag=AnmDBody] run function asa_animator:diablos/anim/destroy_body/main
 # 尻尾部位破壊
-execute if entity @s[tag=AnmDTail] run function asa_animator:diablos/anim/destroy_tail/main
+# execute if entity @s[tag=AnmDTail] run function asa_animator:diablos/anim/destroy_tail/main
 
 # 当たり判定位置
 execute unless entity @s[tag=InGround] as @e[type=slime,tag=DiablosParts] run function asa_animator:diablos/manager/health/pos
