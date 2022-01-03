@@ -13,14 +13,9 @@ execute if predicate asa_animator:brachyr/combo run function asa_animator:brachy
 
 # 通常時
 execute if predicate asa_animator:brachyr/combo run function asa_animator:brachyr/manager/change_normal/change
-# execute if predicate asa_animator:brachyr/combo run function asa_animator:brachyr/manager/change_normal/combo/a_start
 
 # コンボ
 execute unless predicate asa_animator:brachyr/combo run function asa_animator:brachyr/manager/change_normal/combo/change
-
-# 強制
-# tag @s add AnmRageSwitchBomb
-# function asa_animator:brachyr/manager/change_normal/_/punch
 
 # 終了
 tag @s remove ChangeAnm

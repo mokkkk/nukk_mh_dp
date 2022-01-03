@@ -29,7 +29,7 @@ function asa_animator:brachy/model
 
 execute if entity @s[scores={AsaMatrix=1..18}] run function asa_animator:brachy/manager/rotate
 
-execute if entity @s[scores={AsaMatrix=1..12}] if entity @e[distance=0..18,tag=BrachyAttackTarget] at @s run tp @s ^ ^ ^-0.6
+execute if entity @s[scores={AsaMatrix=1..12}] if entity @e[tag=BrachyAttackTarget,distance=0..18] at @s run tp @s ^ ^ ^-0.6
 execute if entity @s[scores={AsaMatrix=1..12}] at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
 execute if entity @s[scores={AsaMatrix=1..12}] at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~
 execute if entity @s[scores={AsaMatrix=1..12}] run playsound block.grass.step master @a ~ ~ ~ 2 0.5

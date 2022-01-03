@@ -27,12 +27,12 @@ execute if entity @s[scores={AsaMatrix=101..}] run function asa_animator:brachyr
 execute as @e[type=armor_stand,tag=BrachyRParts] run function #asa_matrix:animate
 function asa_animator:brachyr/model
 
-execute if entity @s[scores={AsaMatrix=1..18}] if predicate asa_animator:random/020 as @e[distance=0..10,type=armor_stand,tag=BrachyRParts,tag=HeadU] at @s run particle spit ~ ~1.4 ~ 0.1 0.1 0.1 0 1
+execute if entity @s[scores={AsaMatrix=1..18}] if predicate asa_animator:random/020 as @e[type=armor_stand,tag=BrachyRParts,tag=HeadU,distance=0..10] at @s run particle spit ~ ~1.4 ~ 0.1 0.1 0.1 0 1
 execute if entity @s[scores={AsaMatrix=9}] run playsound block.honey_block.break master @a ~ ~ ~ 2 0.5
 
 execute if entity @s[scores={AsaMatrix=41}] run playsound entity.hoglin.step master @a ~ ~ ~ 2 0.5
 
-execute if entity @s[scores={AsaMatrix=55..84}] as @e[distance=0..10,type=armor_stand,tag=BrachyRParts,tag=HeadU] at @s positioned ~ ~1.4 ~ run particle flash ~ ~ ~ 0 0 0 0 1
+execute if entity @s[scores={AsaMatrix=55..84}] as @e[type=armor_stand,tag=BrachyRParts,tag=HeadU,distance=0..10] at @s positioned ~ ~1.4 ~ run particle flash ~ ~ ~ 0 0 0 0 1
 execute if entity @s[scores={AsaMatrix=55}] run playsound entity.blaze.death master @a ~ ~ ~ 2 0.6
 execute if entity @s[scores={AsaMatrix=55}] run playsound entity.blaze.death master @a ~ ~ ~ 2 0.5
 execute if entity @s[scores={AsaMatrix=55}] run playsound entity.iron_golem.death master @a ~ ~ ~ 2 0.5

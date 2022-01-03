@@ -1,1 +1,1 @@
-tag @e[distance=0..15,type=armor_stand,tag=BrachyRBombSetter] add Rotate
+tag @e[type=armor_stand,tag=BrachyRBombSetter,distance=0..15] add Rotate

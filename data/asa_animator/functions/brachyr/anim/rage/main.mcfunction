@@ -83,17 +83,17 @@ execute if entity @s[scores={AsaMatrix=97}] positioned ^ ^ ^3 run function asa_a
 execute if entity @s[scores={AsaMatrix=103}] positioned ^ ^ ^3 run function asa_animator:brachyr/anim/rage/events/punch
 execute if entity @s[scores={AsaMatrix=135}] positioned ^ ^ ^3 run function asa_animator:brachyr/anim/rage/events/punch
 execute if entity @s[scores={AsaMatrix=135..140}] run function asa_animator:brachyr/anim/rage/events/rage
-execute if entity @s[scores={AsaMatrix=135..140}] as @e[distance=0..20,type=armor_stand,tag=BrachyRParts] at @s positioned ~ ~1.4 ~ run particle poof ~ ~ ~ 1 1 1 0 30
+execute if entity @s[scores={AsaMatrix=135..140}] as @e[type=armor_stand,tag=BrachyRParts,distance=0..20] at @s positioned ~ ~1.4 ~ run particle poof ~ ~ ~ 1 1 1 0 30
 execute if entity @s[scores={AsaMatrix=137}] run function asa_animator:brachyr/manager/model/change_to_rage
 
 execute if entity @s[scores={AsaMatrix=33..103}] positioned ^ ^ ^3 run particle crimson_spore ~ ~ ~ 1 0 1 1 100
 execute if entity @s[scores={AsaMatrix=33..103}] positioned ^ ^ ^3 run particle lava ~ ~ ~ 1 0 1 1 10
 
-execute if entity @s[scores={AsaMatrix=16..20}] as @e[distance=0..10,type=armor_stand,tag=BrachyRParts,tag=HeadU] at @s positioned ~ ~1.4 ~ run particle flash ~ ~ ~ 0 0 0 0 1
+execute if entity @s[scores={AsaMatrix=16..20}] as @e[type=armor_stand,tag=BrachyRParts,tag=HeadU,distance=0..10] at @s positioned ~ ~1.4 ~ run particle flash ~ ~ ~ 0 0 0 0 1
 execute if entity @s[scores={AsaMatrix=16}] run playsound entity.blaze.death master @a ~ ~ ~ 2 0.8
 execute if entity @s[scores={AsaMatrix=16}] run playsound entity.blaze.death master @a ~ ~ ~ 2 0.7
 
-execute if entity @s[scores={AsaMatrix=149..186}] as @e[distance=0..10,type=armor_stand,tag=BrachyRParts,tag=HeadU] at @s positioned ~ ~1.4 ~ run particle flash ~ ~ ~ 0 0 0 0 1
+execute if entity @s[scores={AsaMatrix=149..186}] as @e[type=armor_stand,tag=BrachyRParts,tag=HeadU,distance=0..10] at @s positioned ~ ~1.4 ~ run particle flash ~ ~ ~ 0 0 0 0 1
 execute if entity @s[scores={AsaMatrix=149}] run playsound entity.blaze.death master @a ~ ~ ~ 2 0.6
 execute if entity @s[scores={AsaMatrix=149}] run playsound entity.blaze.death master @a ~ ~ ~ 2 0.5
 execute if entity @s[scores={AsaMatrix=149}] run playsound entity.iron_golem.death master @a ~ ~ ~ 2 0.5
