@@ -24,8 +24,8 @@ function asa_animator:brachy/model
 execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master @a ~ ~ ~ 2 0.5
 
 execute if entity @s[scores={AsaMatrix=1..10}] run function asa_animator:brachy/manager/rotate
-execute if entity @s[scores={AsaMatrix=1..5}] if entity @e[distance=0..5,tag=BrachyAttackTarget] at @s run tp @s ^ ^ ^-0.5
-execute if entity @s[scores={AsaMatrix=16..25}] unless entity @e[distance=0..4,tag=BrachyAttackTarget] at @s run tp @s ^ ^ ^0.3
+execute if entity @s[scores={AsaMatrix=1..5}] if entity @e[tag=BrachyAttackTarget,distance=0..5] at @s run tp @s ^ ^ ^-0.5
+execute if entity @s[scores={AsaMatrix=16..25}] unless entity @e[tag=BrachyAttackTarget,distance=0..4] at @s run tp @s ^ ^ ^0.3
 
 execute if entity @s[scores={AsaMatrix=26}] positioned ^ ^ ^3.5 run function asa_animator:brachy/anim/head_bomb/events/damage
 

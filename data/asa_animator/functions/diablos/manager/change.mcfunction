@@ -6,10 +6,10 @@ tag @e[tag=DiablosAttackTarget] remove DiablosAttackTarget
 scoreboard players set @s AsaMatrix 0
 
 # ターゲット探索
-tag @e[type=#asa_animator:attack_target,tag=!DiablosParts,tag=!DiablosTarget,distance=0..50,tag=!NotTarget] add DiablosTarget
+tag @e[type=#asa_animator:attack_target,tag=!DiablosParts,tag=!DiablosTarget,tag=!NotTarget,distance=0..50] add DiablosTarget
 # ターゲット決定
-tag @a[tag=DiablosTarget,limit=1,sort=random,tag=!NotTarget] add DiablosAttackTarget
-execute unless entity @e[tag=DiablosAttackTarget] run tag @e[tag=DiablosTarget,limit=1,sort=random] add DiablosAttackTarget
+tag @a[tag=DiablosTarget,tag=!NotTarget,sort=random,limit=1] add DiablosAttackTarget
+execute unless entity @e[tag=DiablosAttackTarget] run tag @e[tag=DiablosTarget,sort=random,limit=1] add DiablosAttackTarget
 
 # 怒り変化
 execute if entity @s[tag=StartAnger] unless entity @s[tag=IsAnger] run tag @s add AnmAnger
