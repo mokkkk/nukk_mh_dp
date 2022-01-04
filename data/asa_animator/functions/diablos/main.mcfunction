@@ -4,11 +4,17 @@ scoreboard players add #mhdp_diablos_kill_timer AsaMatrix 1
 # アニメーション遷移
 execute if entity @s[tag=ChangeAnm] run function asa_animator:diablos/manager/change
 
-# 軸合わせ
-execute if entity @s[tag=AnmTurn] run function asa_animator:diablos/anim/normal/turn/main
-
 # 待機
 execute if predicate asa_animator:diablos/stay run function asa_animator:diablos/anim/stay/main
+# 軸合わせ
+# execute if entity @s[tag=AnmTurnL] run function asa_animator:diablos/anim/turn_l/main
+# execute if entity @s[tag=AnmTurnR] run function asa_animator:diablos/anim/turn_r/main
+# 行動
+execute unless entity @s[tag=IsTurn] unless predicate asa_animator:diablos/stay unless entity @s[tag=IsAnger] run function asa_animator:diablos/anim/main
+# execute unless entity @s[tag=IsTurn] unless predicate asa_animator:diablos/stay if entity @s[tag=IsAnger] run function asa_animator:diablos/anim_anger/main
+
+
+
 # 通常時
 # execute if predicate asa_animator:diablos/stay unless entity @s[tag=AnmTurn] unless entity @s[tag=IsAnger] run function asa_animator:diablos/anim/normal/main
 # 怒り時
