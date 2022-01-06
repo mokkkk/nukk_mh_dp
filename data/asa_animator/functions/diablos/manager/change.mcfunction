@@ -12,16 +12,18 @@ tag @a[tag=DiablosTarget,tag=!NotTarget,sort=random,limit=1] add DiablosAttackTa
 execute unless entity @e[tag=DiablosAttackTarget] run tag @e[tag=DiablosTarget,sort=random,limit=1] add DiablosAttackTarget
 
 # 怒り変化
-execute if entity @s[tag=StartAnger] unless entity @s[tag=IsAnger] run tag @s add AnmAnger
-execute if entity @s[tag=StartAnger] run tag @s remove StartAnger
-execute if entity @s[tag=IsAnger] run scoreboard players add #mhdp_diablos_anger_actcount AsaMatrix 1
-execute if entity @s[tag=IsAnger] if score #mhdp_diablos_anger_actcount AsaMatrix matches 10.. run tag @s remove IsAnger
+# execute if entity @s[tag=StartAnger] unless entity @s[tag=IsAnger] run tag @s add AnmAnger
+# execute if entity @s[tag=StartAnger] run tag @s remove StartAnger
+# execute if entity @s[tag=IsAnger] run scoreboard players add #mhdp_diablos_anger_actcount AsaMatrix 1
+# execute if entity @s[tag=IsAnger] if score #mhdp_diablos_anger_actcount AsaMatrix matches 10.. run tag @s remove IsAnger
 
 # 通常時
-execute unless entity @s[tag=AnmAnger] run function asa_animator:diablos/manager/change_normal/change
+# execute unless entity @s[tag=AnmAnger] run function asa_animator:diablos/manager/change_normal/change
 
 # 軸合わせ
-execute if predicate asa_animator:diablos/turn run tag @s add AnmTurn
+# execute if predicate asa_animator:diablos/turn run tag @s add AnmTurn
+
+tag @s add AnmShortDash
 
 # 終了
 tag @s remove ChangeAnm

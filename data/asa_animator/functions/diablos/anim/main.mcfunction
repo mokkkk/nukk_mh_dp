@@ -1,21 +1,25 @@
 
 # 頭振り回し
-# execute if entity @s[tag=AnmAttack] run function asa_animator:diablos/anim/normal/head/main
+execute if entity @s[tag=AnmAttack] run function asa_animator:diablos/anim/attack/main
 
 # 頭突き刺し
-# execute if entity @s[tag=AnmHead] run function asa_animator:diablos/anim/normal/head_horne/main
+execute if entity @s[tag=AnmHead] run function asa_animator:diablos/anim/horn/main
 
 # タックル
-# execute if entity @s[tag=AnmTackle] run function asa_animator:diablos/anim/normal/tackle/main
+execute if entity @s[tag=AnmTackleL] run function asa_animator:diablos/anim/tackle_l/main
+execute if entity @s[tag=AnmTackleR] run function asa_animator:diablos/anim/tackle_r/main
 
 # 尻尾回転
 # execute if entity @s[tag=AnmTailSpin] run function asa_animator:diablos/anim/normal/tail_spin/main
 
-# 尻尾叩きつけ
-# execute if entity @s[tag=AnmTailWhip] run function asa_animator:diablos/anim/normal/tail_whip/main
+# 尻尾ぶんぶん
+execute if entity @s[tag=AnmTailWhip] run function asa_animator:diablos/anim/tail_whip/main
+
+# 尻尾叩きつけ（岩飛ばし）
+execute if entity @s[tag=AnmTailShot] run function asa_animator:diablos/anim/tail_shot/main
 
 # 短距離突進
-# execute if entity @s[tag=AnmShortDash] run function asa_animator:diablos/anim/normal/short_dash/main
+execute if entity @s[tag=AnmShortDash] run function asa_animator:diablos/anim/short_dash/main
 
 # 歩き→短距離突進
 # execute if entity @s[tag=AnmWalk] run function asa_animator:diablos/anim/normal/walk/main

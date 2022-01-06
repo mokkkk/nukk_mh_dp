@@ -13,8 +13,6 @@ execute if predicate asa_animator:diablos/stay run function asa_animator:diablos
 execute unless entity @s[tag=IsTurn] unless predicate asa_animator:diablos/stay unless entity @s[tag=IsAnger] run function asa_animator:diablos/anim/main
 # execute unless entity @s[tag=IsTurn] unless predicate asa_animator:diablos/stay if entity @s[tag=IsAnger] run function asa_animator:diablos/anim_anger/main
 
-
-
 # 通常時
 # execute if predicate asa_animator:diablos/stay unless entity @s[tag=AnmTurn] unless entity @s[tag=IsAnger] run function asa_animator:diablos/anim/normal/main
 # 怒り時

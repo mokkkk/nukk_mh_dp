@@ -14,7 +14,14 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmTackle\"]}"
+          "nbt": "{Tags:[\"AnmTackleL\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmTackleR\"]}"
         }
       },
       {
@@ -36,6 +43,13 @@
         "entity": "this",
         "predicate": {
           "nbt": "{Tags:[\"AnmTailWhip\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmTailShot\"]}"
         }
       },
       {
