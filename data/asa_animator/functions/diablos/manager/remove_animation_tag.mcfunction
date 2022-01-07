@@ -19,3 +19,5 @@ tag @s remove AnmDive
 tag @s remove AnmDiveJump
 tag @s remove AnmAnger
 tag @s remove AnmSummon
+
+kill @e[type=marker,tag=DiablosDashTarget]

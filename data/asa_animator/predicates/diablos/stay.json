@@ -98,14 +98,7 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmStartD1\"]}"
-        }
-      },
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "nbt": "{Tags:[\"AnmStartD2\"]}"
+          "nbt": "{Tags:[\"AnmDashStart\"]}"
         }
       },
       {
@@ -147,7 +140,14 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmDashTurn\"]}"
+          "nbt": "{Tags:[\"AnmDashTurnL\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmDashTurnR\"]}"
         }
       },
       {

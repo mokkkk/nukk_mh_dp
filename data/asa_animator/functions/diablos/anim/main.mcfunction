@@ -29,6 +29,15 @@ execute if entity @s[tag=AnmShortDashC] run function asa_animator:diablos/anim/s
 # 移動
 execute if entity @s[tag=AnmMove] run function asa_animator:diablos/anim/move/main
 
+# 突進開始
+execute if entity @s[tag=AnmDashStart] run function asa_animator:diablos/anim/start_dash/main
+# 突進
+execute if entity @s[tag=AnmDash] run function asa_animator:diablos/anim/dash/main
+# 突進後角振り上げ
+execute if entity @s[tag=AnmDashAttack] run function asa_animator:diablos/anim/dash_horn/main
+# 突進軸合わせ
+execute if entity @s[tag=AnmDashTurnL] run function asa_animator:diablos/anim/dash_turn_l/main
+
 # 突進開始（構え）
 # execute if entity @s[tag=AnmStartD1] run function asa_animator:diablos/anim/normal/startdash1/main
 # 突進開始（足踏み）
