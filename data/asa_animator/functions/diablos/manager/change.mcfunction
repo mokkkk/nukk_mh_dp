@@ -23,7 +23,7 @@ execute unless entity @e[tag=DiablosAttackTarget] run tag @e[tag=DiablosTarget,s
 # 軸合わせ
 # execute if predicate asa_animator:diablos/turn run tag @s add AnmTurn
 
-tag @s add AnmDashStart
+tag @s add AnmDive
 
 # 終了
 tag @s remove ChangeAnm

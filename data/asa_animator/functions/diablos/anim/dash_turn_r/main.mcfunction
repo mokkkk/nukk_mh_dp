@@ -15,8 +15,8 @@ function asa_animator:diablos/model
 
 function asa_animator:diablos/manager/rotate
 
-execute if entity @s[scores={AsaMatrix=1..15}] at @s run tp @s ^ ^ ^-0.3
-execute if entity @s[scores={AsaMatrix=16..20}] at @s run tp @s ^ ^ ^-0.1
+execute if entity @s[scores={AsaMatrix=1..15}] at @s run tp @s ^ ^ ^-0.5
+execute if entity @s[scores={AsaMatrix=16..20}] at @s run tp @s ^ ^ ^-0.3
 execute if entity @s[scores={AsaMatrix=1..15}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 
 particle block sand ~ ~0.3 ~ 1 0 1 0 5

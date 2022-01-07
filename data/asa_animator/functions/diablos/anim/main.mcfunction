@@ -40,6 +40,6 @@ execute if entity @s[tag=AnmDashTurnL] run function asa_animator:diablos/anim/da
 execute if entity @s[tag=AnmDashTurnR] run function asa_animator:diablos/anim/dash_turn_r/main
 
 # 潜航開始
-# execute if entity @s[tag=AnmDive] run function asa_animator:diablos/anim/normal/dive/main
+execute if entity @s[tag=AnmDive] run function asa_animator:diablos/anim/dive/main
 # 飛び出し
-# execute if entity @s[tag=AnmDiveJump] run function asa_animator:diablos/anim/normal/dive_jump/main
+execute if entity @s[tag=AnmDiveJump] run function asa_animator:diablos/anim/dive_attack/main
