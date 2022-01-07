@@ -70,7 +70,14 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmWalk\"]}"
+          "nbt": "{Tags:[\"AnmWalkL\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmWalkR\"]}"
         }
       },
       {

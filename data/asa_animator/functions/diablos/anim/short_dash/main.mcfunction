@@ -12,11 +12,11 @@ execute if entity @s[scores={AsaMatrix=21..25}] run tp @s ^0 ^0 ^0.6
 execute if entity @s[scores={AsaMatrix=26}] run function asa_animator:diablos/anim/short_dash/keyframes/4
 execute if entity @s[scores={AsaMatrix=26..29}] run tp @s ^0 ^0.1 ^0.7
 execute if entity @s[scores={AsaMatrix=30}] run function asa_animator:diablos/anim/short_dash/keyframes/5
-execute if entity @s[scores={AsaMatrix=30..33}] run tp @s ^0 ^-0.075 ^0.8
+execute if entity @s[scores={AsaMatrix=30..33}] run tp @s ^0 ^-0.075 ^0.9
 execute if entity @s[scores={AsaMatrix=34}] run function asa_animator:diablos/anim/short_dash/keyframes/6
-execute if entity @s[scores={AsaMatrix=34..37}] run tp @s ^0 ^0.075 ^0.8
+execute if entity @s[scores={AsaMatrix=34..37}] run tp @s ^0 ^0.075 ^1
 execute if entity @s[scores={AsaMatrix=38}] run function asa_animator:diablos/anim/short_dash/keyframes/7
-execute if entity @s[scores={AsaMatrix=38..41}] run tp @s ^0 ^-0.075 ^0.8
+execute if entity @s[scores={AsaMatrix=38..41}] run tp @s ^0 ^-0.075 ^1
 execute if entity @s[scores={AsaMatrix=42}] run function asa_animator:diablos/anim/short_dash/keyframes/8
 execute if entity @s[scores={AsaMatrix=42..45}] run tp @s ^0 ^0.075 ^0.6
 execute if entity @s[scores={AsaMatrix=46}] run function asa_animator:diablos/anim/short_dash/keyframes/9

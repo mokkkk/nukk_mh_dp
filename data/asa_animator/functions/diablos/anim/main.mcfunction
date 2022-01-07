@@ -22,8 +22,9 @@ execute if entity @s[tag=AnmTailShot] run function asa_animator:diablos/anim/tai
 execute if entity @s[tag=AnmShortDash] run function asa_animator:diablos/anim/short_dash/main
 
 # 歩き→短距離突進
-# execute if entity @s[tag=AnmWalk] run function asa_animator:diablos/anim/normal/walk/main
-# execute if entity @s[tag=AnmShortDashC] run function asa_animator:diablos/anim/normal/short_dash_combo/main
+execute if entity @s[tag=AnmWalkL] run function asa_animator:diablos/anim/walk_l/main
+# execute if entity @s[tag=AnmWalkR] run function asa_animator:diablos/anim/walk_r/main
+execute if entity @s[tag=AnmShortDashC] run function asa_animator:diablos/anim/short_dash_combo/main
 
 # 移動→噛みつき
 # execute if entity @s[tag=AnmMove] run function asa_animator:diablos/anim/normal/move/main
