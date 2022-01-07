@@ -6,13 +6,13 @@ execute if entity @s[scores={AsaMatrix=1..5}] run tp @s ^0 ^0.04 ^0
 execute if entity @s[scores={AsaMatrix=6}] run function asa_animator:diablos/anim/walk_l/keyframes/1
 execute if entity @s[scores={AsaMatrix=6..11}] run tp @s ^0 ^-0.03333334 ^0
 execute if entity @s[scores={AsaMatrix=12}] run function asa_animator:diablos/anim/walk_l/keyframes/2
-execute if entity @s[scores={AsaMatrix=12..17}] run tp @s ^0 ^0.03333334 ^0 ~-3 ~
+execute if entity @s[scores={AsaMatrix=12..17}] run tp @s ^0 ^0.03333334 ^0 ~-2 ~
 execute if entity @s[scores={AsaMatrix=18}] run function asa_animator:diablos/anim/walk_l/keyframes/3
-execute if entity @s[scores={AsaMatrix=18..23}] run tp @s ^0 ^-0.03333334 ^0 ~-3 ~
+execute if entity @s[scores={AsaMatrix=18..23}] run tp @s ^0 ^-0.03333334 ^0 ~-2 ~
 execute if entity @s[scores={AsaMatrix=24}] run function asa_animator:diablos/anim/walk_l/keyframes/4
-execute if entity @s[scores={AsaMatrix=24..29}] run tp @s ^0 ^0.03333334 ^0 ~-3 ~
+execute if entity @s[scores={AsaMatrix=24..29}] run tp @s ^0 ^0.03333334 ^0 ~-2 ~
 execute if entity @s[scores={AsaMatrix=30}] run function asa_animator:diablos/anim/walk_l/keyframes/5
-execute if entity @s[scores={AsaMatrix=30..35}] run tp @s ^0 ^-0.03333334 ^0 ~-3 ~
+execute if entity @s[scores={AsaMatrix=30..35}] run tp @s ^0 ^-0.03333334 ^0 ~-2 ~
 execute if entity @s[scores={AsaMatrix=36}] run function asa_animator:diablos/anim/walk_l/keyframes/6
 execute if entity @s[scores={AsaMatrix=36..40}] run tp @s ^0 ^0.1 ^-0.18
 execute if entity @s[scores={AsaMatrix=41..}] run function asa_animator:diablos/anim/walk_l/end
