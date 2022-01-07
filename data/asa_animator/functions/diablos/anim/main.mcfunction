@@ -37,19 +37,7 @@ execute if entity @s[tag=AnmDash] run function asa_animator:diablos/anim/dash/ma
 execute if entity @s[tag=AnmDashAttack] run function asa_animator:diablos/anim/dash_horn/main
 # 突進軸合わせ
 execute if entity @s[tag=AnmDashTurnL] run function asa_animator:diablos/anim/dash_turn_l/main
-
-# 突進開始（構え）
-# execute if entity @s[tag=AnmStartD1] run function asa_animator:diablos/anim/normal/startdash1/main
-# 突進開始（足踏み）
-# execute if entity @s[tag=AnmStartD2] run function asa_animator:diablos/anim/normal/startdash2/main
-# 突進
-# execute if entity @s[tag=AnmDash] run function asa_animator:diablos/anim/normal/dash/main
-# 突進後角振り上げ
-# execute if entity @s[tag=AnmDashAttack] run function asa_animator:diablos/anim/normal/dash_attack/main
-# 突進後停止
-# execute if entity @s[tag=AnmDashStop] run function asa_animator:diablos/anim/normal/dash_stop/main
-# 突進軸合わせ
-# execute if entity @s[tag=AnmDashTurn] run function asa_animator:diablos/anim/normal/dash_turn/main
+execute if entity @s[tag=AnmDashTurnR] run function asa_animator:diablos/anim/dash_turn_r/main
 
 # 潜航開始
 # execute if entity @s[tag=AnmDive] run function asa_animator:diablos/anim/normal/dive/main

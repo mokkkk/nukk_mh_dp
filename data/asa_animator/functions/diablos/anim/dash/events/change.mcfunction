@@ -3,7 +3,7 @@ execute as @e[type=armor_stand,tag=DiablosParts] run function #asa_matrix:animat
 kill @e[type=marker,tag=DiablosDashTarget]
 tag @s remove AnmDash
 execute if entity @s[tag=DashTurned] run tag @s add AnmDashAttack
-execute unless entity @s[tag=DashTurned] run tag @s add AnmDashTurnL
+execute unless entity @s[tag=DashTurned] run tag @s add AnmDashTurnR
 tag @s add DashTurned
 
 # execute if entity @s[tag=StartD1] run tag @s add AnmDashAttack
