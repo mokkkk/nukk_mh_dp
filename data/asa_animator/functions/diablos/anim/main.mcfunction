@@ -10,7 +10,8 @@ execute if entity @s[tag=AnmTackleL] run function asa_animator:diablos/anim/tack
 execute if entity @s[tag=AnmTackleR] run function asa_animator:diablos/anim/tackle_r/main
 
 # 尻尾回転
-# execute if entity @s[tag=AnmTailSpin] run function asa_animator:diablos/anim/normal/tail_spin/main
+execute if entity @s[tag=AnmTailSpinL] run function asa_animator:diablos/anim/tail_spin_l/main
+execute if entity @s[tag=AnmTailSpinR] run function asa_animator:diablos/anim/tail_spin_r/main
 
 # 尻尾ぶんぶん
 execute if entity @s[tag=AnmTailWhip] run function asa_animator:diablos/anim/tail_whip/main
@@ -47,5 +48,7 @@ execute if entity @s[tag=AnmDiveJump] run function asa_animator:diablos/anim/div
 # 怒り開始
 execute if entity @s[tag=AnmAnger] run function asa_animator:diablos/anim/anger/main
 
+# 登場
+execute if entity @s[tag=AnmSummon] run function asa_animator:diablos/anim/summon/main
 # 咆哮
 execute if entity @s[tag=AnmVoice] run function asa_animator:diablos/anim/voice/main

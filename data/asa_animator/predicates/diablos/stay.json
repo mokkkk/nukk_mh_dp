@@ -35,7 +35,14 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmTailSpin\"]}"
+          "nbt": "{Tags:[\"AnmTailSpinL\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmTailSpinR\"]}"
         }
       },
       {

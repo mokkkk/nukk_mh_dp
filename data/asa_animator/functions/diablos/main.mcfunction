@@ -11,18 +11,16 @@ execute if predicate asa_animator:diablos/stay run function asa_animator:diablos
 # execute if entity @s[tag=AnmTurnR] run function asa_animator:diablos/anim/turn_r/main
 # 行動
 execute unless entity @s[tag=IsTurn] unless predicate asa_animator:diablos/stay unless entity @s[tag=IsAnger] run function asa_animator:diablos/anim/main
+
+
 # execute unless entity @s[tag=IsTurn] unless predicate asa_animator:diablos/stay if entity @s[tag=IsAnger] run function asa_animator:diablos/anim_anger/main
 
-# 通常時
-# execute if predicate asa_animator:diablos/stay unless entity @s[tag=AnmTurn] unless entity @s[tag=IsAnger] run function asa_animator:diablos/anim/normal/main
-# 怒り時
-# execute unless entity @s[tag=AnmTurn] if entity @s[tag=IsAnger] run function asa_animator:diablos/anim/anger/main
 
 # 怒り開始
 # execute if entity @s[tag=AnmAnger] run function asa_animator:diablos/anim/normal/anger/main
 
 # 登場
-execute if entity @s[tag=AnmSummon] run function asa_animator:diablos/anim/normal/summon/main
+# execute if entity @s[tag=AnmSummon] run function asa_animator:diablos/anim/summon/main
 # 死亡
 # execute if entity @s[tag=AnmDeath] run function asa_animator:diablos/anim/normal/death/main
 # 頭部位破壊
