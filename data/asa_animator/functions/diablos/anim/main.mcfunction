@@ -43,3 +43,9 @@ execute if entity @s[tag=AnmDashTurnR] run function asa_animator:diablos/anim/da
 execute if entity @s[tag=AnmDive] run function asa_animator:diablos/anim/dive/main
 # 飛び出し
 execute if entity @s[tag=AnmDiveJump] run function asa_animator:diablos/anim/dive_attack/main
+
+# 怒り開始
+execute if entity @s[tag=AnmAnger] run function asa_animator:diablos/anim/anger/main
+
+# 咆哮
+execute if entity @s[tag=AnmVoice] run function asa_animator:diablos/anim/voice/main

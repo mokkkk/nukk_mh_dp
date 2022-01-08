@@ -1,0 +1,21 @@
+
+execute as @e[type=armor_stand,tag=DiablosParts,tag=HeadU,distance=0..20] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10084
+execute as @e[type=armor_stand,tag=DiablosParts,tag=HeadL,distance=0..20] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10084
+execute as @e[type=armor_stand,tag=DiablosParts,tag=Neck0,distance=0..20] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10084
+execute as @e[type=armor_stand,tag=DiablosParts,tag=Neck1,distance=0..20] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10084
+execute as @e[type=armor_stand,tag=DiablosParts,tag=Neck2,distance=0..20] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10084
+execute as @e[type=armor_stand,tag=DiablosParts,tag=Body0,distance=0..20] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10084
+execute as @e[type=armor_stand,tag=DiablosParts,tag=Body1,distance=0..20] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10084
+execute as @e[type=armor_stand,tag=DiablosParts,tag=LegL0,distance=0..20] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10084
+execute as @e[type=armor_stand,tag=DiablosParts,tag=LegR0,distance=0..20] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10084
+execute as @e[type=armor_stand,tag=DiablosParts,tag=LegL1,distance=0..20] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10084
+execute as @e[type=armor_stand,tag=DiablosParts,tag=LegR1,distance=0..20] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10084
+execute as @e[type=armor_stand,tag=DiablosParts,tag=LegL2,distance=0..20] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10084
+execute as @e[type=armor_stand,tag=DiablosParts,tag=LegR2,distance=0..20] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10084
+execute as @e[type=armor_stand,tag=DiablosParts,tag=WingL0,distance=0..20] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10084
+execute as @e[type=armor_stand,tag=DiablosParts,tag=WingR0,distance=0..20] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10084
+execute as @e[type=armor_stand,tag=DiablosParts,tag=WingL1,distance=0..20] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10084
+execute as @e[type=armor_stand,tag=DiablosParts,tag=WingR1,distance=0..20] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10084
+execute as @e[type=armor_stand,tag=DiablosParts,tag=Tail0,distance=0..20] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10084
+execute as @e[type=armor_stand,tag=DiablosParts,tag=Tail1,distance=0..20] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10084
+execute as @e[type=armor_stand,tag=DiablosParts,tag=Tail2,distance=0..20] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10084

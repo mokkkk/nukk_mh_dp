@@ -20,7 +20,7 @@ execute as @e[type=armor_stand,tag=DiablosParts] run function #asa_matrix:animat
 function asa_animator:diablos/model
 
 # 攻撃
-# execute if entity @s[scores={AsaMatrix=5}] as @e[type=armor_stand,tag=DiablosParts] run function asa_animator:diablos/anim/normal/dive/events/change_to_normal
+execute if entity @s[scores={AsaMatrix=5}] run function asa_animator:diablos/manager/model/change_to_normal
 execute if entity @s[scores={AsaMatrix=8}] positioned ~ ~3 ~ run function asa_animator:diablos/anim/dive_attack/events/damage
 
 # 効果音

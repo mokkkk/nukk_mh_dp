@@ -19,5 +19,5 @@ execute if entity @s[scores={AsaMatrix=1..32}] run function asa_animator:diablos
 # 突進位置決定
 execute if entity @s[scores={AsaMatrix=32}] run summon marker ^ ^ ^10 {Tags:["DiablosDashTarget"]}
 execute if entity @s[scores={AsaMatrix=32}] positioned as @e[tag=DiablosAttackTarget] rotated ~ 0 positioned ^ ^ ^3 run tp @e[type=marker,tag=DiablosDashTarget] ~ ~ ~
-
+execute if entity @s[scores={AsaMatrix=32}] as @e[type=marker,tag=DiablosDashTarget] at @s run function asa_animator:zinogre/manager/check_ground
 execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7

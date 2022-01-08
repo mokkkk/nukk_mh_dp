@@ -32,7 +32,7 @@ execute if entity @s[scores={AsaMatrix=55}] run kill @e[type=marker,tag=DiablosD
 
 # ターゲット位置に移動
 execute if entity @s[scores={AsaMatrix=55}] at @s run tp @s ~ ~14 ~
-# execute if entity @s[scores={AsaMatrix=55}] as @e[type=armor_stand,tag=DiablosParts] run function asa_animator:diablos/anim/normal/dive/events/change_to_air
+execute if entity @s[scores={AsaMatrix=55}] run function asa_animator:diablos/manager/model/change_to_air
 execute if entity @s[scores={AsaMatrix=60..120}] run particle block sand ~ ~0.5 ~ 2 0 2 0 5
 execute if entity @s[scores={AsaMatrix=60..80}] at @s facing entity @e[tag=DiablosAttackTarget,limit=1] feet rotated ~ 0 run tp @s ^ ^3 ^1.5 ~ 0
 execute if entity @s[scores={AsaMatrix=81..110}] at @s facing entity @e[tag=DiablosAttackTarget,limit=1] feet rotated ~ 0 run tp @s ^ ^3 ^0.6 ~ 0
