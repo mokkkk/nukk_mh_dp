@@ -15,6 +15,7 @@ execute if entity @s[scores={AsaMatrix=56..}] run function asa_animator:diablos/
 execute as @e[type=armor_stand,tag=DiablosParts] run function #asa_matrix:animate
 function asa_animator:diablos/model
 
+execute if entity @s[scores={AsaMatrix=11}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 
 # execute if entity @s[scores={AsaMatrix=1}] if score #mhdp_diablos_actcount AsaMatrix matches 1.. run function asa_animator:diablos/anim/normal/stay/events/change
 

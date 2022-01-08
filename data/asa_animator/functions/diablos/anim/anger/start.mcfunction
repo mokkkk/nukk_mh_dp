@@ -20,3 +20,4 @@ execute as @e[type=armor_stand,tag=DiablosParts,tag=WingL1] run data merge entit
 execute as @e[type=armor_stand,tag=DiablosParts,tag=WingR1] run data merge entity @s {Pose:{Head:[75f,0f,-10f]}}
 execute as @e[type=armor_stand,tag=DiablosParts,tag=WingL2] run data merge entity @s {Pose:{Head:[75f,0f,10f]}}
 execute as @e[type=armor_stand,tag=DiablosParts,tag=WingR2] run data merge entity @s {Pose:{Head:[75f,0f,-10f]}}
+tag @s add IsAnger

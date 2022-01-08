@@ -20,8 +20,8 @@ function asa_animator:diablos/model
 execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 
 execute if entity @s[scores={AsaMatrix=1}] run playsound entity.hoglin.angry master @a ~ ~ ~ 2 0.5
-execute if entity @s[scores={AsaMatrix=13..25}] run playsound entity.skeleton_horse.death master @a ~ ~ ~ 3 0.8
-execute if entity @s[scores={AsaMatrix=13..25}] run playsound entity.zombie_horse.death master @a ~ ~ ~ 3 1.0
+execute if entity @s[scores={AsaMatrix=13..15}] run playsound entity.zombie_horse.death master @a ~ ~ ~ 3 1.1 0.05
+execute if entity @s[scores={AsaMatrix=13..15}] run playsound entity.zombie_horse.death master @a ~ ~ ~ 3 0.9 0.05
 execute if entity @s[scores={AsaMatrix=13}] run playsound entity.ender_dragon.growl master @a ~ ~ ~ 3 0.6
 execute if entity @s[scores={AsaMatrix=13}] run playsound entity.ender_dragon.growl master @a ~ ~ ~ 3 0.5
 

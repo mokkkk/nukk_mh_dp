@@ -2,21 +2,19 @@
 scoreboard players add @s AsaMatrix 1
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:diablos/anim/dash/start
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:diablos/anim/dash/keyframes/0
-execute if entity @s[scores={AsaMatrix=1..4}] run tp @s ^0 ^0.075 ^1.25
+execute if entity @s[scores={AsaMatrix=1..4}] run tp @s ^0 ^0.075 ^1.1
 execute if entity @s[scores={AsaMatrix=5}] run function asa_animator:diablos/anim/dash/keyframes/1
-execute if entity @s[scores={AsaMatrix=5..8}] run tp @s ^0 ^-0.075 ^1.25
+execute if entity @s[scores={AsaMatrix=5..8}] run tp @s ^0 ^-0.075 ^1.1
 execute if entity @s[scores={AsaMatrix=9}] run function asa_animator:diablos/anim/dash/keyframes/2
-execute if entity @s[scores={AsaMatrix=9..12}] run tp @s ^0 ^0.075 ^1.25
+execute if entity @s[scores={AsaMatrix=9..12}] run tp @s ^0 ^0.075 ^1.1
 execute if entity @s[scores={AsaMatrix=13}] run function asa_animator:diablos/anim/dash/keyframes/3
-execute if entity @s[scores={AsaMatrix=13..16}] run tp @s ^0 ^-0.075 ^1.25
+execute if entity @s[scores={AsaMatrix=13..16}] run tp @s ^0 ^-0.075 ^1.1
 execute if entity @s[scores={AsaMatrix=17..}] run function asa_animator:diablos/anim/dash/end
 execute as @e[type=armor_stand,tag=DiablosParts] run function #asa_matrix:animate
 function asa_animator:diablos/model
 
 # ターゲットが近くにある場合，停止
-execute positioned ^ ^ ^5 if entity @e[type=marker,tag=DiablosDashTarget,distance=0..4] unless entity @s[tag=DashTurned] run scoreboard players set #mhdp_diablos_dash_count AsaMatrix 2
-execute positioned ^ ^ ^5 if entity @e[type=marker,tag=DiablosDashTarget,distance=0..4] if entity @s[tag=DashTurned] run function asa_animator:diablos/anim/dash/events/change
-execute positioned ^ ^ ^5 if entity @e[type=marker,tag=DiablosDashTarget,distance=0..4] run kill @e[type=marker,tag=DiablosDashTarget,distance=0..4]
+execute positioned ^ ^ ^5 if entity @e[type=marker,tag=DiablosDashTarget,distance=0..4] run function asa_animator:diablos/anim/dash/events/change
 
 # パーティクル
 particle block sand ~ ~0.5 ~ 1 0 1 0 3

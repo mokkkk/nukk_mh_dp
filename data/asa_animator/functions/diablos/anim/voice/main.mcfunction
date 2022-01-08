@@ -28,9 +28,7 @@ execute if entity @s[scores={AsaMatrix=16..62}] run particle block sand ~ ~ ~ 3 
 
 execute if entity @s[scores={AsaMatrix=5}] run playsound entity.hoglin.angry master @a ~ ~ ~ 2 0.5
 execute if entity @s[scores={AsaMatrix=16..55}] run playsound entity.zombie_horse.death master @a ~ ~ ~ 3 1.1 0.05
-execute if entity @s[scores={AsaMatrix=16..25}] run playsound entity.zombie_horse.death master @a ~ ~ ~ 3 0.9 0.05
-execute if entity @s[scores={AsaMatrix=26..45}] run playsound entity.zombie_horse.death master @a ~ ~ ~ 3 1.0 0.05
-execute if entity @s[scores={AsaMatrix=46..55}] run playsound entity.zombie_horse.death master @a ~ ~ ~ 3 0.9 0.05
+execute if entity @s[scores={AsaMatrix=16..55}] run playsound entity.zombie_horse.death master @a ~ ~ ~ 3 0.9 0.05
 execute if entity @s[scores={AsaMatrix=16..20}] run playsound entity.ender_dragon.growl master @a ~ ~ ~ 3 0.6 0.05
 execute if entity @s[scores={AsaMatrix=16..20}] run playsound entity.ender_dragon.growl master @a ~ ~ ~ 3 0.5 0.05
 
