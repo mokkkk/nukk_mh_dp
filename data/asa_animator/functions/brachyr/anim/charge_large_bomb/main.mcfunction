@@ -64,3 +64,6 @@ execute if entity @s[scores={AsaMatrix=109..129}] positioned ^2 ^ ^4 run functio
 
 execute if entity @s[scores={AsaMatrix=163}] positioned ^ ^ ^6 run function asa_animator:brachyr/anim/head_bomb/events/damage
 execute if entity @s[scores={AsaMatrix=163..183}] positioned ^ ^ ^6 run function asa_animator:brachyr/anim/charge_large_bomb/events/shot_h
+
+
+execute if entity @s[scores={AsaMatrix=11}] run function asa_animator:brachyr/anim/voice/events/damage

@@ -38,3 +38,5 @@ execute if entity @s[scores={AsaMatrix=59..85}] as @e[type=armor_stand,tag=Brach
 
 execute if entity @s[scores={AsaMatrix=59}] run playsound entity.blaze.death master @a ~ ~ ~ 2 0.6
 execute if entity @s[scores={AsaMatrix=59}] run playsound entity.blaze.death master @a ~ ~ ~ 2 0.5
+
+execute if entity @s[scores={AsaMatrix=59}] run function asa_animator:brachyr/anim/voice/events/damage
