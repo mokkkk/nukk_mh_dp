@@ -23,3 +23,6 @@ function asa_animator:diablos/model
 
 execute if entity @s[scores={AsaMatrix=66}] run playsound entity.iron_golem.step master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=66}] run particle block sand ~ ~1.8 ~ 1 0.1 1 0 10
+
+execute if entity @s[scores={AsaMatrix=50}] unless entity @s[tag=DestroyHead] as @e[type=armor_stand,tag=DiablosParts,tag=HeadU] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10039
+execute if entity @s[scores={AsaMatrix=50}] if entity @s[tag=DestroyHead] as @e[type=armor_stand,tag=DiablosParts,tag=HeadU] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10295
