@@ -17,5 +17,5 @@ function asa_animator:brachyr/model
 
 execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master @a ~ ~ ~ 2 0.5
 execute if entity @s[scores={AsaMatrix=1..8}] run function asa_animator:brachy/manager/rotate_lr_r
-execute if entity @s[scores={AsaMatrix=1..7}] unless entity @e[distance=0..4,tag=BrachyRAttackTarget] at @s run tp @s ^ ^ ^-0.2
+execute if entity @s[scores={AsaMatrix=1..7}] unless entity @e[tag=BrachyRAttackTarget,distance=0..4] at @s run tp @s ^ ^ ^-0.2
 execute if entity @s[scores={AsaMatrix=24}] positioned ^ ^ ^-5 run function asa_animator:brachyr/anim/tail/events/damage

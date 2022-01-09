@@ -34,7 +34,9 @@ execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master
 execute if entity @s[scores={AsaMatrix=22}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=42}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 
-execute if entity @s[scores={AsaMatrix=59..85}] as @e[distance=0..10,type=armor_stand,tag=BrachyRParts,tag=HeadU] at @s positioned ~ ~1.4 ~ run particle flash ~ ~ ~ 0 0 0 0 1
+execute if entity @s[scores={AsaMatrix=59..85}] as @e[type=armor_stand,tag=BrachyRParts,tag=HeadU,distance=0..10] at @s positioned ~ ~1.4 ~ run particle flash ~ ~ ~ 0 0 0 0 1
 
 execute if entity @s[scores={AsaMatrix=59}] run playsound entity.blaze.death master @a ~ ~ ~ 2 0.6
 execute if entity @s[scores={AsaMatrix=59}] run playsound entity.blaze.death master @a ~ ~ ~ 2 0.5
+
+execute if entity @s[scores={AsaMatrix=59}] run function asa_animator:brachyr/anim/voice/events/damage

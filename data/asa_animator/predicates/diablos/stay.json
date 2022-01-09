@@ -14,7 +14,14 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmTackle\"]}"
+          "nbt": "{Tags:[\"AnmTackleL\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmTackleR\"]}"
         }
       },
       {
@@ -28,7 +35,14 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmTailSpin\"]}"
+          "nbt": "{Tags:[\"AnmTailSpinL\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmTailSpinR\"]}"
         }
       },
       {
@@ -36,6 +50,13 @@
         "entity": "this",
         "predicate": {
           "nbt": "{Tags:[\"AnmTailWhip\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmTailShot\"]}"
         }
       },
       {
@@ -56,7 +77,14 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmWalk\"]}"
+          "nbt": "{Tags:[\"AnmWalkL\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmWalkR\"]}"
         }
       },
       {
@@ -77,14 +105,7 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmStartD1\"]}"
-        }
-      },
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "nbt": "{Tags:[\"AnmStartD2\"]}"
+          "nbt": "{Tags:[\"AnmDashStart\"]}"
         }
       },
       {
@@ -126,7 +147,14 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmDashTurn\"]}"
+          "nbt": "{Tags:[\"AnmDashTurnL\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmDashTurnR\"]}"
         }
       },
       {
@@ -141,6 +169,13 @@
         "entity": "this",
         "predicate": {
           "nbt": "{Tags:[\"AnmSummon\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmVoice\"]}"
         }
       },
       {

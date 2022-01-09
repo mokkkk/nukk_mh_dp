@@ -40,3 +40,5 @@ execute if entity @s[scores={AsaMatrix=48}] run playsound entity.iron_golem.hurt
 execute if entity @s[scores={AsaMatrix=35}] run playsound entity.iron_golem.death master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=35}] run playsound entity.iron_golem.death master @a ~ ~ ~ 2 0.9
 execute if entity @s[scores={AsaMatrix=35}] run playsound entity.iron_golem.death master @a ~ ~ ~ 2 0.5
+
+execute if entity @s[scores={AsaMatrix=35}] run function asa_animator:dyno/anim/voice/events/damage

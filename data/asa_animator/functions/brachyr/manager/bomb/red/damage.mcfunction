@@ -7,6 +7,6 @@ particle explosion_emitter ~ ~-0.5 ~ 0 0 0 0 1
 particle lava ~ ~-0.5 ~ 0 0 0 0 15
 particle large_smoke ~ ~-0.5 ~ 0 0 0 0.2 20
 
-execute if entity @e[distance=0..7,type=armor_stand,tag=BrachyRRoot,tag=!AnmDamage] as @e[distance=0..4,type=armor_stand,tag=BrachyRRoot] run function asa_animator:brachyr/manager/start_damage_animation
+execute if entity @e[type=armor_stand,tag=BrachyRRoot,tag=!AnmDamage,distance=0..7] as @e[type=armor_stand,tag=BrachyRRoot,distance=0..4] run function asa_animator:brachyr/manager/start_damage_animation
 
 kill @s

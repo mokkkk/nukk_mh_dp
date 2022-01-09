@@ -21,6 +21,8 @@ execute if entity @s[scores={AsaMatrix=97..}] run function asa_animator:reia/ani
 execute as @e[type=armor_stand,tag=ReiaParts] run function #asa_matrix:animate
 function asa_animator:reia/model
 
+execute if entity @s[scores={AsaMatrix=2}] run function asa_animator:reia/manager/model/change_to_fly
+
 execute if entity @s[scores={AsaMatrix=10}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=34}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=58}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7

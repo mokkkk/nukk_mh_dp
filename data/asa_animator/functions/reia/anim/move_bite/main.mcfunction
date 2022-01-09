@@ -2,20 +2,24 @@
 scoreboard players add @s AsaMatrix 1
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reia/anim/move_bite/start
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reia/anim/move_bite/keyframes/0
-execute if entity @s[scores={AsaMatrix=1..6}] run tp @s ^0 ^0 ^0.25
-execute if entity @s[scores={AsaMatrix=7}] run function asa_animator:reia/anim/move_bite/keyframes/1
-execute if entity @s[scores={AsaMatrix=7..10}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=1..5}] run tp @s ^0 ^0.04 ^-0.2
+execute if entity @s[scores={AsaMatrix=6}] run function asa_animator:reia/anim/move_bite/keyframes/1
+execute if entity @s[scores={AsaMatrix=6..10}] run tp @s ^0 ^-0.02 ^0
 execute if entity @s[scores={AsaMatrix=11}] run function asa_animator:reia/anim/move_bite/keyframes/2
-execute if entity @s[scores={AsaMatrix=11..16}] run tp @s ^0 ^0 ^0.7
-execute if entity @s[scores={AsaMatrix=17}] run function asa_animator:reia/anim/move_bite/keyframes/3
-execute if entity @s[scores={AsaMatrix=17..22}] run tp @s ^0 ^0 ^0.3
-execute if entity @s[scores={AsaMatrix=23}] run function asa_animator:reia/anim/move_bite/keyframes/4
-execute if entity @s[scores={AsaMatrix=23..40}] run tp @s ^0 ^0 ^-0.05555556
-execute if entity @s[scores={AsaMatrix=41..}] run function asa_animator:reia/anim/move_bite/end
+execute if entity @s[scores={AsaMatrix=11..15}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=16}] run function asa_animator:reia/anim/move_bite/keyframes/3
+execute if entity @s[scores={AsaMatrix=16..20}] run tp @s ^0 ^-0.04 ^0
+execute if entity @s[scores={AsaMatrix=21}] run function asa_animator:reia/anim/move_bite/keyframes/4
+execute if entity @s[scores={AsaMatrix=21..25}] run tp @s ^0 ^0 ^0.2 ~0.5 ~
+execute if entity @s[scores={AsaMatrix=26}] run function asa_animator:reia/anim/move_bite/keyframes/5
+execute if entity @s[scores={AsaMatrix=26..35}] run tp @s ^0 ^0.01 ^0 ~-0.25 ~
+execute if entity @s[scores={AsaMatrix=36..}] run function asa_animator:reia/anim/move_bite/end
 execute as @e[type=armor_stand,tag=ReiaParts] run function #asa_matrix:animate
 function asa_animator:reia/model
 
 execute if entity @s[scores={AsaMatrix=1}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 
-execute if entity @s[scores={AsaMatrix=14}] run playsound entity.wither.break_block master @a ~ ~ ~ 2 1.2
-execute if entity @s[scores={AsaMatrix=14..16}] positioned ^ ^1 ^5 run function asa_animator:reia/anim/move_bite/events/damage
+execute if entity @s[scores={AsaMatrix=11..18}] unless entity @e[distance=..6,tag=ReiaAttackTarget] at @s run tp @s ^ ^ ^0.5
+execute if entity @s[scores={AsaMatrix=11..18}] if entity @e[distance=..6,tag=ReiaAttackTarget] at @s run tp @s ^ ^ ^0.2
+execute if entity @s[scores={AsaMatrix=19}] run playsound entity.wither.break_block master @a ~ ~ ~ 2 1.2
+execute if entity @s[scores={AsaMatrix=19..21}] positioned ^ ^1 ^5 run function asa_animator:reia/anim/move_bite/events/damage

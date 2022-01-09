@@ -19,6 +19,6 @@ execute if entity @s[scores={AsaMatrix=66..}] run function asa_animator:brachy/a
 execute as @e[type=armor_stand,tag=BrachyParts] run function #asa_matrix:animate
 function asa_animator:brachy/model
 
-execute if entity @s[scores={AsaMatrix=1..50}] if predicate asa_animator:random/020 as @e[distance=0..10,type=armor_stand,tag=BrachyParts,tag=HeadU] at @s run particle spit ~ ~1.4 ~ 0.1 0.1 0.1 0 1
+execute if entity @s[scores={AsaMatrix=1..50}] if predicate asa_animator:random/020 as @e[type=armor_stand,tag=BrachyParts,tag=HeadU,distance=0..10] at @s run particle spit ~ ~1.4 ~ 0.1 0.1 0.1 0 1
 execute if entity @s[scores={AsaMatrix=9}] run playsound block.honey_block.break master @a ~ ~ ~ 2 0.5
 execute if entity @s[scores={AsaMatrix=35}] run playsound block.honey_block.break master @a ~ ~ ~ 2 0.5

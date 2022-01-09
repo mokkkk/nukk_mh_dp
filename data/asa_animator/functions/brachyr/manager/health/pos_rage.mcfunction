@@ -24,4 +24,4 @@ execute if entity @s[tag=ArmR2] rotated as @s at @e[type=armor_stand,tag=BrachyR
 execute if predicate asa_animator:random/010 at @s run particle poof ~ ~ ~ 0 0.15 0 1 0
 
 # HP確認
-execute if entity @s[nbt=!{Health:1000f},tag=!Death] run function asa_animator:brachyr/manager/health/check
+execute if entity @s[tag=!Death,nbt=!{Health: 1000f}] run function asa_animator:brachyr/manager/health/check

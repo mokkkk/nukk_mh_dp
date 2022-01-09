@@ -2,17 +2,18 @@
 scoreboard players add @s AsaMatrix 1
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reia/anim/flying_death/start
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reia/anim/flying_death/keyframes/0
-execute if entity @s[scores={AsaMatrix=1..6}] run tp @s ^0 ^0.1666667 ^0 ~-1 ~
+execute if entity @s[scores={AsaMatrix=1..6}] run tp @s ^0 ^0.1666667 ^0 ~0.5 ~
 execute if entity @s[scores={AsaMatrix=7}] run function asa_animator:reia/anim/flying_death/keyframes/1
 execute if entity @s[scores={AsaMatrix=7..12}] run tp @s ^0 ^0.1666667 ^0
 execute if entity @s[scores={AsaMatrix=13}] run function asa_animator:reia/anim/flying_death/keyframes/2
-execute if entity @s[scores={AsaMatrix=13..20}] run tp @s ^0 ^-0.375 ^0
+execute if entity @s[scores={AsaMatrix=13..20}] run tp @s ^0 ^-0.4375 ^0
 execute if entity @s[scores={AsaMatrix=21}] run function asa_animator:reia/anim/flying_death/keyframes/3
 execute if entity @s[scores={AsaMatrix=21..80}] run tp @s ^0 ^0 ^0
 execute if entity @s[scores={AsaMatrix=81..}] run function asa_animator:reia/anim/flying_death/end
 execute as @e[type=armor_stand,tag=ReiaParts] run function #asa_matrix:animate
 function asa_animator:reia/model
 
+execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reia/manager/model/change_to_normal
 execute if entity @s[scores={AsaMatrix=12}] run function asa_animator:reia/anim/flying_death/events/set_pos
 execute if entity @s[scores={AsaMatrix=13..20}] run function asa_animator:reia/anim/flying_death/events/offset
 

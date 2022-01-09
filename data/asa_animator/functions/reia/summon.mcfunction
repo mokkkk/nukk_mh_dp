@@ -20,3 +20,5 @@ summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["ReiaParts","WingL0"],Arm
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["ReiaParts","WingR0"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10115,Rotate:[0f,0f,0f]}}],Pose:{Head:[65f,0f,0f]}}
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["ReiaParts","WingL1"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10116,Rotate:[0f,0f,0f]}}],Pose:{Head:[0f,0f,0f]}}
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["ReiaParts","WingR1"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10117,Rotate:[0f,0f,0f]}}],Pose:{Head:[0f,0f,0f]}}
+summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["ReiaParts","WingL2"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10084,Rotate:[0f,0f,0f]}}],Pose:{Head:[0f,0f,0f]}}
+summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["ReiaParts","WingR2"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10084,Rotate:[0f,0f,0f]}}],Pose:{Head:[0f,0f,0f]}}

@@ -2,25 +2,25 @@
 scoreboard players add @s AsaMatrix 1
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reia/anim/breath_3/start
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reia/anim/breath_3/keyframes/0
-execute if entity @s[scores={AsaMatrix=1..5}] run tp @s ^0 ^-0.03 ^0.02
+execute if entity @s[scores={AsaMatrix=1..5}] run tp @s ^0 ^-0.03 ^-0.02
 execute if entity @s[scores={AsaMatrix=6}] run function asa_animator:reia/anim/breath_3/keyframes/1
-execute if entity @s[scores={AsaMatrix=6..10}] run tp @s ^0 ^0.05 ^-0.06
+execute if entity @s[scores={AsaMatrix=6..10}] run tp @s ^0 ^0.05 ^-0.02
 execute if entity @s[scores={AsaMatrix=11}] run function asa_animator:reia/anim/breath_3/keyframes/2
-execute if entity @s[scores={AsaMatrix=11..15}] run tp @s ^0 ^0 ^-0.02
-execute if entity @s[scores={AsaMatrix=16}] run function asa_animator:reia/anim/breath_3/keyframes/3
-execute if entity @s[scores={AsaMatrix=16..20}] run tp @s ^0 ^-0.02 ^0.12
-execute if entity @s[scores={AsaMatrix=21}] run function asa_animator:reia/anim/breath_3/keyframes/4
-execute if entity @s[scores={AsaMatrix=21..25}] run tp @s ^0 ^0.02 ^-0.12
-execute if entity @s[scores={AsaMatrix=26}] run function asa_animator:reia/anim/breath_3/keyframes/5
-execute if entity @s[scores={AsaMatrix=26..30}] run tp @s ^0 ^-0.02 ^0.12
-execute if entity @s[scores={AsaMatrix=31}] run function asa_animator:reia/anim/breath_3/keyframes/6
-execute if entity @s[scores={AsaMatrix=31..35}] run tp @s ^0 ^0.02 ^-0.12
-execute if entity @s[scores={AsaMatrix=36}] run function asa_animator:reia/anim/breath_3/keyframes/7
-execute if entity @s[scores={AsaMatrix=36..40}] run tp @s ^0 ^-0.02 ^0.12
-execute if entity @s[scores={AsaMatrix=41}] run function asa_animator:reia/anim/breath_3/keyframes/8
-execute if entity @s[scores={AsaMatrix=41..60}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=11..20}] run tp @s ^0 ^0 ^-0.01
+execute if entity @s[scores={AsaMatrix=21}] run function asa_animator:reia/anim/breath_3/keyframes/3
+execute if entity @s[scores={AsaMatrix=21..25}] run tp @s ^0 ^-0.02 ^0.12
+execute if entity @s[scores={AsaMatrix=26}] run function asa_animator:reia/anim/breath_3/keyframes/4
+execute if entity @s[scores={AsaMatrix=26..30}] run tp @s ^0 ^0.02 ^-0.12
+execute if entity @s[scores={AsaMatrix=31}] run function asa_animator:reia/anim/breath_3/keyframes/5
+execute if entity @s[scores={AsaMatrix=31..35}] run tp @s ^0 ^-0.02 ^0.12
+execute if entity @s[scores={AsaMatrix=36}] run function asa_animator:reia/anim/breath_3/keyframes/6
+execute if entity @s[scores={AsaMatrix=36..40}] run tp @s ^0 ^0.02 ^-0.12
+execute if entity @s[scores={AsaMatrix=41}] run function asa_animator:reia/anim/breath_3/keyframes/7
+execute if entity @s[scores={AsaMatrix=41..45}] run tp @s ^0 ^-0.02 ^0.12
+execute if entity @s[scores={AsaMatrix=46}] run function asa_animator:reia/anim/breath_3/keyframes/8
+execute if entity @s[scores={AsaMatrix=46..60}] run tp @s ^0 ^-0.003333333 ^0
 execute if entity @s[scores={AsaMatrix=61}] run function asa_animator:reia/anim/breath_3/keyframes/9
-execute if entity @s[scores={AsaMatrix=61..70}] run tp @s ^0 ^0 ^-0.03
+execute if entity @s[scores={AsaMatrix=61..70}] run tp @s ^0 ^0.005 ^-0.03
 execute if entity @s[scores={AsaMatrix=71..}] run function asa_animator:reia/anim/breath_3/end
 execute as @e[type=armor_stand,tag=ReiaParts] run function #asa_matrix:animate
 function asa_animator:reia/model
@@ -33,7 +33,7 @@ execute if entity @s[scores={AsaMatrix=13}] run summon marker ^ ^0.7 ^8 {Tags:["
 execute if entity @s[scores={AsaMatrix=13}] unless entity @e[distance=0..8,tag=ReiaAttackTarget] at @e[tag=ReiaAttackTarget,limit=1] run tp @e[type=marker,tag=ReiaBreathTarget] ~ ~ ~
 
 # ブレス発射
-execute if entity @s[scores={AsaMatrix=21}] positioned ^ ^1 ^5 facing entity @e[type=marker,tag=ReiaBreathTarget,limit=1] feet run function asa_animator:reia/anim/breath_3/events/shot
-execute if entity @s[scores={AsaMatrix=31}] positioned ^ ^1 ^5 facing entity @e[type=marker,tag=ReiaBreathTarget,limit=1] feet positioned ^-2 ^ ^ rotated ~30 ~ run function asa_animator:reia/anim/breath_3/events/shot
-execute if entity @s[scores={AsaMatrix=41}] positioned ^ ^1 ^5 facing entity @e[type=marker,tag=ReiaBreathTarget,limit=1] feet positioned ^2 ^ ^ rotated ~-30 ~ run function asa_animator:reia/anim/breath_3/events/shot
-execute if entity @s[scores={AsaMatrix=42}] run kill @e[tag=ReiaBreathTarget]
+execute if entity @s[scores={AsaMatrix=26}] positioned ^ ^2 ^5 facing entity @e[type=marker,tag=ReiaBreathTarget,limit=1] feet run function asa_animator:reia/anim/breath_3/events/shot
+execute if entity @s[scores={AsaMatrix=36}] positioned ^ ^2 ^5 facing entity @e[type=marker,tag=ReiaBreathTarget,limit=1] feet positioned ^-2 ^ ^ rotated ~30 ~ run function asa_animator:reia/anim/breath_3/events/shot
+execute if entity @s[scores={AsaMatrix=46}] positioned ^ ^2 ^5 facing entity @e[type=marker,tag=ReiaBreathTarget,limit=1] feet positioned ^2 ^ ^ rotated ~-30 ~ run function asa_animator:reia/anim/breath_3/events/shot
+execute if entity @s[scores={AsaMatrix=47}] run kill @e[tag=ReiaBreathTarget]
