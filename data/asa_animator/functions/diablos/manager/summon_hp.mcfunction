@@ -1,6 +1,6 @@
 
 # HPセット
-scoreboard players set #mhdp_diablos_health AsaMatrix 50000
+scoreboard players set #mhdp_diablos_health AsaMatrix 55000
 # HP倍率適用
 scoreboard players operation #mhdp_diablos_health AsaMatrix *= #mhdp_hp_multiply AsaMatrix
 scoreboard players operation #mhdp_diablos_health AsaMatrix /= #asam_const_100 AsaMatrix
@@ -15,7 +15,7 @@ execute store result bossbar asa_animator:diablos_health value run scoreboard pl
 # タイマーセット
 scoreboard players set #mhdp_diablos_kill_timer AsaMatrix 0
 scoreboard players set #mhdp_diablos_head_damage AsaMatrix 18000
-scoreboard players set #mhdp_diablos_body_damage AsaMatrix 14000
-scoreboard players set #mhdp_diablos_tail_damage AsaMatrix 12000
+scoreboard players set #mhdp_diablos_body_damage AsaMatrix 12000
+scoreboard players set #mhdp_diablos_tail_damage AsaMatrix 14000
 scoreboard players set #mhdp_diablos_anger_damage AsaMatrix 0
 scoreboard players set #mhdp_diablos_anger_count AsaMatrix 0
