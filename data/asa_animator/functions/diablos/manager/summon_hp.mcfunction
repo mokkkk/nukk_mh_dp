@@ -17,3 +17,5 @@ scoreboard players set #mhdp_diablos_kill_timer AsaMatrix 0
 scoreboard players set #mhdp_diablos_head_damage AsaMatrix 18000
 scoreboard players set #mhdp_diablos_body_damage AsaMatrix 14000
 scoreboard players set #mhdp_diablos_tail_damage AsaMatrix 12000
+scoreboard players set #mhdp_diablos_anger_damage AsaMatrix 0
+scoreboard players set #mhdp_diablos_anger_count AsaMatrix 0

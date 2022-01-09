@@ -52,3 +52,12 @@ execute if entity @s[tag=AnmAnger] run function asa_animator:diablos/anim/anger/
 execute if entity @s[tag=AnmSummon] run function asa_animator:diablos/anim/summon/main
 # 咆哮
 execute if entity @s[tag=AnmVoice] run function asa_animator:diablos/anim/voice/main
+# 討伐
+execute if entity @s[tag=AnmDeath] run function asa_animator:diablos/anim/death/main
+
+# 頭部位破壊
+execute if entity @s[tag=AnmDHead] run function asa_animator:diablos/anim/destroy_head/main
+# 胴体部位破壊
+execute if entity @s[tag=AnmDBody] run function asa_animator:diablos/anim/destroy_body/main
+# 尻尾部位破壊
+execute if entity @s[tag=AnmDTail] run function asa_animator:diablos/anim/destroy_tail/main
