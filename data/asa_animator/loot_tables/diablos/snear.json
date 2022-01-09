@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "asa_animator:diablos/near_f",
+          "name": "asa_animator:diablos/snear_f",
           "conditions": [
             {
               "condition": "minecraft:reference",
@@ -15,7 +15,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "asa_animator:diablos/near_b",
+          "name": "asa_animator:diablos/snear_b",
           "conditions": [
             {
               "condition": "minecraft:reference",
@@ -25,7 +25,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "asa_animator:diablos/near_d",
+          "name": "asa_animator:diablos/snear_d",
           "conditions": [
             {
               "condition": "minecraft:reference",

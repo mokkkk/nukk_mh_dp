@@ -18,13 +18,10 @@ execute unless entity @e[tag=DiablosAttackTarget] run tag @e[tag=DiablosTarget,s
 # execute if entity @s[tag=IsAnger] if score #mhdp_diablos_anger_actcount AsaMatrix matches 10.. run tag @s remove IsAnger
 
 # 通常時
-# execute unless entity @s[tag=AnmAnger] run function asa_animator:diablos/manager/change_normal/change
+execute unless entity @s[tag=AnmAnger] run function asa_animator:diablos/manager/change_normal/change
 
 # 軸合わせ
-# execute if predicate asa_animator:diablos/turn run tag @s add AnmTurn
-
-tag @s add AnmDive
-# function asa_animator:diablos/manager/change_normal/_/walk
+execute unless predicate asa_animator:diablos/turn run function asa_animator:diablos/manager/change_normal/_/turn_b
 
 # 終了
 tag @s remove ChangeAnm

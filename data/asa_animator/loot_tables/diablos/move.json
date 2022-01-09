@@ -25,6 +25,16 @@
                 "tag": "{ActPaper:1,Act:2}"
                 }
               ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:3}"
+                }
+              ]
             }
           ]
         }

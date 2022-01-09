@@ -20,7 +20,7 @@ execute if entity @s[scores={AsaMatrix=46..60}] run tp @s ^0 ^0 ^0
 execute if entity @s[scores={AsaMatrix=61}] run function asa_animator:diablos/anim/tail_shot/keyframes/8
 execute if entity @s[scores={AsaMatrix=61..75}] run tp @s ^0 ^0 ^-0.01333333
 execute if entity @s[scores={AsaMatrix=76}] run function asa_animator:diablos/anim/tail_shot/keyframes/9
-execute if entity @s[scores={AsaMatrix=76..90}] run tp @s ^0 ^0 ^-0.02666667
+execute if entity @s[scores={AsaMatrix=76..90}] run tp @s ^0 ^0 ^-0.02666667 ~0.5 ~
 execute if entity @s[scores={AsaMatrix=91..}] run function asa_animator:diablos/anim/tail_shot/end
 execute as @e[type=armor_stand,tag=DiablosParts] run function #asa_matrix:animate
 function asa_animator:diablos/model
