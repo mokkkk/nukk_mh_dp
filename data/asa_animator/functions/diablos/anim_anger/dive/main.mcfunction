@@ -23,7 +23,8 @@ execute if entity @s[scores={AsaMatrix=121..}] run function asa_animator:diablos
 execute as @e[type=armor_stand,tag=DiablosParts] run function #asa_matrix:animate
 function asa_animator:diablos/model
 
-execute if entity @s[scores={AsaMatrix=15}] run tag @s add InGround
+execute if entity @s[scores={AsaMatrix=55}] run tag @s add InGround
+execute if entity @s[scores={AsaMatrix=55}] run function asa_animator:diablos/manager/model/change_to_air
 
 # パーティクル
 execute if entity @s[scores={AsaMatrix=1}] positioned ^ ^ ^4 run summon marker ~ ~ ~ {Tags:["DiablosDiveParticle"]}

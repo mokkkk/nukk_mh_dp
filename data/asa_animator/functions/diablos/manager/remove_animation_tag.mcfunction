@@ -28,5 +28,7 @@ tag @s remove AnmVoice
 tag @s remove AnmTurnR
 tag @s remove AnmTurnL
 tag @s remove IsTurn
+tag @s remove InGround
 
 kill @e[type=marker,tag=DiablosDashTarget]
+kill @e[type=marker,tag=DiablosDiveParticle]

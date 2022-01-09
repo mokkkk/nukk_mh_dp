@@ -26,7 +26,19 @@
                 "function": "minecraft:set_nbt",
                 "tag": "{ActPaper:1,Act:2}"
                 }
-              ]
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "nbt": "{Tags:[\"DestroyTail\"]}"
+                    }
+                  }
+                }
+              ] 
             },
             {
               "type": "minecraft:item",
@@ -36,6 +48,18 @@
                 {
                 "function": "minecraft:set_nbt",
                 "tag": "{ActPaper:1,Act:3}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "nbt": "{Tags:[\"DestroyTail\"]}"
+                    }
+                  }
                 }
               ]
             },

@@ -13,15 +13,6 @@ execute if entity @s[tag=AnmTurnR] run function asa_animator:diablos/anim/turn_r
 execute unless entity @s[tag=IsTurn] unless predicate asa_animator:diablos/stay unless entity @s[tag=IsAnger] run function asa_animator:diablos/anim/main
 execute unless entity @s[tag=IsTurn] unless predicate asa_animator:diablos/stay if entity @s[tag=IsAnger] run function asa_animator:diablos/anim_anger/main
 
-# 死亡
-# execute if entity @s[tag=AnmDeath] run function asa_animator:diablos/anim/normal/death/main
-# 頭部位破壊
-# execute if entity @s[tag=AnmDHead] run function asa_animator:diablos/anim/destroy_head/main
-# 胴体部位破壊
-# execute if entity @s[tag=AnmDBody] run function asa_animator:diablos/anim/destroy_body/main
-# 尻尾部位破壊
-# execute if entity @s[tag=AnmDTail] run function asa_animator:diablos/anim/destroy_tail/main
-
 # 怒り時パーティクル
 execute if entity @s[tag=IsAnger,tag=!InGround] at @e[type=armor_stand,tag=DiablosParts,tag=HeadU] run particle smoke ^ ^1.3 ^0.8 0.3 0.3 0.3 0.01 1
 

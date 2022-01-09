@@ -20,3 +20,4 @@ execute as @e[type=armor_stand,tag=DiablosParts,tag=WingL1] run data merge entit
 execute as @e[type=armor_stand,tag=DiablosParts,tag=WingR1] run data merge entity @s {Pose:{Head:[5f,20f,20f]}}
 execute as @e[type=armor_stand,tag=DiablosParts,tag=WingL2] run data merge entity @s {Pose:{Head:[5f,-20f,-30f]}}
 execute as @e[type=armor_stand,tag=DiablosParts,tag=WingR2] run data merge entity @s {Pose:{Head:[5f,20f,20f]}}
+tag @s remove InGround
