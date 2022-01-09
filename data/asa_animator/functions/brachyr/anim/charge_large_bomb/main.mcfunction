@@ -51,7 +51,7 @@ function asa_animator:brachyr/model
 
 execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master @a ~ ~ ~ 2 0.5
 execute if entity @s[scores={AsaMatrix=6}] run function asa_animator:brachyr/anim/charge_large_bomb/events/active
-execute if entity @s[scores={AsaMatrix=11..48}] as @e[distance=0..10,type=armor_stand,tag=BrachyRParts,tag=HeadU] at @s positioned ~ ~1.4 ~ run particle flash ~ ~ ~ 0 0 0 0 1
+execute if entity @s[scores={AsaMatrix=11..48}] as @e[type=armor_stand,tag=BrachyRParts,tag=HeadU,distance=0..10] at @s positioned ~ ~1.4 ~ run particle flash ~ ~ ~ 0 0 0 0 1
 execute if entity @s[scores={AsaMatrix=11}] run playsound entity.blaze.death master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=11}] run playsound entity.blaze.death master @a ~ ~ ~ 2 0.6
 execute if entity @s[scores={AsaMatrix=11}] run particle block grass_block ^ ^ ^2 2 0.1 2 0 30
@@ -64,3 +64,6 @@ execute if entity @s[scores={AsaMatrix=109..129}] positioned ^2 ^ ^4 run functio
 
 execute if entity @s[scores={AsaMatrix=163}] positioned ^ ^ ^6 run function asa_animator:brachyr/anim/head_bomb/events/damage
 execute if entity @s[scores={AsaMatrix=163..183}] positioned ^ ^ ^6 run function asa_animator:brachyr/anim/charge_large_bomb/events/shot_h
+
+
+execute if entity @s[scores={AsaMatrix=11}] run function asa_animator:brachyr/anim/voice/events/damage

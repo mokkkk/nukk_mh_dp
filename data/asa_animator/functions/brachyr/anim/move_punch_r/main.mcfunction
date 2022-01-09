@@ -29,7 +29,7 @@ execute if entity @s[scores={AsaMatrix=22..52}] run particle block grass_block ~
 execute if entity @s[scores={AsaMatrix=22..52}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 
 execute if entity @s[scores={AsaMatrix=22}] run summon marker ~ ~ ~ {Tags:["BrachyRMoveRotate"]}
-execute if entity @s[scores={AsaMatrix=22}] run tp @e[distance=0..3,type=marker,tag=BrachyRMoveRotate] ~ ~ ~ ~ 0
+execute if entity @s[scores={AsaMatrix=22}] run tp @e[type=marker,tag=BrachyRMoveRotate,distance=0..3] ~ ~ ~ ~ 0
 execute if entity @s[scores={AsaMatrix=24..28}] at @s rotated as @e[type=marker,tag=BrachyRMoveRotate] run tp @s ^0.2 ^ ^0.5
 execute if entity @s[scores={AsaMatrix=29..38}] at @s rotated as @e[type=marker,tag=BrachyRMoveRotate] run tp @s ^0.1 ^ ^0.7
 execute if entity @s[scores={AsaMatrix=39..52}] at @s rotated as @e[type=marker,tag=BrachyRMoveRotate] run tp @s ^ ^ ^0.3

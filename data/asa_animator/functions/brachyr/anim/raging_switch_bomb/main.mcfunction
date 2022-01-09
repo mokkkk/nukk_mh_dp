@@ -23,7 +23,7 @@ function asa_animator:brachyr/model
 
 execute if entity @s[scores={AsaMatrix=11}] run playsound entity.hoglin.step master @a ~ ~ ~ 2 0.5
 
-execute if entity @s[scores={AsaMatrix=22..59}] as @e[distance=0..10,type=armor_stand,tag=BrachyRParts,tag=HeadU] at @s positioned ~ ~1.4 ~ run particle flash ~ ~ ~ 0 0 0 0 1
+execute if entity @s[scores={AsaMatrix=22..59}] as @e[type=armor_stand,tag=BrachyRParts,tag=HeadU,distance=0..10] at @s positioned ~ ~1.4 ~ run particle flash ~ ~ ~ 0 0 0 0 1
 execute if entity @s[scores={AsaMatrix=22}] run playsound entity.blaze.death master @a ~ ~ ~ 2 0.6
 execute if entity @s[scores={AsaMatrix=22}] run playsound entity.blaze.death master @a ~ ~ ~ 2 0.5
 execute if entity @s[scores={AsaMatrix=22}] run playsound entity.iron_golem.death master @a ~ ~ ~ 2 0.5

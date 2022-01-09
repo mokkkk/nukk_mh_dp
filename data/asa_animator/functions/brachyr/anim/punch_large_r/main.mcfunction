@@ -28,12 +28,12 @@ execute as @e[type=armor_stand,tag=BrachyRParts] run function #asa_matrix:animat
 function asa_animator:brachyr/model
 
 execute if entity @s[scores={AsaMatrix=1..9}] run function asa_animator:brachyr/manager/rotate
-execute if entity @s[scores={AsaMatrix=1..14}] if entity @e[distance=0..5,tag=BrachyAttackTarget] at @s run tp @s ^ ^ ^-0.3
-execute if entity @s[scores={AsaMatrix=18..24}] unless entity @e[distance=0..4,tag=BrachyAttackTarget] at @s run tp @s ^ ^ ^0.5
+execute if entity @s[scores={AsaMatrix=1..14}] if entity @e[tag=BrachyAttackTarget,distance=0..5] at @s run tp @s ^ ^ ^-0.3
+execute if entity @s[scores={AsaMatrix=18..24}] unless entity @e[tag=BrachyAttackTarget,distance=0..4] at @s run tp @s ^ ^ ^0.5
 execute if entity @s[scores={AsaMatrix=25}] rotated ~35 ~ positioned ^ ^ ^3.5 run function asa_animator:brachyr/anim/punch_r/events/damage
 execute if entity @s[scores={AsaMatrix=35}] rotated ~0 ~ positioned ^ ^ ^3 run function asa_animator:brachyr/anim/punch_r/events/damage
 execute if entity @s[scores={AsaMatrix=45}] rotated ~-35 ~ positioned ^ ^ ^3 run function asa_animator:brachyr/anim/punch_r/events/damage
 execute unless predicate asa_animator:brachyr/combo if entity @s[scores={AsaMatrix=54}] run function asa_animator:brachyr/manager/cancel_animation
 
-execute if entity @s[scores={AsaMatrix=35..45}] as @e[distance=0..15,type=armor_stand,tag=BrachyRParts,tag=ArmR1] at @s run particle block grass_block ~ ~-0.5 ~ 1 0.1 1 0 10
+execute if entity @s[scores={AsaMatrix=35..45}] as @e[type=armor_stand,tag=BrachyRParts,tag=ArmR1,distance=0..15] at @s run particle block grass_block ~ ~-0.5 ~ 1 0.1 1 0 10
 execute if entity @s[scores={AsaMatrix=35..45}] run playsound block.grass.step master @a ~ ~ ~ 2 0.5

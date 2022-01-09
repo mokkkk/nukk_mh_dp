@@ -22,6 +22,6 @@ execute as @e[type=armor_stand,tag=BrachyParts] run function #asa_matrix:animate
 function asa_animator:brachy/model
 
 execute if entity @s[scores={AsaMatrix=1..10}] run function asa_animator:brachy/manager/rotate_lr_r
-execute if entity @s[scores={AsaMatrix=1..7}] unless entity @e[distance=0..4,tag=BrachyAttackTarget] at @s run tp @s ^ ^ ^-0.2
+execute if entity @s[scores={AsaMatrix=1..7}] unless entity @e[tag=BrachyAttackTarget,distance=0..4] at @s run tp @s ^ ^ ^-0.2
 execute if entity @s[scores={AsaMatrix=15}] positioned ^ ^ ^-3 run function asa_animator:brachy/anim/tail/events/damage
 execute if entity @s[scores={AsaMatrix=24}] positioned ^ ^ ^-3 run function asa_animator:brachy/anim/tail/events/damage

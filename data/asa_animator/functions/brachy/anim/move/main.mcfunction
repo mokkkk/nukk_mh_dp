@@ -25,4 +25,4 @@ execute at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function a
 execute at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~
 
 # 敵に十分近づいた場合，遷移
-execute positioned ^ ^ ^5 if entity @e[distance=0..4,tag=BrachyAttackTarget] run function asa_animator:brachy/anim/move/events/change
+execute positioned ^ ^ ^5 if entity @e[tag=BrachyAttackTarget,distance=0..4] run function asa_animator:brachy/anim/move/events/change

@@ -31,7 +31,7 @@ execute if entity @s[scores={AsaMatrix=1}] run playsound entity.player.breath ma
 execute if entity @s[scores={AsaMatrix=18}] run playsound entity.iron_golem.step master @a ~ ~ ~ 2 0.9
 execute if entity @s[scores={AsaMatrix=28}] run playsound entity.iron_golem.step master @a ~ ~ ~ 2 0.9
 
-execute if entity @s[scores={AsaMatrix=1..39}] as @e[distance=0..15,type=armor_stand,tag=ReiaParts,tag=HeadU] at @s positioned ^ ^1.2 ^0.2 run particle flame ~ ~ ~ 0 0 0 0.03 5
+execute if entity @s[scores={AsaMatrix=11..39}] as @e[distance=0..15,type=armor_stand,tag=ReiaParts,tag=HeadU] at @s positioned ^ ^1.2 ^0.5 run particle flame ~ ~ ~ 0 0 0 0.03 5
 
 # ブレス発射
 execute if entity @s[scores={AsaMatrix=41}] positioned ^ ^1 ^5 facing entity @e[type=marker,tag=ReiaBreathTarget,limit=1] feet run function asa_animator:reia/anim/charge/events/shot

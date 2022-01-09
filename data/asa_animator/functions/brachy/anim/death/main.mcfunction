@@ -31,7 +31,7 @@ execute if entity @s[scores={AsaMatrix=84}] run playsound block.grass.step maste
 
 execute if entity @s[scores={AsaMatrix=46}] run playsound entity.blaze.death master @a ~ ~ ~ 1 0.6
 execute if entity @s[scores={AsaMatrix=46}] run playsound entity.blaze.death master @a ~ ~ ~ 1 0.5
-execute if entity @s[scores={AsaMatrix=46..48}] as @e[distance=0..10,type=armor_stand,tag=BrachyParts,tag=HeadU] at @s positioned ~ ~1.4 ~ run particle flash ~ ~ ~ 0 0 0 0 1
+execute if entity @s[scores={AsaMatrix=46..48}] as @e[type=armor_stand,tag=BrachyParts,tag=HeadU,distance=0..10] at @s positioned ~ ~1.4 ~ run particle flash ~ ~ ~ 0 0 0 0 1
 
-execute if entity @s[scores={AsaMatrix=61}] unless entity @s[tag=DestroyHead] as @e[distance=0..30,type=armor_stand,tag=BrachyParts,tag=HeadU] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10248
-execute if entity @s[scores={AsaMatrix=61}] if entity @s[tag=DestroyHead] as @e[distance=0..30,type=armor_stand,tag=BrachyParts,tag=HeadU] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10249
+execute if entity @s[scores={AsaMatrix=61}] unless entity @s[tag=DestroyHead] as @e[type=armor_stand,tag=BrachyParts,tag=HeadU,distance=0..30] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10248
+execute if entity @s[scores={AsaMatrix=61}] if entity @s[tag=DestroyHead] as @e[type=armor_stand,tag=BrachyParts,tag=HeadU,distance=0..30] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10249

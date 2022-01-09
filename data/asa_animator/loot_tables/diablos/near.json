@@ -4,54 +4,32 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:group",
-          "children": [
+          "type": "minecraft:loot_table",
+          "name": "asa_animator:diablos/near_f",
+          "conditions": [
             {
-              "type": "minecraft:item",
-              "name": "minecraft:paper",
-              "weight": 30,
-              "functions": [
-                {
-                "function": "minecraft:set_nbt",
-                "tag": "{ActPaper:1,Act:1}"
-                }
-              ]
+              "condition": "minecraft:reference",
+              "name": "asa_animator:diablos/loot_forward"
             }
-            ,
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "asa_animator:diablos/near_b",
+          "conditions": [
             {
-              "type": "minecraft:item",
-              "name": "minecraft:paper",
-              "weight": 25,
-              "functions": [
-                {
-                "function": "minecraft:set_nbt",
-                "tag": "{ActPaper:1,Act:2}"
-                }
-              ]
+              "condition": "minecraft:reference",
+              "name": "asa_animator:diablos/loot_back"
             }
-            ,
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "asa_animator:diablos/near_d",
+          "conditions": [
             {
-              "type": "minecraft:item",
-              "name": "minecraft:paper",
-              "weight": 25,
-              "functions": [
-                {
-                "function": "minecraft:set_nbt",
-                "tag": "{ActPaper:1,Act:3}"
-                }
-              ]
-            }
-            ,
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:paper",
-              "weight": 20,
-              "functions": [
-                {
-                "function": "minecraft:set_nbt",
-                "tag": "{ActPaper:1,Act:4}"
-                }
-              ]
+              "condition": "minecraft:reference",
+              "name": "asa_animator:diablos/loot_other"
             }
           ]
         }

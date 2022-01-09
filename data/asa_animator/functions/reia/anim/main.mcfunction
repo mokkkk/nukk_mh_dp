@@ -1,12 +1,16 @@
 
 # 尻尾回転
-execute if entity @s[tag=AnmTail] run function asa_animator:reia/anim/tail_spin/main
+execute if entity @s[tag=AnmTailL] run function asa_animator:reia/anim/tail_spin_l/main
+execute if entity @s[tag=AnmTailR] run function asa_animator:reia/anim/tail_spin_r/main
+execute if entity @s[tag=AnmTail2] run function asa_animator:reia/anim/tail_spin_2/main
 
 # 火炎噛みつき
-execute if entity @s[tag=AnmBite] run function asa_animator:reia/anim/bite/main
+execute if entity @s[tag=AnmBiteL] run function asa_animator:reia/anim/bite_l/main
+execute if entity @s[tag=AnmBiteR] run function asa_animator:reia/anim/bite_r/main
 
 # 噛みつき+尻尾回転
-execute if entity @s[tag=AnmBiteTail] run function asa_animator:reia/anim/bite_tail/main
+execute if entity @s[tag=AnmBiteTailL] run function asa_animator:reia/anim/bite_tail_l/main
+execute if entity @s[tag=AnmBiteTailR] run function asa_animator:reia/anim/bite_tail_r/main
 
 # 3Wayブレス
 execute if entity @s[tag=AnmBreath3] run function asa_animator:reia/anim/breath_3/main
@@ -22,9 +26,10 @@ execute if entity @s[tag=AnmDashStart] run function asa_animator:reia/anim/start
 # 突進
 execute if entity @s[tag=AnmDash] run function asa_animator:reia/anim/dash/main
 # 突進振り向き
-execute if entity @s[tag=AnmDashTurn] run function asa_animator:reia/anim/dash_turn/main
-# 突進噛みつき
-execute if entity @s[tag=AnmDashBite] run function asa_animator:reia/anim/dash_bite/main
+execute if entity @s[tag=AnmDashTurnL] run function asa_animator:reia/anim/dash_turn_l/main
+execute if entity @s[tag=AnmDashTurnR] run function asa_animator:reia/anim/dash_turn_r/main
+# 突進停止
+execute if entity @s[tag=AnmDashStop] run function asa_animator:reia/anim/dash_stop/main
 
 # 移動
 execute if entity @s[tag=AnmMove] run function asa_animator:reia/anim/move/main
@@ -44,6 +49,8 @@ execute if entity @s[tag=AnmFlyCharge] run function asa_animator:reia/anim/flyin
 execute if entity @s[tag=AnmSummon] run function asa_animator:reia/anim/summon/main
 # 着地
 execute if entity @s[tag=AnmEndFly] run function asa_animator:reia/anim/end_fly/main
+# 咆哮
+execute if entity @s[tag=AnmVoice] run function asa_animator:reia/anim/voice/main
 
 # 討伐
 execute if entity @s[tag=AnmDeath] run function asa_animator:reia/anim/death/main

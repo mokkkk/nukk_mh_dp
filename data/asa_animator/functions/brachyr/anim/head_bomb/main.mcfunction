@@ -24,8 +24,8 @@ function asa_animator:brachyr/model
 execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master @a ~ ~ ~ 2 0.5
 
 execute if entity @s[scores={AsaMatrix=1..10}] run function asa_animator:brachyr/manager/rotate
-execute if entity @s[scores={AsaMatrix=1..5}] if entity @e[distance=0..5,tag=BrachyAttackTarget] at @s run tp @s ^ ^ ^-0.5
-execute if entity @s[scores={AsaMatrix=26..35}] unless entity @e[distance=0..4,tag=BrachyAttackTarget] at @s run tp @s ^ ^ ^0.3
+execute if entity @s[scores={AsaMatrix=1..5}] if entity @e[tag=BrachyAttackTarget,distance=0..5] at @s run tp @s ^ ^ ^-0.5
+execute if entity @s[scores={AsaMatrix=26..35}] unless entity @e[tag=BrachyAttackTarget,distance=0..4] at @s run tp @s ^ ^ ^0.3
 
 execute if entity @s[scores={AsaMatrix=36}] positioned ^ ^ ^4 run particle block grass_block ~ ~ ~ 1 0.1 1 0 30
 execute if entity @s[scores={AsaMatrix=36}] positioned ^ ^ ^4 run playsound entity.hoglin.step master @a ~ ~ ~ 2 0.5

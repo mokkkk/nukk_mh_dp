@@ -1,4 +1,6 @@
 {
+  "condition": "minecraft:inverted",
+  "term": {
     "condition": "minecraft:alternative",
     "terms": [
       {
@@ -12,13 +14,6 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmTackle\"]}"
-        }
-      },
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
           "nbt": "{Tags:[\"AnmHead\"]}"
         }
       },
@@ -26,29 +21,23 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmTailWhip\"]}"
+          "nbt": "{Tags:[\"AnmTailShot\"]}"
         }
       },
       {
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmStartD1\"]}"
+          "nbt": "{Tags:[\"AnmShortDash\"]}"
         }
       },
       {
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmStartD2\"]}"
-        }
-      },
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "nbt": "{Tags:[\"AnmMove\"]}"
+          "nbt": "{Tags:[\"AnmDashStart\"]}"
         }
       }
     ]
+  }
 }

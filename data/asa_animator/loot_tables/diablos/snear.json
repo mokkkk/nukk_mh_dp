@@ -1,0 +1,39 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "asa_animator:diablos/snear_f",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "asa_animator:diablos/loot_forward"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "asa_animator:diablos/snear_b",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "asa_animator:diablos/loot_back"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "asa_animator:diablos/snear_d",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "asa_animator:diablos/loot_other"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

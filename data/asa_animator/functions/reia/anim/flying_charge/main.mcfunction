@@ -48,3 +48,5 @@ execute if entity @s[scores={AsaMatrix=35}] run function asa_animator:reia/anim/
 execute if entity @s[scores={AsaMatrix=36..60}] run function asa_animator:reia/anim/bjb_land/events/offset
 execute if entity @s[scores={AsaMatrix=60}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=60}] run particle block grass_block ~ ~ ~ 1 0.1 1 0 10
+
+execute if entity @s[scores={AsaMatrix=82}] run function asa_animator:reia/manager/model/change_to_normal

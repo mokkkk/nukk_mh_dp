@@ -2,24 +2,22 @@
 scoreboard players add @s AsaMatrix 1
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reia/anim/stay/start
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reia/anim/stay/keyframes/0
-execute if entity @s[scores={AsaMatrix=1..10}] run tp @s ^0 ^-0.005 ^-0.01
+execute if entity @s[scores={AsaMatrix=1..10}] run tp @s ^0 ^0 ^0
 execute if entity @s[scores={AsaMatrix=11}] run function asa_animator:reia/anim/stay/keyframes/1
-execute if entity @s[scores={AsaMatrix=11..15}] run tp @s ^0 ^0.01 ^0.02
-execute if entity @s[scores={AsaMatrix=16}] run function asa_animator:reia/anim/stay/keyframes/2
-execute if entity @s[scores={AsaMatrix=16..20}] run tp @s ^0 ^0 ^0
-execute if entity @s[scores={AsaMatrix=21}] run function asa_animator:reia/anim/stay/keyframes/3
-execute if entity @s[scores={AsaMatrix=21..25}] run tp @s ^0 ^-0.01 ^0.04
-execute if entity @s[scores={AsaMatrix=26}] run function asa_animator:reia/anim/stay/keyframes/4
-execute if entity @s[scores={AsaMatrix=26..40}] run tp @s ^0 ^-0.003333333 ^0.01333333
-execute if entity @s[scores={AsaMatrix=41}] run function asa_animator:reia/anim/stay/keyframes/5
-execute if entity @s[scores={AsaMatrix=41..55}] run tp @s ^0 ^-0.006666667 ^0
-execute if entity @s[scores={AsaMatrix=56}] run function asa_animator:reia/anim/stay/keyframes/6
-execute if entity @s[scores={AsaMatrix=56..65}] run tp @s ^0 ^0.02 ^-0.04
-execute if entity @s[scores={AsaMatrix=66..}] run function asa_animator:reia/anim/stay/end
+execute if entity @s[scores={AsaMatrix=11..17}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=18}] run function asa_animator:reia/anim/stay/keyframes/2
+execute if entity @s[scores={AsaMatrix=18..24}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=25}] run function asa_animator:reia/anim/stay/keyframes/3
+execute if entity @s[scores={AsaMatrix=25..42}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=43}] run function asa_animator:reia/anim/stay/keyframes/4
+execute if entity @s[scores={AsaMatrix=43..55}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=56..}] run function asa_animator:reia/anim/stay/end
 execute as @e[type=armor_stand,tag=ReiaParts] run function #asa_matrix:animate
 function asa_animator:reia/model
 
 execute if entity @s[scores={AsaMatrix=1}] if score #mhdp_reia_actcount AsaMatrix matches 1.. run function asa_animator:reia/anim/stay/events/change
+
+execute if entity @s[scores={AsaMatrix=11}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 
 execute at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
 execute at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~

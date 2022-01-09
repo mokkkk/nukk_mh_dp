@@ -2,9 +2,9 @@
 scoreboard players add @s AsaMatrix 1
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reia/anim/destroy_tail/start
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reia/anim/destroy_tail/keyframes/0
-execute if entity @s[scores={AsaMatrix=1..6}] run tp @s ^0 ^0.05 ^0.6666667 ~3 ~
+execute if entity @s[scores={AsaMatrix=1..6}] run tp @s ^0 ^0.03333334 ^0.6666667 ~3 ~
 execute if entity @s[scores={AsaMatrix=7}] run function asa_animator:reia/anim/destroy_tail/keyframes/1
-execute if entity @s[scores={AsaMatrix=7..12}] run tp @s ^-0.08333334 ^-0.05 ^0.5 ~3 ~
+execute if entity @s[scores={AsaMatrix=7..12}] run tp @s ^-0.08333334 ^0 ^0.5 ~3 ~
 execute if entity @s[scores={AsaMatrix=13}] run function asa_animator:reia/anim/destroy_tail/keyframes/2
 execute if entity @s[scores={AsaMatrix=13..18}] run tp @s ^-0.08333334 ^-0.05 ^0.5 ~3 ~
 execute if entity @s[scores={AsaMatrix=19}] run function asa_animator:reia/anim/destroy_tail/keyframes/3

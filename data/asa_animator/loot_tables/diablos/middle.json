@@ -9,47 +9,78 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 31,
+              "weight": 3,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
                 "tag": "{ActPaper:1,Act:1}"
                 }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "nbt": "{Tags:[\"DestroyTail\"]}"
+                    }
+                  }
+                }
               ]
-            }
-            ,
+            },
             {
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 23,
+              "weight": 4,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
                 "tag": "{ActPaper:1,Act:2}"
                 }
               ]
-            }
-            ,
+            },
             {
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 23,
+              "weight": 4,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
                 "tag": "{ActPaper:1,Act:3}"
                 }
               ]
-            }
-            ,
+            },
             {
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 23,
+              "weight": 2,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
                 "tag": "{ActPaper:1,Act:4}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 2,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:5}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 2,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:6}"
                 }
               ]
             }

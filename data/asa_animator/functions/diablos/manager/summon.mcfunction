@@ -3,10 +3,10 @@ execute unless entity @e[type=armor_stand,tag=DiablosRoot] run data modify stora
 execute if entity @e[type=armor_stand,tag=DiablosRoot] run data modify storage mhdp: ExistMonster set value 1b
 
 # パーツ召喚
-execute if data storage mhdp: {ExistMonster:0b} rotated ~ 0 positioned ^ ^-9 ^5 run function asa_animator:diablos/summon
+execute if data storage mhdp: {ExistMonster:0b} rotated ~ 0 positioned ^ ^-12 ^5 run function asa_animator:diablos/summon
 
 # 当たり判定召喚
-execute if data storage mhdp: {ExistMonster:0b} rotated ~ 0 positioned ^ ^-9 ^5 run function asa_animator:diablos/manager/health/summon
+execute if data storage mhdp: {ExistMonster:0b} rotated ~ 0 positioned ^ ^-12 ^5 run function asa_animator:diablos/manager/health/summon
 
 # HPセット
 execute if data storage mhdp: {ExistMonster:0b} run function asa_animator:diablos/manager/summon_hp

@@ -73,7 +73,7 @@ execute if entity @s[scores={AsaMatrix=56}] positioned ^ ^ ^5 run playsound enti
 execute if entity @s[scores={AsaMatrix=56..71}] positioned ^ ^ ^5 run function asa_animator:brachyr/anim/dozer/events/damage
 execute if entity @s[scores={AsaMatrix=71}] positioned ^ ^ ^5 run function asa_animator:brachyr/anim/dozer/events/set
 
-execute if entity @s[scores={AsaMatrix=72..89}] at @s if entity @e[distance=0..10,tag=BrachyRAttackTarget] run tp @s ^0 ^ ^-0.4
+execute if entity @s[scores={AsaMatrix=72..89}] at @s if entity @e[tag=BrachyRAttackTarget,distance=0..10] run tp @s ^0 ^ ^-0.4
 
 execute if entity @s[scores={AsaMatrix=94}] positioned ^ ^ ^5 run particle block grass_block ~ ~ ~ 1 0.1 1 0 30
 execute if entity @s[scores={AsaMatrix=94}] positioned ^ ^ ^5 run playsound entity.hoglin.step master @a ~ ~ ~ 2 0.5
