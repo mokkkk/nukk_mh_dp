@@ -34,5 +34,5 @@ tag @s remove DashAct
 tag @s remove DashSpin
 tag @s remove DashStop
 tag @s remove DashBite
-kill @e[type=marker,tag=TigaMoveRotate]
-kill @e[type=marker,tag=TigaDashTarget]
+kill @e[type=marker,tag=KushalaBreathTarget]
+kill @e[type=marker,tag=KushalaMoveRotate]
