@@ -1,7 +1,14 @@
+## エンチャント
+    # 0：軽減不可
+    # 1：ダメージ軽減（無属性，雷属性）
+    # 2：火炎耐性（火属性）
+    # 3：爆発耐性
+    # 4：ダメージ軽減（龍属性）
 execute if data storage mhdp: {Epf:0} run scoreboard players set $mhdp_epf AsaMatrix 0
 execute if data storage mhdp: {Epf:1} run function mh_dp:damage/get_epf_protection
 execute if data storage mhdp: {Epf:2} run function mh_dp:damage/get_epf_fire
 execute if data storage mhdp: {Epf:3} run function mh_dp:damage/get_epf_blast
+execute if data storage mhdp: {Epf:4} run function mh_dp:damage/get_epf_protection
 execute store result storage score_damage: Argument.EPF int 1 run scoreboard players get $mhdp_epf AsaMatrix
 
 # 攻撃

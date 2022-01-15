@@ -7,6 +7,7 @@ scoreboard objectives add MhdpJump minecraft.custom:minecraft.jump
 scoreboard objectives add MhdpTDamage dummy
 scoreboard objectives add MhdpTAvoid dummy
 scoreboard objectives add MhdpBlightFire dummy
+scoreboard objectives add MhdpBlightDragon dummy
 
 # ID設定
 scoreboard players set #mhdp_id_holder MhdpMonsterID 0

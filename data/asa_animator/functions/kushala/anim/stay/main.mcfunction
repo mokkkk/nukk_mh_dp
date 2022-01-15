@@ -2,9 +2,9 @@
 scoreboard players add @s AsaMatrix 1
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:kushala/anim/stay/start
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:kushala/anim/stay/keyframes/0
-execute if entity @s[scores={AsaMatrix=1..10}] run tp @s ^0 ^-0.01 ^0.02
+execute if entity @s[scores={AsaMatrix=1..10}] run tp @s ^0 ^-0.01 ^0.02 ~0.5 ~
 execute if entity @s[scores={AsaMatrix=11}] run function asa_animator:kushala/anim/stay/keyframes/1
-execute if entity @s[scores={AsaMatrix=11..30}] run tp @s ^0 ^0.005 ^0.01
+execute if entity @s[scores={AsaMatrix=11..30}] run tp @s ^0 ^0.005 ^0.01 ~-0.25 ~
 execute if entity @s[scores={AsaMatrix=31}] run function asa_animator:kushala/anim/stay/keyframes/2
 execute if entity @s[scores={AsaMatrix=31..50}] run tp @s ^0 ^0 ^-0.02
 execute if entity @s[scores={AsaMatrix=51..}] run function asa_animator:kushala/anim/stay/end
