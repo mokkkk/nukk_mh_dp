@@ -1,6 +1,5 @@
 
 ## 地上
-
 # 風弾ブレス
 execute if entity @s[tag=AnmBreath] run function asa_animator:kushala/anim/breath/main
 
@@ -23,8 +22,8 @@ execute if entity @s[tag=AnmJump] run function asa_animator:kushala/anim/jump/ma
 # 突進
 execute if entity @s[tag=AnmDashStart] run function asa_animator:kushala/anim/dash_start/main
 execute if entity @s[tag=AnmDash] run function asa_animator:kushala/anim/dash/main
+execute if entity @s[tag=AnmDashStop] run function asa_animator:kushala/anim/dash_stop/main
 
 ## その他
-
 # 咆哮
 execute if entity @s[tag=AnmVoice] run function asa_animator:kushala/anim/voice/main

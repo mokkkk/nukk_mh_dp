@@ -25,5 +25,11 @@ execute if entity @s[scores={AsaMatrix=1}] at @s positioned ~ ~5 ~ run function 
 execute if entity @s[scores={AsaMatrix=14}] at @s positioned ~ ~5 ~ run tp @s ~ ~ ~
 execute if entity @s[scores={AsaMatrix=14}] at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
 execute if entity @s[scores={AsaMatrix=14}] at @s run tp @s ~ ~0.8 ~
+function asa_animator:kushala/manager/rotate_lr
+execute at @s run tp @s ^ ^ ^1
 
-execute at @s run tp @s ^ ^ ^1 ~5 ~
+# 停止
+execute if entity @e[type=marker,tag=KushalaDashTarget,distance=0..10] run scoreboard players set #mhdp_kushala_dash_count AsaMatrix 2
+execute if entity @e[type=marker,tag=KushalaDashTarget,distance=0..10] run kill @e[type=marker,tag=KushalaDashTarget,distance=0..10]
+
+execute positioned ^ ^ ^3 run function asa_animator:kushala/anim/dash/events/damage
