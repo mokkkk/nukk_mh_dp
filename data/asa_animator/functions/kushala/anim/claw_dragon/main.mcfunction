@@ -27,6 +27,9 @@ execute if entity @s[scores={AsaMatrix=60}] run function asa_animator:kushala/ma
 execute if entity @s[scores={AsaMatrix=6..23}] positioned ^ ^2 ^4 run particle dust 0.314 0 0 1.3 ~ ~ ~ 1 1 1 0 5
 execute if entity @s[scores={AsaMatrix=6..23}] positioned ^ ^2 ^4 run particle dust 0.592 0.243 0.243 1.3 ~ ~ ~ 1 1 1 0 5
 
+execute if entity @s[scores={AsaMatrix=6..9}] run playsound minecraft:entity.phantom.death master @a ~ ~ ~ 3 0.9
+execute if entity @s[scores={AsaMatrix=6..9}] run playsound minecraft:entity.phantom.death master @a ~ ~ ~ 3 0.7
+
 execute if entity @s[scores={AsaMatrix=1..12}] run function asa_animator:kushala/manager/rotate
 execute if entity @s[scores={AsaMatrix=6}] run function asa_animator:kushala/manager/particle/step
 execute if entity @s[scores={AsaMatrix=29}] run function asa_animator:kushala/manager/particle/step

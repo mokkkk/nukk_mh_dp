@@ -1,6 +1,8 @@
 
 ## 地上
-
+# 前方移動
+execute if entity @s[tag=AnmMoveStart] run function asa_animator:kushala/anim/move_start/main
+execute if entity @s[tag=AnmMove] run function asa_animator:kushala/anim/move/main
 # サイドステップ
 execute if entity @s[tag=AnmStepL] run function asa_animator:kushala/anim/step_l/main
 execute if entity @s[tag=AnmStepR] run function asa_animator:kushala/anim/step_r/main
@@ -31,11 +33,38 @@ execute if entity @s[tag=AnmDashStop] run function asa_animator:kushala/anim/das
 
 # 風弾ブレス
 execute if entity @s[tag=AnmBreath] run function asa_animator:kushala/anim/breath/main
+# 溜め風弾ブレス
+execute if entity @s[tag=AnmBreathC] run function asa_animator:kushala/anim/breath_charge/main
 # 落下ブレス
 execute if entity @s[tag=AnmBreathU] run function asa_animator:kushala/anim/breath_up/main
 # 風薙ぎブレス
 execute if entity @s[tag=AnmBreathV] run function asa_animator:kushala/anim/breath_v/main
+# 竜巻ブレス（着地）
+execute if entity @s[tag=AnmBjbL] run function asa_animator:kushala/anim/bjb_land/main
+# 竜巻ブレス（滞空）
+execute if entity @s[tag=AnmBjb] run function asa_animator:kushala/anim/bjb/main
 
+
+## 空中
+# 回り込み
+execute if entity @s[tag=AnmFlyMoveL] run function asa_animator:kushala/anim/flying_move_l/main
+execute if entity @s[tag=AnmFlyMoveR] run function asa_animator:kushala/anim/flying_move_r/main
+# 回り込み着地
+execute if entity @s[tag=AnmFlyMoveLL] run function asa_animator:kushala/anim/flying_move_land_l/main
+execute if entity @s[tag=AnmFlyMoveLR] run function asa_animator:kushala/anim/flying_move_land_r/main
+
+# 突進
+execute if entity @s[tag=AnmFlyTackle] run function asa_animator:kushala/anim/flying_tackle/main
+
+# 風弾ブレス
+execute if entity @s[tag=AnmFlyBreath] run function asa_animator:kushala/anim/flying_breath/main
+# 竜巻ブレス
+execute if entity @s[tag=AnmFlyBreathT] run function asa_animator:kushala/anim/flying_breath_t/main
+# 3連竜巻ブレス
+execute if entity @s[tag=AnmFlyBreathT3] run function asa_animator:kushala/anim/flying_breath_t_3/main
+
+# 龍属性ひっかき（着地）
+execute if entity @s[tag=AnmFlyClawD] run function asa_animator:kushala/anim/flying_claw_dragon/main
 
 ## その他
 # 咆哮

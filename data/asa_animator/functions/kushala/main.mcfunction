@@ -6,7 +6,8 @@
 execute if entity @s[tag=ChangeAnm] run function asa_animator:kushala/manager/change
 
 # 待機
-execute if predicate asa_animator:kushala/stay run function asa_animator:kushala/anim/stay/main
+execute if predicate asa_animator:kushala/stay unless entity @s[tag=IsFlying] run function asa_animator:kushala/anim/stay/main
+execute if predicate asa_animator:kushala/stay if entity @s[tag=IsFlying] run function asa_animator:kushala/anim/flying_stay/main
 # 軸合わせ
 # execute if entity @s[tag=AnmTurnL] run function asa_animator:kushala/anim/turn_l/main
 # execute if entity @s[tag=AnmTurnR] run function asa_animator:kushala/anim/turn_r/main

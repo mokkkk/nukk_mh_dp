@@ -19,13 +19,10 @@ function asa_animator:kushala/model
 
 execute if entity @s[scores={AsaMatrix=1..12}] run function asa_animator:kushala/manager/rotate
 
-execute if entity @s[scores={AsaMatrix=5..8}] run playsound minecraft:entity.phantom.death master @a ~ ~ ~ 3 0.9
-execute if entity @s[scores={AsaMatrix=5..8}] run playsound minecraft:entity.phantom.death master @a ~ ~ ~ 3 0.7
-
 execute if entity @s[scores={AsaMatrix=6}] run function asa_animator:kushala/manager/particle/step
 execute if entity @s[scores={AsaMatrix=30}] run function asa_animator:kushala/manager/particle/step
 
 # 発射
-execute if entity @s[scores={AsaMatrix=13}] run summon marker ^ ^0.7 ^8 {Tags:["KushalaBreathTarget"]}
+execute if entity @s[scores={AsaMatrix=13}] run summon marker ^ ^0.7 ^20 {Tags:["KushalaBreathTarget"]}
 execute if entity @s[scores={AsaMatrix=13}] unless entity @e[tag=KushalaAttackTarget,distance=0..8] at @e[tag=KushalaAttackTarget,limit=1] run tp @e[type=marker,tag=KushalaBreathTarget] ~ ~ ~
 execute if entity @s[scores={AsaMatrix=32}] positioned ^ ^2.5 ^6 run function asa_animator:kushala/anim/breath/events/shot
