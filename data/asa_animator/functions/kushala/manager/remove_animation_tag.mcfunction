@@ -37,3 +37,4 @@ tag @s remove DashBite
 kill @e[type=marker,tag=KushalaBreathTarget]
 kill @e[type=marker,tag=KushalaMoveRotate]
 kill @e[type=marker,tag=KushalaDashTarget]
+kill @e[type=marker,tag=KushalaChargeFPos]

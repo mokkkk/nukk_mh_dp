@@ -24,3 +24,4 @@ execute if entity @s[tag=BrachyRSwitch] run function asa_animator:brachyr/manage
 execute if entity @s[tag=TigaShot] run function asa_animator:tiga/anim/shot_l/events/shot/main_bullet
 
 execute if entity @s[tag=KushalaBreath] run function asa_animator:kushala/anim/breath/events/main_bullet
+execute if entity @s[tag=KushalaBreathU] run function asa_animator:kushala/anim/breath_up/events/main_bullet

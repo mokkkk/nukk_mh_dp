@@ -15,6 +15,7 @@ execute if entity @s[scores={AsaMatrix=31..}] run function asa_animator:kushala/
 execute as @e[type=armor_stand,tag=KushalaParts] run function #asa_matrix:animate
 function asa_animator:kushala/model
 
-execute if entity @s[scores={AsaMatrix=1..22}] run function asa_animator:kushala/manager/rotate
-execute if entity @s[scores={AsaMatrix=23}] run summon marker ^ ^ ^10 {Tags:["KushalaDashTarget"]}
-execute if entity @s[scores={AsaMatrix=23}] positioned as @e[tag=KushalaAttackTarget] as @e[type=marker,tag=KushalaDashTarget] run tp @s ~ ~ ~
+execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
+execute if entity @s[scores={AsaMatrix=1..16}] run function asa_animator:kushala/manager/rotate
+execute if entity @s[scores={AsaMatrix=17}] run summon marker ^ ^ ^10 {Tags:["KushalaDashTarget"]}
+execute if entity @s[scores={AsaMatrix=17}] positioned as @e[tag=KushalaAttackTarget] as @e[type=marker,tag=KushalaDashTarget] run tp @s ~ ~ ~

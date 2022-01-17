@@ -34,9 +34,10 @@ execute if entity @s[scores={AsaMatrix=53}] run function asa_animator:kushala/ma
 
 execute if entity @s[scores={AsaMatrix=24..30}] run function asa_animator:kushala/manager/rotate
 
-execute if entity @s[scores={AsaMatrix=31..37}] unless entity @e[tag=KushalaAttackTarget,distance=..6] at @s run tp @s ^ ^ ^0.8 ~-3 ~
-execute if entity @s[scores={AsaMatrix=38..46}] at @s run tp @s ^ ^ ^0.1 ~3 ~
-execute if entity @s[scores={AsaMatrix=47..53}] unless entity @e[tag=KushalaAttackTarget,distance=..6] at @s run tp @s ^ ^ ^0.8 ~3 ~
+execute if entity @s[scores={AsaMatrix=31..37}] unless entity @e[tag=KushalaAttackTarget,distance=..6] at @s run tp @s ^ ^ ^1.2 ~-4 ~
+execute if entity @s[scores={AsaMatrix=38..46}] unless entity @e[tag=KushalaAttackTarget,distance=..6] at @s run tp @s ^ ^ ^0.3 ~3 ~
+execute if entity @s[scores={AsaMatrix=47..53}] unless entity @e[tag=KushalaAttackTarget,distance=..6] at @s run tp @s ^ ^ ^1.2 ~3 ~
+execute if entity @s[scores={AsaMatrix=54..63}] at @s run tp @s ^ ^ ^0.1 ~3 ~
 
 execute if entity @s[scores={AsaMatrix=33}] positioned ^ ^ ^6 run function asa_animator:kushala/anim/bite_l/events/damage
 execute if entity @s[scores={AsaMatrix=50}] positioned ^ ^ ^6 run function asa_animator:kushala/anim/bite_l/events/damage
