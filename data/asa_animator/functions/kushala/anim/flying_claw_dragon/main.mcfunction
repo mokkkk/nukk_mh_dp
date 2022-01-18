@@ -34,3 +34,5 @@ execute if entity @s[scores={AsaMatrix=13}] run function asa_animator:kushala/an
 execute if entity @s[scores={AsaMatrix=24..29}] run function asa_animator:kushala/anim/claw_dragon/events/pos/offset
 
 execute if entity @s[scores={AsaMatrix=30}] positioned ^ ^0.5 ^5.5 run function asa_animator:kushala/anim/claw_dragon/events/damage
+
+execute if entity @s[scores={AsaMatrix=37}] if score #mhdp_kushala_lv AsaMatrix matches 2 run function asa_animator:kushala/anim/flying_claw_dragon/events/change

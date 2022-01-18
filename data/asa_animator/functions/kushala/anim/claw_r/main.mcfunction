@@ -27,7 +27,7 @@ execute if entity @s[scores={AsaMatrix=1..10}] if entity @s[tag=KushalaAttackTar
 
 execute if entity @s[scores={AsaMatrix=18..24}] unless entity @s[tag=KushalaAttackTarget,distance=..7] at @s run tp @s ^ ^ ^0.7
 
-execute if entity @s[scores={AsaMatrix=32}] if predicate asa_animator:random/050 run function asa_animator:kushala/anim/claw_r/events/change
+execute if entity @s[scores={AsaMatrix=32}] if score #mhdp_kushala_lv AsaMatrix matches 1.. run function asa_animator:kushala/anim/claw_r/events/change
 
 execute if entity @s[scores={AsaMatrix=21}] run playsound item.trident.throw master @a ~ ~ ~ 2 1.2
 execute if entity @s[scores={AsaMatrix=22}] positioned ^ ^1 ^4.5 run function asa_animator:kushala/anim/claw_l/events/damage

@@ -9,10 +9,14 @@ execute if entity @s[tag=ChangeAnm] run function asa_animator:kushala/manager/ch
 execute if predicate asa_animator:kushala/stay unless entity @s[tag=IsFlying] run function asa_animator:kushala/anim/stay/main
 execute if predicate asa_animator:kushala/stay if entity @s[tag=IsFlying] run function asa_animator:kushala/anim/flying_stay/main
 # 軸合わせ
-# execute if entity @s[tag=AnmTurnL] run function asa_animator:kushala/anim/turn_l/main
-# execute if entity @s[tag=AnmTurnR] run function asa_animator:kushala/anim/turn_r/main
+execute if entity @s[tag=AnmTurn,tag=!IsFlying] run function asa_animator:kushala/anim/turn/main
+execute if entity @s[tag=AnmTurn,tag=IsFlying] run function asa_animator:kushala/anim/flying_turn/main
 # 行動
-execute unless entity @s[tag=IsTurn] unless predicate asa_animator:kushala/stay run function asa_animator:kushala/anim/main
+execute unless entity @s[tag=AnmTurn] unless predicate asa_animator:kushala/stay run function asa_animator:kushala/anim/main
+
+# パーティクル
+execute if score #mhdp_kushala_lv AsaMatrix matches 1 run particle cloud ~ ~2 ~ 1.5 1.5 1.5 0.2 2
+execute if score #mhdp_kushala_lv AsaMatrix matches 2 run particle large_smoke ~ ~2 ~ 1.5 1.5 1.5 0.3 2
 
 # 当たり判定位置
 # execute as @e[type=slime,tag=KushalaParts] run function asa_animator:kushala/manager/health/pos
