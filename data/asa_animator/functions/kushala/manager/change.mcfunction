@@ -18,7 +18,7 @@ execute unless entity @e[tag=KushalaAttackTarget] run tag @e[tag=KushalaTarget,s
 # execute unless predicate asa_animator:kushala/turn run function asa_animator:kushala/manager/change_normal/_/turn_b
 
 # 強制
-tag @s add AnmSp
+tag @s add AnmStride
 
 # 終了
 tag @s remove ChangeAnm

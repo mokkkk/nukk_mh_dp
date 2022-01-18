@@ -48,3 +48,7 @@ execute if entity @s[scores={AsaMatrix=53}] run playsound block.grass.step maste
 execute if entity @s[scores={AsaMatrix=69}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=85}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=101}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
+
+execute if entity @s[scores={AsaMatrix=26..101}] at @s positioned ~ ~5 ~ run tp @s ~ ~ ~
+execute if entity @s[scores={AsaMatrix=26..101}] at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
+execute if entity @s[scores={AsaMatrix=26..101}] at @s run tp @s ~ ~0.35 ~

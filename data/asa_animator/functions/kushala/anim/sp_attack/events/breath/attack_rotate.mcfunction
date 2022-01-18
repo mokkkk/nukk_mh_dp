@@ -24,7 +24,7 @@ execute at @s rotated ~-8 ~ as @e[type=marker,tag=KushalaChargeFAttack,tag=C,lim
 execute at @s rotated ~-12 ~ as @e[type=marker,tag=KushalaChargeFAttack,tag=D,limit=1] run function asa_animator:kushala/anim/breath_v/events/attack_tp
 execute at @s rotated ~-16 ~ as @e[type=marker,tag=KushalaChargeFAttack,tag=E,limit=1] run function asa_animator:kushala/anim/breath_v/events/attack_tp
 execute at @s rotated ~-20 ~ as @e[type=marker,tag=KushalaChargeFAttack,tag=F,limit=1] run function asa_animator:kushala/anim/breath_v/events/attack_tp
-execute as @e[type=marker,tag=KushalaChargeFAttack] at @s run function asa_animator:kushala/anim/breath_v/events/damage
+execute as @e[type=marker,tag=KushalaChargeFAttack] at @s run function asa_animator:kushala/anim/sp_attack/events/breath/damage
 
 # 回転
-execute at @s run tp @s ~ ~ ~ ~-24 ~-0.5
+execute at @s run tp @s ~ ~ ~ ~-24 ~-0.7

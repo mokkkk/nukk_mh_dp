@@ -30,32 +30,38 @@ execute if entity @s[scores={AsaMatrix=144..147}] run tp @s ^0 ^0 ^0
 execute if entity @s[scores={AsaMatrix=148}] run function asa_animator:kushala/anim/sp_attack/keyframes/13
 execute if entity @s[scores={AsaMatrix=148..152}] run tp @s ^0 ^0 ^0.1
 execute if entity @s[scores={AsaMatrix=153}] run function asa_animator:kushala/anim/sp_attack/keyframes/14
-execute if entity @s[scores={AsaMatrix=153..167}] run tp @s ^0.01333333 ^0 ^0
-execute if entity @s[scores={AsaMatrix=168}] run function asa_animator:kushala/anim/sp_attack/keyframes/15
-execute if entity @s[scores={AsaMatrix=168..172}] run tp @s ^-0.04 ^0.02 ^0.04
-execute if entity @s[scores={AsaMatrix=173}] run function asa_animator:kushala/anim/sp_attack/keyframes/16
-execute if entity @s[scores={AsaMatrix=173..187}] run tp @s ^0 ^0 ^0 ~-24 ~
-execute if entity @s[scores={AsaMatrix=188}] run function asa_animator:kushala/anim/sp_attack/keyframes/17
-execute if entity @s[scores={AsaMatrix=188..192}] run tp @s ^0 ^0.02 ^0.02 ~-4 ~
-execute if entity @s[scores={AsaMatrix=193}] run function asa_animator:kushala/anim/sp_attack/keyframes/18
-execute if entity @s[scores={AsaMatrix=193..202}] run tp @s ^0 ^0.005 ^0.02 ~-1 ~
-execute if entity @s[scores={AsaMatrix=203}] run function asa_animator:kushala/anim/sp_attack/keyframes/19
-execute if entity @s[scores={AsaMatrix=203..217}] run tp @s ^0 ^-0.02333333 ^0.006666668
-execute if entity @s[scores={AsaMatrix=218}] run function asa_animator:kushala/anim/sp_attack/keyframes/20
-execute if entity @s[scores={AsaMatrix=218..220}] run tp @s ^0 ^0 ^0
-execute if entity @s[scores={AsaMatrix=221}] run function asa_animator:kushala/anim/sp_attack/keyframes/21
-execute if entity @s[scores={AsaMatrix=221..230}] run tp @s ^0 ^0.01 ^-0.04
-execute if entity @s[scores={AsaMatrix=231}] run function asa_animator:kushala/anim/sp_attack/keyframes/22
-execute if entity @s[scores={AsaMatrix=231..250}] run tp @s ^0 ^0 ^0
-execute if entity @s[scores={AsaMatrix=251}] run function asa_animator:kushala/anim/sp_attack/keyframes/23
-execute if entity @s[scores={AsaMatrix=251..265}] run tp @s ^0 ^0 ^-0.01333333
-execute if entity @s[scores={AsaMatrix=266..}] run function asa_animator:kushala/anim/sp_attack/end
+execute if entity @s[scores={AsaMatrix=153..177}] run tp @s ^0.008 ^0 ^0
+execute if entity @s[scores={AsaMatrix=178}] run function asa_animator:kushala/anim/sp_attack/keyframes/15
+execute if entity @s[scores={AsaMatrix=178..182}] run tp @s ^-0.04 ^0.02 ^0.04 ~3 ~
+execute if entity @s[scores={AsaMatrix=183}] run function asa_animator:kushala/anim/sp_attack/keyframes/16
+execute if entity @s[scores={AsaMatrix=183..197}] run tp @s ^0 ^0 ^0 ~-24 ~
+execute if entity @s[scores={AsaMatrix=198}] run function asa_animator:kushala/anim/sp_attack/keyframes/17
+execute if entity @s[scores={AsaMatrix=198..202}] run tp @s ^0 ^0.02 ^0.02 ~-4 ~
+execute if entity @s[scores={AsaMatrix=203}] run function asa_animator:kushala/anim/sp_attack/keyframes/18
+execute if entity @s[scores={AsaMatrix=203..212}] run tp @s ^0 ^0.005 ^0.02 ~-1 ~
+execute if entity @s[scores={AsaMatrix=213}] run function asa_animator:kushala/anim/sp_attack/keyframes/19
+execute if entity @s[scores={AsaMatrix=213..227}] run tp @s ^0 ^-0.02333333 ^0.006666668
+execute if entity @s[scores={AsaMatrix=228}] run function asa_animator:kushala/anim/sp_attack/keyframes/20
+execute if entity @s[scores={AsaMatrix=228..230}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=231}] run function asa_animator:kushala/anim/sp_attack/keyframes/21
+execute if entity @s[scores={AsaMatrix=231..240}] run tp @s ^0 ^0.01 ^-0.04
+execute if entity @s[scores={AsaMatrix=241}] run function asa_animator:kushala/anim/sp_attack/keyframes/22
+execute if entity @s[scores={AsaMatrix=241..260}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=261}] run function asa_animator:kushala/anim/sp_attack/keyframes/23
+execute if entity @s[scores={AsaMatrix=261..275}] run tp @s ^0 ^0 ^-0.01333333
+execute if entity @s[scores={AsaMatrix=276..}] run function asa_animator:kushala/anim/sp_attack/end
 execute as @e[type=armor_stand,tag=KushalaParts] run function #asa_matrix:animate
 function asa_animator:kushala/model
+
+execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:kushala/manager/model/change_to_open
+execute if entity @s[scores={AsaMatrix=261}] run function asa_animator:kushala/manager/model/change_to_normal
 
 execute if entity @s[scores={AsaMatrix=1}] run summon marker ~ ~ ~ {Tags:["KushalaSpTornado"]}
 execute if entity @s[scores={AsaMatrix=16}] as @e[type=marker,tag=KushalaSpTornado] at @s run function asa_animator:kushala/anim/sp_attack/events/tornado/particle
 execute if entity @s[scores={AsaMatrix=16..153}] as @e[type=marker,tag=KushalaSpTornado] at @s run function asa_animator:kushala/anim/sp_attack/events/tornado/main_bullet_t
+execute if entity @s[scores={AsaMatrix=16..103}] as @e[type=marker,tag=KushalaSpTornado] at @s if entity @a[distance=0..40] as @a[distance=0..40] unless entity @s[scores={MhdpTAvoid=1..}] unless entity @s[scores={MhdpTDamage=1..}] at @s facing entity @e[type=marker,tag=KushalaSpTornado] feet positioned ^ ^ ^0.2 rotated as @s run function asa_animator:kushala/anim/sp_attack/events/tornado/move
+execute if entity @s[scores={AsaMatrix=104..137}] as @e[type=marker,tag=KushalaSpTornado] at @s if entity @a[distance=0..40] as @a[distance=0..40] unless entity @s[scores={MhdpTAvoid=1..}] unless entity @s[scores={MhdpTDamage=1..}] at @s facing entity @e[type=marker,tag=KushalaSpTornado] feet positioned ^ ^ ^0.3 rotated as @s run function asa_animator:kushala/anim/sp_attack/events/tornado/move
+execute if entity @s[scores={AsaMatrix=138..153}] as @e[type=marker,tag=KushalaSpTornado] at @s if entity @a[distance=0..40] as @a[distance=0..40] unless entity @s[scores={MhdpTAvoid=1..}] unless entity @s[scores={MhdpTDamage=1..}] at @s facing entity @e[type=marker,tag=KushalaSpTornado] feet positioned ^ ^ ^0.5 rotated as @s run function asa_animator:kushala/anim/sp_attack/events/tornado/move
 
 execute if entity @s[scores={AsaMatrix=7}] run function asa_animator:kushala/manager/particle/step
 execute if entity @s[scores={AsaMatrix=12..16}] run playsound entity.ender_dragon.growl master @a ~ ~ ~ 3 0.5
@@ -74,10 +80,15 @@ execute if entity @s[scores={AsaMatrix=138}] run function asa_animator:kushala/a
 execute if entity @s[scores={AsaMatrix=139..152}] run function asa_animator:kushala/anim/sp_attack/events/pos/offset
 execute if entity @s[scores={AsaMatrix=153}] run function asa_animator:kushala/manager/particle/step
 execute if entity @s[scores={AsaMatrix=153}] run function asa_animator:kushala/anim/sp_attack/events/bomb/set_0
+execute if entity @s[scores={AsaMatrix=155}] rotated ~10 ~ run function asa_animator:kushala/anim/sp_attack/events/bomb/set_1
+execute if entity @s[scores={AsaMatrix=157}] rotated ~20 ~ run function asa_animator:kushala/anim/sp_attack/events/bomb/set_2
+execute if entity @s[scores={AsaMatrix=159}] rotated ~30 ~ run function asa_animator:kushala/anim/sp_attack/events/bomb/set_3
+execute if entity @s[scores={AsaMatrix=161}] rotated ~40 ~ run function asa_animator:kushala/anim/sp_attack/events/bomb/set_4
+execute if entity @s[scores={AsaMatrix=163}] rotated ~50 ~ run function asa_animator:kushala/anim/sp_attack/events/bomb/set_5
 
-execute if entity @s[scores={AsaMatrix=172}] run function asa_animator:kushala/anim/sp_attack/events/breath/attack_start
-execute if entity @s[scores={AsaMatrix=173..192}] as @e[type=marker,tag=KushalaChargeFPos,distance=0..7] at @s run function asa_animator:kushala/anim/sp_attack/events/breath/attack_rotate
-execute if entity @s[scores={AsaMatrix=193}] run kill @e[type=marker,tag=KushalaChargeFPos]
+execute if entity @s[scores={AsaMatrix=182}] run function asa_animator:kushala/anim/sp_attack/events/breath/attack_start
+execute if entity @s[scores={AsaMatrix=183..202}] as @e[type=marker,tag=KushalaChargeFPos,distance=0..7] at @s run function asa_animator:kushala/anim/sp_attack/events/breath/attack_rotate
+execute if entity @s[scores={AsaMatrix=203}] run kill @e[type=marker,tag=KushalaChargeFPos]
 
-execute if entity @s[scores={AsaMatrix=230..240}] run playsound minecraft:entity.phantom.death master @a ~ ~ ~ 3 1.1
-execute if entity @s[scores={AsaMatrix=230..240}] run playsound minecraft:entity.phantom.death master @a ~ ~ ~ 3 0.9
+execute if entity @s[scores={AsaMatrix=240..250}] run playsound minecraft:entity.phantom.death master @a ~ ~ ~ 3 1.1
+execute if entity @s[scores={AsaMatrix=240..250}] run playsound minecraft:entity.phantom.death master @a ~ ~ ~ 3 0.9
