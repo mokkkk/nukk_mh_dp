@@ -1,7 +1,7 @@
 # 7 Damage
 data modify storage score_damage: Argument set value {Damage:14.0f, BypassArmor:0b}
 data merge storage mhdp: {Epf:4}
-execute as @e[type=!armor_stand,type=!marker,tag=!KushalaParts,distance=..5] run function asa_animator:kushala/anim/claw_dragon/events/damage_sub
+execute as @e[type=!armor_stand,type=!area_effect_cloud,type=!marker,tag=!KushalaParts,distance=..5] run function asa_animator:kushala/anim/claw_dragon/events/damage_sub
 particle explosion ~ ~ ~ 2 0 2 0 10
 playsound entity.wither.break_block master @a ~ ~ ~ 2 0.5
 particle dust 0.314 0 0 3 ~ ~2 ~ 0.4 2 0.4 0 50

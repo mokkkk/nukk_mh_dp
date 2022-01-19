@@ -9,4 +9,6 @@ execute if entity @s[scores={AsaMatrix=25..}] run function asa_animator:kushala/
 execute as @e[type=armor_stand,tag=KushalaParts] run function #asa_matrix:animate
 function asa_animator:kushala/model
 
+execute unless predicate asa_animator:kushala/combo if entity @s[scores={AsaMatrix=1}] run tag @s add ChangeAnm
+
 execute if entity @s[scores={AsaMatrix=13}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7

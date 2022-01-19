@@ -18,5 +18,8 @@ execute if predicate asa_animator:brachy/combo run function asa_animator:brachy/
 # コンボ
 execute unless predicate asa_animator:brachy/combo run function asa_animator:brachy/manager/change_normal/combo/change
 
+# コンボ
+execute unless predicate asa_animator:brachy/combo run function asa_animator:brachy/manager/change_normal/combo/change
+
 # 終了
 tag @s remove ChangeAnm

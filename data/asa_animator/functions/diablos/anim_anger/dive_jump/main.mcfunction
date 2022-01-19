@@ -38,4 +38,4 @@ execute if entity @s[scores={AsaMatrix=22..}] at @s positioned ~ ~10 ~ run tp @s
 execute if entity @s[scores={AsaMatrix=22..}] at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
 
 # 攻撃
-execute if entity @s[scores={AsaMatrix=..60}] if entity @e[type=!armor_stand,type=!marker,distance=0..5] run function asa_animator:diablos/anim_anger/dash/events/damage
+execute if entity @s[scores={AsaMatrix=..60}] if entity @e[type=!armor_stand,type=!area_effect_cloud,type=!marker,distance=0..5] run function asa_animator:diablos/anim_anger/dash/events/damage
