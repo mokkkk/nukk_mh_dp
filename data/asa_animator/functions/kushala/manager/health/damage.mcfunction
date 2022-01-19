@@ -1,4 +1,6 @@
 
+# 戦闘開始
+execute if entity @e[type=armor_stand,tag=KushalaRoot,tag=IsStand,tag=!AnmSummon] as @e[type=armor_stand,tag=KushalaRoot] run function asa_animator:kushala/manager/start_battle
 # ダメージ適用
 # 怒り時ダメージ増加
 execute if entity @e[type=armor_stand,tag=KushalaRoot,tag=IsAnger] run scoreboard players operation #kushala_damage AsaMatrix *= #asam_const_120 AsaMatrix

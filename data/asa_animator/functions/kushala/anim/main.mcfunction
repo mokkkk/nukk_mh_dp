@@ -87,6 +87,11 @@ execute if entity @s[tag=AnmFlyClawD] run function asa_animator:kushala/anim/fly
 
 
 ## その他
+# 登場
+execute if entity @s[tag=AnmSummon] run function asa_animator:kushala/anim/summon/main
+# 着地
+execute if entity @s[tag=AnmSummonEndFly] run function asa_animator:kushala/anim/summon_end_fly/main
+# 立ち待機歩き
 # 咆哮
 execute if entity @s[tag=AnmVoice] run function asa_animator:kushala/anim/voice/main
 # 風纏い

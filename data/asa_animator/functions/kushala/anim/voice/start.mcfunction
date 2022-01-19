@@ -24,3 +24,4 @@ execute as @e[type=armor_stand,tag=KushalaParts,tag=WingL0] run data merge entit
 execute as @e[type=armor_stand,tag=KushalaParts,tag=WingR0] run data merge entity @s {Pose:{Head:[-4f,0f,-40f]}}
 execute as @e[type=armor_stand,tag=KushalaParts,tag=WingL1] run data merge entity @s {Pose:{Head:[-4f,2f,70f]}}
 execute as @e[type=armor_stand,tag=KushalaParts,tag=WingR1] run data merge entity @s {Pose:{Head:[-4f,-2f,-70f]}}
+tag @s remove IsStand
