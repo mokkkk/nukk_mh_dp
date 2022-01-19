@@ -25,7 +25,7 @@ execute if entity @s[scores={AsaMatrix=73..}] run function asa_animator:kushala/
 execute as @e[type=armor_stand,tag=KushalaParts] run function #asa_matrix:animate
 function asa_animator:kushala/model
 
-execute if entity @s[scores={AsaMatrix=1..27}] run function asa_animator:kushala/manager/rotate
+execute if entity @s[scores={AsaMatrix=1..24}] run function asa_animator:kushala/manager/rotate
 
 execute if entity @s[scores={AsaMatrix=4}] run playsound item.firecharge.use master @a ~ ~ ~ 3 0.5
 execute if entity @s[scores={AsaMatrix=6}] as @e[type=armor_stand,tag=KushalaParts,tag=HeadU,distance=0..7] at @s run function asa_animator:kushala/anim/breath_v/events/attack_start

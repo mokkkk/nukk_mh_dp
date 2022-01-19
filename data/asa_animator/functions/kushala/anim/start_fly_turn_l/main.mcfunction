@@ -21,7 +21,7 @@ execute if entity @s[scores={AsaMatrix=11}] run playsound entity.ender_dragon.fl
 execute if entity @s[scores={AsaMatrix=26}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 
 execute if entity @s[scores={AsaMatrix=..5}] run function asa_animator:kushala/anim/step_turn_l/events/rotate
-execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:kushala/anim/step_turn_l/events/pos/set_pos
+execute if entity @s[scores={AsaMatrix=1}] at @s run function asa_animator:kushala/anim/step_turn_l/events/pos/set_pos
 execute if entity @s[scores={AsaMatrix=6}] run kill @e[type=marker,tag=KushalaMovePos]
 execute if entity @s[scores={AsaMatrix=6..23}] run function asa_animator:kushala/anim/step_turn_l/events/pos/offset
 

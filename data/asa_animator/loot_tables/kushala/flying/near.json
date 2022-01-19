@@ -9,18 +9,27 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 4,
+              "weight": 3,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
                 "tag": "{ActPaper:1,Act:1}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "nbt": "{Tags:[\"KushalaNear\"]}"
+                  }
                 }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 3,
+              "weight": 4,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
@@ -42,7 +51,7 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 3,
+              "weight": 2,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
@@ -53,7 +62,7 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 4,
+              "weight": 3,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
@@ -84,7 +93,7 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 4,
+              "weight": 2,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
@@ -137,106 +146,6 @@
                   "entity": "this",
                   "predicate": {
                     "nbt": "{Tags:[\"KushalaLv1\"]}"
-                  }
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:paper",
-              "weight": 4,
-              "functions": [
-                {
-                "function": "minecraft:set_nbt",
-                "tag": "{ActPaper:1,Act:10}"
-                }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "nbt": "{Tags:[\"KushalaLv2\"]}"
-                  }
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:paper",
-              "weight": 4,
-              "functions": [
-                {
-                "function": "minecraft:set_nbt",
-                "tag": "{ActPaper:1,Act:11}"
-                }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "nbt": "{Tags:[\"KushalaLv2\"]}"
-                  }
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:paper",
-              "weight": 4,
-              "functions": [
-                {
-                "function": "minecraft:set_nbt",
-                "tag": "{ActPaper:1,Act:12}"
-                }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "nbt": "{Tags:[\"KushalaLv2\"]}"
-                  }
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:paper",
-              "weight": 4,
-              "functions": [
-                {
-                "function": "minecraft:set_nbt",
-                "tag": "{ActPaper:1,Act:13}"
-                }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "nbt": "{Tags:[\"KushalaLv1\"]}"
-                  }
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:paper",
-              "weight": 4,
-              "functions": [
-                {
-                "function": "minecraft:set_nbt",
-                "tag": "{ActPaper:1,Act:14}"
-                }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "nbt": "{Tags:[\"KushalaLv2\"]}"
                   }
                 }
               ]

@@ -28,7 +28,7 @@ execute if entity @s[scores={AsaMatrix=10}] run playsound entity.ender_dragon.fl
 execute if entity @s[scores={AsaMatrix=27}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 
 execute if entity @s[scores={AsaMatrix=..19}] run function asa_animator:kushala/manager/rotate
-execute if entity @s[scores={AsaMatrix=20}] run function asa_animator:kushala/anim/jump/events/pos/set_pos
+execute if entity @s[scores={AsaMatrix=20}] at @s run function asa_animator:kushala/anim/jump/events/pos/set_pos
 execute if entity @s[scores={AsaMatrix=21..40}] run function asa_animator:kushala/anim/jump/events/pos/offset
 
 execute if entity @s[scores={AsaMatrix=20}] run function asa_animator:kushala/manager/particle/step

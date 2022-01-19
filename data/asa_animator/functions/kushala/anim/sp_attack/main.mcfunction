@@ -77,7 +77,7 @@ execute if entity @s[scores={AsaMatrix=128}] run playsound entity.ender_dragon.f
 
 execute if entity @s[scores={AsaMatrix=124..138}] run function asa_animator:kushala/anim/sp_attack/events/rotate
 
-execute if entity @s[scores={AsaMatrix=138}] run function asa_animator:kushala/anim/sp_attack/events/pos/set_pos
+execute if entity @s[scores={AsaMatrix=138}] at @s run function asa_animator:kushala/anim/sp_attack/events/pos/set_pos
 execute if entity @s[scores={AsaMatrix=139..152}] run function asa_animator:kushala/anim/sp_attack/events/pos/offset
 execute if entity @s[scores={AsaMatrix=153}] run function asa_animator:kushala/manager/particle/step
 execute if entity @s[scores={AsaMatrix=153}] run function asa_animator:kushala/anim/sp_attack/events/bomb/set_0
@@ -86,6 +86,7 @@ execute if entity @s[scores={AsaMatrix=157}] rotated ~20 ~ run function asa_anim
 execute if entity @s[scores={AsaMatrix=159}] rotated ~30 ~ run function asa_animator:kushala/anim/sp_attack/events/bomb/set_3
 execute if entity @s[scores={AsaMatrix=161}] rotated ~40 ~ run function asa_animator:kushala/anim/sp_attack/events/bomb/set_4
 execute if entity @s[scores={AsaMatrix=163}] rotated ~50 ~ run function asa_animator:kushala/anim/sp_attack/events/bomb/set_5
+execute if entity @s[scores={AsaMatrix=163}] run kill @e[type=marker,tag=KushalaMovePos]
 
 execute if entity @s[scores={AsaMatrix=182}] run function asa_animator:kushala/anim/sp_attack/events/breath/attack_start
 execute if entity @s[scores={AsaMatrix=183..202}] as @e[type=marker,tag=KushalaChargeFPos,distance=0..7] at @s run function asa_animator:kushala/anim/sp_attack/events/breath/attack_rotate

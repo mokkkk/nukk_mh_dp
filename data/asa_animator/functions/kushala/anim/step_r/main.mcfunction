@@ -16,5 +16,5 @@ function asa_animator:kushala/model
 execute if entity @s[scores={AsaMatrix=6}] run function asa_animator:kushala/manager/particle/step
 execute if entity @s[scores={AsaMatrix=18}] run function asa_animator:kushala/manager/particle/step
 
-execute if entity @s[scores={AsaMatrix=5}] run function asa_animator:kushala/anim/step_r/events/pos/set_pos
+execute if entity @s[scores={AsaMatrix=5}] at @s run function asa_animator:kushala/anim/step_r/events/pos/set_pos
 execute if entity @s[scores={AsaMatrix=6..17}] run function asa_animator:kushala/anim/step_l/events/pos/offset

@@ -3,3 +3,5 @@ execute as @e[type=armor_stand,tag=KushalaParts] run function #asa_matrix:animat
 tag @s remove AnmSp
 kill @e[type=marker,tag=KushalaSpTornado]
 scoreboard players set #mhdp_kushala_lv AsaMatrix 0
+scoreboard players set #mhdp_kushala_actcount_lv AsaMatrix 0
+scoreboard players set #mhdp_kushala_actcount AsaMatrix 0

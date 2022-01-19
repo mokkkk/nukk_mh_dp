@@ -36,7 +36,7 @@ execute if entity @s[scores={AsaMatrix=1..12}] run function asa_animator:kushala
 execute if entity @s[scores={AsaMatrix=21}] run function asa_animator:kushala/manager/particle/step
 execute if entity @s[scores={AsaMatrix=44}] run function asa_animator:kushala/manager/particle/step
 
-execute if entity @s[scores={AsaMatrix=25}] run function asa_animator:kushala/anim/bjb_land/events/pos/set_pos
+execute if entity @s[scores={AsaMatrix=25}] at @s run function asa_animator:kushala/anim/bjb_land/events/pos/set_pos
 execute if entity @s[scores={AsaMatrix=26..43}] run function asa_animator:kushala/anim/bjb_land/events/pos/offset
 
 execute if entity @s[scores={AsaMatrix=23}] positioned ^ ^6 ^5 run function asa_animator:kushala/anim/bjb_land/events/shot
