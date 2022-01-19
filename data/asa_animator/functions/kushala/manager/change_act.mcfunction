@@ -13,7 +13,7 @@ execute if predicate asa_animator:kushala/stay if predicate asa_animator:kushala
 
 # フェーズ変更
 execute if predicate asa_animator:kushala/stay if predicate asa_animator:kushala/combo if score #mhdp_kushala_actcount_phase AsaMatrix matches 12.. if entity @s[tag=!IsFlying] run function asa_animator:kushala/manager/change_normal/phase
-execute if predicate asa_animator:kushala/stay if predicate asa_animator:kushala/combo if score #mhdp_kushala_actcount_phase AsaMatrix matches 7.. if entity @s[tag=IsFlying] run function asa_animator:kushala/manager/change_flying/phase
+execute if predicate asa_animator:kushala/stay if predicate asa_animator:kushala/combo if score #mhdp_kushala_actcount_phase AsaMatrix matches 5.. if entity @s[tag=IsFlying] run function asa_animator:kushala/manager/change_flying/phase
 
 # 通常時
 execute if predicate asa_animator:kushala/stay if predicate asa_animator:kushala/combo if entity @s[tag=!IsFlying] run function asa_animator:kushala/manager/change_normal/change

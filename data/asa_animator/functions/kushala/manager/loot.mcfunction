@@ -1,2 +1,2 @@
-execute if block ~ ~-1 ~ #asa_animator:no_collision positioned ~ ~-1 ~ run function asa_animator:tiga/manager/loot
-execute unless block ~ ~-1 ~ #asa_animator:no_collision run function asa_animator:tiga/manager/loot_
+execute if block ~ ~-1 ~ #asa_animator:no_collision positioned ~ ~-1 ~ run function asa_animator:kushala/manager/loot
+execute unless block ~ ~-1 ~ #asa_animator:no_collision run function asa_animator:kushala/manager/loot_

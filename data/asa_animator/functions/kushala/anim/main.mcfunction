@@ -91,3 +91,5 @@ execute if entity @s[tag=AnmFlyClawD] run function asa_animator:kushala/anim/fly
 execute if entity @s[tag=AnmVoice] run function asa_animator:kushala/anim/voice/main
 # 風纏い
 execute if entity @s[tag=AnmCharge] run function asa_animator:kushala/anim/charge/main
+# 討伐
+execute if entity @s[tag=AnmDeath] run function asa_animator:kushala/anim/death/main
