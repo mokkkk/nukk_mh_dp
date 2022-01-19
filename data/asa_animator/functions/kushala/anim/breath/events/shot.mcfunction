@@ -1,8 +1,9 @@
 
 # 攻撃用マーカー召喚
-summon marker ~ ~-1.4 ~ {Tags:["MonsterShot","KushalaBreath","Start"]}
+execute if score #mhdp_kushala_lv AsaMatrix matches ..1 run summon marker ~ ~ ~ {Tags:["MonsterShot","KushalaBreath","Start"]}
+execute if score #mhdp_kushala_lv AsaMatrix matches 2.. run summon marker ~ ~ ~ {Tags:["MonsterShot","KushalaBreath","Start","Lv2"]}
 
-execute as @e[type=marker,tag=KushalaBreath,tag=Start] at @s positioned ~ ~1.4 ~ facing entity @e[type=marker,tag=KushalaBreathTarget] eyes run tp @s ~ ~-1.4 ~ ~ ~
+execute as @e[type=marker,tag=KushalaBreath,tag=Start] at @s positioned ~ ~ ~ facing entity @e[type=marker,tag=KushalaBreathTarget] eyes run tp @s ~ ~ ~ ~ ~
 
 tag @e[type=marker,tag=KushalaBreath] remove Start
 

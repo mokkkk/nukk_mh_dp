@@ -1,6 +1,6 @@
 
 # 行動カウント増加
-scoreboard players add #mhdp_kushala_actcount_lv AsaMatrix 1
+execute unless entity @s[tag=DestroyHead] run scoreboard players add #mhdp_kushala_actcount_lv AsaMatrix 1
 scoreboard players add #mhdp_kushala_actcount_phase AsaMatrix 1
 
 # 非コンボ時ターゲットリセット

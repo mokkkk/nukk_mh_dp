@@ -92,9 +92,22 @@ execute if entity @s[tag=AnmSummon] run function asa_animator:kushala/anim/summo
 # 着地
 execute if entity @s[tag=AnmSummonEndFly] run function asa_animator:kushala/anim/summon_end_fly/main
 # 立ち待機歩き
+
 # 咆哮
 execute if entity @s[tag=AnmVoice] run function asa_animator:kushala/anim/voice/main
 # 風纏い
 execute if entity @s[tag=AnmCharge] run function asa_animator:kushala/anim/charge/main
 # 討伐
 execute if entity @s[tag=AnmDeath] run function asa_animator:kushala/anim/death/main
+
+# 大怯み（風纏い解除）
+execute if entity @s[tag=AnmDamageHead] run function asa_animator:kushala/anim/damage_head/main
+
+# 頭部位破壊
+execute if entity @s[tag=AnmDHead] run function asa_animator:kushala/anim/destroy_head/main
+# 胴部位破壊
+execute if entity @s[tag=AnmDBody] run function asa_animator:kushala/anim/destroy_body/main
+# 尻尾部位破壊
+execute if entity @s[tag=AnmDTail] run function asa_animator:kushala/anim/destroy_tail/main
+# 飛行中怯み
+execute if entity @s[tag=AnmFlyDamage] run function asa_animator:kushala/anim/flying_damage/main

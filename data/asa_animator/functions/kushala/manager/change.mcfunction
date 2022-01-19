@@ -17,7 +17,7 @@ execute unless predicate asa_animator:kushala/combo run function asa_animator:ku
 
 # 強制
 # function asa_animator:kushala/manager/change_normal/_/claw
-# tag @s add AnmMoveStart
+# tag @s add AnmFlyDamage
 
 # 終了
 tag @s remove ChangeAnm

@@ -1,1 +1,1 @@
-advancement revoke @a only mh_dp:toasts/tiga
+advancement revoke @a only mh_dp:toasts/kushala

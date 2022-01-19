@@ -43,9 +43,13 @@ tag @s remove AnmFlyBreathT3
 tag @s remove AnmFlyClawD
 tag @s remove AnmVoice
 tag @s remove AnmCharge
-# tag @s remove Anm
-# tag @s remove Anm
-# tag @s remove Anm
+tag @s remove AnmSummon
+tag @s remove AnmSummonEndFly
+tag @s remove AnmDHead
+tag @s remove AnmDBody
+tag @s remove AnmDTail
+tag @s remove AnmDamageHead
+tag @s remove AnmFlyDamage
 
 kill @e[type=marker,tag=KushalaBreathTarget]
 kill @e[type=marker,tag=KushalaMoveRotate]

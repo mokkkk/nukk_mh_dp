@@ -18,7 +18,6 @@ execute as @e[type=armor_stand,tag=KushalaParts] run function #asa_matrix:animat
 function asa_animator:kushala/model
 
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:kushala/manager/model/change_to_open
-execute if entity @s[scores={AsaMatrix=61}] run function asa_animator:kushala/manager/model/change_to_normal
 
 execute if entity @s[scores={AsaMatrix=13}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=37}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
