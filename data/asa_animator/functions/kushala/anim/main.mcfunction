@@ -103,7 +103,7 @@ execute if entity @s[tag=AnmDeath] run function asa_animator:kushala/anim/death/
 execute if entity @s[tag=AnmFlyDeath] run function asa_animator:kushala/anim/flying_death/main
 
 # 大怯み（風纏い解除）
-execute if entity @s[tag=AnmDamageHead] run function asa_animator:kushala/anim/damage_head/main
+execute if entity @s[tag=AnmSpDamage] run function asa_animator:kushala/anim/damage_head/main
 
 # 頭部位破壊
 execute if entity @s[tag=AnmDHead] run function asa_animator:kushala/anim/destroy_head/main

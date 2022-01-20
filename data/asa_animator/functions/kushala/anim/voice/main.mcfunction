@@ -32,3 +32,6 @@ execute if entity @s[scores={AsaMatrix=16..40}] positioned as @e[type=armor_stan
 execute if entity @s[scores={AsaMatrix=16..40}] run particle block grass_block ~ ~0.1 ~ 3 0 3 0 10
 execute if entity @s[scores={AsaMatrix=55}] run function asa_animator:kushala/manager/particle/step
 execute if entity @s[scores={AsaMatrix=55}] run function asa_animator:kushala/anim/voice/events/particle
+
+execute at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
+execute at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~
