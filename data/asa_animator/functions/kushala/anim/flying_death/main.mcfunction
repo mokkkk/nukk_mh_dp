@@ -6,7 +6,7 @@ execute if entity @s[scores={AsaMatrix=1..5}] run tp @s ^0 ^0.08 ^0
 execute if entity @s[scores={AsaMatrix=6}] run function asa_animator:kushala/anim/flying_death/keyframes/1
 execute if entity @s[scores={AsaMatrix=6..10}] run tp @s ^0 ^0.2 ^0
 execute if entity @s[scores={AsaMatrix=11}] run function asa_animator:kushala/anim/flying_death/keyframes/2
-execute if entity @s[scores={AsaMatrix=11..16}] run tp @s ^0 ^-0.4666667 ^0.03333334
+execute if entity @s[scores={AsaMatrix=11..16}] run tp @s ^0 ^0 ^0
 execute if entity @s[scores={AsaMatrix=17}] run function asa_animator:kushala/anim/flying_death/keyframes/3
 execute if entity @s[scores={AsaMatrix=17..22}] run tp @s ^0 ^0 ^0
 execute if entity @s[scores={AsaMatrix=23}] run function asa_animator:kushala/anim/flying_death/keyframes/4

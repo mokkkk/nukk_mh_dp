@@ -41,15 +41,27 @@ tag @s remove AnmFlyBreath
 tag @s remove AnmFlyBreathT
 tag @s remove AnmFlyBreathT3
 tag @s remove AnmFlyClawD
-tag @s remove AnmVoice
-tag @s remove AnmCharge
 tag @s remove AnmSummon
 tag @s remove AnmSummonEndFly
+tag @s remove AnmVoice
+tag @s remove AnmCharge
 tag @s remove AnmDHead
 tag @s remove AnmDBody
 tag @s remove AnmDTail
-tag @s remove AnmDamageHead
+tag @s remove AnmSpDamage
 tag @s remove AnmFlyDamage
+
+tag @s remove ComboA
+tag @s remove ComboB
+tag @s remove ComboC
+tag @s remove ComboD
+tag @s remove ComboE
+tag @s remove ComboF
+tag @s remove ComboG
+tag @s remove ComboH
+tag @s remove ComboI
+tag @s remove ComboJ
+tag @s remove ComboK
 
 kill @e[type=marker,tag=KushalaBreathTarget]
 kill @e[type=marker,tag=KushalaMoveRotate]

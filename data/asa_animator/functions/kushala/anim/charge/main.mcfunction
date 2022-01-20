@@ -37,6 +37,7 @@ execute if entity @s[scores={AsaMatrix=12..30}] run playsound minecraft:entity.p
 execute if entity @s[scores={AsaMatrix=12..35}] run playsound minecraft:entity.phantom.death master @a ~ ~ ~ 3 0.8
 execute if entity @s[scores={AsaMatrix=12..30}] positioned as @e[type=armor_stand,tag=KushalaParts,tag=HeadU] positioned ^ ^1.8 ^0.4 run particle flash ~ ~ ~ 0 0 0 0 1
 execute if entity @s[scores={AsaMatrix=12..30}] run particle block grass_block ~ ~0.1 ~ 3 0 3 0 10
+execute if entity @s[scores={AsaMatrix=12}] run function asa_animator:kushala/anim/charge/events/damage
 execute if entity @s[scores={AsaMatrix=39}] run function asa_animator:kushala/manager/particle/step
 execute if entity @s[scores={AsaMatrix=39}] run function asa_animator:kushala/anim/voice/events/particle
 
