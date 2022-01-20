@@ -8,6 +8,7 @@ scoreboard objectives add MhdpTDamage dummy
 scoreboard objectives add MhdpTAvoid dummy
 scoreboard objectives add MhdpBlightFire dummy
 scoreboard objectives add MhdpBlightDragon dummy
+scoreboard objectives add MhdpTKnockback dummy
 
 # ID設定
 scoreboard players set #mhdp_id_holder MhdpMonsterID 0

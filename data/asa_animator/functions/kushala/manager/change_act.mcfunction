@@ -7,7 +7,7 @@ scoreboard players add #mhdp_kushala_actcount_phase AsaMatrix 1
 execute if predicate asa_animator:kushala/stay if predicate asa_animator:kushala/combo run function asa_animator:kushala/manager/change_target
 
 # 風纏い・大技
-execute if predicate asa_animator:kushala/stay if predicate asa_animator:kushala/combo if entity @s[tag=!IsFlying] if score #mhdp_kushala_actcount_lv AsaMatrix matches 12.. if score #mhdp_kushala_lv AsaMatrix matches ..0 if entity @s[tag=!IsFlying] run tag @s add AnmCharge
+execute if predicate asa_animator:kushala/stay if predicate asa_animator:kushala/combo if entity @s[tag=!IsFlying] if score #mhdp_kushala_actcount_lv AsaMatrix matches 8.. if score #mhdp_kushala_lv AsaMatrix matches ..0 if entity @s[tag=!IsFlying] run tag @s add AnmCharge
 execute if predicate asa_animator:kushala/stay if predicate asa_animator:kushala/combo if entity @s[tag=!IsFlying] if score #mhdp_kushala_actcount_lv AsaMatrix matches 30.. if score #mhdp_kushala_lv AsaMatrix matches 1 if entity @s[tag=!IsFlying] run tag @s add AnmCharge
 execute if predicate asa_animator:kushala/stay if predicate asa_animator:kushala/combo if entity @s[tag=!IsFlying] if score #mhdp_kushala_actcount_lv AsaMatrix matches 56.. if score #mhdp_kushala_lv AsaMatrix matches 2.. if entity @s[tag=!IsFlying] run tag @s add AnmStride
 
