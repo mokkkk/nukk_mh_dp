@@ -2,7 +2,7 @@
 # メッセージ
 tellraw @a {"text": "【戦いに勝利した！】"}
 # 討伐タイマー計算
-scoreboard players remove #mhdp_kushala_kill_timer AsaMatrix 90
+scoreboard players remove #mhdp_kushala_kill_timer AsaMatrix 118
 execute store result score #mhdp_min AsaMatrix store result score #mhdp_sec AsaMatrix run scoreboard players get #mhdp_kushala_kill_timer AsaMatrix
 scoreboard players operation #mhdp_sec AsaMatrix %= #asam_const_min AsaMatrix
 scoreboard players operation #mhdp_min AsaMatrix /= #asam_const_min AsaMatrix

@@ -12,3 +12,4 @@ execute unless score #kushala_damage AsaMatrix matches -501.. at @s run function
 execute if score #kushala_damage AsaMatrix matches -501.. run data merge entity @s {Health:1000f}
 # 複数判定への攻撃を無効
 execute unless score #kushala_damage AsaMatrix matches -501.. run execute as @e[type=slime,tag=KushalaParts] run data merge entity @s {Health:1000f}
+scoreboard players reset #kushala_damage

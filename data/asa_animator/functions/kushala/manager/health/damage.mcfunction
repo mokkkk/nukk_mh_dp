@@ -19,6 +19,10 @@ execute if score #mhdp_kushala_head_damage AsaMatrix matches ..0 as @e[type=armo
 execute if score #mhdp_kushala_body_damage AsaMatrix matches ..0 as @e[type=armor_stand,tag=KushalaRoot,distance=0..15] unless entity @s[tag=DestroyBody] run function asa_animator:kushala/manager/destroy_parts/body
 execute if score #mhdp_kushala_tail_damage AsaMatrix matches ..0 as @e[type=armor_stand,tag=KushalaRoot,distance=0..15] unless entity @s[tag=DestroyTail] run function asa_animator:kushala/manager/destroy_parts/tail
 
+# 風纏い時特殊怯み
+execute if entity @s[tag=HeadParts] if score #mhdp_kushala_lv AsaMatrix matches 1.. run scoreboard players operation #mhdp_kushala_sp_damage AsaMatrix += #kushala_damage AsaMatrix
+execute if score #mhdp_kushala_sp_damage AsaMatrix matches ..0 as @e[type=armor_stand,tag=KushalaRoot,distance=0..15] run function asa_animator:kushala/manager/start_sp_damage
+
 # 怒り遷移
 # scoreboard players operation #mhdp_kushala_anger_damage AsaMatrix += #kushala_damage AsaMatrix
 # execute if score #mhdp_kushala_anger_damage AsaMatrix matches ..-15000 unless entity @e[type=armor_stand,tag=KushalaRoot,tag=IsAnger] as @e[type=armor_stand,tag=KushalaRoot] run function asa_animator:kushala/manager/start_anger
