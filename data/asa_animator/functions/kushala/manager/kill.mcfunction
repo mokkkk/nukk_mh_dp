@@ -38,3 +38,5 @@ bossbar remove asa_animator:kushala_health
 
 # パーツ削除
 function asa_animator:kushala/kill
+
+weather clear
