@@ -12,6 +12,7 @@ function asa_animator:kushala/model
 execute if entity @s[scores={AsaMatrix=1}] if predicate asa_animator:random/070 if score #mhdp_kushala_lv AsaMatrix matches 2.. run function asa_animator:kushala/manager/particle/reflect
 
 execute unless predicate asa_animator:kushala/combo if entity @s[scores={AsaMatrix=1}] run tag @s add ChangeAnm
+execute if entity @s[tag=IsAnger,scores={AsaMatrix=1}] run tag @s add ChangeAnm
 execute if entity @s[scores={AsaMatrix=1}] if score #mhdp_kushala_actcount AsaMatrix matches 1.. run function asa_animator:kushala/anim/stay/events/change
 
 execute if entity @s[scores={AsaMatrix=13}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7

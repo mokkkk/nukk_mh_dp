@@ -50,6 +50,8 @@ tag @s remove AnmDBody
 tag @s remove AnmDTail
 tag @s remove AnmSpDamage
 tag @s remove AnmFlyDamage
+tag @s remove AnmAnger
+tag @s remove AnmFlyAnger
 
 tag @s remove ComboA
 tag @s remove ComboB

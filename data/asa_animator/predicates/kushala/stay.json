@@ -392,14 +392,21 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmTurnL\"]}"
+          "nbt": "{Tags:[\"AnmTurn\"]}"
         }
       },
       {
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmTurnR\"]}"
+          "nbt": "{Tags:[\"AnmAnger\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmFlyAnger\"]}"
         }
       }
     ]

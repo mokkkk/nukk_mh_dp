@@ -1,5 +1,7 @@
 scoreboard players set @s AsaMatrix 0
-function asa_animator:tiga/manager/remove_animation_tag
-tag @s add AnmBStepA
-scoreboard players set #mhdp_tiga_anger_count AsaMatrix 0
-scoreboard players set #mhdp_tiga_anger_damage AsaMatrix 0
+function asa_animator:kushala/manager/remove_animation_tag
+tag @s add IsAnger
+execute if entity @s[tag=!IsFlying] run tag @s add AnmAnger
+execute if entity @s[tag=IsFlying] run tag @s add AnmFlyAnger
+scoreboard players set #mhdp_kushala_anger_count AsaMatrix 12
+scoreboard players operation #mhdp_kushala_anger_damage AsaMatrix = #mhdp_kushala_anger_damage_max AsaMatrix

@@ -15,6 +15,9 @@ execute if predicate asa_animator:kushala/combo unless predicate asa_animator:ku
 # コンボ
 execute unless predicate asa_animator:kushala/combo run function asa_animator:kushala/manager/change_combo/change
 
+# 怒り終了
+execute if entity @s[tag=IsAnger] if score #mhdp_kushala_anger_count AsaMatrix matches ..0 run function asa_animator:kushala/manager/end_anger
+
 # 強制
 # function asa_animator:kushala/manager/change_normal/_/claw
 # tag @s add AnmFlyDamage

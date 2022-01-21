@@ -20,7 +20,8 @@ execute if score #mhdp_kushala_lv AsaMatrix matches 1 run particle cloud ~ ~2 ~ 
 execute if score #mhdp_kushala_lv AsaMatrix matches 2 run particle large_smoke ~ ~2 ~ 1.5 1.5 1.5 0.3 2
 
 # 当たり判定位置
-execute as @e[type=slime,tag=KushalaParts] run function asa_animator:kushala/manager/health/pos
+execute if entity @s[tag=!IsAnger] as @e[type=slime,tag=KushalaParts] run function asa_animator:kushala/manager/health/pos
+execute if entity @s[tag=IsAnger] as @e[type=slime,tag=KushalaParts] run function asa_animator:kushala/manager/health/pos_anger
 
 # デスポーン
-# execute unless entity @s[tag=AnmSummon] if data storage mh_dp:settings {Custom:{DisableDespawn:false}} unless entity @a[distance=0..64] run function asa_animator:kushala/manager/despawn
+execute unless entity @s[tag=AnmSummon] if data storage mh_dp:settings {Custom:{DisableDespawn:false}} unless entity @a[distance=0..64] run function asa_animator:kushala/manager/despawn
