@@ -36,3 +36,6 @@ execute if entity @s[scores={AsaMatrix=40..48}] run function asa_animator:kushal
 execute if entity @s[scores={AsaMatrix=40}] run function asa_animator:kushala/anim/jump/events/particle
 
 execute if entity @s[scores={AsaMatrix=36..43}] positioned ^ ^2 ^4 run function asa_animator:kushala/anim/jump/events/damage
+
+# 風圧
+execute if entity @s[scores={AsaMatrix=20}] if entity @a[distance=..5] as @a[distance=..5] unless entity @s[scores={MhdpTAvoid=1..}] unless entity @s[scores={MhdpTDamage=1..}] run function mh_dp:player/knockback/start

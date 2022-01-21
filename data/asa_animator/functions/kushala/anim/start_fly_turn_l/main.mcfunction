@@ -26,3 +26,5 @@ execute if entity @s[scores={AsaMatrix=6}] run kill @e[type=marker,tag=KushalaMo
 execute if entity @s[scores={AsaMatrix=6..23}] run function asa_animator:kushala/anim/step_turn_l/events/pos/offset
 
 execute if entity @s[scores={AsaMatrix=17..}] at @s run function asa_animator:kushala/manager/rotate
+
+execute if entity @s[scores={AsaMatrix=7}] if entity @a[distance=..6] as @a[distance=..6] unless entity @s[scores={MhdpTAvoid=1..}] unless entity @s[scores={MhdpTDamage=1..}] run function mh_dp:player/knockback/start
