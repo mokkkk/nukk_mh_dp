@@ -6,7 +6,7 @@
     execute store result score #mhdp_kushala_head_damage AsaMatrix store result score #mhdp_kushala_body_damage AsaMatrix store result score #mhdp_kushala_tail_damage AsaMatrix store result score #mhdp_kushala_sp_damage_max AsaMatrix store result score #mhdp_kushala_anger_damage_max AsaMatrix run scoreboard players operation #mhdp_kushala_health AsaMatrix /= #asam_const_100 AsaMatrix
 
 # ボスバー設定
-    bossbar add asa_animator:kushala_health {"text": "鋼竜"}
+    bossbar add asa_animator:kushala_health [{"text": "鋼竜"},{"text":"\uE000","font":"mhdp"}]
     execute store result bossbar asa_animator:kushala_health max run scoreboard players get #mhdp_kushala_health AsaMatrix
     bossbar set asa_animator:kushala_health players @a
     bossbar set asa_animator:kushala_health visible true
