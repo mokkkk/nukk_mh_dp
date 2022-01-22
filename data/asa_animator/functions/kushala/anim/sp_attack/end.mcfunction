@@ -5,3 +5,4 @@ kill @e[type=marker,tag=KushalaSpTornado]
 scoreboard players set #mhdp_kushala_lv AsaMatrix 0
 scoreboard players set #mhdp_kushala_actcount_lv AsaMatrix 0
 scoreboard players set #mhdp_kushala_actcount AsaMatrix 0
+weather rain

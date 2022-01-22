@@ -26,7 +26,7 @@ execute at @e[type=armor_stand,tag=KushalaParts] run particle poof ~ ~1 ~ 1 1 1 
 execute positioned ~ ~5 ~ run function asa_animator:kushala/manager/loot
 
 # 進捗達成
-advancement grant @a[distance=0..64] only mh_dp:trophies/root
+advancement grant @a[distance=0..64] only mh_dp:trophies/root_hard
 advancement grant @a[distance=0..64] only mh_dp:trophies/kushala
 # data modify storage mh_dp:status Monster.Win.Kushala set value true
 
@@ -39,4 +39,9 @@ bossbar remove asa_animator:kushala_health
 # パーツ削除
 function asa_animator:kushala/kill
 
+# 天候変化
+execute if data storage mh_dp:settings {Temp:{Dwc:1}} run gamerule doWeatherCycle true
+data modify storage mh_dp:settings Temp.AwaitDwc set value false
 weather clear
+data remove storage mh_dp:settings Temp.Dwc
+data remove storage mh_dp:settings Temp.AwaitDwc

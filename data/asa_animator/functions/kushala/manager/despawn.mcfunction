@@ -21,4 +21,9 @@ bossbar remove asa_animator:kushala_health
 # パーツ削除
 function asa_animator:kushala/kill
 
+# 天候変化
+execute if data storage mh_dp:settings {Temp:{Dwc:1}} run gamerule doWeatherCycle true
+data modify storage mh_dp:settings Temp.AwaitDwc set value false
 weather clear
+data remove storage mh_dp:settings Temp.Dwc
+data remove storage mh_dp:settings Temp.AwaitDwc

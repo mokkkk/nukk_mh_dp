@@ -27,3 +27,4 @@ execute as @e[type=armor_stand,tag=KushalaParts,tag=WingR1] run data merge entit
 scoreboard players set #mhdp_kushala_actcount_phase AsaMatrix 0
 execute if score #mhdp_kushala_lv AsaMatrix matches 1 run scoreboard players remove #mhdp_kushala_actcount_lv AsaMatrix 10
 execute if score #mhdp_kushala_lv AsaMatrix matches 1 run scoreboard players remove #mhdp_kushala_lv AsaMatrix 1
+execute if score #mhdp_kushala_lv AsaMatrix matches 1 run weather rain

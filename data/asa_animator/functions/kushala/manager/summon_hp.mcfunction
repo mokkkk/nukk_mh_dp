@@ -45,3 +45,9 @@
 
 # 終了
 scoreboard players reset #mhdp_const_temp
+
+# 天候変化
+execute unless data storage mh_dp:settings {Temp:{AwaitDwc:true}} store result storage mh_dp:settings Temp.Dwc int 1 run gamerule doWeatherCycle
+execute unless data storage mh_dp:settings {Temp:{AwaitDwc:true}} run data modify storage mh_dp:settings Temp.AwaitDwc set value true
+gamerule doWeatherCycle false
+weather rain

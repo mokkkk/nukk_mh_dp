@@ -8,3 +8,4 @@ execute if score #mhdp_kushala_lv AsaMatrix matches 2 run particle large_smoke ~
 scoreboard players operation #mhdp_kushala_sp_damage AsaMatrix = #mhdp_kushala_sp_damage_max AsaMatrix
 scoreboard players set #mhdp_kushala_actcount_lv AsaMatrix 0
 scoreboard players set #mhdp_kushala_lv AsaMatrix 0
+weather rain

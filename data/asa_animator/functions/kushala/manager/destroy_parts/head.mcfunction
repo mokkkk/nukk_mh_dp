@@ -7,6 +7,7 @@ execute as @e[type=armor_stand,tag=KushalaParts,tag=HeadU,limit=1] at @s run par
 execute as @e[type=armor_stand,tag=KushalaParts,tag=HeadU,limit=1] at @s run loot spawn ~ ~ ~ loot mh_dp:bonus/kushala_parts
 scoreboard players set @s AsaMatrix 0
 scoreboard players set #mhdp_kushala_lv AsaMatrix 0
+weather rain
 
 function asa_animator:kushala/manager/remove_animation_tag
 execute if entity @s[tag=!IsFlying] run tag @s add AnmDHead
