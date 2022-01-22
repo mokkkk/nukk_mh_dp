@@ -18,7 +18,7 @@ execute if score #mhdp_diablos_tail_damage AsaMatrix matches ..0 as @e[type=armo
 
 # 怒り遷移
 scoreboard players operation #mhdp_diablos_anger_damage AsaMatrix += #diablos_damage AsaMatrix
-execute if score #mhdp_diablos_anger_damage AsaMatrix matches ..-16000 unless entity @e[type=armor_stand,tag=DiablosRoot,tag=IsAnger] as @e[type=armor_stand,tag=DiablosRoot] run function asa_animator:diablos/manager/start_anger
+execute if score #mhdp_diablos_anger_damage AsaMatrix matches ..0 unless entity @e[type=armor_stand,tag=DiablosRoot,tag=IsAnger] as @e[type=armor_stand,tag=DiablosRoot] run function asa_animator:diablos/manager/start_anger
 
 # 死亡時，アニメーション設定
 execute if score #mhdp_diablos_health AsaMatrix matches ..0 as @e[type=armor_stand,tag=DiablosRoot] run function asa_animator:diablos/manager/start_death_animation
