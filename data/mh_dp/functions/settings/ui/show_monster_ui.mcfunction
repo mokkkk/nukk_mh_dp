@@ -14,6 +14,7 @@ tellraw @a [{"text": "\n ---  ","color": "light_purple"},{"text": "[斬竜]","co
 tellraw @a [{"text": "\n ---  ","color": "light_purple"},{"text": "[砕竜]","color": "light_purple","clickEvent":{"action":"run_command","value":"/function asa_animator:brachy/manager/summon"}}]
 execute if data storage mh_dp:status {Monster:{Win:{BrachyR:true}}} run tellraw @a [{"text": "\n ---  ","color": "light_purple"},{"text": "[猛り爆ぜる砕竜]","color": "light_purple","clickEvent":{"action":"run_command","value":"/function asa_animator:brachyr/manager/summon"}}]
 tellraw @a [{"text": "\n ---  ","color": "light_purple"},{"text": "[轟竜]","color": "light_purple","clickEvent":{"action":"run_command","value":"/function asa_animator:tiga/manager/summon"}}]
+tellraw @a [{"text": "\n ---  ","color": "light_purple"},{"text": "[鋼龍]","color": "light_purple","clickEvent":{"action":"run_command","value":"/function asa_animator:kushala/manager/summon"}}]
 
 tellraw @a {"text": "\n==========================================","color": "light_purple"}
 

@@ -23,3 +23,6 @@ execute if entity @s[scores={AsaMatrix=11..22}] run function asa_animator:kushal
 execute if entity @s[scores={AsaMatrix=10}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=22}] positioned ~ ~1.5 ~ run function asa_animator:kushala/manager/particle/step
 execute if entity @s[scores={AsaMatrix=40}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
+
+execute if entity @s[scores={AsaMatrix=40}] unless entity @s[tag=DestroyHead] run data modify entity @e[type=armor_stand,tag=KushalaParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10418
+execute if entity @s[scores={AsaMatrix=40}] if entity @s[tag=DestroyHead] run data modify entity @e[type=armor_stand,tag=KushalaParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10420

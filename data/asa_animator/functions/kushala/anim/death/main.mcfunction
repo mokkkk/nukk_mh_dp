@@ -29,3 +29,6 @@ execute if entity @s[scores={AsaMatrix=26..30}] run playsound minecraft:entity.p
 
 execute if entity @s[scores={AsaMatrix=70}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=92}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
+
+execute if entity @s[scores={AsaMatrix=70}] unless entity @s[tag=DestroyHead] run data modify entity @e[type=armor_stand,tag=KushalaParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10418
+execute if entity @s[scores={AsaMatrix=70}] if entity @s[tag=DestroyHead] run data modify entity @e[type=armor_stand,tag=KushalaParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10420
