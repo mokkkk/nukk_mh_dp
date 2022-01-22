@@ -1,7 +1,7 @@
 
 # particle flame ~ ~1.4 ~ 0.3 0.3 0.3 0 5 force
 
-execute if entity @e[type=!armor_stand,type=!marker,tag=!NargaParts,distance=0..1.8] positioned ~ ~1.4 ~ run function asa_animator:narga/anim/tail_shot/events/damage
+execute if entity @e[type=!armor_stand,type=!area_effect_cloud,type=!marker,tag=!NargaParts,distance=0..1.8] positioned ~ ~1.4 ~ run function asa_animator:narga/anim/tail_shot/events/damage
 
 scoreboard players add @s AsaMatrix 1
 execute if entity @s[scores={AsaMatrix=100..}] positioned ~ ~1.4 ~ run function asa_animator:narga/anim/tail_shot/events/damage

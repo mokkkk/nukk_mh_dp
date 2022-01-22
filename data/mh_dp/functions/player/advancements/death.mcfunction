@@ -31,5 +31,8 @@ tag @s remove BrachyRAttackTarget
 tag @s remove TigaTarget
 tag @s remove TigaAttackTarget
 
+tag @s remove KushalaTarget
+tag @s remove KushalaAttackTarget
+
 tag @s remove BlightFire
 tag @s remove Dead
