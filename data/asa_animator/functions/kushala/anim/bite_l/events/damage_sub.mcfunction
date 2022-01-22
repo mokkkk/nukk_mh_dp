@@ -1,4 +1,4 @@
 # ダメージ
-tag @s add D_KushalaBreath
+tag @s add D_KushalaBite
 function mh_dp:damage/attack
-tag @s remove D_KushalaBreath
+tag @s remove D_KushalaBite
