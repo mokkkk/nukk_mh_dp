@@ -2,7 +2,7 @@
   "display": {
     "icon": {
       "item": "minecraft:barrier",
-      "nbt": "{CustomModelData:19999}"
+      "nbt": "{CustomModelData:19998}"
     },
     "title": "討伐モンスターリスト",
     "description": "今まで倒したことのあるモンスター",
