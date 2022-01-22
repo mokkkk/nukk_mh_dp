@@ -2,6 +2,7 @@ kill @e[type=armor_stand,tag=BrachyRoot]
 kill @e[type=armor_stand,tag=BrachyParts]
 scoreboard players reset #mhdp_brachy_health
 scoreboard players reset #mhdp_brachy_kill_timer
+scoreboard players reset #mhdp_brachy_anger_damage_max
 scoreboard players reset #mhdp_brachy_anger_damage
 scoreboard players reset #mhdp_brachy_bomb_count
 scoreboard players reset #mhdp_brachy_head_damage
