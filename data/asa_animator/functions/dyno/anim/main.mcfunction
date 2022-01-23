@@ -70,7 +70,8 @@ execute if entity @s[tag=AnmSummon] run function asa_animator:dyno/anim/summon/m
 execute if entity @s[tag=AnmVoice] run function asa_animator:dyno/anim/voice/main
 # 討伐
 execute if entity @s[tag=AnmDeath] run function asa_animator:dyno/anim/death/main
-
+# 怒り遷移
+execute if entity @s[tag=AnmAnger] run function asa_animator:dyno/anim/anger/main
 
 # 頭部位破壊
 execute if entity @s[tag=AnmDHead] run function asa_animator:dyno/anim/destroy_head/main

@@ -21,4 +21,5 @@ function asa_animator:dyno/model
 
 function asa_animator:dyno/manager/ground
 
+execute if entity @s[tag=IsAnger,scores={AsaMatrix=1}] run function asa_animator:dyno/anim/stay/events/change
 execute if entity @s[scores={AsaMatrix=1}] if score #mhdp_dyno_actcount AsaMatrix matches 1.. run function asa_animator:dyno/anim/stay/events/change
