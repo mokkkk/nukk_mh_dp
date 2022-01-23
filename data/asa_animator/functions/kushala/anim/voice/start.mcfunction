@@ -1,0 +1,27 @@
+execute as @e[type=armor_stand,tag=KushalaParts,tag=HeadU] run data merge entity @s {Pose:{Head:[13f,0f,0f]}}
+execute as @e[type=armor_stand,tag=KushalaParts,tag=HeadL] run data merge entity @s {Pose:{Head:[13f,0f,0f]}}
+execute as @e[type=armor_stand,tag=KushalaParts,tag=Neck0] run data merge entity @s {Pose:{Head:[-27f,0f,0f]}}
+execute as @e[type=armor_stand,tag=KushalaParts,tag=Neck1] run data merge entity @s {Pose:{Head:[-7f,0f,0f]}}
+execute as @e[type=armor_stand,tag=KushalaParts,tag=Neck2] run data merge entity @s {Pose:{Head:[3f,0f,0f]}}
+execute as @e[type=armor_stand,tag=KushalaParts,tag=Body0] run data merge entity @s {Pose:{Head:[-7f,0f,0f]}}
+execute as @e[type=armor_stand,tag=KushalaParts,tag=Body1] run data merge entity @s {Pose:{Head:[15f,0f,0f]}}
+execute as @e[type=armor_stand,tag=KushalaParts,tag=LegL0] run data merge entity @s {Pose:{Head:[35f,0f,-10f]}}
+execute as @e[type=armor_stand,tag=KushalaParts,tag=LegR0] run data merge entity @s {Pose:{Head:[35f,0f,10f]}}
+execute as @e[type=armor_stand,tag=KushalaParts,tag=LegL1] run data merge entity @s {Pose:{Head:[10f,0f,0f]}}
+execute as @e[type=armor_stand,tag=KushalaParts,tag=LegR1] run data merge entity @s {Pose:{Head:[10f,0f,0f]}}
+execute as @e[type=armor_stand,tag=KushalaParts,tag=LegL2] run data merge entity @s {Pose:{Head:[0f,-10f,0f]}}
+execute as @e[type=armor_stand,tag=KushalaParts,tag=LegR2] run data merge entity @s {Pose:{Head:[0f,10f,0f]}}
+execute as @e[type=armor_stand,tag=KushalaParts,tag=Tail0] run data merge entity @s {Pose:{Head:[-5f,0f,0f]}}
+execute as @e[type=armor_stand,tag=KushalaParts,tag=Tail1] run data merge entity @s {Pose:{Head:[-35f,0f,0f]}}
+execute as @e[type=armor_stand,tag=KushalaParts,tag=Tail2] run data merge entity @s {Pose:{Head:[-25f,0f,0f]}}
+execute as @e[type=armor_stand,tag=KushalaParts,tag=ArmL0] run data merge entity @s {Pose:{Head:[-2f,0f,-30f]}}
+execute as @e[type=armor_stand,tag=KushalaParts,tag=ArmR0] run data merge entity @s {Pose:{Head:[-2f,0f,30f]}}
+execute as @e[type=armor_stand,tag=KushalaParts,tag=ArmL1] run data merge entity @s {Pose:{Head:[-17f,-10f,-20f]}}
+execute as @e[type=armor_stand,tag=KushalaParts,tag=ArmR1] run data merge entity @s {Pose:{Head:[-17f,10f,20f]}}
+execute as @e[type=armor_stand,tag=KushalaParts,tag=ArmL2] run data merge entity @s {Pose:{Head:[-2f,-10f,0f]}}
+execute as @e[type=armor_stand,tag=KushalaParts,tag=ArmR2] run data merge entity @s {Pose:{Head:[-2f,10f,0f]}}
+execute as @e[type=armor_stand,tag=KushalaParts,tag=WingL0] run data merge entity @s {Pose:{Head:[-4f,0f,40f]}}
+execute as @e[type=armor_stand,tag=KushalaParts,tag=WingR0] run data merge entity @s {Pose:{Head:[-4f,0f,-40f]}}
+execute as @e[type=armor_stand,tag=KushalaParts,tag=WingL1] run data merge entity @s {Pose:{Head:[-4f,2f,70f]}}
+execute as @e[type=armor_stand,tag=KushalaParts,tag=WingR1] run data merge entity @s {Pose:{Head:[-4f,-2f,-70f]}}
+tag @s remove IsStand
