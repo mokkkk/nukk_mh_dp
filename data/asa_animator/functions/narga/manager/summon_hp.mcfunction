@@ -17,7 +17,7 @@
     scoreboard players set #mhdp_const_temp AsaMatrix 18
     scoreboard players operation #mhdp_narga_head_damage AsaMatrix *= #mhdp_const_temp AsaMatrix
     scoreboard players operation #mhdp_narga_head_damage AsaMatrix /= #asam_const_100 AsaMatrix
-    ## 胴：22%
+    ## 腕：22%
     scoreboard players set #mhdp_const_temp AsaMatrix 22
     scoreboard players operation #mhdp_narga_arml_damage AsaMatrix *= #mhdp_const_temp AsaMatrix
     execute store result score #mhdp_narga_armr_damage AsaMatrix run scoreboard players operation #mhdp_narga_arml_damage AsaMatrix /= #asam_const_100 AsaMatrix
