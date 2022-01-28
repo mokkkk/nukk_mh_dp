@@ -31,5 +31,7 @@ tag @s remove AnmDBody
 tag @s remove AnmDTail
 tag @s remove AnmFlyDamage
 tag @s remove IsTurn
+tag @s remove AnmAnger
+tag @s remove AnmFlyAnger
 
 kill @e[tag=ReiaBreathTarget]

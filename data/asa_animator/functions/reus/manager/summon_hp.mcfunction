@@ -41,7 +41,6 @@
     scoreboard players set #mhdp_reus_kill_timer AsaMatrix 0
     scoreboard players operation #mhdp_reus_flying_damage AsaMatrix = #mhdp_reus_flying_damage_max AsaMatrix
     scoreboard players operation #mhdp_reus_anger_damage AsaMatrix = #mhdp_reus_anger_damage_max AsaMatrix
-    scoreboard players set #mhdp_reus_anger_damage AsaMatrix 0
 
 # 終了
     scoreboard players reset #mhdp_const_temp
