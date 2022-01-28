@@ -19,3 +19,5 @@ scoreboard players reset #brachyr_mine_y
 scoreboard players reset #brachyr_mine_z
 scoreboard players reset #brachyr_height_target
 scoreboard players reset #brachyr_damage
+scoreboard players reset #mhdp_brachyr_anger_damage_max
+scoreboard players reset #mhdp_brachyr_anger_damage
