@@ -69,6 +69,10 @@ execute if entity @s[tag=AnmFlyDeath] run function asa_animator:reus/anim/flying
 execute if entity @s[tag=AnmSummon] run function asa_animator:reus/anim/summon/main
 # 咆哮
 execute if entity @s[tag=AnmVoice] run function asa_animator:reus/anim/voice/main
+# 怒り
+execute if entity @s[tag=AnmAnger] run function asa_animator:reus/anim/anger/main
+# 飛行時怒り
+execute if entity @s[tag=AnmFlyAnger] run function asa_animator:reus/anim/flying_voice/main
 
 # 頭部破壊ひるみ
 execute if entity @s[tag=AnmDHead] run function asa_animator:reus/anim/destroy_head/main
