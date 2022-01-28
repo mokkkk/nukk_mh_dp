@@ -9,10 +9,14 @@ tag @e[tag=ReusAttackTarget] remove ReusAttackTarget
 scoreboard players set @s AsaMatrix 0
 
 # ターゲット探索
-tag @e[type=#asa_animator:attack_target,tag=!ReusParts,tag=!ReusTarget,distance=0..50,tag=!NotTarget,tag=!ReiaParts] add ReusTarget
+tag @e[type=#asa_animator:attack_target,tag=!ReusParts,tag=!ReusTarget,tag=!NotTarget,tag=!ReiaParts,distance=0..50] add ReusTarget
 # ターゲット決定
-tag @a[tag=ReusTarget,limit=1,sort=random,tag=!NotTarget] add ReusAttackTarget
-execute unless entity @e[tag=ReusAttackTarget] run tag @e[tag=ReusTarget,limit=1,sort=random] add ReusAttackTarget
+tag @a[tag=ReusTarget,tag=!NotTarget,sort=random,limit=1] add ReusAttackTarget
+execute unless entity @e[tag=ReusAttackTarget] run tag @e[tag=ReusTarget,sort=random,limit=1] add ReusAttackTarget
+
+# 怒り変化
+execute if entity @s[tag=IsAnger] run scoreboard players add #mhdp_reus_anger_count AsaMatrix 1
+execute if entity @s[tag=IsAnger] if score #mhdp_reus_anger_count AsaMatrix matches 15.. run function asa_animator:reus/manager/end_anger
 
 # 地上
 execute unless score #mhdp_reus_actcount_phase AsaMatrix matches 6.. unless entity @s[tag=IsFlying] run function asa_animator:reus/manager/change_normal/main

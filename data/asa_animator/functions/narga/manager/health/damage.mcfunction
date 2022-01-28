@@ -20,7 +20,7 @@ execute if score #mhdp_narga_tail_damage AsaMatrix matches ..0 as @e[type=armor_
 
 # 怒り遷移
 scoreboard players operation #mhdp_narga_anger_damage AsaMatrix += #narga_damage AsaMatrix
-execute if score #mhdp_narga_anger_damage AsaMatrix matches ..-15000 unless entity @e[type=armor_stand,tag=NargaRoot,tag=IsAnger] as @e[type=armor_stand,tag=NargaRoot] run function asa_animator:narga/manager/start_anger
+execute if score #mhdp_narga_anger_damage AsaMatrix matches ..0 unless entity @e[type=armor_stand,tag=NargaRoot,tag=IsAnger] as @e[type=armor_stand,tag=NargaRoot] run function asa_animator:narga/manager/start_anger
 
 # 死亡時，アニメーション設定
 execute if score #mhdp_narga_health AsaMatrix matches ..0 as @e[type=armor_stand,tag=NargaRoot] run function asa_animator:narga/manager/start_death_animation

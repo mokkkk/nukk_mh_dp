@@ -56,6 +56,10 @@ execute if entity @s[tag=AnmVoice] run function asa_animator:reia/anim/voice/mai
 execute if entity @s[tag=AnmDeath] run function asa_animator:reia/anim/death/main
 # 飛行時討伐
 execute if entity @s[tag=AnmFlyDeath] run function asa_animator:reia/anim/flying_death/main
+# 咆哮
+execute if entity @s[tag=AnmAnger] run function asa_animator:reia/anim/anger/main
+# 咆哮
+execute if entity @s[tag=AnmFlyAnger] run function asa_animator:reia/anim/flying_voice/main
 
 # 頭部部位破壊
 execute if entity @s[tag=AnmDHead] run function asa_animator:reia/anim/destroy_head/main

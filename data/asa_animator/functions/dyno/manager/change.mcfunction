@@ -14,12 +14,15 @@ execute if entity @s[tag=IsHeatTail] unless entity @s[tag=IsSootTail] if score #
 execute if entity @s[tag=IsSootTail] if score #mhdp_dyno_actcount_generic AsaMatrix matches 2.. run tag @s add AnmCharge
 # 頭部赤熱化終了
 execute if entity @s[tag=IsHeatHead] if score #mhdp_dyno_actcount_head AsaMatrix matches 8.. run function asa_animator:dyno/manager/model/change_to_normal_head
+# 怒り変化
+execute if entity @s[tag=IsAnger] run scoreboard players add #mhdp_dyno_anger_count AsaMatrix 1
+execute if entity @s[tag=IsAnger] if score #mhdp_dyno_anger_count AsaMatrix matches 12.. run function asa_animator:dyno/manager/end_anger
 
 # ターゲット探索
-tag @e[type=#asa_animator:attack_target,tag=!DynoParts,tag=!DynoTarget,distance=0..50,tag=!NotTarget] add DynoTarget
+tag @e[type=#asa_animator:attack_target,tag=!DynoParts,tag=!DynoTarget,tag=!NotTarget,distance=0..50] add DynoTarget
 # ターゲット決定
-tag @a[tag=DynoTarget,limit=1,sort=random,tag=!NotTarget] add DynoAttackTarget
-execute unless entity @e[tag=DynoAttackTarget] run tag @e[tag=DynoTarget,limit=1,sort=random] add DynoAttackTarget
+tag @a[tag=DynoTarget,tag=!NotTarget,sort=random,limit=1] add DynoAttackTarget
+execute unless entity @e[tag=DynoAttackTarget] run tag @e[tag=DynoTarget,sort=random,limit=1] add DynoAttackTarget
 
 # 通常時
 execute unless entity @s[tag=AnmCharge] run function asa_animator:dyno/manager/change_normal/change

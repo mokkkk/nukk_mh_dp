@@ -13,8 +13,7 @@ execute unless entity @e[tag=DiablosAttackTarget] run tag @e[tag=DiablosTarget,s
 
 # 怒り変化
 execute if entity @s[tag=IsAnger] run scoreboard players add #mhdp_diablos_anger_count AsaMatrix 1
-execute if entity @s[tag=IsAnger] if score #mhdp_diablos_anger_count AsaMatrix matches 15.. run scoreboard players set #mhdp_diablos_anger_damage AsaMatrix 0
-execute if entity @s[tag=IsAnger] if score #mhdp_diablos_anger_count AsaMatrix matches 15.. run tag @s remove IsAnger
+execute if entity @s[tag=IsAnger] if score #mhdp_diablos_anger_count AsaMatrix matches 15.. run function asa_animator:diablos/manager/end_anger
 
 # 通常時
 execute unless entity @s[tag=AnmAnger] run function asa_animator:diablos/manager/change_normal/change

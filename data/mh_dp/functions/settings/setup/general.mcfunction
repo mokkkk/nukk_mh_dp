@@ -13,6 +13,8 @@ scoreboard objectives add MhdpTKnockback dummy
 # ID設定
 scoreboard players set #mhdp_id_holder MhdpMonsterID 0
 
+# クエストランク設定
+data modify storage mh_dp:settings Custom.QuestRank set value 0
 # スポーン設定
 data modify storage mh_dp:settings Custom.EnableBossSpawn set value 0b
 # デスポーン設定
@@ -36,6 +38,6 @@ data modify storage mh_dp:status Monster.Win.BrachyR set value false
 data modify storage mh_dp:status Monster.Win.Tiga set value false
 
 # バージョン設定
-scoreboard players set #mhdp_bersion AsaMatrix 4
+scoreboard players set #mhdp_bersion AsaMatrix 6
 
 tellraw @a {"text":"【MH_DP ： 初期設定が完了しました】"}

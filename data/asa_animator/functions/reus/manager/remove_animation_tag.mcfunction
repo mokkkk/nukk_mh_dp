@@ -28,6 +28,8 @@ tag @s remove AnmTurnR
 tag @s remove AnmTurnL
 tag @s remove AnmSummon
 tag @s remove AnmVoice
+tag @s remove AnmAnger
+tag @s remove AnmFlyAnger
 tag @s remove IsTurn
 kill @e[type=marker,tag=ReusBreathTarget]
 kill @e[type=marker,tag=ReusChargeFPos]
