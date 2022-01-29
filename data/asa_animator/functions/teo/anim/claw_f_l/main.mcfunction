@@ -22,6 +22,7 @@ function asa_animator:teo/model
 execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=24}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 
-execute if entity @s[scores={AsaMatrix=11..16}] unless entity @s[tag=TeoAttackTarget,distance=..7] at @s run tp @s ^ ^ ^0.4
+execute if entity @s[scores={AsaMatrix=1..5}] run function asa_animator:teo/manager/rotate
+execute if entity @s[scores={AsaMatrix=11..16}] unless entity @s[tag=TeoAttackTarget,distance=..7] at @s run tp @s ^ ^ ^0.6
 
-execute if entity @s[scores={AsaMatrix=13}] positioned ^1.5 ^1 ^5 run function asa_animator:teo/anim/claw_f_l/events/damage
+execute if entity @s[scores={AsaMatrix=13}] positioned ^1.5 ^1 ^6 run function asa_animator:teo/anim/claw_f_l/events/damage

@@ -65,9 +65,7 @@ tag @s remove ComboI
 tag @s remove ComboJ
 tag @s remove ComboK
 
-kill @e[type=marker,tag=KushalaBreathTarget]
-kill @e[type=marker,tag=KushalaMoveRotate]
-kill @e[type=marker,tag=KushalaDashTarget]
-kill @e[type=marker,tag=KushalaChargeFPos]
-kill @e[type=marker,tag=KushalaSpTornado]
-kill @e[type=marker,tag=KushalaMovePos]
+tag @s remove IsRight
+kill @e[type=marker,tag=TeoMoveRotate]
+kill @e[type=marker,tag=TeoMovePos]
+kill @e[type=marker,tag=TeoDashTarget]
