@@ -5,6 +5,12 @@
     execute if entity @s[tag=AnmJumpT] run function asa_animator:teo/anim/turn_jump/main
     # 尻尾振り
     execute if entity @s[tag=AnmTail] run function asa_animator:teo/anim/tail/main
+    # 正面ひっかき
+    execute if entity @s[tag=AnmClawFL] run function asa_animator:teo/anim/claw_f_l/main
+    execute if entity @s[tag=AnmClawFR] run function asa_animator:teo/anim/claw_f_r/main
+    # 振り向きひっかき
+    execute if entity @s[tag=AnmClawL] run function asa_animator:teo/anim/claw_l/main
+    execute if entity @s[tag=AnmClawR] run function asa_animator:teo/anim/claw_r/main
 
 ## その他
 

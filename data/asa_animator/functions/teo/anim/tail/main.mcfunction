@@ -4,7 +4,7 @@ execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:teo/anim/ta
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:teo/anim/tail/keyframes/0
 execute if entity @s[scores={AsaMatrix=1..6}] run tp @s ^0 ^0 ^0
 execute if entity @s[scores={AsaMatrix=7}] run function asa_animator:teo/anim/tail/keyframes/1
-execute if entity @s[scores={AsaMatrix=7..14}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=7..14}] run tp @s ^0 ^0 ^0 ~-0.5 ~
 execute if entity @s[scores={AsaMatrix=15}] run function asa_animator:teo/anim/tail/keyframes/2
 execute if entity @s[scores={AsaMatrix=15..20}] run tp @s ^0 ^0 ^0
 execute if entity @s[scores={AsaMatrix=21}] run function asa_animator:teo/anim/tail/keyframes/3
@@ -20,7 +20,7 @@ execute if entity @s[scores={AsaMatrix=41..45}] run tp @s ^0 ^0 ^0 ~1 ~
 execute if entity @s[scores={AsaMatrix=46}] run function asa_animator:teo/anim/tail/keyframes/8
 execute if entity @s[scores={AsaMatrix=46..50}] run tp @s ^0 ^0 ^0 ~0.5 ~
 execute if entity @s[scores={AsaMatrix=51}] run function asa_animator:teo/anim/tail/keyframes/9
-execute if entity @s[scores={AsaMatrix=51..60}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=51..60}] run tp @s ^0 ^0 ^0 ~0.5 ~
 execute if entity @s[scores={AsaMatrix=61..}] run function asa_animator:teo/anim/tail/end
 execute as @e[type=armor_stand,tag=TeoParts] run function #asa_matrix:animate
 function asa_animator:teo/model
