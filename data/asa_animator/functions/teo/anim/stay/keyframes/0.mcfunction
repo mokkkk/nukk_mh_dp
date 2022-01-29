@@ -1,8 +1,8 @@
-data modify storage asa_matrix: Rotate set value [-2000f,0f,2000f]
+data modify storage asa_matrix: Rotate set value [-2000f,0f,0f]
 execute as @e[type=armor_stand,tag=TeoParts,tag=HeadU] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [8000f,0f,2000f]
+data modify storage asa_matrix: Rotate set value [8000f,0f,0f]
 execute as @e[type=armor_stand,tag=TeoParts,tag=HeadL] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-1000f,0f,2000f]
+data modify storage asa_matrix: Rotate set value [-1000f,0f,0f]
 execute as @e[type=armor_stand,tag=TeoParts,tag=Neck0] run function #asa_matrix:animate_setparam
 data modify storage asa_matrix: Rotate set value [-2000f,0f,0f]
 execute as @e[type=armor_stand,tag=TeoParts,tag=Neck1] run function #asa_matrix:animate_setparam
