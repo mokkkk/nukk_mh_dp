@@ -1,5 +1,9 @@
 
 ## 地上
+    # 移動噛みつき
+    execute if entity @s[tag=AnmBiteL] run function asa_animator:teo/anim/bite_turn_l/main
+    execute if entity @s[tag=AnmBiteR] run function asa_animator:teo/anim/bite_turn_r/main
+
     # 飛び掛かり
     execute if entity @s[tag=AnmJump] run function asa_animator:teo/anim/jump/main
     execute if entity @s[tag=AnmJumpT] run function asa_animator:teo/anim/turn_jump/main
@@ -23,11 +27,14 @@
     execute if entity @s[tag=AnmFlyTackle] run function asa_animator:teo/anim/flying_tackle/main
 
 ## その他
-
+    # 登場
+    # execute if entity @s[tag=AnmSummon] run function asa_animator:teo/anim/summon/main
+    # 着地
+    # execute if entity @s[tag=AnmSummonEndFly] run function asa_animator:teo/anim/summon_end_fly/main
     # 咆哮
     execute if entity @s[tag=AnmVoice] run function asa_animator:teo/anim/voice/main
     # 纏い
-    # execute if entity @s[tag=AnmCharge] run function asa_animator:teo/anim/charge/main
+    execute if entity @s[tag=AnmCharge] run function asa_animator:teo/anim/charge/main
     # 討伐
     # execute if entity @s[tag=AnmDeath] run function asa_animator:teo/anim/death/main
     # 飛行中討伐
