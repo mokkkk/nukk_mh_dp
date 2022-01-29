@@ -17,3 +17,5 @@ execute if entity @s[tag=BrachyRRoot] run function asa_animator:brachyr/main
 execute if entity @s[tag=TigaRoot] run function asa_animator:tiga/main
 
 execute if entity @s[tag=KushalaRoot] run function asa_animator:kushala/main
+
+execute if entity @s[tag=TeoRoot] run function asa_animator:teo/main
