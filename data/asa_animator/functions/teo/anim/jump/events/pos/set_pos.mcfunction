@@ -3,7 +3,7 @@
 summon marker ^ ^ ^10 {Tags:["TeoMovePos"]}
 execute facing entity @e[tag=TeoAttackTarget,limit=1] eyes rotated ~ 0 as @e[tag=TeoAttackTarget] positioned as @s run tp @e[type=marker,tag=TeoMovePos] ^ ^ ^-2
 execute as @e[type=marker,tag=TeoMovePos,limit=1] at @s align y positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
-execute as @e[type=marker,tag=TeoMovePos,limit=1] at @s run tp @s ~ ~0 ~
+execute as @e[type=marker,tag=TeoMovePos,limit=1] at @s run tp @s ~ ~0.2 ~
 
 # ポジション差分取得
 data merge storage mhdp: {PosTemp:[], MarkerPosTemp:[]}

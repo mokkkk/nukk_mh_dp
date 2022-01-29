@@ -2,6 +2,9 @@
 ## 地上
     # 飛び掛かり
     execute if entity @s[tag=AnmJump] run function asa_animator:teo/anim/jump/main
+    execute if entity @s[tag=AnmJumpT] run function asa_animator:teo/anim/turn_jump/main
+    # 尻尾振り
+    execute if entity @s[tag=AnmTail] run function asa_animator:teo/anim/tail/main
 
 ## その他
 
