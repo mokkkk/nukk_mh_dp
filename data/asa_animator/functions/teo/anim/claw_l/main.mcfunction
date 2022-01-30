@@ -31,3 +31,6 @@ execute if entity @s[scores={AsaMatrix=21}] run playsound item.trident.throw mas
 execute if entity @s[scores={AsaMatrix=22}] positioned ^ ^1 ^4.5 run function asa_animator:teo/anim/claw_l/events/damage
 execute if entity @s[scores={AsaMatrix=23}] positioned ^1 ^1 ^4.5 run function asa_animator:teo/anim/claw_l/events/damage
 execute if entity @s[scores={AsaMatrix=24}] positioned ^2 ^1 ^4.5 run function asa_animator:teo/anim/claw_l/events/damage
+
+execute at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
+execute at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~

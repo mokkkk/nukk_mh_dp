@@ -1,5 +1,11 @@
 
 ## 地上
+    # バックステップ
+    execute if entity @s[tag=AnmStepB] run function asa_animator:teo/anim/step_b/main
+    # 移動
+    execute if entity @s[tag=AnmMoveStart] run function asa_animator:teo/anim/move_start/main
+    execute if entity @s[tag=AnmMove] run function asa_animator:teo/anim/move/main
+
     # 移動噛みつき
     execute if entity @s[tag=AnmBiteL] run function asa_animator:teo/anim/bite_turn_l/main
     execute if entity @s[tag=AnmBiteR] run function asa_animator:teo/anim/bite_turn_r/main
@@ -26,6 +32,15 @@
     # 滑空突進
     execute if entity @s[tag=AnmFlyTackle] run function asa_animator:teo/anim/flying_tackle/main
 
+    # 炎薙ぎ
+    execute if entity @s[tag=AnmBiteCL,tag=IsFire] run function asa_animator:teo/anim/bite_charge_l/main
+    execute if entity @s[tag=AnmBiteCR,tag=IsFire] run function asa_animator:teo/anim/bite_charge_r/main
+    # 爆破薙ぎ
+
+
+    # 薙ぎ払い火炎放射
+    execute if entity @s[tag=AnmFlameLarge] run function asa_animator:teo/anim/flame_large/main
+
 ## その他
     # 登場
     # execute if entity @s[tag=AnmSummon] run function asa_animator:teo/anim/summon/main
@@ -33,7 +48,7 @@
     # execute if entity @s[tag=AnmSummonEndFly] run function asa_animator:teo/anim/summon_end_fly/main
     # 咆哮
     execute if entity @s[tag=AnmVoice] run function asa_animator:teo/anim/voice/main
-    # 纏い
+    # 状態変化
     execute if entity @s[tag=AnmCharge] run function asa_animator:teo/anim/charge/main
     # 討伐
     # execute if entity @s[tag=AnmDeath] run function asa_animator:teo/anim/death/main

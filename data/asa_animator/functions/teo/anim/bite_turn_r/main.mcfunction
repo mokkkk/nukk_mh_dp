@@ -28,3 +28,6 @@ execute if entity @s[scores={AsaMatrix=20..34}] at @s positioned ~ ~5 ~ run func
 
 execute if entity @s[scores={AsaMatrix=19}] positioned ^-1 ^ ^4 run function asa_animator:teo/anim/bite_turn_l/events/damage
 execute if entity @s[scores={AsaMatrix=22..31}] run function asa_animator:teo/anim/bite_turn_l/events/damage_move
+
+# 炎纏いlv1-
+    execute if entity @s[tag=IsFire,scores={AsaMatrix=19..31}] if score #mhdp_teo_lv AsaMatrix matches 1.. run particle flame ^1 ^1.5 ^5 0.5 0.5 0.5 0.05 30

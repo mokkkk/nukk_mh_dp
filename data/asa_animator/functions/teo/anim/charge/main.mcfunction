@@ -26,8 +26,8 @@ execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:teo/manager
 execute if entity @s[scores={AsaMatrix=59}] run function asa_animator:teo/manager/model/change_to_normal
 execute if entity @s[scores={AsaMatrix=1..55}] run function asa_animator:teo/manager/rotate
 
-# execute if entity @s[scores={AsaMatrix=12}] if score #mhdp_teo_lv AsaMatrix matches 1 run particle cloud ~ ~3 ~ 1 1 1 0.5 100
-# execute if entity @s[scores={AsaMatrix=12..20}] if score #mhdp_teo_lv AsaMatrix matches 1 run particle cloud ~ ~3 ~ 1 1 1 0.5 10
+execute if entity @s[tag=IsFire,scores={AsaMatrix=12}] run particle lava ~ ~3 ~ 1 1 1 0.5 20
+execute if entity @s[tag=IsFire,scores={AsaMatrix=12..20}] run particle flame ~ ~3 ~ 1 1 1 0.5 10
 # execute if entity @s[scores={AsaMatrix=12}] if score #mhdp_teo_lv AsaMatrix matches 2 run particle large_smoke ~ ~3 ~ 1 1 1 0.5 100
 # execute if entity @s[scores={AsaMatrix=12..20}] if score #mhdp_teo_lv AsaMatrix matches 2 run particle large_smoke ~ ~3 ~ 1 1 1 0.5 10
 
@@ -42,4 +42,4 @@ execute if entity @s[scores={AsaMatrix=12}] run function asa_animator:teo/anim/c
 execute if entity @s[scores={AsaMatrix=39}] run function asa_animator:teo/manager/particle/step
 execute if entity @s[scores={AsaMatrix=39}] run function asa_animator:teo/anim/voice/events/particle
 
-# execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:teo/manager/lv/up
+execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:teo/manager/lv/up

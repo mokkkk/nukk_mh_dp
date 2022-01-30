@@ -19,7 +19,7 @@ execute if predicate asa_animator:teo/stay if predicate asa_animator:teo/combo r
 # execute if entity @s[tag=IsAnger] if score #mhdp_teo_anger_count AsaMatrix matches ..0 run function asa_animator:teo/manager/end_anger
 
 # 強制
-tag @s add AnmCharge
+tag @s add AnmFlameLarge
 
 # 終了
 tag @s remove ChangeAnm

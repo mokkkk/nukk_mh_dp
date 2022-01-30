@@ -22,7 +22,7 @@ execute if entity @s[scores={AsaMatrix=70..}] run function asa_animator:teo/anim
 execute as @e[type=armor_stand,tag=TeoParts] run function #asa_matrix:animate
 function asa_animator:teo/model
 
-execute if entity @s[scores={AsaMatrix=7}] run function asa_animator:kushala/manager/particle/step
+execute if entity @s[scores={AsaMatrix=7}] run function asa_animator:teo/manager/particle/step
 execute if entity @s[scores={AsaMatrix=12}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 
 execute if entity @s[scores={AsaMatrix=..21}] run function asa_animator:teo/manager/rotate
@@ -36,7 +36,7 @@ execute if entity @s[scores={AsaMatrix=28..43}] at @s run tp @s ~ ~0.75 ~
 execute if entity @s[scores={AsaMatrix=43}] run function asa_animator:teo/anim/flying_tackle/events/pos/set_pos
 execute if entity @s[scores={AsaMatrix=44..50}] run function asa_animator:teo/anim/flying_tackle/events/pos/offset
 
-execute if entity @s[scores={AsaMatrix=51..58}] run function asa_animator:kushala/manager/particle/step
+execute if entity @s[scores={AsaMatrix=51..58}] run function asa_animator:teo/manager/particle/step
 execute if entity @s[scores={AsaMatrix=51..}] at @s positioned ~ ~5 ~ run tp @s ~ ~ ~
 execute if entity @s[scores={AsaMatrix=51..}] at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
 
@@ -44,3 +44,6 @@ execute if entity @s[scores={AsaMatrix=41}] run summon marker ~ ~ ~ {Tags:["TeoM
 execute if entity @s[scores={AsaMatrix=41}] run tp @e[type=marker,tag=TeoMoveRotate,distance=0..3] ~ ~ ~ ~ 0
 execute if entity @s[scores={AsaMatrix=51..60}] at @s rotated as @e[type=marker,tag=TeoMoveRotate] run tp @s ^ ^ ^0.4
 execute if entity @s[scores={AsaMatrix=61..}] at @s rotated as @e[type=marker,tag=TeoMoveRotate] run tp @s ^ ^ ^0.1
+
+# 炎纏いlv1-
+    execute if entity @s[tag=IsFire,scores={AsaMatrix=51..58}] if score #mhdp_teo_lv AsaMatrix matches 1.. run particle lava ~ ~ ~ 2 0.1 2 0 5

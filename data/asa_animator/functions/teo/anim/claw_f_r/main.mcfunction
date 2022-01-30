@@ -26,3 +26,6 @@ execute if entity @s[scores={AsaMatrix=1..5}] run function asa_animator:teo/mana
 execute if entity @s[scores={AsaMatrix=11..16}] unless entity @s[tag=TeoAttackTarget,distance=..7] at @s run tp @s ^ ^ ^0.6
 
 execute if entity @s[scores={AsaMatrix=13}] positioned ^-1.5 ^1 ^6 run function asa_animator:teo/anim/claw_f_l/events/damage
+
+execute at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
+execute at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~

@@ -16,8 +16,8 @@ execute if predicate asa_animator:teo/stay if entity @s[tag=IsFlying,tag=!IsStan
 execute unless entity @s[tag=AnmTurn] unless predicate asa_animator:teo/stay run function asa_animator:teo/anim/main
 
 # パーティクル
-# execute if score #mhdp_teo_lv AsaMatrix matches 1 run particle cloud ~ ~2 ~ 1.5 1.5 1.5 0.2 2
-# execute if score #mhdp_teo_lv AsaMatrix matches 2 run particle large_smoke ~ ~2 ~ 1.5 1.5 1.5 0.3 2
+execute if entity @s[tag=IsFire] if score #mhdp_teo_lv AsaMatrix matches 1.. run particle small_flame ~ ~2 ~ 1.5 1.5 1.5 0 2
+execute if entity @s[tag=IsFire] if score #mhdp_teo_lv AsaMatrix matches 2 run particle flame ~ ~2 ~ 1.5 1.5 1.5 0 4
 
 # 当たり判定位置
 # execute if entity @s[tag=!IsAnger] as @e[type=slime,tag=TeoParts] run function asa_animator:teo/manager/health/pos
