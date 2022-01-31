@@ -28,4 +28,4 @@ execute if entity @s[tag=IsFire] if score #mhdp_teo_lv AsaMatrix matches 2 run p
 
 # 画面エフェクト用メモ
 # bossbar add test [{"text": "\uE002","font": "mhdp"},{"text": "\uF80B\uF823","font": "default"},{"text": "test","font": "default"}]
-# bossbar set test name [{"text": "\uE002","font": "mhdp"},{"text": "\uF80B\uF823","font": "default"},{"text": "あああ","font": "default"}]
+# bossbar set test name [{"text": "\uE002","font": "mhdp"},{"text": "\uF81B\uF833","font": "default"},{"text": "てすと","font": "default"}]

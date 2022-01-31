@@ -41,6 +41,9 @@
     # 薙ぎ払い火炎放射
     execute if entity @s[tag=AnmFlameLarge] run function asa_animator:teo/anim/flame_large/main
 
+    # 粉塵爆発（近）
+    execute if entity @s[tag=AnmBombN] run function asa_animator:teo/anim/bomb_n/main
+
 ## その他
     # 登場
     # execute if entity @s[tag=AnmSummon] run function asa_animator:teo/anim/summon/main
