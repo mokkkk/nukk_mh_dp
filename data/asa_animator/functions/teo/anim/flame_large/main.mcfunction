@@ -36,12 +36,12 @@ execute if entity @s[scores={AsaMatrix=105}] run playsound block.grass.step mast
 
 execute if entity @s[scores={AsaMatrix=..15}] run function asa_animator:teo/manager/rotate
 
-execute if entity @s[scores={AsaMatrix=40}] run summon marker ~ ~ ~ {Tags:["TeoMoveRotate"]}
-execute if entity @s[scores={AsaMatrix=40}] run tp @e[type=marker,tag=TeoMoveRotate,distance=0..3] ~ ~ ~ ~45 0
+execute if entity @s[scores={AsaMatrix=15}] run summon marker ~ ~ ~ {Tags:["TeoMoveRotate"]}
+execute if entity @s[scores={AsaMatrix=15}] facing entity @e[tag=TeoAttackTarget,limit=1] eyes run tp @e[type=marker,tag=TeoMoveRotate,distance=0..3] ~ ~ ~ ~45 ~3
 execute if entity @s[scores={AsaMatrix=41..55}] as @e[type=marker,tag=TeoMoveRotate,distance=0..3] rotated as @s run tp @s ~ ~ ~ ~-6.3 ~
 execute if entity @s[scores={AsaMatrix=56..65}] as @e[type=marker,tag=TeoMoveRotate,distance=0..3] rotated as @s run tp @s ~ ~ ~ ~-1 ~
 execute if entity @s[scores={AsaMatrix=66..80}] as @e[type=marker,tag=TeoMoveRotate,distance=0..3] rotated as @s run tp @s ~ ~ ~ ~6.5 ~
 execute if entity @s[scores={AsaMatrix=81}] run kill @e[type=marker,tag=TeoMoveRotate,distance=0..3]
 
 # 炎纏い
-    execute if entity @s[scores={AsaMatrix=41..81}] at @e[type=marker,tag=TeoMoveRotate,distance=0..3] positioned ^ ^2 ^6 run function asa_animator:teo/anim/flame_large/events/damage_f
+    execute if entity @s[scores={AsaMatrix=41..81}] positioned ^ ^2 ^5 rotated as @e[type=marker,tag=TeoMoveRotate,distance=0..8] run function asa_animator:teo/anim/flame_large/events/damage_f
