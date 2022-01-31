@@ -43,6 +43,8 @@
 
     # 粉塵爆発（近）
     execute if entity @s[tag=AnmBombN] run function asa_animator:teo/anim/bomb_n/main
+    # 粉塵爆発（遠）
+    execute if entity @s[tag=AnmBombF] run function asa_animator:teo/anim/bomb_f/main
 
 ## その他
     # 登場
