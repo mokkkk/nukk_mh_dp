@@ -41,7 +41,7 @@ execute if entity @s[scores={AsaMatrix=15}] facing entity @e[tag=TeoAttackTarget
 execute if entity @s[scores={AsaMatrix=41..55}] as @e[type=marker,tag=TeoMoveRotate,distance=0..3] rotated as @s run tp @s ~ ~ ~ ~-6.3 ~
 execute if entity @s[scores={AsaMatrix=56..65}] as @e[type=marker,tag=TeoMoveRotate,distance=0..3] rotated as @s run tp @s ~ ~ ~ ~-1 ~
 execute if entity @s[scores={AsaMatrix=66..80}] as @e[type=marker,tag=TeoMoveRotate,distance=0..3] rotated as @s run tp @s ~ ~ ~ ~6.5 ~
-execute if entity @s[scores={AsaMatrix=81}] run kill @e[type=marker,tag=TeoMoveRotate,distance=0..3]
+execute if entity @s[scores={AsaMatrix=81}] run kill @e[type=marker,tag=TeoMoveRotate]
 
 # 炎纏い
-    execute if entity @s[scores={AsaMatrix=41..81}] positioned ^ ^2 ^5 rotated as @e[type=marker,tag=TeoMoveRotate,distance=0..8] run function asa_animator:teo/anim/flame_large/events/damage_f
+    execute if entity @s[scores={AsaMatrix=41..81}] positioned as @e[type=armor_stand,tag=TeoParts,tag=HeadU] positioned ^ ^1.2 ^1 rotated as @e[type=marker,tag=TeoMoveRotate,distance=0..8] run function asa_animator:teo/anim/flame_large/events/damage_f

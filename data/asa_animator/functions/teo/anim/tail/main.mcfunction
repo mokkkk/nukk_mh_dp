@@ -29,3 +29,6 @@ execute if entity @s[scores={AsaMatrix=21}] run playsound entity.player.attack.s
 execute if entity @s[scores={AsaMatrix=36}] run playsound entity.player.attack.sweep master @a ~ ~ ~ 2 0.7 
 execute if entity @s[scores={AsaMatrix=26}] positioned ^ ^ ^-6 run function asa_animator:teo/anim/tail/events/damage
 execute if entity @s[scores={AsaMatrix=40}] positioned ^ ^ ^-6 run function asa_animator:teo/anim/tail/events/damage
+
+execute if entity @s[tag=IsFire,scores={AsaMatrix=26}] if score #mhdp_teo_lv AsaMatrix matches 2 positioned ^-2 ^ ^-6 run function asa_animator:teo/manager/particle/set_aec
+execute if entity @s[tag=IsFire,scores={AsaMatrix=40}] if score #mhdp_teo_lv AsaMatrix matches 2 positioned ^2 ^ ^-6 run function asa_animator:teo/manager/particle/set_aec

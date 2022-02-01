@@ -10,4 +10,17 @@ execute if score #mhdp_teo_temp AsaMatrix matches 10.. run particle flame ^ ^ ^ 
 
 execute if score #mhdp_teo_temp AsaMatrix matches 2.. positioned ^ ^ ^-2 as @e[type=!armor_stand,type=!area_effect_cloud,type=!marker,tag=!TeoParts,tag=!MhdpHit,distance=..3] run tag @s add MhdpHit
 
+# AEC設置
+    execute if entity @s[scores={AsaMatrix=42}] if score #mhdp_teo_lv AsaMatrix matches 2 if score #mhdp_teo_temp AsaMatrix matches 12 positioned ^ ^-1.6 ^ run function asa_animator:teo/manager/particle/set_aec
+    execute if entity @s[scores={AsaMatrix=45}] if score #mhdp_teo_lv AsaMatrix matches 2 if score #mhdp_teo_temp AsaMatrix matches 12 positioned ^ ^-1.6 ^ run function asa_animator:teo/manager/particle/set_aec
+    execute if entity @s[scores={AsaMatrix=48}] if score #mhdp_teo_lv AsaMatrix matches 2 if score #mhdp_teo_temp AsaMatrix matches 12 positioned ^ ^-1.6 ^ run function asa_animator:teo/manager/particle/set_aec
+    execute if entity @s[scores={AsaMatrix=52}] if score #mhdp_teo_lv AsaMatrix matches 2 if score #mhdp_teo_temp AsaMatrix matches 12 positioned ^ ^-1.6 ^ run function asa_animator:teo/manager/particle/set_aec
+    execute if entity @s[scores={AsaMatrix=55}] if score #mhdp_teo_lv AsaMatrix matches 2 if score #mhdp_teo_temp AsaMatrix matches 12 positioned ^ ^-1.6 ^ run function asa_animator:teo/manager/particle/set_aec
+    
+    execute if entity @s[scores={AsaMatrix=66}] if score #mhdp_teo_lv AsaMatrix matches 2 if score #mhdp_teo_temp AsaMatrix matches 12 positioned ^ ^-1.6 ^ run function asa_animator:teo/manager/particle/set_aec
+    execute if entity @s[scores={AsaMatrix=69}] if score #mhdp_teo_lv AsaMatrix matches 2 if score #mhdp_teo_temp AsaMatrix matches 12 positioned ^ ^-1.6 ^ run function asa_animator:teo/manager/particle/set_aec
+    execute if entity @s[scores={AsaMatrix=72}] if score #mhdp_teo_lv AsaMatrix matches 2 if score #mhdp_teo_temp AsaMatrix matches 12 positioned ^ ^-1.6 ^ run function asa_animator:teo/manager/particle/set_aec
+    execute if entity @s[scores={AsaMatrix=75}] if score #mhdp_teo_lv AsaMatrix matches 2 if score #mhdp_teo_temp AsaMatrix matches 12 positioned ^ ^-1.6 ^ run function asa_animator:teo/manager/particle/set_aec
+    execute if entity @s[scores={AsaMatrix=78}] if score #mhdp_teo_lv AsaMatrix matches 2 if score #mhdp_teo_temp AsaMatrix matches 12 positioned ^ ^-1.6 ^ run function asa_animator:teo/manager/particle/set_aec
+
 execute if score #mhdp_teo_temp AsaMatrix matches ..13 positioned ^ ^ ^1 if block ~ ~ ~ #asa_animator:no_collision run function asa_animator:teo/anim/flame_large/events/damage_f_

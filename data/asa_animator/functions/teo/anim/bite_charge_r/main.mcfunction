@@ -31,7 +31,7 @@ execute if entity @s[scores={AsaMatrix=21..25}] run function asa_animator:teo/ma
 execute if entity @s[scores={AsaMatrix=27}] run summon marker ~ ~ ~ {Tags:["TeoMoveRotate"]}
 execute if entity @s[scores={AsaMatrix=27}] run tp @e[type=marker,tag=TeoMoveRotate,distance=0..3] ~ ~ ~ ~-35 0
 execute if entity @s[scores={AsaMatrix=28..40}] as @e[type=marker,tag=TeoMoveRotate,distance=0..3] at @s run tp @s ~ ~ ~ ~7 ~
-execute if entity @s[scores={AsaMatrix=41}] run kill @e[type=marker,tag=TeoMoveRotate,distance=0..3]
+execute if entity @s[scores={AsaMatrix=41}] run kill @e[type=marker,tag=TeoMoveRotate]
 
 # 炎纏い
     execute if entity @s[tag=IsFire,scores={AsaMatrix=1..20}] at @e[type=armor_stand,tag=TeoParts,tag=HeadU] positioned ^ ^1.3 ^0.6 run particle flame ~ ~ ~ 0.1 0.1 0.1 0.05 5

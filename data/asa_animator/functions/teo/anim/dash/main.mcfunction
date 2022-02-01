@@ -29,7 +29,11 @@ function asa_animator:teo/manager/rotate_lr
 execute at @s run tp @s ^ ^ ^1
 
 # 停止
+execute if entity @e[type=marker,tag=TeoDashTarget,distance=0..10] run function asa_animator:teo/anim/dash_start/events/_
 execute if entity @e[type=marker,tag=TeoDashTarget,distance=0..10] run scoreboard players set #mhdp_teo_dash_count AsaMatrix 2
 execute if entity @e[type=marker,tag=TeoDashTarget,distance=0..10] run kill @e[type=marker,tag=TeoDashTarget,distance=0..10]
 
 execute positioned ^ ^ ^3 run function asa_animator:teo/anim/dash/events/damage
+
+execute if entity @s[tag=IsFire,scores={AsaMatrix=1}] if score #mhdp_teo_lv AsaMatrix matches 2 at @s run function asa_animator:teo/manager/particle/set_aec
+execute if entity @s[tag=IsFire,scores={AsaMatrix=14}] if score #mhdp_teo_lv AsaMatrix matches 2 at @s positioned ~ ~-0.8 ~ run function asa_animator:teo/manager/particle/set_aec

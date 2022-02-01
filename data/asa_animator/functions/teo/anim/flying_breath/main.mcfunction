@@ -31,5 +31,5 @@ execute if entity @s[scores={AsaMatrix=16}] run tp @e[type=marker,tag=TeoMoveRot
 execute if entity @s[scores={AsaMatrix=17..41}] as @e[type=marker,tag=TeoMoveRotate,distance=0..5] rotated as @s run tp @s ~ ~ ~ ~-4 ~
 execute if entity @s[scores={AsaMatrix=42..53}] as @e[type=marker,tag=TeoMoveRotate,distance=0..5] rotated as @s run tp @s ~ ~ ~ ~ ~
 execute if entity @s[scores={AsaMatrix=54..77}] as @e[type=marker,tag=TeoMoveRotate,distance=0..5] rotated as @s run tp @s ~ ~ ~ ~4 ~
-execute if entity @s[scores={AsaMatrix=77}] run kill @e[type=marker,tag=TeoMoveRotate,distance=0..5]
+execute if entity @s[scores={AsaMatrix=77}] run kill @e[type=marker,tag=TeoMoveRotate]
 execute if entity @s[scores={AsaMatrix=17..77}] positioned as @e[type=armor_stand,tag=TeoParts,tag=HeadU] positioned ^ ^0.2 ^1 rotated as @e[type=marker,tag=TeoMoveRotate,distance=0..8] run function asa_animator:teo/anim/flying_breath/events/damage_f
