@@ -28,6 +28,7 @@
     execute if entity @s[tag=AnmDashStart] run function asa_animator:teo/anim/dash_start/main
     execute if entity @s[tag=AnmDash] run function asa_animator:teo/anim/dash/main
     execute if entity @s[tag=AnmDashStop] run function asa_animator:teo/anim/dash_stop/main
+    execute if entity @s[tag=AnmDashFly] run function asa_animator:teo/anim/dash_stop_fly/main
 
     # 滑空突進
     execute if entity @s[tag=AnmFlyTackle] run function asa_animator:teo/anim/flying_tackle/main
@@ -37,9 +38,20 @@
     execute if entity @s[tag=AnmBiteCR,tag=IsFire] run function asa_animator:teo/anim/bite_charge_r/main
     # 爆破薙ぎ
 
-
     # 薙ぎ払い火炎放射
     execute if entity @s[tag=AnmFlameLarge] run function asa_animator:teo/anim/flame_large/main
+    # 地面火炎放射
+    execute if entity @s[tag=AnmFlameGround] run function asa_animator:teo/anim/flame_ground/main
+
+    # 離陸
+    execute if entity @s[tag=AnmStartFly] run function asa_animator:teo/anim/start_fly/main
+    # 滞空火炎放射
+    execute if entity @s[tag=AnmFlyBreath] run function asa_animator:teo/anim/flying_breath/main
+    # 着地
+    execute if entity @s[tag=AnmEndFly] run function asa_animator:teo/anim/end_fly/main
+    # 滞空突進
+    execute if entity @s[tag=AnmFlyTackleC] run function asa_animator:teo/anim/flying_tackle_combo/main
+    execute if entity @s[tag=AnmFlyTackleC2] run function asa_animator:teo/anim/flying_tackle_combo_2/main
 
     # 粉塵爆発（近）
     execute if entity @s[tag=AnmBombN] run function asa_animator:teo/anim/bomb_n/main

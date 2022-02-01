@@ -1,0 +1,1 @@
+summon area_effect_cloud ~ ~ ~ {Particle:"flame",Radius:1f,RadiusPerTick:0.33f,Duration:32,Tags:["TeoFlameAec"],Effects:[{Id:27b,Amplifier:77b,Duration:2,ShowParticles:0b}]}

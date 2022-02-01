@@ -31,6 +31,7 @@ execute if entity @s[scores={AsaMatrix=1}] run playsound entity.ender_dragon.fla
 
 execute if entity @s[scores={AsaMatrix=60}] run playsound item.flintandsteel.use master @a ~ ~ ~ 2 0.5
 execute if entity @s[scores={AsaMatrix=60}] run playsound item.flintandsteel.use master @a ~ ~ ~ 2 0.7
+execute if entity @s[scores={AsaMatrix=60}] run playsound item.flintandsteel.use master @a ~ ~ ~ 2 1
 execute if entity @s[scores={AsaMatrix=60}] run particle crit ^ ^1.7 ^5.5 0 0 0 1 20
 
 execute if entity @s[scores={AsaMatrix=10..60}] run function asa_animator:teo/anim/bomb_f/events/particle
@@ -38,7 +39,6 @@ execute if entity @s[scores={AsaMatrix=10}] run function asa_animator:teo/anim/v
 execute if entity @s[scores={AsaMatrix=10}] run playsound item.firecharge.use master @a ~ ~ ~ 2 0.5
 execute if entity @s[scores={AsaMatrix=20}] run playsound block.fire.ambient master @a ~ ~ ~ 2 0.7
 
-execute if entity @s[scores={AsaMatrix=60}] positioned ^8.15677 ^ ^-3.80356 run function asa_animator:teo/anim/bomb_n/events/damage
 execute if entity @s[scores={AsaMatrix=62}] positioned ^0 ^ ^12 run function asa_animator:teo/anim/bomb_n/events/damage
 execute if entity @s[scores={AsaMatrix=64}] positioned ^-8.45723 ^ ^-3.07818 run function asa_animator:teo/anim/bomb_n/events/damage
 execute if entity @s[scores={AsaMatrix=66}] positioned ^-3.07818 ^ ^8.45723 run function asa_animator:teo/anim/bomb_n/events/damage
@@ -54,6 +54,7 @@ execute if entity @s[scores={AsaMatrix=84}] positioned ^3.07818 ^ ^-8.45723 run 
 execute if entity @s[scores={AsaMatrix=86}] positioned ^-8.48528 ^ ^8.48528 run function asa_animator:teo/anim/bomb_n/events/damage
 execute if entity @s[scores={AsaMatrix=88}] positioned ^-12 ^ ^0 run function asa_animator:teo/anim/bomb_n/events/damage
 execute if entity @s[scores={AsaMatrix=90}] positioned ^-3.80356 ^ ^-8.15677 run function asa_animator:teo/anim/bomb_n/events/damage
+execute if entity @s[scores={AsaMatrix=92}] positioned ^8.15677 ^ ^-3.80356 run function asa_animator:teo/anim/bomb_n/events/damage
 
 execute if entity @s[scores={AsaMatrix=75..90}] run playsound entity.hoglin.angry master @a ~ ~ ~ 2 0.9
 execute if entity @s[scores={AsaMatrix=75..90}] run playsound entity.hoglin.angry master @a ~ ~ ~ 2 1.1
