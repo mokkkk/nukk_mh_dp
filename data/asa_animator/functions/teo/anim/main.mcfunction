@@ -41,6 +41,7 @@
     # 粉塵爆発（遠）
     execute if entity @s[tag=AnmBombF] run function asa_animator:teo/anim/bomb_f/main
 
+
 ## 龍炎纏い
     # 炎薙ぎ
     execute if entity @s[tag=AnmBiteCL,tag=IsFire] run function asa_animator:teo/anim/bite_charge_l/main
@@ -63,14 +64,19 @@
     # 火の粉飛ばし
     execute if entity @s[tag=AnmFlameLine] run function asa_animator:teo/anim/flame_line/main
 
+
 ## 粉塵纏い
     # 爆発薙ぎ
-
+    execute if entity @s[tag=AnmBiteCL,tag=IsBomb] run function asa_animator:teo/anim/bite_charge_b_l/main
+    execute if entity @s[tag=AnmBiteCR,tag=IsBomb] run function asa_animator:teo/anim/bite_charge_b_r/main
     
     # 薙ぎ払い粉塵爆発
     execute if entity @s[tag=AnmFlameLarge,tag=IsBomb] if score #mhdp_teo_lv AsaMatrix matches ..1 run function asa_animator:teo/anim/bomb_large/main
     execute if entity @s[tag=AnmFlameLarge,tag=IsBomb] if score #mhdp_teo_lv AsaMatrix matches 2.. run function asa_animator:teo/anim/bomb_large_2/main
-    
+
+    # 線形粉塵爆発
+    execute if entity @s[tag=AnmBombLine] if score #mhdp_teo_lv AsaMatrix matches ..1 run function asa_animator:teo/anim/bomb_line/main
+    execute if entity @s[tag=AnmBombLine] if score #mhdp_teo_lv AsaMatrix matches 2.. run function asa_animator:teo/anim/bomb_line_2/main
 
 ## その他
     # 登場
