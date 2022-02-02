@@ -41,6 +41,10 @@
     # 粉塵爆発（遠）
     execute if entity @s[tag=AnmBombF] run function asa_animator:teo/anim/bomb_f/main
 
+    # スーパーノヴァ
+    execute if entity @s[tag=AnmSupernova] run function asa_animator:teo/anim/supernova/main
+    execute if entity @s[tag=AnmSupernovaEnd] run function asa_animator:teo/anim/supernova_end_fly/main
+
 
 ## 龍炎纏い
     # 炎薙ぎ
@@ -77,6 +81,12 @@
     # 線形粉塵爆発
     execute if entity @s[tag=AnmBombLine] if score #mhdp_teo_lv AsaMatrix matches ..1 run function asa_animator:teo/anim/bomb_line/main
     execute if entity @s[tag=AnmBombLine] if score #mhdp_teo_lv AsaMatrix matches 2.. run function asa_animator:teo/anim/bomb_line_2/main
+
+    # ノヴァ
+    execute if entity @s[tag=AnmNova] run function asa_animator:teo/anim/nova/main
+
+    # 点火
+    execute if entity @s[tag=AnmIgnite] run function asa_animator:teo/anim/ignite/main
 
 ## その他
     # 登場

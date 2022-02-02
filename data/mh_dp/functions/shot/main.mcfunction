@@ -28,3 +28,5 @@ execute if entity @s[tag=KushalaBreathC] run function asa_animator:kushala/anim/
 execute if entity @s[tag=KushalaBreathU] run function asa_animator:kushala/anim/breath_up/events/main_bullet
 execute if entity @s[tag=KushalaBreathT] run function asa_animator:kushala/anim/bjb_land/events/main_bullet
 execute if entity @s[tag=KushalaBomb] run function asa_animator:kushala/anim/sp_attack/events/bomb/main_bullet
+
+execute if entity @s[tag=TeoBomb] run function asa_animator:teo/manager/bomb/main_bullet

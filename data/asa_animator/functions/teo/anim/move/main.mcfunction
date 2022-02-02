@@ -33,3 +33,5 @@ execute if entity @e[tag=TeoAttackTarget,distance=0..8] run function asa_animato
 
 execute if entity @s[tag=IsFire,scores={AsaMatrix=1}] if score #mhdp_teo_lv AsaMatrix matches 2 at @s run function asa_animator:teo/manager/particle/set_aec
 execute if entity @s[tag=IsFire,scores={AsaMatrix=14}] if score #mhdp_teo_lv AsaMatrix matches 2 at @s positioned ~ ~-0.8 ~ run function asa_animator:teo/manager/particle/set_aec
+execute if entity @s[tag=IsBomb,scores={AsaMatrix=1}] if score #mhdp_teo_lv AsaMatrix matches 1.. at @s run function asa_animator:teo/manager/bomb/set_bomb
+execute if entity @s[tag=IsBomb,scores={AsaMatrix=14}] if score #mhdp_teo_lv AsaMatrix matches 1.. at @s positioned ~ ~-0.8 ~ run function asa_animator:teo/manager/bomb/set_bomb
