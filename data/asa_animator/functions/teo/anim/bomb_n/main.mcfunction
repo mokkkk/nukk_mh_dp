@@ -33,6 +33,7 @@ execute if entity @s[scores={AsaMatrix=60}] run playsound item.flintandsteel.use
 execute if entity @s[scores={AsaMatrix=60}] run playsound item.flintandsteel.use master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=60}] run particle crit ^ ^1.7 ^5.5 0 0 0 1 20
 
+execute if entity @s[scores={AsaMatrix=10}] run particle dust 1 0.255 0.255 3 ~ ~1 ~ 2 1 2 0 30
 execute if entity @s[scores={AsaMatrix=10..60}] run function asa_animator:teo/anim/bomb_n/events/particle
 execute if entity @s[scores={AsaMatrix=10}] run function asa_animator:teo/anim/voice/events/particle
 execute if entity @s[scores={AsaMatrix=10}] run playsound item.firecharge.use master @a ~ ~ ~ 2 0.5

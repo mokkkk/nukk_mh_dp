@@ -32,27 +32,7 @@
 
     # 滑空突進
     execute if entity @s[tag=AnmFlyTackle] run function asa_animator:teo/anim/flying_tackle/main
-
-    # 炎薙ぎ
-    execute if entity @s[tag=AnmBiteCL,tag=IsFire] run function asa_animator:teo/anim/bite_charge_l/main
-    execute if entity @s[tag=AnmBiteCR,tag=IsFire] run function asa_animator:teo/anim/bite_charge_r/main
-    # 爆破薙ぎ
-
-    # 薙ぎ払い火炎放射
-    execute if entity @s[tag=AnmFlameLarge] run function asa_animator:teo/anim/flame_large/main
-    # 地面火炎放射
-    execute if entity @s[tag=AnmFlameGround] run function asa_animator:teo/anim/flame_ground/main
-    # 溜め火炎放射
-    execute if entity @s[tag=AnmFlameNova] run function asa_animator:teo/anim/flame_nova/main
-    # 薙ぎ払い粉塵爆発
-
-    # 離陸
-    execute if entity @s[tag=AnmStartFly] run function asa_animator:teo/anim/start_fly/main
-    # 滞空火炎放射
-    execute if entity @s[tag=AnmFlyBreath] run function asa_animator:teo/anim/flying_breath/main
-    # 着地
-    execute if entity @s[tag=AnmEndFly] run function asa_animator:teo/anim/end_fly/main
-    # 滞空突進
+    # 滑空突進（コンボ用）
     execute if entity @s[tag=AnmFlyTackleC] run function asa_animator:teo/anim/flying_tackle_combo/main
     execute if entity @s[tag=AnmFlyTackleC2] run function asa_animator:teo/anim/flying_tackle_combo_2/main
 
@@ -61,8 +41,35 @@
     # 粉塵爆発（遠）
     execute if entity @s[tag=AnmBombF] run function asa_animator:teo/anim/bomb_f/main
 
+## 龍炎纏い
+    # 炎薙ぎ
+    execute if entity @s[tag=AnmBiteCL,tag=IsFire] run function asa_animator:teo/anim/bite_charge_l/main
+    execute if entity @s[tag=AnmBiteCR,tag=IsFire] run function asa_animator:teo/anim/bite_charge_r/main
+
+    # 薙ぎ払い火炎放射
+    execute if entity @s[tag=AnmFlameLarge,tag=IsFire] run function asa_animator:teo/anim/flame_large/main
+    # 地面火炎放射
+    execute if entity @s[tag=AnmFlameGround] run function asa_animator:teo/anim/flame_ground/main
+    # 溜め火炎放射
+    execute if entity @s[tag=AnmFlameNova] run function asa_animator:teo/anim/flame_nova/main
+
+    # 離陸
+    execute if entity @s[tag=AnmStartFly] run function asa_animator:teo/anim/start_fly/main
+    # 滞空火炎放射
+    execute if entity @s[tag=AnmFlyBreath] run function asa_animator:teo/anim/flying_breath/main
+    # 着地
+    execute if entity @s[tag=AnmEndFly] run function asa_animator:teo/anim/end_fly/main
+
     # 火の粉飛ばし
     execute if entity @s[tag=AnmFlameLine] run function asa_animator:teo/anim/flame_line/main
+
+## 粉塵纏い
+    # 爆発薙ぎ
+
+    
+    # 薙ぎ払い粉塵爆発
+    execute if entity @s[tag=AnmFlameLarge,tag=IsBomb] if score #mhdp_teo_lv AsaMatrix matches ..1 run function asa_animator:teo/anim/bomb_large/main
+    execute if entity @s[tag=AnmFlameLarge,tag=IsBomb] if score #mhdp_teo_lv AsaMatrix matches 2.. run function asa_animator:teo/anim/bomb_large_2/main
     
 
 ## その他
