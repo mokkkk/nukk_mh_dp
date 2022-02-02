@@ -44,6 +44,7 @@
     execute if entity @s[tag=AnmFlameGround] run function asa_animator:teo/anim/flame_ground/main
     # 溜め火炎放射
     execute if entity @s[tag=AnmFlameNova] run function asa_animator:teo/anim/flame_nova/main
+    # 薙ぎ払い粉塵爆発
 
     # 離陸
     execute if entity @s[tag=AnmStartFly] run function asa_animator:teo/anim/start_fly/main

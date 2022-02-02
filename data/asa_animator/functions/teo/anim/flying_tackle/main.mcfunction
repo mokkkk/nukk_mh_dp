@@ -47,3 +47,7 @@ execute if entity @s[scores={AsaMatrix=61..}] at @s rotated as @e[type=marker,ta
 
 # 炎纏いlv1-
     execute if entity @s[tag=IsFire,scores={AsaMatrix=51..58}] if score #mhdp_teo_lv AsaMatrix matches 1.. run particle lava ~ ~ ~ 2 0.1 2 0 5
+
+# 粉塵纏いlv1-
+    execute if entity @s[tag=IsBomb,scores={AsaMatrix=51}] if score #mhdp_teo_lv AsaMatrix matches 1.. positioned ^ ^ ^2 run function asa_animator:teo/anim/jump/events/damage_b
+    execute if entity @s[tag=IsBomb,scores={AsaMatrix=55}] if score #mhdp_teo_lv AsaMatrix matches 1.. positioned ^ ^ ^-2 run function asa_animator:teo/anim/jump/events/damage_b

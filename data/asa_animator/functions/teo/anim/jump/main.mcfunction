@@ -38,6 +38,6 @@ execute if entity @s[scores={AsaMatrix=40}] run function asa_animator:teo/anim/j
 execute if entity @s[scores={AsaMatrix=36..43}] positioned ^ ^2 ^4 run function asa_animator:teo/anim/jump/events/damage
 
 # 粉塵纏い：爆発
-# execute if entity @s[scores={AsaMatrix=41}] positioned ^ ^2 ^ run function asa_animator:teo/anim/jump/events/damage_b
-# execute if entity @s[scores={AsaMatrix=42}] positioned ^ ^2 ^2 run function asa_animator:teo/anim/jump/events/damage_b
-# execute if entity @s[scores={AsaMatrix=43}] positioned ^ ^2 ^4 run function asa_animator:teo/anim/jump/events/damage_b
+execute if entity @s[tag=IsBomb,scores={AsaMatrix=41}] if score #mhdp_teo_lv AsaMatrix matches 1.. positioned ^ ^2 ^ run function asa_animator:teo/anim/jump/events/damage_b
+execute if entity @s[tag=IsBomb,scores={AsaMatrix=43}] if score #mhdp_teo_lv AsaMatrix matches 1.. positioned ^ ^2 ^3 run function asa_animator:teo/anim/jump/events/damage_b
+execute if entity @s[tag=IsBomb,scores={AsaMatrix=45}] if score #mhdp_teo_lv AsaMatrix matches 1.. positioned ^ ^2 ^6 run function asa_animator:teo/anim/jump/events/damage_b
