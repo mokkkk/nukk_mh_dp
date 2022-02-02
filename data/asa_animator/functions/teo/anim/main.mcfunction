@@ -1,5 +1,5 @@
 
-## 地上
+## 共通
     # バックステップ
     execute if entity @s[tag=AnmStepB] run function asa_animator:teo/anim/step_b/main
     # 移動
@@ -42,6 +42,8 @@
     execute if entity @s[tag=AnmFlameLarge] run function asa_animator:teo/anim/flame_large/main
     # 地面火炎放射
     execute if entity @s[tag=AnmFlameGround] run function asa_animator:teo/anim/flame_ground/main
+    # 溜め火炎放射
+    execute if entity @s[tag=AnmFlameNova] run function asa_animator:teo/anim/flame_nova/main
 
     # 離陸
     execute if entity @s[tag=AnmStartFly] run function asa_animator:teo/anim/start_fly/main
@@ -57,6 +59,10 @@
     execute if entity @s[tag=AnmBombN] run function asa_animator:teo/anim/bomb_n/main
     # 粉塵爆発（遠）
     execute if entity @s[tag=AnmBombF] run function asa_animator:teo/anim/bomb_f/main
+
+    # 火の粉飛ばし
+    execute if entity @s[tag=AnmFlameLine] run function asa_animator:teo/anim/flame_line/main
+    
 
 ## その他
     # 登場
