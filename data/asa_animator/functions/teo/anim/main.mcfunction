@@ -85,6 +85,10 @@
     # 粉塵爆発（バックステップ）
     execute if entity @s[tag=AnmBombStep] if score #mhdp_teo_lv AsaMatrix matches 2.. run function asa_animator:teo/anim/bomb_step/main
 
+    # 粉塵まき散らし
+    execute if entity @s[tag=AnmBombDashStart] run function asa_animator:teo/anim/bomb_dash_start/main
+    execute if entity @s[tag=AnmBombDash] run function asa_animator:teo/anim/bomb_dash/main
+
     # ノヴァ
     execute if entity @s[tag=AnmNova] run function asa_animator:teo/anim/nova/main
 
