@@ -29,10 +29,7 @@ execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:teo/manager
 execute if entity @s[scores={AsaMatrix=96}] run function asa_animator:teo/manager/model/change_to_normal
 execute if entity @s[scores={AsaMatrix=1}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.5
 
-execute if entity @s[scores={AsaMatrix=60}] run playsound item.flintandsteel.use master @a ~ ~ ~ 2 0.5
-execute if entity @s[scores={AsaMatrix=60}] run playsound item.flintandsteel.use master @a ~ ~ ~ 2 0.7
-execute if entity @s[scores={AsaMatrix=60}] run playsound item.flintandsteel.use master @a ~ ~ ~ 2 1
-execute if entity @s[scores={AsaMatrix=60}] run particle crit ^ ^1.7 ^5.5 0 0 0 1 20
+execute if entity @s[scores={AsaMatrix=60}] run function asa_animator:teo/manager/bomb/ingite
 
 execute if entity @s[scores={AsaMatrix=10}] run particle dust 1 0.714 0.341 3 ~ ~1 ~ 2 1 2 0 30
 execute if entity @s[scores={AsaMatrix=10..60}] run function asa_animator:teo/anim/bomb_f/events/particle

@@ -31,3 +31,10 @@ execute if entity @s[scores={AsaMatrix=22..31}] run function asa_animator:teo/an
 
 # 炎纏いlv1-
     execute if entity @s[tag=IsFire,scores={AsaMatrix=19..31}] if score #mhdp_teo_lv AsaMatrix matches 1.. run particle flame ^1 ^1.5 ^5 0.5 0.5 0.5 0.05 30
+# 粉塵纏いlv1-
+    execute if entity @s[tag=IsBomb,scores={AsaMatrix=22}] if score #mhdp_teo_lv AsaMatrix matches 1.. at @s run function asa_animator:teo/manager/bomb/set_bomb
+    execute if entity @s[tag=IsBomb,scores={AsaMatrix=27}] if score #mhdp_teo_lv AsaMatrix matches 1.. at @s run function asa_animator:teo/manager/bomb/set_bomb
+    execute if entity @s[tag=IsBomb,scores={AsaMatrix=32}] if score #mhdp_teo_lv AsaMatrix matches 1.. at @s run function asa_animator:teo/manager/bomb/set_bomb
+
+# コンボキャンセル
+    execute unless predicate asa_animator:teo/combo if entity @s[scores={AsaMatrix=38}] run function asa_animator:teo/manager/cancel_animation

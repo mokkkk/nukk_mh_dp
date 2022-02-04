@@ -19,6 +19,8 @@ execute if entity @s[scores={AsaMatrix=40..}] run function asa_animator:teo/anim
 execute as @e[type=armor_stand,tag=TeoParts] run function #asa_matrix:animate
 function asa_animator:teo/model
 
+execute at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
+execute at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~
 execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=24}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 
@@ -26,6 +28,9 @@ execute if entity @s[scores={AsaMatrix=1..5}] run function asa_animator:teo/mana
 execute if entity @s[scores={AsaMatrix=11..16}] unless entity @s[tag=TeoAttackTarget,distance=..7] at @s run tp @s ^ ^ ^0.6
 
 execute if entity @s[scores={AsaMatrix=13}] positioned ^-1.5 ^1 ^6 run function asa_animator:teo/anim/claw_f_l/events/damage
+# 粉塵纏いlv1-
+    execute if entity @s[tag=IsBomb,scores={AsaMatrix=15}] if score #mhdp_teo_lv AsaMatrix matches 2.. positioned ^1.5 ^1 ^9 run function asa_animator:teo/manager/bomb/set_bomb
+    execute if entity @s[tag=IsBomb,scores={AsaMatrix=17}] if score #mhdp_teo_lv AsaMatrix matches 2.. positioned ^1.5 ^1 ^12 run function asa_animator:teo/manager/bomb/set_bomb
 
-execute at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
-execute at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~
+# コンボキャンセル
+    execute unless predicate asa_animator:teo/combo if entity @s[scores={AsaMatrix=24}] run function asa_animator:teo/manager/cancel_animation

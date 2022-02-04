@@ -7,11 +7,9 @@ execute if entity @s[tag=ChangeAnm] run function asa_animator:teo/manager/change
 
 # 待機
 # execute if predicate asa_animator:teo/stay if entity @s[tag=IsStand] run function asa_animator:teo/anim/stay_stand/main
-execute if predicate asa_animator:teo/stay if entity @s[tag=!IsStand,tag=!IsFlying] run function asa_animator:teo/anim/stay/main
-execute if predicate asa_animator:teo/stay if entity @s[tag=IsFlying,tag=!IsStand] run function asa_animator:teo/anim/flying_stay/main
+execute if predicate asa_animator:teo/stay if entity @s[tag=!IsStand] run function asa_animator:teo/anim/stay/main
 # 軸合わせ
-# execute if entity @s[tag=AnmTurn,tag=!IsFlying] run function asa_animator:teo/anim/turn/main
-# execute if entity @s[tag=AnmTurn,tag=IsFlying] run function asa_animator:teo/anim/flying_turn/main
+# execute if entity @s[tag=AnmTurn] run function asa_animator:teo/anim/turn/main
 # 行動
 execute unless entity @s[tag=AnmTurn] unless predicate asa_animator:teo/stay run function asa_animator:teo/anim/main
 
@@ -20,7 +18,7 @@ execute if entity @s[tag=IsFire] if score #mhdp_teo_lv AsaMatrix matches 1.. run
 execute if entity @s[tag=IsFire] if score #mhdp_teo_lv AsaMatrix matches 2 run particle flame ~ ~2 ~ 1.5 1.5 1.5 0.1 4
 execute if entity @s[tag=IsBomb] if score #mhdp_teo_lv AsaMatrix matches 1.. run particle crimson_spore ~ ~2 ~ 1.5 1.5 1.5 0 15
 execute if entity @s[tag=IsBomb] if score #mhdp_teo_lv AsaMatrix matches 2 run particle dust_color_transition 1 0.298 0.173 1 1 0.89 0.255 ~ ~2 ~ 1.5 1.5 1.5 0.1 10
-# /scoreboard players set #mhdp_teo_lv AsaMatrix 0
+# scoreboard players set #mhdp_teo_lv AsaMatrix 1
 
 # AECダメージ
 execute if entity @s[tag=IsFire] if score #mhdp_teo_lv AsaMatrix matches 2 as @e[tag=!TeoParts,predicate=asa_animator:teo/effect,distance=0..40] at @s run function asa_animator:teo/anim/flame_ground/events/damage

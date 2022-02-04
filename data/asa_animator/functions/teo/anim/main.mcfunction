@@ -6,6 +6,8 @@
     execute if entity @s[tag=AnmMoveStart] run function asa_animator:teo/anim/move_start/main
     execute if entity @s[tag=AnmMove] run function asa_animator:teo/anim/move/main
 
+    # 正面噛みつき
+    execute if entity @s[tag=AnmBite] run function asa_animator:teo/anim/bite/main
     # 移動噛みつき
     execute if entity @s[tag=AnmBiteL] run function asa_animator:teo/anim/bite_turn_l/main
     execute if entity @s[tag=AnmBiteR] run function asa_animator:teo/anim/bite_turn_r/main

@@ -1,5 +1,8 @@
 
-execute if score #mhdp_kushala_combo_count AsaMatrix matches 0 run tag @s add AnmBjb
-execute if score #mhdp_kushala_combo_count AsaMatrix matches 1 run tag @s add AnmFlyTackle
-execute if score #mhdp_kushala_combo_count AsaMatrix matches 2.. run function asa_animator:kushala/manager/change_normal/_/end_fly
-execute if score #mhdp_kushala_combo_count AsaMatrix matches 2.. run tag @s remove ComboC
+execute if score #mhdp_teo_combo_count AsaMatrix matches 0 run tag @s add AnmMoveStart
+execute if score #mhdp_teo_combo_count AsaMatrix matches 1 run tag @s add AnmBite
+execute if score #mhdp_teo_combo_count AsaMatrix matches 2 run function asa_animator:teo/manager/change_normal/_/bitelr
+execute if score #mhdp_teo_combo_count AsaMatrix matches 3 run function asa_animator:teo/manager/change_normal/_/claw
+execute if score #mhdp_teo_combo_count AsaMatrix matches 4 run tag @s add AnmIgnite
+execute if entity @s[tag=IsFire] if score #mhdp_teo_combo_count AsaMatrix matches 3.. run tag @s remove ComboC
+execute if entity @s[tag=IsBomb] if score #mhdp_teo_combo_count AsaMatrix matches 4.. run tag @s remove ComboC

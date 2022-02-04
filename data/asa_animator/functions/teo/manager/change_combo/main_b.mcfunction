@@ -1,4 +1,5 @@
 
-execute if score #mhdp_kushala_combo_count AsaMatrix matches 0 run function asa_animator:kushala/manager/change_normal/_/move_lr
-execute if score #mhdp_kushala_combo_count AsaMatrix matches 1.. run tag @s add AnmBreathV
-execute if score #mhdp_kushala_combo_count AsaMatrix matches 1.. run tag @s remove ComboB
+execute if score #mhdp_teo_combo_count AsaMatrix matches 0 run tag @s add AnmDashStart
+execute if score #mhdp_teo_combo_count AsaMatrix matches 1 run tag @s add AnmDashStop
+execute if score #mhdp_teo_combo_count AsaMatrix matches 2.. run function asa_animator:teo/manager/change_normal/_/jump
+execute if score #mhdp_teo_combo_count AsaMatrix matches 2.. run tag @s remove ComboB

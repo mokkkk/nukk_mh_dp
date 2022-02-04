@@ -11,5 +11,11 @@ execute if entity @s[scores={AsaMatrix=46..}] run function asa_animator:teo/anim
 execute as @e[type=armor_stand,tag=TeoParts] run function #asa_matrix:animate
 function asa_animator:teo/model
 
+# execute if entity @s[scores={AsaMatrix=1}] if predicate asa_animator:random/070 if score #mhdp_teo_lv AsaMatrix matches 2.. run function asa_animator:teo/manager/particle/reflect
+
+execute unless predicate asa_animator:teo/combo if entity @s[scores={AsaMatrix=1}] run tag @s add ChangeAnm
+# execute if entity @s[tag=IsAnger,scores={AsaMatrix=1}] run tag @s add ChangeAnm
+# execute if entity @s[scores={AsaMatrix=1}] if score #mhdp_teo_actcount AsaMatrix matches 1.. run function asa_animator:teo/anim/stay/events/change
+
 execute at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
 execute at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~

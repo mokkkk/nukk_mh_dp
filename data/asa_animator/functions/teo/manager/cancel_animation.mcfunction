@@ -39,19 +39,9 @@ tag @s remove AnmBombDash
 tag @s remove AnmNova
 tag @s remove AnmIgnite
 
-tag @s remove ComboA
-tag @s remove ComboB
-tag @s remove ComboC
-tag @s remove ComboD
-tag @s remove ComboE
-tag @s remove ComboF
-tag @s remove ComboG
-tag @s remove ComboH
-tag @s remove ComboI
-tag @s remove ComboJ
-tag @s remove ComboK
-
 tag @s remove IsRight
 kill @e[type=marker,tag=TeoMoveRotate]
 kill @e[type=marker,tag=TeoMovePos]
 kill @e[type=marker,tag=TeoDashTarget]
+
+tag @s add ChangeAnm
