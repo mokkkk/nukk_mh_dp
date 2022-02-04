@@ -16,10 +16,10 @@ execute if entity @s[scores={AsaMatrix=29..33}] run tp @s ^0 ^0 ^0 ~1 ~
 execute if entity @s[scores={AsaMatrix=34}] run function asa_animator:teo/anim/bite_charge_r/keyframes/6
 execute if entity @s[scores={AsaMatrix=34..38}] run tp @s ^0 ^0 ^0 ~1 ~
 execute if entity @s[scores={AsaMatrix=39}] run function asa_animator:teo/anim/bite_charge_r/keyframes/7
-execute if entity @s[scores={AsaMatrix=39..43}] run tp @s ^0 ^0 ^0 ~0.5 ~
-execute if entity @s[scores={AsaMatrix=44}] run function asa_animator:teo/anim/bite_charge_r/keyframes/8
-execute if entity @s[scores={AsaMatrix=44..58}] run tp @s ^0 ^0 ^0 ~-0.5 ~
-execute if entity @s[scores={AsaMatrix=59..}] run function asa_animator:teo/anim/bite_charge_r/end
+execute if entity @s[scores={AsaMatrix=39..48}] run tp @s ^0 ^0 ^0 ~0.5 ~
+execute if entity @s[scores={AsaMatrix=49}] run function asa_animator:teo/anim/bite_charge_r/keyframes/8
+execute if entity @s[scores={AsaMatrix=49..68}] run tp @s ^0 ^0 ^0 ~-0.5 ~
+execute if entity @s[scores={AsaMatrix=69..}] run function asa_animator:teo/anim/bite_charge_r/end
 execute as @e[type=armor_stand,tag=TeoParts] run function #asa_matrix:animate
 function asa_animator:teo/model
 
@@ -36,7 +36,3 @@ execute if entity @s[scores={AsaMatrix=41}] run kill @e[type=marker,tag=TeoMoveR
 # 炎纏い
     execute if entity @s[tag=IsFire,scores={AsaMatrix=1..20}] at @e[type=armor_stand,tag=TeoParts,tag=HeadU] positioned ^ ^1.3 ^0.6 run particle flame ~ ~ ~ 0.1 0.1 0.1 0.05 5
     execute if entity @s[scores={AsaMatrix=28..40}] at @e[type=marker,tag=TeoMoveRotate,distance=0..3] positioned ^ ^2 ^7 run function asa_animator:teo/anim/bite_charge_l/events/damage_f
-
-# 粉塵纏い
-    # execute if entity @s[tag=IsFire,scores={AsaMatrix=1..20}] at @e[type=armor_stand,tag=TeoParts,tag=HeadU] positioned ^ ^1.4 ^0.6 run particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 1
-    # execute if entity @s[scores={AsaMatrix=28..40}] at @e[type=marker,tag=TeoMoveRotate,distance=0..3] positioned ^ ^2 ^7 run function asa_animator:teo/anim/bite_charge_l/events/damage

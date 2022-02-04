@@ -14,7 +14,8 @@ execute if entity @s[scores={AsaMatrix=25..30}] run tp @s ^-1 ^0 ^0 ~-16 ~
 execute if entity @s[scores={AsaMatrix=31..34}] run tp @s ^-0.4 ^0 ^0 ~-8 ~
 execute if entity @s[scores={AsaMatrix=35}] run function asa_animator:teo/anim/bite_turn_r/keyframes/5
 execute if entity @s[scores={AsaMatrix=35..47}] run tp @s ^-0.05 ^0 ^0 ~-1 ~
-execute if entity @s[scores={AsaMatrix=48..}] run function asa_animator:teo/anim/bite_turn_r/end
+execute if entity @s[scores={AsaMatrix=48..57}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=58..}] run function asa_animator:teo/anim/bite_turn_r/end
 execute as @e[type=armor_stand,tag=TeoParts] run function #asa_matrix:animate
 function asa_animator:teo/model
 
@@ -37,4 +38,4 @@ execute if entity @s[scores={AsaMatrix=22..31}] run function asa_animator:teo/an
     execute if entity @s[tag=IsBomb,scores={AsaMatrix=32}] if score #mhdp_teo_lv AsaMatrix matches 1.. at @s run function asa_animator:teo/manager/bomb/set_bomb
 
 # コンボキャンセル
-    execute unless predicate asa_animator:teo/combo if entity @s[scores={AsaMatrix=38}] run function asa_animator:teo/manager/cancel_animation
+    execute unless predicate asa_animator:teo/combo if entity @s[scores={AsaMatrix=43}] run function asa_animator:teo/manager/cancel_animation

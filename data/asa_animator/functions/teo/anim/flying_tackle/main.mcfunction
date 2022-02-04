@@ -15,10 +15,7 @@ execute if entity @s[scores={AsaMatrix=44}] run function asa_animator:teo/anim/f
 execute if entity @s[scores={AsaMatrix=44..50}] run tp @s ^0 ^0.02857143 ^0 ~9 ~
 execute if entity @s[scores={AsaMatrix=51}] run function asa_animator:teo/anim/flying_tackle/keyframes/6
 execute if entity @s[scores={AsaMatrix=51..58}] run tp @s ^0.025 ^-0.025 ^0 ~9 ~
-execute if entity @s[scores={AsaMatrix=59}] run function asa_animator:teo/anim/flying_tackle/keyframes/7
-execute if entity @s[scores={AsaMatrix=59..65}] run tp @s ^-0.01818182 ^0 ^0 ~7 ~
-execute if entity @s[scores={AsaMatrix=66..69}] run tp @s ^-0.01818182 ^0 ^0 ~1 ~
-execute if entity @s[scores={AsaMatrix=70..}] run function asa_animator:teo/anim/flying_tackle/end
+execute if entity @s[scores={AsaMatrix=59..}] run function asa_animator:teo/anim/flying_tackle/end
 execute as @e[type=armor_stand,tag=TeoParts] run function #asa_matrix:animate
 function asa_animator:teo/model
 

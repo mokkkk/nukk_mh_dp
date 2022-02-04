@@ -37,6 +37,8 @@
     # 滑空突進（コンボ用）
     execute if entity @s[tag=AnmFlyTackleC] run function asa_animator:teo/anim/flying_tackle_combo/main
     execute if entity @s[tag=AnmFlyTackleC2] run function asa_animator:teo/anim/flying_tackle_combo_2/main
+    # 滑空突進威嚇
+    execute if entity @s[tag=AnmFlyTackleEnd] run function asa_animator:teo/anim/flying_tackle_end/main
 
     # 粉塵爆発（近）
     execute if entity @s[tag=AnmBombN] run function asa_animator:teo/anim/bomb_n/main

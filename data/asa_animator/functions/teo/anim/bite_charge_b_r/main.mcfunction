@@ -16,10 +16,10 @@ execute if entity @s[scores={AsaMatrix=29..33}] run tp @s ^0 ^0 ^0 ~1 ~
 execute if entity @s[scores={AsaMatrix=34}] run function asa_animator:teo/anim/bite_charge_r/keyframes/6
 execute if entity @s[scores={AsaMatrix=34..38}] run tp @s ^0 ^0 ^0 ~1 ~
 execute if entity @s[scores={AsaMatrix=39}] run function asa_animator:teo/anim/bite_charge_r/keyframes/7
-execute if entity @s[scores={AsaMatrix=39..43}] run tp @s ^0 ^0 ^0 ~0.5 ~
-execute if entity @s[scores={AsaMatrix=44}] run function asa_animator:teo/anim/bite_charge_r/keyframes/8
-execute if entity @s[scores={AsaMatrix=44..58}] run tp @s ^0 ^0 ^0 ~-0.5 ~
-execute if entity @s[scores={AsaMatrix=59..}] run function asa_animator:teo/anim/bite_charge_r/end
+execute if entity @s[scores={AsaMatrix=39..48}] run tp @s ^0 ^0 ^0 ~0.5 ~
+execute if entity @s[scores={AsaMatrix=49}] run function asa_animator:teo/anim/bite_charge_r/keyframes/8
+execute if entity @s[scores={AsaMatrix=49..68}] run tp @s ^0 ^0 ^0 ~-0.5 ~
+execute if entity @s[scores={AsaMatrix=69..}] run function asa_animator:teo/anim/bite_charge_r/end
 execute as @e[type=armor_stand,tag=TeoParts] run function #asa_matrix:animate
 function asa_animator:teo/model
 

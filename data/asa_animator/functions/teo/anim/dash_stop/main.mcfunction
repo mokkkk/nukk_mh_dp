@@ -9,7 +9,9 @@ execute if entity @s[scores={AsaMatrix=15}] run function asa_animator:teo/anim/d
 execute if entity @s[scores={AsaMatrix=15..22}] run tp @s ^0 ^-0.25 ^-0.025
 execute if entity @s[scores={AsaMatrix=23}] run function asa_animator:teo/anim/dash_stop/keyframes/3
 execute if entity @s[scores={AsaMatrix=23..32}] run tp @s ^0 ^0 ^-0.1 ~0.5 ~
-execute if entity @s[scores={AsaMatrix=33..}] run function asa_animator:teo/anim/dash_stop/end
+execute if entity @s[scores={AsaMatrix=33}] run function asa_animator:teo/anim/dash_stop/keyframes/4
+execute if entity @s[scores={AsaMatrix=33..42}] run tp @s ^0 ^0 ^-0.02
+execute if entity @s[scores={AsaMatrix=43..}] run function asa_animator:teo/anim/dash_stop/end
 execute as @e[type=armor_stand,tag=TeoParts] run function #asa_matrix:animate
 function asa_animator:teo/model
 

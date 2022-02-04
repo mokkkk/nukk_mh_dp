@@ -12,10 +12,10 @@ execute if entity @s[scores={AsaMatrix=18..20}] run tp @s ^0 ^-0.03333334 ^0.033
 execute if entity @s[scores={AsaMatrix=21}] run function asa_animator:teo/anim/claw_l/keyframes/4
 execute if entity @s[scores={AsaMatrix=21..24}] run tp @s ^0 ^-0.025 ^0.025
 execute if entity @s[scores={AsaMatrix=25}] run function asa_animator:teo/anim/claw_l/keyframes/5
-execute if entity @s[scores={AsaMatrix=25..32}] run tp @s ^0 ^-0.0125 ^0
-execute if entity @s[scores={AsaMatrix=33}] run function asa_animator:teo/anim/claw_l/keyframes/6
-execute if entity @s[scores={AsaMatrix=33..45}] run tp @s ^0 ^0.007692308 ^-0.01538462
-execute if entity @s[scores={AsaMatrix=46..}] run function asa_animator:teo/anim/claw_l/end
+execute if entity @s[scores={AsaMatrix=25..37}] run tp @s ^0 ^-0.007692308 ^0
+execute if entity @s[scores={AsaMatrix=38}] run function asa_animator:teo/anim/claw_l/keyframes/6
+execute if entity @s[scores={AsaMatrix=38..55}] run tp @s ^0 ^0.005555556 ^-0.01111111
+execute if entity @s[scores={AsaMatrix=56..}] run function asa_animator:teo/anim/claw_l/end
 execute as @e[type=armor_stand,tag=TeoParts] run function #asa_matrix:animate
 function asa_animator:teo/model
 
@@ -23,7 +23,7 @@ execute at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function a
 execute at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~
 execute if entity @s[scores={AsaMatrix=1}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=18}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
-execute if entity @s[scores={AsaMatrix=33}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
+execute if entity @s[scores={AsaMatrix=38}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=1..12}] run function asa_animator:teo/manager/rotate
 execute if entity @s[scores={AsaMatrix=1..12}] if entity @s[tag=TeoAttackTarget,distance=..7] at @s run tp @s ^ ^ ^-0.4
 
@@ -40,4 +40,4 @@ execute if entity @s[scores={AsaMatrix=24}] positioned ^2 ^1 ^4.5 run function a
     execute if entity @s[tag=IsBomb,scores={AsaMatrix=28}] if score #mhdp_teo_lv AsaMatrix matches 2.. positioned ^0 ^1 ^11.5 run function asa_animator:teo/manager/bomb/set_bomb
 
 # コンボキャンセル
-    execute unless predicate asa_animator:teo/combo if entity @s[scores={AsaMatrix=32}] run function asa_animator:teo/manager/cancel_animation
+    execute unless predicate asa_animator:teo/combo if entity @s[scores={AsaMatrix=37}] run function asa_animator:teo/manager/cancel_animation

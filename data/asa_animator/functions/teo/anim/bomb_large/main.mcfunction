@@ -22,10 +22,16 @@ execute if entity @s[scores={AsaMatrix=89..93}] run tp @s ^0 ^0 ^0 ~0.2 ~
 execute if entity @s[scores={AsaMatrix=94}] run function asa_animator:teo/anim/flame_large/keyframes/9
 execute if entity @s[scores={AsaMatrix=94..105}] run tp @s ^0 ^0 ^-0.1 ~-0.5 ~
 execute if entity @s[scores={AsaMatrix=106}] run function asa_animator:teo/anim/flame_large/keyframes/10
-execute if entity @s[scores={AsaMatrix=106..115}] run tp @s ^0 ^0 ^0
-execute if entity @s[scores={AsaMatrix=116}] run function asa_animator:teo/anim/flame_large/keyframes/11
-execute if entity @s[scores={AsaMatrix=116..135}] run tp @s ^0 ^0 ^0
-execute if entity @s[scores={AsaMatrix=136..}] run function asa_animator:teo/anim/flame_large/end
+execute if entity @s[scores={AsaMatrix=106..112}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=113}] run function asa_animator:teo/anim/flame_large/keyframes/11
+execute if entity @s[scores={AsaMatrix=113..121}] run tp @s ^0 ^-0.01111111 ^0.02222222
+execute if entity @s[scores={AsaMatrix=122}] run function asa_animator:teo/anim/flame_large/keyframes/12
+execute if entity @s[scores={AsaMatrix=122..130}] run tp @s ^0 ^0.02222222 ^-0.02222222
+execute if entity @s[scores={AsaMatrix=131}] run function asa_animator:teo/anim/flame_large/keyframes/13
+execute if entity @s[scores={AsaMatrix=131..140}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=141}] run function asa_animator:teo/anim/flame_large/keyframes/14
+execute if entity @s[scores={AsaMatrix=141..155}] run tp @s ^0 ^-0.006666667 ^0
+execute if entity @s[scores={AsaMatrix=156..}] run function asa_animator:teo/anim/flame_large/end
 execute as @e[type=armor_stand,tag=TeoParts] run function #asa_matrix:animate
 function asa_animator:teo/model
 
@@ -42,6 +48,10 @@ execute if entity @s[scores={AsaMatrix=41..55}] as @e[type=marker,tag=TeoMoveRot
 execute if entity @s[scores={AsaMatrix=56..65}] as @e[type=marker,tag=TeoMoveRotate,distance=0..3] rotated as @s run tp @s ~ ~ ~ ~-1 ~
 execute if entity @s[scores={AsaMatrix=66..80}] as @e[type=marker,tag=TeoMoveRotate,distance=0..3] rotated as @s run tp @s ~ ~ ~ ~6.5 ~
 execute if entity @s[scores={AsaMatrix=81}] run kill @e[type=marker,tag=TeoMoveRotate]
+
+execute if entity @s[scores={AsaMatrix=125..140}] run playsound entity.hoglin.angry master @a ~ ~ ~ 2 0.9
+execute if entity @s[scores={AsaMatrix=125..140}] run playsound entity.hoglin.angry master @a ~ ~ ~ 2 1.1
+execute if entity @s[scores={AsaMatrix=125..140}] run playsound entity.polar_bear.warning master @a ~ ~ ~ 3 0.7
 
 # 粉塵纏い
     execute if entity @s[scores={AsaMatrix=41..46}] run playsound item.firecharge.use master @a ~ ~ ~ 2 0.5
