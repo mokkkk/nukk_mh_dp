@@ -6,5 +6,5 @@ kill @e[type=marker,tag=TeoDashTarget]
 execute unless predicate asa_animator:teo/combo run function asa_animator:teo/manager/cancel_animation
 
 # 非コンボ用
-# tag @s add AnmDashStop
-# tag @s add AnmDashFly
+execute if predicate asa_animator:teo/combo if score #mhdp_teo_lv AsaMatrix matches ..1 run tag @s add AnmDashStop
+execute if predicate asa_animator:teo/combo if score #mhdp_teo_lv AsaMatrix matches 2.. run tag @s add AnmDashFly

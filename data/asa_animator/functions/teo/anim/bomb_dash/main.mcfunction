@@ -31,7 +31,5 @@ execute unless entity @s[tag=IsRight] if score #mhdp_teo_dash_count AsaMatrix ma
 execute if entity @s[tag=IsRight] if score #mhdp_teo_dash_count AsaMatrix matches ..2 at @s run tp @s ^ ^ ^1 ~6 ~
 execute unless entity @s[tag=IsRight] if score #mhdp_teo_dash_count AsaMatrix matches ..2 at @s run tp @s ^ ^ ^1 ~-6 ~
 
-execute positioned ^ ^ ^3 run function asa_animator:teo/anim/dash/events/damage
-
 execute if entity @s[scores={AsaMatrix=1}] at @s run function asa_animator:teo/manager/bomb/set_bomb
 execute if entity @s[scores={AsaMatrix=14}] at @s positioned ~ ~-0.8 ~ run function asa_animator:teo/manager/bomb/set_bomb

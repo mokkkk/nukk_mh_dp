@@ -6,5 +6,5 @@ tag @s remove AnmFlyBreath
 execute unless predicate asa_animator:teo/combo run function asa_animator:teo/manager/cancel_animation
 
 # 非コンボ用
-# tag @s add AnmEndFly
-# tag @s add AnmFlyTackleC
+execute if predicate asa_animator:teo/combo if score #mhdp_teo_lv AsaMatrix matches ..1 run tag @s add AnmEndFly
+execute if predicate asa_animator:teo/combo if score #mhdp_teo_lv AsaMatrix matches 2.. run tag @s add AnmFlyTackleC

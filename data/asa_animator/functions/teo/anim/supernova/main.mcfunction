@@ -32,3 +32,5 @@ execute if entity @s[scores={AsaMatrix=1..5}] run playsound entity.polar_bear.wa
 execute if entity @s[scores={AsaMatrix=32..84}] positioned ^ ^2 ^ run function asa_animator:teo/anim/supernova/events/particle
 execute if entity @s[scores={AsaMatrix=15}] run playsound block.portal.trigger master @a ~ ~ ~ 3 1.2
 execute if entity @s[scores={AsaMatrix=85}] positioned ^ ^2 ^ run function asa_animator:teo/anim/supernova/events/damage
+
+execute if entity @s[scores={AsaMatrix=86}] run function asa_animator:teo/manager/lv/reset
