@@ -9,7 +9,7 @@ execute if entity @s[tag=ChangeAnm] run function asa_animator:teo/manager/change
 # execute if predicate asa_animator:teo/stay if entity @s[tag=IsStand] run function asa_animator:teo/anim/stay_stand/main
 execute if predicate asa_animator:teo/stay if entity @s[tag=!IsStand] run function asa_animator:teo/anim/stay/main
 # 軸合わせ
-# execute if entity @s[tag=AnmTurn] run function asa_animator:teo/anim/turn/main
+execute if entity @s[tag=AnmTurn] run function asa_animator:teo/anim/turn/main
 # 行動
 execute unless entity @s[tag=AnmTurn] unless predicate asa_animator:teo/stay run function asa_animator:teo/anim/main
 
