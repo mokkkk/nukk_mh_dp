@@ -3,4 +3,8 @@ execute as @e[type=armor_stand,tag=TeoParts] run function #asa_matrix:animate_re
 tag @s remove AnmFlyTackleC2
 kill @e[type=marker,tag=TeoMoveRotate]
 
-tag @s add AnmFlameNova
+# コンボ用
+execute unless predicate asa_animator:teo/combo run function asa_animator:teo/manager/cancel_animation
+
+# 非コンボ用
+# tag @s add AnmFlameNova

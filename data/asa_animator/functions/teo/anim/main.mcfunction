@@ -41,7 +41,8 @@
     # 粉塵爆発（近）
     execute if entity @s[tag=AnmBombN] run function asa_animator:teo/anim/bomb_n/main
     # 粉塵爆発（遠）
-    execute if entity @s[tag=AnmBombF] run function asa_animator:teo/anim/bomb_f/main
+    execute if predicate asa_animator:teo/combo if entity @s[tag=AnmBombF] run function asa_animator:teo/anim/bomb_f/main
+    execute unless predicate asa_animator:teo/combo if entity @s[tag=AnmBombF] run function asa_animator:teo/anim/bomb_f_combo/main
 
     # スーパーノヴァ
     execute if entity @s[tag=AnmSupernova] run function asa_animator:teo/anim/supernova/main

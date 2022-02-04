@@ -43,3 +43,6 @@ execute if entity @s[scores={AsaMatrix=46..53}] positioned ^ ^2 ^4 run function 
     execute if entity @s[tag=IsBomb,scores={AsaMatrix=51}] if score #mhdp_teo_lv AsaMatrix matches 1.. positioned ^ ^2 ^ run function asa_animator:teo/anim/jump/events/damage_b
     execute if entity @s[tag=IsBomb,scores={AsaMatrix=53}] if score #mhdp_teo_lv AsaMatrix matches 1.. positioned ^ ^2 ^3 run function asa_animator:teo/anim/jump/events/damage_b
     execute if entity @s[tag=IsBomb,scores={AsaMatrix=55}] if score #mhdp_teo_lv AsaMatrix matches 1.. positioned ^ ^2 ^6 run function asa_animator:teo/anim/jump/events/damage_b
+
+    # コンボキャンセル
+    execute unless predicate asa_animator:teo/combo if entity @s[scores={AsaMatrix=59}] run function asa_animator:teo/manager/cancel_animation

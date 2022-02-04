@@ -17,6 +17,8 @@ execute if entity @s[scores={AsaMatrix=61..}] run function asa_animator:teo/anim
 execute as @e[type=armor_stand,tag=TeoParts] run function #asa_matrix:animate
 function asa_animator:teo/model
 
+execute at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
+execute at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~
 execute if entity @s[scores={AsaMatrix=10}] run function asa_animator:teo/manager/bomb/ingite
 
 execute if entity @s[scores={AsaMatrix=25..40}] run playsound entity.hoglin.angry master @a ~ ~ ~ 2 0.9

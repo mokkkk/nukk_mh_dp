@@ -28,7 +28,7 @@ execute if entity @s[scores={AsaMatrix=1..5}] run function asa_animator:teo/mana
 execute if entity @s[scores={AsaMatrix=11..16}] unless entity @s[tag=TeoAttackTarget,distance=..7] at @s run tp @s ^ ^ ^0.6
 
 execute if entity @s[scores={AsaMatrix=13}] positioned ^1.5 ^1 ^6 run function asa_animator:teo/anim/claw_f_l/events/damage
-# 粉塵纏いlv1-
+# 粉塵纏いlv2-
     execute if entity @s[tag=IsBomb,scores={AsaMatrix=15}] if score #mhdp_teo_lv AsaMatrix matches 2.. positioned ^1.5 ^1 ^9 run function asa_animator:teo/manager/bomb/set_bomb
     execute if entity @s[tag=IsBomb,scores={AsaMatrix=17}] if score #mhdp_teo_lv AsaMatrix matches 2.. positioned ^1.5 ^1 ^12 run function asa_animator:teo/manager/bomb/set_bomb
 

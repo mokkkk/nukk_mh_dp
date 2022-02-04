@@ -35,6 +35,9 @@ execute if entity @s[scores={AsaMatrix=23}] positioned ^-1 ^1 ^4.5 run function 
 execute if entity @s[scores={AsaMatrix=24}] positioned ^-2 ^1 ^4.5 run function asa_animator:teo/anim/claw_l/events/damage
 # 粉塵纏いlv1-
     execute if entity @s[scores={AsaMatrix=24}] if entity @s[tag=IsBomb] if score #mhdp_teo_lv AsaMatrix matches 1.. positioned ^-2 ^1 ^4.5 run function asa_animator:teo/manager/bomb/set_bomb
+# 粉塵纏いlv2-
+    execute if entity @s[tag=IsBomb,scores={AsaMatrix=26}] if score #mhdp_teo_lv AsaMatrix matches 2.. positioned ^-1 ^1 ^7.5 run function asa_animator:teo/manager/bomb/set_bomb
+    execute if entity @s[tag=IsBomb,scores={AsaMatrix=28}] if score #mhdp_teo_lv AsaMatrix matches 2.. positioned ^0 ^1 ^11.5 run function asa_animator:teo/manager/bomb/set_bomb
 
 # コンボキャンセル
     execute unless predicate asa_animator:teo/combo if entity @s[scores={AsaMatrix=32}] run function asa_animator:teo/manager/cancel_animation
