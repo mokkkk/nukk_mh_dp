@@ -1,4 +1,4 @@
 scoreboard players set @s AsaMatrix 0
 execute as @e[type=armor_stand,tag=TeoParts] run function #asa_matrix:animate_reset
 tag @s remove AnmFlyTackle
-tag @s add AnmFlyTackleEnd
+execute if predicate asa_animator:teo/combo run tag @s add AnmFlyTackleEnd

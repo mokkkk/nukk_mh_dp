@@ -19,6 +19,7 @@ tag @s remove AnmDashFly
 tag @s remove AnmFlyTackle
 tag @s remove AnmFlyTackleC
 tag @s remove AnmFlyTackleC2
+tag @s remove AnmFlyTackleEnd
 tag @s remove AnmBombN
 tag @s remove AnmBombF
 tag @s remove AnmSupernova

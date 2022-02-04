@@ -10,6 +10,6 @@ execute as @e[type=armor_stand,tag=TeoParts] run function #asa_matrix:animate
 function asa_animator:teo/model
 
 execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
-function asa_animator:teo/manager/rotate
+execute if entity @s[scores={AsaMatrix=1..10}] run function asa_animator:teo/manager/rotate
 execute if entity @s[scores={AsaMatrix=18}] run summon marker ^ ^ ^10 {Tags:["TeoDashTarget"]}
 execute if entity @s[scores={AsaMatrix=18}] positioned as @e[tag=TeoAttackTarget] as @e[type=marker,tag=TeoDashTarget] run tp @s ~ ~ ~
