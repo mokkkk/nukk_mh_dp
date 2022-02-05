@@ -20,7 +20,7 @@ execute if entity @s[tag=IsBomb] if score #mhdp_teo_lv AsaMatrix matches 1.. run
 execute if entity @s[tag=IsBomb] if score #mhdp_teo_lv AsaMatrix matches 2 run particle dust_color_transition 1 0.298 0.173 1 1 0.89 0.255 ~ ~2 ~ 1.5 1.5 1.5 0.1 10
 
 # AECダメージ
-execute if entity @s[tag=IsFire] if score #mhdp_teo_lv AsaMatrix matches 2 as @e[tag=!TeoParts,predicate=asa_animator:teo/effect,distance=0..40] at @s run function asa_animator:teo/anim/flame_ground/events/damage
+execute if entity @e[tag=!TeoParts,predicate=asa_animator:teo/effect,distance=0..40] as @e[tag=!TeoParts,predicate=asa_animator:teo/effect,distance=0..40] at @s run function asa_animator:teo/anim/flame_ground/events/damage
 
 # 当たり判定位置
 execute if entity @s[tag=!IsAnger] as @e[type=slime,tag=TeoParts] run function asa_animator:teo/manager/health/pos

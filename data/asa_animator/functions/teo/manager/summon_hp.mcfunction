@@ -1,6 +1,6 @@
 
 # HPセット
-    scoreboard players set #mhdp_teo_health AsaMatrix 88000
+    scoreboard players set #mhdp_teo_health AsaMatrix 92000
 # HP倍率適用
     scoreboard players operation #mhdp_teo_health AsaMatrix *= #mhdp_hp_multiply AsaMatrix
     execute store result score #mhdp_teo_head_damage AsaMatrix store result score #mhdp_teo_body_damage AsaMatrix store result score #mhdp_teo_tail_damage AsaMatrix store result score #mhdp_teo_sp_damage_max AsaMatrix store result score #mhdp_teo_anger_damage_max AsaMatrix run scoreboard players operation #mhdp_teo_health AsaMatrix /= #asam_const_100 AsaMatrix
@@ -26,8 +26,8 @@
     scoreboard players operation #mhdp_teo_tail_damage AsaMatrix *= #mhdp_const_temp AsaMatrix
     scoreboard players operation #mhdp_teo_tail_damage AsaMatrix /= #asam_const_100 AsaMatrix
 # 特殊怯み
-    ## 35%
-    scoreboard players set #mhdp_const_temp AsaMatrix 35
+    ## 30%
+    scoreboard players set #mhdp_const_temp AsaMatrix 30
     scoreboard players operation #mhdp_teo_sp_damage_max AsaMatrix *= #mhdp_const_temp AsaMatrix
     scoreboard players operation #mhdp_teo_sp_damage_max AsaMatrix /= #asam_const_100 AsaMatrix
 # 怒り

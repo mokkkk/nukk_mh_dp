@@ -1,7 +1,7 @@
-# data modify entity @e[type=armor_stand,tag=TeoParts,tag=WingL0,limit=1] ArmorItems[3].tag.CustomModelData set value 10421
-# data modify entity @e[type=armor_stand,tag=TeoParts,tag=WingR0,limit=1] ArmorItems[3].tag.CustomModelData set value 10421
-# data modify entity @e[type=armor_stand,tag=TeoParts,tag=WingL1,limit=1] ArmorItems[3].tag.CustomModelData set value 10422
-# data modify entity @e[type=armor_stand,tag=TeoParts,tag=WingR1,limit=1] ArmorItems[3].tag.CustomModelData set value 10422
+data modify entity @e[type=armor_stand,tag=TeoParts,tag=WingL0,limit=1] ArmorItems[3].tag.CustomModelData set value 10455
+data modify entity @e[type=armor_stand,tag=TeoParts,tag=WingR0,limit=1] ArmorItems[3].tag.CustomModelData set value 10455
+data modify entity @e[type=armor_stand,tag=TeoParts,tag=WingL1,limit=1] ArmorItems[3].tag.CustomModelData set value 10456
+data modify entity @e[type=armor_stand,tag=TeoParts,tag=WingR1,limit=1] ArmorItems[3].tag.CustomModelData set value 10456
 tag @s add DestroyBody
 playsound entity.player.attack.knockback master @a ~ ~ ~ 2 1
 playsound entity.player.attack.crit master @a ~ ~ ~ 2 0.8

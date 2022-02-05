@@ -24,5 +24,5 @@ execute if entity @s[scores={AsaMatrix=10}] run playsound entity.ender_dragon.fl
 execute if entity @s[scores={AsaMatrix=22}] positioned ~ ~1.5 ~ run function asa_animator:teo/manager/particle/step
 execute if entity @s[scores={AsaMatrix=40}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 
-# execute if entity @s[scores={AsaMatrix=40}] unless entity @s[tag=DestroyHead] run data modify entity @e[type=armor_stand,tag=TeoParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10418
-# execute if entity @s[scores={AsaMatrix=40}] if entity @s[tag=DestroyHead] run data modify entity @e[type=armor_stand,tag=TeoParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10420
+execute if entity @s[scores={AsaMatrix=40}] unless entity @s[tag=DestroyHead] run data modify entity @e[type=armor_stand,tag=TeoParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10452
+execute if entity @s[scores={AsaMatrix=40}] if entity @s[tag=DestroyHead] run data modify entity @e[type=armor_stand,tag=TeoParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10454

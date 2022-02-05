@@ -1,6 +1,7 @@
 
 scoreboard players set #mhdp_teo_lv AsaMatrix 0
 scoreboard players set #mhdp_teo_actcount_lv AsaMatrix 0
+scoreboard players operation #mhdp_teo_sp_damage AsaMatrix = #mhdp_teo_sp_damage_max AsaMatrix
 
 execute if entity @s[tag=IsFire,tag=!Changed] run tag @s add IsBomb
 execute if entity @s[tag=IsFire,tag=IsBomb,tag=!Changed] run tag @s add Changed
