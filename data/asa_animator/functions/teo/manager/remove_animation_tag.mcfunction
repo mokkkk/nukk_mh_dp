@@ -39,6 +39,17 @@ tag @s remove AnmBombDashStart
 tag @s remove AnmBombDash
 tag @s remove AnmNova
 tag @s remove AnmIgnite
+tag @s remove AnmDHead
+tag @s remove AnmDBody
+tag @s remove AnmDTail
+tag @s remove AnmSummon
+tag @s remove AnmSummonEndFly
+tag @s remove AnmVoice
+tag @s remove AnmCharge
+tag @s remove AnmSpDamage
+tag @s remove AnmFlyDamage
+tag @s remove AnmAnger
+tag @s remove AnmFlyAnger
 
 tag @s remove ComboA
 tag @s remove ComboB
@@ -46,11 +57,13 @@ tag @s remove ComboC
 tag @s remove ComboD
 tag @s remove ComboE
 tag @s remove ComboF
-tag @s remove ComboG
-tag @s remove ComboH
-tag @s remove ComboI
-tag @s remove ComboJ
-tag @s remove ComboK
+tag @s remove ComboFA
+tag @s remove ComboFB
+tag @s remove ComboFC
+tag @s remove ComboFD
+tag @s remove ComboBA
+tag @s remove ComboBB
+tag @s remove ComboBC
 
 tag @s remove IsRight
 kill @e[type=marker,tag=TeoMoveRotate]

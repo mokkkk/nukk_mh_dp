@@ -12,12 +12,12 @@ execute store result bossbar asa_animator:teo_health value run scoreboard player
 playsound minecraft:entity.player.hurt master @a ~ ~ ~ 2 1
 
 # 部位ダメージ適用
-# execute if entity @s[tag=HeadParts] run scoreboard players operation #mhdp_teo_head_damage AsaMatrix += #teo_damage AsaMatrix
-# execute if entity @s[tag=BodyParts] run scoreboard players operation #mhdp_teo_body_damage AsaMatrix += #teo_damage AsaMatrix
-# execute if entity @s[tag=TailParts] run scoreboard players operation #mhdp_teo_tail_damage AsaMatrix += #teo_damage AsaMatrix
-# execute if score #mhdp_teo_head_damage AsaMatrix matches ..0 as @e[type=armor_stand,tag=TeoRoot,distance=0..15] unless entity @s[tag=DestroyHead] run function asa_animator:teo/manager/destroy_parts/head
-# execute if score #mhdp_teo_body_damage AsaMatrix matches ..0 as @e[type=armor_stand,tag=TeoRoot,distance=0..15] unless entity @s[tag=DestroyBody] run function asa_animator:teo/manager/destroy_parts/body
-# execute if score #mhdp_teo_tail_damage AsaMatrix matches ..0 as @e[type=armor_stand,tag=TeoRoot,distance=0..15] unless entity @s[tag=DestroyTail] run function asa_animator:teo/manager/destroy_parts/tail
+execute if entity @s[tag=HeadParts] run scoreboard players operation #mhdp_teo_head_damage AsaMatrix += #teo_damage AsaMatrix
+execute if entity @s[tag=BodyParts] run scoreboard players operation #mhdp_teo_body_damage AsaMatrix += #teo_damage AsaMatrix
+execute if entity @s[tag=TailParts] run scoreboard players operation #mhdp_teo_tail_damage AsaMatrix += #teo_damage AsaMatrix
+execute if score #mhdp_teo_head_damage AsaMatrix matches ..0 as @e[type=armor_stand,tag=TeoRoot,distance=0..15] unless entity @s[tag=DestroyHead] run function asa_animator:teo/manager/destroy_parts/head
+execute if score #mhdp_teo_body_damage AsaMatrix matches ..0 as @e[type=armor_stand,tag=TeoRoot,distance=0..15] unless entity @s[tag=DestroyBody] run function asa_animator:teo/manager/destroy_parts/body
+execute if score #mhdp_teo_tail_damage AsaMatrix matches ..0 as @e[type=armor_stand,tag=TeoRoot,distance=0..15] unless entity @s[tag=DestroyTail] run function asa_animator:teo/manager/destroy_parts/tail
 
 # 怒り遷移
 # scoreboard players operation #mhdp_teo_anger_damage AsaMatrix += #teo_damage AsaMatrix

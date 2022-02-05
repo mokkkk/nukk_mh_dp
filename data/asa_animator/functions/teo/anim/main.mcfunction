@@ -116,11 +116,11 @@
     # 大怯み（纏い解除）
     # execute if entity @s[tag=AnmSpDamage] run function asa_animator:teo/anim/damage_head/main
     # 頭部位破壊
-    # execute if entity @s[tag=AnmDHead] run function asa_animator:teo/anim/destroy_head/main
+    execute if entity @s[tag=AnmDHead] run function asa_animator:teo/anim/destroy_head/main
     # 胴部位破壊
-    # execute if entity @s[tag=AnmDBody] run function asa_animator:teo/anim/destroy_body/main
+    execute if entity @s[tag=AnmDBody] run function asa_animator:teo/anim/destroy_body/main
     # 尻尾部位破壊
-    # execute if entity @s[tag=AnmDTail] run function asa_animator:teo/anim/destroy_tail/main
+    execute if entity @s[tag=AnmDTail] run function asa_animator:teo/anim/destroy_tail/main
     # 飛行中怯み
     # execute if entity @s[tag=AnmFlyDamage] run function asa_animator:teo/anim/flying_damage/main
     # 怒り
