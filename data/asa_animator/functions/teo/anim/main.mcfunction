@@ -102,15 +102,15 @@
 
 ## その他
     # 登場
-    # execute if entity @s[tag=AnmSummon] run function asa_animator:teo/anim/summon/main
+    execute if entity @s[tag=AnmSummon] run function asa_animator:teo/anim/summon/main
     # 着地
-    # execute if entity @s[tag=AnmSummonEndFly] run function asa_animator:teo/anim/summon_end_fly/main
+    execute if entity @s[tag=AnmSummonEndFly] run function asa_animator:teo/anim/summon_end_fly/main
     # 咆哮
     execute if entity @s[tag=AnmVoice] run function asa_animator:teo/anim/voice/main
     # 状態変化
     execute if entity @s[tag=AnmCharge] run function asa_animator:teo/anim/charge/main
     # 討伐
-    # execute if entity @s[tag=AnmDeath] run function asa_animator:teo/anim/death/main
+    execute if entity @s[tag=AnmDeath] run function asa_animator:teo/anim/death/main
     # 飛行中討伐
     # execute if entity @s[tag=AnmFlyDeath] run function asa_animator:teo/anim/flying_death/main
     # 大怯み（纏い解除）
