@@ -1,8 +1,8 @@
 
 # 演出
     playsound item.firecharge.use master @a ~ ~ ~ 2 0.5
-    particle large_smoke ~ ~2 ~ 1 1 1 0.5 50
-# 矢反射
-    execute if entity @e[type=arrow,tag=!MhdpReflected,distance=0..18] as @e[type=arrow,tag=!MhdpReflected,distance=0..18] at @s facing entity @e[type=armor_stand,tag=KushalaRoot,limit=1] eyes run function asa_animator:kushala/manager/particle/reflect_
-# ノックバック
-    execute if entity @a[distance=..8] as @a[distance=..8] unless entity @s[scores={MhdpTAvoid=1..}] unless entity @s[scores={MhdpTDamage=1..}] run function mh_dp:player/knockback/start
+    particle flame ~ ~2 ~ 1 1 1 0.5 50
+# 矢弾き
+    execute if entity @e[type=arrow,distance=0..15] as @e[type=arrow,distance=0..15] at @s facing entity @e[type=armor_stand,tag=TeoRoot,limit=1] eyes run function asa_animator:teo/manager/particle/reflect_
+# 炎やられ蓄積
+    execute if entity @a[distance=..8] as @a[tag=!BlightFire,distance=..8] run scoreboard players add @s MhdpBlightFire 200

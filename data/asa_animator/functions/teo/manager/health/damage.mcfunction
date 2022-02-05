@@ -20,8 +20,8 @@ execute if score #mhdp_teo_body_damage AsaMatrix matches ..0 as @e[type=armor_st
 execute if score #mhdp_teo_tail_damage AsaMatrix matches ..0 as @e[type=armor_stand,tag=TeoRoot,distance=0..15] unless entity @s[tag=DestroyTail] run function asa_animator:teo/manager/destroy_parts/tail
 
 # 怒り遷移
-# scoreboard players operation #mhdp_teo_anger_damage AsaMatrix += #teo_damage AsaMatrix
-# execute if score #mhdp_teo_anger_damage AsaMatrix matches ..0 unless entity @e[type=armor_stand,tag=TeoRoot,tag=IsAnger] as @e[type=armor_stand,tag=TeoRoot] run function asa_animator:teo/manager/start_anger
+scoreboard players operation #mhdp_teo_anger_damage AsaMatrix += #teo_damage AsaMatrix
+execute if score #mhdp_teo_anger_damage AsaMatrix matches ..0 unless entity @e[type=armor_stand,tag=TeoRoot,tag=IsAnger] as @e[type=armor_stand,tag=TeoRoot] run function asa_animator:teo/manager/start_anger
 
 # 特殊怯み
 scoreboard players set #mhdp_const_temp AsaMatrix 2
