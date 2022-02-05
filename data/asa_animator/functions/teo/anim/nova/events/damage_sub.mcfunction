@@ -1,4 +1,4 @@
 # ダメージ
-tag @s add D_TeoNova
+tag @s add D_TeoBomb
 function mh_dp:damage/attack
-tag @s remove D_TeoNova
+tag @s remove D_TeoBomb

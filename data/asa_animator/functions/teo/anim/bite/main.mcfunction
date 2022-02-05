@@ -18,7 +18,7 @@ execute as @e[type=armor_stand,tag=TeoParts] run function #asa_matrix:animate
 function asa_animator:teo/model
 
 execute if entity @s[scores={AsaMatrix=1}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
-execute if entity @s[scores={AsaMatrix=1..5}] run function asa_animator:teo/manager/rotate_lr_fast
+execute if entity @s[scores={AsaMatrix=1..5}] run function asa_animator:teo/manager/rotate
 execute if entity @s[scores={AsaMatrix=11..17}] at @s run tp @s ^ ^ ^0.4
 execute if entity @s[scores={AsaMatrix=13}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=17}] run function asa_animator:teo/manager/particle/step

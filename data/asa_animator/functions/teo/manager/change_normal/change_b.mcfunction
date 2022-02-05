@@ -1,6 +1,6 @@
 
 # 一定確立で点火
-execute if predicate asa_animator:random/050 if entity @e[type=marker,tag=TeoBomb] run tag @s add AnmIgnite
+execute if predicate asa_animator:random/070 if entity @e[type=marker,tag=TeoBomb] positioned as @e[type=marker,tag=TeoBomb] if entity @a[distance=0..5] run tag @s add AnmIgnite
 # 近距離
 execute if predicate asa_animator:teo/stay if entity @e[tag=TeoAttackTarget,distance=..17] run function asa_animator:teo/manager/change_normal/b/range_near
 # 中距離

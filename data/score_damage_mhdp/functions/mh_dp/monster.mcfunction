@@ -9,3 +9,4 @@ execute if entity @s[tag=BrachyParts] as @e[type=slime,tag=BrachyParts,distance=
 execute if entity @s[tag=BrachyRParts] as @e[type=slime,tag=BrachyRParts,distance=0..20] run data modify entity @s HurtTime set value 10
 execute if entity @s[tag=TigaParts] as @e[type=slime,tag=TigaParts,distance=0..20] run data modify entity @s HurtTime set value 10
 execute if entity @s[tag=KushalaParts] as @e[type=slime,tag=KushalaParts,distance=0..20] run data modify entity @s HurtTime set value 10
+execute if entity @s[tag=TeoParts] as @e[type=slime,tag=TeoParts,distance=0..20] run data modify entity @s HurtTime set value 10

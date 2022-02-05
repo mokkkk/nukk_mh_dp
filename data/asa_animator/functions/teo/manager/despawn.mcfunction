@@ -1,29 +1,20 @@
 
 # メッセージ
-tellraw @a {"text": "【鋼龍は居なくなった】"}
+tellraw @a {"text": "【炎王龍は居なくなった】"}
 
 # タグ消去
-tag @e[tag=KushalaTarget] remove KushalaTarget
-tag @e[tag=KushalaAttackTarget] remove KushalaAttackTarget
-kill @e[type=marker,tag=KushalaBreathTarget]
-kill @e[type=marker,tag=KushalaMoveRotate]
-kill @e[type=marker,tag=KushalaDashTarget]
-kill @e[type=marker,tag=KushalaChargeFPos]
-kill @e[type=marker,tag=KushalaSpTornado]
-kill @e[type=marker,tag=KushalaMovePos]
+tag @e[tag=TeoTarget] remove TeoTarget
+tag @e[tag=TeoAttackTarget] remove TeoAttackTarget
+kill @e[type=marker,tag=TeoMoveRotate]
+kill @e[type=marker,tag=TeoDashTarget]
+kill @e[type=marker,tag=TeoChargeFPos]
+kill @e[type=marker,tag=TeoMovePos]
 
 # 当たり判定削除
-function asa_animator:kushala/manager/health/kill
+function asa_animator:teo/manager/health/kill
 
 # ボスバー削除
-bossbar remove asa_animator:kushala_health
+bossbar remove asa_animator:teo_health
 
 # パーツ削除
-function asa_animator:kushala/kill
-
-# 天候変化
-execute if data storage mh_dp:settings {Temp:{Dwc:1}} run gamerule doWeatherCycle true
-data modify storage mh_dp:settings Temp.AwaitDwc set value false
-weather clear
-data remove storage mh_dp:settings Temp.Dwc
-data remove storage mh_dp:settings Temp.AwaitDwc
+function asa_animator:teo/kill

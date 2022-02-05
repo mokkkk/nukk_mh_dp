@@ -18,7 +18,6 @@ execute if entity @s[tag=IsFire] if score #mhdp_teo_lv AsaMatrix matches 1.. run
 execute if entity @s[tag=IsFire] if score #mhdp_teo_lv AsaMatrix matches 2 run particle flame ~ ~2 ~ 1.5 1.5 1.5 0.1 4
 execute if entity @s[tag=IsBomb] if score #mhdp_teo_lv AsaMatrix matches 1.. run particle crimson_spore ~ ~2 ~ 1.5 1.5 1.5 0 15
 execute if entity @s[tag=IsBomb] if score #mhdp_teo_lv AsaMatrix matches 2 run particle dust_color_transition 1 0.298 0.173 1 1 0.89 0.255 ~ ~2 ~ 1.5 1.5 1.5 0.1 10
-# scoreboard players set #mhdp_teo_lv AsaMatrix 1
 
 # AECダメージ
 execute if entity @s[tag=IsFire] if score #mhdp_teo_lv AsaMatrix matches 2 as @e[tag=!TeoParts,predicate=asa_animator:teo/effect,distance=0..40] at @s run function asa_animator:teo/anim/flame_ground/events/damage
@@ -28,7 +27,7 @@ execute if entity @s[tag=!IsAnger] as @e[type=slime,tag=TeoParts] run function a
 execute if entity @s[tag=IsAnger] as @e[type=slime,tag=TeoParts] run function asa_animator:teo/manager/health/pos_anger
 
 # デスポーン
-# execute unless entity @s[tag=AnmSummon] if data storage mh_dp:settings {Custom:{DisableDespawn:false}} unless entity @a[distance=0..64] run function asa_animator:teo/manager/despawn
+execute unless entity @s[tag=AnmSummon] if data storage mh_dp:settings {Custom:{DisableDespawn:false}} unless entity @a[distance=0..64] run function asa_animator:teo/manager/despawn
 
 # 画面エフェクト用メモ
 # bossbar add test [{"text": "\uE002","font": "mhdp"},{"text": "\uF80B\uF823","font": "default"},{"text": "test","font": "default"}]

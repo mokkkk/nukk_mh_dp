@@ -25,6 +25,8 @@ tag @s remove TigaTarget
 tag @s remove TigaAttackTarget
 tag @s remove KushalaTarget
 tag @s remove KushalaAttackTarget
+tag @s remove TeoTarget
+tag @s remove TeoAttackTarget
 
 # 属性やられリセット
 scoreboard players set @s MhdpBlightFire 0

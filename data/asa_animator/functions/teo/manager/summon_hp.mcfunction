@@ -1,6 +1,6 @@
 
 # HPセット
-    scoreboard players set #mhdp_teo_health AsaMatrix 80000
+    scoreboard players set #mhdp_teo_health AsaMatrix 88000
 # HP倍率適用
     scoreboard players operation #mhdp_teo_health AsaMatrix *= #mhdp_hp_multiply AsaMatrix
     execute store result score #mhdp_teo_head_damage AsaMatrix store result score #mhdp_teo_body_damage AsaMatrix store result score #mhdp_teo_tail_damage AsaMatrix store result score #mhdp_teo_sp_damage_max AsaMatrix store result score #mhdp_teo_anger_damage_max AsaMatrix run scoreboard players operation #mhdp_teo_health AsaMatrix /= #asam_const_100 AsaMatrix
@@ -13,16 +13,16 @@
     execute store result bossbar asa_animator:teo_health value run scoreboard players get #mhdp_teo_health AsaMatrix
 
 # 部位耐久値
-    ## 頭：50%
-    scoreboard players set #mhdp_const_temp AsaMatrix 50
+    ## 頭：45%
+    scoreboard players set #mhdp_const_temp AsaMatrix 45
     scoreboard players operation #mhdp_teo_head_damage AsaMatrix *= #mhdp_const_temp AsaMatrix
     scoreboard players operation #mhdp_teo_head_damage AsaMatrix /= #asam_const_100 AsaMatrix
-    ## 胴：20%
-    scoreboard players set #mhdp_const_temp AsaMatrix 20
+    ## 胴：22%
+    scoreboard players set #mhdp_const_temp AsaMatrix 22
     scoreboard players operation #mhdp_teo_body_damage AsaMatrix *= #mhdp_const_temp AsaMatrix
     scoreboard players operation #mhdp_teo_body_damage AsaMatrix /= #asam_const_100 AsaMatrix
-    ## 尻尾：25%
-    scoreboard players set #mhdp_const_temp AsaMatrix 25
+    ## 尻尾：20%
+    scoreboard players set #mhdp_const_temp AsaMatrix 20
     scoreboard players operation #mhdp_teo_tail_damage AsaMatrix *= #mhdp_const_temp AsaMatrix
     scoreboard players operation #mhdp_teo_tail_damage AsaMatrix /= #asam_const_100 AsaMatrix
 # 特殊怯み
@@ -31,8 +31,8 @@
     scoreboard players operation #mhdp_teo_sp_damage_max AsaMatrix *= #mhdp_const_temp AsaMatrix
     scoreboard players operation #mhdp_teo_sp_damage_max AsaMatrix /= #asam_const_100 AsaMatrix
 # 怒り
-    ## 15%
-    scoreboard players set #mhdp_const_temp AsaMatrix 15
+    ## 20%
+    scoreboard players set #mhdp_const_temp AsaMatrix 20
     scoreboard players operation #mhdp_teo_anger_damage_max AsaMatrix *= #mhdp_const_temp AsaMatrix
     scoreboard players operation #mhdp_teo_anger_damage_max AsaMatrix /= #asam_const_100 AsaMatrix
 
@@ -45,5 +45,3 @@
 
 # 終了
 scoreboard players reset #mhdp_const_temp
-
-# scoreboard players set #mhdp_teo_anger_damage AsaMatrix 1
