@@ -24,7 +24,4 @@ execute as @e[type=armor_stand,tag=TeoParts,tag=WingL0] run data merge entity @s
 execute as @e[type=armor_stand,tag=TeoParts,tag=WingR0] run data merge entity @s {Pose:{Head:[-15f,-45f,-60f]}}
 execute as @e[type=armor_stand,tag=TeoParts,tag=WingL1] run data merge entity @s {Pose:{Head:[-37.3f,31.1f,25f]}}
 execute as @e[type=armor_stand,tag=TeoParts,tag=WingR1] run data merge entity @s {Pose:{Head:[-37.3f,-31.1f,-25f]}}
-
-# 纏い状態決定
-execute if predicate asa_animator:random/050 run tag @s add IsFire
-execute unless entity @s[tag=IsFire] run tag @s add IsBomb
+tag @s remove IsFlying

@@ -15,6 +15,8 @@ execute if entity @s[scores={AsaMatrix=48..}] run function asa_animator:teo/anim
 execute as @e[type=armor_stand,tag=TeoParts] run function #asa_matrix:animate
 function asa_animator:teo/model
 
+execute if entity @s[scores={AsaMatrix=30}] run tag @s remove IsFlying
+
 execute if entity @s[scores={AsaMatrix=11}] run function asa_animator:teo/anim/end_fly/events/pos/set_pos
 execute if entity @s[scores={AsaMatrix=12..29}] run function asa_animator:teo/anim/end_fly/events/pos/offset
 execute if entity @s[scores={AsaMatrix=38}] run function asa_animator:teo/manager/model/change_to_normal

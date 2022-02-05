@@ -24,11 +24,11 @@ execute if score #mhdp_teo_tail_damage AsaMatrix matches ..0 as @e[type=armor_st
 # execute if score #mhdp_teo_anger_damage AsaMatrix matches ..0 unless entity @e[type=armor_stand,tag=TeoRoot,tag=IsAnger] as @e[type=armor_stand,tag=TeoRoot] run function asa_animator:teo/manager/start_anger
 
 # 特殊怯み
-# scoreboard players set #mhdp_const_temp AsaMatrix 2
-# execute if score #mhdp_teo_lv AsaMatrix matches 1 run scoreboard players operation #teo_damage AsaMatrix /= #mhdp_const_temp AsaMatrix
-# execute if score #mhdp_teo_lv AsaMatrix matches 1.. run scoreboard players operation #mhdp_teo_sp_damage AsaMatrix += #teo_damage AsaMatrix
-# execute if score #mhdp_teo_sp_damage AsaMatrix matches ..0 as @e[type=armor_stand,tag=TeoRoot,distance=0..15] run function asa_animator:teo/manager/start_damage_animation
-# scoreboard players reset #mhdp_const_temp
+scoreboard players set #mhdp_const_temp AsaMatrix 2
+execute if score #mhdp_teo_lv AsaMatrix matches 1 run scoreboard players operation #teo_damage AsaMatrix /= #mhdp_const_temp AsaMatrix
+execute if score #mhdp_teo_lv AsaMatrix matches 1.. run scoreboard players operation #mhdp_teo_sp_damage AsaMatrix += #teo_damage AsaMatrix
+execute if score #mhdp_teo_sp_damage AsaMatrix matches ..0 as @e[type=armor_stand,tag=TeoRoot,distance=0..15] run function asa_animator:teo/manager/start_damage_animation
+scoreboard players reset #mhdp_const_temp
 
 # 死亡時，アニメーション設定
 execute if score #mhdp_teo_health AsaMatrix matches ..0 as @e[type=armor_stand,tag=TeoRoot] run function asa_animator:teo/manager/start_death_animation

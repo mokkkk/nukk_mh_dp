@@ -11,6 +11,8 @@ execute if entity @s[scores={AsaMatrix=23..}] run function asa_animator:teo/anim
 execute as @e[type=armor_stand,tag=TeoParts] run function #asa_matrix:animate
 function asa_animator:teo/model
 
+execute if entity @s[scores={AsaMatrix=1}] run tag @s add IsFlying
+
 execute if entity @s[tag=IsRight,scores={AsaMatrix=1..22}] at @s run tp @s ^0 ^ ^0 ~9.5 ~
 execute if entity @s[tag=!IsRight,scores={AsaMatrix=1..22}] at @s run tp @s ^0 ^ ^0 ~-9.5 ~
 

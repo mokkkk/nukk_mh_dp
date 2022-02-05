@@ -46,6 +46,7 @@
 # 終了
 scoreboard players reset #mhdp_const_temp
 
+scoreboard players set #mhdp_teo_sp_damage AsaMatrix 1
 scoreboard players set #mhdp_teo_head_damage AsaMatrix 1
 scoreboard players set #mhdp_teo_body_damage AsaMatrix 1
 scoreboard players set #mhdp_teo_tail_damage AsaMatrix 1

@@ -21,6 +21,9 @@ execute if entity @s[scores={AsaMatrix=76..}] run function asa_animator:teo/anim
 execute as @e[type=armor_stand,tag=TeoParts] run function #asa_matrix:animate
 function asa_animator:teo/model
 
+execute if entity @s[scores={AsaMatrix=20}] run tag @s add IsFlying
+execute if entity @s[scores={AsaMatrix=40}] run tag @s remove IsFlying
+
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:teo/manager/model/change_to_open
 execute if entity @s[scores={AsaMatrix=61}] run function asa_animator:teo/manager/model/change_to_normal
 

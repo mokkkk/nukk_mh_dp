@@ -15,6 +15,8 @@ execute if entity @s[scores={AsaMatrix=61..}] run function asa_animator:teo/anim
 execute as @e[type=armor_stand,tag=TeoParts] run function #asa_matrix:animate
 function asa_animator:teo/model
 
+execute if entity @s[scores={AsaMatrix=30}] run tag @s remove IsFlying
+
 execute if entity @s[scores={AsaMatrix=41}] run function asa_animator:teo/manager/model/change_to_normal
 execute if entity @s[scores={AsaMatrix=10}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=30}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
