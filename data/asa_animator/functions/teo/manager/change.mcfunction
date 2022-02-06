@@ -18,9 +18,5 @@ execute unless predicate asa_animator:teo/combo run function asa_animator:teo/ma
 # 怒り終了
 execute if entity @s[tag=IsAnger] if score #mhdp_teo_anger_count AsaMatrix matches ..0 run function asa_animator:teo/manager/end_anger
 
-# 強制
-# tag @s add AnmFlyTackle
-# execute as @e[tag=TeoRoot] run function asa_animator:teo/manager/change_combo/start_a
-
 # 終了
 tag @s remove ChangeAnm

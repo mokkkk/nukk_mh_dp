@@ -1,1 +1,1 @@
-advancement revoke @a only mh_dp:toasts/kushala
+advancement revoke @a only mh_dp:toasts/teo
