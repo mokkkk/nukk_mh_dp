@@ -34,3 +34,6 @@ execute if entity @s[scores={AsaMatrix=15}] run playsound block.portal.trigger m
 execute if entity @s[scores={AsaMatrix=85}] positioned ^ ^2 ^ run function asa_animator:teo/anim/supernova/events/damage
 
 execute if entity @s[scores={AsaMatrix=86}] run function asa_animator:teo/manager/lv/reset
+
+execute if entity @s[scores={AsaMatrix=80}] run function asa_animator:teo/manager/font/start
+execute if entity @s[scores={AsaMatrix=110}] run function asa_animator:teo/manager/font/end

@@ -31,6 +31,10 @@ execute if entity @s[tag=IsFire,scores={AsaMatrix=12..20}] run particle flame ~ 
 # execute if entity @s[scores={AsaMatrix=12}] if score #mhdp_teo_lv AsaMatrix matches 2 run particle large_smoke ~ ~3 ~ 1 1 1 0.5 100
 # execute if entity @s[scores={AsaMatrix=12..20}] if score #mhdp_teo_lv AsaMatrix matches 2 run particle large_smoke ~ ~3 ~ 1 1 1 0.5 10
 
+# 画面効果
+execute if entity @s[scores={AsaMatrix=12}] run function asa_animator:teo/manager/font/start
+execute if entity @s[scores={AsaMatrix=39}] run function asa_animator:teo/manager/font/end
+
 execute if entity @s[scores={AsaMatrix=8}] run playsound entity.ender_dragon.growl master @a ~ ~ ~ 3 0.5
 execute if entity @s[scores={AsaMatrix=12..20}] run playsound entity.hoglin.angry master @a ~ ~ ~ 3 0.6
 execute if entity @s[scores={AsaMatrix=12..20}] run playsound entity.hoglin.angry master @a ~ ~ ~ 3 0.8

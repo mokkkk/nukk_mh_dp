@@ -30,5 +30,5 @@ execute if entity @s[tag=IsAnger] as @e[type=slime,tag=TeoParts] run function as
 execute unless entity @s[tag=AnmSummon] if data storage mh_dp:settings {Custom:{DisableDespawn:false}} unless entity @a[distance=0..64] run function asa_animator:teo/manager/despawn
 
 # 画面エフェクト用メモ
-# bossbar add test [{"text": "\uE002","font": "mhdp"},{"text": "\uF80B\uF823","font": "default"},{"text": "test","font": "default"}]
+# bossbar add test [{"text": "\uE002","font": "mhdp_teo"},{"text": "\uF80B\uF823","font": "default"},{"text": "test","font": "default"}]
 # bossbar set test name [{"text": "\uE002","font": "mhdp"},{"text": "\uF81B\uF833","font": "default"},{"text": "てすと","font": "default"}]

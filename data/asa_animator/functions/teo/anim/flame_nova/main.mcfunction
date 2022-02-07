@@ -45,3 +45,6 @@ execute if entity @s[scores={AsaMatrix=100..110}] run playsound entity.polar_bea
 
 execute if entity @s[scores={AsaMatrix=34..67}] positioned as @e[type=armor_stand,tag=TeoParts,tag=HeadU] positioned ^ ^1.2 ^1 facing entity @e[type=marker,tag=TeoMoveRotate,limit=1] feet run function asa_animator:teo/anim/flame_nova/events/damage_f
 execute if entity @s[scores={AsaMatrix=68}] positioned as @e[type=armor_stand,tag=TeoParts,tag=HeadU] positioned ^ ^1.2 ^1 facing entity @e[type=marker,tag=TeoMoveRotate,limit=1] feet run function asa_animator:teo/anim/flame_nova/events/damage_b
+
+execute if entity @s[scores={AsaMatrix=58}] run function asa_animator:teo/manager/font/start
+execute if entity @s[scores={AsaMatrix=70}] run function asa_animator:teo/manager/font/end

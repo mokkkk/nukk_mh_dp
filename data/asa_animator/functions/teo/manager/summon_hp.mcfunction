@@ -6,7 +6,7 @@
     execute store result score #mhdp_teo_head_damage AsaMatrix store result score #mhdp_teo_body_damage AsaMatrix store result score #mhdp_teo_tail_damage AsaMatrix store result score #mhdp_teo_sp_damage_max AsaMatrix store result score #mhdp_teo_anger_damage_max AsaMatrix run scoreboard players operation #mhdp_teo_health AsaMatrix /= #asam_const_100 AsaMatrix
 
 # ボスバー設定
-    bossbar add asa_animator:teo_health [{"text": "炎王竜"},{"text":"\uE000","font":"mhdp"}]
+    bossbar add asa_animator:teo_health [{"text": "炎王龍"},{"text":"\uE000","font":"mhdp"}]
     execute store result bossbar asa_animator:teo_health max run scoreboard players get #mhdp_teo_health AsaMatrix
     bossbar set asa_animator:teo_health players @a
     bossbar set asa_animator:teo_health visible true
