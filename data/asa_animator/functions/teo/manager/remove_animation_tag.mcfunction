@@ -3,6 +3,8 @@ tag @s remove AnmStepB
 tag @s remove AnmMoveStart
 tag @s remove AnmMove
 tag @s remove AnmBite
+tag @s remove AnmBiteNL
+tag @s remove AnmBiteNR
 tag @s remove AnmBiteL
 tag @s remove AnmBiteR
 tag @s remove AnmJump

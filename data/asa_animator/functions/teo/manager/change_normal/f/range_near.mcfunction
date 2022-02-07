@@ -12,7 +12,7 @@ loot spawn ~ 0 ~ loot asa_animator:teo/f/near
     # ひっかき
     execute if entity @e[type=item,y=0] if entity @e[type=item,nbt={Item:{tag:{Act:2}}}] run function asa_animator:teo/manager/change_normal/_/claw
     # 噛みつき
-    execute if entity @e[type=item,y=0] if entity @e[type=item,nbt={Item:{tag:{Act:3}}}] run tag @s add AnmBite
+    execute if entity @e[type=item,y=0] if entity @e[type=item,nbt={Item:{tag:{Act:3}}}] run function asa_animator:teo/manager/change_normal/_/bite
     # 移動噛みつき
     execute if entity @e[type=item,y=0] if entity @e[type=item,nbt={Item:{tag:{Act:4}}}] run function asa_animator:teo/manager/change_normal/_/bitelr
     # コンボA
