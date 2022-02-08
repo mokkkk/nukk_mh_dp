@@ -31,4 +31,5 @@ execute unless entity @s[tag=AnmSummon] if data storage mh_dp:settings {Custom:{
 
 # 画面エフェクト用メモ
 # bossbar add test [{"text": "\uE002","font": "mhdp_teo"},{"text": "\uF80B\uF823","font": "default"},{"text": "test","font": "default"}]
-# bossbar set test name [{"text": "\uE002","font": "mhdp"},{"text": "\uF81B\uF833","font": "default"},{"text": "てすと","font": "default"}]
+# bossbar set asa_animator:teo_health name [{"text": "9","font": "mhdp_teo"},{"text": "\uF81B\uF833","font": "default"},{"text": "てすと","font": "default"}]
+# bossbar set asa_animator:teo_health name [{"text": "9","font": "mhdp_teo"},{"text": "\uF80E","font": "default"},{"text": "てすと","font": "default"},{"text": "\uF82E","font": "default"}]
