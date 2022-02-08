@@ -62,6 +62,13 @@ execute if entity @s[tag=D_KushalaDash] run tellraw @a [{"selector":"@s"},{"text
 execute if entity @s[tag=D_KushalaBite] run tellraw @a [{"selector":"@s"},{"text": " は鋼龍に噛み砕かれた"}]
 execute if entity @s[tag=D_KushalaClaw] run tellraw @a [{"selector":"@s"},{"text": " は鋼龍に切り裂かれた"}]
 
+execute if entity @s[tag=D_TeoBomb] run tellraw @a [{"selector":"@s"},{"text": " は炎王龍に爆破された"}]
+execute if entity @s[tag=D_TeoFire] run tellraw @a [{"selector":"@s"},{"text": " は炎王龍に黒焦げにされた"}]
+execute if entity @s[tag=D_TeoDash] run tellraw @a [{"selector":"@s"},{"text": " は炎王龍に轢かれた"}]
+execute if entity @s[tag=D_TeoBite] run tellraw @a [{"selector":"@s"},{"text": " は炎王龍に噛み砕かれた"}]
+execute if entity @s[tag=D_TeoClaw] run tellraw @a [{"selector":"@s"},{"text": " は炎王龍に切り裂かれた"}]
+execute if entity @s[tag=D_TeoNova] run tellraw @a [{"selector":"@s"},{"text": " はスーパーノヴァにより消し炭となった"}]
+
 execute if entity @s[tag=D_BlightFire] run tellraw @a [{"selector":"@s"},{"text": " は火傷した"}]
 
 kill @s

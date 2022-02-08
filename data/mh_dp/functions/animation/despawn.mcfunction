@@ -17,3 +17,5 @@ execute if entity @s[tag=BrachyRRoot] run function asa_animator:brachyr/manager/
 execute if entity @s[tag=TigaRoot] run function asa_animator:tiga/manager/despawn
 
 execute if entity @s[tag=KushalaRoot] run function asa_animator:kushala/manager/despawn
+
+execute if entity @s[tag=TeoRoot] run function asa_animator:teo/manager/despawn
