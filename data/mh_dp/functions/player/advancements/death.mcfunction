@@ -1,8 +1,8 @@
 
-tag @s add Dead
+tag @s add MhdpDeath
 
 # 周辺モンスターのデスポチェック
-execute as @e[tag=MonsterRoot] at @s unless entity @a[tag=!Dead,distance=0..64] run function mh_dp:animation/despawn
+execute as @e[tag=MonsterRoot] at @s unless entity @a[tag=!MhdpDeath,distance=0..64] run function mh_dp:animation/despawn
 
 # ターゲットタグ消去
 tag @s remove ReusTarget
@@ -33,4 +33,3 @@ scoreboard players set @s MhdpBlightFire 0
 tag @s remove BlightFire
 scoreboard players set @s MhdpBlightDragon 0
 tag @s remove BlightDragon
-tag @s remove Dead

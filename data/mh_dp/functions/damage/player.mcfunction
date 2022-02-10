@@ -4,11 +4,11 @@
     # 2：火炎耐性（火属性）
     # 3：爆発耐性
     # 4：ダメージ軽減（龍属性）
-    execute if data storage mhdp: {Epf:0} run scoreboard players set $mhdp_epf AsaMatrix 0
-    execute if data storage mhdp: {Epf:1} run function mh_dp:damage/get_epf_protection
-    execute if data storage mhdp: {Epf:2} run function mh_dp:damage/get_epf_fire
-    execute if data storage mhdp: {Epf:3} run function mh_dp:damage/get_epf_blast
-    execute if data storage mhdp: {Epf:4} run function mh_dp:damage/get_epf_protection
+    execute if data storage mhdp: DamageType{Epf:0} run scoreboard players set $mhdp_epf AsaMatrix 0
+    execute if data storage mhdp: DamageType{Epf:1} run function mh_dp:damage/get_epf_protection
+    execute if data storage mhdp: DamageType{Epf:2} run function mh_dp:damage/get_epf_fire
+    execute if data storage mhdp: DamageType{Epf:3} run function mh_dp:damage/get_epf_blast
+    execute if data storage mhdp: DamageType{Epf:4} run function mh_dp:damage/get_epf_protection
 
 # 龍属性やられ
     scoreboard players set #mhdp_const_temp AsaMatrix 2

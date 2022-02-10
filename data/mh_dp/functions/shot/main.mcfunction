@@ -30,3 +30,5 @@ execute if entity @s[tag=KushalaBreathT] run function asa_animator:kushala/anim/
 execute if entity @s[tag=KushalaBomb] run function asa_animator:kushala/anim/sp_attack/events/bomb/main_bullet
 
 execute if entity @s[tag=TeoBomb] run function asa_animator:teo/manager/bomb/main_bullet
+
+execute if entity @s[tag=NazutiTailShot] run function asa_animator:nazuti/anim/tail/events/shot/main_bullet
