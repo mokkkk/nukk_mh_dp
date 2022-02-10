@@ -5,6 +5,12 @@
     execute if entity @s[tag=AnmClawL] run function asa_animator:nazuti/anim/claw_l/main
     execute if entity @s[tag=AnmClawR] run function asa_animator:nazuti/anim/claw_r/main
 
+    # 尻尾叩きつけ
+    execute if entity @s[tag=AnmTail] run function asa_animator:nazuti/anim/tail/main
+
+    # 飛び掛かり
+    execute if entity @s[tag=AnmJump] run function asa_animator:nazuti/anim/jump/main
+
 ## その他
     # 登場
     # execute if entity @s[tag=AnmSummon] run function asa_animator:nazuti/anim/summon/main

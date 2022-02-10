@@ -35,3 +35,5 @@
     execute if data storage score_damage: Argument.Damage if entity @s[team=!Null] run function score_damage_mhdp:core/attack
 # 属性やられ
     execute if entity @s[type=player] run function score_damage_mhdp:mh_dp/blight
+# ノックパック
+    execute if entity @s[type=player] run function mh_dp:player/knockback/start_damage
