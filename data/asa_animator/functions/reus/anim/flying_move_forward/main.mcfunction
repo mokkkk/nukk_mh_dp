@@ -19,5 +19,5 @@ function asa_animator:reus/manager/rotate
 execute if entity @s[scores={AsaMatrix=6}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=28}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 
-execute if entity @s[scores={AsaMatrix=10..35}] at @s unless entity @e[distance=0..7,tag=ReusAttackTarget] facing entity @e[tag=ReusAttackTarget] feet run tp @s ^ ^ ^0.7
-execute if entity @s[scores={AsaMatrix=10..35}] at @s if entity @e[distance=0..7,tag=ReusAttackTarget] run tp @s ^ ^ ^0.1
+execute if entity @s[scores={AsaMatrix=10..35}] at @s unless entity @e[tag=ReusAttackTarget,distance=0..7] facing entity @e[tag=ReusAttackTarget] feet run tp @s ^ ^ ^0.7
+execute if entity @s[scores={AsaMatrix=10..35}] at @s if entity @e[tag=ReusAttackTarget,distance=0..7] run tp @s ^ ^ ^0.1

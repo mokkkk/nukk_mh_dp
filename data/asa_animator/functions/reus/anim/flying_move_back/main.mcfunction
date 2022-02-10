@@ -11,3 +11,5 @@ function asa_animator:reus/model
 
 function asa_animator:reus/manager/rotate
 execute if entity @s[scores={AsaMatrix=8}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
+
+execute if entity @s[scores={AsaMatrix=1}] as @a[distance=0..5] run function mh_dp:player/knockback/start_wind

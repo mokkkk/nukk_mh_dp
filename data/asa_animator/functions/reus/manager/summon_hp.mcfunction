@@ -1,13 +1,15 @@
 
 
 # HPセット
-    scoreboard players set #mhdp_reus_health AsaMatrix 50000
+    execute if data storage mh_dp:settings Custom{QuestRank:0} run scoreboard players set #mhdp_reus_health AsaMatrix 50000
+    execute if data storage mh_dp:settings Custom{QuestRank:1} run scoreboard players set #mhdp_reus_health AsaMatrix 70000
 # HP倍率適用
     scoreboard players operation #mhdp_reus_health AsaMatrix *= #mhdp_hp_multiply AsaMatrix
     execute store result score #mhdp_reus_head_damage AsaMatrix store result score #mhdp_reus_body_damage AsaMatrix store result score #mhdp_reus_tail_damage AsaMatrix store result score #mhdp_reus_anger_damage_max AsaMatrix store result score #mhdp_reus_flying_damage_max AsaMatrix store result score #mhdp_reus_anger_damage_max AsaMatrix run scoreboard players operation #mhdp_reus_health AsaMatrix /= #asam_const_100 AsaMatrix
 
 # ボスバー設定
     bossbar add asa_animator:reus_health [{"text": "火竜"},{"text":"\uE000","font":"mhdp"}]
+    execute if data storage mh_dp:settings Custom{QuestRank:1} run bossbar set asa_animator:reus_health color red
     execute store result bossbar asa_animator:reus_health max run scoreboard players get #mhdp_reus_health AsaMatrix
     bossbar set asa_animator:reus_health players @a
     bossbar set asa_animator:reus_health visible true

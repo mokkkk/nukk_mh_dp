@@ -20,8 +20,9 @@ execute if entity @s[scores={AsaMatrix=1..12}] run function asa_animator:reus/ma
 
 # 発射位置決定
 execute if entity @s[scores={AsaMatrix=13}] run summon marker ^ ^0.7 ^8 {Tags:["ReusBreathTarget"]}
-execute if entity @s[scores={AsaMatrix=13}] unless entity @e[distance=0..8,tag=ReusAttackTarget] at @e[tag=ReusAttackTarget,limit=1] run tp @e[type=marker,tag=ReusBreathTarget] ~ ~ ~
+execute if entity @s[scores={AsaMatrix=13}] unless entity @e[tag=ReusAttackTarget,distance=0..8] at @e[tag=ReusAttackTarget,limit=1] run tp @e[type=marker,tag=ReusBreathTarget] ~ ~ ~
 
 # ブレス発射
+execute if entity @s[scores={AsaMatrix=18}] as @a[distance=0..5] run function mh_dp:player/knockback/start_wind
 execute if entity @s[scores={AsaMatrix=18}] positioned ^ ^4 ^3 facing entity @e[type=marker,tag=ReusBreathTarget,limit=1] feet run function asa_animator:reus/anim/breath/events/shot
 execute if entity @s[scores={AsaMatrix=23}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7

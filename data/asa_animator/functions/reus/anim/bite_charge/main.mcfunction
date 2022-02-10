@@ -20,13 +20,13 @@ execute as @e[type=armor_stand,tag=ReusParts] run function #asa_matrix:animate
 function asa_animator:reus/model
 
 execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
-execute if entity @s[scores={AsaMatrix=1..12}] if entity @e[distance=..6,tag=ReusAttackTarget] at @s run tp @s ^ ^ ^-0.4
-execute if entity @s[scores={AsaMatrix=1..23}] unless entity @e[distance=..2,tag=ReusAttackTarget] run function asa_animator:reus/manager/rotate
+execute if entity @s[scores={AsaMatrix=1..12}] if entity @e[tag=ReusAttackTarget,distance=..6] at @s run tp @s ^ ^ ^-0.4
+execute if entity @s[scores={AsaMatrix=1..23}] unless entity @e[tag=ReusAttackTarget,distance=..2] run function asa_animator:reus/manager/rotate
 
 execute if entity @s[scores={AsaMatrix=12}] run playsound item.firecharge.use master @a ~ ~ ~ 2 0.7
-execute if entity @s[scores={AsaMatrix=12..23}] as @e[type=armor_stand,distance=0..5,tag=ReusParts,tag=HeadU] at @s positioned ^ ^0.65 ^0.3 run particle flame ~ ~ ~ 0.1 0.1 0.1 0.05 10
+execute if entity @s[scores={AsaMatrix=12..23}] as @e[type=armor_stand,tag=ReusParts,tag=HeadU,distance=0..5] at @s positioned ^ ^0.65 ^0.3 run particle flame ~ ~ ~ 0.1 0.1 0.1 0.05 10
 
-execute if entity @s[scores={AsaMatrix=23..37}] as @e[type=armor_stand,distance=0..5,tag=ReusParts,tag=HeadU] at @s positioned ^ ^0.65 ^0.3 run particle lava ~ ~ ~ 0.1 0.1 0.1 0.05 3
-execute if entity @s[scores={AsaMatrix=23..37}] unless entity @e[distance=..6,tag=ReusAttackTarget] at @s run tp @s ^ ^ ^0.6
+execute if entity @s[scores={AsaMatrix=23..37}] as @e[type=armor_stand,tag=ReusParts,tag=HeadU,distance=0..5] at @s positioned ^ ^0.65 ^0.3 run particle lava ~ ~ ~ 0.1 0.1 0.1 0.05 3
+execute if entity @s[scores={AsaMatrix=23..37}] unless entity @e[tag=ReusAttackTarget,distance=..6] at @s run tp @s ^ ^ ^0.6
 execute if entity @s[scores={AsaMatrix=36}] positioned ^ ^1 ^5 run function asa_animator:reus/anim/bite/events/damage
 execute if entity @s[scores={AsaMatrix=48}] positioned ^ ^1 ^5 run function asa_animator:reus/anim/bite_charge/events/damage
