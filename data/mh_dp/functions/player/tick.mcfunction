@@ -1,4 +1,7 @@
 
+# 死亡時
+execute if entity @s[tag=MhdpDeath] run function mh_dp:player/death
+
 # ジャンプ
 execute if entity @s[scores={MhdpJump=1..}] run function mh_dp:player/jump/main
 execute if entity @s[scores={MhdpTAvoid=1..}] run scoreboard players remove @s MhdpTAvoid 1
