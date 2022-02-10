@@ -5,7 +5,11 @@ gamerule sendCommandFeedback false
 
 tellraw @a {"text": "==========================================\n\nMH_DP Settings\n","color": "light_purple"}
 
-tellraw @a {"text": " - モンスターの自然スポーン","color": "light_purple"}
+tellraw @a {"text": " - クエストランク","color": "light_purple"}
+execute if data storage mh_dp:settings Custom{QuestRank:0} run tellraw @a [{"text": " ---  ","color": "light_purple"},{"text": "[ノーマル]       ","color": "aqua","clickEvent":{"action":"run_command","value":"/function mh_dp:settings/questrank/normal"}},{"text": "[ハード]","color": "light_purple","clickEvent":{"action":"run_command","value":"/function mh_dp:settings/questrank/hard"}}]
+execute if data storage mh_dp:settings Custom{QuestRank:1} run tellraw @a [{"text": " ---  ","color": "light_purple"},{"text": "[ノーマル]       ","color": "light_purple","clickEvent":{"action":"run_command","value":"/function mh_dp:settings/questrank/normal"}},{"text": "[ハード]","color": "aqua","clickEvent":{"action":"run_command","value":"/function mh_dp:settings/questrank/hard"}}]
+
+tellraw @a {"text": "\n - モンスターの自然スポーン","color": "light_purple"}
 execute if data storage mh_dp:settings {Custom:{EnableBossSpawn:true}} run tellraw @a [{"text": " ---  ","color": "light_purple"},{"text": "[有効]       ","color": "aqua","clickEvent":{"action":"run_command","value":"/function mh_dp:settings/spawn/enable"}},{"text": "[無効]","color": "light_purple","clickEvent":{"action":"run_command","value":"/function mh_dp:settings/spawn/disable"}}]
 execute if data storage mh_dp:settings {Custom:{EnableBossSpawn:false}} run tellraw @a [{"text": " ---  ","color": "light_purple"},{"text": "[有効]       ","color": "light_purple","clickEvent":{"action":"run_command","value":"/function mh_dp:settings/spawn/enable"}},{"text": "[無効]","color": "aqua","clickEvent":{"action":"run_command","value":"/function mh_dp:settings/spawn/disable"}}]
 
