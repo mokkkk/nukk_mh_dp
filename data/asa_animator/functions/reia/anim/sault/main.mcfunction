@@ -27,4 +27,4 @@ execute if entity @s[scores={AsaMatrix=1..5}] run function asa_animator:reia/man
 
 execute if entity @s[scores={AsaMatrix=10}] run particle block grass_block ~ ~ ~ 1 0.1 1 0 10
 execute if entity @s[scores={AsaMatrix=11}] run playsound entity.player.attack.sweep master @a ~ ~ ~ 2 0.7
-execute if entity @s[scores={AsaMatrix=12..30}] at @e[type=armor_stand,distance=0..10,tag=ReiaParts,tag=Tail2] run function asa_animator:reia/anim/sault/events/damage
+execute if entity @s[scores={AsaMatrix=12..30}] at @e[type=armor_stand,tag=ReiaParts,tag=Tail2,distance=0..10] run function asa_animator:reia/anim/sault/events/damage

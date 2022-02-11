@@ -30,7 +30,7 @@ execute if entity @s[scores={AsaMatrix=1..12}] run function asa_animator:reia/ma
 
 # 発射位置決定
 execute if entity @s[scores={AsaMatrix=13}] run summon marker ^ ^0.7 ^8 {Tags:["ReiaBreathTarget"]}
-execute if entity @s[scores={AsaMatrix=13}] unless entity @e[distance=0..8,tag=ReiaAttackTarget] at @e[tag=ReiaAttackTarget,limit=1] run tp @e[type=marker,tag=ReiaBreathTarget] ~ ~ ~
+execute if entity @s[scores={AsaMatrix=13}] unless entity @e[tag=ReiaAttackTarget,distance=0..8] at @e[tag=ReiaAttackTarget,limit=1] run tp @e[type=marker,tag=ReiaBreathTarget] ~ ~ ~
 
 # ブレス発射
 execute if entity @s[scores={AsaMatrix=26}] positioned ^ ^2 ^5 facing entity @e[type=marker,tag=ReiaBreathTarget,limit=1] feet run function asa_animator:reia/anim/breath_3/events/shot

@@ -23,6 +23,6 @@ execute if entity @s[scores={AsaMatrix=1}] run playsound entity.ender_dragon.fla
 execute if entity @s[scores={AsaMatrix=68}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=22}] run playsound entity.ender_dragon.growl master @a ~ ~ ~ 2 0.5
 execute if entity @s[scores={AsaMatrix=27..55}] run playsound entity.ravager.attack master @a ~ ~ ~ 2 0.7
-execute if entity @s[scores={AsaMatrix=27..50}] at @e[distance=0..20,type=armor_stand,tag=ReiaParts,tag=HeadU] positioned ^ ^1.1 ^0.7 run particle flash ~ ~ ~ 0 0 0 0 1
+execute if entity @s[scores={AsaMatrix=27..50}] at @e[type=armor_stand,tag=ReiaParts,tag=HeadU,distance=0..20] positioned ^ ^1.1 ^0.7 run particle flash ~ ~ ~ 0 0 0 0 1
 execute if entity @s[scores={AsaMatrix=27..50}] positioned ^ ^ ^6 run particle block grass_block ~ ~ ~ 2 0.1 2 0 5
 execute if entity @s[scores={AsaMatrix=27}] run function asa_animator:reia/anim/voice/events/damage
