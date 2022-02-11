@@ -34,4 +34,4 @@ execute if entity @s[scores={AsaMatrix=33}] run playsound entity.generic.explode
 execute if entity @s[scores={AsaMatrix=34}] run function asa_animator:dyno/anim/slash_swing_l/events/particle
 execute if entity @s[scores={AsaMatrix=35}] positioned ^-1 ^ ^6 run function asa_animator:dyno/anim/slash_swing_l/events/damage
 
-execute if entity @s[scores={AsaMatrix=21..30}] at @s unless entity @e[distance=0..8,tag=DynoAttackTarget] run tp @s ^ ^ ^0.8
+execute if entity @s[scores={AsaMatrix=21..30}] at @s unless entity @e[tag=DynoAttackTarget,distance=0..8] run tp @s ^ ^ ^0.8

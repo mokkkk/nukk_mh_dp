@@ -17,7 +17,7 @@ function asa_animator:dyno/model
 
 execute if entity @s[scores={AsaMatrix=5}] run function asa_animator:dyno/manager/particle/jump
 
-execute if entity @s[scores={AsaMatrix=1..12}] at @s if entity @e[distance=0..7,tag=DynoAttackTarget] run tp @s ^0.3 ^ ^
+execute if entity @s[scores={AsaMatrix=1..12}] at @s if entity @e[tag=DynoAttackTarget,distance=0..7] run tp @s ^0.3 ^ ^
 
 execute if entity @s[scores={AsaMatrix=13..20}] run function asa_animator:dyno/manager/rotate
 execute if entity @s[scores={AsaMatrix=20}] positioned ^ ^ ^6 run function asa_animator:dyno/anim/bite/events/damage

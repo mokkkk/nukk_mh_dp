@@ -1,12 +1,14 @@
 
 # HPセット
-    scoreboard players set #mhdp_diablos_health AsaMatrix 55000
+    execute if data storage mh_dp:settings Custom{QuestRank:0} run scoreboard players set #mhdp_diablos_health AsaMatrix 55000
+    execute if data storage mh_dp:settings Custom{QuestRank:1} run scoreboard players set #mhdp_diablos_health AsaMatrix 75000
 # HP倍率適用
     scoreboard players operation #mhdp_diablos_health AsaMatrix *= #mhdp_hp_multiply AsaMatrix
     execute store result score #mhdp_diablos_head_damage AsaMatrix store result score #mhdp_diablos_body_damage AsaMatrix store result score #mhdp_diablos_tail_damage AsaMatrix store result score #mhdp_diablos_anger_damage_max AsaMatrix run scoreboard players operation #mhdp_diablos_health AsaMatrix /= #asam_const_100 AsaMatrix
 
 # ボスバー設定
     bossbar add asa_animator:diablos_health [{"text": "角竜"},{"text":"\uE000","font":"mhdp"}]
+    execute if data storage mh_dp:settings Custom{QuestRank:1} run bossbar set asa_animator:diablos_health color red
     execute store result bossbar asa_animator:diablos_health max run scoreboard players get #mhdp_diablos_health AsaMatrix
     bossbar set asa_animator:diablos_health players @a
     bossbar set asa_animator:diablos_health visible true
