@@ -28,6 +28,7 @@ execute if entity @s[scores={AsaMatrix=22..34}] run function asa_animator:teo/an
 execute if entity @s[scores={AsaMatrix=21}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=21}] run function asa_animator:teo/manager/particle/step
 execute if entity @s[scores={AsaMatrix=34}] run function asa_animator:teo/manager/particle/step
+execute if entity @s[scores={AsaMatrix=21}] positioned ^ ^ ^3 as @a[distance=0..5] run function mh_dp:player/knockback/start_wind
 
 execute if entity @s[scores={AsaMatrix=21}] run particle flame ^ ^3 ^4 1 1 1 1 30 force
 execute if entity @s[scores={AsaMatrix=21}] positioned ^ ^ ^4 run function asa_animator:teo/manager/bomb/set_bomb

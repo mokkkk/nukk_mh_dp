@@ -1,4 +1,5 @@
 
+execute as @e[distance=..9] run function mh_dp:player/knockback/start_dwind
 execute as @e[type=!armor_stand,type=!area_effect_cloud,type=!marker,tag=!TeoParts,distance=..8] run function asa_animator:teo/anim/flame_nova/events/damage_f_sub
 playsound entity.generic.explode master @a ~ ~ ~ 3 0.7
 

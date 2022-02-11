@@ -1,8 +1,10 @@
 # 15 Damage
 data modify storage score_damage: Argument set value {Damage:36.0f, BypassArmor:0b}
-data merge storage mhdp: {Epf:3}
+data modify storage mhdp: DamageType set value {Epf:3,Knockback:0b}
+execute positioned ~ ~-6 ~ as @a[distance=..19] run function mh_dp:player/knockback/start_dwind
 execute as @e[type=!armor_stand,type=!area_effect_cloud,type=!marker,tag=!TeoParts,distance=..19] run function asa_animator:teo/anim/supernova/events/damage_sub
 data remove storage score_damage: Argument
+data remove storage mhdp: DamageType
 playsound entity.generic.explode master @a ~ ~ ~ 5 0.9
 playsound entity.generic.explode master @a ~ ~ ~ 5 0.8
 playsound entity.generic.explode master @a ~ ~ ~ 5 0.7
