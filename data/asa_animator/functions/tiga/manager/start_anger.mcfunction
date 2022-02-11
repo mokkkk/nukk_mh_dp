@@ -12,4 +12,4 @@
     scoreboard players operation #mhdp_tiga_anger_damage AsaMatrix = #mhdp_tiga_anger_damage_max AsaMatrix
 
 # ボスバー設定
-    bossbar set asa_animator:narga_health name [{"text": "轟竜"},{"text":"\uE001","font":"mhdp"}]
+    bossbar set asa_animator:tiga_health name [{"text": "轟竜"},{"text":"\uE001","font":"mhdp"}]

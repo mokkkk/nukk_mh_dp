@@ -36,7 +36,7 @@ execute if entity @s[tag=DestroyTail] if entity @s[scores={AsaMatrix=21..35}] po
 
 
 execute if entity @s[scores={AsaMatrix=19}] run summon marker ~ ~ ~ {Tags:["TigaMoveRotate"]}
-execute if entity @s[scores={AsaMatrix=19}] run tp @e[distance=0..3,type=marker,tag=TigaMoveRotate] ~ ~ ~ ~ 0
+execute if entity @s[scores={AsaMatrix=19}] run tp @e[type=marker,tag=TigaMoveRotate,distance=0..3] ~ ~ ~ ~ 0
 execute if entity @s[scores={AsaMatrix=21..35}] at @s rotated as @e[type=marker,tag=TigaMoveRotate] run tp @s ^ ^ ^0.8
 execute if entity @s[scores={AsaMatrix=36..50}] at @s rotated as @e[type=marker,tag=TigaMoveRotate] run tp @s ^ ^ ^0.3
 

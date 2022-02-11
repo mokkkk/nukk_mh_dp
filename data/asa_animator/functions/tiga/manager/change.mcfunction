@@ -6,10 +6,10 @@ tag @e[tag=TigaAttackTarget] remove TigaAttackTarget
 scoreboard players set @s AsaMatrix 0
 
 # ターゲット探索
-tag @e[type=#asa_animator:attack_target,tag=!TigaParts,tag=!TigaTarget,distance=0..50,tag=!NotTarget] add TigaTarget
+tag @e[type=#asa_animator:attack_target,tag=!TigaParts,tag=!TigaTarget,tag=!NotTarget,distance=0..50] add TigaTarget
 # ターゲット決定
-tag @a[tag=TigaTarget,limit=1,sort=random,tag=!NotTarget] add TigaAttackTarget
-execute unless entity @e[tag=TigaAttackTarget] run tag @e[tag=TigaTarget,limit=1,sort=random] add TigaAttackTarget
+tag @a[tag=TigaTarget,tag=!NotTarget,sort=random,limit=1] add TigaAttackTarget
+execute unless entity @e[tag=TigaAttackTarget] run tag @e[tag=TigaTarget,sort=random,limit=1] add TigaAttackTarget
 
 # 通常時
 execute unless entity @s[tag=AnmCharge] run function asa_animator:tiga/manager/change_normal/change
