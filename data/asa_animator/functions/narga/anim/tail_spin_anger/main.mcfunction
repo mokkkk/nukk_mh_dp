@@ -34,8 +34,8 @@ execute as @e[type=armor_stand,tag=NargaParts] run function #asa_matrix:animate
 function asa_animator:narga/model
 
 
-execute if entity @s[scores={AsaMatrix=23..39}] as @e[distance=0..15,type=armor_stand,tag=ArmR2] at @s positioned ~ ~1.4 ~ run particle block grass_block ~ ~ ~ 1 0.1 1 0 3
-execute if entity @s[scores={AsaMatrix=33..39}] as @e[distance=0..15,type=armor_stand,tag=ArmL2] at @s positioned ~ ~1.4 ~ run particle block grass_block ~ ~ ~ 1 0.1 1 0 3
+execute if entity @s[scores={AsaMatrix=23..39}] as @e[type=armor_stand,tag=ArmR2,distance=0..15] at @s positioned ~ ~1.4 ~ run particle block grass_block ~ ~ ~ 1 0.1 1 0 3
+execute if entity @s[scores={AsaMatrix=33..39}] as @e[type=armor_stand,tag=ArmL2,distance=0..15] at @s positioned ~ ~1.4 ~ run particle block grass_block ~ ~ ~ 1 0.1 1 0 3
 execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=23..39}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=30..45}] run function asa_animator:narga/manager/ground
@@ -47,8 +47,8 @@ execute if entity @s[scores={AsaMatrix=26}] run playsound entity.player.attack.s
 execute if entity @s[scores={AsaMatrix=32}] run playsound item.trident.throw master @a ~ ~ ~ 3 1.2
 execute if entity @s[scores={AsaMatrix=32}] run function asa_animator:narga/anim/tail_spin/events/damage
 
-execute if entity @s[scores={AsaMatrix=71..95}] as @e[distance=0..15,type=armor_stand,tag=ArmR2] at @s positioned ~ ~1.4 ~ run particle block grass_block ~ ~ ~ 1 0.1 1 0 3
-execute if entity @s[scores={AsaMatrix=61..95}] as @e[distance=0..15,type=armor_stand,tag=ArmL2] at @s positioned ~ ~1.4 ~ run particle block grass_block ~ ~ ~ 1 0.1 1 0 3
+execute if entity @s[scores={AsaMatrix=71..95}] as @e[type=armor_stand,tag=ArmR2,distance=0..15] at @s positioned ~ ~1.4 ~ run particle block grass_block ~ ~ ~ 1 0.1 1 0 3
+execute if entity @s[scores={AsaMatrix=61..95}] as @e[type=armor_stand,tag=ArmL2,distance=0..15] at @s positioned ~ ~1.4 ~ run particle block grass_block ~ ~ ~ 1 0.1 1 0 3
 execute if entity @s[scores={AsaMatrix=58..95}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=66..}] run function asa_animator:narga/manager/ground
 

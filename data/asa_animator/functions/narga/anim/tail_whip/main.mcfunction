@@ -32,8 +32,8 @@ execute if entity @s[scores={AsaMatrix=37}] run function asa_animator:narga/mana
 execute if entity @s[scores={AsaMatrix=13..18}] run function asa_animator:narga/manager/ground
 execute if entity @s[scores={AsaMatrix=51..60}] run function asa_animator:narga/manager/ground
 
-execute if entity @s[scores={AsaMatrix=19..24}] unless entity @e[distance=0..5,tag=NargaAttackTarget] at @s run tp @s ^ ^ ^0.4
+execute if entity @s[scores={AsaMatrix=19..24}] unless entity @e[tag=NargaAttackTarget,distance=0..5] at @s run tp @s ^ ^ ^0.4
 
 execute if entity @s[scores={AsaMatrix=20}] run playsound entity.player.attack.sweep master @a ~ ~ ~ 3 1.2
 execute if entity @s[scores={AsaMatrix=26}] run playsound item.trident.throw master @a ~ ~ ~ 3 1.2
-execute if entity @s[scores={AsaMatrix=20..30}] as @e[distance=0..15,type=armor_stand,tag=Tail2] at @s run function asa_animator:narga/anim/tail_whip/events/damage
+execute if entity @s[scores={AsaMatrix=20..30}] as @e[type=armor_stand,tag=Tail2,distance=0..15] at @s run function asa_animator:narga/anim/tail_whip/events/damage
