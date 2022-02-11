@@ -5,4 +5,4 @@
 # 矢反射
     execute if entity @e[type=arrow,tag=!MhdpReflected,distance=0..18] as @e[type=arrow,tag=!MhdpReflected,distance=0..18] at @s facing entity @e[type=armor_stand,tag=KushalaRoot,limit=1] eyes run function asa_animator:kushala/manager/particle/reflect_
 # ノックバック
-    execute if entity @a[distance=..8] as @a[distance=..8] unless entity @s[scores={MhdpTAvoid=1..}] unless entity @s[scores={MhdpTDamage=1..}] run function mh_dp:player/knockback/start
+    execute if entity @a[distance=..8] as @a[distance=..8] unless entity @s[scores={MhdpTAvoid=1..}] unless entity @s[scores={MhdpTDamage=1..}] run function mh_dp:player/knockback/start_dwind

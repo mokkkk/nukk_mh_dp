@@ -20,6 +20,7 @@ function asa_animator:kushala/model
 execute if entity @s[scores={AsaMatrix=7}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=41}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 
+execute if entity @s[scores={AsaMatrix=1}] positioned ~ ~-3 ~ as @a[distance=..6] run function mh_dp:player/knockback/start_wind
 execute if entity @s[scores={AsaMatrix=..12}] at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run tp @s ~ ~-0.2 ~
 execute if entity @s[scores={AsaMatrix=..12}] run function asa_animator:kushala/manager/rotate
 execute if entity @s[scores={AsaMatrix=13..34}] run tp @s ^ ^ ^1.3
