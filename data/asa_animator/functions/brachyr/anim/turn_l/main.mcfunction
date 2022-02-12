@@ -15,6 +15,10 @@ execute if entity @s[scores={AsaMatrix=30..}] run function asa_animator:brachyr/
 execute as @e[type=armor_stand,tag=BrachyRParts] run function #asa_matrix:animate
 function asa_animator:brachyr/model
 
+# 高度調整
+execute at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
+execute at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~
+
 function asa_animator:brachyr/manager/rotate
 execute if entity @s[scores={AsaMatrix=5}] run function asa_animator:brachyr/anim/turn_l/events/pos/set_pos
 execute if entity @s[scores={AsaMatrix=9..23}] run function asa_animator:brachyr/anim/turn_l/events/pos/offset
