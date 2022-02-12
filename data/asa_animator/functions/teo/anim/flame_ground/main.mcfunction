@@ -32,4 +32,4 @@ execute if entity @s[scores={AsaMatrix=6}] run playsound block.grass.step master
 execute if entity @s[scores={AsaMatrix=48}] positioned ^ ^0.2 ^4 run function asa_animator:teo/anim/flame_ground/events/summon
 execute if entity @s[scores={AsaMatrix=58}] positioned ^ ^0.6 ^4 run function asa_animator:teo/anim/flame_ground/events/summon_2
 execute if entity @s[scores={AsaMatrix=49..80}] positioned ^ ^ ^4 run function asa_animator:teo/anim/flame_ground/events/particle
-execute if entity @s[scores={AsaMatrix=49..80}] as @e[tag=!TeoParts,predicate=asa_animator:teo/effect,distance=0..15] run function asa_animator:teo/anim/flame_ground/events/damage
+# execute if entity @s[scores={AsaMatrix=49..80}] as @e[tag=!TeoParts,predicate=asa_animator:teo/effect,distance=0..15] run function asa_animator:teo/anim/flame_ground/events/damage

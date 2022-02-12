@@ -25,7 +25,7 @@ execute at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_
 # 敵の方向を向く
 execute if entity @s[scores={AsaMatrix=1..6}] run function asa_animator:tiga/manager/rotate
 
-execute if entity @s[scores={AsaMatrix=13..20}] unless entity @e[distance=0..5,tag=TigaAttackTarget] at @s run tp @s ^ ^ ^0.7
+execute if entity @s[scores={AsaMatrix=13..20}] unless entity @e[tag=TigaAttackTarget,distance=0..5] at @s run tp @s ^ ^ ^0.7
 execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=12}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=13..20}] run particle block grass_block ~ ~ ~ 1 0.1 1 0 3

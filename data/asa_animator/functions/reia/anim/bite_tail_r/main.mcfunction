@@ -23,7 +23,7 @@ function asa_animator:reia/model
 execute if entity @s[scores={AsaMatrix=1}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 
 execute if entity @s[scores={AsaMatrix=1..7}] run function asa_animator:reia/manager/rotate
-execute if entity @s[scores={AsaMatrix=1..7}] unless entity @e[distance=..6,tag=ReiaAttackTarget] at @s run tp @s ^ ^ ^0.3
+execute if entity @s[scores={AsaMatrix=1..7}] unless entity @e[tag=ReiaAttackTarget,distance=..6] at @s run tp @s ^ ^ ^0.3
 execute if entity @s[scores={AsaMatrix=19}] positioned ^ ^1 ^5 run function asa_animator:reia/anim/bite_tail_l/events/damage
 
 execute if entity @s[scores={AsaMatrix=28}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7

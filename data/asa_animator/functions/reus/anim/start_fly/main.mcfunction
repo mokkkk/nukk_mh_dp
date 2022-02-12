@@ -15,4 +15,6 @@ execute if entity @s[scores={AsaMatrix=5}] run particle block grass_block ~ ~0.1
 execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=10}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 
+execute if entity @s[scores={AsaMatrix=10}] as @a[distance=0..5] run function mh_dp:player/knockback/start_wind
+
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reus/manager/model/change_to_fly

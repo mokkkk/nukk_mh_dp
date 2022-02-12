@@ -24,10 +24,14 @@ execute as @e[type=armor_stand,tag=NargaParts] run function #asa_matrix:animate
 function asa_animator:narga/model
 
 execute if entity @s[scores={AsaMatrix=39}] positioned ^ ^ ^5.5 run function asa_animator:narga/anim/voice/events/particle
+execute if entity @s[scores={AsaMatrix=39}] positioned ^ ^ ^5.5 run function asa_animator:narga/anim/voice/events/damage
 execute if entity @s[scores={AsaMatrix=39..45}] positioned ^ ^0.1 ^5.5 run particle flash ~ ~ ~ 0 0 0 0 1
 
 execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master @a ~ ~ ~ 3 1
 execute if entity @s[scores={AsaMatrix=21}] run playsound block.grass.step master @a ~ ~ ~ 3 1
 
-execute if entity @s[scores={AsaMatrix=39..43}] run playsound minecraft:entity.phantom.hurt master @a ~ ~ ~ 3 0.7
-execute if entity @s[scores={AsaMatrix=37}] run playsound minecraft:custom.narga master @a ~ ~ ~ 2 1.2
+execute if entity @s[scores={AsaMatrix=39..44}] run playsound minecraft:entity.phantom.bite master @a ~ ~ ~ 3 0.5
+execute if entity @s[scores={AsaMatrix=49..54}] run playsound minecraft:entity.phantom.hurt master @a ~ ~ ~ 3 0.8
+execute if entity @s[scores={AsaMatrix=69..74}] run playsound minecraft:entity.phantom.hurt master @a ~ ~ ~ 3 0.8
+execute if entity @s[scores={AsaMatrix=39..84}] run playsound minecraft:entity.phantom.hurt master @a ~ ~ ~ 3 0.6
+execute if entity @s[scores={AsaMatrix=39..84}] run playsound minecraft:entity.phantom.hurt master @a ~ ~ ~ 3 0.5

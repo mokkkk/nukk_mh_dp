@@ -17,4 +17,4 @@ execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:kushala/man
 execute if entity @s[scores={AsaMatrix=7}] run function asa_animator:kushala/manager/particle/step
 execute if entity @s[scores={AsaMatrix=18}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 
-execute if entity @s[scores={AsaMatrix=7}] if entity @a[distance=..6] as @a[distance=..6] unless entity @s[scores={MhdpTAvoid=1..}] unless entity @s[scores={MhdpTDamage=1..}] run function mh_dp:player/knockback/start
+execute if entity @s[scores={AsaMatrix=7}] if entity @a[distance=..6] as @a[distance=..6] run function mh_dp:player/knockback/start_wind

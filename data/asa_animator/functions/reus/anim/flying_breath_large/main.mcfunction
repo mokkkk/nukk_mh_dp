@@ -33,7 +33,7 @@ execute if entity @s[scores={AsaMatrix=78}] run playsound entity.ender_dragon.fl
 
 # 発射位置決定
 execute if entity @s[scores={AsaMatrix=31}] run summon marker ^ ^-4 ^6 {Tags:["ReusBreathTarget"]}
-execute if entity @s[scores={AsaMatrix=31}] if entity @e[distance=5..20,tag=ReusAttackTarget] at @e[tag=ReusAttackTarget,limit=1] run tp @e[type=marker,tag=ReusBreathTarget] ~ ~ ~
-execute if entity @s[scores={AsaMatrix=42}] as @e[type=armor_stand,distance=0..7,tag=ReusParts,tag=HeadU] at @s run function asa_animator:reus/anim/flying_breath_large/events/attack_start
-execute if entity @s[scores={AsaMatrix=42..51}] as @e[type=marker,distance=0..7,tag=ReusChargeFPos] at @s run function asa_animator:reus/anim/flying_breath_large/events/attack
+execute if entity @s[scores={AsaMatrix=31}] if entity @e[tag=ReusAttackTarget,distance=5..20] at @e[tag=ReusAttackTarget,limit=1] run tp @e[type=marker,tag=ReusBreathTarget] ~ ~ ~
+execute if entity @s[scores={AsaMatrix=42}] as @e[type=armor_stand,tag=ReusParts,tag=HeadU,distance=0..7] at @s run function asa_animator:reus/anim/flying_breath_large/events/attack_start
+execute if entity @s[scores={AsaMatrix=42..51}] as @e[type=marker,tag=ReusChargeFPos,distance=0..7] at @s run function asa_animator:reus/anim/flying_breath_large/events/attack
 execute if entity @s[scores={AsaMatrix=52}] run kill @e[type=marker,tag=ReusChargeFPos]

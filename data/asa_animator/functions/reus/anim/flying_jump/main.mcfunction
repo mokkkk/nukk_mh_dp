@@ -33,6 +33,5 @@ execute if entity @s[scores={AsaMatrix=35}] run playsound entity.ender_dragon.fl
 
 execute if entity @s[scores={AsaMatrix=56}] positioned ^ ^ ^1 run function asa_animator:reus/anim/jump/events/damage
 
-
 execute if entity @s[scores={AsaMatrix=56..}] at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
 execute if entity @s[scores={AsaMatrix=56..}] at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~

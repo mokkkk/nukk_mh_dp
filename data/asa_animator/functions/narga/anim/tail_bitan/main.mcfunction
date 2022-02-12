@@ -47,7 +47,7 @@ function asa_animator:narga/model
 
 execute if entity @s[scores={AsaMatrix=1..20}] run function asa_animator:narga/manager/ground
 execute if entity @s[scores={AsaMatrix=1..48}] run function asa_animator:narga/manager/rotate
-execute if entity @s[scores={AsaMatrix=32..50}] unless entity @e[distance=0..6,tag=NargaAttackTarget] at @s run tp @s ^ ^ ^0.7
+execute if entity @s[scores={AsaMatrix=32..50}] unless entity @e[tag=NargaAttackTarget,distance=0..6] at @s run tp @s ^ ^ ^0.7
 
 execute if entity @s[scores={AsaMatrix=10}] run playsound entity.player.attack.sweep master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=25}] run playsound entity.player.attack.sweep master @a ~ ~ ~ 2 0.85

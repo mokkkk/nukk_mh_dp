@@ -36,5 +36,5 @@ execute if entity @s[scores={AsaMatrix=29}] positioned ^ ^ ^6 run function asa_a
 execute if entity @s[scores={AsaMatrix=29}] positioned ^ ^ ^6 run particle block grass_block ~ ~ ~ 1 0.1 1 0 30
 execute if entity @s[tag=IsHeatTail] if entity @s[scores={AsaMatrix=29}] positioned ^ ^ ^6 run particle lava ~ ~ ~ 1 0.1 1 0 10
 
-execute if entity @s[scores={AsaMatrix=16..30}] at @s if entity @e[distance=0..8,tag=DynoAttackTarget] run tp @s ^ ^ ^-0.3
-execute if entity @s[scores={AsaMatrix=16..30}] at @s unless entity @e[distance=6..8,tag=DynoAttackTarget] run tp @s ^ ^ ^0.2
+execute if entity @s[scores={AsaMatrix=16..30}] at @s if entity @e[tag=DynoAttackTarget,distance=0..8] run tp @s ^ ^ ^-0.3
+execute if entity @s[scores={AsaMatrix=16..30}] at @s unless entity @e[tag=DynoAttackTarget,distance=6..8] run tp @s ^ ^ ^0.2

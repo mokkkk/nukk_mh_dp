@@ -30,9 +30,9 @@ execute if entity @s[scores={AsaMatrix=..19}] run function asa_animator:reia/man
 
 # 発射位置決定
 execute if entity @s[scores={AsaMatrix=20}] run summon marker ^ ^0.7 ^8 {Tags:["ReiaBreathTarget"]}
-execute if entity @s[scores={AsaMatrix=20}] unless entity @e[distance=0..8,tag=ReiaAttackTarget] at @e[tag=ReiaAttackTarget,limit=1] run tp @e[type=marker,tag=ReiaBreathTarget] ~ ~ ~
+execute if entity @s[scores={AsaMatrix=20}] unless entity @e[tag=ReiaAttackTarget,distance=0..8] at @e[tag=ReiaAttackTarget,limit=1] run tp @e[type=marker,tag=ReiaBreathTarget] ~ ~ ~
 execute if entity @s[scores={AsaMatrix=1}] run playsound entity.player.breath master @a ~ ~ ~ 2 0.9
-execute if entity @s[scores={AsaMatrix=1..39}] as @e[distance=0..15,type=armor_stand,tag=ReiaParts,tag=HeadU] at @s positioned ^ ^1.2 ^0.2 run particle flame ~ ~ ~ 0 0 0 0.03 5
+execute if entity @s[scores={AsaMatrix=1..39}] as @e[type=armor_stand,tag=ReiaParts,tag=HeadU,distance=0..15] at @s positioned ^ ^1.2 ^0.2 run particle flame ~ ~ ~ 0 0 0 0.03 5
 
 # ブレス発射
 execute if entity @s[scores={AsaMatrix=43}] positioned ^ ^3 ^5 facing entity @e[type=marker,tag=ReiaBreathTarget,limit=1] feet run function asa_animator:reia/anim/charge/events/shot

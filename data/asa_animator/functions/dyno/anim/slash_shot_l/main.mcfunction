@@ -32,10 +32,10 @@ execute if entity @s[scores={AsaMatrix=14}] positioned ^ ^ ^-6 run function asa_
 
 execute if entity @s[scores={AsaMatrix=25..34}] run playsound block.grass.hit master @a ~ ~ ~ 2 0.5
 
-execute if entity @s[scores={AsaMatrix=27..36}] as @e[distance=0..20,type=armor_stand,tag=DynoParts,tag=Tail3] at @s run function asa_animator:dyno/anim/slash_shot_l/events/particle_tail
+execute if entity @s[scores={AsaMatrix=27..36}] as @e[type=armor_stand,tag=DynoParts,tag=Tail3,distance=0..20] at @s run function asa_animator:dyno/anim/slash_shot_l/events/particle_tail
 
 execute if entity @s[scores={AsaMatrix=38}] run playsound item.trident.throw master @a ~ ~ ~ 2 0.5
 execute if entity @s[scores={AsaMatrix=36}] run playsound item.firecharge.use master @a ~ ~ ~ 2 0.5
 
 execute if entity @s[scores={AsaMatrix=20}] run summon marker ^ ^ ^30 {Tags:["DynoMoveRotate"]}
-execute if entity @s[scores={AsaMatrix=38}] positioned ^-2 ^ ^6 facing entity @e[distance=0..30,type=marker,tag=DynoMoveRotate] feet rotated ~ 0 run function asa_animator:dyno/anim/slash_shot_l/events/damage
+execute if entity @s[scores={AsaMatrix=38}] positioned ^-2 ^ ^6 facing entity @e[type=marker,tag=DynoMoveRotate,distance=0..30] feet rotated ~ 0 run function asa_animator:dyno/anim/slash_shot_l/events/damage

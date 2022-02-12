@@ -30,6 +30,7 @@ execute if entity @s[scores={AsaMatrix=56}] run function asa_animator:teo/manage
 
 execute if entity @s[scores={AsaMatrix=28}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=28}] run particle flame ^ ^3 ^4 1 1 1 1 30 force
+execute if entity @s[scores={AsaMatrix=28}] positioned ^ ^ ^3 as @a[distance=0..7] run function mh_dp:player/knockback/start_dwind
 
 execute if entity @s[scores={AsaMatrix=28}] positioned ^ ^ ^6 run function asa_animator:teo/manager/particle/set_aec
 execute if entity @s[scores={AsaMatrix=32}] positioned ^ ^ ^12 run function asa_animator:teo/manager/particle/set_aec

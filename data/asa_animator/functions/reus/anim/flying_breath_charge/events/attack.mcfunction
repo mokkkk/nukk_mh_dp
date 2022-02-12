@@ -1,4 +1,4 @@
-execute positioned as @e[distance=0..7,type=armor_stand,tag=ReusParts,tag=HeadU] run tp @s ~ ~ ~ ~ 90
+execute positioned as @e[type=armor_stand,tag=ReusParts,tag=HeadU,distance=0..7] run tp @s ~ ~ ~ ~ 90
 
 # 効果音等
 playsound item.firecharge.use master @a ~ ~ ~ 3 0.5

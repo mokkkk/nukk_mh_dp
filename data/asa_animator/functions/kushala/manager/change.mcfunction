@@ -20,7 +20,7 @@ execute if entity @s[tag=IsAnger] if score #mhdp_kushala_anger_count AsaMatrix m
 
 # 強制
 # function asa_animator:kushala/manager/change_normal/_/claw
-# tag @s add AnmFlyDamage
+# tag @s add AnmFlyBreath
 
 # 終了
 tag @s remove ChangeAnm

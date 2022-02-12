@@ -1,7 +1,4 @@
 
-# 待機
-execute if predicate asa_animator:narga/stay run function asa_animator:narga/anim/stay/main
-
 # 尻尾回転
 execute unless entity @s[tag=IsAnger] if entity @s[tag=AnmTailSpin] run function asa_animator:narga/anim/tail_spin/main
 
@@ -71,6 +68,8 @@ execute if entity @s[tag=AnmTired] run function asa_animator:narga/anim/tired/ma
 
 # 登場
 execute if entity @s[tag=AnmSummon] run function asa_animator:narga/anim/summon/main
+# 咆哮
+execute if entity @s[tag=AnmVoice] run function asa_animator:narga/anim/voice/main
 # 討伐
 execute if entity @s[tag=AnmDeath] run function asa_animator:narga/anim/death/main
 

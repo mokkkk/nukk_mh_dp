@@ -41,4 +41,4 @@ execute if entity @s[scores={AsaMatrix=26..43}] run function asa_animator:kushal
 
 execute if entity @s[scores={AsaMatrix=23}] positioned ^ ^6 ^5 run function asa_animator:kushala/anim/bjb_land/events/shot
 
-execute if entity @s[scores={AsaMatrix=21}] if entity @a[distance=..6] as @a[distance=..6] unless entity @s[scores={MhdpTAvoid=1..}] unless entity @s[scores={MhdpTDamage=1..}] run function mh_dp:player/knockback/start
+execute if entity @s[scores={AsaMatrix=21}] positioned ^ ^ ^5 as @a[distance=0..6] run function mh_dp:player/knockback/start_wind

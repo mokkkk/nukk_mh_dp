@@ -1,6 +1,9 @@
 
 # バージョン設定
-scoreboard players set #mhdp_bersion AsaMatrix 5
+scoreboard players set #mhdp_bersion AsaMatrix 10
+
+# クエストランク設定
+data modify storage mh_dp:settings Custom.QuestRank set value 0
 
 # デスポーン設定
 data modify storage mh_dp:settings Custom.DisableDespawn set value 0b

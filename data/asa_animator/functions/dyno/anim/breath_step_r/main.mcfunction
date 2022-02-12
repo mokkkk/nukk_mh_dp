@@ -32,6 +32,6 @@ execute if entity @s[scores={AsaMatrix=25}] run function asa_animator:dyno/anim/
 execute if entity @s[scores={AsaMatrix=26..44}] run function asa_animator:dyno/anim/breath_step_l/events/pos/offset
 
 execute if entity @s[scores={AsaMatrix=16}] run summon marker ^ ^0.7 ^8 {Tags:["DynoBreathTarget"]}
-execute if entity @s[scores={AsaMatrix=16}] unless entity @e[distance=0..8,tag=DynoAttackTarget] at @e[tag=DynoAttackTarget,limit=1] run tp @e[type=marker,tag=DynoBreathTarget] ~ ~ ~
+execute if entity @s[scores={AsaMatrix=16}] unless entity @e[tag=DynoAttackTarget,distance=0..8] at @e[tag=DynoAttackTarget,limit=1] run tp @e[type=marker,tag=DynoBreathTarget] ~ ~ ~
 execute if entity @s[scores={AsaMatrix=25}] run playsound entity.iron_golem.hurt master @a ~ ~ ~ 2 0.5
 execute if entity @s[scores={AsaMatrix=26}] positioned ^ ^3 ^5 run function asa_animator:dyno/anim/breath/events/shot

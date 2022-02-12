@@ -27,7 +27,7 @@ execute if entity @s[scores={AsaMatrix=2}] run playsound entity.hoglin.step mast
 execute if entity @s[scores={AsaMatrix=10}] run playsound entity.hoglin.step master @a ~ ~ ~ 2 0.5
 
 # 回転
-execute if entity @s[tag=!DashSpin,tag=!DashBite] positioned ^ ^ ^5 if entity @e[distance=0..5,type=marker,tag=TigaDashTarget] run scoreboard players set #mhdp_tiga_dash_count AsaMatrix 2
-execute if entity @s[tag=DashBite] positioned ^ ^ ^5 if entity @e[distance=0..5,type=marker,tag=TigaDashTarget] run scoreboard players set #mhdp_tiga_dash_count AsaMatrix 0
-execute if entity @s[tag=DashSpin] positioned ^ ^ ^10 if entity @e[distance=0..5,type=marker,tag=TigaDashTarget] run scoreboard players set #mhdp_tiga_dash_count AsaMatrix 0
-execute if entity @e[distance=0..5,type=marker,tag=TigaDashTarget] run kill @e[distance=0..5,type=marker,tag=TigaDashTarget]
+execute if entity @s[tag=!DashSpin,tag=!DashBite] positioned ^ ^ ^5 if entity @e[type=marker,tag=TigaDashTarget,distance=0..5] run scoreboard players set #mhdp_tiga_dash_count AsaMatrix 2
+execute if entity @s[tag=DashBite] positioned ^ ^ ^5 if entity @e[type=marker,tag=TigaDashTarget,distance=0..5] run scoreboard players set #mhdp_tiga_dash_count AsaMatrix 0
+execute if entity @s[tag=DashSpin] positioned ^ ^ ^10 if entity @e[type=marker,tag=TigaDashTarget,distance=0..5] run scoreboard players set #mhdp_tiga_dash_count AsaMatrix 0
+execute if entity @e[type=marker,tag=TigaDashTarget,distance=0..5] run kill @e[type=marker,tag=TigaDashTarget,distance=0..5]
