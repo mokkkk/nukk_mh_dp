@@ -7,6 +7,7 @@
 
 # ボスバー設定
     bossbar add asa_animator:teo_health [{"text": "炎王龍"},{"text":"\uE000","font":"mhdp"}]
+    bossbar set asa_animator:teo_health color red
     execute store result bossbar asa_animator:teo_health max run scoreboard players get #mhdp_teo_health AsaMatrix
     bossbar set asa_animator:teo_health players @a
     bossbar set asa_animator:teo_health visible true
