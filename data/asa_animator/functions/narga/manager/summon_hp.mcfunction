@@ -1,7 +1,7 @@
 
 # HPセット
     execute if data storage mh_dp:settings Custom{QuestRank:0} run scoreboard players set #mhdp_narga_health AsaMatrix 45000
-execute if data storage mh_dp:settings Custom{QuestRank:1} run scoreboard players set #mhdp_narga_health AsaMatrix 65000
+    execute if data storage mh_dp:settings Custom{QuestRank:1} run scoreboard players set #mhdp_narga_health AsaMatrix 65000
 # HP倍率適用
     scoreboard players operation #mhdp_narga_health AsaMatrix *= #mhdp_hp_multiply AsaMatrix
     execute store result score #mhdp_narga_head_damage AsaMatrix store result score #mhdp_narga_arml_damage AsaMatrix store result score #mhdp_narga_tail_damage AsaMatrix store result score #mhdp_narga_anger_damage_max AsaMatrix run scoreboard players operation #mhdp_narga_health AsaMatrix /= #asam_const_100 AsaMatrix
