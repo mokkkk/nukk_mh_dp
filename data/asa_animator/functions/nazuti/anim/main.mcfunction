@@ -11,6 +11,10 @@
     # 飛び掛かり
     execute if entity @s[tag=AnmJump] run function asa_animator:nazuti/anim/jump/main
 
+    # 突進
+    execute if entity @s[tag=AnmDashStart] run function asa_animator:nazuti/anim/dash_start/main
+    execute if entity @s[tag=AnmDash] run function asa_animator:nazuti/anim/dash/main
+
 ## その他
     # 登場
     # execute if entity @s[tag=AnmSummon] run function asa_animator:nazuti/anim/summon/main
