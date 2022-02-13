@@ -28,10 +28,10 @@ execute as @e[type=armor_stand,tag=NazutiParts] run function #asa_matrix:animate
 function asa_animator:nazuti/model
 
 execute if entity @s[scores={AsaMatrix=1..10}] at @s run tp @s ^ ^ ^0.4
-execute if entity @s[scores={AsaMatrix=11..15}] at @s run tp @s ^ ^ ^1.5
-execute if entity @s[scores={AsaMatrix=16..28}] at @s run tp @s ^ ^ ^0.4
+execute if entity @s[scores={AsaMatrix=11..15}] at @s run tp @s ^ ^ ^1.7
+execute if entity @s[scores={AsaMatrix=16..28}] at @s run tp @s ^ ^ ^0.3
 execute if entity @s[scores={AsaMatrix=16..28}] at @s run function asa_animator:nazuti/manager/rotate_lr
-execute if entity @s[scores={AsaMatrix=29..33}] at @s run tp @s ^ ^ ^1.5
+execute if entity @s[scores={AsaMatrix=29..33}] at @s run tp @s ^ ^ ^1.7
 execute if entity @s[scores={AsaMatrix=34..50}] at @s run tp @s ^ ^ ^0.05
 execute if entity @s[scores={AsaMatrix=51..55}] at @s run tp @s ^ ^ ^0.05
 
@@ -42,9 +42,10 @@ execute if entity @s[scores={AsaMatrix=36}] at @s positioned ~ ~5 ~ run function
 execute if entity @s[scores={AsaMatrix=41..}] at @s positioned ~ ~5 ~ run tp @s ~ ~ ~
 execute if entity @s[scores={AsaMatrix=41..}] at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
 
-execute if entity @s[scores={AsaMatrix=15}] run function asa_animator:kushala/manager/particle/step
+execute if entity @s[scores={AsaMatrix=1}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
+execute if entity @s[scores={AsaMatrix=15}] run function asa_animator:nazuti/manager/particle/step
 execute if entity @s[scores={AsaMatrix=25}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
-execute if entity @s[scores={AsaMatrix=36}] run function asa_animator:kushala/manager/particle/step
+execute if entity @s[scores={AsaMatrix=36}] run function asa_animator:nazuti/manager/particle/step
 
 execute if entity @s[scores={AsaMatrix=11..16}] at @s run function asa_animator:nazuti/anim/dash/events/damage
 execute if entity @s[scores={AsaMatrix=28..35}] at @s run function asa_animator:nazuti/anim/dash/events/damage

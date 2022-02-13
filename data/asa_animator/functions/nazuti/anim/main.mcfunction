@@ -1,6 +1,5 @@
 
-## 地上
-
+## 共通
     # ひっかき
     execute if entity @s[tag=AnmClawL] run function asa_animator:nazuti/anim/claw_l/main
     execute if entity @s[tag=AnmClawR] run function asa_animator:nazuti/anim/claw_r/main
@@ -14,6 +13,12 @@
     # 突進
     execute if entity @s[tag=AnmDashStart] run function asa_animator:nazuti/anim/dash_start/main
     execute if entity @s[tag=AnmDash] run function asa_animator:nazuti/anim/dash/main
+
+    # ボディプレス
+    execute if entity @s[tag=AnmPress] run function asa_animator:nazuti/anim/press/main
+
+    # 毒弾ブレス
+    execute if entity @s[tag=AnmBreathB] run function asa_animator:nazuti/anim/breath_ball/main
 
 ## その他
     # 登場
