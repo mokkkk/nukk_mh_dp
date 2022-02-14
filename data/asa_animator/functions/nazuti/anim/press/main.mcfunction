@@ -2,7 +2,7 @@
 scoreboard players add @s AsaMatrix 1
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:nazuti/anim/press/start
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:nazuti/anim/press/keyframes/0
-execute if entity @s[scores={AsaMatrix=1..5}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=1..5}] run tp @s ^0 ^0 ^
 execute if entity @s[scores={AsaMatrix=6}] run function asa_animator:nazuti/anim/press/keyframes/1
 execute if entity @s[scores={AsaMatrix=6..12}] run tp @s ^0 ^0 ^-0.1
 execute if entity @s[scores={AsaMatrix=13}] run function asa_animator:nazuti/anim/press/keyframes/2
@@ -35,6 +35,7 @@ execute if entity @s[scores={AsaMatrix=5}] run playsound entity.ender_dragon.fla
 execute if entity @s[scores={AsaMatrix=12}] run function asa_animator:nazuti/manager/particle/step
 execute if entity @s[scores={AsaMatrix=34}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=13..56}] at @s run function asa_animator:nazuti/manager/rotate
-execute if entity @s[scores={AsaMatrix=13..56}] unless entity @e[tag=NazutiAttacktarget,distance=0..8] at @s run tp @s ^ ^ ^0.2
+execute if entity @s[scores={AsaMatrix=13..56}] unless entity @e[tag=NazutiAttackTarget,distance=0..5] at @s run tp @s ^ ^ ^0.2
+execute if entity @s[scores={AsaMatrix=57..63}] unless entity @e[tag=NazutiAttackTarget,distance=0..5] at @s run tp @s ^ ^ ^0.7
 execute if entity @s[scores={AsaMatrix=63}] run function asa_animator:nazuti/anim/press/events/damage
 execute if entity @s[scores={AsaMatrix=97}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7

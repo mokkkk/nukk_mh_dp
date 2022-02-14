@@ -14,4 +14,5 @@ scoreboard players set #diablos_height_target AsaMatrix 20
 scoreboard players operation #diablos_mine_y AsaMatrix /= #diablos_height_target AsaMatrix
 
 # 終了
+data remove storage mhdp: Temp.Pos
 kill @e[type=marker,tag=DiablosMovePos]

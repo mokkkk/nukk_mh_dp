@@ -2,6 +2,7 @@
 # 受けたダメージ計算
 data modify storage mhdp: Temp.Health set from entity @s Health
 execute store result score #reia_damage AsaMatrix run data get storage mhdp: Temp.Health 100
+data remove storage mhdp: Temp.Health
 scoreboard players remove #reia_damage AsaMatrix 100000
 
 # ダメージ0.5以下なら無効

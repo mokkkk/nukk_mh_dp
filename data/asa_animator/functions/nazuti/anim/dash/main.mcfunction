@@ -30,7 +30,7 @@ function asa_animator:nazuti/model
 execute if entity @s[scores={AsaMatrix=1..10}] at @s run tp @s ^ ^ ^0.4
 execute if entity @s[scores={AsaMatrix=11..15}] at @s run tp @s ^ ^ ^1.7
 execute if entity @s[scores={AsaMatrix=16..28}] at @s run tp @s ^ ^ ^0.3
-execute if entity @s[scores={AsaMatrix=16..28}] at @s run function asa_animator:nazuti/manager/rotate_lr
+execute if entity @s[scores={AsaMatrix=16..28}] at @s run function asa_animator:nazuti/manager/rotate_lr_d
 execute if entity @s[scores={AsaMatrix=29..33}] at @s run tp @s ^ ^ ^1.7
 execute if entity @s[scores={AsaMatrix=34..50}] at @s run tp @s ^ ^ ^0.05
 execute if entity @s[scores={AsaMatrix=51..55}] at @s run tp @s ^ ^ ^0.05

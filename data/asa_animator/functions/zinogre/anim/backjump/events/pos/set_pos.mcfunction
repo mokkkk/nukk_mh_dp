@@ -14,4 +14,5 @@ scoreboard players set #zinogre_height_target AsaMatrix 16
 scoreboard players operation #zinogre_mine_y AsaMatrix /= #zinogre_height_target AsaMatrix
 
 # 終了
+data remove storage mhdp: Temp.Pos
 kill @e[type=marker,tag=ZinogreMovePos]

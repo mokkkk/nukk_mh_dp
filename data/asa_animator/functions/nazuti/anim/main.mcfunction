@@ -17,8 +17,15 @@
     # ボディプレス
     execute if entity @s[tag=AnmPress] run function asa_animator:nazuti/anim/press/main
 
+    # 舌伸ばし
+    execute if entity @s[tag=AnmTongueL] run function asa_animator:nazuti/anim/tongue_l/main
+    execute if entity @s[tag=AnmTongueR] run function asa_animator:nazuti/anim/tongue_r/main
+
     # 毒弾ブレス
     execute if entity @s[tag=AnmBreathB] run function asa_animator:nazuti/anim/breath_ball/main
+
+    # 霧ブレス
+    execute if entity @s[tag=AnmBreathF] run function asa_animator:nazuti/anim/breath_fog/main
 
 ## その他
     # 登場
