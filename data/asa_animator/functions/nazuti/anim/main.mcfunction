@@ -20,6 +20,9 @@
     # 舌伸ばし
     execute if entity @s[tag=AnmTongueL] run function asa_animator:nazuti/anim/tongue_l/main
     execute if entity @s[tag=AnmTongueR] run function asa_animator:nazuti/anim/tongue_r/main
+    # 舌薙ぎ払い
+    execute if entity @s[tag=AnmTongueLL] run function asa_animator:nazuti/anim/tongue_large_l/main
+    execute if entity @s[tag=AnmTongueLR] run function asa_animator:nazuti/anim/tongue_large_r/main
 
     # 毒弾ブレス
     execute if entity @s[tag=AnmBreathB] run function asa_animator:nazuti/anim/breath_ball/main
