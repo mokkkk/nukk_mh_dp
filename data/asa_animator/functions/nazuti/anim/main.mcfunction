@@ -34,6 +34,10 @@
     # 霧ブレス
     execute if entity @s[tag=AnmBreathF] run function asa_animator:nazuti/anim/breath_fog/main
 
+    # 霧展開
+    execute if entity @s[tag=AnmFogF] run function asa_animator:nazuti/anim/fog_forward/main
+    execute if entity @s[tag=AnmFogB] run function asa_animator:nazuti/anim/fog_back/main
+
 ## 霞纏い lv1
 
 ## その他
@@ -43,7 +47,7 @@
     # execute if entity @s[tag=AnmSummonEndFly] run function asa_animator:nazuti/anim/summon_end_fly/main
     # 咆哮
     # execute if entity @s[tag=AnmVoice] run function asa_animator:nazuti/anim/voice/main
-    # 状態変化
+    # 霞纏い
     execute if entity @s[tag=AnmCharge] run function asa_animator:nazuti/anim/charge/main
     # 討伐
     # execute if entity @s[tag=AnmDeath] run function asa_animator:nazuti/anim/death/main

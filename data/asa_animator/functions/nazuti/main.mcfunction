@@ -24,5 +24,8 @@ execute unless entity @s[tag=AnmTurn] unless predicate asa_animator:nazuti/stay 
 # execute if entity @s[tag=!IsAnger] as @e[type=slime,tag=NazutiParts] run function asa_animator:nazuti/manager/health/pos
 # execute if entity @s[tag=IsAnger] as @e[type=slime,tag=NazutiParts] run function asa_animator:nazuti/manager/health/pos_anger
 
+# 毒霧移動
+execute if entity @e[type=marker,tag=NazutiPoisonMover] as @e[type=marker,tag=NazutiPoisonMover] run function asa_animator:nazuti/manager/poison/move
+
 # デスポーン
 # execute unless entity @s[tag=AnmSummon] if data storage mh_dp:settings {Custom:{DisableDespawn:false}} unless entity @a[distance=0..64] run function asa_animator:nazuti/manager/despawn

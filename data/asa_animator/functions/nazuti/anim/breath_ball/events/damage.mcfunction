@@ -10,4 +10,5 @@ playsound item.bucket.fill_lava master @a ~ ~ ~ 2 0.7
 particle witch ~ ~ ~ 0.3 0.3 0.3 1 60
 
 summon marker ~ ~ ~ {Tags:["MonsterShot","NazutiPoison"]}
+data modify entity @e[type=marker,tag=NazutiPoison,sort=nearest,limit=1] Rotation[0] set from entity @s Rotation[0]
 kill @s
