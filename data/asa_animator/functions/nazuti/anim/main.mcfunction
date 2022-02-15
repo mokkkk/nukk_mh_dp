@@ -38,7 +38,14 @@
     execute if entity @s[tag=AnmFogF] run function asa_animator:nazuti/anim/fog_forward/main
     execute if entity @s[tag=AnmFogB] run function asa_animator:nazuti/anim/fog_back/main
 
+
 ## 霞纏い lv1
+
+    # 疲労霧ブレス
+    execute if entity @s[tag=AnmBreathFH] run function asa_animator:nazuti/anim/breath_fog_h/main
+    # 盲目霧ブレス
+    execute if entity @s[tag=AnmBreathFB] run function asa_animator:nazuti/anim/breath_fog_b/main
+
 
 ## その他
     # 登場
