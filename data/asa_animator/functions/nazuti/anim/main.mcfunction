@@ -24,11 +24,17 @@
     execute if entity @s[tag=AnmTongueLL] run function asa_animator:nazuti/anim/tongue_large_l/main
     execute if entity @s[tag=AnmTongueLR] run function asa_animator:nazuti/anim/tongue_large_r/main
 
+    # 頭突き薙ぎ払い
+    execute if entity @s[tag=AnmHeadL] run function asa_animator:nazuti/anim/head_l/main
+    execute if entity @s[tag=AnmHeadR] run function asa_animator:nazuti/anim/head_r/main
+
     # 毒弾ブレス
     execute if entity @s[tag=AnmBreathB] run function asa_animator:nazuti/anim/breath_ball/main
 
     # 霧ブレス
     execute if entity @s[tag=AnmBreathF] run function asa_animator:nazuti/anim/breath_fog/main
+
+## 霞纏い lv1
 
 ## その他
     # 登場
@@ -38,7 +44,7 @@
     # 咆哮
     # execute if entity @s[tag=AnmVoice] run function asa_animator:nazuti/anim/voice/main
     # 状態変化
-    # execute if entity @s[tag=AnmCharge] run function asa_animator:nazuti/anim/charge/main
+    execute if entity @s[tag=AnmCharge] run function asa_animator:nazuti/anim/charge/main
     # 討伐
     # execute if entity @s[tag=AnmDeath] run function asa_animator:nazuti/anim/death/main
     # 飛行中討伐

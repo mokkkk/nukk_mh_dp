@@ -10,7 +10,7 @@ execute if entity @s[tag=MhdpRandom,tag=!MhdpMainhand] run data modify storage m
 execute unless entity @s[tag=MhdpRandom] if score #mhdp_temp_main AsaMatrix matches 1.. run data modify storage mhdp: Temp.Item.Target set from storage mhdp: Temp.Item.Mainhand
 execute unless entity @s[tag=MhdpRandom] if score #mhdp_temp_off AsaMatrix matches 1.. run data modify storage mhdp: Temp.Item.Target set from storage mhdp: Temp.Item.Offhand
 
-execute if data storage mhdp: Temp.Item.Target run function asa_animator:nazuti/anim/tongue_l/events/drop_
+execute if data storage mhdp: Temp.Item.Target at @s run function asa_animator:nazuti/anim/tongue_l/events/drop_
 
 tag @s remove MhdpRandom
 tag @s remove MhdpMainhand

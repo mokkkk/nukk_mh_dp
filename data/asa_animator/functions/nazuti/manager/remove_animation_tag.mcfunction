@@ -65,9 +65,10 @@ tag @s remove ComboI
 tag @s remove ComboJ
 tag @s remove ComboK
 
-kill @e[type=marker,tag=KushalaBreathTarget]
-kill @e[type=marker,tag=KushalaMoveRotate]
-kill @e[type=marker,tag=KushalaDashTarget]
-kill @e[type=marker,tag=KushalaChargeFPos]
-kill @e[type=marker,tag=KushalaSpTornado]
-kill @e[type=marker,tag=KushalaMovePos]
+kill @e[type=marker,tag=NazutiBreathTarget]
+kill @e[type=marker,tag=NazutiMoveRotate]
+kill @e[type=marker,tag=NazutiDashTarget]
+kill @e[type=marker,tag=NazutiChargeFPos]
+kill @e[type=marker,tag=NazutiSpTornado]
+kill @e[type=marker,tag=NazutiMovePos]
+kill @e[type=marker,tag=NazutiTongue]

@@ -41,11 +41,11 @@ execute if entity @s[scores={AsaMatrix=35}] run playsound entity.llama.spit mast
 execute if entity @s[scores={AsaMatrix=35}] run playsound entity.llama.spit master @a ~ ~ ~ 3 0.8
 execute if entity @s[scores={AsaMatrix=34}] as @e[type=marker,tag=NazutiTongue] run tp @s ~ ~ ~ ~-30 0
 execute if entity @s[scores={AsaMatrix=35..40}] run function asa_animator:nazuti/anim/tongue_large_l/events/start_r
-execute if entity @s[scores={AsaMatrix=37}] positioned ^ ^1 ^8 run function asa_animator:nazuti/anim/tongue_large_l/events/damage
+execute if entity @s[scores={AsaMatrix=37}] positioned ^ ^1 ^9 run function asa_animator:nazuti/anim/tongue_large_l/events/damage
 execute if entity @s[scores={AsaMatrix=45}] run playsound entity.llama.spit master @a ~ ~ ~ 3 0.5
 execute if entity @s[scores={AsaMatrix=45}] run playsound entity.llama.spit master @a ~ ~ ~ 3 0.8
 execute if entity @s[scores={AsaMatrix=41}] as @e[type=marker,tag=NazutiTongue] run tp @s ~ ~ ~ ~30 0
 execute if entity @s[scores={AsaMatrix=45..50}] run function asa_animator:nazuti/anim/tongue_large_l/events/start_l
-execute if entity @s[scores={AsaMatrix=47}] positioned ^ ^1 ^8 run function asa_animator:nazuti/anim/tongue_large_l/events/damage
+execute if entity @s[scores={AsaMatrix=47}] positioned ^ ^1 ^9 run function asa_animator:nazuti/anim/tongue_large_l/events/damage
 
-execute if entity @s[scores={AsaMatrix=51}] run kill @e[tag=NazutiTongue]
+execute if entity @s[scores={AsaMatrix=51}] run kill @e[type=marker,tag=NazutiTongue]
