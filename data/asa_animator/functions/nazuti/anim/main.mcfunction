@@ -1,5 +1,9 @@
 
 ## 共通
+    # 移動
+    execute if entity @s[tag=AnmMoveStart] run function asa_animator:nazuti/anim/move_start/main
+    execute if entity @s[tag=AnmMove] run function asa_animator:nazuti/anim/move/main
+
     # ひっかき
     execute if entity @s[tag=AnmClawL] run function asa_animator:nazuti/anim/claw_l/main
     execute if entity @s[tag=AnmClawR] run function asa_animator:nazuti/anim/claw_r/main
@@ -40,12 +44,17 @@
 
 
 ## 霞纏い lv1
+    # 2連毒弾ブレス
+    execute if entity @s[tag=AnmBreathB2] run function asa_animator:nazuti/anim/breath_ball_2/main
 
     # 疲労霧ブレス
     execute if entity @s[tag=AnmBreathFH] run function asa_animator:nazuti/anim/breath_fog_h/main
     # 盲目霧ブレス
     execute if entity @s[tag=AnmBreathFB] run function asa_animator:nazuti/anim/breath_fog_b/main
 
+    # 霧移動
+    execute if entity @s[tag=AnmWindG] run function asa_animator:nazuti/anim/wind_gather/main
+    execute if entity @s[tag=AnmWindS] run function asa_animator:nazuti/anim/wind_spread/main
 
 ## その他
     # 登場
