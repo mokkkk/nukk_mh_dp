@@ -56,6 +56,12 @@
     execute if entity @s[tag=AnmWindG] run function asa_animator:nazuti/anim/wind_gather/main
     execute if entity @s[tag=AnmWindS] run function asa_animator:nazuti/anim/wind_spread/main
 
+    # ステルス
+    execute if entity @s[tag=AnmStealth] run function asa_animator:nazuti/anim/stealth_start/main
+    # 移動
+    execute if entity @s[tag=AnmStealthMoveL] run function asa_animator:nazuti/anim/stealth_move_l/main
+    execute if entity @s[tag=AnmStealthMoveR] run function asa_animator:nazuti/anim/stealth_move_r/main
+
 ## その他
     # 登場
     # execute if entity @s[tag=AnmSummon] run function asa_animator:nazuti/anim/summon/main

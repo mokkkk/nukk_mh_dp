@@ -18,7 +18,6 @@ execute if entity @s[scores={AsaMatrix=7}] run playsound block.grass.step master
 
 execute at @s positioned ~ ~5 ~ run tp @s ~ ~ ~
 execute at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
-execute if entity @s[scores={AsaMatrix=14}] at @s run tp @s ~ ~0.8 ~
 function asa_animator:nazuti/manager/rotate
 execute at @s run tp @s ^ ^ ^1
 

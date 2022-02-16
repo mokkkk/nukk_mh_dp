@@ -24,8 +24,8 @@ execute if entity @s[scores={AsaMatrix=85..}] run function asa_animator:nazuti/a
 execute as @e[type=armor_stand,tag=NazutiParts] run function #asa_matrix:animate
 function asa_animator:nazuti/model
 
-# execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:nazuti/manager/model/change_to_open
-# execute if entity @s[scores={AsaMatrix=73}] run function asa_animator:nazuti/manager/model/change_to_normal
+execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:nazuti/manager/model/change_to_open
+execute if entity @s[scores={AsaMatrix=73}] run function asa_animator:nazuti/manager/model/change_to_normal
 
 execute if entity @s[scores={AsaMatrix=20}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=31}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
