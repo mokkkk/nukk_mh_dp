@@ -52,6 +52,9 @@
     # 盲目霧ブレス
     execute if entity @s[tag=AnmBreathFB] run function asa_animator:nazuti/anim/breath_fog_b/main
 
+    # ジャンプブレス
+    execute if entity @s[tag=AnmBreathJ] run function asa_animator:nazuti/anim/breath_jump/main
+
     # 霧移動
     execute if entity @s[tag=AnmWindG] run function asa_animator:nazuti/anim/wind_gather/main
     execute if entity @s[tag=AnmWindS] run function asa_animator:nazuti/anim/wind_spread/main

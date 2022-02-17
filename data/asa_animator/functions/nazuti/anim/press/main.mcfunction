@@ -42,5 +42,5 @@ execute if entity @s[scores={AsaMatrix=97}] run playsound block.grass.step maste
 
 execute if entity @s[scores={AsaMatrix=5}] if score #mhdp_nazuti_lv AsaMatrix matches 1.. run function asa_animator:nazuti/manager/model/stealth_lucent
 execute if entity @s[scores={AsaMatrix=14}] if score #mhdp_nazuti_lv AsaMatrix matches 1.. run function asa_animator:nazuti/manager/model/stealth_invisible
-execute if entity @s[scores={AsaMatrix=46}] if score #mhdp_nazuti_lv AsaMatrix matches 1.. run function asa_animator:nazuti/manager/model/stealth_lucent
+execute if entity @s[scores={AsaMatrix=50}] if score #mhdp_nazuti_lv AsaMatrix matches 1.. run function asa_animator:nazuti/manager/model/stealth_lucent
 execute if entity @s[scores={AsaMatrix=104}] if score #mhdp_nazuti_lv AsaMatrix matches 1.. run function asa_animator:nazuti/manager/model/stealth_end
