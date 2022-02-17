@@ -55,12 +55,14 @@
     # 霧移動
     execute if entity @s[tag=AnmWindG] run function asa_animator:nazuti/anim/wind_gather/main
     execute if entity @s[tag=AnmWindS] run function asa_animator:nazuti/anim/wind_spread/main
+    execute if entity @s[tag=AnmWindT] run function asa_animator:nazuti/anim/wind_target/main
 
     # ステルス
     execute if entity @s[tag=AnmStealth] run function asa_animator:nazuti/anim/stealth_start/main
     # 移動
     execute if entity @s[tag=AnmStealthMoveL] run function asa_animator:nazuti/anim/stealth_move_l/main
     execute if entity @s[tag=AnmStealthMoveR] run function asa_animator:nazuti/anim/stealth_move_r/main
+    execute if entity @s[tag=AnmStealthMoveB] run function asa_animator:nazuti/anim/stealth_move_back/main
 
 ## その他
     # 登場

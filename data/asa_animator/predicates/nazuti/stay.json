@@ -175,6 +175,13 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
+          "nbt": "{Tags:[\"AnmWindT\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
           "nbt": "{Tags:[\"AnmStealth\"]}"
         }
       },
