@@ -37,3 +37,8 @@ execute if entity @s[scores={AsaMatrix=41..56}] positioned ^ ^ ^16 run function 
 execute if entity @s[scores={AsaMatrix=45..61}] positioned ^ ^ ^19 run function asa_animator:nazuti/anim/breath_fog/events/damage
 execute if entity @s[scores={AsaMatrix=49..65}] positioned ^ ^ ^22 run function asa_animator:nazuti/anim/breath_fog/events/damage
 execute if entity @s[scores={AsaMatrix=53..69}] positioned ^ ^ ^25 run function asa_animator:nazuti/anim/breath_fog/events/damage
+
+execute if entity @s[scores={AsaMatrix=1}] if score #mhdp_nazuti_lv AsaMatrix matches 1.. run function asa_animator:nazuti/manager/model/stealth_lucent
+execute if entity @s[scores={AsaMatrix=6}] if score #mhdp_nazuti_lv AsaMatrix matches 1.. run function asa_animator:nazuti/manager/model/stealth_invisible
+execute if entity @s[scores={AsaMatrix=22}] if score #mhdp_nazuti_lv AsaMatrix matches 1.. run function asa_animator:nazuti/manager/model/stealth_lucent
+execute if entity @s[scores={AsaMatrix=27}] if score #mhdp_nazuti_lv AsaMatrix matches 1.. run function asa_animator:nazuti/manager/model/stealth_end
