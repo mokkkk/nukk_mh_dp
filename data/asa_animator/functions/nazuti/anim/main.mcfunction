@@ -71,6 +71,15 @@
     execute if entity @s[tag=AnmCounterMove] run function asa_animator:nazuti/anim/counter_move/main
     execute if entity @s[tag=AnmCounterBreath] run function asa_animator:nazuti/anim/counter_breath/main
 
+## 霧纏い lv2
+    # 2連ボディプレス
+    execute if entity @s[tag=AnmPressC0] run function asa_animator:nazuti/anim/press_c_0/main
+    execute if entity @s[tag=AnmPressC1] run function asa_animator:nazuti/anim/press_c_1/main
+
+    # 2連頭突き
+    execute if entity @s[tag=AnmHead2L] run function asa_animator:nazuti/anim/head_2_l/main
+    execute if entity @s[tag=AnmHead2R] run function asa_animator:nazuti/anim/head_2_r/main
+
 ## その他
     # 登場
     # execute if entity @s[tag=AnmSummon] run function asa_animator:nazuti/anim/summon/main
