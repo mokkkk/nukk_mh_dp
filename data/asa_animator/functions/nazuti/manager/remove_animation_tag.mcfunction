@@ -65,6 +65,8 @@ tag @s remove ComboI
 tag @s remove ComboJ
 tag @s remove ComboK
 
+tag @s remove IsMoveRight
+
 kill @e[type=marker,tag=NazutiBreathTarget]
 kill @e[type=marker,tag=NazutiMoveRotate]
 kill @e[type=marker,tag=NazutiDashTarget]

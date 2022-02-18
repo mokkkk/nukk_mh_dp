@@ -28,3 +28,4 @@ data modify entity @e[type=armor_stand,tag=NazutiParts,tag=WingL1,limit=1] Armor
 data modify entity @e[type=armor_stand,tag=NazutiParts,tag=WingR1,limit=1] ArmorItems[3].tag.CustomModelData set value 10084
 
 tag @s add IsInvisible
+tag @s add IsInvisible2

@@ -17,7 +17,7 @@ execute if predicate asa_animator:nazuti/stay run function asa_animator:nazuti/a
 execute unless entity @s[tag=AnmTurn] unless predicate asa_animator:nazuti/stay run function asa_animator:nazuti/anim/main
 
 # パーティクル
-# execute if score #mhdp_nazuti_lv AsaMatrix matches 1 run particle cloud ~ ~2 ~ 1.5 1.5 1.5 0.2 2
+execute unless entity @s[tag=IsInvisible2] if score #mhdp_nazuti_lv AsaMatrix matches 1.. run particle poof ~ ~2 ~ 2 1.5 2 0.05 1
 # execute if score #mhdp_nazuti_lv AsaMatrix matches 2 run particle large_smoke ~ ~2 ~ 1.5 1.5 1.5 0.3 2
 
 # 当たり判定位置

@@ -67,6 +67,10 @@
     execute if entity @s[tag=AnmStealthMoveR] run function asa_animator:nazuti/anim/stealth_move_r/main
     execute if entity @s[tag=AnmStealthMoveB] run function asa_animator:nazuti/anim/stealth_move_back/main
 
+    # カウンター
+    execute if entity @s[tag=AnmCounterMove] run function asa_animator:nazuti/anim/counter_move/main
+    execute if entity @s[tag=AnmCounterBreath] run function asa_animator:nazuti/anim/counter_breath/main
+
 ## その他
     # 登場
     # execute if entity @s[tag=AnmSummon] run function asa_animator:nazuti/anim/summon/main
