@@ -72,6 +72,9 @@
     execute if entity @s[tag=AnmCounterBreath] run function asa_animator:nazuti/anim/counter_breath/main
 
 ## 霧纏い lv2
+    # 縦薙ぎ霧ブレス
+    execute if entity @s[tag=AnmBreathFV] run function asa_animator:nazuti/anim/breath_fog_v/main
+
     # 2連ボディプレス
     execute if entity @s[tag=AnmPressC0] run function asa_animator:nazuti/anim/press_c_0/main
     execute if entity @s[tag=AnmPressC1] run function asa_animator:nazuti/anim/press_c_1/main
