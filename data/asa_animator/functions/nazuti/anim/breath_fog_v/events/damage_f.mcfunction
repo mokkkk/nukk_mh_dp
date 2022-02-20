@@ -1,5 +1,5 @@
-# 5 Damage
-data modify storage score_damage: Argument set value {Damage:10.0f, BypassArmor:0b}
+# 7 Damage
+data modify storage score_damage: Argument set value {Damage:14.0f, BypassArmor:0b}
 data modify storage mhdp: DamageType set value {Epf:1,Knockback:0b}
 
 scoreboard players set #mhdp_nazuti_temp AsaMatrix 0

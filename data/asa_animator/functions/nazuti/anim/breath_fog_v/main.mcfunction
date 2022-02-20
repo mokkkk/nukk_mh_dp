@@ -29,7 +29,7 @@ function asa_animator:nazuti/model
 
 execute if entity @s[scores={AsaMatrix=6}] run function asa_animator:nazuti/manager/particle/step
 execute if entity @s[scores={AsaMatrix=77}] run function asa_animator:nazuti/manager/particle/step
-execute if entity @s[scores={AsaMatrix=14..41}] run function asa_animator:nazuti/manager/rotate
+execute if entity @s[scores={AsaMatrix=14..38}] run function asa_animator:nazuti/manager/rotate
 
 execute if entity @s[scores={AsaMatrix=14}] run playsound entity.player.burp master @a ~ ~ ~ 3 0.5
 execute if entity @s[scores={AsaMatrix=14}] run playsound item.bucket.empty_lava master @a ~ ~ ~ 2 0.5

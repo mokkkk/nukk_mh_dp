@@ -189,6 +189,13 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
+          "nbt": "{Tags:[\"AnmBreathU\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
           "nbt": "{Tags:[\"AnmFogF\"]}"
         }
       },
@@ -260,6 +267,34 @@
         "entity": "this",
         "predicate": {
           "nbt": "{Tags:[\"AnmCounterBreath\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmSp0\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmSp1\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmSp2\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmSp3\"]}"
         }
       },
       {

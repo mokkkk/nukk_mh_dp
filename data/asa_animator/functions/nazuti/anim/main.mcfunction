@@ -69,9 +69,12 @@
 
     # カウンター
     execute if entity @s[tag=AnmCounterMove] run function asa_animator:nazuti/anim/counter_move/main
-    execute if entity @s[tag=AnmCounterBreath] run function asa_animator:nazuti/anim/counter_breath/main
+    execute if entity @s[tag=AnmCounterBreath] if score #mhdp_nazuti_lv AsaMatrix matches ..1 run function asa_animator:nazuti/anim/counter_breath/main
+    execute if entity @s[tag=AnmCounterBreath] if score #mhdp_nazuti_lv AsaMatrix matches 2.. run function asa_animator:nazuti/anim/counter_breath_v/main
 
 ## 霧纏い lv2
+    # 毒弾ブレス乱射
+    execute if entity @s[tag=AnmBreathU] run function asa_animator:nazuti/anim/breath_up/main
     # 縦薙ぎ霧ブレス
     execute if entity @s[tag=AnmBreathFV] run function asa_animator:nazuti/anim/breath_fog_v/main
 
@@ -82,6 +85,12 @@
     # 2連頭突き
     execute if entity @s[tag=AnmHead2L] run function asa_animator:nazuti/anim/head_2_l/main
     execute if entity @s[tag=AnmHead2R] run function asa_animator:nazuti/anim/head_2_r/main
+
+    # ステルスコンボ
+    execute if entity @s[tag=AnmSp0] run function asa_animator:nazuti/anim/sp_attack_0/main
+    execute if entity @s[tag=AnmSp1] run function asa_animator:nazuti/anim/sp_attack_1/main
+    execute if entity @s[tag=AnmSp2] run function asa_animator:nazuti/anim/sp_attack_2/main
+    execute if entity @s[tag=AnmSp3] run function asa_animator:nazuti/anim/sp_attack_3/main
 
 ## その他
     # 登場
