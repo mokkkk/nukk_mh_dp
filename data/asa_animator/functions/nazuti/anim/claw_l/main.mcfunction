@@ -26,3 +26,5 @@ execute if entity @s[scores={AsaMatrix=1..10}] run function asa_animator:nazuti/
 execute if entity @s[scores={AsaMatrix=21..25}] unless entity @e[tag=NazutiAttackTarget,distance=0..5] run tp @s ^ ^ ^0.8
 
 execute if entity @s[scores={AsaMatrix=25}] positioned ^0.5 ^ ^4 run function asa_animator:nazuti/anim/claw_l/events/damage
+
+execute if entity @s[scores={AsaMatrix=27}] unless predicate asa_animator:nazuti/combo run function asa_animator:nazuti/manager/cancel_animation

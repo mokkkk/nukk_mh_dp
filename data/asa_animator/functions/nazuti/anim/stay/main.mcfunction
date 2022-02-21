@@ -17,5 +17,9 @@ execute if entity @s[scores={AsaMatrix=56..}] run function asa_animator:nazuti/a
 execute as @e[type=armor_stand,tag=NazutiParts] run function #asa_matrix:animate
 function asa_animator:nazuti/model
 
+execute unless predicate asa_animator:nazuti/combo if entity @s[scores={AsaMatrix=1}] run tag @s add ChangeAnm
+# execute if entity @s[tag=IsAnger,scores={AsaMatrix=1}] run tag @s add ChangeAnm
+# execute if entity @s[scores={AsaMatrix=1}] if score #mhdp_nazuti_actcount AsaMatrix matches 1.. run function asa_animator:nazuti/anim/stay/events/change
+
 execute at @s if block ~ ~ ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
 execute at @s unless block ~ ~0.2 ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~

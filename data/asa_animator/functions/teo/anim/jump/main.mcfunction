@@ -30,7 +30,7 @@ execute if entity @s[scores={AsaMatrix=61}] run function asa_animator:teo/manage
 execute if entity @s[scores={AsaMatrix=10}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=27}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 
-execute if entity @s[scores={AsaMatrix=..19}] at @s run function asa_animator:teo/manager/rotate
+execute if entity @s[scores={AsaMatrix=2..19}] at @s run function asa_animator:teo/manager/rotate
 execute if entity @s[scores={AsaMatrix=20}] at @s run function asa_animator:teo/anim/jump/events/pos/set_pos
 execute if entity @s[scores={AsaMatrix=21..40}] run function asa_animator:teo/anim/jump/events/pos/offset
 

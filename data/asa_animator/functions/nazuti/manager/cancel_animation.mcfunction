@@ -47,13 +47,6 @@ tag @s remove AnmSp3
 tag @s remove AnmCharge
 tag @s remove AnmTurn
 
-tag @s remove ComboA
-tag @s remove ComboB
-tag @s remove ComboC
-tag @s remove ComboD
-tag @s remove ComboE
-tag @s remove ComboF
-
 tag @s remove IsMoveRight
 tag @s remove IsAnmStealth
 
@@ -64,3 +57,5 @@ kill @e[type=marker,tag=NazutiChargeFPos]
 kill @e[type=marker,tag=NazutiSpTornado]
 kill @e[type=marker,tag=NazutiMovePos]
 kill @e[type=marker,tag=NazutiTongue]
+
+tag @s add ChangeAnm

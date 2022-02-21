@@ -3,7 +3,6 @@ execute as @e[type=armor_stand,tag=DiablosParts] run function #asa_matrix:animat
 execute at @s align y run tp @s ~ ~5 ~
 execute at @s run function asa_animator:zinogre/manager/check_ground
 tag @s remove AnmMove
-tag @s add AnmDashStart
 
 # 状態取得
 # execute if score #mhdp_nazuti_lv AsaMatrix matches 1.. run tag @s add NazutiLv1
