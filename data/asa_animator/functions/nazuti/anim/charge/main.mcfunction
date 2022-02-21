@@ -19,6 +19,8 @@ function asa_animator:nazuti/model
 
 execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=18..42}] positioned as @e[type=armor_stand,tag=NazutiParts,tag=HeadU] positioned ^ ^2 ^1 rotated ~ -60 run function asa_animator:nazuti/anim/charge/events/particle
-execute if entity @s[scores={AsaMatrix=33..42}] run function asa_animator:nazuti/anim/charge/events/particle_g
 execute if entity @s[scores={AsaMatrix=18}] run playsound block.fire.extinguish master @a ~ ~ ~ 2 0.5
+execute if entity @s[scores={AsaMatrix=18..30}] run playsound entity.player.breath master @a ~ ~ ~ 2 0.7
+execute if entity @s[scores={AsaMatrix=18..30}] run playsound entity.player.breath master @a ~ ~ ~ 2 0.9
 execute if entity @s[scores={AsaMatrix=52}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
+execute if entity @s[scores={AsaMatrix=33}] run function asa_animator:nazuti/manager/lv/up

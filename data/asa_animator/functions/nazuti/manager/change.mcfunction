@@ -19,8 +19,8 @@ execute if predicate asa_animator:nazuti/stay if predicate asa_animator:nazuti/c
 # execute if entity @s[tag=IsAnger] if score #mhdp_nazuti_anger_count AsaMatrix matches ..0 run function asa_animator:nazuti/manager/end_anger
 
 # 強制
-# tag @s add AnmTongueLL
-function asa_animator:nazuti/manager/change_normal/_/tongue_large
+# tag @s add AnmMoveB
+# function asa_animator:nazuti/manager/change_normal/_/stealth
 
 # 終了
 tag @s remove ChangeAnm

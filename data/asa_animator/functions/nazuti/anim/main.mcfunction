@@ -3,6 +3,8 @@
     # 移動
     execute if entity @s[tag=AnmMoveStart] run function asa_animator:nazuti/anim/move_start/main
     execute if entity @s[tag=AnmMove] run function asa_animator:nazuti/anim/move/main
+    # 車庫入れ
+    execute if entity @s[tag=AnmMoveB] run function asa_animator:nazuti/anim/move_back/main
 
     # ひっかき
     execute if entity @s[tag=AnmClawL] run function asa_animator:nazuti/anim/claw_l/main

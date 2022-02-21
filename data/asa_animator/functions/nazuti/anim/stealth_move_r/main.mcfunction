@@ -30,7 +30,7 @@ execute at @s run function asa_animator:nazuti/manager/rotate
 execute if entity @s[scores={AsaMatrix=29..}] at @s positioned ~ ~5 ~ run tp @s ~ ~ ~
 execute if entity @s[scores={AsaMatrix=29..}] at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
 
-execute if entity @s[scores={AsaMatrix=1}] if score #mhdp_nazuti_lv AsaMatrix matches 2.. run function asa_animator:nazuti/manager/model/stealth_lucent
-execute if entity @s[scores={AsaMatrix=5}] if score #mhdp_nazuti_lv AsaMatrix matches 2.. run function asa_animator:nazuti/manager/model/stealth_invisible
+execute if entity @s[tag=!IsAnmStealth,scores={AsaMatrix=1}] if score #mhdp_nazuti_lv AsaMatrix matches 2.. run function asa_animator:nazuti/manager/model/stealth_lucent
+execute if entity @s[tag=!IsAnmStealth,scores={AsaMatrix=5}] if score #mhdp_nazuti_lv AsaMatrix matches 2.. run function asa_animator:nazuti/manager/model/stealth_invisible
 execute if entity @s[scores={AsaMatrix=37}] run function asa_animator:nazuti/manager/model/stealth_lucent
 execute if entity @s[scores={AsaMatrix=42}] run function asa_animator:nazuti/manager/model/stealth_end
