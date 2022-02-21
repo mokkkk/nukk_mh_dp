@@ -22,9 +22,11 @@
     execute if entity @s[tag=AnmPress] run function asa_animator:nazuti/anim/press/main
 
     # 舌伸ばし
+    execute if entity @s[tag=AnmTongueC] run function asa_animator:nazuti/anim/tongue_c/main
     execute if entity @s[tag=AnmTongueL] run function asa_animator:nazuti/anim/tongue_l/main
     execute if entity @s[tag=AnmTongueR] run function asa_animator:nazuti/anim/tongue_r/main
     # 舌薙ぎ払い
+    execute if entity @s[tag=AnmTongueLC] run function asa_animator:nazuti/anim/tongue_large_c/main
     execute if entity @s[tag=AnmTongueLL] run function asa_animator:nazuti/anim/tongue_large_l/main
     execute if entity @s[tag=AnmTongueLR] run function asa_animator:nazuti/anim/tongue_large_r/main
 
@@ -86,7 +88,7 @@
     execute if entity @s[tag=AnmHead2L] run function asa_animator:nazuti/anim/head_2_l/main
     execute if entity @s[tag=AnmHead2R] run function asa_animator:nazuti/anim/head_2_r/main
 
-    # ステルスコンボ
+    # 霞隠し
     execute if entity @s[tag=AnmSp0] run function asa_animator:nazuti/anim/sp_attack_0/main
     execute if entity @s[tag=AnmSp1] run function asa_animator:nazuti/anim/sp_attack_1/main
     execute if entity @s[tag=AnmSp2] run function asa_animator:nazuti/anim/sp_attack_2/main

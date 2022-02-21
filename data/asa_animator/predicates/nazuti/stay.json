@@ -84,6 +84,13 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
+          "nbt": "{Tags:[\"AnmTongueC\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
           "nbt": "{Tags:[\"AnmTongueL\"]}"
         }
       },
@@ -92,6 +99,13 @@
         "entity": "this",
         "predicate": {
           "nbt": "{Tags:[\"AnmTongueR\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmTongueLC\"]}"
         }
       },
       {

@@ -11,8 +11,8 @@ execute if entity @s[tag=ChangeAnm] run function asa_animator:nazuti/manager/cha
 # execute if predicate asa_animator:nazuti/stay if entity @s[tag=IsStand] run function asa_animator:nazuti/anim/stay_stand/main
 execute if predicate asa_animator:nazuti/stay run function asa_animator:nazuti/anim/stay/main
 # 軸合わせ
-# execute if entity @s[tag=AnmTurn,tag=!IsFlying] run function asa_animator:nazuti/anim/turn/main
-# execute if entity @s[tag=AnmTurn,tag=IsFlying] run function asa_animator:nazuti/anim/flying_turn/main
+execute if entity @s[tag=AnmTurn,tag=!IsTurnRight] run function asa_animator:nazuti/anim/turn_l/main
+execute if entity @s[tag=AnmTurn,tag=IsTurnRight] run function asa_animator:nazuti/anim/turn_r/main
 # 行動
 execute unless entity @s[tag=AnmTurn] unless predicate asa_animator:nazuti/stay run function asa_animator:nazuti/anim/main
 
