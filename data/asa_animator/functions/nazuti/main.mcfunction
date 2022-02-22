@@ -5,8 +5,6 @@
 # アニメーション遷移
 execute if entity @s[tag=ChangeAnm] run function asa_animator:nazuti/manager/change
 
-# function asa_animator:nazuti/anim/stay/main
-
 # 待機
 # execute if predicate asa_animator:nazuti/stay if entity @s[tag=IsStand] run function asa_animator:nazuti/anim/stay_stand/main
 execute if predicate asa_animator:nazuti/stay run function asa_animator:nazuti/anim/stay/main
