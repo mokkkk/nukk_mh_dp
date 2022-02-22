@@ -24,7 +24,7 @@ data modify entity @e[type=armor_stand,tag=NazutiParts,tag=LegL2,limit=1] ArmorI
 data modify entity @e[type=armor_stand,tag=NazutiParts,tag=LegR2,limit=1] ArmorItems[3].tag.CustomModelData set value 10498
 data modify entity @e[type=armor_stand,tag=NazutiParts,tag=Tail0,limit=1] ArmorItems[3].tag.CustomModelData set value 10499
 data modify entity @e[type=armor_stand,tag=NazutiParts,tag=Tail1,limit=1] ArmorItems[3].tag.CustomModelData set value 10500
-data modify entity @e[type=armor_stand,tag=NazutiParts,tag=Tail2,limit=1] ArmorItems[3].tag.CustomModelData set value 10501
+execute unless entity @s[tag=DestroyTail] run data modify entity @e[type=armor_stand,tag=NazutiParts,tag=Tail2,limit=1] ArmorItems[3].tag.CustomModelData set value 10501
 data modify entity @e[type=armor_stand,tag=NazutiParts,tag=ArmL0,limit=1] ArmorItems[3].tag.CustomModelData set value 10502
 data modify entity @e[type=armor_stand,tag=NazutiParts,tag=ArmR0,limit=1] ArmorItems[3].tag.CustomModelData set value 10503
 data modify entity @e[type=armor_stand,tag=NazutiParts,tag=ArmL1,limit=1] ArmorItems[3].tag.CustomModelData set value 10504

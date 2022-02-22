@@ -109,14 +109,14 @@
     # execute if entity @s[tag=AnmDeath] run function asa_animator:nazuti/anim/death/main
     # 飛行中討伐
     # execute if entity @s[tag=AnmFlyDeath] run function asa_animator:nazuti/anim/flying_death/main
-    # 大怯み（風纏い解除）
+    # 大怯み（霞纏い解除）
     # execute if entity @s[tag=AnmSpDamage] run function asa_animator:nazuti/anim/damage_head/main
     # 頭部位破壊
-    # execute if entity @s[tag=AnmDHead] run function asa_animator:nazuti/anim/destroy_head/main
+    execute if entity @s[tag=AnmDHead] run function asa_animator:nazuti/anim/destroy_head/main
     # 胴部位破壊
-    # execute if entity @s[tag=AnmDBody] run function asa_animator:nazuti/anim/destroy_body/main
+    execute if entity @s[tag=AnmDBody] run function asa_animator:nazuti/anim/destroy_body/main
     # 尻尾部位破壊
-    # execute if entity @s[tag=AnmDTail] run function asa_animator:nazuti/anim/destroy_tail/main
+    execute if entity @s[tag=AnmDTail] run function asa_animator:nazuti/anim/destroy_tail/main
     # 飛行中怯み
     # execute if entity @s[tag=AnmFlyDamage] run function asa_animator:nazuti/anim/flying_damage/main
     # 怒り

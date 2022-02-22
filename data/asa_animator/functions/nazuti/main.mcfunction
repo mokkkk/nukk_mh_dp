@@ -21,7 +21,7 @@ execute unless entity @s[tag=IsInvisible2] if score #mhdp_nazuti_lv AsaMatrix ma
 execute if entity @s[tag=IsInvisible2] if score #mhdp_nazuti_lv AsaMatrix matches 1.. run particle dust 1 1 1 0.8 ~ ~2 ~ 2 1.5 2 0.05 1 force
 
 # 当たり判定位置
-# execute if entity @s[tag=!IsAnger] as @e[type=slime,tag=NazutiParts] run function asa_animator:nazuti/manager/health/pos
+execute as @e[type=slime,tag=NazutiParts] run function asa_animator:nazuti/manager/health/pos
 # execute if entity @s[tag=IsAnger] as @e[type=slime,tag=NazutiParts] run function asa_animator:nazuti/manager/health/pos_anger
 
 # 毒霧移動
