@@ -97,20 +97,18 @@
     execute if entity @s[tag=AnmSp3] run function asa_animator:nazuti/anim/sp_attack_3/main
 
 ## その他
-    # 登場
-    # execute if entity @s[tag=AnmSummon] run function asa_animator:nazuti/anim/summon/main
-    # 着地
-    # execute if entity @s[tag=AnmSummonEndFly] run function asa_animator:nazuti/anim/summon_end_fly/main
-    # 咆哮
-    # execute if entity @s[tag=AnmVoice] run function asa_animator:nazuti/anim/voice/main
+    # 登場歩き
+    execute if entity @s[tag=AnmSummon] run function asa_animator:nazuti/anim/summon/main
+    # 邂逅
+    execute if entity @s[tag=AnmVoice] run function asa_animator:nazuti/anim/voice/main
     # 霞纏い
     execute if entity @s[tag=AnmCharge] run function asa_animator:nazuti/anim/charge/main
     # 討伐
-    # execute if entity @s[tag=AnmDeath] run function asa_animator:nazuti/anim/death/main
+    execute if entity @s[tag=AnmDeath] run function asa_animator:nazuti/anim/death/main
     # 飛行中討伐
-    # execute if entity @s[tag=AnmFlyDeath] run function asa_animator:nazuti/anim/flying_death/main
+    execute if entity @s[tag=AnmFlyDeath] run function asa_animator:nazuti/anim/flying_death/main
     # 大怯み（霞纏い解除）
-    # execute if entity @s[tag=AnmSpDamage] run function asa_animator:nazuti/anim/damage_head/main
+    execute if entity @s[tag=AnmSpDamage] run function asa_animator:nazuti/anim/sp_damage/main
     # 頭部位破壊
     execute if entity @s[tag=AnmDHead] run function asa_animator:nazuti/anim/destroy_head/main
     # 胴部位破壊

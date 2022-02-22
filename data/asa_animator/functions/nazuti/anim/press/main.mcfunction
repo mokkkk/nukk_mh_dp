@@ -36,7 +36,7 @@ execute if entity @s[scores={AsaMatrix=12}] run function asa_animator:nazuti/man
 execute if entity @s[scores={AsaMatrix=34}] run function asa_animator:nazuti/manager/particle/step
 execute if entity @s[scores={AsaMatrix=13..56}] at @s run function asa_animator:nazuti/manager/rotate
 execute if entity @s[scores={AsaMatrix=13..56}] unless entity @e[tag=NazutiAttackTarget,distance=0..5] at @s run tp @s ^ ^ ^0.2
-execute if entity @s[scores={AsaMatrix=57..63}] unless entity @e[tag=NazutiAttackTarget,distance=0..5] at @s run tp @s ^ ^ ^0.7
+execute if entity @s[scores={AsaMatrix=57..63}] unless entity @e[tag=NazutiAttackTarget,distance=0..5] at @s run tp @s ^ ^ ^0.55
 execute if entity @s[scores={AsaMatrix=63}] run function asa_animator:nazuti/anim/press/events/damage
 execute if entity @s[scores={AsaMatrix=97}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 

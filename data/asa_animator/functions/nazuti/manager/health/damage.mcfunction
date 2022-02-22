@@ -1,6 +1,6 @@
 
 # 戦闘開始
-execute if entity @e[type=armor_stand,tag=NazutiRoot,tag=IsStand,tag=!AnmSummon] as @e[type=armor_stand,tag=NazutiRoot] run function asa_animator:nazuti/manager/start_battle
+execute if entity @e[type=armor_stand,tag=NazutiRoot,tag=IsStand] as @e[type=armor_stand,tag=NazutiRoot] run function asa_animator:nazuti/manager/start_battle
 # ダメージ適用
 # 怒り時ダメージ増加
 execute if entity @e[type=armor_stand,tag=NazutiRoot,tag=IsAnger] run scoreboard players operation #nazuti_damage AsaMatrix *= #asam_const_120 AsaMatrix
@@ -24,11 +24,11 @@ execute if score #mhdp_nazuti_tail_damage AsaMatrix matches ..0 as @e[type=armor
 # execute if score #mhdp_nazuti_anger_damage AsaMatrix matches ..0 unless entity @e[type=armor_stand,tag=NazutiRoot,tag=IsAnger] as @e[type=armor_stand,tag=NazutiRoot] run function asa_animator:nazuti/manager/start_anger
 
 # 霞纏い時特殊怯み
-#  scoreboard players set #mhdp_const_temp AsaMatrix 2
-#  execute if score #mhdp_nazuti_lv AsaMatrix matches 1 run scoreboard players operation #nazuti_damage AsaMatrix /= #mhdp_const_temp AsaMatrix
-#  execute if score #mhdp_nazuti_lv AsaMatrix matches 1.. run scoreboard players operation #mhdp_nazuti_sp_damage AsaMatrix += #nazuti_damage AsaMatrix
-#  execute if score #mhdp_nazuti_sp_damage AsaMatrix matches ..0 as @e[type=armor_stand,tag=NazutiRoot,distance=0..15] run function asa_animator:nazuti/manager/start_damage_animation
-#  scoreboard players reset #mhdp_const_temp
+scoreboard players set #mhdp_const_temp AsaMatrix 2
+execute if score #mhdp_nazuti_lv AsaMatrix matches 1 run scoreboard players operation #nazuti_damage AsaMatrix /= #mhdp_const_temp AsaMatrix
+execute if score #mhdp_nazuti_lv AsaMatrix matches 1.. run scoreboard players operation #mhdp_nazuti_sp_damage AsaMatrix += #nazuti_damage AsaMatrix
+execute if score #mhdp_nazuti_sp_damage AsaMatrix matches ..0 as @e[type=armor_stand,tag=NazutiRoot,distance=0..15] run function asa_animator:nazuti/manager/start_damage_animation
+scoreboard players reset #mhdp_const_temp
 
 # 死亡時，アニメーション設定
-# execute if score #mhdp_nazuti_health AsaMatrix matches ..0 as @e[type=armor_stand,tag=NazutiRoot] run function asa_animator:nazuti/manager/start_death_animation
+execute if score #mhdp_nazuti_health AsaMatrix matches ..0 as @e[type=armor_stand,tag=NazutiRoot] run function asa_animator:nazuti/manager/start_death_animation

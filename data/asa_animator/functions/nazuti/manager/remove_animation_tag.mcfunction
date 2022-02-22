@@ -46,6 +46,13 @@ tag @s remove AnmSp2
 tag @s remove AnmSp3
 tag @s remove AnmCharge
 tag @s remove AnmTurn
+tag @s remove AnmSpDamage
+tag @s remove AnmDHead
+tag @s remove AnmDBody
+tag @s remove AnmDTail
+tag @s remove AnmFlyDamage
+tag @s remove AnmSummon
+tag @s remove AnmVoice
 
 tag @s remove ComboA
 tag @s remove ComboB
@@ -54,6 +61,7 @@ tag @s remove ComboD
 tag @s remove ComboE
 tag @s remove ComboF
 
+tag @s remove IsStand
 tag @s remove IsMoveRight
 tag @s remove IsAnmStealth
 
