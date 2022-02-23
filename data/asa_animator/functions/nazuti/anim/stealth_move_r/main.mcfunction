@@ -34,3 +34,6 @@ execute if entity @s[tag=!IsAnmStealth,scores={AsaMatrix=1}] if score #mhdp_nazu
 execute if entity @s[tag=!IsAnmStealth,scores={AsaMatrix=5}] if score #mhdp_nazuti_lv AsaMatrix matches 2.. run function asa_animator:nazuti/manager/model/stealth_invisible
 execute if entity @s[scores={AsaMatrix=37}] run function asa_animator:nazuti/manager/model/stealth_lucent
 execute if entity @s[scores={AsaMatrix=42}] run function asa_animator:nazuti/manager/model/stealth_end
+
+execute if entity @s[scores={AsaMatrix=6}] run tag @s add IsFlying
+execute if entity @s[scores={AsaMatrix=28}] run tag @s remove IsFlying

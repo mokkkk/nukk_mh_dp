@@ -24,8 +24,8 @@ execute if score #mhdp_nazuti_body_damage AsaMatrix matches ..0 as @e[type=armor
 execute if score #mhdp_nazuti_tail_damage AsaMatrix matches ..0 as @e[type=armor_stand,tag=NazutiRoot,distance=0..15] unless entity @s[tag=DestroyTail] run function asa_animator:nazuti/manager/destroy_parts/tail
 
 # 怒り遷移
-# scoreboard players operation #mhdp_nazuti_anger_damage AsaMatrix += #nazuti_damage AsaMatrix
-# execute if score #mhdp_nazuti_anger_damage AsaMatrix matches ..0 unless entity @e[type=armor_stand,tag=NazutiRoot,tag=IsAnger] as @e[type=armor_stand,tag=NazutiRoot] run function asa_animator:nazuti/manager/start_anger
+scoreboard players operation #mhdp_nazuti_anger_damage AsaMatrix += #nazuti_damage AsaMatrix
+execute if score #mhdp_nazuti_anger_damage AsaMatrix matches ..0 unless entity @e[type=armor_stand,tag=NazutiRoot,tag=IsAnger] as @e[type=armor_stand,tag=NazutiRoot] run function asa_animator:nazuti/manager/start_anger
 
 # 霞纏い時特殊怯み
 scoreboard players set #mhdp_const_temp AsaMatrix 2

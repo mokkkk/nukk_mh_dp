@@ -53,6 +53,7 @@ tag @s remove AnmDTail
 tag @s remove AnmFlyDamage
 tag @s remove AnmSummon
 tag @s remove AnmVoice
+tag @s remove AnmAnger
 
 tag @s remove ComboA
 tag @s remove ComboB
@@ -62,6 +63,7 @@ tag @s remove ComboE
 tag @s remove ComboF
 
 tag @s remove IsStand
+tag @s remove IsFlying
 tag @s remove IsMoveRight
 tag @s remove IsAnmStealth
 

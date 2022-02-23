@@ -22,3 +22,6 @@ execute if entity @s[scores={AsaMatrix=10}] run playsound entity.ender_dragon.fl
 execute if entity @s[scores={AsaMatrix=21}] positioned ~ ~1.5 ~ run function asa_animator:nazuti/manager/particle/step
 
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:nazuti/manager/lv/reset
+
+execute if entity @s[scores={AsaMatrix=20}] unless entity @s[tag=DestroyHead] run data modify entity @e[type=armor_stand,tag=NazutiParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10517
+execute if entity @s[scores={AsaMatrix=20}] if entity @s[tag=DestroyHead] run data modify entity @e[type=armor_stand,tag=NazutiParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10518

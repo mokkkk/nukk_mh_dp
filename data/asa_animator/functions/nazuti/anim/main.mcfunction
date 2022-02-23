@@ -118,6 +118,4 @@
     # 飛行中怯み
     execute if entity @s[tag=AnmFlyDamage] run function asa_animator:nazuti/anim/flying_damage/main
     # 怒り
-    # execute if entity @s[tag=AnmAnger] run function asa_animator:nazuti/anim/anger/main
-    # 飛行中怒り
-    # execute if entity @s[tag=AnmFlyAnger] run function asa_animator:nazuti/anim/flying_anger/main
+    execute if entity @s[tag=AnmAnger] run function asa_animator:nazuti/anim/anger/main

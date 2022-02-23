@@ -20,7 +20,7 @@ execute if entity @s[tag=IsInvisible2] if score #mhdp_nazuti_lv AsaMatrix matche
 
 # 当たり判定位置
 execute unless entity @s[tag=IsAnger] as @e[type=slime,tag=NazutiParts] run function asa_animator:nazuti/manager/health/pos
-# execute if entity @s[tag=IsAnger] as @e[type=slime,tag=NazutiParts] run function asa_animator:nazuti/manager/health/pos_anger
+execute if entity @s[tag=IsAnger] as @e[type=slime,tag=NazutiParts] run function asa_animator:nazuti/manager/health/pos_anger
 
 # 毒霧移動
 execute if entity @e[type=marker,tag=NazutiPoisonMover] as @e[type=marker,tag=NazutiPoisonMover] run function asa_animator:nazuti/manager/poison/move

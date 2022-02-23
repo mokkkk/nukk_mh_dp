@@ -43,3 +43,6 @@ execute if entity @s[scores={AsaMatrix=58..}] at @s positioned ~ ~5 ~ run functi
 
 execute if entity @s[scores={AsaMatrix=68}] run function asa_animator:nazuti/manager/model/stealth_lucent
 execute if entity @s[scores={AsaMatrix=74}] run function asa_animator:nazuti/manager/model/stealth_end
+
+execute if entity @s[scores={AsaMatrix=14}] run tag @s add IsFlying
+execute if entity @s[scores={AsaMatrix=58}] run tag @s remove IsFlying

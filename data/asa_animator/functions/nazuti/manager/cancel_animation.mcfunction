@@ -46,8 +46,10 @@ tag @s remove AnmSp2
 tag @s remove AnmSp3
 tag @s remove AnmCharge
 tag @s remove AnmTurn
+tag @s remove AnmAnger
 
 tag @s remove IsMoveRight
+tag @s remove IsFlying
 tag @s remove IsAnmStealth
 
 kill @e[type=marker,tag=NazutiBreathTarget]

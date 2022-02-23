@@ -48,3 +48,6 @@ execute if entity @s[scores={AsaMatrix=51}] run function asa_animator:nazuti/man
 execute if entity @s[scores={AsaMatrix=66}] run function asa_animator:nazuti/anim/fog_back/events/set_pos
 execute if entity @s[scores={AsaMatrix=67..78}] run function asa_animator:nazuti/anim/fog_back/events/offset
 execute if entity @s[scores={AsaMatrix=78}] run function asa_animator:nazuti/manager/particle/step
+
+execute if entity @s[scores={AsaMatrix=35}] run tag @s add IsFlying
+execute if entity @s[scores={AsaMatrix=78}] run tag @s remove IsFlying

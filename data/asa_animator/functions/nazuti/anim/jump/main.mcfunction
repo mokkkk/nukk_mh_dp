@@ -36,7 +36,9 @@ execute if entity @s[scores={AsaMatrix=26..43}] run function asa_animator:nazuti
 execute if entity @s[scores={AsaMatrix=36..43}] run function asa_animator:nazuti/anim/jump/events/damage
 
 execute if entity @s[scores={AsaMatrix=25}] run function asa_animator:kushala/manager/particle/step
+execute if entity @s[scores={AsaMatrix=25}] run tag @s add IsFlying
 execute if entity @s[scores={AsaMatrix=43}] run function asa_animator:kushala/manager/particle/step
+execute if entity @s[scores={AsaMatrix=43}] run tag @s remove IsFlying
 execute if entity @s[scores={AsaMatrix=43}] run playsound entity.hoglin.step master @a ~ ~ ~ 2 0.7
 
 execute if entity @s[scores={AsaMatrix=54}] unless predicate asa_animator:nazuti/combo run function asa_animator:nazuti/manager/cancel_animation

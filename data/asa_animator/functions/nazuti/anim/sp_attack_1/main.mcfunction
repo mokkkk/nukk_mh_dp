@@ -33,3 +33,6 @@ function asa_animator:nazuti/manager/rotate
 
 execute if entity @s[scores={AsaMatrix=51..}] at @s positioned ~ ~5 ~ run tp @s ~ ~ ~
 execute if entity @s[scores={AsaMatrix=51..}] at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
+
+execute if entity @s[scores={AsaMatrix=6}] run tag @s add IsFlying
+execute if entity @s[scores={AsaMatrix=50}] run tag @s remove IsFlying

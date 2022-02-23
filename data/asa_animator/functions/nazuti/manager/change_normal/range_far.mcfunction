@@ -5,7 +5,7 @@ execute if score #mhdp_nazuti_lv AsaMatrix matches 1.. run tag @s add NazutiLv1
 loot spawn ~ 0 ~ loot asa_animator:nazuti/normal/far
 ## 共通
     # 毒弾ブレス
-    execute if entity @e[type=item,y=0] if entity @e[type=item,nbt={Item:{tag:{Act:1}}}] run tag @s add AnmBreath
+    execute if entity @e[type=item,y=0] if entity @e[type=item,nbt={Item:{tag:{Act:1}}}] run tag @s add AnmBreathB
     # 毒霧展開（前方）
     execute if entity @e[type=item,y=0] if entity @e[type=item,nbt={Item:{tag:{Act:2}}}] run tag @s add AnmFogF
 ## LV1 -

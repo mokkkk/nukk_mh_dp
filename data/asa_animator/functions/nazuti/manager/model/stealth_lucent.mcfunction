@@ -1,4 +1,5 @@
 execute as @e[type=armor_stand,tag=NazutiParts] run data modify entity @s ArmorItems[3].id set value "minecraft:clock"
+execute if entity @s[tag=DestroyTail] as @e[type=armor_stand,tag=NazutiParts,tag=Tail2,limit=1] run data modify entity @s ArmorItems[3].id set value "minecraft:barrier"
 
 execute unless entity @s[tag=DestroyHead] run data modify entity @e[type=armor_stand,tag=NazutiParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10486
 execute if entity @s[tag=DestroyHead] run data modify entity @e[type=armor_stand,tag=NazutiParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10516
