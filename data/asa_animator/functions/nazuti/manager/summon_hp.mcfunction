@@ -7,6 +7,7 @@
 
 # ボスバー設定
     bossbar add asa_animator:nazuti_health [{"text": "霞龍"},{"text":"\uE000","font":"mhdp"}]
+    bossbar set asa_animator:nazuti_health color red
     execute store result bossbar asa_animator:nazuti_health max run scoreboard players get #mhdp_nazuti_health AsaMatrix
     bossbar set asa_animator:nazuti_health players @a
     bossbar set asa_animator:nazuti_health visible true
