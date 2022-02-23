@@ -6,7 +6,7 @@ execute if entity @e[type=armor_stand,tag=NazutiRoot] run data modify storage mh
 execute if data storage mhdp: {ExistMonster:0b} positioned ^ ^ ^10 run function asa_animator:nazuti/summon
 
 # 当たり判定召喚
-execute if data storage mhdp: {ExistMonster:0b} positioned ^ ^ ^10 run function asa_animator:nazuti/manager/health/summon
+execute if data storage mhdp: {ExistMonster:0b} positioned ^ ^30 ^10 run function asa_animator:nazuti/manager/health/summon
 
 # HPセット
 execute if data storage mhdp: {ExistMonster:0b} run function asa_animator:nazuti/manager/summon_hp

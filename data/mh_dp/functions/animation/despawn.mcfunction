@@ -19,3 +19,5 @@ execute if entity @s[tag=TigaRoot] run function asa_animator:tiga/manager/despaw
 execute if entity @s[tag=KushalaRoot] run function asa_animator:kushala/manager/despawn
 
 execute if entity @s[tag=TeoRoot] run function asa_animator:teo/manager/despawn
+
+execute if entity @s[tag=NazutiRoot] run function asa_animator:nazuti/manager/despawn

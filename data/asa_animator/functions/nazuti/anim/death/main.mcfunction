@@ -23,3 +23,5 @@ execute if entity @s[scores={AsaMatrix=50}] run function asa_animator:nazuti/man
 
 execute if entity @s[scores={AsaMatrix=1..7}] at @s if block ~ ~ ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
 execute if entity @s[scores={AsaMatrix=1..7}] at @s unless block ~ ~0.2 ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~
+
+execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:nazuti/manager/lv/reset

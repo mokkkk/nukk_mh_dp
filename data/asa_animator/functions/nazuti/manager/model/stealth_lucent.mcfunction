@@ -1,15 +1,7 @@
-# execute unless entity @s[tag=DestroyBody] run data modify entity @e[type=armor_stand,tag=NazutiParts,tag=WingL0,limit=1] ArmorItems[3].tag.CustomModelData set value 10482
-# execute unless entity @s[tag=DestroyBody] run data modify entity @e[type=armor_stand,tag=NazutiParts,tag=WingR0,limit=1] ArmorItems[3].tag.CustomModelData set value 10482
-# execute unless entity @s[tag=DestroyBody] run data modify entity @e[type=armor_stand,tag=NazutiParts,tag=WingL1,limit=1] ArmorItems[3].tag.CustomModelData set value 10483
-# execute unless entity @s[tag=DestroyBody] run data modify entity @e[type=armor_stand,tag=NazutiParts,tag=WingR1,limit=1] ArmorItems[3].tag.CustomModelData set value 10483
-# execute if entity @s[tag=DestroyBody] run data modify entity @e[type=armor_stand,tag=NazutiParts,tag=WingL0,limit=1] ArmorItems[3].tag.CustomModelData set value 10421
-# execute if entity @s[tag=DestroyBody] run data modify entity @e[type=armor_stand,tag=NazutiParts,tag=WingR0,limit=1] ArmorItems[3].tag.CustomModelData set value 10421
-# execute if entity @s[tag=DestroyBody] run data modify entity @e[type=armor_stand,tag=NazutiParts,tag=WingL1,limit=1] ArmorItems[3].tag.CustomModelData set value 10422
-# execute if entity @s[tag=DestroyBody] run data modify entity @e[type=armor_stand,tag=NazutiParts,tag=WingR1,limit=1] ArmorItems[3].tag.CustomModelData set value 10422
-
 execute as @e[type=armor_stand,tag=NazutiParts] run data modify entity @s ArmorItems[3].id set value "minecraft:clock"
 
-data modify entity @e[type=armor_stand,tag=NazutiParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10486
+execute unless entity @s[tag=DestroyHead] run data modify entity @e[type=armor_stand,tag=NazutiParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10486
+execute if entity @s[tag=DestroyHead] run data modify entity @e[type=armor_stand,tag=NazutiParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10516
 data modify entity @e[type=armor_stand,tag=NazutiParts,tag=HeadL,limit=1] ArmorItems[3].tag.CustomModelData set value 10487
 data modify entity @e[type=armor_stand,tag=NazutiParts,tag=Neck0,limit=1] ArmorItems[3].tag.CustomModelData set value 10488
 data modify entity @e[type=armor_stand,tag=NazutiParts,tag=Neck1,limit=1] ArmorItems[3].tag.CustomModelData set value 10489

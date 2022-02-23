@@ -11,6 +11,10 @@ execute store result bossbar asa_animator:nazuti_health value run scoreboard pla
 # 効果音など
 playsound minecraft:entity.player.hurt master @a ~ ~ ~ 2 1
 
+# カウンター
+execute if score #mhdp_nazuti_lv AsaMatrix matches 1.. run scoreboard players operation #mhdp_nazuti_counter_damage AsaMatrix += #nazuti_damage AsaMatrix
+execute if score #mhdp_nazuti_counter_damage AsaMatrix matches ..0 as @e[type=armor_stand,tag=NazutiRoot,distance=0..15] run function asa_animator:nazuti/manager/start_counter_animation
+
 # 部位ダメージ適用
 execute if entity @s[tag=HeadParts] run scoreboard players operation #mhdp_nazuti_head_damage AsaMatrix += #nazuti_damage AsaMatrix
 execute if entity @s[tag=BodyParts] run scoreboard players operation #mhdp_nazuti_body_damage AsaMatrix += #nazuti_damage AsaMatrix

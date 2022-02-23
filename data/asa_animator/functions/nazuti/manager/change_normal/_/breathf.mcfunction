@@ -1,5 +1,5 @@
 
-execute if score #mhdp_nazuti_lv AsaMatrix matches ..0 run tag @s add AnmBreathF
+execute unless score #mhdp_nazuti_lv AsaMatrix matches 1.. run tag @s add AnmBreathF
 # ランダム
 execute unless entity @s[tag=AnmBreathF] run loot spawn ~ 0 ~ loot asa_animator:nazuti/breathf
     # ひっかき

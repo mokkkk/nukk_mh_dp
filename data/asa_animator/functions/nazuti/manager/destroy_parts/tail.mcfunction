@@ -1,4 +1,4 @@
-# data modify entity @e[type=armor_stand,tag=NazutiParts,tag=Tail1,limit=1] ArmorItems[3].tag.CustomModelData set value 10425
+data modify entity @e[type=armor_stand,tag=NazutiParts,tag=Tail1,limit=1] ArmorItems[3].tag.CustomModelData set value 10515
 data modify entity @e[type=armor_stand,tag=NazutiParts,tag=Tail2,limit=1] ArmorItems[3].tag.CustomModelData set value 10084
 tag @s add DestroyTail
 playsound entity.player.attack.knockback master @a ~ ~ ~ 2 1
@@ -14,3 +14,4 @@ execute if entity @s[tag=IsFlying] run tag @s add AnmFlyDamage
 
 advancement grant @a[distance=0..64] only mh_dp:toasts/nazuti
 schedule function asa_animator:nazuti/manager/destroy_parts/revoke 5t
+function asa_animator:nazuti/manager/model/stealth_end
