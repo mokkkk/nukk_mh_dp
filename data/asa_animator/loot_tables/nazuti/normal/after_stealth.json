@@ -50,7 +50,45 @@
                   "condition": "minecraft:entity_properties",
                   "entity": "this",
                   "predicate": {
-                    "nbt": "{Tags:[\"KushalaLv1\"]}"
+                    "nbt": "{Tags:[\"NazutiLv1\"]}"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:5}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "nbt": "{Tags:[\"NazutiLv1\"]}"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:6}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "nbt": "{Tags:[\"NazutiLv2\"]}"
                   }
                 }
               ]

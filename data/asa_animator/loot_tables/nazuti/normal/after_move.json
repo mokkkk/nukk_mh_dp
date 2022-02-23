@@ -44,6 +44,15 @@
                 "function": "minecraft:set_nbt",
                 "tag": "{ActPaper:1,Act:4}"
                 }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "nbt": "{Tags:[\"NazutiLv1\"]}"
+                  }
+                }
               ]
             },
             {
@@ -52,7 +61,7 @@
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
-                "tag": "{ActPaper:1,Act:1}"
+                "tag": "{ActPaper:1,Act:5}"
                 }
               ],
               "conditions": [
@@ -60,7 +69,7 @@
                   "condition": "minecraft:entity_properties",
                   "entity": "this",
                   "predicate": {
-                    "nbt": "{Tags:[\"KushalaLv1\"]}"
+                    "nbt": "{Tags:[\"NazutiLv2\"]}"
                   }
                 }
               ]

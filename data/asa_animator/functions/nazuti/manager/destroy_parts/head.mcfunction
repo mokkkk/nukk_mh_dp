@@ -6,8 +6,7 @@ playsound item.shield.break master @a ~ ~ ~ 2 0.7
 execute as @e[type=armor_stand,tag=NazutiParts,tag=HeadU,limit=1] at @s run particle block bone_block ~ ~1.4 ~ 0.2 0.2 0.2 0 10
 execute as @e[type=armor_stand,tag=NazutiParts,tag=HeadU,limit=1] at @s run loot spawn ~ ~ ~ loot mh_dp:bonus/nazuti_parts
 scoreboard players set @s AsaMatrix 0
-scoreboard players set #mhdp_nazuti_lv AsaMatrix 0
-weather rain
+function asa_animator:nazuti/manager/lv/reset
 
 function asa_animator:nazuti/manager/remove_animation_tag
 execute if entity @s[tag=!IsFlying] run tag @s add AnmDHead

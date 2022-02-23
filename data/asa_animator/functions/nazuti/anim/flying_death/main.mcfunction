@@ -14,3 +14,9 @@ execute if entity @s[scores={AsaMatrix=21..90}] run tp @s ^0 ^0 ^0
 execute if entity @s[scores={AsaMatrix=91..}] run function asa_animator:nazuti/anim/flying_death/end
 execute as @e[type=armor_stand,tag=NazutiParts] run function #asa_matrix:animate
 function asa_animator:nazuti/model
+
+execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:nazuti/manager/model/change_to_normal
+execute if entity @s[scores={AsaMatrix=10}] at @s run function asa_animator:nazuti/anim/flying_damage/events/pos/set_pos
+execute if entity @s[scores={AsaMatrix=11..20}] run function asa_animator:nazuti/anim/flying_damage/events/pos/offset
+execute if entity @s[scores={AsaMatrix=10}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
+execute if entity @s[scores={AsaMatrix=21}] positioned ~ ~1.5 ~ run function asa_animator:nazuti/manager/particle/step

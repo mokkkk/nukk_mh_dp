@@ -34,35 +34,14 @@
                 "function": "minecraft:set_nbt",
                 "tag": "{ActPaper:1,Act:3}"
                 }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:paper",
-              "functions": [
+              ],
+              "conditions": [
                 {
-                "function": "minecraft:set_nbt",
-                "tag": "{ActPaper:1,Act:4}"
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:paper",
-              "functions": [
-                {
-                "function": "minecraft:set_nbt",
-                "tag": "{ActPaper:1,Act:5}"
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:paper",
-              "functions": [
-                {
-                "function": "minecraft:set_nbt",
-                "tag": "{ActPaper:1,Act:6}"
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "nbt": "{Tags:[\"NazutiLv1\"]}"
+                  }
                 }
               ]
             }
