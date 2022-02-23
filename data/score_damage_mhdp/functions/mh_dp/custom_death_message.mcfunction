@@ -69,6 +69,13 @@ execute if entity @s[tag=D_TeoBite] run tellraw @a [{"selector":"@s"},{"text": "
 execute if entity @s[tag=D_TeoClaw] run tellraw @a [{"selector":"@s"},{"text": " は炎王龍に切り裂かれた"}]
 execute if entity @s[tag=D_TeoNova] run tellraw @a [{"selector":"@s"},{"text": " はスーパーノヴァにより消し炭となった"}]
 
+execute if entity @s[tag=D_NazutiBreath] run tellraw @a [{"selector":"@s"},{"text": " は霞隠しにあった"}]
+execute if entity @s[tag=D_NazutiClaw] run tellraw @a [{"selector":"@s"},{"text": " は霞龍に叩かれた"}]
+execute if entity @s[tag=D_NazutiDash] run tellraw @a [{"selector":"@s"},{"text": " は霞龍に轢かれた"}]
+execute if entity @s[tag=D_NazutiHead] run tellraw @a [{"selector":"@s"},{"text": " は霞龍に押しつぶされた"}]
+execute if entity @s[tag=D_NazutiTail] run tellraw @a [{"selector":"@s"},{"text": " は霞龍に吹き飛ばされた"}]
+execute if entity @s[tag=D_NazutiTongue] run tellraw @a [{"selector":"@s"},{"text": " は霞龍に食べられた"}]
+
 execute if entity @s[tag=D_BlightFire] run tellraw @a [{"selector":"@s"},{"text": " は火傷した"}]
 
 kill @s
