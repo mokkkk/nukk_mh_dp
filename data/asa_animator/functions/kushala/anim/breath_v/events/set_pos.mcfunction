@@ -14,4 +14,5 @@ scoreboard players set #reus_height_target AsaMatrix 13
 scoreboard players operation #reus_mine_y AsaMatrix /= #reus_height_target AsaMatrix
 
 # 終了
+data remove storage mhdp: Temp.Pos
 kill @e[type=marker,tag=ReusMovePos]

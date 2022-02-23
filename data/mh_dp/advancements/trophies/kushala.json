@@ -5,7 +5,7 @@
       "nbt": "{CustomModelData:20002}"
     },
     "title": "鋼龍討伐",
-    "description": "風を操る古龍・鋼龍を討ち倒した証．",
+    "description": "嵐に舞う影・鋼龍を討ち倒した証．",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

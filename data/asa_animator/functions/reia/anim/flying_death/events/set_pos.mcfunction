@@ -14,4 +14,5 @@ scoreboard players set #reia_height_target AsaMatrix 8
 scoreboard players operation #reia_mine_y AsaMatrix /= #reia_height_target AsaMatrix
 
 # 終了
+data remove storage mhdp: Temp.Pos
 kill @e[type=marker,tag=ReusMovePos]

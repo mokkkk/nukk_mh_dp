@@ -2,9 +2,9 @@
 scoreboard players add @s AsaMatrix 1
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:nazuti/anim/tail/start
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:nazuti/anim/tail/keyframes/0
-execute if entity @s[scores={AsaMatrix=1..5}] run tp @s ^0 ^0.02 ^0
+execute if entity @s[scores={AsaMatrix=1..5}] run tp @s ^0 ^0.02 ^0 ~1 ~
 execute if entity @s[scores={AsaMatrix=6}] run function asa_animator:nazuti/anim/tail/keyframes/1
-execute if entity @s[scores={AsaMatrix=6..10}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=6..10}] run tp @s ^0 ^0 ^0 ~-1 ~
 execute if entity @s[scores={AsaMatrix=11}] run function asa_animator:nazuti/anim/tail/keyframes/2
 execute if entity @s[scores={AsaMatrix=11..20}] run tp @s ^0 ^0 ^0
 execute if entity @s[scores={AsaMatrix=21}] run function asa_animator:nazuti/anim/tail/keyframes/3
@@ -34,3 +34,5 @@ execute if entity @s[scores={AsaMatrix=62}] positioned ^ ^ ^-6 rotated ~-150 ~-3
 execute if entity @s[scores={AsaMatrix=62}] positioned ^ ^ ^-6 rotated ~-210 ~-30 positioned ^ ^ ^1 run function asa_animator:nazuti/anim/tail/events/shot/start
 execute if entity @s[scores={AsaMatrix=62}] positioned ^ ^ ^-6 rotated ~-120 ~-30 positioned ^ ^ ^1 run function asa_animator:nazuti/anim/tail/events/shot/start
 execute if entity @s[scores={AsaMatrix=62}] positioned ^ ^ ^-6 rotated ~-240 ~-30 positioned ^ ^ ^1 run function asa_animator:nazuti/anim/tail/events/shot/start
+
+execute if entity @s[scores={AsaMatrix=30}] unless predicate asa_animator:nazuti/combo run function asa_animator:nazuti/manager/cancel_animation

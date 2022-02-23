@@ -1,0 +1,25 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 35,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{Dummy:1}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

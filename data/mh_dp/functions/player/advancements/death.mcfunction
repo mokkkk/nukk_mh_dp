@@ -27,6 +27,8 @@ tag @s remove KushalaTarget
 tag @s remove KushalaAttackTarget
 tag @s remove TeoTarget
 tag @s remove TeoAttackTarget
+tag @s remove NazutiTarget
+tag @s remove NazutiAttackTarget
 
 tag @s remove MhdpDHit
 
