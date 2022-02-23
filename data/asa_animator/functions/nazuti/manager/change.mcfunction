@@ -18,9 +18,5 @@ execute unless predicate asa_animator:nazuti/combo run function asa_animator:naz
 # 怒り終了
 execute if entity @s[tag=IsAnger] if score #mhdp_nazuti_anger_count AsaMatrix matches ..0 run function asa_animator:nazuti/manager/end_anger
 
-# 強制
-# tag @s add AnmSpDamage
-# function asa_animator:nazuti/manager/change_normal/_/stealth
-
 # 終了
 tag @s remove ChangeAnm
