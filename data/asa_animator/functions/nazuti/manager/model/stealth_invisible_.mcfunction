@@ -1,4 +1,5 @@
 execute as @e[type=armor_stand,tag=NazutiParts] run data modify entity @s ArmorItems[3].id set value "minecraft:barrier"
+tag @e[type=slime,tag=NazutiParts] add NotTarget
 
 data modify entity @e[type=armor_stand,tag=NazutiParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10084
 data modify entity @e[type=armor_stand,tag=NazutiParts,tag=HeadL,limit=1] ArmorItems[3].tag.CustomModelData set value 10084
