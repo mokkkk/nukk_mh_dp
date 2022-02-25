@@ -24,6 +24,7 @@ execute if entity @s[scores={AsaMatrix=5}] run playsound block.grass.step master
 execute if entity @s[scores={AsaMatrix=28}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=1..10}] run function asa_animator:ruko/manager/rotate_fast
 execute if entity @s[scores={AsaMatrix=1..10}] if entity @s[tag=RukoAttackTarget,distance=..7] at @s run tp @s ^ ^ ^-0.5
+execute if entity @s[scores={AsaMatrix=1..10}] unless entity @s[tag=RukoAttackTarget,distance=..15] at @s run tp @s ^ ^ ^0.3
 
 execute if entity @s[scores={AsaMatrix=14..20}] unless entity @s[tag=RukoAttackTarget,distance=..7] at @s run tp @s ^ ^ ^0.7
 
