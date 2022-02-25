@@ -73,8 +73,8 @@ execute as @e[type=armor_stand,tag=RukoParts,tag=HeadU,limit=1] run function #as
 execute as @e[type=armor_stand,tag=RukoParts,tag=HeadU,limit=1] at @s run function #asa_matrix:get_parent_pos
 execute as @e[type=armor_stand,tag=RukoParts,tag=HeadU,limit=1] run function #asa_matrix:matrix_node
 scoreboard players set #asa_child_pos_x AsaMatrix 0
-scoreboard players set #asa_child_pos_y AsaMatrix -110
-scoreboard players set #asa_child_pos_z AsaMatrix 250
+scoreboard players set #asa_child_pos_y AsaMatrix -10
+scoreboard players set #asa_child_pos_z AsaMatrix 200
 function #asa_matrix:rotate
 execute as @e[type=armor_stand,tag=RukoParts,tag=HeadL,limit=1] run function #asa_matrix:set_child_pos
 execute as @e[type=armor_stand,tag=RukoParts,tag=ArmL0,limit=1] at @s run function #asa_matrix:get_parent_pos

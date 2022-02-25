@@ -10,3 +10,12 @@ execute if entity @s[scores={AsaMatrix=26..45}] run tp @s ^0 ^0 ^-0.02
 execute if entity @s[scores={AsaMatrix=46..}] run function asa_animator:ruko/anim/stay/end
 execute as @e[type=armor_stand,tag=RukoParts] run function #asa_matrix:animate
 function asa_animator:ruko/model
+
+execute if entity @s[scores={AsaMatrix=1}] if predicate asa_animator:random/070 if score #mhdp_ruko_lv AsaMatrix matches 2.. run function asa_animator:ruko/manager/particle/reflect
+
+execute unless predicate asa_animator:ruko/combo if entity @s[scores={AsaMatrix=1}] run tag @s add ChangeAnm
+execute if entity @s[tag=IsAnger,scores={AsaMatrix=1}] run tag @s add ChangeAnm
+execute if entity @s[scores={AsaMatrix=1}] if score #mhdp_ruko_actcount AsaMatrix matches 1.. run function asa_animator:ruko/anim/stay/events/change
+
+execute at @s if block ~ ~-0.1 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
+execute at @s unless block ~ ~0.1 ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~
