@@ -41,3 +41,6 @@ execute if entity @s[scores={AsaMatrix=54..63}] at @s run tp @s ^ ^ ^0.1 ~3 ~
 
 execute if entity @s[scores={AsaMatrix=33}] positioned ^ ^ ^6 run function asa_animator:ruko/anim/bite_2_l/events/damage
 execute if entity @s[scores={AsaMatrix=50}] positioned ^ ^ ^6 run function asa_animator:ruko/anim/bite_2_l/events/damage
+
+execute at @s if block ~ ~-0.1 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
+execute at @s unless block ~ ~0.1 ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~

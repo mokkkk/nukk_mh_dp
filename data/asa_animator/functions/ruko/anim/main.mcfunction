@@ -1,15 +1,19 @@
 
 ## 共通
 
+    # 噛みつき
+    execute if entity @s[tag=AnmBite] run function asa_animator:ruko/anim/bite/main
     # 2連噛みつき
     execute if entity @s[tag=AnmBite2L] run function asa_animator:ruko/anim/bite_2_l/main
     execute if entity @s[tag=AnmBite2R] run function asa_animator:ruko/anim/bite_2_r/main
+    # 龍薙ぎ
+    execute if entity @s[tag=AnmBiteCL] run function asa_animator:ruko/anim/bite_charge_l/main
+    execute if entity @s[tag=AnmBiteCR] run function asa_animator:ruko/anim/bite_charge_r/main
 
-
-## 霞纏い lv1
+## 磁力纏い lv1
     # 
 
-## 霧纏い lv2
+## 磁力纏い lv2
     # 
 
 ## その他
