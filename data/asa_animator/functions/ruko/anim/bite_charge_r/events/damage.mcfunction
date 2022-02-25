@@ -11,4 +11,3 @@ data remove storage mhdp: DamageType
 execute rotated ~ ~ positioned ^ ^2 ^7 run particle dust 0.522 0.051 0.051 7 ~ ~ ~ 0.7 0.7 0.7 0 3
 execute rotated ~3 ~ positioned ^ ^2 ^7 run particle dust 0.522 0.051 0.051 7 ~ ~ ~ 0.7 0.7 0.7 0 3
 execute rotated ~6 ~ positioned ^ ^2 ^7 run particle dust 0.522 0.051 0.051 7 ~ ~ ~ 0.7 0.7 0.7 0 3
-playsound block.beacon.deactivate master @a ~ ~ ~ 2 1.2

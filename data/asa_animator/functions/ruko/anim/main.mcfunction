@@ -9,6 +9,16 @@
     # 龍薙ぎ
     execute if entity @s[tag=AnmBiteCL] run function asa_animator:ruko/anim/bite_charge_l/main
     execute if entity @s[tag=AnmBiteCR] run function asa_animator:ruko/anim/bite_charge_r/main
+    
+    # ひっかき
+    execute if entity @s[tag=AnmClawL] run function asa_animator:ruko/anim/claw_l/main
+    execute if entity @s[tag=AnmClawR] run function asa_animator:ruko/anim/claw_r/main
+    # 連続ひっかき
+    execute if entity @s[tag=AnmClawCL] run function asa_animator:ruko/anim/claw_c_l/main
+    execute if entity @s[tag=AnmClawCR] run function asa_animator:ruko/anim/claw_c_r/main
+    # 龍ひっかき
+    execute if entity @s[tag=AnmClawDL] run function asa_animator:ruko/anim/claw_dragon_l/main
+    execute if entity @s[tag=AnmClawDR] run function asa_animator:ruko/anim/claw_dragon_r/main
 
 ## 磁力纏い lv1
     # 

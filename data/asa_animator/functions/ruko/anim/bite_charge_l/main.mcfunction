@@ -29,7 +29,7 @@ execute if entity @s[scores={AsaMatrix=21}] run playsound block.grass.step maste
 execute if entity @s[scores={AsaMatrix=21..25}] if entity @e[tag=RukoAttackTarget,distance=0..6] run tp @s ^-0.3 ^ ^
 execute if entity @s[scores={AsaMatrix=27}] run summon marker ~ ~ ~ {Tags:["RukoMoveRotate"]}
 execute if entity @s[scores={AsaMatrix=27}] run tp @e[type=marker,tag=RukoMoveRotate,distance=0..3] ~ ~ ~ ~35 0
-execute if entity @s[scores={AsaMatrix=27}] run playsound entity.lightning_bolt.thunder master @a ~ ~ ~ 3 1
+execute if entity @s[scores={AsaMatrix=27..30}] run playsound entity.lightning_bolt.thunder master @a ~ ~ ~ 2 2
 execute if entity @s[scores={AsaMatrix=28..40}] as @e[type=marker,tag=RukoMoveRotate,distance=0..3] at @s run tp @s ~ ~ ~ ~-18 ~
 execute if entity @s[scores={AsaMatrix=28..40}] at @e[type=marker,tag=RukoMoveRotate,distance=0..3] run function asa_animator:ruko/anim/bite_charge_l/events/damage
 execute if entity @s[scores={AsaMatrix=41}] run kill @e[type=marker,tag=RukoMoveRotate,distance=0..3]
