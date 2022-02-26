@@ -20,6 +20,11 @@
     execute if entity @s[tag=AnmClawDL] run function asa_animator:ruko/anim/claw_dragon_l/main
     execute if entity @s[tag=AnmClawDR] run function asa_animator:ruko/anim/claw_dragon_r/main
 
+    # 突進
+    execute if entity @s[tag=AnmDashStart] run function asa_animator:ruko/anim/dash_start/main
+    execute if entity @s[tag=AnmDash] run function asa_animator:ruko/anim/dash/main
+    execute if entity @s[tag=AnmDashStop] run function asa_animator:ruko/anim/dash_stop/main
+
     # 飛び掛かり
     execute if entity @s[tag=AnmJump] run function asa_animator:ruko/anim/jump/main
 
