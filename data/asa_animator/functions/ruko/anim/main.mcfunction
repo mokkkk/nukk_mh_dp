@@ -1,5 +1,8 @@
 
 ## 共通
+    # サイドステップ
+    execute if entity @s[tag=AnmStepL] run function asa_animator:ruko/anim/step_l/main
+    execute if entity @s[tag=AnmStepR] run function asa_animator:ruko/anim/step_r/main
 
     # 噛みつき
     execute if entity @s[tag=AnmBite] run function asa_animator:ruko/anim/bite/main

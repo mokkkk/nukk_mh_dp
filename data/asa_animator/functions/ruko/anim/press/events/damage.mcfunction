@@ -6,7 +6,7 @@ execute as @e[type=!armor_stand,type=!area_effect_cloud,type=!marker,tag=!RukoPa
 data remove storage score_damage: Argument
 data remove storage mhdp: DamageType
 
-particle explosion ~ ~ ~ 2 0 2 0 10
+particle explosion ~ ~ ~ 4 0 4 0 10
 playsound entity.wither.break_block master @a ~ ~ ~ 2 0.5
 particle dust 0.314 0 0 3 ~ ~2 ~ 0.4 2 0.4 0 50
 particle dust 0.592 0.243 0.243 1 ~ ~2 ~ 0.2 2 0.2 0 50

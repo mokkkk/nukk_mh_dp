@@ -1,7 +1,6 @@
 
 # 地上にmarkerセット
-summon marker ^ ^ ^10 {Tags:["RukoMovePos"]}
-execute facing entity @e[tag=RukoAttackTarget,limit=1] eyes rotated ~ 0 as @e[tag=RukoAttackTarget] positioned as @s run tp @e[type=marker,tag=RukoMovePos] ^ ^ ^-1
+summon marker ^-9 ^ ^ {Tags:["RukoMovePos"]}
 execute as @e[type=marker,tag=RukoMovePos,limit=1] at @s align y positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
 execute as @e[type=marker,tag=RukoMovePos,limit=1] at @s run tp @s ~ ~0 ~
 
@@ -22,7 +21,7 @@ execute store result score #ruko_mine_z AsaMatrix run data get storage mhdp: Mar
 execute store result score #ruko_height_target AsaMatrix run data get storage mhdp: PosTemp[2] 100
 scoreboard players operation #ruko_mine_z AsaMatrix -= #ruko_height_target AsaMatrix
 
-scoreboard players set #ruko_height_target AsaMatrix 10
+scoreboard players set #ruko_height_target AsaMatrix 12
 scoreboard players operation #ruko_mine_x AsaMatrix /= #ruko_height_target AsaMatrix
 scoreboard players operation #ruko_mine_y AsaMatrix /= #ruko_height_target AsaMatrix
 scoreboard players operation #ruko_mine_z AsaMatrix /= #ruko_height_target AsaMatrix
