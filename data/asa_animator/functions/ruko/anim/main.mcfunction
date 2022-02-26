@@ -28,6 +28,9 @@
     # 飛び掛かり
     execute if entity @s[tag=AnmJump] run function asa_animator:ruko/anim/jump/main
 
+    # ボディプレス
+    execute if entity @s[tag=AnmPress] run function asa_animator:ruko/anim/press/main
+
 ## 磁力纏い lv1
     # 
 
