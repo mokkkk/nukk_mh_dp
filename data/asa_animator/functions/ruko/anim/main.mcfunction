@@ -37,6 +37,13 @@
     # ボディプレス
     execute if entity @s[tag=AnmPress] run function asa_animator:ruko/anim/press/main
 
+    # 滑空ボディプレス
+    execute if entity @s[tag=AnmFly] run function asa_animator:ruko/anim/start_fly/main
+    execute if entity @s[tag=AnmFlyPress] run function asa_animator:ruko/anim/flying_press/main
+
+    # ドラゴンレーザー
+    execute if entity @s[tag=AnmBreath] run function asa_animator:ruko/anim/breath/main
+
 ## 磁力纏い lv1
     # 
 
