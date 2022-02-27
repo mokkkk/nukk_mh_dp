@@ -32,3 +32,5 @@ execute if entity @s[scores={AsaMatrix=26}] at @s run function asa_animator:ruko
 execute if entity @s[scores={AsaMatrix=36..45}] run function asa_animator:ruko/anim/press/events/pos/offset
 
 execute if entity @s[scores={AsaMatrix=46}] positioned ^ ^ ^1 run function asa_animator:ruko/anim/press/events/damage
+
+execute if entity @s[scores={AsaMatrix=61}] run function asa_animator:ruko/anim/press/events/change

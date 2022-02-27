@@ -23,5 +23,3 @@ execute unless entity @s[tag=AnmTurn] unless predicate asa_animator:ruko/stay ru
 
 # デスポーン
 # execute if data storage mh_dp:settings {Custom:{DisableDespawn:false}} unless entity @a[distance=0..64] run function asa_animator:ruko/manager/despawn
-
-function asa_animator:ruko/anim/charge/events/particle

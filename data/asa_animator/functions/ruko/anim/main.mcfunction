@@ -46,6 +46,9 @@
 
 ## 磁力纏い lv1
     # 
+    
+    # ボディプレス2
+    execute if entity @s[tag=AnmPress2] run function asa_animator:ruko/anim/press_2/main
 
 ## 磁力纏い lv2
     # 
