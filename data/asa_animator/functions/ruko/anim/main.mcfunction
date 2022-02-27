@@ -1,5 +1,8 @@
 
 ## 共通
+    # 移動
+    execute if entity @s[tag=AnmMoveStart] run function asa_animator:ruko/anim/move_start/main
+    execute if entity @s[tag=AnmMove] run function asa_animator:ruko/anim/move/main
     # サイドステップ
     execute if entity @s[tag=AnmStepL] run function asa_animator:ruko/anim/step_l/main
     execute if entity @s[tag=AnmStepR] run function asa_animator:ruko/anim/step_r/main
