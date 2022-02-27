@@ -55,8 +55,8 @@
     # execute if entity @s[tag=AnmSummon] run function asa_animator:ruko/anim/summon/main
     # 咆哮
     execute if entity @s[tag=AnmVoice] run function asa_animator:ruko/anim/voice/main
-    # 霞纏い
-    # execute if entity @s[tag=AnmCharge] run function asa_animator:ruko/anim/charge/main
+    # 磁力纏い
+    execute if entity @s[tag=AnmCharge] run function asa_animator:ruko/anim/charge/main
     # 討伐
     # execute if entity @s[tag=AnmDeath] run function asa_animator:ruko/anim/death/main
     # 飛行中討伐

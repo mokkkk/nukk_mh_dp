@@ -67,10 +67,11 @@ tag @s remove IsFlying
 tag @s remove IsMoveRight
 tag @s remove IsAnmStealth
 
-kill @e[type=marker,tag=NazutiBreathTarget]
-kill @e[type=marker,tag=NazutiMoveRotate]
-kill @e[type=marker,tag=NazutiDashTarget]
-kill @e[type=marker,tag=NazutiChargeFPos]
-kill @e[type=marker,tag=NazutiSpTornado]
-kill @e[type=marker,tag=NazutiMovePos]
-kill @e[type=marker,tag=NazutiTongue]
+kill @e[type=marker,tag=RukoBreathTarget]
+kill @e[type=marker,tag=RukoMoveRotate]
+kill @e[type=marker,tag=RukoDashTarget]
+kill @e[type=marker,tag=RukoChargeFPos]
+kill @e[type=marker,tag=RukoSpTornado]
+kill @e[type=marker,tag=RukoMovePos]
+kill @e[type=marker,tag=RukoTongue]
+kill @e[type=marker,tag=RukoBreathPos]
