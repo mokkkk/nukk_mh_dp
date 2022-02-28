@@ -33,3 +33,7 @@ execute if entity @s[scores={AsaMatrix=21}] run playsound item.trident.throw mas
 execute if entity @s[scores={AsaMatrix=22}] positioned ^ ^1 ^4.5 run function asa_animator:ruko/anim/claw_l/events/damage
 execute if entity @s[scores={AsaMatrix=23}] positioned ^-1 ^1 ^4.5 run function asa_animator:ruko/anim/claw_l/events/damage
 execute if entity @s[scores={AsaMatrix=24}] positioned ^-2 ^1 ^4.5 run function asa_animator:ruko/anim/claw_l/events/damage
+
+execute if entity @s[scores={AsaMatrix=1}] if score #mhdp_ruko_lv AsaMatrix matches 1.. run playsound entity.evoker.cast_spell master @a ~ ~ ~ 3 1
+execute if entity @s[scores={AsaMatrix=1..15}] if score #mhdp_ruko_lv AsaMatrix matches 1.. run function asa_animator:ruko/anim/gravity/events/particle
+execute if entity @s[scores={AsaMatrix=1..15}] if score #mhdp_ruko_lv AsaMatrix matches 1.. as @a[distance=3..16] unless entity @s[scores={MhdpTAvoid=1..}] unless entity @s[scores={MhdpTDamage=1..}] at @s facing entity @e[type=armor_stand,tag=RukoRoot] feet rotated ~ 0 positioned ^ ^ ^0.2 rotated as @s run function asa_animator:ruko/anim/g_flying_press/events/move

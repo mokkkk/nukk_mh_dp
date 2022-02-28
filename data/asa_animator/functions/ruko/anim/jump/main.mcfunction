@@ -31,6 +31,8 @@ execute if entity @s[scores={AsaMatrix=21..40}] run function asa_animator:ruko/a
 
 execute if entity @s[scores={AsaMatrix=20}] run function asa_animator:ruko/manager/particle/step
 execute if entity @s[scores={AsaMatrix=40..48}] run function asa_animator:ruko/manager/particle/step
+execute if entity @s[scores={AsaMatrix=20}] run tag @s add IsFlying
+execute if entity @s[scores={AsaMatrix=40}] run tag @s remove IsFlying
 
 execute if entity @s[scores={AsaMatrix=36..43}] positioned ^ ^2 ^4 run function asa_animator:ruko/anim/jump/events/damage
 

@@ -55,3 +55,7 @@ execute if entity @s[scores={AsaMatrix=61..71}] as @e[type=marker,tag=RukoBreath
 execute if entity @s[scores={AsaMatrix=72..74}] as @e[type=marker,tag=RukoBreathPos,distance=0..7] at @s run function asa_animator:ruko/anim/breath/events/attack_1
 
 execute if entity @s[scores={AsaMatrix=75}] run kill @e[type=marker,tag=RukoBreathPos]
+
+execute if entity @s[scores={AsaMatrix=1}] if score #mhdp_ruko_lv AsaMatrix matches 1.. run playsound entity.evoker.cast_spell master @a ~ ~ ~ 3 1
+execute if entity @s[scores={AsaMatrix=1..17}] if score #mhdp_ruko_lv AsaMatrix matches 1.. run function asa_animator:ruko/anim/g_start_fly/events/particle
+execute if entity @s[scores={AsaMatrix=1..17}] if score #mhdp_ruko_lv AsaMatrix matches 1.. as @a[distance=..16] unless entity @s[scores={MhdpTAvoid=1..}] unless entity @s[scores={MhdpTDamage=1..}] at @s facing entity @e[type=armor_stand,tag=RukoRoot] feet rotated ~ 0 positioned ^ ^ ^-0.4 rotated as @s run function asa_animator:ruko/anim/gravity/events/move

@@ -37,3 +37,7 @@ execute if entity @s[scores={AsaMatrix=20}] positioned ^-2 ^1 ^4.5 run function 
 
 execute at @s if block ~ ~-0.1 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
 execute at @s unless block ~ ~0.1 ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~
+
+execute if entity @s[scores={AsaMatrix=1}] if score #mhdp_ruko_lv AsaMatrix matches 1.. run playsound entity.evoker.cast_spell master @a ~ ~ ~ 3 1
+execute if entity @s[scores={AsaMatrix=1..10}] if score #mhdp_ruko_lv AsaMatrix matches 1.. run function asa_animator:ruko/anim/gravity/events/particle
+execute if entity @s[scores={AsaMatrix=1..10}] if score #mhdp_ruko_lv AsaMatrix matches 1.. as @a[distance=5..16] unless entity @s[scores={MhdpTAvoid=1..}] unless entity @s[scores={MhdpTDamage=1..}] at @s facing entity @e[type=armor_stand,tag=RukoRoot] feet rotated ~ 0 positioned ^ ^ ^0.1 rotated as @s run function asa_animator:ruko/anim/g_flying_press/events/move
