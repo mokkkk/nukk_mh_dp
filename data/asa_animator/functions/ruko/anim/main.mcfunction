@@ -50,6 +50,10 @@
     execute if entity @s[tag=AnmGBiteC1L] run function asa_animator:ruko/anim/g_bite_charge_l/main
     execute if entity @s[tag=AnmGBiteC1R] run function asa_animator:ruko/anim/g_bite_charge_r/main
 
+    # 引き寄せ滑空ボディプレス
+    execute if entity @s[tag=AnmGFly] run function asa_animator:ruko/anim/g_start_fly/main
+    execute if entity @s[tag=AnmGFlyPress] run function asa_animator:ruko/anim/g_flying_press/main
+
     # 2連ボディプレス
     execute if entity @s[tag=AnmPress2] run function asa_animator:ruko/anim/press_2/main
 
