@@ -13,6 +13,7 @@ execute at @s rotated ~ ~ as @e[type=marker,tag=RukoChargeFAttack,tag=A,limit=1]
 execute at @s rotated ~ ~-2.5 as @e[type=marker,tag=RukoChargeFAttack,tag=B,limit=1] run function asa_animator:ruko/anim/breath/events/attack_tp
 execute at @s rotated ~ ~-5 as @e[type=marker,tag=RukoChargeFAttack,tag=C,limit=1] run function asa_animator:ruko/anim/breath/events/attack_tp
 execute as @e[type=marker,tag=RukoChargeFAttack] at @s run function asa_animator:ruko/anim/breath/events/damage
+tag @e[tag=MhdpDHit] remove MhdpDHit
 
 # 回転
 tp @s ~ ~ ~ ~ ~-10

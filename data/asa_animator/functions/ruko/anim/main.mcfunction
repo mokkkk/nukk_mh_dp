@@ -45,10 +45,19 @@
     execute if entity @s[tag=AnmBreath] run function asa_animator:ruko/anim/breath/main
 
 ## 磁力纏い lv1
-    # 
-    
-    # ボディプレス2
+    # 引き寄せ龍薙ぎ
+    execute if entity @s[tag=AnmGBiteC0] run function asa_animator:ruko/anim/gravity/main
+    execute if entity @s[tag=AnmGBiteC1L] run function asa_animator:ruko/anim/g_bite_charge_l/main
+    execute if entity @s[tag=AnmGBiteC1R] run function asa_animator:ruko/anim/g_bite_charge_r/main
+
+    # 2連ボディプレス
     execute if entity @s[tag=AnmPress2] run function asa_animator:ruko/anim/press_2/main
+
+    # 2連ドラゴンレーザー
+    execute if entity @s[tag=AnmBreath2] run function asa_animator:ruko/anim/breath_2/main
+
+    # 薙ぎ払いドラゴンレーザー
+    execute if entity @s[tag=AnmBreathLarge] run function asa_animator:ruko/anim/breath_large/main
 
 ## 磁力纏い lv2
     # 
