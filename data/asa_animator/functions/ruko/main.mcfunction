@@ -15,7 +15,7 @@ execute if predicate asa_animator:ruko/stay unless entity @s[tag=IsStand] run fu
 execute unless entity @s[tag=AnmTurn] unless predicate asa_animator:ruko/stay run function asa_animator:ruko/anim/main
 
 # パーティクル
-# execute unless entity @s[tag=IsFlying] if score #mhdp_ruko_lv AsaMatrix matches 1.. run function asa_animator:ruko/anim/charge/events/particle
+execute unless entity @s[tag=IsFlying] if score #mhdp_ruko_lv AsaMatrix matches 1.. run function asa_animator:ruko/anim/charge/events/particle
 
 # 当たり判定位置
 # execute unless entity @s[tag=IsAnger] as @e[type=slime,tag=RukoParts] run function asa_animator:ruko/manager/health/pos

@@ -63,6 +63,9 @@
     # 薙ぎ払いドラゴンレーザー
     execute if entity @s[tag=AnmBreathLarge] run function asa_animator:ruko/anim/breath_large/main
 
+    # 岩回転
+    execute if entity @s[tag=AnmStone] run function asa_animator:ruko/anim/stone/main
+
 ## 磁力纏い lv2
     # 
 

@@ -35,3 +35,5 @@ execute if entity @s[tag=NazutiTailShot] run function asa_animator:nazuti/anim/t
 execute if entity @s[tag=NazutiBreathB] run function asa_animator:nazuti/anim/breath_ball/events/main_bullet
 execute if entity @s[tag=NazutiPoison] run function asa_animator:nazuti/manager/poison/main_bullet
 execute if entity @s[tag=NazutiBreathU] run function asa_animator:nazuti/anim/breath_up/events/main_bullet
+
+execute if entity @s[tag=RukoStone,tag=IsMove] run function asa_animator:ruko/anim/stone/events/main_bullet
