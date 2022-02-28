@@ -70,6 +70,9 @@
     execute if entity @s[tag=AnmStepB] run function asa_animator:ruko/anim/step_b/main
     execute if entity @s[tag=AnmStepB2] run function asa_animator:ruko/anim/step_b_breath/main
 
+    # BJB
+    execute if entity @s[tag=AnmBjb] run function asa_animator:ruko/anim/bjb_land/main
+
 ## 磁力纏い lv2
     # 
 
