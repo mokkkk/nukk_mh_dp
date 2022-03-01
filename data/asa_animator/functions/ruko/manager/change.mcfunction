@@ -19,7 +19,7 @@ execute if predicate asa_animator:ruko/stay if predicate asa_animator:ruko/combo
 # execute if entity @s[tag=IsAnger] if score #mhdp_ruko_anger_count AsaMatrix matches ..0 run function asa_animator:ruko/manager/end_anger
 
 # 強制
-tag @s add AnmBjb
+tag @s add AnmStoneShot
 
 # 終了
 tag @s remove ChangeAnm

@@ -231,6 +231,13 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
+          "nbt": "{Tags:[\"AnmStoneShot\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
           "nbt": "{Tags:[\"AnmStepB\"]}"
         }
       },
@@ -260,13 +267,6 @@
         "entity": "this",
         "predicate": {
           "nbt": "{Tags:[\"AnmTurn\"]}"
-        }
-      },
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "nbt": "{Tags:[\"AnmStride\"]}"
         }
       },
       {

@@ -25,5 +25,5 @@ execute if entity @s[scores={AsaMatrix=13..18}] run playsound entity.skeleton_ho
 execute if entity @s[scores={AsaMatrix=13..18}] run playsound entity.skeleton_horse.death master @a ~ ~ ~ 3 1.6
 
 execute if entity @s[scores={AsaMatrix=13}] run playsound entity.evoker.cast_spell master @a ~ ~ ~ 3 1
-execute if entity @s[scores={AsaMatrix=13..36}] run function asa_animator:ruko/anim/gravity/events/particle
+execute if entity @s[scores={AsaMatrix=13..36}] run function asa_animator:ruko/manager/particle/pull
 execute if entity @s[scores={AsaMatrix=13..36}] as @a[distance=3..20] unless entity @s[scores={MhdpTAvoid=1..}] unless entity @s[scores={MhdpTDamage=1..}] at @s facing entity @e[type=armor_stand,tag=RukoRoot] feet rotated ~ 0 positioned ^ ^ ^0.4 rotated as @s run function asa_animator:ruko/anim/gravity/events/move

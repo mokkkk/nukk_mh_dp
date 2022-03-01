@@ -43,7 +43,7 @@ execute if entity @s[scores={AsaMatrix=43}] run summon marker ~ ~ ~ {Tags:["Ruko
 execute if entity @s[scores={AsaMatrix=43}] as @e[type=marker,tag=RukoMagnePos] at @s run function asa_animator:zinogre/manager/check_ground
 
 execute if entity @s[scores={AsaMatrix=50}] run playsound entity.evoker.cast_spell master @a ~ ~ ~ 3 2
-execute if entity @s[scores={AsaMatrix=50..80}] at @e[type=marker,tag=RukoMagnePos] run function asa_animator:ruko/anim/gravity/events/particle
+execute if entity @s[scores={AsaMatrix=50..80}] at @e[type=marker,tag=RukoMagnePos] run function asa_animator:ruko/manager/particle/pull
 execute if entity @s[scores={AsaMatrix=50..80}] at @e[type=marker,tag=RukoMagnePos] as @a[distance=3..20] unless entity @s[scores={MhdpTAvoid=1..}] unless entity @s[scores={MhdpTDamage=1..}] at @s facing entity @e[type=marker,tag=RukoMagnePos] feet rotated ~ 0 positioned ^ ^ ^0.3 rotated as @s run function asa_animator:ruko/anim/g_flying_press/events/move
 execute if entity @s[scores={AsaMatrix=81}] run kill @e[type=marker,tag=RukoMagnePos]
 

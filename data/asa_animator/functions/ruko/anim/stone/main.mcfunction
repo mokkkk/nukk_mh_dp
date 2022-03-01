@@ -22,7 +22,7 @@ execute as @e[type=armor_stand,tag=RukoParts] run function #asa_matrix:animate
 function asa_animator:ruko/model
 
 execute if entity @s[scores={AsaMatrix=1}] run playsound entity.evoker.cast_spell master @a ~ ~ ~ 3 1
-execute if entity @s[scores={AsaMatrix=1..25}] run function asa_animator:ruko/anim/g_start_fly/events/particle
+execute if entity @s[scores={AsaMatrix=1..25}] run function asa_animator:ruko/manager/particle/push
 execute if entity @s[scores={AsaMatrix=1..25}] as @a[distance=..16] unless entity @s[scores={MhdpTAvoid=1..}] unless entity @s[scores={MhdpTDamage=1..}] at @s facing entity @e[type=armor_stand,tag=RukoRoot] feet rotated ~ 0 positioned ^ ^ ^-0.3 rotated as @s run function asa_animator:ruko/anim/gravity/events/move
 
 execute if entity @s[scores={AsaMatrix=35..50}] run playsound minecraft:entity.phantom.death master @a ~ ~ ~ 3 1.5

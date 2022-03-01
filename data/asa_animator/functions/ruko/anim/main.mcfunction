@@ -66,6 +66,9 @@
     # 岩回転
     execute if entity @s[tag=AnmStone] run function asa_animator:ruko/anim/stone/main
 
+    # 岩発射
+    execute if entity @s[tag=AnmStoneShot] run function asa_animator:ruko/anim/stone_shot/main
+
     # バックステップ岩盤隆起
     execute if entity @s[tag=AnmStepB] run function asa_animator:ruko/anim/step_b/main
     execute if entity @s[tag=AnmStepB2] run function asa_animator:ruko/anim/step_b_breath/main
