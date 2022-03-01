@@ -11,7 +11,7 @@ execute if entity @s[scores={AsaMatrix=46..}] run function asa_animator:ruko/ani
 execute as @e[type=armor_stand,tag=RukoParts] run function #asa_matrix:animate
 function asa_animator:ruko/model
 
-execute if entity @s[scores={AsaMatrix=1}] if predicate asa_animator:random/070 if score #mhdp_ruko_lv AsaMatrix matches 2.. run function asa_animator:ruko/manager/particle/reflect
+# execute if entity @s[scores={AsaMatrix=1}] if predicate asa_animator:random/070 if score #mhdp_ruko_lv AsaMatrix matches 2.. run function asa_animator:ruko/manager/particle/reflect
 
 execute unless predicate asa_animator:ruko/combo if entity @s[scores={AsaMatrix=1}] run tag @s add ChangeAnm
 execute if entity @s[tag=IsAnger,scores={AsaMatrix=1}] run tag @s add ChangeAnm

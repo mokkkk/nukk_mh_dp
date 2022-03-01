@@ -77,7 +77,10 @@
     execute if entity @s[tag=AnmBjb] run function asa_animator:ruko/anim/bjb_land/main
 
 ## 磁力纏い lv2
-    # 
+    # 岩回転突進
+    execute if entity @s[tag=AnmStoneDashStart] run function asa_animator:ruko/anim/stone_dash_start/main
+    execute if entity @s[tag=AnmStoneDash] run function asa_animator:ruko/anim/stone_dash/main
+    execute if entity @s[tag=AnmStoneDashStop] run function asa_animator:ruko/anim/stone_dash_stop/main
 
 ## その他
     # 登場歩き

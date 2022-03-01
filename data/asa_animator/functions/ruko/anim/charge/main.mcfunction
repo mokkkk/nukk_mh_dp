@@ -35,3 +35,4 @@ execute if entity @s[scores={AsaMatrix=30..60}] positioned ^ ^3 ^ run particle d
 execute if entity @s[scores={AsaMatrix=30..60}] positioned ^ ^3 ^ run particle dust 0.592 0.243 0.243 3 ~ ~ ~ 3 3 3 0 4
 
 execute if entity @s[scores={AsaMatrix=30}] run function asa_animator:ruko/anim/voice/events/damage
+execute if entity @s[scores={AsaMatrix=30}] run function asa_animator:ruko/manager/lv/up

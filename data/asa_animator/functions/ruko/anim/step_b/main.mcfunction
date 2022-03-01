@@ -19,7 +19,7 @@ function asa_animator:ruko/model
 
 execute if entity @s[scores={AsaMatrix=1}] run playsound entity.evoker.cast_spell master @a ~ ~ ~ 3 1
 execute if entity @s[scores={AsaMatrix=1..14}] run function asa_animator:ruko/manager/rotate
-execute if entity @s[scores={AsaMatrix=1..17}] positioned ^ ^ ^5 run function asa_animator:ruko/anim/gravity/events/particle
+execute if entity @s[scores={AsaMatrix=1..17}] positioned ^ ^ ^5 run function asa_animator:ruko/manager/particle/pull
 execute if entity @s[scores={AsaMatrix=1..17}] positioned ^ ^ ^5 as @a[distance=..16] unless entity @s[scores={MhdpTAvoid=1..}] unless entity @s[scores={MhdpTDamage=1..}] at @s facing entity @e[type=armor_stand,tag=RukoRoot] feet rotated ~ 0 positioned ^ ^ ^0.4 rotated as @s run function asa_animator:ruko/anim/g_flying_press/events/move
 
 execute if entity @s[scores={AsaMatrix=20}] run summon marker ^ ^ ^5 {Tags:["RukoAttackPos"]}
