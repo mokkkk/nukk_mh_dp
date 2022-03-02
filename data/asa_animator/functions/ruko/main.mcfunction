@@ -17,6 +17,11 @@ execute unless entity @s[tag=AnmTurn] unless predicate asa_animator:ruko/stay ru
 # パーティクル
 execute unless entity @s[tag=IsFlying] if score #mhdp_ruko_lv AsaMatrix matches 1.. run function asa_animator:ruko/anim/charge/events/particle
 
+# メテオ
+execute if entity @e[type=marker,tag=RukoMeteoManager] as @e[type=marker,tag=RukoMeteoManager] run function asa_animator:ruko/anim/sp_attack_1/events/meteo/main_bullet
+execute if entity @e[type=marker,tag=RukoMeteoShot] as @e[type=marker,tag=RukoMeteoShot] at @s run function asa_animator:ruko/anim/sp_attack_1/events/shot/main_bullet
+
+
 # 当たり判定位置
 # execute unless entity @s[tag=IsAnger] as @e[type=slime,tag=RukoParts] run function asa_animator:ruko/manager/health/pos
 # execute if entity @s[tag=IsAnger] as @e[type=slime,tag=RukoParts] run function asa_animator:ruko/manager/health/pos_anger
