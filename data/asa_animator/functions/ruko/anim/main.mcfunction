@@ -102,7 +102,7 @@
     execute if entity @s[tag=AnmSp2] run function asa_animator:ruko/anim/sp_attack_2/main
 
 ## その他
-    # 登場歩き
+    # 登場
     # execute if entity @s[tag=AnmSummon] run function asa_animator:ruko/anim/summon/main
     # 咆哮
     execute if entity @s[tag=AnmVoice] run function asa_animator:ruko/anim/voice/main
@@ -111,16 +111,16 @@
     # 討伐
     # execute if entity @s[tag=AnmDeath] run function asa_animator:ruko/anim/death/main
     # 飛行中討伐
-    # execute if entity @s[tag=AnmFlyDeath] run function asa_animator:ruko/anim/flying_death/main
+    execute if entity @s[tag=AnmFlyDeath] run function asa_animator:ruko/anim/flying_death/main
     # 大怯み（磁力纏い解除）
-    # execute if entity @s[tag=AnmSpDamage] run function asa_animator:ruko/anim/sp_damage/main
+    execute if entity @s[tag=AnmSpDamage] run function asa_animator:ruko/anim/sp_damage/main
     # 頭部位破壊
-    # execute if entity @s[tag=AnmDHead] run function asa_animator:ruko/anim/destroy_head/main
+    execute if entity @s[tag=AnmDHead] run function asa_animator:ruko/anim/destroy_head/main
     # 胴部位破壊
-    # execute if entity @s[tag=AnmDBody] run function asa_animator:ruko/anim/destroy_body/main
+    execute if entity @s[tag=AnmDBody] run function asa_animator:ruko/anim/destroy_body/main
     # 尻尾部位破壊
-    # execute if entity @s[tag=AnmDTail] run function asa_animator:ruko/anim/destroy_tail/main
+    execute if entity @s[tag=AnmDTail] run function asa_animator:ruko/anim/destroy_tail/main
     # 飛行中怯み
-    # execute if entity @s[tag=AnmFlyDamage] run function asa_animator:ruko/anim/flying_damage/main
+    execute if entity @s[tag=AnmFlyDamage] run function asa_animator:ruko/anim/flying_damage/main
     # 怒り
     # execute if entity @s[tag=AnmAnger] run function asa_animator:ruko/anim/anger/main
