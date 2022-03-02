@@ -9,8 +9,7 @@ execute if entity @s[tag=ChangeAnm] run function asa_animator:ruko/manager/chang
 execute if predicate asa_animator:ruko/stay if entity @s[tag=IsStand] run function asa_animator:ruko/anim/stay_stand/main
 execute if predicate asa_animator:ruko/stay unless entity @s[tag=IsStand] run function asa_animator:ruko/anim/stay/main
 # 軸合わせ
-# execute if entity @s[tag=AnmTurn,tag=!IsTurnRight] run function asa_animator:ruko/anim/turn_l/main
-# execute if entity @s[tag=AnmTurn,tag=IsTurnRight] run function asa_animator:ruko/anim/turn_r/main
+execute if entity @s[tag=AnmTurn] run function asa_animator:ruko/anim/turn/main
 # 行動
 execute unless entity @s[tag=AnmTurn] unless predicate asa_animator:ruko/stay run function asa_animator:ruko/anim/main
 

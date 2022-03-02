@@ -36,6 +36,10 @@ execute if entity @s[scores={AsaMatrix=54}] as @e[type=armor_stand,tag=RukoStone
 execute if entity @s[scores={AsaMatrix=56}] as @e[type=armor_stand,tag=RukoStoneShot,tag=!IsMove,sort=random,limit=1] run function asa_animator:ruko/anim/stone_shot/events/shot
 execute if entity @s[scores={AsaMatrix=58}] as @e[type=armor_stand,tag=RukoStoneShot,tag=!IsMove,sort=random,limit=1] run function asa_animator:ruko/anim/stone_shot/events/shot
 execute if entity @s[scores={AsaMatrix=60}] as @e[type=armor_stand,tag=RukoStoneShot,tag=!IsMove,sort=random,limit=1] run function asa_animator:ruko/anim/stone_shot/events/shot
+execute if entity @s[scores={AsaMatrix=62}] if score #mhdp_ruko_lv AsaMatrix matches 2.. as @e[type=armor_stand,tag=RukoStoneShot,tag=!IsMove,sort=random,limit=1] run function asa_animator:ruko/anim/stone_shot/events/shot
+execute if entity @s[scores={AsaMatrix=64}] if score #mhdp_ruko_lv AsaMatrix matches 2.. as @e[type=armor_stand,tag=RukoStoneShot,tag=!IsMove,sort=random,limit=1] run function asa_animator:ruko/anim/stone_shot/events/shot
+execute if entity @s[scores={AsaMatrix=66}] if score #mhdp_ruko_lv AsaMatrix matches 2.. as @e[type=armor_stand,tag=RukoStoneShot,tag=!IsMove,sort=random,limit=1] run function asa_animator:ruko/anim/stone_shot/events/shot
+execute if entity @s[scores={AsaMatrix=68}] if score #mhdp_ruko_lv AsaMatrix matches 2.. as @e[type=armor_stand,tag=RukoStoneShot,tag=!IsMove,sort=random,limit=1] run function asa_animator:ruko/anim/stone_shot/events/shot
 
 execute if entity @s[scores={AsaMatrix=52..55}] run playsound minecraft:entity.phantom.death master @a ~ ~ ~ 3 1.5
 execute if entity @s[scores={AsaMatrix=52..55}] run playsound minecraft:entity.phantom.death master @a ~ ~ ~ 3 0.5

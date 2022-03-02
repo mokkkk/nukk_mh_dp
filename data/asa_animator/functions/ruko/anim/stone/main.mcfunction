@@ -38,6 +38,10 @@ execute if entity @s[scores={AsaMatrix=3}] rotated ~ 0 positioned ^ ^-5 ^5 run f
 execute if entity @s[scores={AsaMatrix=3}] rotated ~90 0 positioned ^ ^-5 ^5 run function asa_animator:ruko/anim/stone/events/summon
 execute if entity @s[scores={AsaMatrix=3}] rotated ~180 0 positioned ^ ^-5 ^5 run function asa_animator:ruko/anim/stone/events/summon
 execute if entity @s[scores={AsaMatrix=3}] rotated ~270 0 positioned ^ ^-5 ^5 run function asa_animator:ruko/anim/stone/events/summon
+execute if entity @s[scores={AsaMatrix=3}] if score #mhdp_ruko_lv AsaMatrix matches 2.. rotated ~45 0 positioned ^ ^-5 ^5 run function asa_animator:ruko/anim/stone/events/summon
+execute if entity @s[scores={AsaMatrix=3}] if score #mhdp_ruko_lv AsaMatrix matches 2.. rotated ~135 0 positioned ^ ^-5 ^5 run function asa_animator:ruko/anim/stone/events/summon
+execute if entity @s[scores={AsaMatrix=3}] if score #mhdp_ruko_lv AsaMatrix matches 2.. rotated ~225 0 positioned ^ ^-5 ^5 run function asa_animator:ruko/anim/stone/events/summon
+execute if entity @s[scores={AsaMatrix=3}] if score #mhdp_ruko_lv AsaMatrix matches 2.. rotated ~315 0 positioned ^ ^-5 ^5 run function asa_animator:ruko/anim/stone/events/summon
 execute if entity @s[scores={AsaMatrix=11}] run playsound block.grass.break master @a ~ ~ ~ 3 0.7
 execute if entity @s[scores={AsaMatrix=6..15}] as @e[type=armor_stand,tag=RukoStone] at @s run function asa_animator:ruko/anim/stone/events/move
 execute if entity @s[scores={AsaMatrix=6..15}] as @e[type=armor_stand,tag=RukoStone] at @s run particle block grass_block ~ ~ ~ 0.3 0.3 0.3 0 3

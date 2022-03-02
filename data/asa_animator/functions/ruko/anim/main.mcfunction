@@ -96,7 +96,7 @@
     execute if entity @s[tag=AnmMagne0] run function asa_animator:ruko/anim/magneblast/main
     execute if entity @s[tag=AnmMagne1] run function asa_animator:ruko/anim/magneblast_2/main
 
-    # 龍岩双極散
+    # ドラゴニックメテオ
     execute if entity @s[tag=AnmSp0] run function asa_animator:ruko/anim/sp_attack_0/main
     execute if entity @s[tag=AnmSp1] run function asa_animator:ruko/anim/sp_attack_1/main
     execute if entity @s[tag=AnmSp2] run function asa_animator:ruko/anim/sp_attack_2/main
