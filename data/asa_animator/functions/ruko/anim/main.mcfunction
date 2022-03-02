@@ -86,6 +86,12 @@
     execute if entity @s[tag=AnmStoneDash] run function asa_animator:ruko/anim/stone_dash/main
     execute if entity @s[tag=AnmStoneDashStop] run function asa_animator:ruko/anim/stone_dash_stop/main
 
+    # 地面ブレス
+    execute if entity @s[tag=AnmBreathG] run function asa_animator:ruko/anim/breath_ground/main
+
+    # チャージブレス
+    execute if entity @s[tag=AnmBreathC] run function asa_animator:ruko/anim/breath_charge/main
+
     # 磁力解放
     execute if entity @s[tag=AnmMagne0] run function asa_animator:ruko/anim/magneblast/main
     execute if entity @s[tag=AnmMagne1] run function asa_animator:ruko/anim/magneblast_2/main

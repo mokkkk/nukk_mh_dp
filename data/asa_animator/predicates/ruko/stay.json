@@ -189,6 +189,20 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
+          "nbt": "{Tags:[\"AnmBreathC\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmBreathG\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
           "nbt": "{Tags:[\"AnmGBiteC0\"]}"
         }
       },
