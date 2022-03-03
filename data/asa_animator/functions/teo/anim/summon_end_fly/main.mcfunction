@@ -25,5 +25,5 @@ execute if entity @s[scores={AsaMatrix=30}] run function asa_animator:teo/manage
 execute if entity @s[scores={AsaMatrix=1}] at @s run function asa_animator:teo/anim/summon_end_fly/events/pos/set_pos
 execute if entity @s[scores={AsaMatrix=1..30}] run function asa_animator:teo/anim/summon_end_fly/events/pos/offset
 
-execute if entity @s[scores={AsaMatrix=41..60}] at @s if block ~ ~-0.55 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
-execute if entity @s[scores={AsaMatrix=41..60}] at @s unless block ~ ~-0.35 ~ #asa_animator:no_collision at @s run tp @s ~ ~0.05 ~ ~ ~
+execute if entity @s[scores={AsaMatrix=41..60}] at @s if block ~ ~-0.4 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
+execute if entity @s[scores={AsaMatrix=41..60}] at @s unless block ~ ~-0.25 ~ #asa_animator:no_collision at @s run tp @s ~ ~0.05 ~ ~ ~

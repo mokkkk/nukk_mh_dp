@@ -20,7 +20,7 @@ execute if predicate asa_animator:ruko/stay if predicate asa_animator:ruko/combo
 
 # 強制
 # function asa_animator:ruko/manager/change_normal/_/claw
-tag @s add AnmFlyDamage
+tag @s add AnmTurn
 
 # 終了
 tag @s remove ChangeAnm

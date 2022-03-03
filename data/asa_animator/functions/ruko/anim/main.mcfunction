@@ -103,13 +103,14 @@
 
 ## その他
     # 登場
-    # execute if entity @s[tag=AnmSummon] run function asa_animator:ruko/anim/summon/main
+    execute if entity @s[tag=AnmSummon] run function asa_animator:ruko/anim/summon/main
+    execute if entity @s[tag=AnmSummonEndFly] run function asa_animator:ruko/anim/summon_end_fly/main
     # 咆哮
     execute if entity @s[tag=AnmVoice] run function asa_animator:ruko/anim/voice/main
     # 磁力纏い
     execute if entity @s[tag=AnmCharge] run function asa_animator:ruko/anim/charge/main
     # 討伐
-    # execute if entity @s[tag=AnmDeath] run function asa_animator:ruko/anim/death/main
+    execute if entity @s[tag=AnmDeath] run function asa_animator:ruko/anim/death/main
     # 飛行中討伐
     execute if entity @s[tag=AnmFlyDeath] run function asa_animator:ruko/anim/flying_death/main
     # 大怯み（磁力纏い解除）
@@ -123,4 +124,4 @@
     # 飛行中怯み
     execute if entity @s[tag=AnmFlyDamage] run function asa_animator:ruko/anim/flying_damage/main
     # 怒り
-    # execute if entity @s[tag=AnmAnger] run function asa_animator:ruko/anim/anger/main
+    execute if entity @s[tag=AnmAnger] run function asa_animator:ruko/anim/anger/main

@@ -1,6 +1,6 @@
 
 # タイマー増加
-# scoreboard players add #mhdp_ruko_kill_timer AsaMatrix 1
+scoreboard players add #mhdp_ruko_kill_timer AsaMatrix 1
 
 # アニメーション遷移
 execute if entity @s[tag=ChangeAnm] run function asa_animator:ruko/manager/change
@@ -20,9 +20,8 @@ execute unless entity @s[tag=IsFlying] if score #mhdp_ruko_lv AsaMatrix matches 
 execute if entity @e[type=marker,tag=RukoMeteoManager] as @e[type=marker,tag=RukoMeteoManager] run function asa_animator:ruko/anim/sp_attack_1/events/meteo/main_bullet
 execute if entity @e[type=marker,tag=RukoMeteoShot] as @e[type=marker,tag=RukoMeteoShot] at @s run function asa_animator:ruko/anim/sp_attack_1/events/shot/main_bullet
 
-
 # 当たり判定位置
-# execute unless entity @s[tag=IsAnger] as @e[type=slime,tag=RukoParts] run function asa_animator:ruko/manager/health/pos
+execute as @e[type=slime,tag=RukoParts] run function asa_animator:ruko/manager/health/pos
 # execute if entity @s[tag=IsAnger] as @e[type=slime,tag=RukoParts] run function asa_animator:ruko/manager/health/pos_anger
 
 # デスポーン
