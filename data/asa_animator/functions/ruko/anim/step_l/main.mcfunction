@@ -18,3 +18,6 @@ execute if entity @s[scores={AsaMatrix=5}] at @s run function asa_animator:ruko/
 execute if entity @s[scores={AsaMatrix=6..17}] run function asa_animator:ruko/anim/step_l/events/pos/offset
 execute if entity @s[scores={AsaMatrix=5}] run function asa_animator:ruko/manager/particle/step
 execute if entity @s[scores={AsaMatrix=17}] run function asa_animator:ruko/manager/particle/step
+
+execute if entity @s[scores={AsaMatrix=18..}] at @s if block ~ ~-0.1 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
+execute if entity @s[scores={AsaMatrix=18..}] at @s unless block ~ ~0.1 ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~

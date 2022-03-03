@@ -38,3 +38,6 @@ execute if entity @s[scores={AsaMatrix=13}] run function asa_animator:ruko/anim/
 execute if entity @s[scores={AsaMatrix=24..29}] run function asa_animator:ruko/anim/claw_dragon_l/events/pos/offset
 
 execute if entity @s[scores={AsaMatrix=30}] positioned ^ ^0.5 ^5.5 run function asa_animator:ruko/anim/claw_dragon_l/events/damage
+
+execute if entity @s[scores={AsaMatrix=6}] run tag @s add IsFlying
+execute if entity @s[scores={AsaMatrix=29}] run tag @s remove IsFlying

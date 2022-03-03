@@ -15,3 +15,6 @@ playsound block.grass.step master @a ~ ~ ~ 2 0.7
 particle block grass_block ~ ~0.5 ~ 1 0 1 0 3
 execute at @s positioned ~ ~5 ~ run tp @s ~ ~ ~
 execute at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
+
+# コンボキャンセル
+    execute unless predicate asa_animator:ruko/combo if entity @s[scores={AsaMatrix=11}] run function asa_animator:ruko/manager/cancel_animation

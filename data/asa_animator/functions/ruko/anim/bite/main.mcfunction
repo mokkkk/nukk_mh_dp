@@ -27,3 +27,6 @@ execute if entity @s[scores={AsaMatrix=17}] positioned ^ ^ ^6 run function asa_a
 
 execute at @s if block ~ ~-0.1 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
 execute at @s unless block ~ ~0.1 ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~
+
+# コンボキャンセル
+    execute unless predicate asa_animator:ruko/combo if entity @s[scores={AsaMatrix=18}] run function asa_animator:ruko/manager/cancel_animation

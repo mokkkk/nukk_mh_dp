@@ -25,3 +25,6 @@ execute if entity @s[scores={AsaMatrix=1..30}] run function asa_animator:ruko/an
 execute if entity @s[scores={AsaMatrix=1..30}] run function asa_animator:ruko/manager/rotate
 
 execute if entity @s[scores={AsaMatrix=30}] run tag @s remove IsFlying
+
+# コンボキャンセル
+    execute unless predicate asa_animator:ruko/combo if entity @s[scores={AsaMatrix=32}] run function asa_animator:ruko/manager/cancel_animation

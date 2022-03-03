@@ -46,3 +46,6 @@ execute if entity @s[scores={AsaMatrix=11}] run playsound block.grass.break mast
 execute if entity @s[scores={AsaMatrix=6..15}] as @e[type=armor_stand,tag=RukoStone,tag=Summoned] at @s run function asa_animator:ruko/anim/stone/events/move
 execute if entity @s[scores={AsaMatrix=6..15}] as @e[type=armor_stand,tag=RukoStone,tag=Summoned] at @s run particle block grass_block ~ ~ ~ 0.3 0.3 0.3 0 3
 execute if entity @s[scores={AsaMatrix=35}] run function asa_animator:ruko/anim/stone/events/shot
+
+# コンボキャンセル
+    execute unless predicate asa_animator:ruko/combo if entity @s[scores={AsaMatrix=75}] run function asa_animator:ruko/manager/cancel_animation

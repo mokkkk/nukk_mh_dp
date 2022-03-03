@@ -27,7 +27,7 @@ execute if entity @s[scores={AsaMatrix=92..}] run function asa_animator:ruko/ani
 execute as @e[type=armor_stand,tag=RukoParts] run function #asa_matrix:animate
 function asa_animator:ruko/model
 
-execute if entity @s[scores={AsaMatrix=1..45}] at @s run function asa_animator:ruko/manager/rotate
+execute if entity @s[scores={AsaMatrix=1..43}] at @s run function asa_animator:ruko/manager/rotate
 
 execute if entity @s[scores={AsaMatrix=10}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=38}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
@@ -36,7 +36,7 @@ execute if entity @s[scores={AsaMatrix=5}] run function asa_animator:ruko/manage
 execute if entity @s[scores={AsaMatrix=5}] at @s run function asa_animator:ruko/anim/press_2/events/pos/set_pos_0
 execute if entity @s[scores={AsaMatrix=6..32}] at @s run function asa_animator:ruko/anim/press_2/events/pos/offset
 
-execute if entity @s[scores={AsaMatrix=45}] at @s run function asa_animator:ruko/anim/press_2/events/pos/set_pos_1
+execute if entity @s[scores={AsaMatrix=43}] at @s run function asa_animator:ruko/anim/press_2/events/pos/set_pos_1
 execute if entity @s[scores={AsaMatrix=56..60}] at @s run function asa_animator:ruko/anim/press_2/events/pos/offset
 
 execute if entity @s[scores={AsaMatrix=61}] positioned ^ ^ ^1 run function asa_animator:ruko/anim/press/events/damage

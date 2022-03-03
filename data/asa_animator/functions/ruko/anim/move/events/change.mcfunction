@@ -4,7 +4,7 @@ execute at @s align y run tp @s ~ ~5 ~
 execute at @s run function asa_animator:zinogre/manager/check_ground
 tag @s remove AnmMove
 
-tag @s add AnmBite
+# tag @s add AnmBite
 
 # # 状態取得
 # execute if score #mhdp_kushala_lv AsaMatrix matches 1.. run tag @s add KushalaLv1
