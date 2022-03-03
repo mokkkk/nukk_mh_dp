@@ -2,7 +2,7 @@
 scoreboard players add @s AsaMatrix 1
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:ruko/anim/death/start
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:ruko/anim/death/keyframes/0
-execute if entity @s[scores={AsaMatrix=1..10}] run tp @s ^0 ^-0.01 ^0.02
+execute if entity @s[scores={AsaMatrix=1..10}] run tp @s ^0 ^-0.01 ^0.02 ~0.5 ~
 execute if entity @s[scores={AsaMatrix=11}] run function asa_animator:ruko/anim/death/keyframes/1
 execute if entity @s[scores={AsaMatrix=11..25}] run tp @s ^0 ^0 ^0
 execute if entity @s[scores={AsaMatrix=26}] run function asa_animator:ruko/anim/death/keyframes/2

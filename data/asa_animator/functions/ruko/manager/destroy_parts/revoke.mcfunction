@@ -1,1 +1,1 @@
-advancement revoke @a only mh_dp:toasts/nazuti
+advancement revoke @a only mh_dp:toasts/ruko
