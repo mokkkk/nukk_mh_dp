@@ -24,3 +24,4 @@ execute as @e[type=armor_stand,tag=RukoParts,tag=WingL0] run data merge entity @
 execute as @e[type=armor_stand,tag=RukoParts,tag=WingR0] run data merge entity @s {Pose:{Head:[1f,2f,-40f]}}
 execute as @e[type=armor_stand,tag=RukoParts,tag=WingL1] run data merge entity @s {Pose:{Head:[0f,-2.6f,70f]}}
 execute as @e[type=armor_stand,tag=RukoParts,tag=WingR1] run data merge entity @s {Pose:{Head:[0f,2.6f,-70f]}}
+scoreboard players set #mhdp_ruko_actcount_phase AsaMatrix 0

@@ -34,6 +34,10 @@ execute if entity @s[scores={AsaMatrix=25}] positioned ^-6 ^ ^21 run function as
 execute if entity @s[scores={AsaMatrix=30}] positioned ^10 ^ ^26 run function asa_animator:ruko/anim/breath_ground/events/shot
 execute if entity @s[scores={AsaMatrix=30}] positioned ^ ^ ^30 run function asa_animator:ruko/anim/breath_ground/events/shot
 execute if entity @s[scores={AsaMatrix=30}] positioned ^-10 ^ ^26 run function asa_animator:ruko/anim/breath_ground/events/shot
+execute if entity @s[scores={AsaMatrix=35}] positioned ^-14 ^ ^35 run function asa_animator:ruko/anim/breath_ground/events/shot
+execute if entity @s[scores={AsaMatrix=35}] positioned ^14 ^ ^37 run function asa_animator:ruko/anim/breath_ground/events/shot
+execute if entity @s[scores={AsaMatrix=35}] positioned ^-7 ^ ^42 run function asa_animator:ruko/anim/breath_ground/events/shot
+execute if entity @s[scores={AsaMatrix=35}] positioned ^7 ^ ^42 run function asa_animator:ruko/anim/breath_ground/events/shot
 
 execute if entity @s[scores={AsaMatrix=1}] run playsound entity.evoker.cast_spell master @a ~ ~ ~ 3 1
 execute if entity @s[scores={AsaMatrix=1..20}] run function asa_animator:ruko/manager/particle/push
