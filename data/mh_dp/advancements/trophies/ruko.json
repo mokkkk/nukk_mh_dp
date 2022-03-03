@@ -1,0 +1,20 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:barrier",
+      "nbt": "{CustomModelData:20012}"
+    },
+    "title": "極龍討伐",
+    "description": "襲来する双極・極龍を討ち倒した証．",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mh_dp:trophies/root_hard",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

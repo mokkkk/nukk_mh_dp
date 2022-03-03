@@ -29,6 +29,8 @@ tag @s remove TeoTarget
 tag @s remove TeoAttackTarget
 tag @s remove NazutiTarget
 tag @s remove NazutiAttackTarget
+tag @s remove RukoTarget
+tag @s remove RukoAttackTarget
 
 tag @s remove MhdpDHit
 

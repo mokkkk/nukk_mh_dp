@@ -2,7 +2,7 @@
   "display": {
     "icon": {
       "item": "minecraft:barrier",
-      "nbt": "{CustomModelData:20002}"
+      "nbt": "{CustomModelData:20011}"
     },
     "title": "霞龍討伐",
     "description": "古の幻影・霞龍を討ち倒した証．",
