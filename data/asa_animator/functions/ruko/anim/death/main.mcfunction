@@ -21,6 +21,7 @@ execute if entity @s[scores={AsaMatrix=118..}] run function asa_animator:ruko/an
 execute as @e[type=armor_stand,tag=RukoParts] run function #asa_matrix:animate
 function asa_animator:ruko/model
 
+execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:ruko/manager/model/change_to_anger
 execute if entity @s[scores={AsaMatrix=1..5}] at @s positioned ~ ~5 ~ run tp @s ~ ~ ~
 execute if entity @s[scores={AsaMatrix=1..5}] at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
 

@@ -17,3 +17,5 @@ execute if entity @s[scores={AsaMatrix=7}] run function asa_animator:ruko/manage
 execute if entity @s[scores={AsaMatrix=18}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 
 execute if entity @s[scores={AsaMatrix=7}] if entity @a[distance=..6] as @a[distance=..6] run function mh_dp:player/knockback/start_wind
+
+execute if entity @s[scores={AsaMatrix=7}] run tag @s add IsFlying

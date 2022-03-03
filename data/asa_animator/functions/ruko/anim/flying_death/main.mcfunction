@@ -17,6 +17,7 @@ execute if entity @s[scores={AsaMatrix=120..}] run function asa_animator:ruko/an
 execute as @e[type=armor_stand,tag=RukoParts] run function #asa_matrix:animate
 function asa_animator:ruko/model
 
+execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:ruko/manager/model/change_to_anger
 execute if entity @s[scores={AsaMatrix=1}] run tag @s remove IsFlying
 execute if entity @s[scores={AsaMatrix=10}] at @s run function asa_animator:ruko/anim/flying_damage/events/pos/set_pos
 execute if entity @s[scores={AsaMatrix=11..22}] run function asa_animator:ruko/anim/flying_damage/events/pos/offset
