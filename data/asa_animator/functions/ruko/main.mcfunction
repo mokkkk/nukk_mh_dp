@@ -23,5 +23,8 @@ execute if entity @e[type=marker,tag=RukoMeteoShot] as @e[type=marker,tag=RukoMe
 # 当たり判定位置
 execute as @e[type=slime,tag=RukoParts] run function asa_animator:ruko/manager/health/pos
 
+# 画面効果
+execute if score #mhdp_ruko_lv AsaMatrix matches 2.. run function asa_animator:ruko/manager/font/_
+
 # デスポーン
 execute if data storage mh_dp:settings {Custom:{DisableDespawn:false}} unless entity @a[distance=0..64] run function asa_animator:ruko/manager/despawn

@@ -17,6 +17,7 @@ tellraw @a [{"text": "\n ---  ","color": "light_purple"},{"text": "[轟竜]","co
 tellraw @a [{"text": "\n ---  ","color": "light_purple"},{"text": "[鋼龍]","color": "light_purple","clickEvent":{"action":"run_command","value":"/function asa_animator:kushala/manager/summon"}}]
 tellraw @a [{"text": "\n ---  ","color": "light_purple"},{"text": "[炎王龍]","color": "light_purple","clickEvent":{"action":"run_command","value":"/function asa_animator:teo/manager/summon"}}]
 tellraw @a [{"text": "\n ---  ","color": "light_purple"},{"text": "[霞龍]","color": "light_purple","clickEvent":{"action":"run_command","value":"/function asa_animator:nazuti/manager/summon"}}]
+tellraw @a [{"text": "\n ---  ","color": "light_purple"},{"text": "[極龍]","color": "light_purple","clickEvent":{"action":"run_command","value":"/function asa_animator:ruko/manager/summon"}}]
 
 tellraw @a {"text": "\n==========================================","color": "light_purple"}
 
