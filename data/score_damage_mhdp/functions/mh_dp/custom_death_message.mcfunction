@@ -76,6 +76,12 @@ execute if entity @s[tag=D_NazutiHead] run tellraw @a [{"selector":"@s"},{"text"
 execute if entity @s[tag=D_NazutiTail] run tellraw @a [{"selector":"@s"},{"text": " は霞龍に吹き飛ばされた"}]
 execute if entity @s[tag=D_NazutiTongue] run tellraw @a [{"selector":"@s"},{"text": " は霞龍に食べられた"}]
 
+execute if entity @s[tag=D_RukoBite] run tellraw @a [{"selector":"@s"},{"text": " は極龍に噛み砕かれた"}]
+execute if entity @s[tag=D_RukoBreath] run tellraw @a [{"selector":"@s"},{"text": " は龍の力により消え去った"}]
+execute if entity @s[tag=D_RukoClaw] run tellraw @a [{"selector":"@s"},{"text": " は極龍に切り裂かれた"}]
+execute if entity @s[tag=D_RukoDash] run tellraw @a [{"selector":"@s"},{"text": " は極龍に轢かれた"}]
+execute if entity @s[tag=D_RukoStone] run tellraw @a [{"selector":"@s"},{"text": " は岩に吹き飛ばされた"}]
+
 execute if entity @s[tag=D_BlightFire] run tellraw @a [{"selector":"@s"},{"text": " は火傷した"}]
 
 kill @s

@@ -21,3 +21,5 @@ execute if entity @s[tag=KushalaRoot] run function asa_animator:kushala/manager/
 execute if entity @s[tag=TeoRoot] run function asa_animator:teo/manager/despawn
 
 execute if entity @s[tag=NazutiRoot] run function asa_animator:nazuti/manager/despawn
+
+execute if entity @s[tag=RukoRoot] run function asa_animator:ruko/manager/despawn
