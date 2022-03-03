@@ -31,10 +31,11 @@ execute if entity @s[scores={AsaMatrix=1..35}] as @a[distance=..25] unless entit
 
 execute if entity @s[scores={AsaMatrix=3}] run function asa_animator:ruko/anim/stone_shot_large/events/summon_0
 execute if entity @s[scores={AsaMatrix=16}] rotated ~22.5 ~ run function asa_animator:ruko/anim/stone_shot_large/events/summon_1
-execute if entity @s[scores={AsaMatrix=6..38}] as @e[type=armor_stand,tag=RukoStoneShot] at @s run function asa_animator:ruko/anim/stone/events/move
-execute if entity @s[scores={AsaMatrix=6..38}] as @e[type=armor_stand,tag=RukoStoneShot] at @s run particle block grass_block ~ ~ ~ 0.3 0.3 0.3 0 3
+execute if entity @s[scores={AsaMatrix=6..38}] as @e[type=armor_stand,tag=RukoStoneShot,tag=Summoned] at @s run function asa_animator:ruko/anim/stone/events/move
+execute if entity @s[scores={AsaMatrix=6..38}] as @e[type=armor_stand,tag=RukoStoneShot,tag=Summoned] at @s run particle block grass_block ~ ~ ~ 0.3 0.3 0.3 0 3
 
 execute if entity @s[scores={AsaMatrix=72}] as @e[type=armor_stand,tag=RukoStoneShot] at @s run tag @s add IsMove
+execute if entity @s[scores={AsaMatrix=72}] as @e[type=armor_stand,tag=RukoStoneShot] at @s run tag @s remove Summoned
 
 execute if entity @s[scores={AsaMatrix=10}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=48}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7

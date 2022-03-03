@@ -38,3 +38,6 @@ execute if entity @s[scores={AsaMatrix=36..43}] positioned ^ ^2 ^4 run function 
 
 # 風圧
 execute if entity @s[scores={AsaMatrix=20}] as @a[distance=..10] run function mh_dp:player/knockback/start_wind
+
+# コンボキャンセル
+    execute unless predicate asa_animator:ruko/combo if entity @s[scores={AsaMatrix=48}] run function asa_animator:ruko/manager/cancel_animation

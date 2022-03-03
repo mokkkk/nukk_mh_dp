@@ -29,8 +29,8 @@ execute if entity @s[scores={AsaMatrix=1..20}] as @a[distance=..16] unless entit
 execute if entity @s[scores={AsaMatrix=3}] facing entity @e[tag=RukoAttackTarget] eyes run function asa_animator:ruko/anim/stone_shot/events/summon
 
 execute if entity @s[scores={AsaMatrix=11}] run playsound block.grass.break master @a ~ ~ ~ 3 0.7
-execute if entity @s[scores={AsaMatrix=6..25}] as @e[type=armor_stand,tag=RukoStoneShot] at @s run function asa_animator:ruko/anim/stone/events/move
-execute if entity @s[scores={AsaMatrix=6..25}] as @e[type=armor_stand,tag=RukoStoneShot] at @s run particle block grass_block ~ ~ ~ 0.3 0.3 0.3 0 3
+execute if entity @s[scores={AsaMatrix=6..25}] as @e[type=armor_stand,tag=RukoStoneShot,tag=Summoned] at @s run function asa_animator:ruko/anim/stone/events/move
+execute if entity @s[scores={AsaMatrix=6..25}] as @e[type=armor_stand,tag=RukoStoneShot,tag=Summoned] at @s run particle block grass_block ~ ~ ~ 0.3 0.3 0.3 0 3
 execute if entity @s[scores={AsaMatrix=52}] as @e[type=armor_stand,tag=RukoStoneShot,tag=!IsMove,sort=random,limit=1] run function asa_animator:ruko/anim/stone_shot/events/shot
 execute if entity @s[scores={AsaMatrix=54}] as @e[type=armor_stand,tag=RukoStoneShot,tag=!IsMove,sort=random,limit=1] run function asa_animator:ruko/anim/stone_shot/events/shot
 execute if entity @s[scores={AsaMatrix=56}] as @e[type=armor_stand,tag=RukoStoneShot,tag=!IsMove,sort=random,limit=1] run function asa_animator:ruko/anim/stone_shot/events/shot

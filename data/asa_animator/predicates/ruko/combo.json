@@ -79,6 +79,13 @@
         "predicate": {
           "nbt": "{Tags:[\"ComboK\"]}"
         }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"ComboL\"]}"
+        }
       }
     ]
   }
