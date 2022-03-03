@@ -2,7 +2,7 @@
   "display": {
     "icon": {
       "item": "minecraft:barrier",
-      "nbt": "{CustomModelData:20002}"
+      "nbt": "{CustomModelData:20010}"
     },
     "title": "炎王龍討伐",
     "description": "業火の王・炎王龍を討ち倒した証．",

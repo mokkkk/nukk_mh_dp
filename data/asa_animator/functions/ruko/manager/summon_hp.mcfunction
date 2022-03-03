@@ -3,7 +3,7 @@
     scoreboard players set #mhdp_ruko_health AsaMatrix 83000
 # HP倍率適用
     scoreboard players operation #mhdp_ruko_health AsaMatrix *= #mhdp_hp_multiply AsaMatrix
-    execute store result score #mhdp_ruko_head_damage AsaMatrix store result score #mhdp_ruko_body_damage AsaMatrix store result score #mhdp_ruko_tail_damage AsaMatrix store result score #mhdp_ruko_counter_damage_max AsaMatrix store result score #mhdp_ruko_sp_damage_max AsaMatrix store result score #mhdp_ruko_anger_damage_max AsaMatrix run scoreboard players operation #mhdp_ruko_health AsaMatrix /= #asam_const_100 AsaMatrix
+    execute store result score #mhdp_ruko_head_damage AsaMatrix store result score #mhdp_ruko_body_damage AsaMatrix store result score #mhdp_ruko_tail_damage AsaMatrix store result score #mhdp_ruko_sp_damage_max AsaMatrix store result score #mhdp_ruko_anger_damage_max AsaMatrix run scoreboard players operation #mhdp_ruko_health AsaMatrix /= #asam_const_100 AsaMatrix
 
 # ボスバー設定
     bossbar add asa_animator:ruko_health [{"text": "極龍"},{"text":"\uE000","font":"mhdp"}]

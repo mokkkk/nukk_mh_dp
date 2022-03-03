@@ -2,7 +2,7 @@
   "display": {
     "icon": {
       "item": "minecraft:barrier",
-      "nbt": "{CustomModelData:20010}"
+      "nbt": "{CustomModelData:20012}"
     },
     "title": "部位破壊",
     "description": "---",
