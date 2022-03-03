@@ -1,4 +1,4 @@
-data modify entity @e[type=armor_stand,tag=RukoParts,tag=Tail1,limit=1] ArmorItems[3].tag.CustomModelData set value 10515
+data modify entity @e[type=armor_stand,tag=RukoParts,tag=Tail1,limit=1] ArmorItems[3].tag.CustomModelData set value 10547
 data modify entity @e[type=armor_stand,tag=RukoParts,tag=Tail2,limit=1] ArmorItems[3].tag.CustomModelData set value 10084
 tag @s add DestroyTail
 playsound entity.player.attack.knockback master @a ~ ~ ~ 2 1
@@ -14,4 +14,3 @@ execute if entity @s[tag=IsFlying] run tag @s add AnmFlyDamage
 
 advancement grant @a[distance=0..64] only mh_dp:toasts/ruko
 schedule function asa_animator:ruko/manager/destroy_parts/revoke 5t
-function asa_animator:ruko/manager/model/stealth_end
