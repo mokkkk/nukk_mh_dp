@@ -7,3 +7,4 @@ execute if score #mhdp_nazuti_lv AsaMatrix matches 1 run particle cloud ~ ~2 ~ 1
 execute if score #mhdp_nazuti_lv AsaMatrix matches 2 run particle large_smoke ~ ~2 ~ 1 1 1 0.3 100
 scoreboard players operation #mhdp_nazuti_sp_damage AsaMatrix = #mhdp_nazuti_sp_damage_max AsaMatrix
 function asa_animator:nazuti/manager/lv/reset
+function asa_animator:nazuti/manager/model/stealth_end
