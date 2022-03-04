@@ -8,6 +8,9 @@ say on attack
 # ダメージ計算
     execute as @e[type=#lib:living,tag=Victim] run function mh_dp:weapon/attack/damage/main
 
+# 切れ味更新
+    function mh_dp:weapon/attack/sharpness/main
+
 # パーティクル
     execute if data storage mhdp: Temp.Weapon.tag.MhdpStatus{Type:1} as @e[type=#lib:living,tag=Victim] at @s positioned ~ ~1.2 ~ run function mh_dp:weapon/attack/particle/fire
 
