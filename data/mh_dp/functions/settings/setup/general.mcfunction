@@ -14,7 +14,7 @@ scoreboard objectives add MhdpTKnockback dummy
 scoreboard objectives add Global dummy
 scoreboard objectives add Temporary dummy
 scoreboard objectives add Const dummy
-
+scoreboard objectives add AttackedEntity dummy
 scoreboard players set $2 Const 2
 scoreboard players set $2^15 Const 32768
 scoreboard players set $2^16 Const 65536
