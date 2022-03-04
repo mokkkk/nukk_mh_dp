@@ -1,6 +1,4 @@
 
-say on attack
-
 # 攻撃対象取得
     tag @s add this
     execute as @e[type=#lib:living,type=!player,tag=AttackedEntity,distance=..150] if score @s AttackedEntity = @a[tag=this,limit=1] AttackedEntity run tag @s add Victim
