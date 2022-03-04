@@ -4,6 +4,10 @@
 #
 # @within advancement mob_manager:entity_finder/check_attacked_entity
 
+# ランダムなUserID設定
+    execute unless entity @s[scores={UserID=1..}] run scoreboard players add #mhdp_userid_index UserID 1
+    execute if score #mhdp_userid_index UserID matches 2147483647.. run scoreboard players set #mhdp_userid_index UserID 1
+    execute unless entity @s[scores={UserID=1..}] run scoreboard players operation @s UserID = #mhdp_userid_index UserID
 # tag付け
     tag @s add this
 # フィルタ
