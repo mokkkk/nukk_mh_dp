@@ -10,6 +10,15 @@ scoreboard objectives add MhdpBlightFire dummy
 scoreboard objectives add MhdpBlightDragon dummy
 scoreboard objectives add MhdpTKnockback dummy
 
+# for TSB library
+scoreboard objectives add Global dummy
+scoreboard objectives add Temporary dummy
+scoreboard objectives add Const dummy
+
+scoreboard players set $2 Const 2
+scoreboard players set $2^15 Const 32768
+scoreboard players set $2^16 Const 65536
+
 # ID設定
 scoreboard players set #mhdp_id_holder MhdpMonsterID 0
 
