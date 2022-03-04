@@ -3,9 +3,18 @@
     "requirement": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:iron_sword"
+              ]
+            }
+          }
+        },
         "damage": {
-          "type": {
-            "is_projectile": false
+          "dealt": {
+            "min": 5.5
           }
         }
       }
