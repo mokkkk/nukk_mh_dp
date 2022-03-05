@@ -6,3 +6,7 @@ tag @s remove ExistNarga
 tag @s remove ExistDyno
 tag @s remove ExistBrachy
 tag @s remove ExistTiga
+tag @s remove ExistKushala
+tag @s remove ExistTeo
+tag @s remove ExistNazuti
+tag @s remove ExistRuko

@@ -36,6 +36,7 @@
 
 # 初期化
     scoreboard players set #mhdp_zinogre_kill_timer AsaMatrix 0
+    scoreboard players set #asa_zinogre_charge AsaMatrix 0
     # scoreboard players operation #mhdp_zinogre_anger_damage AsaMatrix = #mhdp_zinogre_anger_damage_max AsaMatrix
 
 # 終了
