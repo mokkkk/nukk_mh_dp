@@ -15,6 +15,11 @@
     scoreboard players operation #mhdp_temp_damage_stat AsaMatrix *= #mhdp_temp_damage_multiply AsaMatrix
     execute store result score #mhdp_temp_damage AsaMatrix run scoreboard players operation #mhdp_temp_damage_stat AsaMatrix /= #asam_const_100 AsaMatrix
 
+# 属性に応じてダメージ増減
+    execute store result score #mhdp_temp_type AsaMatrix run data get storage mhdp: Temp.Weapon.tag.MhdpStatus.Type
+    execute if score @s MhdpMWeakness = #mhdp_temp_type AsaMatrix run scoreboard players add #mhdp_temp_damage AsaMatrix 75
+    execute if score @s MhdpMResist = #mhdp_temp_type AsaMatrix run scoreboard players remove #mhdp_temp_damage AsaMatrix 100
+
 # 切れ味補正適応
     execute if data storage mhdp: Temp.Weapon.tag.MhdpStatus{SharpnessColor:0} run scoreboard players set #mhdp_temp_multiply AsaMatrix 50
     execute if data storage mhdp: Temp.Weapon.tag.MhdpStatus{SharpnessColor:1} run scoreboard players set #mhdp_temp_multiply AsaMatrix 75
@@ -37,3 +42,4 @@
     scoreboard players reset #mhdp_temp_damage_multiply
     scoreboard players reset #mhdp_temp_multiply
     scoreboard players reset #mhdp_temp_damage_stat
+    scoreboard players reset #mhdp_temp_type
