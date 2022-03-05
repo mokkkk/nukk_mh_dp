@@ -18,7 +18,7 @@
     
 
 # レシピ更新
-    execute as @e[type=wandering_trader,tag=MhdpToolMerchant,tag=Start] run function mh_dp:merchant/tool/init
+    execute as @e[type=wandering_trader,tag=MhdpToolMerchant,tag=Start] run function mh_dp:merchant/item/init
 
 # 終了
     data remove storage mhdp: Temp

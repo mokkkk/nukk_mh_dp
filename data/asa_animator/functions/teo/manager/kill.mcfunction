@@ -28,7 +28,7 @@ execute positioned ~ ~5 ~ run function asa_animator:teo/manager/loot
 # 進捗達成
 advancement grant @a[distance=0..64] only mh_dp:trophies/root_hard
 advancement grant @a[distance=0..64] only mh_dp:trophies/teo
-# data modify storage mh_dp:status Monster.Win.Teo set value true
+data modify storage mh_dp:status Monster.Win.Teo set value true
 
 # 当たり判定削除
 function asa_animator:teo/manager/health/kill

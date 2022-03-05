@@ -28,7 +28,7 @@ execute positioned ~ ~5 ~ run function asa_animator:ruko/manager/loot
 # 進捗達成
 advancement grant @a[distance=0..64] only mh_dp:trophies/root_hard
 advancement grant @a[distance=0..64] only mh_dp:trophies/ruko
-# data modify storage mh_dp:status Monster.Win.Ruko set value true
+data modify storage mh_dp:status Monster.Win.Ruko set value true
 
 # 当たり判定削除
 function asa_animator:ruko/manager/health/kill
