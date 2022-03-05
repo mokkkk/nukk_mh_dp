@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:iron_sword"
+              ]
+            }
+          }
+        },
+        "damage": {
+          "dealt": {
+            "min": 3
+          }
+        }
+      }
+    }
+  }
+}

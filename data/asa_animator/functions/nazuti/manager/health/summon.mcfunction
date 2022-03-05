@@ -21,3 +21,7 @@ summon slime ~ ~ ~ {NoGravity:1b,Silent:1b,NoAI:1b,Health:1000f,Size:2,Tags:["Mo
 summon slime ~ ~ ~ {NoGravity:1b,Silent:1b,NoAI:1b,Health:1000f,Size:3,Tags:["MonsterParts","NazutiHealth","NazutiParts","Tail1","TailParts"],Attributes:[{Name:"generic.max_health",Base:1000},{Name:"generic.knockback_resistance",Base:1},{Name:"generic.armor",Base:3}],DeathLootTable:"asa_animator:no_drop",ActiveEffects:[{Id:14b,Amplifier:1b,Duration:6000000,ShowParticles:0b}],PersistenceRequired:1b}
 summon slime ~ ~ ~ {NoGravity:1b,Silent:1b,NoAI:1b,Health:1000f,Size:3,Tags:["MonsterParts","NazutiHealth","NazutiParts","Tail2","TailParts"],Attributes:[{Name:"generic.max_health",Base:1000},{Name:"generic.knockback_resistance",Base:1},{Name:"generic.armor",Base:3}],DeathLootTable:"asa_animator:no_drop",ActiveEffects:[{Id:14b,Amplifier:1b,Duration:6000000,ShowParticles:0b}],PersistenceRequired:1b}
 summon slime ~ ~ ~ {NoGravity:1b,Silent:1b,NoAI:1b,Health:1000f,Size:2,Tags:["MonsterParts","NazutiHealth","NazutiParts","Tail3","TailParts"],Attributes:[{Name:"generic.max_health",Base:1000},{Name:"generic.knockback_resistance",Base:1},{Name:"generic.armor",Base:3}],DeathLootTable:"asa_animator:no_drop",ActiveEffects:[{Id:14b,Amplifier:1b,Duration:6000000,ShowParticles:0b}],PersistenceRequired:1b}
+
+execute as @e[type=slime,tag=NazutiHealth] run function mob_manager:init/
+scoreboard players set @e[type=slime,tag=NazutiHealth] MhdpMWeakness 1
+scoreboard players set @e[type=slime,tag=NazutiHealth] MhdpMResist 2

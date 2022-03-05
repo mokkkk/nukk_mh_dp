@@ -22,3 +22,7 @@ summon slime ~ ~ ~ {NoGravity:1b,Silent:1b,NoAI:1b,Health:1000f,Size:2,Tags:["Mo
 summon slime ~ ~ ~ {NoGravity:1b,Silent:1b,NoAI:1b,Health:1000f,Size:2,Tags:["MonsterParts","RukoHealth","RukoParts","ArmR0","ArmParts"],Attributes:[{Name:"generic.max_health",Base:1000},{Name:"generic.knockback_resistance",Base:1},{Name:"generic.armor",Base:4}],DeathLootTable:"asa_animator:no_drop",ActiveEffects:[{Id:14b,Amplifier:1b,Duration:6000000,ShowParticles:0b}],PersistenceRequired:1b}
 summon slime ~ ~ ~ {NoGravity:1b,Silent:1b,NoAI:1b,Health:1000f,Size:2,Tags:["MonsterParts","RukoHealth","RukoParts","ArmL1","ArmParts"],Attributes:[{Name:"generic.max_health",Base:1000},{Name:"generic.knockback_resistance",Base:1},{Name:"generic.armor",Base:4}],DeathLootTable:"asa_animator:no_drop",ActiveEffects:[{Id:14b,Amplifier:1b,Duration:6000000,ShowParticles:0b}],PersistenceRequired:1b}
 summon slime ~ ~ ~ {NoGravity:1b,Silent:1b,NoAI:1b,Health:1000f,Size:2,Tags:["MonsterParts","RukoHealth","RukoParts","ArmR1","ArmParts"],Attributes:[{Name:"generic.max_health",Base:1000},{Name:"generic.knockback_resistance",Base:1},{Name:"generic.armor",Base:4}],DeathLootTable:"asa_animator:no_drop",ActiveEffects:[{Id:14b,Amplifier:1b,Duration:6000000,ShowParticles:0b}],PersistenceRequired:1b}
+
+execute as @e[type=slime,tag=RukoHealth] run function mob_manager:init/
+scoreboard players set @e[type=slime,tag=RukoHealth] MhdpMWeakness 4
+scoreboard players set @e[type=slime,tag=RukoHealth] MhdpMResist 3

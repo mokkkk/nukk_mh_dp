@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "type": {
+            "is_projectile": true,
+            "direct_entity": {
+              "type": "#minecraft:arrows",
+              "nbt": "{Tags:[\"MhdpPiercingArrow\"]}"
+            }
+          }
+        },
+        "entity": {
+          "type": "minecraft:slime"
+        }
+      }
+    }
+  }
+}

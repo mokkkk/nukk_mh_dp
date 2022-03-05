@@ -6,9 +6,9 @@ data remove storage mhdp: Temp.Health
 scoreboard players remove #narga_damage AsaMatrix 100000
 
 # ダメージ0.5以下なら無効
-execute unless score #narga_damage AsaMatrix matches -501.. at @s run function asa_animator:narga/manager/health/damage
+execute unless score #narga_damage AsaMatrix matches -251.. at @s run function asa_animator:narga/manager/health/damage
 
 # 体力回復
-execute if score #narga_damage AsaMatrix matches -501.. run data merge entity @s {Health:1000f}
+execute if score #narga_damage AsaMatrix matches -251.. run data merge entity @s {Health:1000f}
 # 複数判定への攻撃を無効
-execute unless score #narga_damage AsaMatrix matches -501.. run execute as @e[type=slime,tag=NargaParts] run data merge entity @s {Health:1000f}
+execute unless score #narga_damage AsaMatrix matches -251.. run execute as @e[type=slime,tag=NargaParts] run data merge entity @s {Health:1000f}
