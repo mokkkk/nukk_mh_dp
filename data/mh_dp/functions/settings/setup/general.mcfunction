@@ -9,6 +9,8 @@ scoreboard objectives add MhdpTAvoid dummy
 scoreboard objectives add MhdpBlightFire dummy
 scoreboard objectives add MhdpBlightDragon dummy
 scoreboard objectives add MhdpTKnockback dummy
+scoreboard objectives add MhdpMWeakness dummy
+scoreboard objectives add MhdpMResist dummy
 
 # for TSB library
 scoreboard objectives add Global dummy

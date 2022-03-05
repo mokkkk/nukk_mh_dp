@@ -10,6 +10,9 @@ data modify storage mh_dp:settings Custom.DisableDespawn set value 0b
 # スコアボード定義
 scoreboard objectives add MhdpBlightDragon dummy
 scoreboard objectives add MhdpTKnockback dummy
+scoreboard objectives add MhdpMWeakness dummy
+scoreboard objectives add MhdpMResist dummy
+
 # for TSB library
 scoreboard objectives add Global dummy
 scoreboard objectives add Temporary dummy
