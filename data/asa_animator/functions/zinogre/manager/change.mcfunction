@@ -6,10 +6,10 @@ tag @e[tag=ZinogreAttackTarget] remove ZinogreAttackTarget
 scoreboard players set @s AsaMatrix 0
 
 # ターゲット探索
-tag @e[type=#asa_animator:attack_target,tag=!ZinogreParts,tag=!ZinogreTarget,distance=0..50,tag=!NotTarget] add ZinogreTarget
+tag @e[type=#asa_animator:attack_target,tag=!ZinogreParts,tag=!ZinogreTarget,tag=!NotTarget,distance=0..50] add ZinogreTarget
 # ターゲット決定
-tag @a[tag=ZinogreTarget,limit=1,sort=random,tag=!NotTarget] add ZinogreAttackTarget
-execute unless entity @e[tag=ZinogreAttackTarget] run tag @e[tag=ZinogreTarget,limit=1,sort=random] add ZinogreAttackTarget
+tag @a[tag=ZinogreTarget,tag=!NotTarget,sort=random,limit=1] add ZinogreAttackTarget
+execute unless entity @e[tag=ZinogreAttackTarget] run tag @e[tag=ZinogreTarget,sort=random,limit=1] add ZinogreAttackTarget
 
 # 通常時
 execute unless entity @s[tag=IsThunder] run function asa_animator:zinogre/manager/change_normal/change
