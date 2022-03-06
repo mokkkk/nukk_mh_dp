@@ -13,7 +13,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"雌火竜の棘\"}',Lore:['{\"text\":\"雌火竜の毒を帯びた棘．\"}','{\"text\":\"武器の素材として使用される．\"}']},CustomModelData:10004,MhdpID:5}"
+              "tag": "{display:{Name:'{\"text\":\"雌火竜の棘\",\"italic\": false}',Lore:['{\"text\":\"雌火竜の毒を帯びた棘．\",\"italic\": false}','{\"text\":\"武器の素材として使用される．\",\"italic\": false}']},CustomModelData:10004,MhdpID:5}"
               }
           ]
         },
@@ -24,7 +24,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"雌火竜の甲殻\"}',Lore:['{\"text\":\"雌火竜の体を守る頑丈な甲殻．\"}','{\"text\":\"防具の素材として使用される．\"}']},CustomModelData:10005,MhdpID:6}"
+              "tag": "{display:{Name:'{\"text\":\"雌火竜の甲殻\",\"italic\": false}',Lore:['{\"text\":\"雌火竜の体を守る頑丈な甲殻．\",\"italic\": false}','{\"text\":\"防具の素材として使用される．\",\"italic\": false}']},CustomModelData:10005,MhdpID:6}"
               }
           ]
         },
@@ -35,7 +35,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"竜骨\"}',Lore:['{\"text\":\"頑強な竜の骨．様々な用途がある．\"}']},CustomModelData:10018,MhdpID:19}"
+              "tag": "{display:{Name:'{\"text\":\"竜骨\",\"italic\": false}',Lore:['{\"text\":\"頑強な竜の骨．様々な用途がある．\",\"italic\": false}']},CustomModelData:10018,MhdpID:19}"
               }
           ]
         }
