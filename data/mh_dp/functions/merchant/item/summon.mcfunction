@@ -5,10 +5,10 @@
     gamerule sendCommandFeedback false
 
 # 通知
-    tellraw @a {"text":"【もうすぐ武具商人が訪れる】"}
+    tellraw @a {"text":"【もうすぐ道具商人が訪れる】"}
 
 # 召喚
-    execute at @s run summon wandering_trader ~ -64 ~ {DespawnDelay:6000,Tags:["MhdpToolMerchant","Start"],CustomName:'{"text":"武具商人"}',WanderTarget:{X:0,Y:0,Z:0},Offers:{Recipes:[{rewardExp:0b,buy:{id:"minecraft:stone",Count:1b},sell:{id:"minecraft:stone",Count:1b}}]}}
+    execute at @s run summon wandering_trader ~ -64 ~ {DespawnDelay:6000,Tags:["MhdpToolMerchant","Start"],CustomName:'{"text":"道具商人"}',WanderTarget:{X:0,Y:0,Z:0},Offers:{Recipes:[{rewardExp:0b,buy:{id:"minecraft:stone",Count:1b},sell:{id:"minecraft:stone",Count:1b}}]}}
     data modify storage mhdp: Temp.Pos set from entity @s Pos
     data modify storage mhdp: Temp.WanderTarget.X set from storage mhdp: Temp.Pos[0]
     data modify storage mhdp: Temp.WanderTarget.Y set from storage mhdp: Temp.Pos[1]
