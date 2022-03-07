@@ -8,6 +8,7 @@
     execute if entity @s[tag=BrachyRoot] run function asa_animator:brachy/manager/item/flash
     execute if entity @s[tag=BrachyRRoot] run function asa_animator:brachyr/manager/item/flash
     execute if entity @s[tag=TigaRoot] run function asa_animator:tiga/manager/item/flash
+    execute if entity @s[tag=ZinogreRoot] run function asa_animator:zinogre/manager/item/flash
     execute if entity @s[tag=KushalaRoot] run function asa_animator:kushala/manager/item/flash
     execute if entity @s[tag=TeoRoot] run function asa_animator:teo/manager/item/flash
     execute if entity @s[tag=NazutiRoot] run function asa_animator:nazuti/manager/item/flash
