@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:shot_crossbow",
+      "conditions": {
+        "item": {
+          "nbt": "{MhdpItem:3}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mh_dp:item/flash/main"
+  }
+}
