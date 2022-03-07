@@ -11,6 +11,7 @@ scoreboard objectives add MhdpBlightDragon dummy
 scoreboard objectives add MhdpTKnockback dummy
 scoreboard objectives add MhdpMWeakness dummy
 scoreboard objectives add MhdpMResist dummy
+scoreboard objectives add MhdpTSneak minecraft.custom:sneak_time
 
 # for TSB library
 scoreboard objectives add Global dummy
