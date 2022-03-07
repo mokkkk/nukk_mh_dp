@@ -17,3 +17,4 @@ scoreboard players reset #narga_mine_y
 scoreboard players reset #narga_mine_z
 scoreboard players reset #narga_height_target
 scoreboard players reset #narga_damage
+scoreboard players reset #mhdp_narga_flash_time
