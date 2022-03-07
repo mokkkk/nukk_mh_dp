@@ -17,3 +17,4 @@ scoreboard players reset #mhdp_kushala_body_damage
 scoreboard players reset #mhdp_kushala_tail_damage
 scoreboard players reset #mhdp_kushala_combo_count
 scoreboard players reset #mhdp_kushala_anger_count
+scoreboard players reset #mhdp_kushala_flash_time

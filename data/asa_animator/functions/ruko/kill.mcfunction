@@ -19,6 +19,7 @@ scoreboard players reset #mhdp_ruko_Body_damage
 scoreboard players reset #mhdp_ruko_tail_damage
 scoreboard players reset #mhdp_ruko_combo_count
 scoreboard players reset #mhdp_ruko_font
+scoreboard players reset #mhdp_ruko_flash_time
 
 kill @e[type=marker,tag=RukoBreathTarget]
 kill @e[type=marker,tag=RukoMoveRotate]

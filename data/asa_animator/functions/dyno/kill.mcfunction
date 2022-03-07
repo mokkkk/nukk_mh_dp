@@ -20,3 +20,4 @@ scoreboard players reset #dyno_damage
 scoreboard players reset #mhdp_dyno_anger_count
 scoreboard players reset #mhdp_dyno_anger_damage
 scoreboard players reset #mhdp_dyno_anger_damage_max
+scoreboard players reset #mhdp_dyno_flash_time

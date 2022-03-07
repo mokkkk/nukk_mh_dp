@@ -18,3 +18,4 @@ scoreboard players reset #brachy_mine_y
 scoreboard players reset #brachy_mine_z
 scoreboard players reset #brachy_height_target
 scoreboard players reset #brachy_damage
+scoreboard players reset #mhdp_brachy_flash_time

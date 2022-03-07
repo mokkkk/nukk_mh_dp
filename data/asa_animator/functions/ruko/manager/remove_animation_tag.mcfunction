@@ -73,7 +73,6 @@ tag @s remove ComboK
 tag @s remove ComboL
 
 tag @s remove IsStand
-tag @s remove IsFlying
 tag @s remove IsMoveRight
 
 kill @e[type=marker,tag=RukoBreathTarget]
