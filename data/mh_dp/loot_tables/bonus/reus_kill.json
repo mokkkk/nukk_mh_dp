@@ -13,7 +13,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"火竜の鱗\",\"italic\": false}',Lore:['{\"text\":\"火竜の体を覆う鱗．\",\"italic\": false}','{\"text\":\"武器の素材として使用される．\",\"italic\": false}']},CustomModelData:10000,MhdpID:1}"
+              "tag": "{display:{Name:'{\"text\":\"火竜の鱗\",\"italic\":false}',Lore:['{\"text\":\"火竜の体を覆う鱗．\",\"italic\":false}','{\"text\":\"武器の素材として使用される．\",\"italic\":false}']},CustomModelData:10000,MhdpID:1}"
               }
           ]
         },
@@ -24,7 +24,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"火竜の甲殻\",\"italic\": false}',Lore:['{\"text\":\"火竜の体を守る頑丈な甲殻．\",\"italic\": false}','{\"text\":\"防具の素材として使用される．\",\"italic\": false}']},CustomModelData:10001,MhdpID:2}"
+              "tag": "{display:{Name:'{\"text\":\"火竜の甲殻\",\"italic\":false}',Lore:['{\"text\":\"火竜の体を守る頑丈な甲殻．\",\"italic\":false}','{\"text\":\"防具の素材として使用される．\",\"italic\":false}']},CustomModelData:10001,MhdpID:2}"
               }
           ]
         },
@@ -35,7 +35,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"竜骨\",\"italic\": false}',Lore:['{\"text\":\"頑強な竜の骨．様々な用途がある．\",\"italic\": false}']},CustomModelData:10018,MhdpID:19}"
+              "tag": "{display:{Name:'{\"text\":\"竜骨\",\"italic\":false}',Lore:['{\"text\":\"頑強な竜の骨．様々な用途がある．\",\"italic\":false}']},CustomModelData:10018,MhdpID:19}"
               }
           ]
         }

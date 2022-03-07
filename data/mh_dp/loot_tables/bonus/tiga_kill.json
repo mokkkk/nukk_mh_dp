@@ -13,7 +13,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"轟竜の牙\",\"italic\": false}',Lore:['{\"text\":\"全てを噛み砕く轟竜の牙．\",\"italic\": false}','{\"text\":\"武器の素材として使用される．\",\"italic\": false}']},CustomModelData:10016,MhdpID:17}"
+              "tag": "{display:{Name:'{\"text\":\"轟竜の牙\",\"italic\":false}',Lore:['{\"text\":\"全てを噛み砕く轟竜の牙．\",\"italic\":false}','{\"text\":\"武器の素材として使用される．\",\"italic\":false}']},CustomModelData:10016,MhdpID:17}"
               }
           ]
         },
@@ -24,7 +24,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"轟竜の鱗\",\"italic\": false}',Lore:['{\"text\":\"強者の体を守る，頑丈な鱗．\",\"italic\": false}','{\"text\":\"防具の素材として使用される．\",\"italic\": false}']},CustomModelData:10017,MhdpID:18}"
+              "tag": "{display:{Name:'{\"text\":\"轟竜の鱗\",\"italic\":false}',Lore:['{\"text\":\"強者の体を守る，頑丈な鱗．\",\"italic\":false}','{\"text\":\"防具の素材として使用される．\",\"italic\":false}']},CustomModelData:10017,MhdpID:18}"
               }
           ]
         },
@@ -35,7 +35,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"竜骨\",\"italic\": false}',Lore:['{\"text\":\"頑強な竜の骨．様々な用途がある．\",\"italic\": false}']},CustomModelData:10018,MhdpID:19}"
+              "tag": "{display:{Name:'{\"text\":\"竜骨\",\"italic\":false}',Lore:['{\"text\":\"頑強な竜の骨．様々な用途がある．\",\"italic\":false}']},CustomModelData:10018,MhdpID:19}"
               }
           ]
         }

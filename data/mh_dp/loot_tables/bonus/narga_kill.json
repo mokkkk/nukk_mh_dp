@@ -13,7 +13,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"迅竜の鱗\",\"italic\": false}',Lore:['{\"text\":\"迅竜の体を覆う鱗．\",\"italic\": false}','{\"text\":\"武器の素材として使用される．\",\"italic\": false}']},CustomModelData:10002,MhdpID:3}"
+              "tag": "{display:{Name:'{\"text\":\"迅竜の鱗\",\"italic\":false}',Lore:['{\"text\":\"迅竜の体を覆う鱗．\",\"italic\":false}','{\"text\":\"武器の素材として使用される．\",\"italic\":false}']},CustomModelData:10002,MhdpID:3}"
               }
           ]
         },
@@ -24,7 +24,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"迅竜の黒毛\",\"italic\": false}',Lore:['{\"text\":\"闇夜に溶ける漆黒の毛．\",\"italic\": false}','{\"text\":\"防具の素材として使用される．\",\"italic\": false}']},CustomModelData:10003,MhdpID:4}"
+              "tag": "{display:{Name:'{\"text\":\"迅竜の黒毛\",\"italic\":false}',Lore:['{\"text\":\"闇夜に溶ける漆黒の毛．\",\"italic\":false}','{\"text\":\"防具の素材として使用される．\",\"italic\":false}']},CustomModelData:10003,MhdpID:4}"
               }
           ]
         },
@@ -35,7 +35,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"竜骨\",\"italic\": false}',Lore:['{\"text\":\"頑強な竜の骨．様々な用途がある．\",\"italic\": false}']},CustomModelData:10018,MhdpID:19}"
+              "tag": "{display:{Name:'{\"text\":\"竜骨\",\"italic\":false}',Lore:['{\"text\":\"頑強な竜の骨．様々な用途がある．\",\"italic\":false}']},CustomModelData:10018,MhdpID:19}"
               }
           ]
         }

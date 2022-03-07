@@ -13,7 +13,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"砕竜の撃滅拳\",\"italic\": false}',Lore:['{\"text\":\"全てを砕く竜の拳を覆う甲殻．\",\"italic\": false}','{\"text\":\"武器の素材として使用される．\",\"italic\": false}']},CustomModelData:10010,MhdpID:11}"
+              "tag": "{display:{Name:'{\"text\":\"砕竜の撃滅拳\",\"italic\":false}',Lore:['{\"text\":\"全てを砕く竜の拳を覆う甲殻．\",\"italic\":false}','{\"text\":\"武器の素材として使用される．\",\"italic\":false}']},CustomModelData:10010,MhdpID:11}"
               }
           ]
         },
@@ -24,7 +24,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"不壊の黒曜甲\",\"italic\": false}',Lore:['{\"text\":\"限界を超えた爆破も耐える砕竜の甲殻．\",\"italic\": false}','{\"text\":\"防具の素材として使用される．\",\"italic\": false}']},CustomModelData:10011,MhdpID:12}"
+              "tag": "{display:{Name:'{\"text\":\"不壊の黒曜甲\",\"italic\":false}',Lore:['{\"text\":\"限界を超えた爆破も耐える砕竜の甲殻．\",\"italic\":false}','{\"text\":\"防具の素材として使用される．\",\"italic\":false}']},CustomModelData:10011,MhdpID:12}"
               }
           ]
         },
@@ -35,7 +35,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"竜骨\",\"italic\": false}',Lore:['{\"text\":\"頑強な竜の骨．様々な用途がある．\",\"italic\": false}']},CustomModelData:10018,MhdpID:19}"
+              "tag": "{display:{Name:'{\"text\":\"竜骨\",\"italic\":false}',Lore:['{\"text\":\"頑強な竜の骨．様々な用途がある．\",\"italic\":false}']},CustomModelData:10018,MhdpID:19}"
               }
           ]
         }
