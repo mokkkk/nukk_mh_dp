@@ -59,6 +59,7 @@ Minecraft JavaEdition ver1.17.1 ~ ver1.18.1 でのみ動作確認済みです．
 赤石愛様
 - ScoreToHealth(https://github.com/Ai-Akaishi/ScoreToHealth)
 - AiMath(https://github.com/Ai-Akaishi/AiMath)
+- OhMyDat(https://github.com/Ai-Akaishi/OhMyDat)
   
 ちぇん様
 - ScoreDamage(https://github.com/ChenCMD/MCCMD-ScoreDamage)
