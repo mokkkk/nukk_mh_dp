@@ -22,13 +22,13 @@
 # 無敵時間
     execute if entity @s[scores={MhdpTDamage=1..}] run scoreboard players remove @s MhdpTDamage 1
 
-# スニーク時処理
-    execute if entity @s[tag=!IsSneaking,predicate=mh_dp:player/stat/sneak] run function mh_dp:player/sneak/start
-    execute if entity @s[tag=IsSneaking] run function mh_dp:player/sneak/main
-
 # 攻撃時処理
     execute if entity @s[advancements={mh_dp:player/attack_sword=true}] run function mh_dp:player/attack/weapon
     execute if entity @s[advancements={mh_dp:player/attack_piercing_arrow=true}] run function mh_dp:player/attack/piercing
 
+# スニーク時処理
+    execute if entity @s[tag=!IsSneaking,predicate=mh_dp:player/stat/sneak] run function mh_dp:player/sneak/start
+    execute if entity @s[tag=IsSneaking] run function mh_dp:player/sneak/main
+    
 # 終了
     tag @s[tag=MhdpPleased] remove MhdpPleased

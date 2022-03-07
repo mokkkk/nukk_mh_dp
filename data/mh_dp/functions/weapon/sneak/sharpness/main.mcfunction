@@ -1,7 +1,6 @@
 
 # 切れ味取得
-    execute store result score #mhdp_temp_sharp_current AsaMatrix run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus.SharpnessCurrent
-    execute if score #mhdp_temp_sharp_current AsaMatrix matches 1.. run scoreboard players remove #mhdp_temp_sharp_current AsaMatrix 1
+    execute store result score #mhdp_temp_sharp_current AsaMatrix run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus.SharpnessMax
     scoreboard players set #mhdp_temp_sharp_sum AsaMatrix 0
 
 # 色決定
@@ -15,7 +14,7 @@
 
 # 通知
     execute store result score #mhdp_temp_sharp_color_data AsaMatrix run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus.SharpnessColor
-    execute unless score #mhdp_temp_sharp_color AsaMatrix = #mhdp_temp_sharp_color_data AsaMatrix run function mh_dp:weapon/attack/sharpness/toast
+    execute unless score #mhdp_temp_sharp_color AsaMatrix = #mhdp_temp_sharp_color_data AsaMatrix run function mh_dp:weapon/sneak/sharpness/toast
 
 # 更新
     execute store result storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus.SharpnessCurrent int 1 run scoreboard players get #mhdp_temp_sharp_current AsaMatrix
@@ -23,6 +22,7 @@
     item modify entity @s weapon.mainhand mh_dp:weapon/sharpness
 
 # 終了
+    playsound entity.arrow.hit_player master @s ~ ~ ~ 1 2
     tag @s remove MhdpSharpEnd
     scoreboard players reset #mhdp_temp_sharp
     scoreboard players reset #mhdp_temp_sharp_current
