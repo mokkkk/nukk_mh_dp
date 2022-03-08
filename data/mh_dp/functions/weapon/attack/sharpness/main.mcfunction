@@ -2,9 +2,20 @@
 # 切れ味取得
     execute store result score #mhdp_temp_sharp_current AsaMatrix run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus.SharpnessCurrent
     execute store result score #mhdp_temp_sharp_max AsaMatrix run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus.SharpnessMax
-    execute if score #mhdp_temp_sharp_current AsaMatrix matches 1.. run scoreboard players remove #mhdp_temp_sharp_current AsaMatrix 1
     scoreboard players set #mhdp_temp_sharp_sum AsaMatrix 0
 
+# 剛刃研磨確認
+    scoreboard players set #mhdp_temp_const AsaMatrix 400
+    execute store result score #mhdp_temp_tick_sharp AsaMatrix run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.CharmDynoTime
+    execute store result score #mhdp_temp_tick AsaMatrix run time query gametime
+    scoreboard players operation #mhdp_temp_tick AsaMatrix -= #mhdp_temp_tick_sharp AsaMatrix
+    execute unless score #mhdp_temp_tick AsaMatrix >= #mhdp_temp_const AsaMatrix run tag @s add KeepSharpness
+# 切れ味更新
+    execute if data storage mhdp: Temp.Charm{Teo:true} if score #mhdp_temp_armor AsaMatrix matches ..1 if predicate asa_animator:random/070 run tag @s add KeepSharpness
+    execute unless entity @s[tag=KeepSharpness] if score #mhdp_temp_sharp_current AsaMatrix matches 1.. run scoreboard players remove #mhdp_temp_sharp_current AsaMatrix 1
+    execute if data storage mhdp: Temp.Charm{Ruko:true} if score #mhdp_temp_sharp_current AsaMatrix matches 1.. run scoreboard players remove #mhdp_temp_sharp_current AsaMatrix 1
+    tag @s remove KeepSharpness
+    
 # 非匠の場合，切れ味を戻す
     execute unless entity @s[tag=CharmKushala] if score #mhdp_temp_sharp_current AsaMatrix > #mhdp_temp_sharp_max AsaMatrix store result score #mhdp_temp_sharp_current AsaMatrix run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus.SharpnessMax
 
@@ -34,3 +45,6 @@
     scoreboard players reset #mhdp_temp_sharp_color_data
     scoreboard players reset #mhdp_temp_sharp_color
     scoreboard players reset #mhdp_temp_sharp_max
+    scoreboard players reset #mhdp_temp_tick
+    scoreboard players reset #mhdp_temp_tick_sharp
+    scoreboard players reset #mhdp_temp_const

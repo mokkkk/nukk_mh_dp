@@ -6,6 +6,9 @@
     scoreboard players set #mhdp_temp_damage AsaMatrix 100000
     execute store result score #mhdp_temp_damage_multiply AsaMatrix run scoreboard players operation #mhdp_temp_damage AsaMatrix -= #mhdp_temp_health AsaMatrix
 
+# 耐性取得
+    execute store result score #mhdp_temp_armor AsaMatrix run attribute @s generic.armor get 100
+
 # 実ダメージからダメージ倍率を計算 (攻撃力デフォルト6)
     scoreboard players set #mhdp_temp_multiply AsaMatrix 6
     scoreboard players operation #mhdp_temp_damage_multiply AsaMatrix /= #mhdp_temp_multiply AsaMatrix
@@ -14,9 +17,6 @@
     execute store result score #mhdp_temp_damage_stat AsaMatrix run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus.Damage 100
     scoreboard players operation #mhdp_temp_damage_stat AsaMatrix *= #mhdp_temp_damage_multiply AsaMatrix
     execute store result score #mhdp_temp_damage AsaMatrix run scoreboard players operation #mhdp_temp_damage_stat AsaMatrix /= #asam_const_100 AsaMatrix
-
-# ダメージ増加系護石効果適用
-    execute if data storage mhdp: Temp.Charm{Reus:true} run scoreboard players add #mhdp_temp_damage AsaMatrix 75
 
 # 属性に応じてダメージ増減
     execute store result score #mhdp_temp_type AsaMatrix run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus.Type
@@ -40,12 +40,17 @@
     scoreboard players operation #mhdp_temp_damage AsaMatrix *= #mhdp_temp_multiply AsaMatrix
     scoreboard players operation #mhdp_temp_damage AsaMatrix /= #asam_const_100 AsaMatrix
 
+# ダメージ増加系護石効果適用
+    execute if data storage mhdp: Temp.Charm{Reus:true} run scoreboard players add #mhdp_temp_damage AsaMatrix 75
+    execute if data storage mhdp: Temp.Charm{Zinogre:true} if score #mhdp_temp_type AsaMatrix matches 3 run scoreboard players add #mhdp_temp_damage AsaMatrix 15000
+    execute if data storage mhdp: Temp.Charm{Brachy:true} run scoreboard players add #mhdp_temp_damage AsaMatrix 250
+
 # HP適応
     scoreboard players set #mhdp_temp_health AsaMatrix 100000
     scoreboard players operation #mhdp_temp_health AsaMatrix -= #mhdp_temp_damage AsaMatrix
     execute store result entity @s Health float 0.01 run scoreboard players get #mhdp_temp_health AsaMatrix
 
-# パーティクル
+# 属性パーティクル
     execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus{Type:1} at @s positioned ~ ~1.2 ~ run function mh_dp:weapon/attack/particle/fire
     execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus{Type:2} at @s positioned ~ ~1.2 ~ run function mh_dp:weapon/attack/particle/water
     execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus{Type:3} at @s positioned ~ ~1.2 ~ run function mh_dp:weapon/attack/particle/thunder

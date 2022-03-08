@@ -28,6 +28,9 @@
     execute store result storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus.SharpnessColor int 1 run scoreboard players get #mhdp_temp_sharp_color AsaMatrix
     item modify entity @s weapon.mainhand mh_dp:weapon/sharpness
 
+# 護石効果適応
+    execute if entity @s[tag=CharmDyno] run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.CharmDynoTime set from storage mh_dp:status Time
+
 # 終了
     playsound entity.arrow.hit_player master @s ~ ~ ~ 1 2
     tag @s remove MhdpSharpEnd

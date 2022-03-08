@@ -6,8 +6,11 @@
 # スキル効果取得
     execute if entity @s[tag=CharmReus] run data modify storage mhdp: Temp.Charm.Reus set value true
     execute if entity @s[tag=CharmDiablos] run data modify storage mhdp: Temp.Charm.Diablos set value true
+    execute if entity @s[tag=CharmZinogre] run data modify storage mhdp: Temp.Charm.Zinogre set value true
+    execute if entity @s[tag=CharmBrachy] if score @s MhdpHealth matches ..6 run data modify storage mhdp: Temp.Charm.Brachy set value true
 
 # ダメージ計算
+    scoreboard players set #mhdp_temp_armor AsaMatrix 0
     execute as @e[type=#lib:living,tag=Victim] run function mh_dp:weapon/attack/damage/main
 
 # 切れ味更新
@@ -15,5 +18,6 @@
 
 # 終了
     data remove storage mhdp: Temp.Charm
+    scoreboard players reset #mhdp_temp_armor
     tag @e[type=#lib:living,type=!player,tag=AttackedEntity] remove Victim
     tag @s remove this
