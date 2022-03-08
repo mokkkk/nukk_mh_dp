@@ -19,6 +19,8 @@
     function score_damage_mhdp:core/get_status
 # 与えるダメージの計算
     function score_damage_mhdp:core/calc
+# MHDP:護石効果
+    execute if entity @s[tag=CharmDiamond,tag=!BlightDragon] if predicate asa_animator:random/020 run function score_damage_mhdp:mh_dp/charm
 # Mobに適用
     function score_damage_mhdp:core/health_subtract
 # リセット

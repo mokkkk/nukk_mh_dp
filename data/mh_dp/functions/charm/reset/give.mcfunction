@@ -1,6 +1,6 @@
 
 # tagに応じて護石をgive
-    execute if entity @s[tag=CharmReus] run give @s crossbow{display:{Name:'{"text":"火竜の護石","italic":false}',Lore:['{"text":"スキル：攻撃","italic":false}','{"text":"MHDP武器を使用している場合，","italic":false}','{"text":"モンスターに対するダメージが上昇する．","italic":false}']},CustomModelData:10101,MhdpCharm:2,HideFlags:32,ChargedProjectiles:[{id:"minecraft:air",Count:1b},{},{}],Charged:1b}
+    execute if entity @s[tag=CharmReus] run give @s crossbow{display:{Name:'{"text":"火竜の護石","italic":false}',Lore:['{"text":"スキル：攻撃","italic":false}','{"text":"MHDP武器を使用している場合，","italic":false}','{"text":"モンスターに対するダメージが上昇する．","italic":false}']},CustomModelData:10102,MhdpCharm:2,HideFlags:32,ChargedProjectiles:[{id:"minecraft:air",Count:1b},{},{}],Charged:1b}
     execute if entity @s[tag=CharmDiablos] run give @s crossbow{display:{Name:'{"text":"角竜の護石","italic":false}',Lore:['{"text":"スキル：鈍器使い","italic":false}','{"text":"切れ味が緑以下の場合，","italic":false}','{"text":"ダメージボーナスが増加する．","italic":false}']},CustomModelData:10103,MhdpCharm:3,HideFlags:32,ChargedProjectiles:[{id:"minecraft:air",Count:1b},{},{}],Charged:1b}
     execute if entity @s[tag=CharmZinogre] run give @s crossbow{display:{Name:'{"text":"雷狼竜の護石","italic":false}',Lore:['{"text":"スキル：雷属性攻撃強化","italic":false}','{"text":"雷属性の武器を使用している場合，","italic":false}','{"text":"モンスターに対するダメージが上昇する．","italic":false}']},CustomModelData:10104,MhdpCharm:4,HideFlags:32,ChargedProjectiles:[{id:"minecraft:air",Count:1b},{},{}],Charged:1b}
     execute if entity @s[tag=CharmBrachy] run give @s crossbow{display:{Name:'{"text":"砕竜の護石","italic":false}',Lore:['{"text":"スキル：火事場力","italic":false}','{"text":"HPが♥3以下の場合，","italic":false}','{"text":"モンスターに対するダメージが上昇する．","italic":false}']},CustomModelData:10105,MhdpCharm:5,HideFlags:32,ChargedProjectiles:[{id:"minecraft:air",Count:1b},{},{}],Charged:1b}
@@ -13,6 +13,8 @@
     execute if entity @s[tag=CharmTiga] run give @s crossbow{display:{Name:'{"text":"轟竜の護石","italic":false}',Lore:['{"text":"スキル：耳栓","italic":false}','{"text":"一部のモンスターの咆哮を無効化する．","italic":false}']},CustomModelData:10112,MhdpCharm:12,HideFlags:32,ChargedProjectiles:[{id:"minecraft:air",Count:1b},{},{}],Charged:1b}
     execute if entity @s[tag=CharmReia] run give @s crossbow{display:{Name:'{"text":"雌火竜の護石","italic":false}',Lore:['{"text":"スキル：体力増強","italic":false}','{"text":"HPの最大値が上昇する．","italic":false}']},CustomModelData:10113,MhdpCharm:13,HideFlags:32,ChargedProjectiles:[{id:"minecraft:air",Count:1b},{},{}],Charged:1b}
     execute if entity @s[tag=CharmBrachyR] run give @s crossbow{display:{Name:'{"text":"砕竜の護石・改","italic":false}',Lore:['{"text":"スキル：逆鱗","italic":false}','{"text":"MHDP武器を使用している場合，","italic":false}','{"text":"モンスターに対するダメージが上昇する．","italic":false}','{"text":"HPが♥3以下の場合，","italic":false}','{"text":"さらにダメージが上昇する．","italic":false}']},CustomModelData:10114,MhdpCharm:14,HideFlags:32,ChargedProjectiles:[{id:"minecraft:air",Count:1b},{},{}],Charged:1b}
+    execute if entity @s[tag=CharmGrinder] run give @s crossbow{display:{Name:'{"text":"研磨の護石","italic":false}',Lore:['{"text":"スキル：砥石高速化","italic":false}','{"text":"武器を研ぐ時間が半分になる．","italic":false}']},CustomModelData:10115,MhdpCharm:15,HideFlags:32,ChargedProjectiles:[{id:"minecraft:air",Count:1b},{},{}],Charged:1b}
+    execute if entity @s[tag=CharmDiamond] run give @s crossbow{display:{Name:'{"text":"加護の護石","italic":false}',Lore:['{"text":"スキル：金剛石の加護","italic":false}','{"text":"モンスターから受けるダメージをたまに軽減する．","italic":false}']},CustomModelData:10116,MhdpCharm:16,HideFlags:32,ChargedProjectiles:[{id:"minecraft:air",Count:1b},{},{}],Charged:1b}
 
 # 護石用tag消去
     tag @s remove CharmReus
@@ -28,6 +30,8 @@
     tag @s remove CharmTiga
     tag @s remove CharmReia
     tag @s remove CharmBrachyR
+    tag @s remove CharmGrinder
+    tag @s remove CharmDiamond
     
 # attributeリセット
     attribute @s generic.max_health modifier remove cdf2bd2c-aec2-4cd0-82a1-0

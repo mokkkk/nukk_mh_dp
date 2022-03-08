@@ -29,7 +29,7 @@
     item modify entity @s weapon.mainhand mh_dp:weapon/sharpness
 
 # 護石効果適応
-    execute if entity @s[tag=CharmDyno] run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.CharmDynoTime set from storage mh_dp:status Time
+    execute if entity @s[tag=CharmDyno,tag=!BlightDragon] run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.CharmDynoTime set from storage mh_dp:status Time
 
 # 終了
     playsound entity.arrow.hit_player master @s ~ ~ ~ 1 2
@@ -39,4 +39,5 @@
     scoreboard players reset #mhdp_temp_sharp_sum
     scoreboard players reset #mhdp_temp_sharp_color_data
     scoreboard players reset #mhdp_temp_sharp_color
+    scoreboard players set @s MhdpTSneak 81
 
