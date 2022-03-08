@@ -12,6 +12,8 @@ scoreboard objectives add MhdpTKnockback dummy
 scoreboard objectives add MhdpMWeakness dummy
 scoreboard objectives add MhdpMResist dummy
 scoreboard objectives add MhdpTSneak minecraft.custom:sneak_time
+scoreboard objectives add MhdpHealth health
+scoreboard objectives add MhdpTDeath minecraft.custom:time_since_death
 
 # for TSB library
 scoreboard objectives add Global dummy

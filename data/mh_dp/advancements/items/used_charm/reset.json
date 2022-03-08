@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:shot_crossbow",
+      "conditions": {
+        "item": {
+          "nbt": "{MhdpCharm:1}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mh_dp:charm/reset/main"
+  }
+}

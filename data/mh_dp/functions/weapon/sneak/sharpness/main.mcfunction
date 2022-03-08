@@ -6,7 +6,8 @@
     execute if score #mhdp_temp_time AsaMatrix matches 1.. run function mh_dp:player/data/get_mainhand
 
 # 切れ味取得
-    execute store result score #mhdp_temp_sharp_current AsaMatrix run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus.SharpnessMax
+    execute unless entity @s[tag=CharmKushala] store result score #mhdp_temp_sharp_current AsaMatrix run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus.SharpnessMax
+    execute if entity @s[tag=CharmKushala] store result score #mhdp_temp_sharp_current AsaMatrix run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus.SharpnessMaxCharm
     scoreboard players set #mhdp_temp_sharp_sum AsaMatrix 0
 
 # 色決定
@@ -27,6 +28,9 @@
     execute store result storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus.SharpnessColor int 1 run scoreboard players get #mhdp_temp_sharp_color AsaMatrix
     item modify entity @s weapon.mainhand mh_dp:weapon/sharpness
 
+# 護石効果適応
+    execute if entity @s[tag=CharmDyno,tag=!BlightDragon] run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.CharmDynoTime set from storage mh_dp:status Time
+
 # 終了
     playsound entity.arrow.hit_player master @s ~ ~ ~ 1 2
     tag @s remove MhdpSharpEnd
@@ -35,3 +39,5 @@
     scoreboard players reset #mhdp_temp_sharp_sum
     scoreboard players reset #mhdp_temp_sharp_color_data
     scoreboard players reset #mhdp_temp_sharp_color
+    scoreboard players set @s MhdpTSneak 81
+

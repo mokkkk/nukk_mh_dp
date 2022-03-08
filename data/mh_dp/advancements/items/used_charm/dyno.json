@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:shot_crossbow",
+      "conditions": {
+        "item": {
+          "nbt": "{MhdpCharm:7}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mh_dp:charm/dyno/main"
+  }
+}

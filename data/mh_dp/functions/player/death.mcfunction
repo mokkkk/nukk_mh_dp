@@ -10,3 +10,4 @@ tag @s remove BlightDragon
 function mh_dp:player/knockback/end
 
 tag @s remove MhdpDeath
+tag @s add MhdpRespawn
