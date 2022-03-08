@@ -15,7 +15,7 @@
     scoreboard players operation #mhdp_temp_damage_stat AsaMatrix *= #mhdp_temp_damage_multiply AsaMatrix
     execute store result score #mhdp_temp_damage AsaMatrix run scoreboard players operation #mhdp_temp_damage_stat AsaMatrix /= #asam_const_100 AsaMatrix
 
-# 護石効果適用
+# ダメージ増加系護石効果適用
     execute if data storage mhdp: Temp.Charm{Reus:true} run scoreboard players add #mhdp_temp_damage AsaMatrix 75
 
 # 属性に応じてダメージ増減
@@ -23,7 +23,7 @@
     execute if score @s MhdpMWeakness = #mhdp_temp_type AsaMatrix run scoreboard players add #mhdp_temp_damage AsaMatrix 100
     execute if score @s MhdpMResist = #mhdp_temp_type AsaMatrix run scoreboard players remove #mhdp_temp_damage AsaMatrix 100
 
-# 切れ味補正適応
+# 切れ味補正取得
     execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus{SharpnessColor:0} run scoreboard players set #mhdp_temp_multiply AsaMatrix 50
     execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus{SharpnessColor:1} run scoreboard players set #mhdp_temp_multiply AsaMatrix 75
     execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus{SharpnessColor:2} run scoreboard players set #mhdp_temp_multiply AsaMatrix 100
@@ -31,6 +31,12 @@
     execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus{SharpnessColor:4} run scoreboard players set #mhdp_temp_multiply AsaMatrix 140
     execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus{SharpnessColor:5} run scoreboard players set #mhdp_temp_multiply AsaMatrix 160
     execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus{SharpnessColor:6} run scoreboard players set #mhdp_temp_multiply AsaMatrix 180
+
+# 切れ味補正変化系護石効果適用
+    execute if data storage mhdp: Temp.Charm{Diablos:true} if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus{SharpnessColor:2} run scoreboard players set #mhdp_temp_multiply AsaMatrix 110
+    execute if data storage mhdp: Temp.Charm{Diablos:true} if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus{SharpnessColor:3} run scoreboard players set #mhdp_temp_multiply AsaMatrix 125
+
+# 切れ味補正適用
     scoreboard players operation #mhdp_temp_damage AsaMatrix *= #mhdp_temp_multiply AsaMatrix
     scoreboard players operation #mhdp_temp_damage AsaMatrix /= #asam_const_100 AsaMatrix
 
@@ -38,6 +44,13 @@
     scoreboard players set #mhdp_temp_health AsaMatrix 100000
     scoreboard players operation #mhdp_temp_health AsaMatrix -= #mhdp_temp_damage AsaMatrix
     execute store result entity @s Health float 0.01 run scoreboard players get #mhdp_temp_health AsaMatrix
+
+# パーティクル
+    execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus{Type:1} at @s positioned ~ ~1.2 ~ run function mh_dp:weapon/attack/particle/fire
+    execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus{Type:2} at @s positioned ~ ~1.2 ~ run function mh_dp:weapon/attack/particle/water
+    execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus{Type:3} at @s positioned ~ ~1.2 ~ run function mh_dp:weapon/attack/particle/thunder
+    execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus{Type:4} at @s positioned ~ ~1.2 ~ run function mh_dp:weapon/attack/particle/ice
+    execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus{Type:5} at @s positioned ~ ~1.2 ~ run function mh_dp:weapon/attack/particle/dragon
 
 # 終了
     scoreboard players reset #mhdp_temp_health
