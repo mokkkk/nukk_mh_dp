@@ -36,3 +36,4 @@
     scoreboard players reset #mhdp_temp_sharp_sum
     scoreboard players reset #mhdp_temp_sharp_color_data
     scoreboard players reset #mhdp_temp_sharp_color
+

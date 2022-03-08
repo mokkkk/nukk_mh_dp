@@ -15,9 +15,12 @@
     scoreboard players operation #mhdp_temp_damage_stat AsaMatrix *= #mhdp_temp_damage_multiply AsaMatrix
     execute store result score #mhdp_temp_damage AsaMatrix run scoreboard players operation #mhdp_temp_damage_stat AsaMatrix /= #asam_const_100 AsaMatrix
 
+# 護石効果適用
+    execute if data storage mhdp: Temp.Charm{Reus:true} run scoreboard players add #mhdp_temp_damage AsaMatrix 75
+
 # 属性に応じてダメージ増減
     execute store result score #mhdp_temp_type AsaMatrix run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus.Type
-    execute if score @s MhdpMWeakness = #mhdp_temp_type AsaMatrix run scoreboard players add #mhdp_temp_damage AsaMatrix 75
+    execute if score @s MhdpMWeakness = #mhdp_temp_type AsaMatrix run scoreboard players add #mhdp_temp_damage AsaMatrix 100
     execute if score @s MhdpMResist = #mhdp_temp_type AsaMatrix run scoreboard players remove #mhdp_temp_damage AsaMatrix 100
 
 # 切れ味補正適応
