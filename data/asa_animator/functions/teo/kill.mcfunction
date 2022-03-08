@@ -17,3 +17,4 @@ scoreboard players reset #mhdp_teo_tail_damage
 scoreboard players reset #mhdp_teo_combo_count
 scoreboard players reset #mhdp_teo_anger_count
 scoreboard players reset #mhdp_teo_font
+scoreboard players reset #mhdp_teo_flash_time

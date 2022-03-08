@@ -2,11 +2,11 @@
   "function": "minecraft:copy_nbt",
   "source": {
     "type": "minecraft:storage",
-    "source": "mhdp:"
+    "source": "oh_my_dat:"
   },
   "ops": [
     {
-      "source": "Temp.Weapon.tag.MhdpStatus",
+      "source": "_[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus",
       "target": "MhdpStatus",
       "op": "replace"
     }

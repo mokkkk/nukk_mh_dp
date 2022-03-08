@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:clock"
+          ],
+          "count": 1,
+          "nbt": "{MhdpID:99}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mh_dp:player/advancements/trade_hard"
+  }
+}

@@ -18,3 +18,4 @@ scoreboard players reset #mhdp_reus_flying_damage
 scoreboard players reset #mhdp_reus_anger_damage_max
 scoreboard players reset #mhdp_reus_anger_damage
 scoreboard players reset #mhdp_reus_anger_count
+scoreboard players reset #mhdp_reus_flash_time

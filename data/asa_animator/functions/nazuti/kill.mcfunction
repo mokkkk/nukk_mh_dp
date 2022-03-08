@@ -24,3 +24,4 @@ scoreboard players reset #nazuti_mine_z
 scoreboard players reset #nazuti_height_target
 scoreboard players reset #nazuti_mine_pos
 scoreboard players reset #mhdp_nazuti_font
+scoreboard players reset #mhdp_nazuti_flash_time

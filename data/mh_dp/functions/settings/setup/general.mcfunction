@@ -11,6 +11,7 @@ scoreboard objectives add MhdpBlightDragon dummy
 scoreboard objectives add MhdpTKnockback dummy
 scoreboard objectives add MhdpMWeakness dummy
 scoreboard objectives add MhdpMResist dummy
+scoreboard objectives add MhdpTSneak minecraft.custom:sneak_time
 
 # for TSB library
 scoreboard objectives add Global dummy
@@ -26,6 +27,7 @@ scoreboard players set $2^16 Const 65536
 scoreboard players set #mhdp_id_holder MhdpMonsterID 0
 
 # クエストランク設定
+data modify storage mh_dp:status Flag.QuestRank set value false
 data modify storage mh_dp:settings Custom.QuestRank set value 0
 # スポーン設定
 data modify storage mh_dp:settings Custom.EnableBossSpawn set value 0b
@@ -48,6 +50,10 @@ data modify storage mh_dp:status Monster.Win.Dyno set value false
 data modify storage mh_dp:status Monster.Win.Brachy set value false
 data modify storage mh_dp:status Monster.Win.BrachyR set value false
 data modify storage mh_dp:status Monster.Win.Tiga set value false
+data modify storage mh_dp:status Monster.Win.Kushala set value false
+data modify storage mh_dp:status Monster.Win.Teo set value false
+data modify storage mh_dp:status Monster.Win.Nazuti set value false
+data modify storage mh_dp:status Monster.Win.Ruko set value false
 
 # バージョン設定
 scoreboard players set #mhdp_bersion AsaMatrix 6

@@ -13,7 +13,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"雷狼竜の帯電毛\"}',Lore:['{\"text\":\"電力を増幅する機能を持つ特殊な体毛．\"}','{\"text\":\"武器の素材として使用される．\"}']},CustomModelData:10014,MhdpID:15}"
+              "tag": "{display:{Name:'{\"text\":\"雷狼竜の帯電毛\",\"italic\":false}',Lore:['{\"text\":\"電力を増幅する機能を持つ特殊な体毛．\",\"italic\":false}','{\"text\":\"武器の素材として使用される．\",\"italic\":false}']},CustomModelData:10014,MhdpID:15}"
               }
           ]
         },
@@ -24,7 +24,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"雷狼竜の甲殻\"}',Lore:['{\"text\":\"絶縁体にもなる雷狼竜の甲殻．\"}','{\"text\":\"防具の素材として使用される．\"}']},CustomModelData:10015,MhdpID:16}"
+              "tag": "{display:{Name:'{\"text\":\"雷狼竜の甲殻\",\"italic\":false}',Lore:['{\"text\":\"絶縁体にもなる雷狼竜の甲殻．\",\"italic\":false}','{\"text\":\"防具の素材として使用される．\",\"italic\":false}']},CustomModelData:10015,MhdpID:16}"
               }
           ]
         },
@@ -35,7 +35,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"竜骨\"}',Lore:['{\"text\":\"頑強な竜の骨．様々な用途がある．\"}']},CustomModelData:10018,MhdpID:19}"
+              "tag": "{display:{Name:'{\"text\":\"竜骨\",\"italic\":false}',Lore:['{\"text\":\"頑強な竜の骨．様々な用途がある．\",\"italic\":false}']},CustomModelData:10018,MhdpID:19}"
               }
           ]
         }

@@ -1,4 +1,7 @@
 
+# gameTime取得
+    execute store result storage mh_dp:status Time int 1 run time query gametime
+
 # カウンター増加
     scoreboard players add #mhdp_timer AsaMatrix 1
 
@@ -10,7 +13,6 @@
 
 # モンスター処理
     execute if entity @e[type=armor_stand,tag=MonsterRoot,limit=1] as @e[type=armor_stand,tag=MonsterRoot] at @s run function mh_dp:animation/main
-
 # 攻撃用処理
     execute if entity @e[type=marker,tag=MonsterShot,limit=1] as @e[type=marker,tag=MonsterShot] at @s run function mh_dp:shot/main
     execute if entity @e[type=armor_stand,tag=MonsterShot,limit=1] as @e[type=armor_stand,tag=MonsterShot] at @s run function mh_dp:shot/main

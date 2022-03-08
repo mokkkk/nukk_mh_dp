@@ -15,3 +15,4 @@ scoreboard players reset #diablos_mine_y
 scoreboard players reset #diablos_mine_z
 scoreboard players reset #diablos_height_target
 scoreboard players reset #diablos_damage
+scoreboard players reset #mhdp_diablos_flash_time

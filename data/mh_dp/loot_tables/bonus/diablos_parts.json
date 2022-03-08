@@ -13,7 +13,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"ねじれた角\"}',Lore:['{\"text\":\"角竜の代名詞ともいえる頑丈な角．\"}','{\"text\":\"武器の素材として使用される．\"}']},CustomModelData:10012,MhdpID:13}"
+              "tag": "{display:{Name:'{\"text\":\"ねじれた角\",\"italic\":false}',Lore:['{\"text\":\"角竜の代名詞ともいえる頑丈な角．\",\"italic\":false}','{\"text\":\"武器の素材として使用される．\",\"italic\":false}']},CustomModelData:10012,MhdpID:13}"
               }
           ]
         },
@@ -24,7 +24,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"角竜の背甲\"}',Lore:['{\"text\":\"角竜の体を守る頑丈な甲殻．\"}','{\"text\":\"防具の素材として使用される．\"}']},CustomModelData:10013,MhdpID:14}"
+              "tag": "{display:{Name:'{\"text\":\"角竜の背甲\",\"italic\":false}',Lore:['{\"text\":\"角竜の体を守る頑丈な甲殻．\",\"italic\":false}','{\"text\":\"防具の素材として使用される．\",\"italic\":false}']},CustomModelData:10013,MhdpID:14}"
               }
           ]
         },
@@ -35,7 +35,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"竜骨\"}',Lore:['{\"text\":\"頑強な竜の骨．様々な用途がある．\"}']},CustomModelData:10018,MhdpID:19}"
+              "tag": "{display:{Name:'{\"text\":\"竜骨\",\"italic\":false}',Lore:['{\"text\":\"頑強な竜の骨．様々な用途がある．\",\"italic\":false}']},CustomModelData:10018,MhdpID:19}"
               }
           ]
         }

@@ -63,7 +63,6 @@ tag @s remove ComboE
 tag @s remove ComboF
 
 tag @s remove IsStand
-tag @s remove IsFlying
 tag @s remove IsMoveRight
 tag @s remove IsAnmStealth
 

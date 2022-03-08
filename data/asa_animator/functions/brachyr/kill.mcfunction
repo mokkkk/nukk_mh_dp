@@ -21,3 +21,4 @@ scoreboard players reset #brachyr_height_target
 scoreboard players reset #brachyr_damage
 scoreboard players reset #mhdp_brachyr_anger_damage_max
 scoreboard players reset #mhdp_brachyr_anger_damage
+scoreboard players reset #mhdp_brachyr_flash_time

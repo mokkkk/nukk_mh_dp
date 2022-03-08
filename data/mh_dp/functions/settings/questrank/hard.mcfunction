@@ -5,3 +5,4 @@ data modify storage mh_dp:settings Custom.QuestRank set value 1
 tellraw @a {"text":"【MH_DP：クエストランクがハードに設定されました】"}
 schedule function mh_dp:settings/ui/set_gamerule 2t replace
 function mh_dp:settings/ui/show_setting_ui
+
