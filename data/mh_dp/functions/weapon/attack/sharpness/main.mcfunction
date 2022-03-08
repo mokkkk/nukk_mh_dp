@@ -45,6 +45,6 @@
     scoreboard players reset #mhdp_temp_sharp_color_data
     scoreboard players reset #mhdp_temp_sharp_color
     scoreboard players reset #mhdp_temp_sharp_max
+    scoreboard players reset #mhdp_temp_const
     scoreboard players reset #mhdp_temp_tick
     scoreboard players reset #mhdp_temp_tick_sharp
-    scoreboard players reset #mhdp_temp_const

@@ -24,14 +24,9 @@
     execute if score @s MhdpMResist = #mhdp_temp_type AsaMatrix run scoreboard players remove #mhdp_temp_damage AsaMatrix 100
 
 # 切れ味補正取得
-    execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus{SharpnessColor:0} run scoreboard players set #mhdp_temp_multiply AsaMatrix 50
-    execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus{SharpnessColor:1} run scoreboard players set #mhdp_temp_multiply AsaMatrix 75
-    execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus{SharpnessColor:2} run scoreboard players set #mhdp_temp_multiply AsaMatrix 100
-    execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus{SharpnessColor:3} run scoreboard players set #mhdp_temp_multiply AsaMatrix 120
-    execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus{SharpnessColor:4} run scoreboard players set #mhdp_temp_multiply AsaMatrix 140
-    execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus{SharpnessColor:5} run scoreboard players set #mhdp_temp_multiply AsaMatrix 160
-    execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus{SharpnessColor:6} run scoreboard players set #mhdp_temp_multiply AsaMatrix 180
-
+    execute unless data storage mhdp: Temp.Charm{Ruko:true} run function mh_dp:weapon/attack/damage/sharpness_0
+    execute if data storage mhdp: Temp.Charm{Ruko:true} run function mh_dp:weapon/attack/damage/sharpness_1
+   
 # 切れ味補正変化系護石効果適用
     execute if data storage mhdp: Temp.Charm{Diablos:true} if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus{SharpnessColor:2} run scoreboard players set #mhdp_temp_multiply AsaMatrix 110
     execute if data storage mhdp: Temp.Charm{Diablos:true} if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus{SharpnessColor:3} run scoreboard players set #mhdp_temp_multiply AsaMatrix 125

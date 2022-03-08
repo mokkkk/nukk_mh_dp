@@ -6,10 +6,10 @@
     execute if entity @s[tag=CharmBrachy] run give @s crossbow{display:{Name:'{"text":"砕竜の護石","italic":false}',Lore:['{"text":"スキル：火事場力","italic":false}','{"text":"HPが♥3以下の場合，","italic":false}','{"text":"モンスターに対するダメージが上昇する．","italic":false}']},CustomModelData:10105,MhdpCharm:5,HideFlags:32,ChargedProjectiles:[{id:"minecraft:air",Count:1b},{},{}],Charged:1b}
     execute if entity @s[tag=CharmNarga] run give @s crossbow{display:{Name:'{"text":"迅竜の護石","italic":false}',Lore:['{"text":"スキル：回避本能","italic":false}','{"text":"HPが♥3以下の場合，","italic":false}','{"text":"ジャンプ回避の受付時間が延長する．","italic":false}']},CustomModelData:10106,MhdpCharm:6,HideFlags:32,ChargedProjectiles:[{id:"minecraft:air",Count:1b},{},{}],Charged:1b}
     execute if entity @s[tag=CharmDyno] run give @s crossbow{display:{Name:'{"text":"斬竜の護石","italic":false}',Lore:['{"text":"スキル：剛刃研磨","italic":false}','{"text":"武器を研いだ後，","italic":false}','{"text":"一定時間だけ斬れ味が減少しない．","italic":false}']},CustomModelData:10107,MhdpCharm:7,HideFlags:32,ChargedProjectiles:[{id:"minecraft:air",Count:1b},{},{}],Charged:1b}
-    execute if entity @s[tag=Charm] run give @s crossbow
-    execute if entity @s[tag=Charm] run give @s crossbow
-    execute if entity @s[tag=Charm] run give @s crossbow
-    execute if entity @s[tag=Charm] run give @s crossbow
+    execute if entity @s[tag=CharmKushala] run give @s crossbow{display:{Name:'{"text":"鋼龍の護石","italic":false}',Lore:['{"text":"スキル：匠","italic":false}','{"text":"武器の斬れ味の最大値が上昇する．","italic":false}']},CustomModelData:10108,MhdpCharm:8,HideFlags:32,ChargedProjectiles:[{id:"minecraft:air",Count:1b},{},{}],Charged:1b}
+    execute if entity @s[tag=CharmTeo] run give @s crossbow{display:{Name:'{"text":"炎王龍の護石","italic":false}',Lore:['{"text":"スキル：達人芸","italic":false}','{"text":"モンスターの弱点部位を攻撃した時，","italic":false}','{"text":"高確率で斬れ味が減少しない．","italic":false}']},CustomModelData:10109,MhdpCharm:9,HideFlags:32,ChargedProjectiles:[{id:"minecraft:air",Count:1b},{},{}],Charged:1b}
+    execute if entity @s[tag=CharmNazuti] run give @s crossbow{display:{Name:'{"text":"霞龍の護石","italic":false}',Lore:['{"text":"スキル：吸魂","italic":false}','{"text":"モンスターを攻撃した時，","italic":false}','{"text":"低確率でランダムな能力が強化される．","italic":false}']},CustomModelData:10110,MhdpCharm:10,HideFlags:32,ChargedProjectiles:[{id:"minecraft:air",Count:1b},{},{}],Charged:1b}
+    execute if entity @s[tag=CharmRuko] run give @s crossbow{display:{Name:'{"text":"極龍の護石","italic":false}',Lore:['{"text":"スキル：贅撃","italic":false}','{"text":"斬れ味の消費量が2倍になるが，","italic":false}','{"text":"モンスターへのダメージが大きく上昇する．","italic":false}']},CustomModelData:10111,MhdpCharm:11,HideFlags:32,ChargedProjectiles:[{id:"minecraft:air",Count:1b},{},{}],Charged:1b}
     execute if entity @s[tag=Charm] run give @s crossbow
     execute if entity @s[tag=Charm] run give @s crossbow
 
@@ -20,10 +20,10 @@
     tag @s remove CharmBrachy
     tag @s remove CharmNarga
     tag @s remove CharmDyno
-    tag @s remove Charm
-    tag @s remove Charm
-    tag @s remove Charm
-    tag @s remove Charm
+    tag @s remove CharmKushala
+    tag @s remove CharmTeo
+    tag @s remove CharmNazuti
+    tag @s remove CharmRuko
     tag @s remove Charm
     tag @s remove Charm
     
