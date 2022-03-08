@@ -1,8 +1,12 @@
 
 # 切れ味取得
     execute store result score #mhdp_temp_sharp_current AsaMatrix run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus.SharpnessCurrent
+    execute store result score #mhdp_temp_sharp_max AsaMatrix run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus.SharpnessMax
     execute if score #mhdp_temp_sharp_current AsaMatrix matches 1.. run scoreboard players remove #mhdp_temp_sharp_current AsaMatrix 1
     scoreboard players set #mhdp_temp_sharp_sum AsaMatrix 0
+
+# 非匠の場合，切れ味を戻す
+    execute unless entity @s[tag=CharmKushala] if score #mhdp_temp_sharp_current AsaMatrix > #mhdp_temp_sharp_max AsaMatrix store result score #mhdp_temp_sharp_current AsaMatrix run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus.SharpnessMax
 
 # 色決定
     execute unless entity @s[tag=MhdpSharpEnd] run function mh_dp:weapon/attack/sharpness/0
@@ -29,3 +33,4 @@
     scoreboard players reset #mhdp_temp_sharp_sum
     scoreboard players reset #mhdp_temp_sharp_color_data
     scoreboard players reset #mhdp_temp_sharp_color
+    scoreboard players reset #mhdp_temp_sharp_max
