@@ -10,6 +10,7 @@
     execute store result score #mhdp_temp_tick AsaMatrix run time query gametime
     scoreboard players operation #mhdp_temp_tick AsaMatrix -= #mhdp_temp_tick_sharp AsaMatrix
     execute unless score #mhdp_temp_tick AsaMatrix >= #mhdp_temp_const AsaMatrix run tag @s add KeepSharpness
+
 # 切れ味更新
     execute if data storage mhdp: Temp.Charm{Teo:true} if score #mhdp_temp_armor AsaMatrix matches ..1 if predicate asa_animator:random/070 run tag @s add KeepSharpness
     execute unless entity @s[tag=KeepSharpness] if score #mhdp_temp_sharp_current AsaMatrix matches 1.. run scoreboard players remove #mhdp_temp_sharp_current AsaMatrix 1

@@ -1,6 +1,8 @@
 
 # 死亡時実行
     execute if entity @s[tag=MhdpDeath] run function mh_dp:player/death
+# リスポーン時処理
+    execute if entity @s[tag=MhdpRespawn,scores={MhdpTDeath=1..}] run function mh_dp:player/respawn
 
 # ジャンプ時処理
     execute if entity @s[scores={MhdpJump=1..}] run function mh_dp:player/jump/main

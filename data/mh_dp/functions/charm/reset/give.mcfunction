@@ -9,9 +9,10 @@
     execute if entity @s[tag=CharmKushala] run give @s crossbow{display:{Name:'{"text":"鋼龍の護石","italic":false}',Lore:['{"text":"スキル：匠","italic":false}','{"text":"武器の斬れ味の最大値が上昇する．","italic":false}']},CustomModelData:10108,MhdpCharm:8,HideFlags:32,ChargedProjectiles:[{id:"minecraft:air",Count:1b},{},{}],Charged:1b}
     execute if entity @s[tag=CharmTeo] run give @s crossbow{display:{Name:'{"text":"炎王龍の護石","italic":false}',Lore:['{"text":"スキル：達人芸","italic":false}','{"text":"モンスターの弱点部位を攻撃した時，","italic":false}','{"text":"高確率で斬れ味が減少しない．","italic":false}']},CustomModelData:10109,MhdpCharm:9,HideFlags:32,ChargedProjectiles:[{id:"minecraft:air",Count:1b},{},{}],Charged:1b}
     execute if entity @s[tag=CharmNazuti] run give @s crossbow{display:{Name:'{"text":"霞龍の護石","italic":false}',Lore:['{"text":"スキル：吸魂","italic":false}','{"text":"モンスターを攻撃した時，","italic":false}','{"text":"低確率でランダムな能力が強化される．","italic":false}']},CustomModelData:10110,MhdpCharm:10,HideFlags:32,ChargedProjectiles:[{id:"minecraft:air",Count:1b},{},{}],Charged:1b}
-    execute if entity @s[tag=CharmRuko] run give @s crossbow{display:{Name:'{"text":"極龍の護石","italic":false}',Lore:['{"text":"スキル：贅撃","italic":false}','{"text":"斬れ味の消費量が2倍になるが，","italic":false}','{"text":"モンスターへのダメージが大きく上昇する．","italic":false}']},CustomModelData:10111,MhdpCharm:11,HideFlags:32,ChargedProjectiles:[{id:"minecraft:air",Count:1b},{},{}],Charged:1b}
-    execute if entity @s[tag=Charm] run give @s crossbow
-    execute if entity @s[tag=Charm] run give @s crossbow
+    execute if entity @s[tag=CharmRuko] run give @s crossbow{display:{Name:'{"text":"極龍の護石","italic":false}',Lore:['{"text":"スキル：贅撃","italic":false}','{"text":"斬れ味の消費量が2倍になるが，","italic":false}','{"text":"モンスターへのダメージが上昇する．","italic":false}']},CustomModelData:10111,MhdpCharm:11,HideFlags:32,ChargedProjectiles:[{id:"minecraft:air",Count:1b},{},{}],Charged:1b}
+    execute if entity @s[tag=CharmTiga] run give @s crossbow{display:{Name:'{"text":"轟竜の護石","italic":false}',Lore:['{"text":"スキル：耳栓","italic":false}','{"text":"一部のモンスターの咆哮を無効化する．","italic":false}']},CustomModelData:10112,MhdpCharm:12,HideFlags:32,ChargedProjectiles:[{id:"minecraft:air",Count:1b},{},{}],Charged:1b}
+    execute if entity @s[tag=CharmReia] run give @s crossbow{display:{Name:'{"text":"雌火竜の護石","italic":false}',Lore:['{"text":"スキル：体力増強","italic":false}','{"text":"HPの最大値が上昇する．","italic":false}']},CustomModelData:10113,MhdpCharm:13,HideFlags:32,ChargedProjectiles:[{id:"minecraft:air",Count:1b},{},{}],Charged:1b}
+    execute if entity @s[tag=CharmBrachyR] run give @s crossbow{display:{Name:'{"text":"砕竜の護石・改","italic":false}',Lore:['{"text":"スキル：逆鱗","italic":false}','{"text":"MHDP武器を使用している場合，","italic":false}','{"text":"モンスターに対するダメージが上昇する．","italic":false}','{"text":"HPが♥3以下の場合，","italic":false}','{"text":"さらにダメージが上昇する．","italic":false}']},CustomModelData:10114,MhdpCharm:14,HideFlags:32,ChargedProjectiles:[{id:"minecraft:air",Count:1b},{},{}],Charged:1b}
 
 # 護石用tag消去
     tag @s remove CharmReus
@@ -24,6 +25,9 @@
     tag @s remove CharmTeo
     tag @s remove CharmNazuti
     tag @s remove CharmRuko
-    tag @s remove Charm
-    tag @s remove Charm
+    tag @s remove CharmTiga
+    tag @s remove CharmReia
+    tag @s remove CharmBrachyR
     
+# attributeリセット
+    attribute @s generic.max_health modifier remove cdf2bd2c-aec2-4cd0-82a1-0

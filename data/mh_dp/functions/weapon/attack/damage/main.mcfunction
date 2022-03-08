@@ -37,7 +37,7 @@
 
 # ダメージ増加系護石効果適用
     execute if data storage mhdp: Temp.Charm{Reus:true} run scoreboard players add #mhdp_temp_damage AsaMatrix 75
-    execute if data storage mhdp: Temp.Charm{Zinogre:true} if score #mhdp_temp_type AsaMatrix matches 3 run scoreboard players add #mhdp_temp_damage AsaMatrix 15000
+    execute if data storage mhdp: Temp.Charm{Zinogre:true} if score #mhdp_temp_type AsaMatrix matches 3 run scoreboard players add #mhdp_temp_damage AsaMatrix 150
     execute if data storage mhdp: Temp.Charm{Brachy:true} run scoreboard players add #mhdp_temp_damage AsaMatrix 250
 
 # HP適応
