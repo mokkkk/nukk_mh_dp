@@ -1,4 +1,10 @@
 
+# 遭遇履歴更新
+    execute store result score #mhdp_const_temp AsaMatrix run data get storage mh_dp:status Monster.Count
+    scoreboard players add #mhdp_const_temp AsaMatrix 1
+    execute store result storage mh_dp:status Monster.Count int 1 run scoreboard players get #mhdp_const_temp AsaMatrix
+    data modify storage mh_dp:status Monster.Meet.Diablos set value true
+
 # HPセット
     execute if data storage mh_dp:settings Custom{QuestRank:0} run scoreboard players set #mhdp_diablos_health AsaMatrix 55000
     execute if data storage mh_dp:settings Custom{QuestRank:1} run scoreboard players set #mhdp_diablos_health AsaMatrix 75000

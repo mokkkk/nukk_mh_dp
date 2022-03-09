@@ -1,7 +1,13 @@
 
+# 遭遇履歴更新
+    execute store result score #mhdp_const_temp AsaMatrix run data get storage mh_dp:status Monster.Count
+    scoreboard players add #mhdp_const_temp AsaMatrix 1
+    execute store result storage mh_dp:status Monster.Count int 1 run scoreboard players get #mhdp_const_temp AsaMatrix
+    data modify storage mh_dp:status Monster.Meet.Dyno set value true
+
 # HPセット
     execute if data storage mh_dp:settings Custom{QuestRank:0} run scoreboard players set #mhdp_dyno_health AsaMatrix 52000
-execute if data storage mh_dp:settings Custom{QuestRank:1} run scoreboard players set #mhdp_dyno_health AsaMatrix 72000
+    execute if data storage mh_dp:settings Custom{QuestRank:1} run scoreboard players set #mhdp_dyno_health AsaMatrix 72000
 # HP倍率適用
     scoreboard players operation #mhdp_dyno_health AsaMatrix *= #mhdp_hp_multiply AsaMatrix
     execute store result score #mhdp_dyno_head_damage AsaMatrix store result score #mhdp_dyno_legl_damage AsaMatrix store result score #mhdp_dyno_legr_damage AsaMatrix store result score #mhdp_dyno_tail_damage AsaMatrix store result score #mhdp_dyno_anger_damage_max AsaMatrix store result score #mhdp_dyno_head_heat_damage_max AsaMatrix run scoreboard players operation #mhdp_dyno_health AsaMatrix /= #asam_const_100 AsaMatrix

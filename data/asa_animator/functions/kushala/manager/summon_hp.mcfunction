@@ -1,4 +1,10 @@
 
+# 遭遇履歴更新
+    execute store result score #mhdp_const_temp AsaMatrix run data get storage mh_dp:status Monster.Count
+    scoreboard players add #mhdp_const_temp AsaMatrix 1
+    execute store result storage mh_dp:status Monster.Count int 1 run scoreboard players get #mhdp_const_temp AsaMatrix
+    data modify storage mh_dp:status Monster.Meet.Kushala set value true
+
 # HPセット
     scoreboard players set #mhdp_kushala_health AsaMatrix 80000
 # HP倍率適用

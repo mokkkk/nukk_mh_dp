@@ -16,7 +16,6 @@
     execute as @e[type=wandering_trader,tag=MhdpToolMerchant,tag=Start] run data modify entity @s WanderTarget set from storage mhdp: Temp.WanderTarget
     execute at @s run spreadplayers ~ ~ 5 64 false @e[type=wandering_trader,tag=MhdpToolMerchant,tag=Start]
     
-
 # レシピ更新
     execute as @e[type=wandering_trader,tag=MhdpToolMerchant,tag=Start] run function mh_dp:merchant/tool/init
 
