@@ -13,3 +13,6 @@ scoreboard players operation #mhdp_reia_anger_damage AsaMatrix = #mhdp_reia_ange
 
 # ボスバー設定
     bossbar set asa_animator:reia_health name [{"text": "雌火竜"},{"text":"\uE001","font":"mhdp"}]
+
+# 怒り共有
+    execute if entity @e[type=armor_stand,tag=ReusRoot,tag=!IsAnger] as @e[type=armor_stand,tag=ReusRoot,tag=!IsAnger] run function asa_animator:reus/manager/start_anger
