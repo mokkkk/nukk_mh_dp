@@ -2,8 +2,6 @@
 # 取引内容更新
     data modify storage mhdp: Temp.Trade set value []
 
-# give @p written_book{pages:['["",{"text":"\\ue021","color":"white","font":"mhdp"},{"text":"\\n\\n\\nadasdadadsadadsadsa","color":"reset"}]','{"text":"adsadsa\\n "}'],title:Book,author:""}
-
 # Template
     # execute if data storage mh_dp:status Monster.Meet{Reus:true} run data modify storage mhdp: Temp.Trade append value {maxUses:1000,xp:0,buy:{id:"minecraft:emerald",Count:5b},sell:{id:"minecraft:written_book",Count:1b,tag:{display:{Name:'{"text":"XXの生態書","italic":false}'},HideFlags:32,title:"XXの生態書",author:"",pages:['{"text":""}','{"text":""}','{"text":""}']}}}
     
@@ -45,8 +43,6 @@
 
     # 極龍
     execute if data storage mh_dp:status Monster.Meet{Ruko:true} run data modify storage mhdp: Temp.Trade append value {maxUses:1000,xp:0,buy:{id:"minecraft:emerald",Count:5b},sell:{id:"minecraft:written_book",Count:1b,tag:{display:{Name:'{"text":"極龍の生態書","italic":false}'},HideFlags:32,title:"極龍の生態書",author:"",pages:['{"text":"極龍：\\n生息地：砂漠など\\n  磁力を操る古龍．特殊な\\n粉塵をまき散らすことで周\\n囲の物体に磁力を与え，自\\n分の意のままに操る．\\n  翼や角は常に帯電してお\\nり，磁力を操る能力に関係\\nがあると考えられている．\\n  さらに，「龍属性」と呼\\nばれるエネルギーを操り，\\nその戦闘力は計り知れない\\n．\\n"}','{"text":"  極龍は，粉塵を付着させ\\nた物質を自在に動かすこと\\nができる．それは生物も対\\n象であり，攻撃の瞬間に敵\\nを引き寄せることで，強引\\nに攻撃を当てようとする．\\n  また，磁力や龍属性のブ\\nレスのほかにも，爪や牙に\\nよる攻撃にも注意する必要\\nがある．特に，怒り状態で\\nは，爪による連続攻撃が脅\\n威となる．\\n\\n"}','{"text":"  極龍と戦う時は，自分の\\n立ち位置に注意せよ．磁界\\nの支配者のペースに飲まれ\\nれば，成すすべなくやられ\\nてしまうだろう．\\n  極龍の操る龍属性の攻撃\\nを受けると，一時的に防具\\nのエンチャントや護石の効\\n力が無くなってしまう．磁\\n力による移動だけではなく\\nブレス攻撃にも注意しよう\\n．\\n\\n"}']}}}
-
-    # give @p written_book{display:{Name:'{"text":"XXの生態書","italic":false}'},HideFlags:32,title:"火竜の生態書",author:"",pages:['{"text":""}','{"text":""}','{"text":""}']}
 
 # 終了
     data modify entity @s Offers.Recipes set from storage mhdp: Temp.Trade
