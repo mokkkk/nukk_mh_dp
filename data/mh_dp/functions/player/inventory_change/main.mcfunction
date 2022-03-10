@@ -8,7 +8,5 @@
 # Mhdp武器を持っている場合，tag確認
     execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus{IsOffhand:true} run function mh_dp:player/inventory_change/main/model
 
-say inventory_changed_main
-
 # 終了
     advancement revoke @s only mh_dp:player/inventory_changed_main

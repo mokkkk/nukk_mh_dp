@@ -8,5 +8,3 @@
 
 # 終了
     playsound item.armor.equip_iron master @s ~ ~ ~ 1 1
-
-say update to main model

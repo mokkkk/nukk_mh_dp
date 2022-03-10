@@ -7,7 +7,7 @@
     },
     "ops": [
       {
-        "source": "_[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus.OffModel",
+        "source": "_[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Offhand.tag.MhdpStatus.OffModel",
         "target": "CustomModelData",
         "op": "replace"
       }
