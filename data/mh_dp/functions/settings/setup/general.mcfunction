@@ -40,8 +40,22 @@ scoreboard players set #mhdp_attack_multiply AsaMatrix 100
 # HP倍率
 scoreboard players set #mhdp_hp_multiply AsaMatrix 100
 
-# 討伐数合計
+# 遭遇数合計
 data modify storage mh_dp:status Monster.Count set value 0
+# 遭遇履歴
+data modify storage mh_dp:status Monster.Meet.Reus set value false
+data modify storage mh_dp:status Monster.Meet.Reia set value false
+data modify storage mh_dp:status Monster.Meet.Diablos set value false
+data modify storage mh_dp:status Monster.Meet.Zinogre set value false
+data modify storage mh_dp:status Monster.Meet.Narga set value false
+data modify storage mh_dp:status Monster.Meet.Dyno set value false
+data modify storage mh_dp:status Monster.Meet.Brachy set value false
+data modify storage mh_dp:status Monster.Meet.BrachyR set value false
+data modify storage mh_dp:status Monster.Meet.Tiga set value false
+data modify storage mh_dp:status Monster.Meet.Kushala set value false
+data modify storage mh_dp:status Monster.Meet.Teo set value false
+data modify storage mh_dp:status Monster.Meet.Nazuti set value false
+data modify storage mh_dp:status Monster.Meet.Ruko set value false
 # 討伐履歴
 data modify storage mh_dp:status Monster.Win.Reus set value false
 data modify storage mh_dp:status Monster.Win.Reia set value false
