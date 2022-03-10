@@ -21,6 +21,10 @@
 # ノックバック
     execute if entity @s[tag=MdhpKnockback] at @s facing entity @e[type=marker,tag=MhdpKnockbackPos] feet rotated ~ 0 run function mh_dp:player/knockback/main
 
+# インベントリ変化時
+    execute if entity @s[advancements={mh_dp:player/inventory_changed_main=true}] run function mh_dp:player/inventory_change/main
+    execute if entity @s[advancements={mh_dp:player/inventory_changed_off=true}] run function mh_dp:player/inventory_change/off
+
 # 攻撃時処理
     execute if entity @s[advancements={mh_dp:player/attack_sword=true}] run function mh_dp:player/attack/weapon
     execute if entity @s[advancements={mh_dp:player/attack_piercing_arrow=true}] run function mh_dp:player/attack/piercing
