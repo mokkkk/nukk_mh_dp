@@ -20,7 +20,7 @@ execute if entity @s[scores={AsaMatrix=10}] run playsound entity.ender_dragon.fl
 execute if entity @s[scores={AsaMatrix=30}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=30}] run function asa_animator:ruko/manager/particle/step
 
-execute if entity @s[scores={AsaMatrix=1}] at @s facing entity @e[tag=RukoAttackTarget] feet rotated ~ 0 run function asa_animator:ruko/anim/stone_shot_large_end/events/pos/set_pos
+execute if entity @s[scores={AsaMatrix=1}] at @s run function asa_animator:ruko/anim/stone_shot_large_end/events/pos/set_pos
 execute if entity @s[scores={AsaMatrix=1..30}] run function asa_animator:ruko/anim/stone_shot_large_end/events/pos/offset
 execute if entity @s[scores={AsaMatrix=1..30}] run function asa_animator:ruko/manager/rotate
 

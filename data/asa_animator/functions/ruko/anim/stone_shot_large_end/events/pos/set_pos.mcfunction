@@ -1,6 +1,7 @@
 
 # 地上にmarkerセット
 summon marker ^ ^ ^-10 {Tags:["RukoMovePos"]}
+execute at @s facing entity @e[tag=RukoAttackTarget] feet rotated ~ 0 run tp @e[type=marker,tag=RukoMovePos] ^ ^ ^-10
 execute as @e[type=marker,tag=RukoMovePos,limit=1] at @s align y positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
 execute as @e[type=marker,tag=RukoMovePos,limit=1] at @s run tp @s ~ ~0 ~
 

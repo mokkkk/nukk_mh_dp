@@ -32,7 +32,7 @@ scoreboard players set #mhdp_id_holder MhdpMonsterID 0
 data modify storage mh_dp:status Flag.QuestRank set value false
 data modify storage mh_dp:settings Custom.QuestRank set value 0
 # スポーン設定
-data modify storage mh_dp:settings Custom.EnableBossSpawn set value 0b
+data modify storage mh_dp:settings Custom.EnableBossSpawn set value 1b
 # デスポーン設定
 data modify storage mh_dp:settings Custom.DisableDespawn set value 0b
 # 攻撃力倍率
