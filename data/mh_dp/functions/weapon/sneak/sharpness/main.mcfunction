@@ -3,7 +3,7 @@
     function oh_my_dat:please
 
     execute store result score #mhdp_temp_time AsaMatrix run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Time set from storage mh_dp:status Time
-    execute if score #mhdp_temp_time AsaMatrix matches 1.. run function mh_dp:player/data/get_mainhand
+    execute if score #mhdp_temp_time AsaMatrix matches 1.. run function mh_dp:player/data/get_bothhand
 
 # 切れ味取得
     execute unless entity @s[tag=CharmKushala] store result score #mhdp_temp_sharp_current AsaMatrix run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus.SharpnessMax
@@ -18,6 +18,7 @@
     execute unless entity @s[tag=MhdpSharpEnd] run function mh_dp:weapon/attack/sharpness/4
     execute unless entity @s[tag=MhdpSharpEnd] run function mh_dp:weapon/attack/sharpness/5
     execute unless entity @s[tag=MhdpSharpEnd] run function mh_dp:weapon/attack/sharpness/6
+    execute unless entity @s[tag=MhdpSharpEnd] run scoreboard players set #mhdp_temp_sharp_color AsaMatrix 6
 
 # 通知
     execute store result score #mhdp_temp_sharp_color_data AsaMatrix run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus.SharpnessColor

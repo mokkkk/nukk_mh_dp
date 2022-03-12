@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "offhand": {
+              "items": [
+                "minecraft:iron_sword"
+              ],
+              "nbt": "{MhdpWeapon:1b}"
+            }
+          }
+        }
+      }
+    }
+  }
+}
