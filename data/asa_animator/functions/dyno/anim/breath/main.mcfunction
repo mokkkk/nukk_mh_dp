@@ -20,6 +20,6 @@ function asa_animator:dyno/model
 execute if entity @s[scores={AsaMatrix=1..10}] run function asa_animator:dyno/manager/rotate
 
 execute if entity @s[scores={AsaMatrix=11}] run summon marker ^ ^0.7 ^8 {Tags:["DynoBreathTarget"]}
-execute if entity @s[scores={AsaMatrix=11}] unless entity @e[distance=0..8,tag=DynoAttackTarget] at @e[tag=DynoAttackTarget,limit=1] run tp @e[type=marker,tag=DynoBreathTarget] ~ ~ ~
+execute if entity @s[scores={AsaMatrix=11}] unless entity @e[tag=DynoAttackTarget,distance=0..8] at @e[tag=DynoAttackTarget,limit=1] run tp @e[type=marker,tag=DynoBreathTarget] ~ ~ ~
 execute if entity @s[scores={AsaMatrix=14}] run playsound entity.iron_golem.hurt master @a ~ ~ ~ 2 0.5
 execute if entity @s[scores={AsaMatrix=15}] positioned ^ ^2 ^6 run function asa_animator:dyno/anim/breath/events/shot

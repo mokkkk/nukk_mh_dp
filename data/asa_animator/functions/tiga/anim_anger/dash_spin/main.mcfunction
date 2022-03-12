@@ -34,7 +34,7 @@ execute if entity @s[scores={AsaMatrix=17..30}] positioned ^ ^ ^5 run function a
 execute if entity @s[scores={AsaMatrix=17..30}] positioned ^ ^ ^-5 run function asa_animator:tiga/anim/spin/events/damage
 
 execute if entity @s[scores={AsaMatrix=15}] run summon marker ~ ~ ~ {Tags:["TigaMoveRotate"]}
-execute if entity @s[scores={AsaMatrix=15}] run tp @e[distance=0..3,type=marker,tag=TigaMoveRotate] ~ ~ ~ ~ 0
+execute if entity @s[scores={AsaMatrix=15}] run tp @e[type=marker,tag=TigaMoveRotate,distance=0..3] ~ ~ ~ ~ 0
 execute if entity @s[scores={AsaMatrix=17..30}] at @s rotated as @e[type=marker,tag=TigaMoveRotate] run tp @s ^ ^ ^0.96
 execute if entity @s[scores={AsaMatrix=31..42}] at @s rotated as @e[type=marker,tag=TigaMoveRotate] run tp @s ^ ^ ^0.36
 

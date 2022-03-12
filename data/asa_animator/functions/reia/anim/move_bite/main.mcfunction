@@ -19,7 +19,7 @@ function asa_animator:reia/model
 
 execute if entity @s[scores={AsaMatrix=1}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 
-execute if entity @s[scores={AsaMatrix=11..18}] unless entity @e[distance=..6,tag=ReiaAttackTarget] at @s run tp @s ^ ^ ^0.5
-execute if entity @s[scores={AsaMatrix=11..18}] if entity @e[distance=..6,tag=ReiaAttackTarget] at @s run tp @s ^ ^ ^0.2
+execute if entity @s[scores={AsaMatrix=11..18}] unless entity @e[tag=ReiaAttackTarget,distance=..6] at @s run tp @s ^ ^ ^0.5
+execute if entity @s[scores={AsaMatrix=11..18}] if entity @e[tag=ReiaAttackTarget,distance=..6] at @s run tp @s ^ ^ ^0.2
 execute if entity @s[scores={AsaMatrix=19}] run playsound entity.wither.break_block master @a ~ ~ ~ 2 1.2
 execute if entity @s[scores={AsaMatrix=19..21}] positioned ^ ^1 ^5 run function asa_animator:reia/anim/move_bite/events/damage

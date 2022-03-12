@@ -7,5 +7,4 @@ execute if entity @s[tag=DestroyArmL] as @e[type=armor_stand,tag=BrachyParts,tag
 execute unless entity @s[tag=DestroyArmR] as @e[type=armor_stand,tag=BrachyParts,tag=ArmR1,distance=0..30] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10215
 execute if entity @s[tag=DestroyArmR] as @e[type=armor_stand,tag=BrachyParts,tag=ArmR1,distance=0..30] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10251
 
-tag @s remove IsAnger
-scoreboard players set #mhdp_brachy_anger_damage AsaMatrix 0
+function asa_animator:brachy/manager/end_anger

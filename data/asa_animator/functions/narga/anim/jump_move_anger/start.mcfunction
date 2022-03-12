@@ -21,9 +21,3 @@ execute as @e[type=armor_stand,tag=NargaParts,tag=ArmL2] run data merge entity @
 execute as @e[type=armor_stand,tag=NargaParts,tag=ArmR2] run data merge entity @s {Pose:{Head:[0f,10f,0f]}}
 execute as @e[type=armor_stand,tag=NargaParts,tag=WingL] run data merge entity @s {Pose:{Head:[27f,-10f,0f]}}
 execute as @e[type=armor_stand,tag=NargaParts,tag=WingR] run data merge entity @s {Pose:{Head:[27f,10f,0f]}}
-
-# 怒り状態開始
-tag @s add IsAnger
-execute unless entity @s[tag=DestroyHead] run summon marker ~ ~ ~ {Tags:["NargaAngerEye","L"]}
-summon marker ~ ~ ~ {Tags:["NargaAngerEye","R"]}
-function asa_animator:narga/manager/model/change_to_anger

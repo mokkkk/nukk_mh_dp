@@ -18,7 +18,6 @@ execute as @e[type=armor_stand,tag=ReusParts] run function #asa_matrix:animate
 function asa_animator:reus/model
 
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reus/manager/model/change_to_normal
-execute if entity @s[scores={AsaMatrix=1}] run playsound entity.item.break master @a ~ ~ ~ 2 0.5
 
 execute if entity @s[scores={AsaMatrix=12}] run function asa_animator:reus/anim/flying_damage/events/set_pos
 execute if entity @s[scores={AsaMatrix=13..20}] run function asa_animator:reus/anim/flying_damage/events/offset

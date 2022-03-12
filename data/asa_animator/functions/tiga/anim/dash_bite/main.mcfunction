@@ -31,15 +31,15 @@ execute at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_
 # 敵の方向を向く
 execute if entity @s[scores={AsaMatrix=1..8}] run function asa_animator:tiga/manager/rotate
 
-execute if entity @s[scores={AsaMatrix=24..32}] unless entity @e[distance=0..5,tag=TigaAttackTarget] at @s run tp @s ^ ^ ^0.6
+execute if entity @s[scores={AsaMatrix=24..32}] unless entity @e[tag=TigaAttackTarget,distance=0..5] at @s run tp @s ^ ^ ^0.6
 execute if entity @s[scores={AsaMatrix=9}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=23}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=23..31}] run particle block grass_block ~ ~ ~ 1 0.1 1 0 3
 execute if entity @s[scores={AsaMatrix=30}] run function asa_animator:tiga/anim/bite/events/damage
 
-execute if entity @s[scores={AsaMatrix=31..37}] unless entity @e[distance=0..5,tag=TigaAttackTarget] at @s run tp @s ^ ^ ^0.3
+execute if entity @s[scores={AsaMatrix=31..37}] unless entity @e[tag=TigaAttackTarget,distance=0..5] at @s run tp @s ^ ^ ^0.3
 
-execute if entity @s[scores={AsaMatrix=38..46}] unless entity @e[distance=0..5,tag=TigaAttackTarget] at @s run tp @s ^ ^ ^0.6
+execute if entity @s[scores={AsaMatrix=38..46}] unless entity @e[tag=TigaAttackTarget,distance=0..5] at @s run tp @s ^ ^ ^0.6
 execute if entity @s[scores={AsaMatrix=38}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=38..46}] run particle block grass_block ~ ~ ~ 1 0.1 1 0 3
 execute if entity @s[scores={AsaMatrix=45}] run function asa_animator:tiga/anim/bite/events/damage

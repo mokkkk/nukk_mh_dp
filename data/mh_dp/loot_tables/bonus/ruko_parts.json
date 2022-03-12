@@ -1,0 +1,45 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"極龍の鋭爪\",\"italic\":false}',Lore:['{\"text\":\"鋼をも切り裂く極龍の爪．\",\"italic\":false}','{\"text\":\"武器の素材として使用される．\",\"italic\":false}']},CustomModelData:10026,MhdpID:27}"
+              }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"極龍の磁殻\",\"italic\":false}',Lore:['{\"text\":\"磁力を帯びた極龍の甲殻．\",\"italic\":false}','{\"text\":\"防具の素材として使用される．\",\"italic\":false}']},CustomModelData:10027,MhdpID:28}"
+              }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"古龍骨\",\"italic\":false}',Lore:['{\"text\":\"不思議な力を秘めた龍の骨．様々な用途がある．\",\"italic\":false}']},CustomModelData:10021,MhdpID:22}"
+              }
+          ]
+        }
+      ]
+    }
+  ]
+}

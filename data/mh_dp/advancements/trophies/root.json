@@ -2,9 +2,9 @@
   "display": {
     "icon": {
       "item": "minecraft:barrier",
-      "nbt": "{CustomModelData:19999}"
+      "nbt": "{CustomModelData:19998}"
     },
-    "title": "MH_DP",
+    "title": "討伐モンスターリスト",
     "description": "今まで倒したことのあるモンスター",
     "background": "minecraft:textures/block/obsidian.png",
     "frame": "task",

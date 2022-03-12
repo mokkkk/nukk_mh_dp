@@ -3,6 +3,7 @@ kill @e[type=armor_stand,tag=NargaParts]
 scoreboard players reset #mhdp_narga_health
 scoreboard players reset #mhdp_narga_kill_timer
 scoreboard players reset #mhdp_narga_anger_count
+scoreboard players reset #mhdp_narga_anger_damage_max
 scoreboard players reset #mhdp_narga_anger_damage
 scoreboard players reset #mhdp_narga_head_damage
 scoreboard players reset #mhdp_narga_arml_damage
@@ -16,3 +17,4 @@ scoreboard players reset #narga_mine_y
 scoreboard players reset #narga_mine_z
 scoreboard players reset #narga_height_target
 scoreboard players reset #narga_damage
+scoreboard players reset #mhdp_narga_flash_time

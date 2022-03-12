@@ -1,0 +1,14 @@
+{
+  "function": "minecraft:copy_nbt",
+  "source": {
+    "type": "minecraft:storage",
+    "source": "oh_my_dat:"
+  },
+  "ops": [
+    {
+      "source": "_[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.display.Name",
+      "target": "display.Name",
+      "op": "replace"
+    }
+  ]
+}

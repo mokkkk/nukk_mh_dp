@@ -22,4 +22,4 @@ execute if entity @s[scores={AsaMatrix=13}] run function asa_animator:dyno/manag
 
 execute if entity @s[scores={AsaMatrix=18}] positioned ^ ^ ^6 run function asa_animator:dyno/anim/bite/events/damage
 
-execute if entity @s[scores={AsaMatrix=1..12}] at @s if entity @e[distance=0..7,tag=DynoAttackTarget] run tp @s ^ ^ ^-0.3
+execute if entity @s[scores={AsaMatrix=1..12}] at @s if entity @e[tag=DynoAttackTarget,distance=0..7] run tp @s ^ ^ ^-0.3

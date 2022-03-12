@@ -12,8 +12,10 @@ scoreboard players reset #tiga_damage
 scoreboard players reset #mhdp_tiga_actcount
 scoreboard players reset #mhdp_tiga_anger_count
 scoreboard players reset #mhdp_tiga_anger_damage
+scoreboard players reset #mhdp_tiga_anger_damage_max
 scoreboard players reset #mhdp_tiga_kill_timer
 scoreboard players reset #mhdp_tiga_head_damage
 scoreboard players reset #mhdp_tiga_arml_damage
 scoreboard players reset #mhdp_tiga_armr_damage
 scoreboard players reset #mhdp_tiga_tail_damage
+scoreboard players reset #mhdp_tiga_flash_time

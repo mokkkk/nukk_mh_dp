@@ -15,3 +15,7 @@ scoreboard players reset #reia_mine_y
 scoreboard players reset #reia_mine_z
 scoreboard players reset #reia_height_target
 scoreboard players reset #reia_damage
+scoreboard players reset #mhdp_reia_anger_damage_max
+scoreboard players reset #mhdp_reia_anger_damage
+scoreboard players reset #mhdp_reia_anger_count
+scoreboard players reset #mhdp_reia_flash_time

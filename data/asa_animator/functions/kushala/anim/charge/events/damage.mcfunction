@@ -1,0 +1,2 @@
+execute positioned ^ ^ ^3 as @e[type=!armor_stand,type=!area_effect_cloud,type=!marker,tag=!KushalaParts,distance=..15] unless entity @s[scores={MhdpTAvoid=1..}] run function asa_animator:kushala/anim/charge/events/damage_sub_
+execute positioned ^ ^ ^3 as @a[distance=..8] run function mh_dp:player/knockback/start_dwind

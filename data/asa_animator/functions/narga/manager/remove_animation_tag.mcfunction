@@ -23,5 +23,6 @@ tag @s remove AnmDHead
 tag @s remove AnmDArmR
 tag @s remove AnmDArmL
 tag @s remove AnmDTail
+tag @s remove AnmVoice
 
 kill @e[type=marker,tag=NargaShotTarget]

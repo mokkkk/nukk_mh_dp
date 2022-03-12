@@ -26,7 +26,7 @@ execute at @s positioned ~ ~5 ~ run tp @s ~ ~ ~
 execute at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
 
 # 攻撃
-execute if entity @e[type=!armor_stand,type=!marker,distance=0..5] run function asa_animator:diablos/anim_anger/dash/events/damage
+execute if entity @e[type=!armor_stand,type=!area_effect_cloud,type=!marker,distance=0..5] run function asa_animator:diablos/anim_anger/dash/events/damage
 
 # 効果音
 execute if entity @s[scores={AsaMatrix=3}] run playsound entity.iron_golem.step master @a ~ ~ ~ 3 0.5

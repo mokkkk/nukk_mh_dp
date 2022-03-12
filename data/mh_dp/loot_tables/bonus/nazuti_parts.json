@@ -1,0 +1,45 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"霞龍の尖爪\",\"italic\":false}',Lore:['{\"text\":\"細く鋭い霞龍の爪．\",\"italic\":false}','{\"text\":\"武器の素材として使用される．\",\"italic\":false}']},CustomModelData:10024,MhdpID:25}"
+              }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"霞龍の上皮\",\"italic\":false}',Lore:['{\"text\":\"不思議な触感をもつ霞龍の皮．\",\"italic\":false}','{\"text\":\"防具の素材として使用される．\",\"italic\":false}']},CustomModelData:10025,MhdpID:26}"
+              }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"古龍骨\",\"italic\":false}',Lore:['{\"text\":\"不思議な力を秘めた龍の骨．様々な用途がある．\",\"italic\":false}']},CustomModelData:10021,MhdpID:22}"
+              }
+          ]
+        }
+      ]
+    }
+  ]
+}

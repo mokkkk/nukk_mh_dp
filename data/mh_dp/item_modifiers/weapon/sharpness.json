@@ -1,0 +1,19 @@
+{
+  "function": "minecraft:copy_nbt",
+  "source": {
+    "type": "minecraft:storage",
+    "source": "oh_my_dat:"
+  },
+  "ops": [
+    {
+      "source": "_[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus.SharpnessCurrent",
+      "target": "MhdpStatus.SharpnessCurrent",
+      "op": "replace"
+    },
+    {
+      "source": "_[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Weapon.tag.MhdpStatus.SharpnessColor",
+      "target": "MhdpStatus.SharpnessColor",
+      "op": "replace"
+    }
+  ]
+}

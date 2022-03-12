@@ -30,8 +30,8 @@ function asa_animator:dyno/model
 execute if entity @s[scores={AsaMatrix=1..10}] run function asa_animator:dyno/manager/rotate
 
 execute if entity @s[scores={AsaMatrix=30}] run summon marker ~ ~ ~ {Tags:["DynoMoveRotate"]}
-execute if entity @s[scores={AsaMatrix=30}] facing entity @e[tag=DynoAttackTarget,limit=1] feet run tp @e[distance=0..2,type=marker,tag=DynoMoveRotate] ~ ~ ~ ~ 0
-execute if entity @s[scores={AsaMatrix=71..80}] rotated as @e[distance=0..30,type=marker,tag=DynoMoveRotate] run tp @s ^ ^ ^1.3
+execute if entity @s[scores={AsaMatrix=30}] facing entity @e[tag=DynoAttackTarget,limit=1] feet run tp @e[type=marker,tag=DynoMoveRotate,distance=0..2] ~ ~ ~ ~ 0
+execute if entity @s[scores={AsaMatrix=71..80}] rotated as @e[type=marker,tag=DynoMoveRotate,distance=0..30] run tp @s ^ ^ ^1.3
 execute if entity @s[scores={AsaMatrix=71..}] run function asa_animator:dyno/manager/ground
 execute if entity @s[scores={AsaMatrix=81}] run kill @e[type=marker,tag=DynoMoveRotate]
 
@@ -40,9 +40,9 @@ execute if entity @s[scores={AsaMatrix=71}] run playsound item.trident.throw mas
 execute if entity @s[scores={AsaMatrix=71}] run playsound item.trident.throw master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=69}] run playsound item.firecharge.use master @a ~ ~ ~ 2 0.7
 
-execute if entity @s[scores={AsaMatrix=21..71}] as @e[distance=0..15,type=armor_stand,tag=DynoParts,tag=HeadU] at @s positioned ^ ^1 ^ run particle block obsidian ~ ~ ~ 0 0 0 0 1
-execute if entity @s[scores={AsaMatrix=21..68}] as @e[distance=0..15,type=armor_stand,tag=DynoParts,tag=HeadU] at @s positioned ^ ^1 ^ run particle electric_spark ~ ~ ~ 0 0 0 1 10
-execute if entity @s[scores={AsaMatrix=21..68}] as @e[distance=0..15,type=armor_stand,tag=DynoParts,tag=HeadU] at @s positioned ^ ^1 ^ run particle crit ~ ~ ~ 0 0 0 0.6 3
+execute if entity @s[scores={AsaMatrix=21..71}] as @e[type=armor_stand,tag=DynoParts,tag=HeadU,distance=0..15] at @s positioned ^ ^1 ^ run particle block obsidian ~ ~ ~ 0 0 0 0 1
+execute if entity @s[scores={AsaMatrix=21..68}] as @e[type=armor_stand,tag=DynoParts,tag=HeadU,distance=0..15] at @s positioned ^ ^1 ^ run particle electric_spark ~ ~ ~ 0 0 0 1 10
+execute if entity @s[scores={AsaMatrix=21..68}] as @e[type=armor_stand,tag=DynoParts,tag=HeadU,distance=0..15] at @s positioned ^ ^1 ^ run particle crit ~ ~ ~ 0 0 0 0.6 3
 
 execute if entity @s[scores={AsaMatrix=73}] run function asa_animator:dyno/anim/slash_round/events/damage
-execute if entity @s[scores={AsaMatrix=78}] positioned ^ ^ ^2 rotated as @e[distance=0..30,type=marker,tag=DynoMoveRotate] run function asa_animator:dyno/anim/slash_round/events/damage
+execute if entity @s[scores={AsaMatrix=78}] positioned ^ ^ ^2 rotated as @e[type=marker,tag=DynoMoveRotate,distance=0..30] run function asa_animator:dyno/anim/slash_round/events/damage

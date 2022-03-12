@@ -1,1 +1,1 @@
-execute positioned ^ ^ ^3 as @e[type=!armor_stand,type=!marker,tag=!ReusParts,distance=..18] unless entity @s[scores={MhdpTAvoid=1..}] run function asa_animator:reus/anim/voice/events/damage_sub_
+execute positioned ^ ^ ^3 as @e[type=!armor_stand,type=!area_effect_cloud,type=!marker,tag=!ReiaParts,distance=..18] unless entity @s[tag=CharmTiga,tag=!BlightDragon] unless entity @s[scores={MhdpTAvoid=1..}] run function asa_animator:reia/anim/voice/events/damage_sub_

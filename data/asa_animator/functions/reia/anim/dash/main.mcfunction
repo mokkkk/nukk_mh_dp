@@ -20,7 +20,7 @@ execute at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_
 execute positioned ^ ^ ^0.8 unless block ~ ~ ~ #asa_animator:no_collision unless block ~ ~1 ~ #asa_animator:no_collision run function asa_animator:reia/anim/dash/events/change
 
 # 攻撃
-execute if entity @e[distance=0..5,type=!armor_stand,type=!marker] run function asa_animator:reia/anim/dash/events/damage
+execute if entity @e[type=!armor_stand,type=!area_effect_cloud,type=!marker,distance=0..5] run function asa_animator:reia/anim/dash/events/damage
 
 # 効果音
 execute if entity @s[scores={AsaMatrix=5}] run playsound entity.iron_golem.step master @a ~ ~ ~ 2 0.7

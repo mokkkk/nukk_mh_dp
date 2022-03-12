@@ -1,0 +1,45 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"鋼の龍鱗\",\"italic\":false}',Lore:['{\"text\":\"風を操る龍の鱗．\",\"italic\":false}','{\"text\":\"武器の素材として使用される．\",\"italic\":false}']},CustomModelData:10019,MhdpID:20}"
+              }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"鋼龍の堅殻\",\"italic\":false}',Lore:['{\"text\":\"鋼龍の体を覆う金属質の甲殻．\",\"italic\":false}','{\"text\":\"防具の素材として使用される．\",\"italic\":false}']},CustomModelData:10020,MhdpID:21}"
+              }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"古龍骨\",\"italic\":false}',Lore:['{\"text\":\"不思議な力を秘めた龍の骨．様々な用途がある．\",\"italic\":false}']},CustomModelData:10021,MhdpID:22}"
+              }
+          ]
+        }
+      ]
+    }
+  ]
+}

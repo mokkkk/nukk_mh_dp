@@ -21,8 +21,6 @@ execute at @s positioned ~ ~5 ~ run tp @s ~ ~ ~
 execute at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
 execute if entity @s[scores={AsaMatrix=16}] run function asa_animator:dyno/manager/particle/jump
 
-execute if entity @s[scores={AsaMatrix=1}] run scoreboard players set #mhdp_dyno_head_heat_damage AsaMatrix 0
-
 execute if entity @s[scores={AsaMatrix=9}] run function asa_animator:dyno/manager/model/change_to_normal_head
-execute if entity @s[scores={AsaMatrix=9}] as @e[distance=0..15,type=armor_stand,tag=DynoParts,tag=HeadU] at @s run particle explosion_emitter ~ ~1.4 ~ 0 0 0 0 1
+execute if entity @s[scores={AsaMatrix=9}] as @e[type=armor_stand,tag=DynoParts,tag=HeadU,distance=0..15] at @s run particle explosion_emitter ~ ~1.4 ~ 0 0 0 0 1
 execute if entity @s[scores={AsaMatrix=9}] run playsound entity.generic.explode master @a ~ ~ ~ 2 0.7

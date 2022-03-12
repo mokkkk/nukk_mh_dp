@@ -1,11 +1,4 @@
 
-# ダメージ適用
-# execute if entity @s[tag=HeadParts] run scoreboard players operation #brachy_damage AsaMatrix *= #asam_const_120 AsaMatrix
-# execute if entity @s[tag=BodyParts] run scoreboard players operation #brachy_damage AsaMatrix *= #asam_const_95 AsaMatrix
-# execute if entity @s[tag=ArmLParts] run scoreboard players operation #brachy_damage AsaMatrix *= #asam_const_100 AsaMatrix
-# execute if entity @s[tag=ArmRParts] run scoreboard players operation #brachy_damage AsaMatrix *= #asam_const_100 AsaMatrix
-# execute if entity @s[tag=TailParts] run scoreboard players operation #brachy_damage AsaMatrix *= #asam_const_95 AsaMatrix
-# scoreboard players operation #brachy_damage AsaMatrix /= #asam_const_100 AsaMatrix
 # 怒り時ダメージ増加
 execute if entity @e[type=armor_stand,tag=BrachyRoot,tag=IsAnger] run scoreboard players operation #brachy_damage AsaMatrix *= #asam_const_120 AsaMatrix
 execute if entity @e[type=armor_stand,tag=BrachyRoot,tag=IsAnger] run scoreboard players operation #brachy_damage AsaMatrix /= #asam_const_100 AsaMatrix
@@ -17,7 +10,7 @@ playsound minecraft:entity.player.hurt master @a ~ ~ ~ 2 1
 
 # 怒り遷移
 scoreboard players operation #mhdp_brachy_anger_damage AsaMatrix += #brachy_damage AsaMatrix
-execute if score #mhdp_brachy_anger_damage AsaMatrix matches ..-15000 unless entity @e[type=armor_stand,tag=BrachyRoot,tag=IsAnger] as @e[type=armor_stand,tag=BrachyRoot] run function asa_animator:brachy/manager/start_anger
+execute if score #mhdp_brachy_anger_damage AsaMatrix matches ..0 unless entity @e[type=armor_stand,tag=BrachyRoot,tag=IsAnger] as @e[type=armor_stand,tag=BrachyRoot] run function asa_animator:brachy/manager/start_anger
 
 # 部位ダメージ適用
 execute if entity @s[tag=HeadParts] run scoreboard players operation #mhdp_brachy_head_damage AsaMatrix += #brachy_damage AsaMatrix

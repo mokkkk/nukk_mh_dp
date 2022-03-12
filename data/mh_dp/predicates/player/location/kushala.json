@@ -1,0 +1,133 @@
+[
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:snowy_beach"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:forest"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:flower_forest"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:birch_forest"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:old_growth_birch_forest"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:dark_forest"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:jungle"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:sparse_jungle"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:taiga"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:snowy_taiga"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:old_growth_pine_taiga"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:old_growth_spruce_taiga"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:plains"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:sunflower_plains"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:desert"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:snowy_plains"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:ice_spikes"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:badlands"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:wooded_badlands"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:eroded_badlands"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biome": "minecraft:meadow"
+        }
+      }
+    ]
+  }
+]

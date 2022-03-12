@@ -26,7 +26,7 @@ function asa_animator:narga/model
 # 敵の方向を向く
 execute if entity @s[scores={AsaMatrix=1..5}] run function asa_animator:narga/manager/rotate
 
-execute if entity @s[scores={AsaMatrix=12..18}] unless entity @e[distance=0..5,tag=NargaAttackTarget] at @s run tp @s ^ ^ ^0.4
+execute if entity @s[scores={AsaMatrix=12..18}] unless entity @e[tag=NargaAttackTarget,distance=0..5] at @s run tp @s ^ ^ ^0.4
 execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=12}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=12..15}] run particle block grass_block ~ ~ ~ 1 0.1 1 0 3

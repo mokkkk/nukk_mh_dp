@@ -18,7 +18,7 @@ execute as @e[type=armor_stand,tag=ReusParts] run function #asa_matrix:animate
 function asa_animator:reus/model
 
 execute if entity @s[scores={AsaMatrix=1..8}] run function asa_animator:reus/manager/rotate_fast
-execute if entity @s[scores={AsaMatrix=1..8}] unless entity @e[distance=..4,tag=ReusAttackTarget] facing entity @e[tag=ReusAttackTarget] feet run tp @s ^ ^ ^0.6
+execute if entity @s[scores={AsaMatrix=1..8}] unless entity @e[tag=ReusAttackTarget,distance=..4] facing entity @e[tag=ReusAttackTarget] feet run tp @s ^ ^ ^0.6
 execute if entity @s[scores={AsaMatrix=6}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=23}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 

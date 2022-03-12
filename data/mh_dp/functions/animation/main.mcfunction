@@ -15,3 +15,11 @@ execute if entity @s[tag=BrachyRoot] run function asa_animator:brachy/main
 execute if entity @s[tag=BrachyRRoot] run function asa_animator:brachyr/main
 
 execute if entity @s[tag=TigaRoot] run function asa_animator:tiga/main
+
+execute if entity @s[tag=KushalaRoot] run function asa_animator:kushala/main
+
+execute if entity @s[tag=TeoRoot] run function asa_animator:teo/main
+
+execute if entity @s[tag=NazutiRoot] run function asa_animator:nazuti/main
+
+execute if entity @s[tag=RukoRoot] run function asa_animator:ruko/main
