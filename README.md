@@ -56,6 +56,9 @@ AmberWat様
 以下のリソースの提供に感謝します．
 
 モンスターモデル（迅竜，轟竜），モンスターアイコン，武器（迅竜，雷狼竜）：もじしゃ様(@mojisha_moji)
+
 武器（バスターソード）：れる様(@LanternCold)
+
 武器（砕竜，斬竜）：Keeema様(@keeema_1)
+
 効果音：teranosinn
