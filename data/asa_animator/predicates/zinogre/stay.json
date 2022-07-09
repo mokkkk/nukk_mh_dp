@@ -7,77 +7,133 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmTackle\"]}"
+          "nbt": "{Tags:[\"AnmHandLS\"]}"
         }
       },
       {
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmBstep\"]}"
+          "nbt": "{Tags:[\"AnmHandRS\"]}"
         }
       },
       {
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmFstep\"]}"
+          "nbt": "{Tags:[\"AnmHandL2R\"]}"
         }
       },
       {
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmHand2\"]}"
+          "nbt": "{Tags:[\"AnmHandR2L\"]}"
         }
       },
       {
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmHead\"]}"
+          "nbt": "{Tags:[\"AnmHandLE\"]}"
         }
       },
       {
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmBjump\"]}"
+          "nbt": "{Tags:[\"AnmHandRE\"]}"
         }
       },
       {
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmCharge\"]}"
+          "nbt": "{Tags:[\"AnmHandL2CHandR\"]}"
         }
       },
       {
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmChargeE\"]}"
+          "nbt": "{Tags:[\"AnmHandR2CHandL\"]}"
         }
       },
       {
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmShot\"]}"
+          "nbt": "{Tags:[\"AnmCHandL\"]}"
         }
       },
       {
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmTailSpin\"]}"
+          "nbt": "{Tags:[\"AnmCHandR\"]}"
         }
       },
       {
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmTailWhip\"]}"
+          "nbt": "{Tags:[\"AnmTL2CHandL\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmTR2CHandR\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmHeadL\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmHeadR\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmHeadL2HandRS\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmHeadR2HandLS\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmJump\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmTackleL\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmTackleR\"]}"
         }
       },
       {
@@ -91,21 +147,7 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmJumpAttack\"]}"
-        }
-      },
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "nbt": "{Tags:[\"AnmHand3\"]}"
-        }
-      },
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "nbt": "{Tags:[\"AnmHandC\"]}"
+          "nbt": "{Tags:[\"AnmSault\"]}"
         }
       },
       {
@@ -127,34 +169,6 @@
         "entity": "this",
         "predicate": {
           "nbt": "{Tags:[\"AnmSummon\"]}"
-        }
-      },
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "nbt": "{Tags:[\"AnmJumpAttackS\"]}"
-        }
-      },
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "nbt": "{Tags:[\"AnmJumpAttackC\"]}"
-        }
-      },
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "nbt": "{Tags:[\"AnmTailSpinC\"]}"
-        }
-      },
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "nbt": "{Tags:[\"AnmBstepC\"]}"
         }
       },
       {

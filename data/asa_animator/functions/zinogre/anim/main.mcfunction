@@ -1,58 +1,62 @@
 
-# タックル
-execute if entity @s[tag=AnmTackle] run function asa_animator:zinogre/anim/tackle/main
+# お手開始
+execute if entity @s[tag=AnmHandLS] run function asa_animator:zinogre/anim/hand_l_start/main
+execute if entity @s[tag=AnmHandRS] run function asa_animator:zinogre/anim/hand_r_start/main
+# お手2段目移行
+execute if entity @s[tag=AnmHandL2R] run function asa_animator:zinogre/anim/hand_l_to_r/main
+execute if entity @s[tag=AnmHandR2L] run function asa_animator:zinogre/anim/hand_r_to_l/main
+# お手終了
+execute if entity @s[tag=AnmHandLE] run function asa_animator:zinogre/anim/hand_l_end/main
+execute if entity @s[tag=AnmHandRE] run function asa_animator:zinogre/anim/hand_r_end/main
+# お手キャンセルチャージお手
+execute if entity @s[tag=AnmHandL2CHandR] run function asa_animator:zinogre/anim/hand_l_to_chargehand_r/main
+execute if entity @s[tag=AnmHandR2CHandL] run function asa_animator:zinogre/anim/hand_r_to_chargehand_l/main
 
-# バックステップ
-execute if entity @s[tag=AnmBstep] run function asa_animator:zinogre/anim/backstep/main
-# フォワードステップ
-execute if entity @s[tag=AnmFstep] run function asa_animator:zinogre/anim/forwardstep/main
-# お手
-execute if entity @s[tag=AnmHand2] run function asa_animator:zinogre/anim/hand_2/main
-execute if entity @s[tag=AnmHand3] run function asa_animator:zinogre/anim/hand_3/main
 # チャージお手
-execute if entity @s[tag=AnmHandC] run function asa_animator:zinogre/anim/hand_charge/main
+execute if entity @s[tag=AnmCHandL] run function asa_animator:zinogre/anim/chargehand_l/main
+execute if entity @s[tag=AnmCHandR] run function asa_animator:zinogre/anim/chargehand_r/main
 
 # ヘッドバット
-execute if entity @s[tag=AnmHead] run function asa_animator:zinogre/anim/head/main
-# バックジャンプ
-execute if entity @s[tag=AnmBjump] run function asa_animator:zinogre/anim/backjump/main
-# 充電
-execute if entity @s[tag=AnmCharge] run function asa_animator:zinogre/anim/charge/main
-# 超帯電開始
-execute if entity @s[tag=AnmChargeE] run function asa_animator:zinogre/anim/charge_end/main
+execute if entity @s[tag=AnmHeadL] run function asa_animator:zinogre/anim/head_l/main
+execute if entity @s[tag=AnmHeadR] run function asa_animator:zinogre/anim/head_r/main
+# ヘッドバット→お手開始
+execute if entity @s[tag=AnmHeadL2HandRS] run function asa_animator:zinogre/anim/head_l_to_hand_r_start/main
+execute if entity @s[tag=AnmHeadR2HandLS] run function asa_animator:zinogre/anim/head_r_to_hand_l_start/main
 
-# 雷光弾
-execute if entity @s[tag=AnmShot] run function asa_animator:zinogre/anim/shot/main
+# 飛び掛かり
+execute if entity @s[tag=AnmJump] run function asa_animator:zinogre/anim/jump/main
 
-# サマーソルト
-execute if entity @s[tag=AnmTailSpin] run function asa_animator:zinogre/anim/tail_spin/main
-# サマーソルト（コンボフィニッシュ）
-execute if entity @s[tag=AnmTailSpinC] run function asa_animator:zinogre/anim/tail_spin_combo/main
+# サイドタックル
+execute if entity @s[tag=AnmTackleL] run function asa_animator:zinogre/anim/tackle_l/main
+execute if entity @s[tag=AnmTackleR] run function asa_animator:zinogre/anim/tackle_r/main
+# サイドタックル→チャージお手
+execute if entity @s[tag=AnmTL2CHandL] run function asa_animator:zinogre/anim/tackle_l_to_chargehand_l/main
+execute if entity @s[tag=AnmTR2CHandR] run function asa_animator:zinogre/anim/tackle_r_to_chargehand_r/main
 
-# 尻尾ビターン
-execute if entity @s[tag=AnmTailWhip] run function asa_animator:zinogre/anim/tail_whip/main
 # ボディプレス
 execute if entity @s[tag=AnmPress] run function asa_animator:zinogre/anim/press/main
-# 突進
-execute if entity @s[tag=AnmJumpAttack] run function asa_animator:zinogre/anim/jump_attack/main
 
-# バックステップ（コンボ）
-execute if entity @s[tag=AnmBstepC] run function asa_animator:zinogre/anim/backstep_combo/main
+# サマーソルト
+execute if entity @s[tag=AnmSault] run function asa_animator:zinogre/anim/sault/main
 
-# 突進（コンボ始動）
-execute if entity @s[tag=AnmJumpAttackS] run function asa_animator:zinogre/anim/jump_attack_short/main
-# 突進（コンボフィニッシュ）
-execute if entity @s[tag=AnmJumpAttackC] run function asa_animator:zinogre/anim/jump_attack_combo/main
-
-# 召喚時
-execute if entity @s[tag=AnmSummon] run function asa_animator:zinogre/anim/summon/main
-# ひるみ
-execute if entity @s[tag=AnmDamage] run function asa_animator:zinogre/anim/damage/main
-# 討伐
+# 地上時討伐
 execute if entity @s[tag=AnmDeath] run function asa_animator:zinogre/anim/death/main
-# 頭部位破壊
+
+# 飛行時討伐
+execute if entity @s[tag=AnmFlyDeath] run function asa_animator:zinogre/anim/flying_death/main
+
+# 登場
+execute if entity @s[tag=AnmSummon] run function asa_animator:zinogre/anim/summon/main
+# 咆哮
+execute if entity @s[tag=AnmVoice] run function asa_animator:zinogre/anim/voice/main
+# 怒り
+execute if entity @s[tag=AnmAnger] run function asa_animator:zinogre/anim/anger/main
+# 飛行時怒り
+execute if entity @s[tag=AnmFlyAnger] run function asa_animator:zinogre/anim/flying_voice/main
+
+# 頭部破壊ひるみ
 execute if entity @s[tag=AnmDHead] run function asa_animator:zinogre/anim/destroy_head/main
-# 腕部位破壊
-execute if entity @s[tag=AnmDArm] run function asa_animator:zinogre/anim/destroy_arm/main
-# 尻尾部位破壊
+# 腕破壊ひるみ
+execute if entity @s[tag=AnmDBody] run function asa_animator:zinogre/anim/destroy_body/main
+# 尻尾破壊ひるみ
 execute if entity @s[tag=AnmDTail] run function asa_animator:zinogre/anim/destroy_tail/main
