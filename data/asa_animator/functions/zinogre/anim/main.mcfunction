@@ -1,43 +1,53 @@
 
-# お手開始
-execute if entity @s[tag=AnmHandLS] run function asa_animator:zinogre/anim/hand_l_start/main
-execute if entity @s[tag=AnmHandRS] run function asa_animator:zinogre/anim/hand_r_start/main
-# お手2段目移行
-execute if entity @s[tag=AnmHandL2R] run function asa_animator:zinogre/anim/hand_l_to_r/main
-execute if entity @s[tag=AnmHandR2L] run function asa_animator:zinogre/anim/hand_r_to_l/main
-# お手終了
-execute if entity @s[tag=AnmHandLE] run function asa_animator:zinogre/anim/hand_l_end/main
-execute if entity @s[tag=AnmHandRE] run function asa_animator:zinogre/anim/hand_r_end/main
-# お手キャンセルチャージお手
-execute if entity @s[tag=AnmHandL2CHandR] run function asa_animator:zinogre/anim/hand_l_to_chargehand_r/main
-execute if entity @s[tag=AnmHandR2CHandL] run function asa_animator:zinogre/anim/hand_r_to_chargehand_l/main
+# バックステップ
+    execute if entity @s[tag=AnmBStep] run function asa_animator:zinogre/anim/bstep/main
+
+# お手開始（後退）
+    execute if entity @s[tag=AnmHandLS] run function asa_animator:zinogre/anim/hand_l_start/main
+    execute if entity @s[tag=AnmHandRS] run function asa_animator:zinogre/anim/hand_r_start/main
+    # お手2段目以降
+        execute if entity @s[tag=AnmHandL2R] run function asa_animator:zinogre/anim/hand_l_to_r/main
+        execute if entity @s[tag=AnmHandR2L] run function asa_animator:zinogre/anim/hand_r_to_l/main
+    # お手終了
+        execute if entity @s[tag=AnmHandLE] run function asa_animator:zinogre/anim/hand_l_end/main
+        execute if entity @s[tag=AnmHandRE] run function asa_animator:zinogre/anim/hand_r_end/main
+    # お手キャンセルチャージお手
+        execute if entity @s[tag=AnmHandL2CHandR] run function asa_animator:zinogre/anim/hand_l_to_chargehand_r/main
+        execute if entity @s[tag=AnmHandR2CHandL] run function asa_animator:zinogre/anim/hand_r_to_chargehand_l/main
 
 # チャージお手
-execute if entity @s[tag=AnmCHandL] run function asa_animator:zinogre/anim/chargehand_l/main
-execute if entity @s[tag=AnmCHandR] run function asa_animator:zinogre/anim/chargehand_r/main
+    execute if entity @s[tag=AnmCHandL] run function asa_animator:zinogre/anim/chargehand_l/main
+    execute if entity @s[tag=AnmCHandR] run function asa_animator:zinogre/anim/chargehand_r/main
 
 # ヘッドバット
-execute if entity @s[tag=AnmHeadL] run function asa_animator:zinogre/anim/head_l/main
-execute if entity @s[tag=AnmHeadR] run function asa_animator:zinogre/anim/head_r/main
-# ヘッドバット→お手開始
-execute if entity @s[tag=AnmHeadL2HandRS] run function asa_animator:zinogre/anim/head_l_to_hand_r_start/main
-execute if entity @s[tag=AnmHeadR2HandLS] run function asa_animator:zinogre/anim/head_r_to_hand_l_start/main
+    execute if entity @s[tag=AnmHeadL] run function asa_animator:zinogre/anim/head_l/main
+    execute if entity @s[tag=AnmHeadR] run function asa_animator:zinogre/anim/head_r/main
+    # ヘッドバット→お手開始
+        execute if entity @s[tag=AnmHeadL2HandRS] run function asa_animator:zinogre/anim/head_l_to_hand_r_start/main
+        execute if entity @s[tag=AnmHeadR2HandLS] run function asa_animator:zinogre/anim/head_r_to_hand_l_start/main
+    # ヘッドバット→バックステップ
+        execute if entity @s[tag=AnmHeadL2BStep] run function asa_animator:zinogre/anim/head_l_to_bstep/main
+        execute if entity @s[tag=AnmHeadR2BStep] run function asa_animator:zinogre/anim/head_r_to_bstep/main
 
 # 飛び掛かり
-execute if entity @s[tag=AnmJump] run function asa_animator:zinogre/anim/jump/main
+    execute if entity @s[tag=AnmJump] run function asa_animator:zinogre/anim/jump/main
 
 # サイドタックル
-execute if entity @s[tag=AnmTackleL] run function asa_animator:zinogre/anim/tackle_l/main
-execute if entity @s[tag=AnmTackleR] run function asa_animator:zinogre/anim/tackle_r/main
-# サイドタックル→チャージお手
-execute if entity @s[tag=AnmTL2CHandL] run function asa_animator:zinogre/anim/tackle_l_to_chargehand_l/main
-execute if entity @s[tag=AnmTR2CHandR] run function asa_animator:zinogre/anim/tackle_r_to_chargehand_r/main
+    execute if entity @s[tag=AnmTackleL] run function asa_animator:zinogre/anim/tackle_l/main
+    execute if entity @s[tag=AnmTackleR] run function asa_animator:zinogre/anim/tackle_r/main
+    # サイドタックル→チャージお手
+        execute if entity @s[tag=AnmTL2CHandL] run function asa_animator:zinogre/anim/tackle_l_to_chargehand_l/main
+        execute if entity @s[tag=AnmTR2CHandR] run function asa_animator:zinogre/anim/tackle_r_to_chargehand_r/main
 
 # ボディプレス
-execute if entity @s[tag=AnmPress] run function asa_animator:zinogre/anim/press/main
+    execute if entity @s[tag=AnmPress] run function asa_animator:zinogre/anim/press/main
 
 # サマーソルト
-execute if entity @s[tag=AnmSault] run function asa_animator:zinogre/anim/sault/main
+    execute if entity @s[tag=AnmSaultL] run function asa_animator:zinogre/anim/sault_l/main
+    execute if entity @s[tag=AnmSaultR] run function asa_animator:zinogre/anim/sault_r/main
+
+# 尻尾叩きつけ(前方)
+    execute if entity @s[tag=AnmTailF] run function asa_animator:zinogre/anim/tail_forward/main
 
 # 地上時討伐
 execute if entity @s[tag=AnmDeath] run function asa_animator:zinogre/anim/death/main

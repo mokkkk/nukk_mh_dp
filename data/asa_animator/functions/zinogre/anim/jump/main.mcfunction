@@ -31,16 +31,24 @@ execute if entity @s[scores={AsaMatrix=101..}] run function asa_animator:zinogre
 execute as @e[type=armor_stand,tag=ZinogreParts] run function #asa_matrix:animate
 function asa_animator:zinogre/model
 
-execute if entity @s[scores={AsaMatrix=1..25}] run function asa_animator:zinogre/manager/rotate
-execute if entity @s[scores={AsaMatrix=25}] at @s run function asa_animator:zinogre/anim/jump/events/pos/set_pos
-execute if entity @s[scores={AsaMatrix=26..40}] run function asa_animator:zinogre/anim/jump/events/pos/offset
+# 移動
+    execute if entity @s[scores={AsaMatrix=1..25}] run function asa_animator:zinogre/manager/rotate
+    execute if entity @s[scores={AsaMatrix=25}] at @s run function asa_animator:zinogre/anim/jump/events/pos/set_pos
+    execute if entity @s[scores={AsaMatrix=26..40}] run function asa_animator:zinogre/anim/jump/events/pos/offset
 
-execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master @a ~ ~ ~ 3 0.7
-execute if entity @s[scores={AsaMatrix=25}] run function asa_animator:zinogre/manager/particle/step
-execute if entity @s[scores={AsaMatrix=40}] run function asa_animator:zinogre/manager/particle/step
-execute if entity @s[scores={AsaMatrix=69}] run playsound block.grass.step master @a ~ ~ ~ 3 0.7
+# 演出
+    execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master @a ~ ~ ~ 3 0.7
+    execute if entity @s[scores={AsaMatrix=25}] run function asa_animator:zinogre/manager/particle/step
+    execute if entity @s[scores={AsaMatrix=40}] run function asa_animator:zinogre/manager/particle/step
+    execute if entity @s[scores={AsaMatrix=69}] run playsound block.grass.step master @a ~ ~ ~ 3 0.7
 
-execute if entity @s[scores={AsaMatrix=40}] positioned ^ ^ ^6 run function asa_animator:zinogre/anim/jump/events/damage
+# 攻撃
+    execute if entity @s[scores={AsaMatrix=40}] positioned ^ ^ ^6 run function asa_animator:zinogre/anim/jump/events/damage
 
-execute if entity @s[scores={AsaMatrix=40..}] at @s if block ~ ~-0.1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
-execute if entity @s[scores={AsaMatrix=40..}] at @s unless block ~ ~0.1 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~ ~ ~
+# 飛行中確認
+    execute if entity @s[scores={AsaMatrix=25}] run tag @s add IsFlying
+    execute if entity @s[scores={AsaMatrix=40}] run tag @s remove IsFlying
+
+# 高度調整
+    execute if entity @s[scores={AsaMatrix=40..}] at @s if block ~ ~-0.1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
+    execute if entity @s[scores={AsaMatrix=40..}] at @s unless block ~ ~0.1 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~ ~ ~
