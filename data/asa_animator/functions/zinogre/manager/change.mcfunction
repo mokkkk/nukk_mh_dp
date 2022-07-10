@@ -30,7 +30,7 @@ execute unless entity @e[tag=ZinogreAttackTarget] run tag @e[tag=ZinogreTarget,s
 # # 軸合わせ
 # execute unless predicate asa_animator:zinogre/turn run function asa_animator:zinogre/manager/change_normal/_/turn_b
 
-tag @s add AnmHeadL
+tag @s add AnmTailB
 
 # 終了
 tag @s remove ChangeAnm

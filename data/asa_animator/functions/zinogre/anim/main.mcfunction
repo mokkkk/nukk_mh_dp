@@ -46,8 +46,11 @@
     execute if entity @s[tag=AnmSaultL] run function asa_animator:zinogre/anim/sault_l/main
     execute if entity @s[tag=AnmSaultR] run function asa_animator:zinogre/anim/sault_r/main
 
-# 尻尾叩きつけ(前方)
+# 尻尾叩きつけ（前方）
     execute if entity @s[tag=AnmTailF] run function asa_animator:zinogre/anim/tail_forward/main
+
+# 尻尾叩きつけ（後方）
+    execute if entity @s[tag=AnmTailB] run function asa_animator:zinogre/anim/tail_back/main
 
 # 地上時討伐
 execute if entity @s[tag=AnmDeath] run function asa_animator:zinogre/anim/death/main
