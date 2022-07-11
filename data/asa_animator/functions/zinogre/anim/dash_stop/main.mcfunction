@@ -18,6 +18,7 @@ function asa_animator:zinogre/model
     execute if entity @s[tag=IsThunder,scores={AsaMatrix=1}] run particle end_rod ^ ^2 ^ 2 2 2 0.4 30
     execute if entity @s[tag=IsThunder,scores={AsaMatrix=1}] run particle sneeze ^ ^2 ^ 2 2 2 0.3 50
     execute if entity @s[scores={AsaMatrix=1..20}] run function asa_animator:zinogre/manager/particle/step
+    execute if entity @s[scores={AsaMatrix=50}] run playsound entity.hoglin.step master @a ~ ~ ~ 3 0.9
 
 # 移動
     execute if entity @s[scores={AsaMatrix=1}] run summon marker ~ ~ ~ {Tags:["ZinogreMoveRotate"]}
@@ -29,3 +30,6 @@ function asa_animator:zinogre/model
 # 高度調整
     execute at @s if block ~ ~-0.1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
     execute at @s unless block ~ ~0.1 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~ ~ ~
+
+# 移行
+    execute if entity @s[tag=IsThunder,scores={AsaMatrix=25}] run function asa_animator:zinogre/anim/dash_stop/events/change

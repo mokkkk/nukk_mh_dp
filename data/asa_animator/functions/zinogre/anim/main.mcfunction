@@ -57,6 +57,9 @@
 # 尻尾叩きつけ（後方）
     execute if entity @s[tag=AnmTailB] run function asa_animator:zinogre/anim/tail_back/main
 
+# 背面プレス
+    execute if entity @s[tag=AnmBackPress] run function asa_animator:zinogre/anim/back_press/main
+
 # 地上時討伐
 execute if entity @s[tag=AnmDeath] run function asa_animator:zinogre/anim/death/main
 
