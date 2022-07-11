@@ -8,3 +8,4 @@
 
 # Transform保持用Marker
     kill @e[type=marker,tag=ZinogreMoveRotate]
+    kill @e[type=marker,tag=zinogreDashTarget]

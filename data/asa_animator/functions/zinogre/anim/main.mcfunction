@@ -29,6 +29,11 @@
         execute if entity @s[tag=AnmHeadL2BStep] run function asa_animator:zinogre/anim/head_l_to_bstep/main
         execute if entity @s[tag=AnmHeadR2BStep] run function asa_animator:zinogre/anim/head_r_to_bstep/main
 
+# ダッシュ
+    execute if entity @s[tag=AnmDashStart] run function asa_animator:zinogre/anim/dash_start/main
+    execute if entity @s[tag=AnmDash] run function asa_animator:zinogre/anim/dash/main
+    execute if entity @s[tag=AnmDashStop] run function asa_animator:zinogre/anim/dash_stop/main
+
 # 飛び掛かり
     execute if entity @s[tag=AnmJump] run function asa_animator:zinogre/anim/jump/main
 
