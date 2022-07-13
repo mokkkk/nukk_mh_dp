@@ -49,6 +49,34 @@ function asa_animator:zinogre/model
     execute if entity @s[scores={AsaMatrix=79}] run function asa_animator:zinogre/manager/particle/step
     execute if entity @s[scores={AsaMatrix=88}] run function asa_animator:zinogre/manager/particle/step
     execute if entity @s[scores={AsaMatrix=107}] run function asa_animator:zinogre/manager/particle/step
+    execute if entity @s[scores={AsaMatrix=43}] positioned ~ ~2 ~ run function asa_animator:zinogre/anim/back_press/events/particles/0
+    execute if entity @s[scores={AsaMatrix=44}] positioned ~ ~2 ~ run function asa_animator:zinogre/anim/back_press/events/particles/1
+    execute if entity @s[scores={AsaMatrix=45}] positioned ~ ~2 ~ run function asa_animator:zinogre/anim/back_press/events/particles/2
+    execute if entity @s[scores={AsaMatrix=46}] positioned ~ ~2 ~ run function asa_animator:zinogre/anim/back_press/events/particles/3
+    execute if entity @s[scores={AsaMatrix=47}] positioned ~ ~2 ~ run function asa_animator:zinogre/anim/back_press/events/particles/4
+    execute if entity @s[scores={AsaMatrix=48}] positioned ~ ~2 ~ run function asa_animator:zinogre/anim/back_press/events/particles/5
+    execute if entity @s[scores={AsaMatrix=49}] positioned ~ ~2 ~ run function asa_animator:zinogre/anim/back_press/events/particles/6
+    execute if entity @s[scores={AsaMatrix=50}] positioned ~ ~2 ~ run function asa_animator:zinogre/anim/back_press/events/particles/7
+    execute if entity @s[scores={AsaMatrix=43}] positioned ~ ~2 ~ rotated ~45 ~ run function asa_animator:zinogre/anim/back_press/events/particles/0
+    execute if entity @s[scores={AsaMatrix=44}] positioned ~ ~2 ~ rotated ~45 ~ run function asa_animator:zinogre/anim/back_press/events/particles/1
+    execute if entity @s[scores={AsaMatrix=45}] positioned ~ ~2 ~ rotated ~45 ~ run function asa_animator:zinogre/anim/back_press/events/particles/2
+    execute if entity @s[scores={AsaMatrix=46}] positioned ~ ~2 ~ rotated ~45 ~ run function asa_animator:zinogre/anim/back_press/events/particles/3
+    execute if entity @s[scores={AsaMatrix=47}] positioned ~ ~2 ~ rotated ~45 ~ run function asa_animator:zinogre/anim/back_press/events/particles/4
+    execute if entity @s[scores={AsaMatrix=48}] positioned ~ ~2 ~ rotated ~45 ~ run function asa_animator:zinogre/anim/back_press/events/particles/5
+    execute if entity @s[scores={AsaMatrix=49}] positioned ~ ~2 ~ rotated ~45 ~ run function asa_animator:zinogre/anim/back_press/events/particles/6
+    execute if entity @s[scores={AsaMatrix=50}] positioned ~ ~2 ~ rotated ~45 ~ run function asa_animator:zinogre/anim/back_press/events/particles/7
 
 # 攻撃
-    execute if entity @s[scores={AsaMatrix=42}] at @s run function asa_animator:zinogre/anim/back_press/events/damage
+    execute if entity @s[scores={AsaMatrix=42}] at @s run function asa_animator:zinogre/anim/back_press/events/damage_h
+    execute if entity @s[scores={AsaMatrix=52}] at @s rotated ~45 ~ positioned ^ ^ ^6 run function asa_animator:zinogre/anim/back_press/events/damage_t
+    execute if entity @s[scores={AsaMatrix=52}] at @s rotated ~135 ~ positioned ^ ^ ^6 run function asa_animator:zinogre/anim/back_press/events/damage_t
+    execute if entity @s[scores={AsaMatrix=52}] at @s rotated ~225 ~ positioned ^ ^ ^6 run function asa_animator:zinogre/anim/back_press/events/damage_t
+    execute if entity @s[scores={AsaMatrix=52}] at @s rotated ~315 ~ positioned ^ ^ ^6 run function asa_animator:zinogre/anim/back_press/events/damage_t
+    execute if entity @s[scores={AsaMatrix=57}] at @s rotated ~45 ~ positioned ^ ^ ^11 run function asa_animator:zinogre/anim/back_press/events/damage_t
+    execute if entity @s[scores={AsaMatrix=57}] at @s rotated ~135 ~ positioned ^ ^ ^11 run function asa_animator:zinogre/anim/back_press/events/damage_t
+    execute if entity @s[scores={AsaMatrix=57}] at @s rotated ~225 ~ positioned ^ ^ ^11 run function asa_animator:zinogre/anim/back_press/events/damage_t
+    execute if entity @s[scores={AsaMatrix=57}] at @s rotated ~315 ~ positioned ^ ^ ^11 run function asa_animator:zinogre/anim/back_press/events/damage_t
+
+# 飛行中確認
+    execute if entity @s[scores={AsaMatrix=14}] run tag @s add IsFlying
+    execute if entity @s[scores={AsaMatrix=43}] run tag @s remove IsFlying

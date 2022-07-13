@@ -60,6 +60,9 @@
 # 背面プレス
     execute if entity @s[tag=AnmBackPress] run function asa_animator:zinogre/anim/back_press/main
 
+# 雷爪
+    execute if entity @s[tag=AnmLClaw] run function asa_animator:zinogre/anim/lightning_claw/main
+
 # 地上時討伐
 execute if entity @s[tag=AnmDeath] run function asa_animator:zinogre/anim/death/main
 
