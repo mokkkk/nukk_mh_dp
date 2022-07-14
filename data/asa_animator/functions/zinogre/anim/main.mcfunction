@@ -5,6 +5,9 @@
 # お手開始（後退）
     execute if entity @s[tag=AnmHandLS] run function asa_animator:zinogre/anim/hand_l_start/main
     execute if entity @s[tag=AnmHandRS] run function asa_animator:zinogre/anim/hand_r_start/main
+# お手開始（前進）
+    execute if entity @s[tag=AnmHandLSS] run function asa_animator:zinogre/anim/hand_l_start_step/main
+    execute if entity @s[tag=AnmHandRSS] run function asa_animator:zinogre/anim/hand_r_start_step/main
     # お手2段目以降
         execute if entity @s[tag=AnmHandL2R] run function asa_animator:zinogre/anim/hand_l_to_r/main
         execute if entity @s[tag=AnmHandR2L] run function asa_animator:zinogre/anim/hand_r_to_l/main

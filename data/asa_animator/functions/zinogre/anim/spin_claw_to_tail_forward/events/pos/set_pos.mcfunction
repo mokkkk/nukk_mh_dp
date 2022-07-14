@@ -2,7 +2,7 @@
 # 地上にmarkerセット
 summon marker ^-2 ^5 ^12 {Tags:["ZinogreMovePos"]}
 execute facing entity @e[tag=ZinogreAttackTarget,limit=1] eyes rotated ~ 0 run tp @e[type=marker,tag=ZinogreMovePos] ^-2 ^5 ^12
-execute if entity @e[tag=ZinogreAttackTarget,distance=..12] facing entity @e[tag=ZinogreAttackTarget,limit=1] eyes rotated ~ 0 as @e[tag=ZinogreAttackTarget] positioned as @s run tp @e[type=marker,tag=ZinogreMovePos] ^2 ^5 ^-3
+execute if entity @e[tag=ZinogreAttackTarget,distance=..12] facing entity @e[tag=ZinogreAttackTarget,limit=1] eyes rotated ~ 0 as @e[tag=ZinogreAttackTarget] positioned as @s run tp @e[type=marker,tag=ZinogreMovePos] ^2 ^5 ^-5
 execute as @e[type=marker,tag=ZinogreMovePos,limit=1] at @s align y positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
 execute as @e[type=marker,tag=ZinogreMovePos,limit=1] at @s run tp @s ~ ~ ~
 
