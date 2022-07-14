@@ -60,6 +60,11 @@
 # 背面プレス
     execute if entity @s[tag=AnmBackPress] run function asa_animator:zinogre/anim/back_press/main
 
+# 回転爪
+    execute if entity @s[tag=AnmSClaw] run function asa_animator:zinogre/anim/spin_claw/main
+    # 回転爪→尻尾叩きつけ（前方）
+        execute if entity @s[tag=AnmSClaw2TailF] run function asa_animator:zinogre/anim/spin_claw_to_tail_forward/main
+
 # 雷爪
     execute if entity @s[tag=AnmLClaw] run function asa_animator:zinogre/anim/lightning_claw/main
 

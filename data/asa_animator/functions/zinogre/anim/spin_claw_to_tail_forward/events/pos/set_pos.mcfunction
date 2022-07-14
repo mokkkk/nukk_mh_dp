@@ -1,8 +1,10 @@
 
 # 地上にmarkerセット
-summon marker ^ ^5 ^-10 {Tags:["ZinogreMovePos"]}
+summon marker ^-2 ^5 ^12 {Tags:["ZinogreMovePos"]}
+execute facing entity @e[tag=ZinogreAttackTarget,limit=1] eyes rotated ~ 0 run tp @e[type=marker,tag=ZinogreMovePos] ^-2 ^5 ^12
+execute if entity @e[tag=ZinogreAttackTarget,distance=..12] facing entity @e[tag=ZinogreAttackTarget,limit=1] eyes rotated ~ 0 as @e[tag=ZinogreAttackTarget] positioned as @s run tp @e[type=marker,tag=ZinogreMovePos] ^2 ^5 ^-3
 execute as @e[type=marker,tag=ZinogreMovePos,limit=1] at @s align y positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
-execute as @e[type=marker,tag=ZinogreMovePos,limit=1] at @s run tp @s ~ ~2.2 ~
+execute as @e[type=marker,tag=ZinogreMovePos,limit=1] at @s run tp @s ~ ~ ~
 
 # ポジション差分取得
 data merge storage mhdp: {PosTemp:[], MarkerPosTemp:[]}
@@ -21,7 +23,7 @@ execute store result score #zinogre_mine_z AsaMatrix run data get storage mhdp: 
 execute store result score #zinogre_height_target AsaMatrix run data get storage mhdp: PosTemp[2] 100
 scoreboard players operation #zinogre_mine_z AsaMatrix -= #zinogre_height_target AsaMatrix
 
-scoreboard players set #zinogre_height_target AsaMatrix 27
+scoreboard players set #zinogre_height_target AsaMatrix 9
 scoreboard players operation #zinogre_mine_x AsaMatrix /= #zinogre_height_target AsaMatrix
 scoreboard players operation #zinogre_mine_y AsaMatrix /= #zinogre_height_target AsaMatrix
 scoreboard players operation #zinogre_mine_z AsaMatrix /= #zinogre_height_target AsaMatrix

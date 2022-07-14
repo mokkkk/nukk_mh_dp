@@ -47,9 +47,9 @@ function asa_animator:zinogre/model
 
 # 移動
     execute if entity @s[scores={AsaMatrix=1..14}] run function asa_animator:zinogre/manager/rotate
-    execute if entity @s[scores={AsaMatrix=33..50}] run function asa_animator:zinogre/manager/rotate
-    execute if entity @s[scores={AsaMatrix=33..50}] at @s unless entity @e[tag=ZinogreAttackTarget,distance=..17] run tp @s ^ ^ ^0.1
-    execute if entity @s[scores={AsaMatrix=50}] at @s run function asa_animator:zinogre/anim/lightning_claw/events/pos/set_pos_0
+    execute if entity @s[scores={AsaMatrix=33..47}] run function asa_animator:zinogre/manager/rotate
+    execute if entity @s[scores={AsaMatrix=33..47}] at @s unless entity @e[tag=ZinogreAttackTarget,distance=..17] run tp @s ^ ^ ^0.1
+    execute if entity @s[scores={AsaMatrix=47}] at @s run function asa_animator:zinogre/anim/lightning_claw/events/pos/set_pos_0
     execute if entity @s[scores={AsaMatrix=56..60}] run function asa_animator:zinogre/anim/lightning_claw/events/pos/offset_0
     execute if entity @s[scores={AsaMatrix=60}] at @s run function asa_animator:zinogre/anim/lightning_claw/events/pos/set_pos_1
     execute if entity @s[scores={AsaMatrix=61..87}] run function asa_animator:zinogre/anim/lightning_claw/events/pos/offset_1
