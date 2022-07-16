@@ -8,11 +8,11 @@ execute if entity @s[scores={AsaMatrix=6..10}] run tp @s ^0 ^0 ^0
 execute if entity @s[scores={AsaMatrix=11}] run function asa_animator:zinogre/anim/lightning_hand_0/keyframes/2
 execute if entity @s[scores={AsaMatrix=11..13}] run tp @s ^0 ^0 ^0
 execute if entity @s[scores={AsaMatrix=14}] run function asa_animator:zinogre/anim/lightning_hand_0/keyframes/3
-execute if entity @s[scores={AsaMatrix=14..20}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=14..20}] run tp @s ^0 ^0 ^-0.1
 execute if entity @s[scores={AsaMatrix=21}] run function asa_animator:zinogre/anim/lightning_hand_0/keyframes/4
-execute if entity @s[scores={AsaMatrix=21..27}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=21..27}] run tp @s ^0 ^0 ^-0.1
 execute if entity @s[scores={AsaMatrix=28}] run function asa_animator:zinogre/anim/lightning_hand_0/keyframes/5
-execute if entity @s[scores={AsaMatrix=28..40}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=28..40}] run tp @s ^0 ^0 ^-0.05
 execute if entity @s[scores={AsaMatrix=41}] run function asa_animator:zinogre/anim/lightning_hand_0/keyframes/6
 execute if entity @s[scores={AsaMatrix=41..45}] run tp @s ^0 ^-0.04 ^-0.04
 execute if entity @s[scores={AsaMatrix=46}] run function asa_animator:zinogre/anim/lightning_hand_0/keyframes/7

@@ -39,12 +39,15 @@ function asa_animator:zinogre/model
     execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:zinogre/manager/particle/step
     execute if entity @s[scores={AsaMatrix=56}] run function asa_animator:zinogre/manager/particle/step
     execute if entity @s[scores={AsaMatrix=15}] run summon lightning_bolt ~ 255 ~
-    execute if entity @s[scores={AsaMatrix=15..25}] at @s run function asa_animator:zinogre/anim/lightning_claw_r/events/particle
+    execute if entity @s[scores={AsaMatrix=15..25}] at @s run particle dust 1 1000000000 1000000000 3 ~ ~5 ~ 3 3 3 0 30
+    execute if entity @s[scores={AsaMatrix=15..25}] at @s run particle sneeze ~ ~5 ~ 2 2 2 0.3 30
+    execute if entity @s[scores={AsaMatrix=15..25}] at @s run particle flash ~ ~5 ~ 2 2 2 0 1
     execute if entity @s[scores={AsaMatrix=15..79}] at @s run function asa_animator:zinogre/anim/chargehand_l/events/particle
     execute if entity @s[scores={AsaMatrix=56..60}] at @s run function asa_animator:zinogre/anim/lightning_claw_r/events/particle_m
     execute if entity @s[scores={AsaMatrix=87}] run function asa_animator:zinogre/manager/particle/step
     execute if entity @s[scores={AsaMatrix=87}] run playsound entity.hoglin.step master @a ~ ~ ~ 2 0.7
     execute if entity @s[scores={AsaMatrix=61..65}] at @e[type=marker,tag=ZinogreMoveRotate] run function asa_animator:zinogre/anim/lightning_claw_r/events/claw_effect/main
+    execute if entity @s[scores={AsaMatrix=15..25}] positioned ^ ^3 ^1 run function asa_animator:zinogre/anim/charge/events/particle
 
 # 移動
     execute if entity @s[scores={AsaMatrix=1..14}] run function asa_animator:zinogre/manager/rotate

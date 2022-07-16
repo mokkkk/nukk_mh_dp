@@ -83,6 +83,14 @@
     execute if entity @s[tag=AnmLHand0] run function asa_animator:zinogre/anim/lightning_hand_0/main
     execute if entity @s[tag=AnmLHand1] run function asa_animator:zinogre/anim/lightning_hand_1/main
 
+
+# 帯電
+    execute if entity @s[tag=AnmCharge] run function asa_animator:zinogre/anim/charge/main
+# 超帯電
+    execute if entity @s[tag=AnmChargeB] run function asa_animator:zinogre/anim/charge_burst/main
+
+
+
 # 地上時討伐
 execute if entity @s[tag=AnmDeath] run function asa_animator:zinogre/anim/death/main
 
