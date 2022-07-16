@@ -4,5 +4,6 @@ kill @e[type=marker,tag=ZinogreMoveRotate]
 
 # tag @s add AnmBackPress
 # tag @s add AnmCHandL
-tag @s add AnmSClaw2TailF
-# tag @s add AnmLClaw
+# tag @s add AnmSClaw2TailF
+# tag @s add AnmLClawR
+tag @s add AnmLHand0

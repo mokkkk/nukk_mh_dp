@@ -60,6 +60,13 @@
 # 尻尾叩きつけ（後方）
     execute if entity @s[tag=AnmTailB] run function asa_animator:zinogre/anim/tail_back/main
 
+# 尻尾なぎはらい
+    execute if entity @s[tag=AnmTailWL] run function asa_animator:zinogre/anim/tail_whip_l/main
+    execute if entity @s[tag=AnmTailWR] run function asa_animator:zinogre/anim/tail_whip_r/main
+
+# 雷光虫弾
+    execute if entity @s[tag=AnmShot] run function asa_animator:zinogre/anim/shot/main
+
 # 背面プレス
     execute if entity @s[tag=AnmBackPress] run function asa_animator:zinogre/anim/back_press/main
 
@@ -69,7 +76,12 @@
         execute if entity @s[tag=AnmSClaw2TailF] run function asa_animator:zinogre/anim/spin_claw_to_tail_forward/main
 
 # 雷爪
-    execute if entity @s[tag=AnmLClaw] run function asa_animator:zinogre/anim/lightning_claw/main
+    execute if entity @s[tag=AnmLClawL] run function asa_animator:zinogre/anim/lightning_claw_l/main
+    execute if entity @s[tag=AnmLClawR] run function asa_animator:zinogre/anim/lightning_claw_r/main
+
+# 飛燕雷掌
+    execute if entity @s[tag=AnmLHand0] run function asa_animator:zinogre/anim/lightning_hand_0/main
+    execute if entity @s[tag=AnmLHand1] run function asa_animator:zinogre/anim/lightning_hand_1/main
 
 # 地上時討伐
 execute if entity @s[tag=AnmDeath] run function asa_animator:zinogre/anim/death/main
