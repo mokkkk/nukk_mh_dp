@@ -61,3 +61,6 @@ function asa_animator:zinogre/model
     execute if entity @s[scores={AsaMatrix=1..32}] at @s unless block ~ ~0.1 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~ ~ ~
     execute if entity @s[scores={AsaMatrix=69..}] at @s if block ~ ~-0.1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
     execute if entity @s[scores={AsaMatrix=69..}] at @s unless block ~ ~0.1 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~ ~ ~
+
+# 確立で遷移
+    execute if entity @s[tag=IsAnger,tag=!IsHandC2,scores={AsaMatrix=45}] if predicate asa_animator:random/050 run function asa_animator:zinogre/anim/hand_l_to_chargehand_r/events/change

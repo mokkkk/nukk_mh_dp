@@ -47,5 +47,5 @@ function asa_animator:zinogre/model
 # 攻撃
     execute if entity @s[scores={AsaMatrix=31..40}] run function asa_animator:zinogre/anim/tackle_l/events/damage
 
-# チャージお手移行
+# 移行
     execute if entity @s[tag=IsThunder,scores={AsaMatrix=41}] run function asa_animator:zinogre/anim/tackle_l/events/change

@@ -7,6 +7,8 @@
     execute if entity @s[tag=ComboTB] run function asa_animator:zinogre/manager/change_combo/main_tb
     execute if entity @s[tag=ComboTC] run function asa_animator:zinogre/manager/change_combo/main_tc
     execute if entity @s[tag=ComboTD] run function asa_animator:zinogre/manager/change_combo/main_td
+# 超帯電開始
+    execute if entity @s[tag=ComboTE] run function asa_animator:zinogre/manager/change_combo/main_te
 
     # execute if entity @s[tag=ComboA] run function asa_animator:zinogre/manager/change_combo/main_a
 

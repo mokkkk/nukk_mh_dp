@@ -43,6 +43,7 @@ function asa_animator:zinogre/model
     execute if entity @s[scores={AsaMatrix=69}] run playsound block.grass.step master @a ~ ~ ~ 3 0.7
 
 # 攻撃
+    execute if entity @s[scores={AsaMatrix=26..38}] positioned ^ ^ ^3 run function asa_animator:zinogre/anim/jump/events/damage_f
     execute if entity @s[scores={AsaMatrix=40}] positioned ^ ^ ^6 run function asa_animator:zinogre/anim/jump/events/damage
 
 # 状態更新

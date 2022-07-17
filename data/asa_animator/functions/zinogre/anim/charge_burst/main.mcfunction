@@ -27,5 +27,8 @@ function asa_animator:zinogre/model
     execute if entity @s[scores={AsaMatrix=25}] run summon lightning_bolt ~ 255 ~
     execute if entity @s[scores={AsaMatrix=15..18}] positioned ~ ~1.2 ~ run function asa_animator:zinogre/anim/charge_burst/events/particle
 
+# 攻撃
+    execute if entity @s[scores={AsaMatrix=14..20}] run function asa_animator:zinogre/anim/charge_burst/events/damage
+
 # 変化
     execute if entity @s[scores={AsaMatrix=14}] run function asa_animator:zinogre/manager/model/change_to_thunder

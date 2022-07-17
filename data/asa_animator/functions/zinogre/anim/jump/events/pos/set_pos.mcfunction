@@ -1,7 +1,7 @@
 
 # 地上にmarkerセット
 summon marker ^ ^10 ^10 {Tags:["ZinogreMovePos"]}
-execute facing entity @e[tag=ZinogreAttackTarget,limit=1] eyes rotated ~ 0 as @e[tag=ZinogreAttackTarget] positioned as @s run tp @e[type=marker,tag=ZinogreMovePos] ^ ^5 ^-5
+execute facing entity @e[tag=ZinogreAttackTarget,limit=1] eyes rotated ~ 0 as @e[tag=ZinogreAttackTarget] positioned as @s run tp @e[type=marker,tag=ZinogreMovePos] ^ ^5 ^2
 execute as @e[type=marker,tag=ZinogreMovePos,limit=1] at @s align y positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
 
 # ポジション差分取得
