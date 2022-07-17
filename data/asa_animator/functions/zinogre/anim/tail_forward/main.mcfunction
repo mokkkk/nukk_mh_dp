@@ -47,7 +47,7 @@ function asa_animator:zinogre/model
 # 攻撃
     execute if entity @s[scores={AsaMatrix=33}] positioned ^ ^2 ^-2 run function asa_animator:zinogre/anim/tail_forward/events/damage
 
-# 飛行中確認
+# 状態更新
     execute if entity @s[scores={AsaMatrix=18}] run tag @s add IsFlying
     execute if entity @s[scores={AsaMatrix=32}] run tag @s remove IsFlying
 

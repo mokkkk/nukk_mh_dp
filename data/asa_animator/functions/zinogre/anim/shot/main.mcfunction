@@ -47,3 +47,13 @@ function asa_animator:zinogre/model
 # 攻撃
     execute if entity @s[scores={AsaMatrix=35}] run function asa_animator:zinogre/anim/shot/events/shot_l
     execute if entity @s[scores={AsaMatrix=65}] run function asa_animator:zinogre/anim/shot/events/shot_r
+
+# 状態更新
+    execute if entity @s[scores={AsaMatrix=21}] run tag @s add IsFlying
+    execute if entity @s[scores={AsaMatrix=37}] run tag @s remove IsFlying
+    execute if entity @s[scores={AsaMatrix=51}] run tag @s add IsFlying
+    execute if entity @s[scores={AsaMatrix=67}] run tag @s remove IsFlying
+
+# 高度調整
+    execute if entity @s[scores={AsaMatrix=81..}] at @s if block ~ ~-0.1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
+    execute if entity @s[scores={AsaMatrix=81..}] at @s unless block ~ ~0.1 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~ ~ ~

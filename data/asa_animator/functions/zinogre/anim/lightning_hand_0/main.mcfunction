@@ -43,8 +43,8 @@ function asa_animator:zinogre/model
     execute if entity @s[scores={AsaMatrix=46..64}] run function asa_animator:zinogre/anim/lightning_hand_0/events/pos/offset
 
 # 演出
-    execute if entity @s[scores={AsaMatrix=1}] run summon lightning_bolt ~ 255 ~
     execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master @a ~ ~ ~ 3 0.7
+    execute if entity @s[scores={AsaMatrix=10}] run summon lightning_bolt ~ 255 ~
     execute if entity @s[scores={AsaMatrix=10}] run playsound entity.hoglin.step master @a ~ ~ ~ 3 0.7
     execute if entity @s[scores={AsaMatrix=13..27}] run playsound block.grass.step master @a ~ ~ ~ 3 0.7
     execute if entity @s[scores={AsaMatrix=46}] run function asa_animator:zinogre/manager/particle/step
@@ -57,6 +57,10 @@ function asa_animator:zinogre/model
     execute if entity @s[scores={AsaMatrix=65}] positioned ^ ^ ^7 run function asa_animator:zinogre/anim/lightning_hand_0/events/damage_h
     execute if entity @s[scores={AsaMatrix=75}] run function asa_animator:zinogre/anim/lightning_hand_0/events/damage_t_0
     execute if entity @s[scores={AsaMatrix=80}] run function asa_animator:zinogre/anim/lightning_hand_0/events/damage_t_1
+
+# 状態更新
+    execute if entity @s[scores={AsaMatrix=46}] run tag @s add IsFlying
+    execute if entity @s[scores={AsaMatrix=65}] run tag @s remove IsFlying
 
 # 高度調整
     execute if entity @s[scores={AsaMatrix=1..40}] at @s if block ~ ~-0.1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground

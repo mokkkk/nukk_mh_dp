@@ -56,6 +56,6 @@ function asa_animator:zinogre/model
     execute if entity @s[scores={AsaMatrix=57}] positioned ^8 ^ ^17 run function asa_animator:zinogre/anim/chargehand_l/events/damage_t
     execute if entity @s[scores={AsaMatrix=57}] positioned ^-4 ^ ^17 run function asa_animator:zinogre/anim/chargehand_l/events/damage_t
 
-# 終了
+# 高度調整
     execute if entity @s[scores={AsaMatrix=69..}] at @s if block ~ ~-0.1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
     execute if entity @s[scores={AsaMatrix=69..}] at @s unless block ~ ~0.1 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~ ~ ~

@@ -60,6 +60,10 @@ function asa_animator:zinogre/model
 # 攻撃
     execute if entity @s[scores={AsaMatrix=60}] positioned ^ ^ ^6 run function asa_animator:zinogre/anim/lightning_claw_r/events/damage_h
 
+# 状態更新
+    execute if entity @s[scores={AsaMatrix=56}] run tag @s add IsFlying
+    execute if entity @s[scores={AsaMatrix=87}] run tag @s remove IsFlying
+    
 # 高度調整
     execute if entity @s[scores={AsaMatrix=87..}] at @s if block ~ ~-0.1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
     execute if entity @s[scores={AsaMatrix=87..}] at @s unless block ~ ~0.1 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~ ~ ~

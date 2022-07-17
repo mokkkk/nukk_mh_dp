@@ -64,6 +64,10 @@ function asa_animator:zinogre/model
     execute if entity @s[scores={AsaMatrix=77}] run function asa_animator:zinogre/anim/lightning_hand_1/events/damage_t_1
     execute if entity @s[scores={AsaMatrix=80}] run function asa_animator:zinogre/anim/lightning_hand_1/events/damage_t_2
 
+# 状態更新
+    execute if entity @s[scores={AsaMatrix=34}] run tag @s add IsFlying
+    execute if entity @s[scores={AsaMatrix=58}] run tag @s remove IsFlying
+
 # 高度調整
     execute if entity @s[scores={AsaMatrix=6..34}] at @s if block ~ ~-0.1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
     execute if entity @s[scores={AsaMatrix=6..34}] at @s unless block ~ ~0.1 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~ ~ ~

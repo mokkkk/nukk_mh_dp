@@ -50,7 +50,7 @@ function asa_animator:zinogre/model
 # 攻撃
     execute if entity @s[scores={AsaMatrix=45..75}] at @e[type=armor_stand,tag=ZinogreParts,tag=Tail3] run function asa_animator:zinogre/anim/sault_l/events/damage
 
-# 飛行中確認
+# 状態更新
     execute if entity @s[scores={AsaMatrix=66}] run tag @s add IsFlying
     execute if entity @s[scores={AsaMatrix=86}] run tag @s remove IsFlying
     

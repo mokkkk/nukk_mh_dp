@@ -36,6 +36,10 @@ function asa_animator:zinogre/model
 # 攻撃
     execute if entity @s[scores={AsaMatrix=26..31}] at @e[type=armor_stand,tag=ZinogreParts,tag=Tail3] run function asa_animator:zinogre/anim/tail_whip_l/events/damage
 
+# 状態更新
+    execute if entity @s[scores={AsaMatrix=26}] run tag @s add IsFlying
+    execute if entity @s[scores={AsaMatrix=36}] run tag @s remove IsFlying
+
 # 高度調整
     execute if entity @s[scores={AsaMatrix=36..51}] at @s if block ~ ~0.2 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
     execute if entity @s[scores={AsaMatrix=36..51}] at @s unless block ~ ~0.4 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~ ~ ~
