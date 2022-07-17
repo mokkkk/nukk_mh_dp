@@ -17,6 +17,9 @@
     # お手キャンセルチャージお手
         execute if entity @s[tag=AnmHandL2CHandR] run function asa_animator:zinogre/anim/hand_l_to_chargehand_r/main
         execute if entity @s[tag=AnmHandR2CHandL] run function asa_animator:zinogre/anim/hand_r_to_chargehand_l/main
+    # お手キャンセル帯電
+        execute if entity @s[tag=AnmHandL2Charge] run function asa_animator:zinogre/anim/hand_l_to_charge/main
+        execute if entity @s[tag=AnmHandR2Charge] run function asa_animator:zinogre/anim/hand_r_to_charge/main
 
 # チャージお手
     execute if entity @s[tag=AnmCHandL] run function asa_animator:zinogre/anim/chargehand_l/main

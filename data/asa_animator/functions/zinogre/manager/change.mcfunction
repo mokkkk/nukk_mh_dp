@@ -19,7 +19,7 @@
     # execute if entity @s[tag=IsAnger] if score #mhdp_zinogre_anger_count AsaMatrix matches ..0 run function asa_animator:zinogre/manager/end_anger
 
 # 強制
-    # execute as @e[tag=ZinogreRoot] run function asa_animator:zinogre/manager/change_combo/start_ta
+    # execute as @e[tag=ZinogreRoot] run function asa_animator:zinogre/manager/change_combo/start_tb
     # function asa_animator:zinogre/manager/change_normal/_/lclaw
     # tag @s add AnmLHand0
 

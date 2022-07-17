@@ -11,6 +11,8 @@
     tag @s remove AnmHandRE
     tag @s remove AnmHandL2CHandR
     tag @s remove AnmHandR2CHandL
+    tag @s remove AnmHandL2Charge
+    tag @s remove AnmHandR2Charge
     tag @s remove AnmCHandL
     tag @s remove AnmCHandR
     tag @s remove AnmHeadL
@@ -57,6 +59,7 @@
 # 状態タグ
     tag @s remove IsHand3
     tag @s remove IsFlying
+    tag @s remove ComboRight
 
 # Transform保持用Marker
     kill @e[type=marker,tag=ZinogreMoveRotate]

@@ -51,3 +51,6 @@ function asa_animator:zinogre/model
     execute if entity @s[scores={AsaMatrix=41..63}] at @s unless block ~ ~0.4 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~ ~ ~
     execute if entity @s[scores={AsaMatrix=64..}] at @s if block ~ ~-0.1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
     execute if entity @s[scores={AsaMatrix=64..}] at @s unless block ~ ~0.1 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~ ~ ~
+
+# コンボ用
+    execute if entity @s[scores={AsaMatrix=51}] unless predicate asa_animator:zinogre/combo run function asa_animator:zinogre/manager/cancel_animation
