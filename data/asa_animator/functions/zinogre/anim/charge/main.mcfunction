@@ -23,4 +23,5 @@ function asa_animator:zinogre/model
     execute if entity @s[scores={AsaMatrix=11}] run playsound block.beacon.activate master @a ~ ~ ~ 3 2
     execute if entity @s[scores={AsaMatrix=11}] run playsound block.beacon.activate master @a ~ ~ ~ 3 1.7
     execute if entity @s[scores={AsaMatrix=11..38}] run particle dust 1 1000000000 1000000000 1 ~ ~3 ~ 3 3 3 0 5
-    execute if entity @s[scores={AsaMatrix=11..38}] positioned ^ ^3 ^1 run function asa_animator:zinogre/anim/charge/events/particle
+    execute if entity @s[scores={AsaMatrix=11..30}] positioned ^ ^3 ^1 run function asa_animator:zinogre/anim/charge/events/particle
+    execute if entity @s[scores={AsaMatrix=48}] run particle flash ~ ~3 ~ 2 2 2 0 20

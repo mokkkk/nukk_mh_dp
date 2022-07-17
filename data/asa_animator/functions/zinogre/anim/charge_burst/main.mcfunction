@@ -15,12 +15,12 @@ function asa_animator:zinogre/model
 
 # 演出
     execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master @a ~ ~ ~ 3 0.7
-    execute if entity @s[scores={AsaMatrix=14..20}] at @s run particle dust 1 1000000000 1000000000 3 ~ ~10 ~ 2 10 2 0 200 force
-    execute if entity @s[scores={AsaMatrix=14..20}] at @s run particle dust 1 1000000000 1000000000 3 ~ ~5 ~ 3 3 3 0 30 force
+    execute if entity @s[scores={AsaMatrix=14..16}] at @s run particle dust 1 1000000000 1000000000 3 ^ ^10 ^1 2 10 2 0 200 force
+    execute if entity @s[scores={AsaMatrix=14..16}] at @s run particle dust 1 1000000000 1000000000 3 ~ ~5 ~ 3 3 3 0 50 force
+    execute if entity @s[scores={AsaMatrix=14..20}] at @s run particle dust 1 1000000000 1000000000 3 ^ ^10 ^1 1 10 1 0 100 force
     execute if entity @s[scores={AsaMatrix=14..20}] at @s run particle sneeze ~ ~5 ~ 2 2 2 0.3 30
     execute if entity @s[scores={AsaMatrix=14}] at @s run particle flash ~ ~5 ~ 3 3 3 0 30 force
     execute if entity @s[scores={AsaMatrix=14..35}] at @s run particle end_rod ~ ~5 ~ 2 2 2 1 30 force
-    execute if entity @s[scores={AsaMatrix=21..35}] at @s run particle dust 1 1000000000 1000000000 3 ~ ~5 ~ 3 3 3 0 50 force
     execute if entity @s[scores={AsaMatrix=14}] run playsound entity.lightning_bolt.thunder master @a ~ ~ ~ 2 0.5
     execute if entity @s[scores={AsaMatrix=14}] run playsound entity.lightning_bolt.impact master @a ~ ~ ~ 2 0.5
     execute if entity @s[scores={AsaMatrix=15}] run summon lightning_bolt ~ 255 ~

@@ -43,6 +43,7 @@ function asa_animator:zinogre/model
     execute if entity @s[scores={AsaMatrix=46..64}] run function asa_animator:zinogre/anim/lightning_hand_0/events/pos/offset
 
 # 演出
+    execute if entity @s[scores={AsaMatrix=1}] run summon lightning_bolt ~ 255 ~
     execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master @a ~ ~ ~ 3 0.7
     execute if entity @s[scores={AsaMatrix=10}] run playsound entity.hoglin.step master @a ~ ~ ~ 3 0.7
     execute if entity @s[scores={AsaMatrix=13..27}] run playsound block.grass.step master @a ~ ~ ~ 3 0.7
