@@ -9,3 +9,7 @@
     tag @s remove StartAnmTailW
     tag @s remove StartAnmTackle
     tag @s remove StartAnmSClaw
+
+# 状態タグ
+    tag @s remove IsHand3
+    tag @s remove IsHandC2

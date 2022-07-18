@@ -7,10 +7,7 @@
     execute if predicate asa_animator:zinogre/stay if predicate asa_animator:zinogre/combo run function asa_animator:zinogre/manager/change_target
 
 # 状態タグリセット
-    tag @s remove IsHand3
-    tag @s remove IsHandC2
-    function asa_animator:zinogre/manager/remove_start_tag
-    # execute if predicate asa_animator:zinogre/starttags run tag @s add StartAnmBstep
+    function asa_animator:zinogre/manager/remove_state_tag
 
 # 行動
     execute if entity @e[tag=zinogreAttackTarget] run function asa_animator:zinogre/manager/change_act
@@ -26,7 +23,7 @@
 
 # 強制
     # execute as @e[tag=ZinogreRoot] run function asa_animator:zinogre/manager/change_combo/start_tb
-    function asa_animator:zinogre/manager/change_normal/_/head
+    # function asa_animator:zinogre/manager/change_normal/_/head
     # tag @s add AnmSClaw
 
 # 終了
