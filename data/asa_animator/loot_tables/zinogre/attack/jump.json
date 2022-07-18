@@ -9,7 +9,7 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 5,
+              "weight": 3,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
@@ -20,17 +20,6 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 3,
-              "functions": [
-                {
-                "function": "minecraft:set_nbt",
-                "tag": "{ActPaper:1,Act:2}"
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:paper",
               "weight": 5,
               "functions": [
                 {
@@ -43,7 +32,7 @@
                   "condition": "minecraft:entity_properties",
                   "entity": "this",
                   "predicate": {
-                    "nbt": "{Tags:[\"IsAnger\"]}"
+                    "nbt": "{Tags:[\"IsBack\"]}"
                   }
                 }
               ]
@@ -51,20 +40,22 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 2,
+              "weight": 5,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
                 "tag": "{ActPaper:1,Act:3}"
                 }
-              ],
-              "conditions": [
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 4,
+              "functions": [
                 {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "nbt": "{Tags:[\"IsNear\"]}"
-                  }
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:4}"
                 }
               ]
             }

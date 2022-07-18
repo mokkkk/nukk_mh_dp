@@ -2,6 +2,7 @@ scoreboard players set @s AsaMatrix 0
 execute as @e[type=armor_stand,tag=ZinogreParts] run function #asa_matrix:animate_reset
 tag @s remove AnmTailB
 kill @e[type=marker,tag=ZinogreMoveRotate]
+execute if predicate asa_animator:zinogre/starttags run tag @s add StartAnmTailB
 
 # ランダム
 loot spawn ~ 0 ~ loot asa_animator:zinogre/attack/tailb

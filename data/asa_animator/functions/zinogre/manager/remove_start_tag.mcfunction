@@ -7,3 +7,4 @@
     tag @s remove StartAnmTailF
     tag @s remove StartAnmTailB
     tag @s remove StartAnmTailW
+    tag @s remove StartAnmTackle

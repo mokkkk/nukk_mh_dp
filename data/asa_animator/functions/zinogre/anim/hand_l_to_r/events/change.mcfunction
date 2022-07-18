@@ -4,8 +4,11 @@
     execute if score #mhdp_zinogre_hand_count AsaMatrix matches 10.. run tag @s add IsFeint
     execute if entity @s[tag=IsFeint] run scoreboard players set #mhdp_zinogre_hand_count AsaMatrix 5
 
+# 始動：飛び掛かり
+    execute if entity @s[tag=StartAnmJump] run tag @s add AnmLClawL
+
 # ランダム
-    loot spawn ~ 0 ~ loot asa_animator:zinogre/attack/hand2
+    execute if predicate asa_animator:zinogre/stay run loot spawn ~ 0 ~ loot asa_animator:zinogre/attack/hand2
 
 ## 超帯電
     # お手

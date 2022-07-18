@@ -5,8 +5,12 @@ tag @s remove AnmTailWR
 # 始動設定
     execute if predicate asa_animator:zinogre/starttags run tag @s add StartAnmTailW
 
-# 始動：尻尾叩きつけ
+# 始動：尻尾叩きつけ（前）
     execute if entity @s[tag=StartAnmTailF] run function asa_animator:zinogre/manager/change_normal/_/chand
+# 始動：尻尾叩きつけ（後）
+    execute if entity @s[tag=StartAnmTailB] run function asa_animator:zinogre/manager/change_normal/_/chand
+# 始動：飛び掛かり
+    execute if entity @s[tag=StartAnmJump] run function asa_animator:zinogre/manager/change_normal/_/chand
 
 # 状態確認
     execute if entity @s[tag=StartAnmTailW] if entity @a[tag=ZinogreTarget,distance=..10] run tag @s add IsNear

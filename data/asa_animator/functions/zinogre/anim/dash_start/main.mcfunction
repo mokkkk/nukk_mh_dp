@@ -18,7 +18,13 @@ function asa_animator:zinogre/model
 
 # 移動
     execute if entity @s[scores={AsaMatrix=1..21}] run function asa_animator:zinogre/manager/rotate
+    execute if entity @s[tag=StartAnmTailB,scores={AsaMatrix=1..7}] at @s run tp @s ^ ^ ^-0.5
+    execute if entity @s[tag=StartAnmTailB,scores={AsaMatrix=8..15}] at @s run tp @s ^ ^ ^-0.1
 
 # ターゲット設定
     execute if entity @s[scores={AsaMatrix=17}] run summon marker ^ ^ ^10 {Tags:["zinogreDashTarget"]}
     execute if entity @s[scores={AsaMatrix=17}] positioned as @e[tag=zinogreAttackTarget] as @e[type=marker,tag=zinogreDashTarget] run tp @s ~ ~ ~
+
+# 高度調整
+    execute if entity @s[tag=StartAnmTailB,scores={AsaMatrix=1..15}] if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
+    execute if entity @s[tag=StartAnmTailB,scores={AsaMatrix=1..15}] unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~

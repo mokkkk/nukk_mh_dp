@@ -66,3 +66,5 @@ function asa_animator:zinogre/model
     execute if entity @s[tag=IsAnger,tag=StartAnmTailF,scores={AsaMatrix=95}] if predicate asa_animator:zinogre/combo run function asa_animator:zinogre/anim/sault_l/events/change
 # 怒り時，ヘッドバット始動の移行
     execute if entity @s[tag=IsAnger,tag=StartAnmHead,scores={AsaMatrix=95}] if predicate asa_animator:zinogre/combo run function asa_animator:zinogre/anim/sault_l/events/change
+# 怒り時，タックル始動の移行
+    execute if entity @s[tag=IsAnger,tag=StartAnmTackle,scores={AsaMatrix=95}] if predicate asa_animator:zinogre/combo run function asa_animator:zinogre/anim/sault_l/events/change

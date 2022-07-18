@@ -32,6 +32,9 @@ function asa_animator:zinogre/model
     execute if entity @s[scores={AsaMatrix=27}] run function asa_animator:zinogre/manager/particle/step
     execute if entity @s[scores={AsaMatrix=27}] run playsound entity.hoglin.step master @a ~ ~ ~ 2 0.9
 
-    # 高度調整
+# 高度調整
     execute if entity @s[scores={AsaMatrix=40..}] at @s if block ~ ~-0.1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
     execute if entity @s[scores={AsaMatrix=40..}] at @s unless block ~ ~0.1 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~ ~ ~
+
+# 移行
+    execute if entity @s[scores={AsaMatrix=28}] if predicate asa_animator:zinogre/combo run function asa_animator:zinogre/anim/bstep/events/change
