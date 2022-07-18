@@ -42,6 +42,8 @@
 
 # 飛び掛かり
     execute if entity @s[tag=AnmJump] run function asa_animator:zinogre/anim/jump/main
+    # 飛び掛かり→飛び掛かり
+        execute if entity @s[tag=AnmJump2Jump] run function asa_animator:zinogre/anim/jump_to_jump/main
 
 # サイドタックル
     execute if entity @s[tag=AnmTackleL] run function asa_animator:zinogre/anim/tackle_l/main

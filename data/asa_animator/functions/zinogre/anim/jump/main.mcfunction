@@ -53,3 +53,6 @@ function asa_animator:zinogre/model
 # 高度調整
     execute if entity @s[scores={AsaMatrix=40..}] at @s if block ~ ~-0.1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
     execute if entity @s[scores={AsaMatrix=40..}] at @s unless block ~ ~0.1 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~ ~ ~
+
+# 移行
+    execute if entity @s[tag=IsThunder,scores={AsaMatrix=59}] if predicate asa_animator:zinogre/combo run function asa_animator:zinogre/anim/jump/events/change
