@@ -8,3 +8,4 @@
     tag @s remove StartAnmTailB
     tag @s remove StartAnmTailW
     tag @s remove StartAnmTackle
+    tag @s remove StartAnmSClaw

@@ -58,6 +58,13 @@
         "predicate": {
           "nbt": "{Tags:[\"StartAnmTackle\"]}"
         }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"StartAnmSClaw\"]}"
+        }
       }
     ]
   }

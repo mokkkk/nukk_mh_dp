@@ -49,7 +49,7 @@ function asa_animator:zinogre/model
     execute if entity @s[scores={AsaMatrix=35..47}] positioned ^ ^ ^6 run function asa_animator:zinogre/anim/spin_claw/events/damage
 
 # 移行
-    # execute if entity @s[scores={AsaMatrix=56}] run function asa_animator:zinogre/anim/spin_claw/events/change
+    execute if entity @s[tag=IsAnger,scores={AsaMatrix=56}] run function asa_animator:zinogre/anim/spin_claw/events/change
 
 # 高度調整
     execute if entity @s[scores={AsaMatrix=53..}] at @s if block ~ ~-0.1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
