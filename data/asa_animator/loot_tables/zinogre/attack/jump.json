@@ -15,21 +15,23 @@
                 "function": "minecraft:set_nbt",
                 "tag": "{ActPaper:1,Act:1}"
                 }
-              ],
-              "conditions": [
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 3,
+              "functions": [
                 {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "nbt": "{Tags:[\"IsThunder\",\"StartAnmDash\"]}"
-                  }
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:2}"
                 }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 2,
+              "weight": 5,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
@@ -42,6 +44,26 @@
                   "entity": "this",
                   "predicate": {
                     "nbt": "{Tags:[\"IsAnger\"]}"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 2,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:3}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "nbt": "{Tags:[\"IsNear\"]}"
                   }
                 }
               ]

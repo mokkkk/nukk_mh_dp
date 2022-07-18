@@ -9,27 +9,18 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 5,
+              "weight": 3,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
                 "tag": "{ActPaper:1,Act:1}"
-                }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "nbt": "{Tags:[\"IsThunder\",\"StartAnmDash\"]}"
-                  }
                 }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 2,
+              "weight": 5,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
@@ -41,7 +32,7 @@
                   "condition": "minecraft:entity_properties",
                   "entity": "this",
                   "predicate": {
-                    "nbt": "{Tags:[\"IsAnger\"]}"
+                    "nbt": "{Tags:[\"IsThunder\"]}"
                   }
                 }
               ]

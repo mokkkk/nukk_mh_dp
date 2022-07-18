@@ -38,6 +38,17 @@
                 "tag": "{ActPaper:1,Act:3}"
                 }
               ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 4,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:3}"
+                }
+              ]
             }
           ]
         }

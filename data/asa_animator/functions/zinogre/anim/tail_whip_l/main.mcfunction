@@ -41,7 +41,12 @@ function asa_animator:zinogre/model
     execute if entity @s[scores={AsaMatrix=36}] run tag @s remove IsFlying
 
 # 高度調整
+    execute if entity @s[scores={AsaMatrix=1..5}] at @s if block ~ ~-0.1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
+    execute if entity @s[scores={AsaMatrix=1..5}] at @s unless block ~ ~0.1 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~ ~ ~
     execute if entity @s[scores={AsaMatrix=36..51}] at @s if block ~ ~0.2 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
     execute if entity @s[scores={AsaMatrix=36..51}] at @s unless block ~ ~0.4 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~ ~ ~
     execute if entity @s[scores={AsaMatrix=55..}] at @s if block ~ ~-0.1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
     execute if entity @s[scores={AsaMatrix=55..}] at @s unless block ~ ~0.1 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~ ~ ~
+
+# 移行
+    execute if entity @s[tag=IsThunder,scores={AsaMatrix=37}] if predicate asa_animator:zinogre/combo run function asa_animator:zinogre/anim/tail_whip_l/events/change

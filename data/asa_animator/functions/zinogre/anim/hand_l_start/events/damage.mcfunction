@@ -15,3 +15,6 @@ execute if entity @s[tag=IsThunder] run playsound entity.lightning_bolt.thunder 
 execute if entity @s[tag=IsThunder] run playsound entity.lightning_bolt.impact master @a ~ ~ ~ 2 0.8
 execute if entity @s[tag=IsThunder] run particle dust 1 1000000000 1000000000 5 ^ ^5 ^ 0.2 2 0.2 0 100
 execute if entity @s[tag=IsThunder] run particle flash ^ ^1 ^ 2 2 2 0 10
+
+# 命中カウント
+    scoreboard players add #mhdp_zinogre_hand_count AsaMatrix 1

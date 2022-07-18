@@ -26,8 +26,8 @@
 
 # 強制
     # execute as @e[tag=ZinogreRoot] run function asa_animator:zinogre/manager/change_combo/start_tb
-    # function asa_animator:zinogre/manager/change_normal/_/tackle
-    tag @s add AnmJump
+    function asa_animator:zinogre/manager/change_normal/_/tailw
+    # tag @s add AnmTailF
 
 # 終了
     tag @s remove ChangeAnm

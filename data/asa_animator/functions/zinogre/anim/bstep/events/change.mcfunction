@@ -1,6 +1,6 @@
 scoreboard players set @s AsaMatrix 0
 tag @s remove AnmBStep
-execute if predicate asa_animator:zinogre/starttags run tag @s add StartAnmBstep
+execute if predicate asa_animator:zinogre/starttags run tag @s add StartAnmBStep
 
 # ランダム
 loot spawn ~ 0 ~ loot asa_animator:zinogre/attack/bstep

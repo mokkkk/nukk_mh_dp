@@ -61,3 +61,6 @@ function asa_animator:zinogre/model
     execute if entity @s[scores={AsaMatrix=85..108}] at @s unless block ~ ~0.8 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~ ~ ~
     execute if entity @s[scores={AsaMatrix=129..}] at @s if block ~ ~-0.1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
     execute if entity @s[scores={AsaMatrix=129..}] at @s unless block ~ ~0.1 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~ ~ ~
+
+# 移行
+    execute if entity @s[tag=IsAnger,tag=StartAnmTailF,scores={AsaMatrix=95}] if predicate asa_animator:zinogre/combo run function asa_animator:zinogre/anim/sault_l/events/change

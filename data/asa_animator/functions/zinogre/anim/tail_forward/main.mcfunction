@@ -58,3 +58,6 @@ function asa_animator:zinogre/model
     execute if entity @s[scores={AsaMatrix=32..48}] unless block ~ ~0.7 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~
     execute if entity @s[scores={AsaMatrix=58..}] if block ~ ~0.2 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
     execute if entity @s[scores={AsaMatrix=58..}] unless block ~ ~ ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~
+
+# 移行
+    execute if entity @s[tag=IsThunder,scores={AsaMatrix=38}] if predicate asa_animator:zinogre/combo run function asa_animator:zinogre/anim/tail_forward/events/change

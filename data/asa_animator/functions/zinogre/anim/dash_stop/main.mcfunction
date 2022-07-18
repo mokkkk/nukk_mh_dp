@@ -32,7 +32,8 @@ function asa_animator:zinogre/model
     execute at @s unless block ~ ~0.1 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~ ~ ~
 
 # 移行
-    execute if entity @s[tag=IsThunder,scores={AsaMatrix=25}] if predicate asa_animator:zinogre/combo run function asa_animator:zinogre/anim/dash_stop/events/change
+    execute if entity @s[tag=IsThunder,scores={AsaMatrix=25}] if predicate asa_animator:zinogre/combo if predicate asa_animator:zinogre/starttags run function asa_animator:zinogre/anim/dash_stop/events/change
+    execute if entity @s[tag=IsAnger,scores={AsaMatrix=25}] if predicate asa_animator:zinogre/combo run function asa_animator:zinogre/anim/dash_stop/events/change
 
 # コンボ用
     execute if entity @s[scores={AsaMatrix=25}] unless predicate asa_animator:zinogre/combo run function asa_animator:zinogre/manager/cancel_animation
