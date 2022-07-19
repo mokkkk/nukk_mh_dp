@@ -114,6 +114,6 @@ execute if entity @s[tag=AnmFlyAnger] run function asa_animator:zinogre/anim/fly
 # 頭部破壊ひるみ
 execute if entity @s[tag=AnmDHead] run function asa_animator:zinogre/anim/destroy_head/main
 # 腕破壊ひるみ
-execute if entity @s[tag=AnmDBody] run function asa_animator:zinogre/anim/destroy_body/main
+execute if entity @s[tag=AnmDArmL] run function asa_animator:zinogre/anim/destroy_arm_l/main
 # 尻尾破壊ひるみ
 execute if entity @s[tag=AnmDTail] run function asa_animator:zinogre/anim/destroy_tail/main
