@@ -29,7 +29,7 @@ function asa_animator:zinogre/model
     execute if entity @s[scores={AsaMatrix=1}] at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
     execute if entity @s[scores={AsaMatrix=2..10}] if block ~ ~-0.2 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
     execute if entity @s[scores={AsaMatrix=2..10}] unless block ~ ~ ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~
-    execute if entity @s[scores={AsaMatrix=11..25}] if block ~ ~-0.3 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
-    execute if entity @s[scores={AsaMatrix=11..25}] unless block ~ ~-0.2 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~
+    execute if entity @s[scores={AsaMatrix=11..25}] if block ~ ~0.1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
+    execute if entity @s[scores={AsaMatrix=11..25}] unless block ~ ~0.3 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~
     execute if entity @s[scores={AsaMatrix=26..}] if block ~ ~-0.2 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
     execute if entity @s[scores={AsaMatrix=26..}] unless block ~ ~ ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~
