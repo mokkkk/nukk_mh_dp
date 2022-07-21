@@ -1,0 +1,2 @@
+
+execute positioned ^ ^ ^3 as @e[type=!armor_stand,type=!area_effect_cloud,type=!marker,tag=!ZinogreParts,distance=..15] unless entity @s[tag=CharmTiga,tag=!BlightDragon] unless entity @s[scores={MhdpTAvoid=1..}] run function asa_animator:zinogre/anim/voice/events/damage_sub_

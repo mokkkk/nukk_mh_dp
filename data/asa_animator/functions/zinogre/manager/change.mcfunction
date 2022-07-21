@@ -25,7 +25,7 @@
     # execute as @e[tag=ZinogreRoot] run function asa_animator:zinogre/manager/change_combo/start_tb
     # function asa_animator:zinogre/manager/change_normal/_/head
     # tag @s add AnmSClaw
-    tag @s add AnmDArmR
+    # tag @s add AnmVoice
 
 # 終了
     tag @s remove ChangeAnm

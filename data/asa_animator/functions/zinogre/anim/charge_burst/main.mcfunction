@@ -22,7 +22,7 @@ function asa_animator:zinogre/model
     execute if entity @s[scores={AsaMatrix=14}] at @s run particle flash ~ ~5 ~ 3 3 3 0 30 force
     execute if entity @s[scores={AsaMatrix=14..35}] at @s run particle end_rod ~ ~5 ~ 2 2 2 1 30 force
     execute if entity @s[scores={AsaMatrix=14}] run playsound entity.lightning_bolt.thunder master @a ~ ~ ~ 2 0.5
-    execute if entity @s[scores={AsaMatrix=14}] run playsound entity.lightning_bolt.impact master @a ~ ~ ~ 2 0.5
+    execute if entity @s[scores={AsaMatrix=14}] run playsound entity.lightning_bolt.impact master @a ~ ~ ~ 5 0.5
     execute if entity @s[scores={AsaMatrix=15}] run summon lightning_bolt ~ 255 ~
     execute if entity @s[scores={AsaMatrix=25}] run summon lightning_bolt ~ 255 ~
     execute if entity @s[scores={AsaMatrix=15..18}] positioned ~ ~1.2 ~ run function asa_animator:zinogre/anim/charge_burst/events/particle
@@ -32,3 +32,13 @@ function asa_animator:zinogre/model
 
 # 変化
     execute if entity @s[scores={AsaMatrix=14}] run function asa_animator:zinogre/manager/model/change_to_thunder
+
+# 咆哮
+    execute if entity @s[scores={AsaMatrix=12}] run playsound entity.wolf.howl master @a ~ ~ ~ 3 0.5 0.1
+    execute if entity @s[scores={AsaMatrix=12}] run playsound entity.wolf.howl master @a ~ ~ ~ 3 0.7 0.1
+    execute if entity @s[scores={AsaMatrix=14..22}] run playsound entity.lightning_bolt.thunder master @a ~ ~ ~ 5 0.5
+    execute if entity @s[scores={AsaMatrix=14..52}] run playsound entity.wolf.death master @a ~ ~ ~ 4 0.5 0.1
+    execute if entity @s[scores={AsaMatrix=14..52}] run playsound entity.wolf.death master @a ~ ~ ~ 4 0.6 0.1
+    execute if entity @s[scores={AsaMatrix=10..14}] run playsound entity.ender_dragon.growl master @a ~ ~ ~ 5 0.5 0.1
+    execute if entity @s[scores={AsaMatrix=14..41}] as @e[type=armor_stand,tag=ZinogreParts,tag=HeadU,distance=0..10] at @s positioned ~ ~1.4 ~ run particle flash ~ ~ ~ 0 0 0 0 1
+    execute if entity @s[scores={AsaMatrix=14}] run function asa_animator:zinogre/anim/voice/events/damage
