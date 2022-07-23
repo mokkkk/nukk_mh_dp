@@ -106,10 +106,6 @@
     execute if entity @s[tag=AnmSummon] run function asa_animator:zinogre/anim/summon/main
 # 咆哮
     execute if entity @s[tag=AnmVoice] run function asa_animator:zinogre/anim/voice/main
-# 怒り
-    execute if entity @s[tag=AnmAnger] run function asa_animator:zinogre/anim/anger/main
-# 飛行時怒り
-    execute if entity @s[tag=AnmFlyAnger] run function asa_animator:zinogre/anim/flying_voice/main
 
 # 頭部破壊ひるみ
     execute if entity @s[tag=AnmDHead] run function asa_animator:zinogre/anim/destroy_head/main
@@ -118,3 +114,6 @@
     execute if entity @s[tag=AnmDArmR] run function asa_animator:zinogre/anim/destroy_arm_r/main
 # 尻尾破壊ひるみ
     execute if entity @s[tag=AnmDTail] run function asa_animator:zinogre/anim/destroy_tail/main
+# 超帯電解除ひるみ
+    execute if entity @s[tag=AnmDamageL] run function asa_animator:zinogre/anim/end_thunder_l/main
+    execute if entity @s[tag=AnmDamageR] run function asa_animator:zinogre/anim/end_thunder_r/main
