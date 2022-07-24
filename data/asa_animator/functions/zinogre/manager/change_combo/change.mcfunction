@@ -10,6 +10,4 @@
 # 超帯電開始
     execute if entity @s[tag=ComboTE] run function asa_animator:zinogre/manager/change_combo/main_te
 
-    # execute if entity @s[tag=ComboA] run function asa_animator:zinogre/manager/change_combo/main_a
-
 scoreboard players add #mhdp_zinogre_combo_count AsaMatrix 1

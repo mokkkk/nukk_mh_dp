@@ -10,6 +10,7 @@
     execute if entity @s[tag=PlayAnmAnger] run function asa_animator:zinogre/manager/change_combo/start_te
 
 # 帯電行動
+    execute if entity @s[tag=!IsThunder] if score #mhdp_zinogre_actcount_charge AsaMatrix matches 3..5 if predicate asa_animator:random/020 run function asa_animator:zinogre/manager/change_normal/sp_charge
     execute if entity @s[tag=!IsThunder] if score #mhdp_zinogre_actcount_charge AsaMatrix matches 6.. run function asa_animator:zinogre/manager/change_normal/sp_charge
 
 # 帯電時大技

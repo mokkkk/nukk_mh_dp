@@ -14,6 +14,9 @@ execute if entity @s[tag=D_ZinogreTackle] run tellraw @a [{"selector":"@s"},{"te
 execute if entity @s[tag=D_ZinogrePress] run tellraw @a [{"selector":"@s"},{"text": "は雷狼竜に押しつぶされた"}]
 execute if entity @s[tag=D_ZinogreShot] run tellraw @a [{"selector":"@s"},{"text": "は雷光弾に射抜かれた"}]
 execute if entity @s[tag=D_ZinogreTail] run tellraw @a [{"selector":"@s"},{"text": "は雷狼竜の尻尾に吹き飛ばされた"}]
+execute if entity @s[tag=D_ZinogreDash] run tellraw @a [{"selector":"@s"},{"text": "は雷狼竜に轢かれた"}]
+execute if entity @s[tag=D_ZinogreClaw] run tellraw @a [{"selector":"@s"},{"text": "は雷狼竜に切り裂かれた"}]
+execute if entity @s[tag=D_ZinogreThunder] run tellraw @a [{"selector":"@s"},{"text": "は感電した"}]
 
 execute if entity @s[tag=D_DiablosBite] run tellraw @a [{"selector":"@s"},{"text": "は角竜に噛み砕かれた"}]
 execute if entity @s[tag=D_DiablosDash] run tellraw @a [{"selector":"@s"},{"text": "は角竜に轢かれた"}]

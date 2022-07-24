@@ -27,3 +27,5 @@ function asa_animator:zinogre/model
     execute if entity @s[scores={AsaMatrix=61}] run tag @s remove IsParticle
     execute if entity @s[scores={AsaMatrix=51}] run playsound block.grass.step master @a ~ ~ ~ 3 0.7
     execute if entity @s[scores={AsaMatrix=58}] run playsound entity.hoglin.step master @a ~ ~ ~ 2 0.7
+    execute if entity @s[tag=!DestroyHead,scores={AsaMatrix=58}] run data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10588
+    execute if entity @s[tag=DestroyHead,scores={AsaMatrix=58}] run data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10589

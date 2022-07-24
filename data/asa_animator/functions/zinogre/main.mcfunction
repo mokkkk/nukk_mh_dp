@@ -21,4 +21,4 @@ execute if entity @s[tag=ChangeAnm] run function asa_animator:zinogre/manager/ch
     execute if entity @s[tag=IsAnger,tag=IsThunder] run function asa_animator:zinogre/manager/particle/anger
 
 # デスポーン
-    # execute unless entity @s[tag=AnmSummon] if data storage mh_dp:settings {Custom:{DisableDespawn:false}} unless entity @a[distance=0..64] run function asa_animator:zinogre/manager/despawn
+    execute unless entity @s[tag=AnmSummon] if data storage mh_dp:settings {Custom:{DisableDespawn:false}} unless entity @a[distance=0..64] run function asa_animator:zinogre/manager/despawn

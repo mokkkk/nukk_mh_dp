@@ -2,7 +2,7 @@
 # ダメージ適用
 # execute if entity @s[tag=HeadParts] run scoreboard players operation #zinogre_damage AsaMatrix *= #asam_const_120 AsaMatrix
 # execute if entity @s[tag=BodyParts] run scoreboard players operation #zinogre_damage AsaMatrix *= #asam_const_100 AsaMatrix
-# execute if entity @s[tag=ArmLParts] run scoreboard players operation #zinogre_damage AsaMatrix *= #asam_const_95 AsaMatrix
+# execute if entity @s[tag=ArmLParts] run scoreboard players operation damage AsaMatrix *= #asam_const_95 AsaMatrix
 # execute if entity @s[tag=ArmRParts] run scoreboard players operation #zinogre_damage AsaMatrix *= #asam_const_95 AsaMatrix
 # execute if entity @s[tag=TailParts] run scoreboard players operation #zinogre_damage AsaMatrix *= #asam_const_100 AsaMatrix
 # scoreboard players operation #zinogre_damage AsaMatrix /= #asam_const_100 AsaMatrix
