@@ -1,4 +1,4 @@
-summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["MonsterRoot","ZinogreRoot"]}
+summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["MonsterRoot","ZinogreRoot","AnmSummon"]}
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["ZinogreParts","HeadU"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10556,Rotate:[0f,0f,0f]}}],Pose:{Head:[10f,0f,0f]}}
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["ZinogreParts","HeadL"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10557,Rotate:[0f,0f,0f]}}],Pose:{Head:[5f,0f,0f]}}
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["ZinogreParts","Neck0"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10558,Rotate:[0f,0f,0f]}}],Pose:{Head:[5f,0f,0f]}}

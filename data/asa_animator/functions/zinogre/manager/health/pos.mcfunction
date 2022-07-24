@@ -24,4 +24,4 @@ execute if entity @s[tag=ArmL2] rotated as @s at @e[type=armor_stand,tag=Zinogre
 execute if entity @s[tag=ArmR2] rotated as @s at @e[type=armor_stand,tag=ZinogreParts,tag=ArmR2,limit=1] run tp @s ^ ^0.8 ^0 ~ ~
 
 # HP確認
-# execute if entity @s[tag=!Death,nbt=!{Health: 1000f}] run function asa_animator:zinogre/manager/health/check
+execute if entity @s[tag=!Death,nbt=!{Health: 1000f}] run function asa_animator:zinogre/manager/health/check

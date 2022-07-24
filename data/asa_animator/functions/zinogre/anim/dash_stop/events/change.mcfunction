@@ -1,6 +1,6 @@
 scoreboard players set @s AsaMatrix 0
 tag @s remove AnmDashStop
-kill @e[type=marker,tag=zinogreDashTarget]
+kill @e[type=marker,tag=ZinogreDashTarget]
 execute if predicate asa_animator:zinogre/starttags run tag @s add StartAnmDash
 
 # ランダム

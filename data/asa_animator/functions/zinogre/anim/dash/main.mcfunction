@@ -38,6 +38,6 @@ function asa_animator:zinogre/model
     execute if entity @s[scores={AsaMatrix=12}] at @s run tp @s ~ ~0.9 ~
 
 # 停止
-    execute if entity @e[type=marker,tag=zinogreDashTarget,distance=0..10] run scoreboard players set #mhdp_zinogre_dash_count AsaMatrix 1
-    execute if entity @e[type=marker,tag=zinogreDashTarget,distance=0..10] run kill @e[type=marker,tag=zinogreDashTarget,distance=0..10]
+    execute if entity @e[type=marker,tag=ZinogreDashTarget,distance=0..10] run scoreboard players set #mhdp_zinogre_dash_count AsaMatrix 1
+    execute if entity @e[type=marker,tag=ZinogreDashTarget,distance=0..10] run kill @e[type=marker,tag=ZinogreDashTarget,distance=0..10]
     execute if entity @s[scores={AsaMatrix=12}] if score #mhdp_zinogre_dash_count AsaMatrix matches ..0 run function asa_animator:zinogre/anim/dash/events/change

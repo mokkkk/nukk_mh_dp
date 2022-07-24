@@ -1,12 +1,12 @@
 
 # タイマー増加
-# scoreboard players add #mhdp_zinogre_kill_timer AsaMatrix 1
+scoreboard players add #mhdp_zinogre_kill_timer AsaMatrix 1
 
 # アニメーション遷移
 execute if entity @s[tag=ChangeAnm] run function asa_animator:zinogre/manager/change
 
 # 待機
-    execute if predicate asa_animator:zinogre/stay unless entity @s[tag=IsFlying] run function asa_animator:zinogre/anim/idle/main
+    execute if predicate asa_animator:zinogre/stay run function asa_animator:zinogre/anim/idle/main
 # 軸合わせ
     execute unless predicate asa_animator:zinogre/stay if entity @s[tag=AnmTurnL] run function asa_animator:zinogre/anim/turn_l/main
     execute unless predicate asa_animator:zinogre/stay if entity @s[tag=AnmTurnR] run function asa_animator:zinogre/anim/turn_r/main

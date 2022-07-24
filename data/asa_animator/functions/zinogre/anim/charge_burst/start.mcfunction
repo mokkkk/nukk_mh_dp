@@ -23,3 +23,4 @@ execute as @e[type=armor_stand,tag=ZinogreParts,tag=ArmL1] run data merge entity
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=ArmR1] run data merge entity @s {Pose:{Head:[70f,0f,0f]}}
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=ArmL2] run data merge entity @s {Pose:{Head:[0f,-5f,0f]}}
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=ArmR2] run data merge entity @s {Pose:{Head:[0f,5f,0f]}}
+scoreboard players set #mhdp_zinogre_charge_count AsaMatrix 0

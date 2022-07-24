@@ -1,8 +1,13 @@
-tag @s remove IsThunder
 
+tag @s remove IsThunder
 execute as @e[type=armor_stand,tag=ZinogreParts] run data modify entity @s ArmorItems[3].id set value "minecraft:barrier"
-data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10556
-data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=HeadL,limit=1] ArmorItems[3].tag.CustomModelData set value 10557
+
+# head_u
+    execute unless entity @s[tag=DestroyHead] run data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10556
+    execute if entity @s[tag=DestroyHead] run data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10581
+# head_l
+    execute unless entity @s[tag=DestroyHead] run data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=HeadL,limit=1] ArmorItems[3].tag.CustomModelData set value 10557
+    execute if entity @s[tag=DestroyHead] run data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=HeadL,limit=1] ArmorItems[3].tag.CustomModelData set value 10582
 data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=Neck0,limit=1] ArmorItems[3].tag.CustomModelData set value 10558
 data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=Neck1,limit=1] ArmorItems[3].tag.CustomModelData set value 10559
 data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=Neck2,limit=1] ArmorItems[3].tag.CustomModelData set value 10560
@@ -18,11 +23,20 @@ data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=LegL3,limit=1] Armor
 data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=LegR3,limit=1] ArmorItems[3].tag.CustomModelData set value 10570
 data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=Tail0,limit=1] ArmorItems[3].tag.CustomModelData set value 10571
 data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=Tail1,limit=1] ArmorItems[3].tag.CustomModelData set value 10572
-data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=Tail2,limit=1] ArmorItems[3].tag.CustomModelData set value 10573
-data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=Tail3,limit=1] ArmorItems[3].tag.CustomModelData set value 10574
+# tail_2
+    execute unless entity @s[tag=DestroyTail] run data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=Tail2,limit=1] ArmorItems[3].tag.CustomModelData set value 10573
+    execute if entity @s[tag=DestroyTail] run data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=Tail2,limit=1] ArmorItems[3].tag.CustomModelData set value 10587
+# tail_3
+    execute unless entity @s[tag=DestroyTail] run data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=Tail3,limit=1] ArmorItems[3].tag.CustomModelData set value 10574
 data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=ArmL0,limit=1] ArmorItems[3].tag.CustomModelData set value 10575
 data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=ArmR0,limit=1] ArmorItems[3].tag.CustomModelData set value 10576
-data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=ArmL1,limit=1] ArmorItems[3].tag.CustomModelData set value 10577
-data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=ArmR1,limit=1] ArmorItems[3].tag.CustomModelData set value 10578
-data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=ArmL2,limit=1] ArmorItems[3].tag.CustomModelData set value 10579
-data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=ArmR2,limit=1] ArmorItems[3].tag.CustomModelData set value 10580
+# arm_1
+    execute unless entity @s[tag=DestroyArmL] run data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=ArmL1,limit=1] ArmorItems[3].tag.CustomModelData set value 10577
+    execute unless entity @s[tag=DestroyArmR] run data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=ArmR1,limit=1] ArmorItems[3].tag.CustomModelData set value 10578
+    execute if entity @s[tag=DestroyArmL] run data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=ArmL1,limit=1] ArmorItems[3].tag.CustomModelData set value 10583
+    execute if entity @s[tag=DestroyArmR] run data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=ArmR1,limit=1] ArmorItems[3].tag.CustomModelData set value 10584
+# arm_2
+    execute unless entity @s[tag=DestroyArmL] run data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=ArmL2,limit=1] ArmorItems[3].tag.CustomModelData set value 10579
+    execute unless entity @s[tag=DestroyArmR] run data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=ArmR2,limit=1] ArmorItems[3].tag.CustomModelData set value 10580
+    execute if entity @s[tag=DestroyArmL] run data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=ArmL2,limit=1] ArmorItems[3].tag.CustomModelData set value 10585
+    execute if entity @s[tag=DestroyArmR] run data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=ArmR2,limit=1] ArmorItems[3].tag.CustomModelData set value 10586

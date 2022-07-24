@@ -95,7 +95,6 @@
     execute if entity @s[tag=AnmChargeB] run function asa_animator:zinogre/anim/charge_burst/main
 
 
-
 # 地上時討伐
     execute if entity @s[tag=AnmDeath] run function asa_animator:zinogre/anim/death/main
 
@@ -117,3 +116,5 @@
 # 超帯電解除ひるみ
     execute if entity @s[tag=AnmDamageL] run function asa_animator:zinogre/anim/end_thunder_l/main
     execute if entity @s[tag=AnmDamageR] run function asa_animator:zinogre/anim/end_thunder_r/main
+# 飛行時ひるみ
+    execute if entity @s[tag=AnmFlyDamage] run function asa_animator:zinogre/anim/flying_damage/main

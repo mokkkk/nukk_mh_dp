@@ -25,6 +25,7 @@
     tag @s remove AnmDash
     tag @s remove AnmDashStop
     tag @s remove AnmJump
+    tag @s remove AnmJump2Jump
     tag @s remove AnmTackleL
     tag @s remove AnmTackleR
     tag @s remove AnmTL2CHandL
@@ -50,14 +51,16 @@
     tag @s remove AnmFlyDeath
     tag @s remove AnmSummon
     tag @s remove AnmVoice
-    tag @s remove AnmAnger
-    tag @s remove AnmFlyAnger
     tag @s remove AnmDHead
-    tag @s remove AnmDBody
+    tag @s remove AnmDArmL
+    tag @s remove AnmDArmR
     tag @s remove AnmDTail
+    tag @s remove AnmDamageL
+    tag @s remove AnmDamageR
+    tag @s remove AnmFlyDamage
 
 # Transform保持用Marker
     kill @e[type=marker,tag=ZinogreMoveRotate]
-    kill @e[type=marker,tag=zinogreDashTarget]
+    kill @e[type=marker,tag=ZinogreDashTarget]
 
 tag @s add ChangeAnm
