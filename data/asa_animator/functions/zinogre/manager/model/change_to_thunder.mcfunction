@@ -1,6 +1,7 @@
 
 tag @s add IsThunder
-execute as @e[type=armor_stand,tag=ZinogreParts] run data modify entity @s ArmorItems[3].id set value "minecraft:clock"
+execute as @e[type=armor_stand,tag=ZinogreParts,tag=!Tail3] run data modify entity @s ArmorItems[3].id set value "minecraft:clock"
+execute unless entity @s[tag=DestroyTail] as @e[type=armor_stand,tag=ZinogreParts,tag=Tail3] run data modify entity @s ArmorItems[3].id set value "minecraft:clock"
 
 # head_u
     execute unless entity @s[tag=DestroyHead] run data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10581

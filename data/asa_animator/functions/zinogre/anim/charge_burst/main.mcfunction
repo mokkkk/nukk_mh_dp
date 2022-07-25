@@ -34,11 +34,11 @@ function asa_animator:zinogre/model
     execute if entity @s[scores={AsaMatrix=14}] run function asa_animator:zinogre/manager/model/change_to_thunder
 
 # 咆哮
-    execute if entity @s[scores={AsaMatrix=12}] run playsound entity.wolf.howl master @a ~ ~ ~ 3 0.5 0.1
-    execute if entity @s[scores={AsaMatrix=12}] run playsound entity.wolf.howl master @a ~ ~ ~ 3 0.7 0.1
-    execute if entity @s[scores={AsaMatrix=14..22}] run playsound entity.lightning_bolt.thunder master @a ~ ~ ~ 5 0.5
-    execute if entity @s[scores={AsaMatrix=14..52}] run playsound entity.wolf.death master @a ~ ~ ~ 4 0.5 0.1
-    execute if entity @s[scores={AsaMatrix=14..52}] run playsound entity.wolf.death master @a ~ ~ ~ 4 0.6 0.1
-    execute if entity @s[scores={AsaMatrix=10..14}] run playsound entity.ender_dragon.growl master @a ~ ~ ~ 5 0.5 0.1
+    execute if entity @s[scores={AsaMatrix=12}] as @a[distance=..48] run playsound entity.wolf.howl master @a ~ ~ ~ 0.5 0.5 0.5
+    execute if entity @s[scores={AsaMatrix=12}] as @a[distance=..48] run playsound entity.wolf.howl master @a ~ ~ ~ 0.5 0.7 0.5
+    execute if entity @s[scores={AsaMatrix=14..22}] as @a[distance=..48] run playsound entity.lightning_bolt.thunder master @a ~ ~ ~ 0.7 0.5 0.7
+    execute if entity @s[scores={AsaMatrix=14..52}] as @a[distance=..48] run playsound entity.wolf.death master @a ~ ~ ~ 0.5 0.5 0.5
+    execute if entity @s[scores={AsaMatrix=14..52}] as @a[distance=..48] run playsound entity.wolf.death master @a ~ ~ ~ 0.5 0.6 0.5
+    execute if entity @s[scores={AsaMatrix=10..14}] as @a[distance=..48] run playsound entity.ender_dragon.growl master @a ~ ~ ~ 1 0.5 1
     execute if entity @s[scores={AsaMatrix=14..41}] as @e[type=armor_stand,tag=ZinogreParts,tag=HeadU,distance=0..10] at @s positioned ~ ~1.4 ~ run particle flash ~ ~ ~ 0 0 0 0 1
     execute if entity @s[scores={AsaMatrix=14}] run function asa_animator:zinogre/anim/voice/events/damage

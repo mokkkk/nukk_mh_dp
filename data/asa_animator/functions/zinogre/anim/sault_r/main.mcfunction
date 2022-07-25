@@ -48,7 +48,8 @@ function asa_animator:zinogre/model
     execute if entity @s[scores={AsaMatrix=86..90}] run playsound block.grass.step master @a ~ ~ ~ 2 0.8
 
 # 攻撃
-    execute if entity @s[scores={AsaMatrix=45..75}] at @e[type=armor_stand,tag=ZinogreParts,tag=Tail3] run function asa_animator:zinogre/anim/sault_r/events/damage
+    execute if entity @s[tag=!DestroyTail,scores={AsaMatrix=45..75}] at @e[type=armor_stand,tag=ZinogreParts,tag=Tail3] run function asa_animator:zinogre/anim/sault_l/events/damage
+    execute if entity @s[tag=DestroyTail,scores={AsaMatrix=45..75}] at @e[type=armor_stand,tag=ZinogreParts,tag=Tail2] run function asa_animator:zinogre/anim/sault_l/events/damage
 
 # 状態更新
     execute if entity @s[scores={AsaMatrix=66}] run tag @s add IsFlying

@@ -34,8 +34,9 @@ function asa_animator:zinogre/model
     execute if entity @s[scores={AsaMatrix=36}] run playsound entity.hoglin.step master @a ~ ~ ~ 3 0.7
 
 # 攻撃
-    execute if entity @s[scores={AsaMatrix=26..33}] at @e[type=armor_stand,tag=ZinogreParts,tag=Tail3] run function asa_animator:zinogre/anim/tail_whip_l/events/damage
-
+    execute if entity @s[tag=!DestroyTail,scores={AsaMatrix=26..33}] at @e[type=armor_stand,tag=ZinogreParts,tag=Tail3] run function asa_animator:zinogre/anim/tail_whip_l/events/damage
+    execute if entity @s[tag=DestroyTail,scores={AsaMatrix=26..33}] at @e[type=armor_stand,tag=ZinogreParts,tag=Tail2] run function asa_animator:zinogre/anim/tail_whip_l/events/damage
+    
 # 状態更新
     execute if entity @s[scores={AsaMatrix=26}] run tag @s add IsFlying
     execute if entity @s[scores={AsaMatrix=36}] run tag @s remove IsFlying

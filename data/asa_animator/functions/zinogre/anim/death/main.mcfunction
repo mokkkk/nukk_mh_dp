@@ -29,3 +29,7 @@ function asa_animator:zinogre/model
     execute if entity @s[scores={AsaMatrix=58}] run playsound entity.hoglin.step master @a ~ ~ ~ 2 0.7
     execute if entity @s[tag=!DestroyHead,scores={AsaMatrix=58}] run data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10588
     execute if entity @s[tag=DestroyHead,scores={AsaMatrix=58}] run data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10589
+
+# 高度調整
+    execute if entity @s[scores={AsaMatrix=..10}] at @s if block ~ ~-0.1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
+    execute if entity @s[scores={AsaMatrix=..10}] at @s unless block ~ ~0.1 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~ ~ ~

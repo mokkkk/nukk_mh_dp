@@ -25,3 +25,5 @@ scoreboard players reset #zinogre_mine_y
 scoreboard players reset #zinogre_mine_z
 scoreboard players reset #zinogre_height_target
 scoreboard players reset #zinogre_damage
+scoreboard players reset #mhdp_zinogre_flash_time
+scoreboard players reset #mhdp_zinogre_flash_time_current
