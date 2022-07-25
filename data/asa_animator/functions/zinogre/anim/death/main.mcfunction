@@ -2,27 +2,34 @@
 scoreboard players add @s AsaMatrix 1
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:zinogre/anim/death/start
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:zinogre/anim/death/keyframes/0
-execute if entity @s[scores={AsaMatrix=1..10}] run tp @s ^0 ^0 ^0 ~1 ~
-execute if entity @s[scores={AsaMatrix=11}] run function asa_animator:zinogre/anim/death/keyframes/1
-execute if entity @s[scores={AsaMatrix=11..20}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=1..5}] run tp @s ^0 ^0 ^0 ~1 ~
+execute if entity @s[scores={AsaMatrix=6}] run function asa_animator:zinogre/anim/death/keyframes/1
+execute if entity @s[scores={AsaMatrix=6..20}] run tp @s ^0 ^0 ^0
 execute if entity @s[scores={AsaMatrix=21}] run function asa_animator:zinogre/anim/death/keyframes/2
-execute if entity @s[scores={AsaMatrix=21..35}] run tp @s ^0 ^0 ^0
-execute if entity @s[scores={AsaMatrix=36}] run function asa_animator:zinogre/anim/death/keyframes/3
-execute if entity @s[scores={AsaMatrix=36..60}] run tp @s ^0 ^0 ^0
-execute if entity @s[scores={AsaMatrix=61}] run function asa_animator:zinogre/anim/death/keyframes/4
-execute if entity @s[scores={AsaMatrix=61..75}] run tp @s ^-0.06666667 ^-0.03333334 ^0
-execute if entity @s[scores={AsaMatrix=76}] run function asa_animator:zinogre/anim/death/keyframes/5
-execute if entity @s[scores={AsaMatrix=76..100}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=21..30}] run tp @s ^0 ^-0.02 ^0
+execute if entity @s[scores={AsaMatrix=31}] run function asa_animator:zinogre/anim/death/keyframes/3
+execute if entity @s[scores={AsaMatrix=31..50}] run tp @s ^0 ^-0.015 ^0
+execute if entity @s[scores={AsaMatrix=51}] run function asa_animator:zinogre/anim/death/keyframes/4
+execute if entity @s[scores={AsaMatrix=51..55}] run tp @s ^0 ^-0.1 ^0.1
+execute if entity @s[scores={AsaMatrix=56}] run function asa_animator:zinogre/anim/death/keyframes/5
+execute if entity @s[scores={AsaMatrix=56..58}] run tp @s ^0 ^-0.1666667 ^0.1666667
+execute if entity @s[scores={AsaMatrix=59}] run function asa_animator:zinogre/anim/death/keyframes/6
+execute if entity @s[scores={AsaMatrix=59..100}] run tp @s ^0 ^0 ^0
 execute if entity @s[scores={AsaMatrix=101..}] run function asa_animator:zinogre/anim/death/end
 execute as @e[type=armor_stand,tag=ZinogreParts] run function #asa_matrix:animate
 function asa_animator:zinogre/model
 
-execute if entity @s[scores={AsaMatrix=40}] if entity @s[tag=IsThunder] run particle sneeze ~ ~2 ~ 0.5 0.5 0.5 0.1 50
-execute if entity @s[scores={AsaMatrix=40}] if entity @s[tag=IsThunder] as @e[type=armor_stand,tag=ZinogreParts] run function asa_animator:zinogre/manager/model/change_to_normal
-execute if entity @s[scores={AsaMatrix=40}] if entity @s[tag=IsThunder] run tag @s remove IsThunder
+# 演出
+    execute if entity @s[tag=IsThunder,scores={AsaMatrix=1}] run tag @s add IsParticle
+    execute if entity @s[tag=IsParticle,scores={AsaMatrix=40..50}] run particle end_rod ~ ~5 ~ 2 2 2 0.5 20
+    execute if entity @s[tag=IsParticle,scores={AsaMatrix=40}] run playsound block.beacon.deactivate master @a ~ ~ ~ 2 1.5
+    execute if entity @s[tag=IsThunder,scores={AsaMatrix=40}] run function asa_animator:zinogre/manager/model/change_to_normal
+    execute if entity @s[scores={AsaMatrix=61}] run tag @s remove IsParticle
+    execute if entity @s[scores={AsaMatrix=51}] run playsound block.grass.step master @a ~ ~ ~ 3 0.7
+    execute if entity @s[scores={AsaMatrix=58}] run playsound entity.hoglin.step master @a ~ ~ ~ 2 0.7
+    execute if entity @s[tag=!DestroyHead,scores={AsaMatrix=58}] run data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10588
+    execute if entity @s[tag=DestroyHead,scores={AsaMatrix=58}] run data modify entity @e[type=armor_stand,tag=ZinogreParts,tag=HeadU,limit=1] ArmorItems[3].tag.CustomModelData set value 10589
 
-execute if entity @s[scores={AsaMatrix=..60}] at @s if block ~ ~-1 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
-execute if entity @s[scores={AsaMatrix=..60}] at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.5 ~ ~ ~
-
-execute if entity @s[scores={AsaMatrix=61}] unless entity @s[tag=DestroyHead] as @e[type=armor_stand,tag=ZinogreParts,tag=HeadU] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10086
-execute if entity @s[scores={AsaMatrix=61}] if entity @s[tag=DestroyHead] as @e[type=armor_stand,tag=ZinogreParts,tag=HeadU] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 10298
+# 高度調整
+    execute if entity @s[scores={AsaMatrix=..10}] at @s if block ~ ~-0.1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
+    execute if entity @s[scores={AsaMatrix=..10}] at @s unless block ~ ~0.1 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~ ~ ~

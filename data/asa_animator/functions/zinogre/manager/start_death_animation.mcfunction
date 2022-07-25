@@ -1,4 +1,6 @@
 scoreboard players set @s AsaMatrix 0
-function asa_animator:zinogre/manager/health/kill
 function asa_animator:zinogre/manager/remove_animation_tag
-tag @s add AnmDeath
+execute if entity @s[tag=IsFlying] run tag @s add AnmFlyDeath
+execute unless entity @s[tag=IsFlying] run tag @s add AnmDeath
+# 当たり判定削除
+function asa_animator:zinogre/manager/health/kill

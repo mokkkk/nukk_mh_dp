@@ -2,15 +2,24 @@
 scoreboard players add @s AsaMatrix 1
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:zinogre/anim/summon/start
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:zinogre/anim/summon/keyframes/0
-execute if entity @s[scores={AsaMatrix=1..2}] run tp @s ^0 ^0 ^
-execute if entity @s[scores={AsaMatrix=3}] run function asa_animator:zinogre/anim/summon/keyframes/1
-execute if entity @s[scores={AsaMatrix=3..23}] run tp @s ^0 ^-0.952381 ^
-execute if entity @s[scores={AsaMatrix=24}] run function asa_animator:zinogre/anim/summon/keyframes/2
-execute if entity @s[scores={AsaMatrix=29}] run function asa_animator:zinogre/anim/summon/keyframes/3
-execute if entity @s[scores={AsaMatrix=46}] run function asa_animator:zinogre/anim/summon/keyframes/4
-execute if entity @s[scores={AsaMatrix=56..}] run function asa_animator:zinogre/anim/summon/end
+execute if entity @s[scores={AsaMatrix=1..25}] at @s run tp @s ^0 ^-2 ^0.3
+execute if entity @s[scores={AsaMatrix=26}] run function asa_animator:zinogre/anim/summon/keyframes/1
+execute if entity @s[scores={AsaMatrix=26..30}] run tp @s ^0 ^-0.02 ^0.1
+execute if entity @s[scores={AsaMatrix=31}] run function asa_animator:zinogre/anim/summon/keyframes/2
+execute if entity @s[scores={AsaMatrix=31..45}] run tp @s ^0 ^0 ^0.05
+execute if entity @s[scores={AsaMatrix=46}] run function asa_animator:zinogre/anim/summon/keyframes/3
+execute if entity @s[scores={AsaMatrix=46..52}] run tp @s ^0 ^0.007142857 ^0
+execute if entity @s[scores={AsaMatrix=53}] run function asa_animator:zinogre/anim/summon/keyframes/4
+execute if entity @s[scores={AsaMatrix=53..60}] run tp @s ^0 ^0.00625 ^0
+execute if entity @s[scores={AsaMatrix=61..}] run function asa_animator:zinogre/anim/summon/end
 execute as @e[type=armor_stand,tag=ZinogreParts] run function #asa_matrix:animate
 function asa_animator:zinogre/model
 
-execute if entity @s[scores={AsaMatrix=24..30}] run particle block grass ~ ~ ~ 1.5 0 1.5 0 5
-execute if entity @s[scores={AsaMatrix=24..27}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
+
+# 演出
+    execute if entity @s[scores={AsaMatrix=31}] run function asa_animator:zinogre/manager/particle/step
+    execute if entity @s[scores={AsaMatrix=31}] run playsound entity.hoglin.step master @a ~ ~ ~ 2 0.9
+
+# 高度調整
+    execute if entity @s[scores={AsaMatrix=31..}] at @s if block ~ ~-0.1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
+    execute if entity @s[scores={AsaMatrix=31..}] at @s unless block ~ ~0.1 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~ ~ ~

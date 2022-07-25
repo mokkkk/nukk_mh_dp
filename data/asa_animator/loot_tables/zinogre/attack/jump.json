@@ -1,0 +1,67 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 3,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:1}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 5,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:2}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "nbt": "{Tags:[\"IsBack\"]}"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 5,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:3}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 4,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:4}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

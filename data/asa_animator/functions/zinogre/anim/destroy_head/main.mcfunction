@@ -2,17 +2,34 @@
 scoreboard players add @s AsaMatrix 1
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:zinogre/anim/destroy_head/start
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:zinogre/anim/destroy_head/keyframes/0
-execute if entity @s[scores={AsaMatrix=1..7}] run tp @s ^0 ^0.02857143 ^-0.02857143 ~1 ~
-execute if entity @s[scores={AsaMatrix=8}] run function asa_animator:zinogre/anim/destroy_head/keyframes/1
-execute if entity @s[scores={AsaMatrix=8..13}] run tp @s ^0 ^0 ^0
-execute if entity @s[scores={AsaMatrix=14}] run function asa_animator:zinogre/anim/destroy_head/keyframes/2
-execute if entity @s[scores={AsaMatrix=14..22}] run tp @s ^0 ^-0.02222222 ^-0.08888889
-execute if entity @s[scores={AsaMatrix=23}] run function asa_animator:zinogre/anim/destroy_head/keyframes/3
-execute if entity @s[scores={AsaMatrix=23..38}] run tp @s ^0 ^0 ^0
-execute if entity @s[scores={AsaMatrix=39}] run function asa_animator:zinogre/anim/destroy_head/keyframes/4
-execute if entity @s[scores={AsaMatrix=39..40}] run tp @s ^0 ^0 ^0
-execute if entity @s[scores={AsaMatrix=41}] run function asa_animator:zinogre/anim/destroy_head/keyframes/5
-execute if entity @s[scores={AsaMatrix=41..55}] run tp @s ^0 ^0 ^0.06666667
-execute if entity @s[scores={AsaMatrix=56..}] run function asa_animator:zinogre/anim/destroy_head/end
+execute if entity @s[scores={AsaMatrix=1..5}] run tp @s ^0 ^0.015 ^-0.3 ~1 ~
+execute if entity @s[scores={AsaMatrix=6..10}] run tp @s ^0 ^0.015 ^-0.1 ~1 ~
+execute if entity @s[scores={AsaMatrix=11}] run function asa_animator:zinogre/anim/destroy_head/keyframes/1
+execute if entity @s[scores={AsaMatrix=11..17}] run tp @s ^0 ^0.02142857 ^-0.05
+execute if entity @s[scores={AsaMatrix=18}] run function asa_animator:zinogre/anim/destroy_head/keyframes/2
+execute if entity @s[scores={AsaMatrix=18..21}] run tp @s ^0 ^-0.0625 ^0.05
+execute if entity @s[scores={AsaMatrix=22}] run function asa_animator:zinogre/anim/destroy_head/keyframes/3
+execute if entity @s[scores={AsaMatrix=22..25}] run tp @s ^0 ^-0.0625 ^0.05
+execute if entity @s[scores={AsaMatrix=26}] run function asa_animator:zinogre/anim/destroy_head/keyframes/4
+execute if entity @s[scores={AsaMatrix=26..35}] run tp @s ^0 ^0 ^0 ~-1 ~
+execute if entity @s[scores={AsaMatrix=36}] run function asa_animator:zinogre/anim/destroy_head/keyframes/5
+execute if entity @s[scores={AsaMatrix=36..50}] run tp @s ^0 ^0.01333333 ^0.01333333
+execute if entity @s[scores={AsaMatrix=51..}] run function asa_animator:zinogre/anim/destroy_head/end
 execute as @e[type=armor_stand,tag=ZinogreParts] run function #asa_matrix:animate
 function asa_animator:zinogre/model
+
+# 演出
+    execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:zinogre/manager/particle/step
+    execute if entity @s[scores={AsaMatrix=25}] run function asa_animator:zinogre/manager/particle/step
+    execute if entity @s[scores={AsaMatrix=25}] run playsound entity.hoglin.step master @a ~ ~ ~ 2 0.7
+    execute if entity @s[scores={AsaMatrix=35}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
+
+# 高度調整
+    execute if entity @s[scores={AsaMatrix=1}] at @s positioned ~ ~5 ~ run tp @s ~ ~ ~
+    execute if entity @s[scores={AsaMatrix=1}] at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
+    execute if entity @s[scores={AsaMatrix=2..10}] if block ~ ~-0.2 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
+    execute if entity @s[scores={AsaMatrix=2..10}] unless block ~ ~ ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~
+    execute if entity @s[scores={AsaMatrix=11..25}] if block ~ ~0.1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
+    execute if entity @s[scores={AsaMatrix=11..25}] unless block ~ ~0.3 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~
+    execute if entity @s[scores={AsaMatrix=26..}] if block ~ ~-0.2 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
+    execute if entity @s[scores={AsaMatrix=26..}] unless block ~ ~ ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~

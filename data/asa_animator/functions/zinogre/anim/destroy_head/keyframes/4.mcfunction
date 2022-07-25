@@ -25,11 +25,17 @@ execute as @e[type=armor_stand,tag=ZinogreParts,tag=LegL2] run function #asa_mat
 data modify storage asa_matrix: Rotate set value [0f,0f,0f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=LegR2] run function #asa_matrix:animate_setparam
 data modify storage asa_matrix: Rotate set value [0f,0f,0f]
+execute as @e[type=armor_stand,tag=ZinogreParts,tag=LegL3] run function #asa_matrix:animate_setparam
+data modify storage asa_matrix: Rotate set value [0f,0f,0f]
+execute as @e[type=armor_stand,tag=ZinogreParts,tag=LegR3] run function #asa_matrix:animate_setparam
+data modify storage asa_matrix: Rotate set value [0f,500f,0f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=Tail0] run function #asa_matrix:animate_setparam
 data modify storage asa_matrix: Rotate set value [0f,0f,0f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=Tail1] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [0f,0f,0f]
+data modify storage asa_matrix: Rotate set value [0f,-1000f,0f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=Tail2] run function #asa_matrix:animate_setparam
+data modify storage asa_matrix: Rotate set value [0f,-1000f,0f]
+execute as @e[type=armor_stand,tag=ZinogreParts,tag=Tail3] run function #asa_matrix:animate_setparam
 data modify storage asa_matrix: Rotate set value [0f,0f,0f]
 execute as @e[type=armor_stand,tag=ZinogreParts,tag=ArmL0] run function #asa_matrix:animate_setparam
 data modify storage asa_matrix: Rotate set value [0f,0f,0f]

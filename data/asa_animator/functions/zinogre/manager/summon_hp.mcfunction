@@ -1,4 +1,5 @@
 
+
 # 遭遇履歴更新
     execute store result score #mhdp_const_temp AsaMatrix run data get storage mh_dp:status Monster.Count
     scoreboard players add #mhdp_const_temp AsaMatrix 1
@@ -6,11 +7,11 @@
     data modify storage mh_dp:status Monster.Meet.Zinogre set value true
 
 # HPセット
-    execute if data storage mh_dp:settings Custom{QuestRank:0} run scoreboard players set #mhdp_zinogre_health AsaMatrix 45000
-    execute if data storage mh_dp:settings Custom{QuestRank:1} run scoreboard players set #mhdp_zinogre_health AsaMatrix 65000
+    execute if data storage mh_dp:settings Custom{QuestRank:0} run scoreboard players set #mhdp_zinogre_health AsaMatrix 50000
+    execute if data storage mh_dp:settings Custom{QuestRank:1} run scoreboard players set #mhdp_zinogre_health AsaMatrix 70000
 # HP倍率適用
     scoreboard players operation #mhdp_zinogre_health AsaMatrix *= #mhdp_hp_multiply AsaMatrix
-    execute store result score #mhdp_zinogre_head_damage AsaMatrix store result score #mhdp_zinogre_arml_damage AsaMatrix store result score #mhdp_zinogre_tail_damage AsaMatrix run scoreboard players operation #mhdp_zinogre_health AsaMatrix /= #asam_const_100 AsaMatrix
+    execute store result score #mhdp_zinogre_head_damage AsaMatrix store result score #mhdp_zinogre_arml_damage AsaMatrix store result score #mhdp_zinogre_armr_damage AsaMatrix store result score #mhdp_zinogre_tail_damage AsaMatrix store result score #mhdp_zinogre_anger_damage_max AsaMatrix store result score #mhdp_zinogre_charge_damage_max AsaMatrix store result score #mhdp_zinogre_anger_damage_max AsaMatrix run scoreboard players operation #mhdp_zinogre_health AsaMatrix /= #asam_const_100 AsaMatrix
 
 # ボスバー設定
     bossbar add asa_animator:zinogre_health [{"text": "雷狼竜"},{"text":"\uE000","font":"mhdp"}]
@@ -21,28 +22,33 @@
     execute store result bossbar asa_animator:zinogre_health value run scoreboard players get #mhdp_zinogre_health AsaMatrix
 
 # 部位耐久値
-    ## 頭：20%
-    scoreboard players set #mhdp_const_temp AsaMatrix 20
+    ## 頭：12%
+    scoreboard players set #mhdp_const_temp AsaMatrix 12
     scoreboard players operation #mhdp_zinogre_head_damage AsaMatrix *= #mhdp_const_temp AsaMatrix
     scoreboard players operation #mhdp_zinogre_head_damage AsaMatrix /= #asam_const_100 AsaMatrix
-    ## 腕：18%
-    scoreboard players set #mhdp_const_temp AsaMatrix 18
+    ## 腕：15%
+    scoreboard players set #mhdp_const_temp AsaMatrix 15
     scoreboard players operation #mhdp_zinogre_arml_damage AsaMatrix *= #mhdp_const_temp AsaMatrix
     execute store result score #mhdp_zinogre_armr_damage AsaMatrix run scoreboard players operation #mhdp_zinogre_arml_damage AsaMatrix /= #asam_const_100 AsaMatrix
     ## 尻尾：20%
     scoreboard players set #mhdp_const_temp AsaMatrix 20
     scoreboard players operation #mhdp_zinogre_tail_damage AsaMatrix *= #mhdp_const_temp AsaMatrix
     scoreboard players operation #mhdp_zinogre_tail_damage AsaMatrix /= #asam_const_100 AsaMatrix
+# 特殊怯み
+    ## 20%
+    scoreboard players set #mhdp_const_temp AsaMatrix 20
+    scoreboard players operation #mhdp_zinogre_charge_damage_max AsaMatrix *= #mhdp_const_temp AsaMatrix
+    scoreboard players operation #mhdp_zinogre_charge_damage_max AsaMatrix /= #asam_const_100 AsaMatrix
 # 怒り
-    ## 25%
-    # scoreboard players set #mhdp_const_temp AsaMatrix 25
-    # scoreboard players operation #mhdp_zinogre_anger_damage_max AsaMatrix *= #mhdp_const_temp AsaMatrix
-    # scoreboard players operation #mhdp_zinogre_anger_damage_max AsaMatrix /= #asam_const_100 AsaMatrix
+    ## 10%
+    scoreboard players set #mhdp_const_temp AsaMatrix 10
+    scoreboard players operation #mhdp_zinogre_anger_damage_max AsaMatrix *= #mhdp_const_temp AsaMatrix
+    scoreboard players operation #mhdp_zinogre_anger_damage_max AsaMatrix /= #asam_const_100 AsaMatrix
 
 # 初期化
     scoreboard players set #mhdp_zinogre_kill_timer AsaMatrix 0
-    scoreboard players set #asa_zinogre_charge AsaMatrix 0
-    # scoreboard players operation #mhdp_zinogre_anger_damage AsaMatrix = #mhdp_zinogre_anger_damage_max AsaMatrix
+    scoreboard players operation #mhdp_zinogre_charge_damage AsaMatrix = #mhdp_zinogre_charge_damage_max AsaMatrix
+    scoreboard players operation #mhdp_zinogre_anger_damage AsaMatrix = #mhdp_zinogre_anger_damage_max AsaMatrix
 
 # 終了
     scoreboard players reset #mhdp_const_temp

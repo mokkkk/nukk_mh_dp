@@ -1,20 +1,25 @@
 
-# ターゲットリセット
-tag @e[tag=ZinogreTarget] remove ZinogreTarget
-tag @e[tag=ZinogreAttackTarget] remove ZinogreAttackTarget
+
 # タイマーリセット
-scoreboard players set @s AsaMatrix 0
+    scoreboard players set @s AsaMatrix 0
 
-# ターゲット探索
-tag @e[type=#asa_animator:attack_target,tag=!ZinogreParts,tag=!ZinogreTarget,tag=!NotTarget,distance=0..50] add ZinogreTarget
-# ターゲット決定
-tag @a[tag=ZinogreTarget,tag=!NotTarget,sort=random,limit=1] add ZinogreAttackTarget
-execute unless entity @e[tag=ZinogreAttackTarget] run tag @e[tag=ZinogreTarget,sort=random,limit=1] add ZinogreAttackTarget
+# 非コンボ時ターゲットリセット
+    execute if predicate asa_animator:zinogre/stay if predicate asa_animator:zinogre/combo run function asa_animator:zinogre/manager/change_target
 
-# 通常時
-execute unless entity @s[tag=IsThunder] run function asa_animator:zinogre/manager/change_normal/change
-# 超帯電時
-execute if entity @s[tag=IsThunder] run function asa_animator:zinogre/manager/change_thunder/change
+# 状態タグリセット
+    function asa_animator:zinogre/manager/remove_state_tag
+
+# 行動
+    execute if entity @e[tag=ZinogreAttackTarget] run function asa_animator:zinogre/manager/change_act
+
+# 軸合わせ
+    execute if predicate asa_animator:zinogre/combo unless predicate asa_animator:zinogre/turn run function asa_animator:zinogre/manager/change_normal/_/turn_b
+
+# コンボ
+    execute unless predicate asa_animator:zinogre/combo run function asa_animator:zinogre/manager/change_combo/change
+
+# 怒り終了
+    execute if entity @s[tag=IsAnger] if score #mhdp_zinogre_anger_count AsaMatrix matches ..0 run function asa_animator:zinogre/manager/end_anger
 
 # 終了
-tag @s remove ChangeAnm
+    tag @s remove ChangeAnm

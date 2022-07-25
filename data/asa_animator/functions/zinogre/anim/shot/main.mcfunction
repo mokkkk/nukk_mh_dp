@@ -2,44 +2,58 @@
 scoreboard players add @s AsaMatrix 1
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:zinogre/anim/shot/start
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:zinogre/anim/shot/keyframes/0
-execute if entity @s[scores={AsaMatrix=1..8}] run tp @s ^0 ^0 ^0
-execute if entity @s[scores={AsaMatrix=9}] run function asa_animator:zinogre/anim/shot/keyframes/1
-execute if entity @s[scores={AsaMatrix=9..25}] run tp @s ^0 ^0 ^0
-execute if entity @s[scores={AsaMatrix=26}] run function asa_animator:zinogre/anim/shot/keyframes/2
-execute if entity @s[scores={AsaMatrix=26..28}] run tp @s ^-0.5666667 ^0.3 ^0
+execute if entity @s[scores={AsaMatrix=1..5}] run tp @s ^0 ^-0.1 ^0
+execute if entity @s[scores={AsaMatrix=6}] run function asa_animator:zinogre/anim/shot/keyframes/1
+execute if entity @s[scores={AsaMatrix=6..20}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=21}] run function asa_animator:zinogre/anim/shot/keyframes/2
+execute if entity @s[scores={AsaMatrix=21..28}] run tp @s ^0 ^0.625 ^0 ~-5 ~
 execute if entity @s[scores={AsaMatrix=29}] run function asa_animator:zinogre/anim/shot/keyframes/3
-execute if entity @s[scores={AsaMatrix=29..35}] run tp @s ^-0.04285714 ^0.3714286 ^0
-execute if entity @s[scores={AsaMatrix=36}] run function asa_animator:zinogre/anim/shot/keyframes/4
-execute if entity @s[scores={AsaMatrix=36..40}] run tp @s ^-0.2 ^-0.7 ^0
-execute if entity @s[scores={AsaMatrix=41}] run function asa_animator:zinogre/anim/shot/keyframes/5
-execute if entity @s[scores={AsaMatrix=41..45}] run tp @s ^0 ^0 ^0
-execute if entity @s[scores={AsaMatrix=46}] run function asa_animator:zinogre/anim/shot/keyframes/6
-execute if entity @s[scores={AsaMatrix=46..48}] run tp @s ^0.5666667 ^0.3 ^0
-execute if entity @s[scores={AsaMatrix=49}] run function asa_animator:zinogre/anim/shot/keyframes/7
-execute if entity @s[scores={AsaMatrix=49..55}] run tp @s ^0.04285714 ^0.3714286 ^0
-execute if entity @s[scores={AsaMatrix=56}] run function asa_animator:zinogre/anim/shot/keyframes/8
-execute if entity @s[scores={AsaMatrix=56..60}] run tp @s ^0.2 ^-0.7 ^0
-execute if entity @s[scores={AsaMatrix=61}] run function asa_animator:zinogre/anim/shot/keyframes/9
-execute if entity @s[scores={AsaMatrix=61..65}] run tp @s ^0 ^0 ^0
-execute if entity @s[scores={AsaMatrix=66}] run function asa_animator:zinogre/anim/shot/keyframes/10
-execute if entity @s[scores={AsaMatrix=66..70}] run tp @s ^0 ^0 ^0
-execute if entity @s[scores={AsaMatrix=71}] run function asa_animator:zinogre/anim/shot/keyframes/11
-execute if entity @s[scores={AsaMatrix=71..85}] run tp @s ^0 ^0 ^-0.03333334
-execute if entity @s[scores={AsaMatrix=86..}] run function asa_animator:zinogre/anim/shot/end
+execute if entity @s[scores={AsaMatrix=29..36}] run tp @s ^0 ^-0.6 ^0 ~5 ~
+execute if entity @s[scores={AsaMatrix=37}] run function asa_animator:zinogre/anim/shot/keyframes/4
+execute if entity @s[scores={AsaMatrix=37..43}] run tp @s ^0 ^-0.01428571 ^0 ~1 ~
+execute if entity @s[scores={AsaMatrix=44}] run function asa_animator:zinogre/anim/shot/keyframes/5
+execute if entity @s[scores={AsaMatrix=44..50}] run tp @s ^0 ^-0.01428571 ^0
+execute if entity @s[scores={AsaMatrix=51}] run function asa_animator:zinogre/anim/shot/keyframes/6
+execute if entity @s[scores={AsaMatrix=51..58}] run tp @s ^0 ^0.625 ^0 ~5 ~
+execute if entity @s[scores={AsaMatrix=59}] run function asa_animator:zinogre/anim/shot/keyframes/7
+execute if entity @s[scores={AsaMatrix=59..66}] run tp @s ^0 ^-0.6 ^0 ~-5 ~
+execute if entity @s[scores={AsaMatrix=67}] run function asa_animator:zinogre/anim/shot/keyframes/8
+execute if entity @s[scores={AsaMatrix=67..73}] run tp @s ^0 ^-0.01428571 ^0 ~-1 ~
+execute if entity @s[scores={AsaMatrix=74}] run function asa_animator:zinogre/anim/shot/keyframes/9
+execute if entity @s[scores={AsaMatrix=74..80}] run tp @s ^0 ^-0.01428571 ^0
+execute if entity @s[scores={AsaMatrix=81}] run function asa_animator:zinogre/anim/shot/keyframes/10
+execute if entity @s[scores={AsaMatrix=81..90}] run tp @s ^-0.01 ^0 ^0
+execute if entity @s[scores={AsaMatrix=91}] run function asa_animator:zinogre/anim/shot/keyframes/11
+execute if entity @s[scores={AsaMatrix=91..100}] run tp @s ^0.005 ^0.025 ^0 ~1 ~
+execute if entity @s[scores={AsaMatrix=101}] run function asa_animator:zinogre/anim/shot/keyframes/12
+execute if entity @s[scores={AsaMatrix=101..110}] run tp @s ^0.005 ^0.025 ^0
+execute if entity @s[scores={AsaMatrix=111..}] run function asa_animator:zinogre/anim/shot/end
 execute as @e[type=armor_stand,tag=ZinogreParts] run function #asa_matrix:animate
 function asa_animator:zinogre/model
 
-execute if entity @s[scores={AsaMatrix=..25}] run function asa_animator:zinogre/manager/rotate
-execute if entity @s[scores={AsaMatrix=..70}] run particle minecraft:sneeze ~ ~2 ~ 1 1 1 0.1 30
+# 移動
+    execute if entity @s[scores={AsaMatrix=1..20}] run function asa_animator:zinogre/manager/rotate
 
-execute if entity @s[scores={AsaMatrix=41}] at @s facing entity @e[tag=ZinogreAttackTarget,limit=1] feet unless entity @s[tag=IsThunder] run function asa_animator:zinogre/anim/shot/events/shot_l
-execute if entity @s[scores={AsaMatrix=61}] at @s facing entity @e[tag=ZinogreAttackTarget,limit=1] feet unless entity @s[tag=IsThunder] run function asa_animator:zinogre/anim/shot/events/shot_r
-execute if entity @s[scores={AsaMatrix=41}] at @s facing entity @e[tag=ZinogreAttackTarget,limit=1] feet if entity @s[tag=IsThunder] run function asa_animator:zinogre/anim/shot/events/shot_l_t
-execute if entity @s[scores={AsaMatrix=61}] at @s facing entity @e[tag=ZinogreAttackTarget,limit=1] feet if entity @s[tag=IsThunder] run function asa_animator:zinogre/anim/shot/events/shot_r_t
+# 演出
+    execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master @a ~ ~ ~ 3 0.7
+    execute if entity @s[scores={AsaMatrix=1..65}] run particle dust 1 1000000000 1000000000 5 ~ ~3 ~ 3 3 3 0 5
+    execute if entity @s[scores={AsaMatrix=21}] run function asa_animator:zinogre/manager/particle/step
+    execute if entity @s[scores={AsaMatrix=37}] run function asa_animator:zinogre/manager/particle/step
+    execute if entity @s[scores={AsaMatrix=37}] run playsound entity.hoglin.step master @a ~ ~ ~ 3 0.5
+    execute if entity @s[scores={AsaMatrix=51}] run function asa_animator:zinogre/manager/particle/step
+    execute if entity @s[scores={AsaMatrix=67}] run function asa_animator:zinogre/manager/particle/step
+    execute if entity @s[scores={AsaMatrix=67}] run playsound entity.hoglin.step master @a ~ ~ ~ 3 0.5
 
-execute if entity @s[scores={AsaMatrix=26}] run playsound block.grass.step master @a ~ ~ ~ 2 0.5
-execute if entity @s[scores={AsaMatrix=26}] run particle block grass ~ ~ ~ 1 0 1 1 10
-execute if entity @s[scores={AsaMatrix=41}] run playsound block.grass.step master @a ~ ~ ~ 2 0.5
-execute if entity @s[scores={AsaMatrix=41}] run particle block grass ~ ~ ~ 1 0 1 1 10
-execute if entity @s[scores={AsaMatrix=61}] run playsound block.grass.step master @a ~ ~ ~ 2 0.5
-execute if entity @s[scores={AsaMatrix=61}] run particle block grass ~ ~ ~ 1 0 1 1 10
+# 攻撃
+    execute if entity @s[scores={AsaMatrix=35}] run function asa_animator:zinogre/anim/shot/events/shot_l
+    execute if entity @s[scores={AsaMatrix=65}] run function asa_animator:zinogre/anim/shot/events/shot_r
+
+# 状態更新
+    execute if entity @s[scores={AsaMatrix=21}] run tag @s add IsFlying
+    execute if entity @s[scores={AsaMatrix=37}] run tag @s remove IsFlying
+    execute if entity @s[scores={AsaMatrix=51}] run tag @s add IsFlying
+    execute if entity @s[scores={AsaMatrix=67}] run tag @s remove IsFlying
+
+# 高度調整
+    execute if entity @s[scores={AsaMatrix=81..}] at @s if block ~ ~-0.1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
+    execute if entity @s[scores={AsaMatrix=81..}] at @s unless block ~ ~0.1 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~ ~ ~

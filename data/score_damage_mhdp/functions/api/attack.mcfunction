@@ -36,4 +36,6 @@
 # 属性やられ
     execute if entity @s[type=player] run function score_damage_mhdp:mh_dp/blight
 # ノックパック
-    execute if entity @s[type=player] if data storage mhdp: DamageType{Knockback:1b} run function mh_dp:player/knockback/start_damage
+    execute if entity @s[type=player] if data storage mhdp: DamageType{Knockback:1} run function mh_dp:player/knockback/start_damage_0
+    execute if entity @s[type=player] if data storage mhdp: DamageType{Knockback:2} run function mh_dp:player/knockback/start_damage_1
+    execute if entity @s[type=player] if data storage mhdp: DamageType{Knockback:3} run function mh_dp:player/knockback/start_damage_2

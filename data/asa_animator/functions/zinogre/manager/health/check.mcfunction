@@ -11,4 +11,4 @@ execute unless score #zinogre_damage AsaMatrix matches -251.. at @s run function
 # 体力回復
 execute if score #zinogre_damage AsaMatrix matches -251.. run data merge entity @s {Health:1000f}
 # 複数判定への攻撃を無効
-execute unless score #zinogre_damage AsaMatrix matches -251.. run execute as @e[type=slime,tag=ZinogreParts] run data merge entity @s {Health:1000f}
+execute unless score #zinogre_damage AsaMatrix matches -251.. unless entity @e[type=armor_stand,tag=ZinogreRoot,tag=AnmDeath] run execute as @e[type=slime,tag=ZinogreParts] run data merge entity @s {Health:1000f}

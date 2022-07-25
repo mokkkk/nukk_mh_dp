@@ -3,6 +3,7 @@
     execute if entity @s[tag=ReusRoot] run function asa_animator:reus/manager/item/flash
     execute if entity @s[tag=ReiaRoot] run function asa_animator:reia/manager/item/flash
     execute if entity @s[tag=DiablosRoot] run function asa_animator:diablos/manager/item/flash
+    execute if entity @s[tag=ZinogreRoot] run function asa_animator:zinogre/manager/item/flash
     execute if entity @s[tag=NargaRoot] run function asa_animator:narga/manager/item/flash
     execute if entity @s[tag=DynoRoot] run function asa_animator:dyno/manager/item/flash
     execute if entity @s[tag=BrachyRoot] run function asa_animator:brachy/manager/item/flash

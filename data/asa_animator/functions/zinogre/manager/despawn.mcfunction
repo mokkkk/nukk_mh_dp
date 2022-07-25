@@ -3,8 +3,12 @@
 tellraw @a {"text": "【雷狼竜は居なくなった】"}
 
 # タグ消去
-tag @e[tag=ZinogreTarget] remove ZinogreTarget
-tag @e[tag=ZinogreAttackTarget] remove ZinogreAttackTarget
+    tag @e[tag=ZinogreTarget] remove ZinogreTarget
+    tag @e[tag=ZinogreAttackTarget] remove ZinogreAttackTarget
+
+# Marker消去
+    kill @e[type=marker,tag=ZinogreMoveRotate]
+    kill @e[type=marker,tag=ZinogreDashTarget]
 
 # 当たり判定削除
 function asa_animator:zinogre/manager/health/kill
