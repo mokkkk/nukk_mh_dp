@@ -23,6 +23,9 @@ execute if entity @s[tag=AnmBite2] run function asa_animator:reus/anim/bite_2/ma
 # チャージ噛みつき
 execute if entity @s[tag=AnmBiteC] run function asa_animator:reus/anim/bite_charge/main
 
+# ハード：滑空蹴り
+execute if entity @s[tag=AnmHardKick] run function asa_animator:reus/anim/hard_jump_kick/main
+
 # 飛行開始
 execute if entity @s[tag=AnmFly] run function asa_animator:reus/anim/start_fly/main
 
