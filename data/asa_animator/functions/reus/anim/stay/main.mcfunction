@@ -16,7 +16,7 @@ execute as @e[type=armor_stand,tag=ReusParts] run function #asa_matrix:animate
 function asa_animator:reus/model
 
 execute if entity @s[tag=IsAnger,scores={AsaMatrix=1}] run function asa_animator:reus/anim/stay/events/change
-execute if entity @s[scores={AsaMatrix=1}] if score #mhdp_reus_actcount AsaMatrix matches 1.. run function asa_animator:reus/anim/stay/events/change
+# execute if entity @s[scores={AsaMatrix=1}] if score #mhdp_reus_actcount AsaMatrix matches 1.. run function asa_animator:reus/anim/stay/events/change
 execute if entity @s[scores={AsaMatrix=11}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 
 execute at @s if block ~ ~-0.2 ~ #asa_animator:no_collision at @s run function asa_animator:zinogre/manager/check_ground
