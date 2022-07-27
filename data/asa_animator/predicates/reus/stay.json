@@ -247,6 +247,13 @@
         "predicate": {
           "nbt": "{Tags:[\"AnmHardKick\"]}"
         }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmHardFjb\"]}"
+        }
       }
     ]
   }
