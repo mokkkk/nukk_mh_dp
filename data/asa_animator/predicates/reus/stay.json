@@ -254,6 +254,20 @@
         "predicate": {
           "nbt": "{Tags:[\"AnmHardFjb\"]}"
         }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmHardFlyFlame\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmHardFlyBreathTurn\"]}"
+        }
       }
     ]
   }

@@ -1,5 +1,5 @@
 
-# 地上時行動
+### 地上時行動
 
 # 尻尾回転・左
     execute if entity @s[tag=AnmTailL] run function asa_animator:reus/anim/tail_spin_l/main
@@ -28,7 +28,7 @@
 # ハード：滑空蹴り
     execute if entity @s[tag=AnmHardKick] run function asa_animator:reus/anim/hard_jump_kick/main
 
-# 地上 → 飛行
+### 地上 → 飛行
 
 # 飛行開始
     execute if entity @s[tag=AnmFly] run function asa_animator:reus/anim/start_fly/main
@@ -37,7 +37,7 @@
 # ハード：FJB
     execute if entity @s[tag=AnmHardFjb] run function asa_animator:reus/anim/hard_fjb/main
 
-# 飛行時行動
+### 飛行時行動
 
 # 飛行移動(前進)
     execute if entity @s[tag=AnmFlyMoveF] run function asa_animator:reus/anim/flying_move_forward/main
@@ -58,7 +58,12 @@
 # なぎ払いブレス
     execute if entity @s[tag=AnmFlyBreathL] run function asa_animator:reus/anim/flying_breath_large/main
 
-# 飛行 → 地上
+# ハード：対地火炎放射
+    execute if entity @s[tag=AnmHardFlyFlame] run function asa_animator:reus/anim/hard_flying_flare/main
+    # ハード：振り返りブレス
+        execute if entity @s[tag=AnmHardFlyBreathTurn] run function asa_animator:reus/anim/hard_flying_breath_turn/main
+
+### 飛行 → 地上
 
 # 着地
     execute if entity @s[tag=AnmEndFly] run function asa_animator:reus/anim/end_fly/main
@@ -66,6 +71,7 @@
     execute if entity @s[tag=AnmFlyJump] run function asa_animator:reus/anim/flying_jump/main
 # 地走り火炎
     execute if entity @s[tag=AnmFlyBreathC] run function asa_animator:reus/anim/flying_breath_charge/main
+
 
 # 飛行時ひるみ
 execute if entity @s[tag=AnmFlyDamage] run function asa_animator:reus/anim/flying_damage/main

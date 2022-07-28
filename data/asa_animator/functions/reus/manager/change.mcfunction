@@ -31,7 +31,7 @@ execute if entity @s[tag=IsAnger] if score #mhdp_reus_anger_count AsaMatrix matc
 # execute unless predicate asa_animator:reus/turn run function asa_animator:reus/manager/change_normal/_/turn_b
 
 # 強制
-tag @s add AnmHardFjb
+tag @s add AnmHardFlyFlame
 
 # 終了
 tag @s remove ChangeAnm
