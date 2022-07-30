@@ -33,7 +33,7 @@ function asa_animator:reus/model
     execute if entity @s[scores={AsaMatrix=1..23}] run function asa_animator:reus/manager/rotate
     execute if entity @s[scores={AsaMatrix=26..30}] at @s run tp @s ^ ^-0.2 ^1.5
     execute if entity @s[scores={AsaMatrix=31..35}] at @s run tp @s ^ ^-0.1 ^1.5
-    execute if entity @s[scores={AsaMatrix=36..40}] at @s run tp @s ^ ^0.1 ^1.5
+    execute if entity @s[scores={AsaMatrix=36..40}] at @s run tp @s ^ ^ ^1.5
     execute if entity @s[scores={AsaMatrix=26..40}] at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.3 ~ ~ ~
     execute if entity @s[scores={AsaMatrix=41}] run function asa_animator:reus/anim/end_fly/events/set_pos
     execute if entity @s[scores={AsaMatrix=41..70}] run function asa_animator:reus/anim/end_fly/events/offset

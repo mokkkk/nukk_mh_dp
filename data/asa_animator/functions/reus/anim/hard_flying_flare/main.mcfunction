@@ -25,6 +25,7 @@ function asa_animator:reus/model
     execute if entity @s[scores={AsaMatrix=55..64}] at @s run tp @s ^ ^ ^0.4
 
 # 演出
+    execute if entity @s[scores={AsaMatrix=1}] run playsound entity.player.breath master @a ~ ~ ~ 2 0.8
     execute if entity @s[scores={AsaMatrix=8}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
     execute if entity @s[scores={AsaMatrix=40}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 

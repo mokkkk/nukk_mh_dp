@@ -4,7 +4,7 @@ execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reus/anim/h
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:reus/anim/hard_flying_breath_turn/keyframes/0
 execute if entity @s[scores={AsaMatrix=1..13}] run tp @s ^0 ^-0.04615385 ^-0.3
 execute if entity @s[scores={AsaMatrix=14}] run function asa_animator:reus/anim/hard_flying_breath_turn/keyframes/1
-execute if entity @s[scores={AsaMatrix=14..21}] run tp @s ^0 ^0.175 ^-0.15
+execute if entity @s[scores={AsaMatrix=14..21}] run tp @s ^0 ^0.175 ^-0.3
 execute if entity @s[scores={AsaMatrix=22}] run function asa_animator:reus/anim/hard_flying_breath_turn/keyframes/2
 execute if entity @s[scores={AsaMatrix=22..29}] run tp @s ^0 ^-0.075 ^0.0625
 execute if entity @s[scores={AsaMatrix=30}] run function asa_animator:reus/anim/hard_flying_breath_turn/keyframes/3
@@ -14,7 +14,7 @@ execute as @e[type=armor_stand,tag=ReusParts] run function #asa_matrix:animate
 function asa_animator:reus/model
 
 # 移動
-    execute if entity @s[scores={AsaMatrix=..18}] run function asa_animator:reus/manager/rotate
+    execute if entity @s[scores={AsaMatrix=..18}] at @s run function asa_animator:reus/manager/rotate
 
 # 演出
     execute if entity @s[scores={AsaMatrix=8}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7

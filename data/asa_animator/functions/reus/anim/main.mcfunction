@@ -55,10 +55,13 @@
 
 # ブレス
     execute if entity @s[tag=AnmFlyBreath] run function asa_animator:reus/anim/flying_breath/main
-# なぎ払いブレス
+# 対地なぎ払い火炎放射
     execute if entity @s[tag=AnmFlyBreathL] run function asa_animator:reus/anim/flying_breath_large/main
 
-# ハード：対地火炎放射
+# ハード：チャージ噛みつき
+    execute if entity @s[tag=AnmHardFlyBiteC] run function asa_animator:reus/anim/hard_flying_bite_charge/main
+
+# ハード：対地前進火炎放射
     execute if entity @s[tag=AnmHardFlyFlame] run function asa_animator:reus/anim/hard_flying_flare/main
     # ハード：振り返りブレス
         execute if entity @s[tag=AnmHardFlyBreathTurn] run function asa_animator:reus/anim/hard_flying_breath_turn/main

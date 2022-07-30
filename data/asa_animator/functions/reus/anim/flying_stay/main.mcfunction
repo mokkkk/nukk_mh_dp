@@ -18,3 +18,5 @@ execute if entity @s[tag=IsAnger,scores={AsaMatrix=1}] run function asa_animator
 
 execute if entity @s[scores={AsaMatrix=10}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
 execute if entity @s[scores={AsaMatrix=34}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
+
+execute at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.5 ~ ~ ~
