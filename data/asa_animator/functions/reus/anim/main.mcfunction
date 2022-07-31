@@ -61,6 +61,11 @@
 # ハード：チャージ噛みつき
     execute if entity @s[tag=AnmHardFlyBiteC] run function asa_animator:reus/anim/hard_flying_bite_charge/main
 
+# ハード：移動床ドン
+    execute if entity @s[tag=AnmHardFlyJump] run function asa_animator:reus/anim/hard_flying_jump/main
+    # ハード：移動床ドン→BJB
+        execute if entity @s[tag=AnmHardJump2Bjb] run function asa_animator:reus/anim/hard_jump_to_bjb/main
+
 # ハード：対地前進火炎放射
     execute if entity @s[tag=AnmHardFlyFlame] run function asa_animator:reus/anim/hard_flying_flare/main
     # ハード：振り返りブレス

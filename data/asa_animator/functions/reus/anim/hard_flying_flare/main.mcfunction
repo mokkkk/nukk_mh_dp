@@ -21,6 +21,7 @@ function asa_animator:reus/model
 
 # 移動
     execute if entity @s[scores={AsaMatrix=..18}] run function asa_animator:reus/manager/rotate
+    execute if entity @s[scores={AsaMatrix=21..64}] run function asa_animator:reus/manager/rotate_lr
     execute if entity @s[scores={AsaMatrix=21..54}] at @s run tp @s ^ ^ ^0.7
     execute if entity @s[scores={AsaMatrix=55..64}] at @s run tp @s ^ ^ ^0.4
 
