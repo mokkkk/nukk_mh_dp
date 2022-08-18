@@ -27,11 +27,8 @@ execute unless score #mhdp_reus_actcount_phase AsaMatrix matches 8.. if entity @
 # 飛行→地上
 execute if score #mhdp_reus_actcount_phase AsaMatrix matches 8.. if entity @s[tag=IsFlying] run function asa_animator:reus/manager/change_phase/fly_to_land
 
-# # 軸合わせ
-# execute unless predicate asa_animator:reus/turn run function asa_animator:reus/manager/change_normal/_/turn_b
-
-# 強制
-tag @s add AnmHardFlyFlame
+# 軸合わせ
+execute unless predicate asa_animator:reus/turn run function asa_animator:reus/manager/change_normal/_/turn_b
 
 # 終了
 tag @s remove ChangeAnm
