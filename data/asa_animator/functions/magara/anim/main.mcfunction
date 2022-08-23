@@ -2,10 +2,16 @@
 # バックステップ
     execute if entity @s[tag=AnmBStep] run function asa_animator:magara/anim/
 
+# 3連ブレス
+    execute if entity @s[tag=AnmBreath3] run function asa_animator:magara/anim/breath_3/main
+
 # 地上時討伐
     execute if entity @s[tag=AnmDeath] run function asa_animator:magara/anim/death/main
 # 飛行時討伐
     execute if entity @s[tag=AnmFlyDeath] run function asa_animator:magara/anim/flying_death/main
+
+# 呻き
+    execute if entity @s[tag=AnmStay] run function asa_animator:magara/anim/stay/main
 
 # 登場
     execute if entity @s[tag=AnmSummon] run function asa_animator:magara/anim/summon/main

@@ -4,7 +4,8 @@
     scoreboard players set @s AsaMatrix 0
 
 # 非コンボ時ターゲットリセット
-#     execute if predicate asa_animator:magara/stay if predicate asa_animator:magara/combo run function asa_animator:magara/manager/change_target
+    execute if predicate asa_animator:magara/stay run function asa_animator:magara/manager/change_target
+    # execute if predicate asa_animator:magara/stay if predicate asa_animator:magara/combo run function asa_animator:magara/manager/change_target
 
 # 状態タグリセット
 #     function asa_animator:magara/manager/remove_state_tag
@@ -22,7 +23,7 @@
 #     execute if entity @s[tag=IsAnger] if score #mhdp_magara_anger_count AsaMatrix matches ..0 run function asa_animator:magara/manager/end_anger
 
 # 強制
-    tag @s add AnmVoice
+    tag @s add AnmStay
 
 # 終了
     tag @s remove ChangeAnm
