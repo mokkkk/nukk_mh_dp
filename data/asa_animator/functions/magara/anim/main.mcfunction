@@ -5,6 +5,9 @@
 # 3連ブレス
     execute if entity @s[tag=AnmBreath3] run function asa_animator:magara/anim/breath_3/main
 
+# 爆発薙ぎ払い
+    execute if entity @s[tag=AnmBombL] run function asa_animator:magara/anim/breath_bomb_l/main
+
 # 地上時討伐
     execute if entity @s[tag=AnmDeath] run function asa_animator:magara/anim/death/main
 # 飛行時討伐

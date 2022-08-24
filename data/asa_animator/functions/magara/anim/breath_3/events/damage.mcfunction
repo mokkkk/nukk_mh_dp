@@ -6,8 +6,11 @@ execute as @e[type=!armor_stand,type=!area_effect_cloud,type=!marker,tag=!Magara
 data remove storage score_damage: Argument
 data remove storage mhdp: DamageType
 
-playsound entity.generic.explode master @a ~ ~ ~ 3 0.5
-particle explosion_emitter ~ ~1 ~ 0 0 0 0 1
+playsound entity.generic.explode master @a ~ ~1 ~ 3 0.7
+particle dust 0.325 0.239 0.4 50 ~ ~1 ~ 1.3 1.3 1.3 0 50
+particle explosion ~ ~1 ~ 1 1 1 0 10
+particle flash ~ ~1 ~ 0.5 0.5 0.5 0 10
+particle squid_ink ~ ~1 ~ 1 1 1 0.4 30
 
 # 設置
     function asa_animator:magara/manager/attack/place_virus
