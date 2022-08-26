@@ -38,5 +38,5 @@ function asa_animator:magara/model
     execute if entity @s[scores={AsaMatrix=18}] positioned ^ ^1 ^7 run function asa_animator:magara/anim/bite/events/damage
 
 # 高度調整
-    execute at @s if block ~ ~-0.2 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
-    execute at @s unless block ~ ~ ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~
+    execute at @s if block ~ ~-0.1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
+    execute at @s unless block ~ ~0.1 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~

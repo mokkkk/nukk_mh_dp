@@ -9,5 +9,5 @@ execute as @e[type=armor_stand,tag=MagaraParts] run function #asa_matrix:animate
 function asa_animator:magara/model
 
 # 高度調整
-    execute if block ~ ~-0.2 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
-    execute unless block ~ ~ ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~
+    execute at @s if block ~ ~-0.1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
+    execute at @s unless block ~ ~0.1 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~

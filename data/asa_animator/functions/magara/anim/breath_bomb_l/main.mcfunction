@@ -24,7 +24,8 @@ execute as @e[type=armor_stand,tag=MagaraParts] run function #asa_matrix:animate
 function asa_animator:magara/model
 
 # 移動
-    execute if entity @s[scores={AsaMatrix=1..20}] run function asa_animator:magara/manager/rotate
+    execute if entity @s[scores={AsaMatrix=1..16}] run function asa_animator:magara/manager/rotate
+    execute if entity @s[scores={AsaMatrix=1..8}] if entity @e[tag=MagaraAttackTarget,distance=..8.0] at @s run tp @s ^ ^ ^-0.8
     execute if entity @s[scores={AsaMatrix=36..43}] unless entity @e[tag=MagaraAttackTarget,distance=..8.0] at @s run tp @s ^ ^ ^0.5
 
 # 演出
@@ -37,5 +38,9 @@ function asa_animator:magara/model
 
 # 攻撃
     execute if entity @s[scores={AsaMatrix=42}] positioned ^-5 ^2 ^6.5 run function asa_animator:magara/anim/breath_bomb_l/events/damage
-    execute if entity @s[scores={AsaMatrix=49}] positioned ^ ^2 ^8 run function asa_animator:magara/anim/breath_bomb_l/events/damage
-    execute if entity @s[scores={AsaMatrix=56}] positioned ^5 ^2 ^6.5 run function asa_animator:magara/anim/breath_bomb_l/events/damage
+    execute if entity @s[scores={AsaMatrix=46}] positioned ^ ^2 ^8 run function asa_animator:magara/anim/breath_bomb_l/events/damage
+    execute if entity @s[scores={AsaMatrix=50}] positioned ^5 ^2 ^6.5 run function asa_animator:magara/anim/breath_bomb_l/events/damage
+    
+# 高度調整
+    execute if entity @s[scores={AsaMatrix=44..}] at @s if block ~ ~-0.1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
+    execute if entity @s[scores={AsaMatrix=44..}] at @s unless block ~ ~0.1 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~

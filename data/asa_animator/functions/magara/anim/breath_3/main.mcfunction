@@ -39,6 +39,7 @@ function asa_animator:magara/model
 
 # 移動
     execute if entity @s[scores={AsaMatrix=1..35}] run function asa_animator:magara/manager/rotate
+    execute if entity @s[scores={AsaMatrix=1..13}] if entity @e[tag=MagaraAttackTarget,distance=..8.0] at @s run tp @s ^ ^ ^-0.8
 
 # 演出
     execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7

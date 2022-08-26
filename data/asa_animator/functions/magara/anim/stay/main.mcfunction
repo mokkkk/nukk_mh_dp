@@ -2,31 +2,44 @@
 scoreboard players add @s AsaMatrix 1
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:magara/anim/stay/start
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:magara/anim/stay/keyframes/0
-execute if entity @s[scores={AsaMatrix=1..7}] run tp @s ^0 ^0.01428571 ^0 ~-1 ~
+execute if entity @s[scores={AsaMatrix=1..7}] run tp @s ^0 ^0.01428571 ^0 ~0.5 ~
 execute if entity @s[scores={AsaMatrix=8}] run function asa_animator:magara/anim/stay/keyframes/1
-execute if entity @s[scores={AsaMatrix=8..22}] run tp @s ^0 ^-0.01333333 ^0 ~0.5 ~
+execute if entity @s[scores={AsaMatrix=8..22}] run tp @s ^0 ^-0.01333333 ^0
 execute if entity @s[scores={AsaMatrix=23}] run function asa_animator:magara/anim/stay/keyframes/2
-execute if entity @s[scores={AsaMatrix=23..33}] run tp @s ^0 ^0 ^0
-execute if entity @s[scores={AsaMatrix=34}] run function asa_animator:magara/anim/stay/keyframes/3
-execute if entity @s[scores={AsaMatrix=34..47}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=23..28}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=29}] run function asa_animator:magara/anim/stay/keyframes/3
+execute if entity @s[scores={AsaMatrix=29..47}] run tp @s ^0 ^0 ^0
 execute if entity @s[scores={AsaMatrix=48}] run function asa_animator:magara/anim/stay/keyframes/4
-execute if entity @s[scores={AsaMatrix=48..54}] run tp @s ^0 ^0.007142857 ^0
-execute if entity @s[scores={AsaMatrix=55}] run function asa_animator:magara/anim/stay/keyframes/5
-execute if entity @s[scores={AsaMatrix=55..61}] run tp @s ^0 ^0 ^0
-execute if entity @s[scores={AsaMatrix=62}] run function asa_animator:magara/anim/stay/keyframes/6
-execute if entity @s[scores={AsaMatrix=62..68}] run tp @s ^0 ^0.001785714 ^0
-execute if entity @s[scores={AsaMatrix=69}] run function asa_animator:magara/anim/stay/keyframes/7
-execute if entity @s[scores={AsaMatrix=69..73}] run tp @s ^0 ^0.0025 ^0
+execute if entity @s[scores={AsaMatrix=48..53}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=54}] run function asa_animator:magara/anim/stay/keyframes/5
+execute if entity @s[scores={AsaMatrix=54..59}] run tp @s ^0 ^0.008333334 ^0
+execute if entity @s[scores={AsaMatrix=60}] run function asa_animator:magara/anim/stay/keyframes/6
+execute if entity @s[scores={AsaMatrix=60..66}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=67}] run function asa_animator:magara/anim/stay/keyframes/7
+execute if entity @s[scores={AsaMatrix=67..73}] run tp @s ^0 ^0.001785714 ^0
 execute if entity @s[scores={AsaMatrix=74}] run function asa_animator:magara/anim/stay/keyframes/8
-execute if entity @s[scores={AsaMatrix=74..78}] run tp @s ^0 ^0.0025 ^0 ~1 ~
+execute if entity @s[scores={AsaMatrix=74..78}] run tp @s ^0 ^0.0025 ^0
 execute if entity @s[scores={AsaMatrix=79}] run function asa_animator:magara/anim/stay/keyframes/9
-execute if entity @s[scores={AsaMatrix=79..85}] run tp @s ^0 ^0.001785714 ^0 ~-0.5 ~
-execute if entity @s[scores={AsaMatrix=86}] run function asa_animator:magara/anim/stay/keyframes/10
-execute if entity @s[scores={AsaMatrix=86..95}] run tp @s ^0 ^0 ^0
-execute if entity @s[scores={AsaMatrix=96..}] run function asa_animator:magara/anim/stay/end
+execute if entity @s[scores={AsaMatrix=79..83}] run tp @s ^0 ^0.0025 ^0
+execute if entity @s[scores={AsaMatrix=84}] run function asa_animator:magara/anim/stay/keyframes/10
+execute if entity @s[scores={AsaMatrix=84..90}] run tp @s ^0 ^0.001785714 ^0 ~-0.5 ~
+execute if entity @s[scores={AsaMatrix=91}] run function asa_animator:magara/anim/stay/keyframes/11
+execute if entity @s[scores={AsaMatrix=91..100}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=101..}] run function asa_animator:magara/anim/stay/end
 execute as @e[type=armor_stand,tag=MagaraParts] run function #asa_matrix:animate
 function asa_animator:magara/model
 
 # 演出
     execute if entity @s[scores={AsaMatrix=8..47}] run function asa_animator:magara/anim/stay/events/shiver
+    execute if entity @s[scores={AsaMatrix=8..47}] run function asa_animator:magara/anim/stay/events/shiver
+    execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
+    execute if entity @s[scores={AsaMatrix=53}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.5
+    execute if entity @s[scores={AsaMatrix=74}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.5
 
+# 声
+    execute if entity @s[scores={AsaMatrix=1..8}] as @a[distance=..48] run playsound entity.hoglin.angry master @a ~ ~ ~ 1 0.8 0.5
+    execute if entity @s[scores={AsaMatrix=1..3}] as @a[distance=..48] run playsound block.lava.extinguish master @a ~ ~ ~ 1 0.5 0.5
+    execute if entity @s[scores={AsaMatrix=1..3}] as @a[distance=..48] run playsound block.lava.extinguish master @a ~ ~ ~ 1 0.8 0.5
+    execute if entity @s[scores={AsaMatrix=53..63}] as @a[distance=..48] run playsound entity.hoglin.angry master @a ~ ~ ~ 1 1.2 0.5
+    execute if entity @s[scores={AsaMatrix=53..58}] as @a[distance=..48] run playsound block.lava.extinguish master @a ~ ~ ~ 1 0.5 0.5
+    execute if entity @s[scores={AsaMatrix=53..58}] as @a[distance=..48] run playsound block.lava.extinguish master @a ~ ~ ~ 1 0.8 0.5
