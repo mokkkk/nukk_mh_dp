@@ -35,6 +35,6 @@ function asa_animator:magara/model
     execute if entity @s[scores={AsaMatrix=78}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.5
 
 # 攻撃
-    execute if entity @s[scores={AsaMatrix=40}] positioned ^-5 ^2 ^6.5 run function asa_animator:magara/anim/breath_bomb_l/events/damage
-    execute if entity @s[scores={AsaMatrix=47}] positioned ^ ^2 ^8 run function asa_animator:magara/anim/breath_bomb_l/events/damage
-    execute if entity @s[scores={AsaMatrix=54}] positioned ^5 ^2 ^6.5 run function asa_animator:magara/anim/breath_bomb_l/events/damage
+    execute if entity @s[scores={AsaMatrix=42}] positioned ^-5 ^2 ^6.5 run function asa_animator:magara/anim/breath_bomb_l/events/damage
+    execute if entity @s[scores={AsaMatrix=49}] positioned ^ ^2 ^8 run function asa_animator:magara/anim/breath_bomb_l/events/damage
+    execute if entity @s[scores={AsaMatrix=56}] positioned ^5 ^2 ^6.5 run function asa_animator:magara/anim/breath_bomb_l/events/damage
