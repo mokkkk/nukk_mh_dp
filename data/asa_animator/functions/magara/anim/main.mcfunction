@@ -1,6 +1,10 @@
 
-# バックステップ
-    execute if entity @s[tag=AnmBStep] run function asa_animator:magara/anim/
+# 移動
+    # バックステップ
+        # execute if entity @s[tag=AnmBStep] run function asa_animator:magara/anim/
+
+# 噛みつき
+    execute if entity @s[tag=AnmBite] run function asa_animator:magara/anim/bite/main
 
 # 3連ブレス
     execute if entity @s[tag=AnmBreath3] run function asa_animator:magara/anim/breath_3/main

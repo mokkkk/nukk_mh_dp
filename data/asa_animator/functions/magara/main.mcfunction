@@ -6,7 +6,7 @@
 execute if entity @s[tag=ChangeAnm] run function asa_animator:magara/manager/change
 
 # 待機
-execute if predicate asa_animator:magara/stay run function asa_animator:magara/test/main
+execute if predicate asa_animator:magara/stay run function asa_animator:magara/anim/idle/main
 # execute if predicate asa_animator:magara/stay run function asa_animator:magara/anim/stay/main
 # 軸合わせ
 # execute unless predicate asa_animator:magara/stay if entity @s[tag=AnmTurnL] run function asa_animator:magara/anim/turn_l/main

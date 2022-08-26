@@ -23,7 +23,7 @@
 #     execute if entity @s[tag=IsAnger] if score #mhdp_magara_anger_count AsaMatrix matches ..0 run function asa_animator:magara/manager/end_anger
 
 # 強制
-    tag @s add AnmBombR
+    tag @s add AnmBombL
 
 # 終了
     tag @s remove ChangeAnm
