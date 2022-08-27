@@ -74,7 +74,7 @@ execute as @e[type=armor_stand,tag=MagaraParts,tag=HeadU,limit=1] at @s run func
 execute as @e[type=armor_stand,tag=MagaraParts,tag=HeadU,limit=1] run function #asa_matrix:matrix_node
 scoreboard players set #asa_child_pos_x AsaMatrix 0
 scoreboard players set #asa_child_pos_y AsaMatrix 0
-scoreboard players set #asa_child_pos_z AsaMatrix 199
+scoreboard players set #asa_child_pos_z AsaMatrix 200
 function #asa_matrix:rotate
 execute as @e[type=armor_stand,tag=MagaraParts,tag=HeadL,limit=1] run function #asa_matrix:set_child_pos
 execute as @e[type=armor_stand,tag=MagaraParts,tag=ArmL0,limit=1] at @s run function #asa_matrix:get_parent_pos
@@ -117,6 +117,21 @@ scoreboard players set #asa_child_pos_y AsaMatrix 0
 scoreboard players set #asa_child_pos_z AsaMatrix 0
 function #asa_matrix:rotate
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingL000,limit=1] run function #asa_matrix:set_child_pos
+scoreboard players set #asa_child_pos_x AsaMatrix 1000
+scoreboard players set #asa_child_pos_y AsaMatrix 0
+scoreboard players set #asa_child_pos_z AsaMatrix 4300
+function #asa_matrix:rotate
+execute as @e[type=armor_stand,tag=MagaraParts,tag=WingL001,limit=1] run function #asa_matrix:set_child_pos
+scoreboard players set #asa_child_pos_x AsaMatrix 3100
+scoreboard players set #asa_child_pos_y AsaMatrix 0
+scoreboard players set #asa_child_pos_z AsaMatrix 800
+function #asa_matrix:rotate
+execute as @e[type=armor_stand,tag=MagaraParts,tag=WingL010,limit=1] run function #asa_matrix:set_child_pos
+scoreboard players set #asa_child_pos_x AsaMatrix 3100
+scoreboard players set #asa_child_pos_y AsaMatrix 0
+scoreboard players set #asa_child_pos_z AsaMatrix 4300
+function #asa_matrix:rotate
+execute as @e[type=armor_stand,tag=MagaraParts,tag=WingL011,limit=1] run function #asa_matrix:set_child_pos
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WArmL1,limit=1] at @s run function #asa_matrix:get_parent_pos
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WArmL1,limit=1] run function #asa_matrix:matrix_node
 scoreboard players set #asa_child_pos_x AsaMatrix 0
@@ -129,40 +144,21 @@ scoreboard players set #asa_child_pos_y AsaMatrix 0
 scoreboard players set #asa_child_pos_z AsaMatrix 3500
 function #asa_matrix:rotate
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingL100,limit=1] run function #asa_matrix:set_child_pos
-execute as @e[type=armor_stand,tag=MagaraParts,tag=WingL100,limit=1] at @s run function #asa_matrix:get_parent_pos
-execute as @e[type=armor_stand,tag=MagaraParts,tag=WingL100,limit=1] run function #asa_matrix:matrix_node
-scoreboard players set #asa_child_pos_x AsaMatrix 4250
+scoreboard players set #asa_child_pos_x AsaMatrix 4750
 scoreboard players set #asa_child_pos_y AsaMatrix 0
-scoreboard players set #asa_child_pos_z AsaMatrix 260
+scoreboard players set #asa_child_pos_z AsaMatrix 3760
 function #asa_matrix:rotate
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingL101,limit=1] run function #asa_matrix:set_child_pos
-scoreboard players set #asa_child_pos_x AsaMatrix -250
+scoreboard players set #asa_child_pos_x AsaMatrix 250
 scoreboard players set #asa_child_pos_y AsaMatrix 0
-scoreboard players set #asa_child_pos_z AsaMatrix -1850
+scoreboard players set #asa_child_pos_z AsaMatrix 1600
 function #asa_matrix:rotate
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingL110,limit=1] run function #asa_matrix:set_child_pos
-scoreboard players set #asa_child_pos_x AsaMatrix 4250
+scoreboard players set #asa_child_pos_x AsaMatrix 4750
 scoreboard players set #asa_child_pos_y AsaMatrix 0
-scoreboard players set #asa_child_pos_z AsaMatrix -1900
+scoreboard players set #asa_child_pos_z AsaMatrix 1600
 function #asa_matrix:rotate
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingL111,limit=1] run function #asa_matrix:set_child_pos
-execute as @e[type=armor_stand,tag=MagaraParts,tag=WingL000,limit=1] at @s run function #asa_matrix:get_parent_pos
-execute as @e[type=armor_stand,tag=MagaraParts,tag=WingL000,limit=1] run function #asa_matrix:matrix_node
-scoreboard players set #asa_child_pos_x AsaMatrix 50
-scoreboard players set #asa_child_pos_y AsaMatrix 0
-scoreboard players set #asa_child_pos_z AsaMatrix 4300
-function #asa_matrix:rotate
-execute as @e[type=armor_stand,tag=MagaraParts,tag=WingL001,limit=1] run function #asa_matrix:set_child_pos
-scoreboard players set #asa_child_pos_x AsaMatrix 4350
-scoreboard players set #asa_child_pos_y AsaMatrix 0
-scoreboard players set #asa_child_pos_z AsaMatrix 4300
-function #asa_matrix:rotate
-execute as @e[type=armor_stand,tag=MagaraParts,tag=WingL010,limit=1] run function #asa_matrix:set_child_pos
-scoreboard players set #asa_child_pos_x AsaMatrix 2100
-scoreboard players set #asa_child_pos_y AsaMatrix 0
-scoreboard players set #asa_child_pos_z AsaMatrix 4300
-function #asa_matrix:rotate
-execute as @e[type=armor_stand,tag=MagaraParts,tag=WingL011,limit=1] run function #asa_matrix:set_child_pos
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WArmR0,limit=1] at @s run function #asa_matrix:get_parent_pos
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WArmR0,limit=1] run function #asa_matrix:matrix_node
 scoreboard players set #asa_child_pos_x AsaMatrix 0
@@ -175,6 +171,21 @@ scoreboard players set #asa_child_pos_y AsaMatrix 0
 scoreboard players set #asa_child_pos_z AsaMatrix 0
 function #asa_matrix:rotate
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingR000,limit=1] run function #asa_matrix:set_child_pos
+scoreboard players set #asa_child_pos_x AsaMatrix -1000
+scoreboard players set #asa_child_pos_y AsaMatrix 0
+scoreboard players set #asa_child_pos_z AsaMatrix 4300
+function #asa_matrix:rotate
+execute as @e[type=armor_stand,tag=MagaraParts,tag=WingR001,limit=1] run function #asa_matrix:set_child_pos
+scoreboard players set #asa_child_pos_x AsaMatrix -3100
+scoreboard players set #asa_child_pos_y AsaMatrix 0
+scoreboard players set #asa_child_pos_z AsaMatrix 800
+function #asa_matrix:rotate
+execute as @e[type=armor_stand,tag=MagaraParts,tag=WingR010,limit=1] run function #asa_matrix:set_child_pos
+scoreboard players set #asa_child_pos_x AsaMatrix -3100
+scoreboard players set #asa_child_pos_y AsaMatrix 0
+scoreboard players set #asa_child_pos_z AsaMatrix 4300
+function #asa_matrix:rotate
+execute as @e[type=armor_stand,tag=MagaraParts,tag=WingR011,limit=1] run function #asa_matrix:set_child_pos
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WArmR1,limit=1] at @s run function #asa_matrix:get_parent_pos
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WArmR1,limit=1] run function #asa_matrix:matrix_node
 scoreboard players set #asa_child_pos_x AsaMatrix 0
@@ -187,40 +198,21 @@ scoreboard players set #asa_child_pos_y AsaMatrix 0
 scoreboard players set #asa_child_pos_z AsaMatrix 3500
 function #asa_matrix:rotate
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingR100,limit=1] run function #asa_matrix:set_child_pos
-execute as @e[type=armor_stand,tag=MagaraParts,tag=WingR100,limit=1] at @s run function #asa_matrix:get_parent_pos
-execute as @e[type=armor_stand,tag=MagaraParts,tag=WingR100,limit=1] run function #asa_matrix:matrix_node
-scoreboard players set #asa_child_pos_x AsaMatrix -4250
+scoreboard players set #asa_child_pos_x AsaMatrix -4750
 scoreboard players set #asa_child_pos_y AsaMatrix 0
-scoreboard players set #asa_child_pos_z AsaMatrix 260
+scoreboard players set #asa_child_pos_z AsaMatrix 3760
 function #asa_matrix:rotate
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingR101,limit=1] run function #asa_matrix:set_child_pos
-scoreboard players set #asa_child_pos_x AsaMatrix 250
+scoreboard players set #asa_child_pos_x AsaMatrix -250
 scoreboard players set #asa_child_pos_y AsaMatrix 0
-scoreboard players set #asa_child_pos_z AsaMatrix -1850
+scoreboard players set #asa_child_pos_z AsaMatrix 1600
 function #asa_matrix:rotate
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingR110,limit=1] run function #asa_matrix:set_child_pos
-scoreboard players set #asa_child_pos_x AsaMatrix -4250
+scoreboard players set #asa_child_pos_x AsaMatrix -4750
 scoreboard players set #asa_child_pos_y AsaMatrix 0
-scoreboard players set #asa_child_pos_z AsaMatrix -1900
+scoreboard players set #asa_child_pos_z AsaMatrix 1600
 function #asa_matrix:rotate
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingR111,limit=1] run function #asa_matrix:set_child_pos
-execute as @e[type=armor_stand,tag=MagaraParts,tag=WingR000,limit=1] at @s run function #asa_matrix:get_parent_pos
-execute as @e[type=armor_stand,tag=MagaraParts,tag=WingR000,limit=1] run function #asa_matrix:matrix_node
-scoreboard players set #asa_child_pos_x AsaMatrix -50
-scoreboard players set #asa_child_pos_y AsaMatrix 0
-scoreboard players set #asa_child_pos_z AsaMatrix 4300
-function #asa_matrix:rotate
-execute as @e[type=armor_stand,tag=MagaraParts,tag=WingR001,limit=1] run function #asa_matrix:set_child_pos
-scoreboard players set #asa_child_pos_x AsaMatrix -4350
-scoreboard players set #asa_child_pos_y AsaMatrix 0
-scoreboard players set #asa_child_pos_z AsaMatrix 4300
-function #asa_matrix:rotate
-execute as @e[type=armor_stand,tag=MagaraParts,tag=WingR010,limit=1] run function #asa_matrix:set_child_pos
-scoreboard players set #asa_child_pos_x AsaMatrix -2100
-scoreboard players set #asa_child_pos_y AsaMatrix 0
-scoreboard players set #asa_child_pos_z AsaMatrix 4300
-function #asa_matrix:rotate
-execute as @e[type=armor_stand,tag=MagaraParts,tag=WingR011,limit=1] run function #asa_matrix:set_child_pos
 execute as @e[type=armor_stand,tag=MagaraParts,tag=Tail0,limit=1] at @s run function #asa_matrix:get_parent_pos
 execute as @e[type=armor_stand,tag=MagaraParts,tag=Tail0,limit=1] run function #asa_matrix:matrix_node
 scoreboard players set #asa_child_pos_x AsaMatrix 0

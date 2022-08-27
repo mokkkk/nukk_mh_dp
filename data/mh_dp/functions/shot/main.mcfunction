@@ -41,6 +41,7 @@ execute if entity @s[tag=RukoStoneShot,tag=IsMove] run function asa_animator:ruk
 execute if entity @s[tag=RukoBreathB] run function asa_animator:ruko/anim/bjb_land/events/main_bullet
 
 execute if entity @s[tag=MagaraBreath] run function asa_animator:magara/anim/breath_3/events/main_bullet
+execute if entity @s[tag=MagaraBreathF] run function asa_animator:magara/anim/flying_breath/events/main_bullet
 
 execute if entity @s[tag=ItemFlash] run function mh_dp:item/flash/main_bullet
 

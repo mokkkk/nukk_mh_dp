@@ -39,7 +39,7 @@ function asa_animator:magara/model
 # 声
     execute if entity @s[scores={AsaMatrix=1..8}] as @a[distance=..48] run playsound entity.hoglin.angry master @a ~ ~ ~ 1 0.8 0.5
     execute if entity @s[scores={AsaMatrix=1..3}] as @a[distance=..48] run playsound block.lava.extinguish master @a ~ ~ ~ 1 0.5 0.5
-    execute if entity @s[scores={AsaMatrix=1..3}] as @a[distance=..48] run playsound block.lava.extinguish master @a ~ ~ ~ 1 0.8 0.5
+    execute if entity @s[scores={AsaMatrix=1..3}] as @a[distance=..48] run playsound entity.phantom.death master @a ~ ~ ~ 1 0.5 0.5
     execute if entity @s[scores={AsaMatrix=53..63}] as @a[distance=..48] run playsound entity.hoglin.angry master @a ~ ~ ~ 1 1.2 0.5
     execute if entity @s[scores={AsaMatrix=53..58}] as @a[distance=..48] run playsound block.lava.extinguish master @a ~ ~ ~ 1 0.5 0.5
-    execute if entity @s[scores={AsaMatrix=53..58}] as @a[distance=..48] run playsound block.lava.extinguish master @a ~ ~ ~ 1 0.8 0.5
+    execute if entity @s[scores={AsaMatrix=53..58}] as @a[distance=..48] run playsound entity.phantom.death master @a ~ ~ ~ 1 0.5 0.5

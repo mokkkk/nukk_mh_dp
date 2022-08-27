@@ -23,7 +23,7 @@
 #     execute if entity @s[tag=IsAnger] if score #mhdp_magara_anger_count AsaMatrix matches ..0 run function asa_animator:magara/manager/end_anger
 
 # 強制
-    tag @s add AnmMoveDash
+    tag @s add AnmFly
     # function asa_animator:magara/manager/change_normal/_/bite_turn
 
 # 終了
