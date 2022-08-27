@@ -25,4 +25,4 @@ function asa_animator:magara/model
     execute if entity @s[scores={AsaMatrix=1}] run playsound block.grass.step master @a ~ ~ ~ 2 0.7
 
 # 攻撃
-    execute if entity @s[scores={AsaMatrix=16}] positioned ^ ^1 ^7 run function asa_animator:magara/anim/breath_3/events/shot_2
+    execute if entity @s[scores={AsaMatrix=16}] positioned ^ ^1 ^7 run function asa_animator:magara/anim/breath/events/shot
