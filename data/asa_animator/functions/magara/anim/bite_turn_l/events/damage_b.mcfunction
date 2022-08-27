@@ -6,4 +6,4 @@ execute as @e[type=!armor_stand,type=!area_effect_cloud,type=!marker,tag=!ReusPa
 data remove storage score_damage: Argument
 data remove storage mhdp: DamageType
 
-execute at @e[type=armor_stand,tag=MagaraParts,tag=HeadU] run particle dust 0.325 0.239 0.4 3 ~ ~ ~ 0.3 0.3 0.3 0 5
+execute at @e[type=armor_stand,tag=MagaraParts,tag=HeadU] run particle dust 0.325 0.239 0.4 3 ~ ~1.4 ~ 0.3 0.3 0.3 0 5

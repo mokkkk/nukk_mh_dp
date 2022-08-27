@@ -23,8 +23,8 @@
 #     execute if entity @s[tag=IsAnger] if score #mhdp_magara_anger_count AsaMatrix matches ..0 run function asa_animator:magara/manager/end_anger
 
 # 強制
-    tag @s add AnmBreath
-    # function asa_animator:magara/manager/change_normal/_/bomb
+    # tag @s add AnmBite2
+    function asa_animator:magara/manager/change_normal/_/bite_turn
 
 # 終了
     tag @s remove ChangeAnm

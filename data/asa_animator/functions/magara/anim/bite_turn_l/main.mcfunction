@@ -4,12 +4,12 @@ execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:magara/anim
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:magara/anim/bite_turn_l/keyframes/0
 execute if entity @s[scores={AsaMatrix=1..6}] run tp @s ^0 ^0 ^0
 execute if entity @s[scores={AsaMatrix=7}] run function asa_animator:magara/anim/bite_turn_l/keyframes/1
-execute if entity @s[scores={AsaMatrix=7..12}] run tp @s ^0 ^0 ^0 ~1 ~
+execute if entity @s[scores={AsaMatrix=7..12}] run tp @s ^0 ^0 ^0
 execute if entity @s[scores={AsaMatrix=13}] run function asa_animator:magara/anim/bite_turn_l/keyframes/2
 execute if entity @s[scores={AsaMatrix=13..18}] run tp @s ^0 ^0 ^0 ~2 ~
 execute if entity @s[scores={AsaMatrix=19..22}] run tp @s ^0 ^0 ^0 ~0.1 ~
 execute if entity @s[scores={AsaMatrix=23}] run function asa_animator:magara/anim/bite_turn_l/keyframes/3
-execute if entity @s[scores={AsaMatrix=23..27}] run tp @s ^-0.3 ^0.06 ^0.5 ~-14 ~
+execute if entity @s[scores={AsaMatrix=23..27}] run tp @s ^-0.3 ^0.06 ^0.8 ~-14 ~
 execute if entity @s[scores={AsaMatrix=28}] run function asa_animator:magara/anim/bite_turn_l/keyframes/4
 execute if entity @s[scores={AsaMatrix=28..35}] run tp @s ^0.05 ^0.0375 ^0.3 ~-10 ~
 execute if entity @s[scores={AsaMatrix=36}] run function asa_animator:magara/anim/bite_turn_l/keyframes/5

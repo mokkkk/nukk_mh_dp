@@ -5,6 +5,8 @@
 
 # 噛みつき
     execute if entity @s[tag=AnmBite] run function asa_animator:magara/anim/bite/main
+# 2連嚙みつき
+    execute if entity @s[tag=AnmBite2] run function asa_animator:magara/anim/bite_2/main
     
 # 回転嚙みつき → 尻尾薙ぎ払い
     execute if entity @s[tag=AnmBiteTurnL] run function asa_animator:magara/anim/bite_turn_l/main
