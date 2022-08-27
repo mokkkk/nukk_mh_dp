@@ -1,7 +1,10 @@
 
+## 通常時行動
 # 移動
     # バックステップ
         # execute if entity @s[tag=AnmBStep] run function asa_animator:magara/anim/
+    # ダッシュ移動
+        execute if entity @s[tag=AnmMoveDash] run function asa_animator:magara/anim/move_dash/main
 
 # 噛みつき
     execute if entity @s[tag=AnmBite] run function asa_animator:magara/anim/bite/main
@@ -11,6 +14,11 @@
 # 回転嚙みつき → 尻尾薙ぎ払い
     execute if entity @s[tag=AnmBiteTurnL] run function asa_animator:magara/anim/bite_turn_l/main
     execute if entity @s[tag=AnmBiteTurnR] run function asa_animator:magara/anim/bite_turn_r/main
+
+# 突進
+    execute if entity @s[tag=AnmDashStart] run function asa_animator:magara/anim/dash_start/main
+    execute if entity @s[tag=AnmDash] run function asa_animator:magara/anim/dash/main
+    execute if entity @s[tag=AnmDashStop] run function asa_animator:magara/anim/dash_stop/main
 
 # ブレス
     execute if entity @s[tag=AnmBreath] run function asa_animator:magara/anim/breath/main
@@ -22,6 +30,8 @@
 # 爆発薙ぎ払い
     execute if entity @s[tag=AnmBombL] run function asa_animator:magara/anim/breath_bomb_l/main
     execute if entity @s[tag=AnmBombR] run function asa_animator:magara/anim/breath_bomb_r/main
+
+## 狂竜時行動
 
 # 地上時討伐
     execute if entity @s[tag=AnmDeath] run function asa_animator:magara/anim/death/main

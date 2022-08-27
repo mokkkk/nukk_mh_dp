@@ -52,13 +52,13 @@ data modify storage asa_matrix: Rotate set value [1642f,-1500f,-1429f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WArmL0] run function #asa_matrix:animate_setparam
 data modify storage asa_matrix: Rotate set value [2357f,1714f,2142f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WArmR0] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-1215f,-429f,0f]
+data modify storage asa_matrix: Rotate set value [-2643f,-3286f,4285f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WArmL1] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-1572f,1714f,5000f]
+data modify storage asa_matrix: Rotate set value [-1572f,285f,-3572f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WArmR1] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-1215f,-429f,0f]
+data modify storage asa_matrix: Rotate set value [-2643f,-3286f,4285f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WArmL2] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-1572f,1714f,5000f]
+data modify storage asa_matrix: Rotate set value [-1572f,285f,-3572f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WArmR2] run function #asa_matrix:animate_setparam
 data modify storage asa_matrix: Rotate set value [1642f,-1500f,-1429f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingL000] run function #asa_matrix:animate_setparam
@@ -76,19 +76,19 @@ data modify storage asa_matrix: Rotate set value [1642f,-1500f,-1429f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingL011] run function #asa_matrix:animate_setparam
 data modify storage asa_matrix: Rotate set value [2357f,1714f,2142f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingR011] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-1215f,-429f,0f]
+data modify storage asa_matrix: Rotate set value [-2643f,-3286f,4285f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingL100] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-1572f,1714f,5000f]
+data modify storage asa_matrix: Rotate set value [-1572f,285f,-3572f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingR100] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-1215f,-429f,0f]
+data modify storage asa_matrix: Rotate set value [-2643f,-3286f,4285f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingL101] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-1572f,1714f,5000f]
+data modify storage asa_matrix: Rotate set value [-1572f,285f,-3572f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingR101] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-1215f,-429f,0f]
+data modify storage asa_matrix: Rotate set value [-2643f,-3286f,4285f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingL110] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-1572f,1714f,5000f]
+data modify storage asa_matrix: Rotate set value [-1572f,285f,-3572f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingR110] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-1215f,-429f,0f]
+data modify storage asa_matrix: Rotate set value [-2643f,-3286f,4285f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingL111] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-1572f,1714f,5000f]
+data modify storage asa_matrix: Rotate set value [-1572f,285f,-3572f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingR111] run function #asa_matrix:animate_setparam
