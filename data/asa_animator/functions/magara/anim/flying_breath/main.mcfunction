@@ -24,5 +24,3 @@ function asa_animator:magara/model
 
 # 攻撃
     execute if entity @s[scores={AsaMatrix=26}] positioned ^ ^5 ^4 facing entity @e[tag=MagaraAttackTarget,limit=1] feet run function asa_animator:magara/anim/flying_breath/events/shot
-
-execute if entity @s[scores={AsaMatrix=36}] run function asa_animator:magara/manager/model/change_to_normal

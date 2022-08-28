@@ -35,6 +35,9 @@
     execute if entity @s[tag=AnmFly] run function asa_animator:magara/anim/start_fly/main
 # 飛行ブレス
     execute if entity @s[tag=AnmFlyBreath] run function asa_animator:magara/anim/flying_breath/main
+# 飛行爆発薙ぎ払い
+    execute if entity @s[tag=AnmFlyBombL] run function asa_animator:magara/anim/flying_bomb_l/main
+    execute if entity @s[tag=AnmFlyBombR] run function asa_animator:magara/anim/flying_bomb_r/main
 
 ## 狂竜時行動
 

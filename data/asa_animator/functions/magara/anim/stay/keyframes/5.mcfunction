@@ -76,19 +76,19 @@ data modify storage asa_matrix: Rotate set value [0f,1666f,-5000f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingL011] run function #asa_matrix:animate_setparam
 data modify storage asa_matrix: Rotate set value [0f,2083f,-834f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingR011] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-4167f,5000f,5000f]
+data modify storage asa_matrix: Rotate set value [-4167f,5000f,-834f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingL100] run function #asa_matrix:animate_setparam
 data modify storage asa_matrix: Rotate set value [-6667f,-2917f,-2500f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingR100] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-3051f,6666f,1666f]
+data modify storage asa_matrix: Rotate set value [-3051f,6666f,-4167f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingL101] run function #asa_matrix:animate_setparam
 data modify storage asa_matrix: Rotate set value [-6000f,-4584f,833f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingR101] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-4167f,5000f,5000f]
+data modify storage asa_matrix: Rotate set value [-4167f,5000f,-834f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingL110] run function #asa_matrix:animate_setparam
 data modify storage asa_matrix: Rotate set value [-6667f,-2917f,-2500f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingR110] run function #asa_matrix:animate_setparam
-data modify storage asa_matrix: Rotate set value [-3051f,6666f,1666f]
+data modify storage asa_matrix: Rotate set value [-3051f,6666f,-4167f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingL111] run function #asa_matrix:animate_setparam
 data modify storage asa_matrix: Rotate set value [-6000f,-4584f,833f]
 execute as @e[type=armor_stand,tag=MagaraParts,tag=WingR111] run function #asa_matrix:animate_setparam
