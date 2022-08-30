@@ -38,5 +38,3 @@ function asa_animator:magara/model
     execute if entity @s[scores={AsaMatrix=42}] positioned ^5 ^ ^5.5 run function asa_animator:magara/anim/breath_bomb_l/events/damage
     execute if entity @s[scores={AsaMatrix=47}] positioned ^ ^ ^7 run function asa_animator:magara/anim/breath_bomb_l/events/damage
     execute if entity @s[scores={AsaMatrix=52}] positioned ^-5 ^ ^5.5 run function asa_animator:magara/anim/breath_bomb_l/events/damage
-
-execute if entity @s[scores={AsaMatrix=86}] run function asa_animator:magara/manager/model/change_to_normal

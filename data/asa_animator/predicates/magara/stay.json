@@ -105,6 +105,13 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
+          "nbt": "{Tags:[\"AnmFlyMoveB\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
           "nbt": "{Tags:[\"AnmFlyBreath\"]}"
         }
       },
@@ -120,6 +127,13 @@
         "entity": "this",
         "predicate": {
           "nbt": "{Tags:[\"AnmFlyBombR\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmFlyDash\"]}"
         }
       },
       {
