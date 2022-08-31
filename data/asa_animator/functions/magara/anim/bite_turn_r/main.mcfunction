@@ -43,6 +43,9 @@ function asa_animator:magara/model
     execute if entity @s[scores={AsaMatrix=25..37}] positioned ^ ^ ^6 run function asa_animator:magara/anim/bite_turn_l/events/damage_b
     execute if entity @s[scores={AsaMatrix=45..55}] positioned ^ ^ ^-7 run function asa_animator:magara/anim/bite_turn_l/events/damage_t
 
+# 設置
+    execute if entity @s[scores={AsaMatrix=50}] positioned ^ ^ ^-7 run function asa_animator:magara/manager/attack/place_virus
+
 # 高度調整
     execute if entity @s[scores={AsaMatrix=28}] at @s positioned ~ ~5 ~ run function asa_animator:zinogre/manager/check_ground
     execute if entity @s[scores={AsaMatrix=28}] at @s run tp @s ~ ~0.3 ~

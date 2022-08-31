@@ -1,8 +1,8 @@
 
 ## 通常時行動
 # 移動
-    # バックステップ
-        # execute if entity @s[tag=AnmBStep] run function asa_animator:magara/anim/
+    # 車庫入れ
+        execute if entity @s[tag=AnmMoveB] run function asa_animator:magara/anim/move_back/main
     # ダッシュ移動
         execute if entity @s[tag=AnmMoveDash] run function asa_animator:magara/anim/move_dash/main
 
@@ -34,6 +34,7 @@
 # 飛行開始
     execute if entity @s[tag=AnmFly] run function asa_animator:magara/anim/start_fly/main
 # 飛行移動
+    execute if entity @s[tag=AnmFlyMoveF] run function asa_animator:magara/anim/flying_move_forward/main
     execute if entity @s[tag=AnmFlyMoveB] run function asa_animator:magara/anim/flying_move_back/main
 # 飛行ブレス
     execute if entity @s[tag=AnmFlyBreath] run function asa_animator:magara/anim/flying_breath/main
