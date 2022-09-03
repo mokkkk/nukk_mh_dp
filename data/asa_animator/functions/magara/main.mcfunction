@@ -12,7 +12,9 @@ execute if predicate asa_animator:magara/stay run function asa_animator:magara/a
 # execute unless predicate asa_animator:magara/stay if entity @s[tag=AnmTurnL] run function asa_animator:magara/anim/turn_l/main
 # execute unless predicate asa_animator:magara/stay if entity @s[tag=AnmTurnR] run function asa_animator:magara/anim/turn_r/main
 # 行動
-execute unless predicate asa_animator:magara/stay unless entity @s[tag=IsTurn] run function asa_animator:magara/anim/main
+    # 通常
+    execute unless predicate asa_animator:magara/stay unless entity @s[tag=IsTurn] run function asa_animator:magara/anim/main
+    # 狂竜
 
 # 当たり判定位置
 # execute as @e[type=slime,tag=magaraParts] run function asa_animator:magara/manager/health/pos

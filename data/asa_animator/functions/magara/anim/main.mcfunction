@@ -5,6 +5,11 @@
         execute if entity @s[tag=AnmMoveB] run function asa_animator:magara/anim/move_back/main
     # ダッシュ移動
         execute if entity @s[tag=AnmMoveDash] run function asa_animator:magara/anim/move_dash/main
+    # 前ステップ
+        execute if entity @s[tag=AnmStepF] run function asa_animator:magara/anim/step_f/main
+    # サイドステップ
+        execute if entity @s[tag=AnmStepL] run function asa_animator:magara/anim/step_l/main
+        execute if entity @s[tag=AnmStepR] run function asa_animator:magara/anim/step_r/main
 
 # 噛みつき
     execute if entity @s[tag=AnmBite] run function asa_animator:magara/anim/bite/main
@@ -33,6 +38,8 @@
 
 # 飛行開始
     execute if entity @s[tag=AnmFly] run function asa_animator:magara/anim/start_fly/main
+# 飛行待機
+    execute if entity @s[tag=AnmFlyStay] run function asa_animator:magara/anim/flying_stay/main
 # 飛行移動
     execute if entity @s[tag=AnmFlyMoveF] run function asa_animator:magara/anim/flying_move_forward/main
     execute if entity @s[tag=AnmFlyMoveB] run function asa_animator:magara/anim/flying_move_back/main
@@ -43,8 +50,6 @@
     execute if entity @s[tag=AnmFlyBombR] run function asa_animator:magara/anim/flying_bomb_r/main
 # 滑空突進
     execute if entity @s[tag=AnmFlyDash] run function asa_animator:magara/anim/flying_dash/main
-
-## 狂竜時行動
 
 # 地上時討伐
     execute if entity @s[tag=AnmDeath] run function asa_animator:magara/anim/death/main
@@ -61,7 +66,7 @@
 
 # 頭部破壊ひるみ
     execute if entity @s[tag=AnmDHead] run function asa_animator:magara/anim/destroy_head/main
-# 腕破壊ひるみ
+# 翼腕破壊ひるみ
     execute if entity @s[tag=AnmDArmL] run function asa_animator:magara/anim/destroy_arm_l/main
     execute if entity @s[tag=AnmDArmR] run function asa_animator:magara/anim/destroy_arm_r/main
 # 尻尾破壊ひるみ

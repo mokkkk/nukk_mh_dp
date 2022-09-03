@@ -2,8 +2,6 @@
 scoreboard players add @s AsaMatrix 1
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:magara/anim/idle/start
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:magara/anim/idle/keyframes/0
-execute if entity @s[scores={AsaMatrix=1..2}] run tp @s ^0 ^0 ^0 ~0.3 ~
-execute if entity @s[scores={AsaMatrix=3..4}] run tp @s ^0 ^0 ^0 ~-0.3 ~
 execute if entity @s[scores={AsaMatrix=10..}] run function asa_animator:magara/anim/idle/end
 execute as @e[type=armor_stand,tag=MagaraParts] run function #asa_matrix:animate
 function asa_animator:magara/model

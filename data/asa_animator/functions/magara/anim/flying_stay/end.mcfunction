@@ -1,5 +1,5 @@
 scoreboard players set @s AsaMatrix 0
 execute as @e[type=armor_stand,tag=MagaraParts] run function #asa_matrix:animate_reset
-tag @s remove AnmFly
+tag @s remove AnmFlyStay
 
-tag @s add AnmFlyStay
+tag @s add AnmFlyDash
