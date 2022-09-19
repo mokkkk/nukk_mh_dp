@@ -4,15 +4,30 @@ execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:magara/anim
 execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:magara/anim/destroy_tail/keyframes/0
 execute if entity @s[scores={AsaMatrix=1..5}] run tp @s ^0 ^0.02 ^0
 execute if entity @s[scores={AsaMatrix=6}] run function asa_animator:magara/anim/destroy_tail/keyframes/1
-execute if entity @s[scores={AsaMatrix=6..10}] run tp @s ^0 ^0 ^0
+execute if entity @s[scores={AsaMatrix=6..10}] run tp @s ^0 ^0 ^0 ~4 ~
 execute if entity @s[scores={AsaMatrix=11}] run function asa_animator:magara/anim/destroy_tail/keyframes/2
-execute if entity @s[scores={AsaMatrix=11..15}] run tp @s ^0 ^-0.04 ^0
+execute if entity @s[scores={AsaMatrix=11..15}] run tp @s ^0 ^-0.04 ^0 ~8 ~
 execute if entity @s[scores={AsaMatrix=16}] run function asa_animator:magara/anim/destroy_tail/keyframes/3
-execute if entity @s[scores={AsaMatrix=16..30}] run tp @s ^0 ^0 ^0
-execute if entity @s[scores={AsaMatrix=31}] run function asa_animator:magara/anim/destroy_tail/keyframes/4
-execute if entity @s[scores={AsaMatrix=31..40}] run tp @s ^0 ^0.005 ^0
-execute if entity @s[scores={AsaMatrix=41}] run function asa_animator:magara/anim/destroy_tail/keyframes/5
-execute if entity @s[scores={AsaMatrix=41..52}] run tp @s ^0 ^0.004166667 ^0
-execute if entity @s[scores={AsaMatrix=53..}] run function asa_animator:magara/anim/destroy_tail/end
+execute if entity @s[scores={AsaMatrix=16..25}] run tp @s ^0.3 ^0 ^-0.2 ~8 ~
+execute if entity @s[scores={AsaMatrix=26..35}] run tp @s ^0 ^0 ^-0.2 ~2 ~
+execute if entity @s[scores={AsaMatrix=36..45}] run tp @s ^0 ^0 ^-0.1 ~1 ~
+execute if entity @s[scores={AsaMatrix=46}] run function asa_animator:magara/anim/destroy_tail/keyframes/4
+execute if entity @s[scores={AsaMatrix=46..55}] run tp @s ^0 ^0.005 ^0
+execute if entity @s[scores={AsaMatrix=56}] run function asa_animator:magara/anim/destroy_tail/keyframes/5
+execute if entity @s[scores={AsaMatrix=56..67}] run tp @s ^0 ^0.004166667 ^0
+execute if entity @s[scores={AsaMatrix=68..}] run function asa_animator:magara/anim/destroy_tail/end
 execute as @e[type=armor_stand,tag=MagaraParts] run function #asa_matrix:animate
 function asa_animator:magara/model
+
+# 移動
+    execute if entity @s[scores={AsaMatrix=1}] at @s run function asa_animator:magara/anim/destroy_tail/events/pos/set_pos
+    execute if entity @s[scores={AsaMatrix=2..15}] run function asa_animator:magara/anim/destroy_tail/events/pos/offset
+
+# 演出
+    execute if entity @s[scores={AsaMatrix=1}] run function asa_animator:magara/manager/particle/step
+    execute if entity @s[scores={AsaMatrix=15..25}] run function asa_animator:magara/manager/particle/step
+    execute if entity @s[scores={AsaMatrix=55}] run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
+
+# 高度調整
+    execute if entity @s[scores={AsaMatrix=45..}] at @s if block ~ ~-0.1 ~ #asa_animator:no_collision run function asa_animator:zinogre/manager/check_ground
+    execute if entity @s[scores={AsaMatrix=45..}] at @s unless block ~ ~0.1 ~ #asa_animator:no_collision run tp @s ~ ~0.1 ~
